@@ -1,0 +1,29 @@
+{
+    "description": "When Peni Parker’s father passed away piloting the SP//dr suit, she became the last person able to bond with the radioactive spider controlling the bionic armor. With her Uncle Ben and Aunt May at her side, Peni began piloting the SP//dr suit as the friendly neighborhood spider-hero of New York City!",
+    "gameplay": {
+        "description": "SP//DR SUIT – ALWAYS ACTIVE\nImmune to Poison and Incinerate Effects due to Oscorp’s cutting-edge SP//dr Suit technology.\nOpponents suffer -100% True Strike, True Accuracy, and True Sense Effect Ability Accuracy.\nWhen the Opponent fills a bar of Power, gain +1 Spider-Sense charge(s), up to 10 charge(s). Any additional charges last for 22 second(s). Charges cannot be prevented by Ability Accuracy.\n\nSYNC-SHIELD\nPeni starts the fight with an active Sync-Shield. The Sync-Shield’s max strength is based on her Opponent’s Attack Rating. This ability is not affected by Class Advantage. While fighting as Defender, max strength is increased by 100%.\nWhen Peni would take damage from a Blocked or Auto-Blocked Hit, the Sync-Shield takes up to 100% of the damage instead.\nWhen the Sync-Shield runs out of strength, it goes on cooldown for 20 seconds, after which it reactivates at max strength.\n\nSYNC-SHIELD – WHILE ACTIVE\nSPIDER-PROTOCOL: When Peni would be Struck, +8% chance per Spider-Sense charge to consume 4 charges, purifying any Stun Debuffs and gaining 100% chance to Auto-Block for 2 second(s). This does not trigger Parry and cannot be prevented by Ability Accuracy.\nWhen Peni would Auto-Block a Hit, Burn 25% of a bar of Power and inflict Direct Damage proportional to the amount lost. This ability cannot be prevented by Ability Accuracy. All personal Power Burn Effects scale with Base Attack only.\nWhen Blocking or Auto-Blocking a Hit, Peni cannot be Stunned and Locks the Opponent’s Power.\nWhen Peni would be Struck by a Heavy Hit while Auto-Blocking, gain 100% chance to Resist a Block Break.\nWhen performing a Well-Timed Block, gain 6% of a bar of Power."
+    },
+    "specials": {
+        "1": {
+            "description": "SPIDER-PROTOCOL: With 11+ Spider-Sense charges on activation, inflict a Power Burn Debuff during this Special Attack, burning 75% of a bar of Power over 6 second(s).\nAfter activation, gain +4 Spider-Sense charges. Additionally, if the Opponent fills a bar of Power during this Special Attack, gain +3 bonus Spider-Sense charges.\nThe first hit doesn’t grant Power and Burns 25% of a bar of Power.",
+            "name": "EJECT"
+        },
+        "2": {
+            "description": "On activation, pause the duration of all Spider-Sense charges until the Special Attack ends.\nEach Web Shooter hit deals a burst of 308.64 Incinerate Damage for each Spider-Sense charge.\nSPIDER-PROTOCOL: With 8+ Spider-Sense charges, the last hit consumes all charges inflicting an Incinerate Debuff per charge, each dealing 3472.2 Energy Damage over 8 second(s). Incinerate also removes Perfect Block chance and lowers Block Proficiency by 50%.",
+            "name": "PROPULSION PUNCH"
+        },
+        "3": {
+            "description": "Inflict a Power Burn Debuff, burning 150% of a bar of Power over 15 seconds.\nIf the Sync-Shield’s on cooldown, it’s restored at 100% strength. Add a flat 50% to the Sync-Shield’s current strength. Max 200% strength.",
+            "name": "FULL SYNCHRONIZATION"
+        }
+    },
+    "signature": {
+        "name": "TEENAGE WEAPON",
+        "description": "When the Opponent fills a bar of Power or recovers more than 5% of Max Health at once, inflict a Heal Block Passive, preventing the Opponent from healing for 6 second(s).\nWhenever the Opponent Heals while Heal Blocked, deal 15% of the Health they would have gained as a burst of Incinerate Damage. If the Salve Mastery is active, the Mastery is removed."
+    },
+    "author": {
+        "name": "Kabam",
+        "type": "spotlight",
+        "profile": "https://playcontestofchampions.com/champion-spotlight-peni-parker/"
+    }
+}

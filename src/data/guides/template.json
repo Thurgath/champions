@@ -3,29 +3,26 @@
     "gameplay": {
         "description": ""
     },
-    "heavy": {
-        "description": ""
+    "attack": {
+        "heavy": ""
     },
     "specials": {
         "1": {
-            "description": "",
-            "name": ""
+            "name": "",
+            "description": ""
         },
         "2": {
-            "description": "",
-            "name": ""
+            "name": "",
+            "description": ""
         },
         "3": {
-            "description": "",
-            "name": ""
+            "name": "",
+            "description": ""
         }
     },
     "signature": {
         "name": "",
         "description": ""
-    },
-    "attack": {
-        "heavy": ""
     },
     "author": {
         "name": "Kabam",
