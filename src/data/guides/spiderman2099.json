@@ -1,0 +1,32 @@
+{
+    "description": "Miguel O’Hara, a brilliant geneticist from the year 2099 goes through a series of incidents that culminate with him having his genetic code spliced with the DNA of a spider. He gains several spider related powers similar to the original Spider-Man, like superhuman agility, strength and wall crawling. However, his powers are slightly different from the original, he can organically create his own webs, he has retractable claws and instead of spider-sense he has a hyper accurate vision which is so powerful that it essentially works as an early warning system.",
+    "gameplay": {
+        "description": "Always Active\nSpider-Man 2099 cannot gain Buffs, whenever he would gain a Buff he instead pauses his personal Debuffs for 5 second(s).\nWhile Dodging backward, Spider-Man 2099 is not struck by attacks. Dodging an attack this way triggers his Debuff pausing ability.\nGain 75% Damage Resistance if the Opponent is under the effect of True Strike or if the hit deals True Damage.\n\nRupture – 20 Stacks\nLight and Medium attacks have 25% chance to inflict Rupture, dealing 505.4 Physical Damage over 10 second(s). 100% chance to inflict Rupture on a block if the Opponent is suffering from a Wither Debuff.\nAn Opponent takes a Burst of 758.1 Physical Damage for each Rupture on them if they reach zero power or when they gain a bar of Power. Ruptures are consumed after this effect takes place.\n\nResistance Up – Max 100 stacks\nWhen attacked there is a 100% chance to gain an indefinite Resistance Up Passive, increasing Physical Resistance by 87.5 and Energy Resistance by 56.06.\nInterrupting Spider-Man 2099 while he is charging a Heavy Attack removes all Resistance Up stacks. If at least 20 stacks were removed this way, he inflicts a Wither Debuff, reducing Ability Power Rate by 150% for 20 second(s).\nWhen Spider-Man 2099 pauses his personal Debuffs, he consumes 5 stacks of Resistance Up and increases the pause duration by 5 second(s). This effect has a 10 second(s) cooldown."
+    },
+    "specials": {
+        "1": {
+            "description": "Last three hits have a 100% chance to inflict Physical Vulnerability Debuff, decreasing Physical Resistance by 233.33 for 15 second(s). Max 15 stacks\nOn activation gain 15 stacks of Resistance Up Passive, increasing Physical Resistance by 87.5 and Energy Resistance by 56.06.",
+            "name": "Raging Claws"
+        },
+        "2": {
+            "description": "Maximum Pressure",
+            "name": "On activation inflicts a Wither Debuff, reducing Ability Power Rate by 150% for 15 second(s). Max 5 stacks.\nEach hit deals a Burst of 947.63 Physical Damage per Unique Debuff on the Opponent."
+        },
+        "3": {
+            "description": "Inflict a Stun Debuff for 4 second(s).\nInflict a Slow Debuff,  lasting 25 second(s), reducing Unstoppable and Evade Ability Accuracy by 100% and preventing the effects of Unstoppable. Slow won’t trigger against natural Class Advantage. Slow counts as 4 Unique Debuffs.",
+            "name": "Spider Venom"
+        }
+    },
+    "signature": {
+        "name": "Persistent Ruptures",
+        "description": "Ruptures have 80% chance to not be consumed when a Burst of Physical Damage triggers.\n+25% Combat Power Rate while the Opponent is affected by a Wither Debuff."
+    },
+    "attack": {
+        "heavy": "Inflict an Exhaustion Debuff, decreasing Critical Damage Rating by 61.17 and the potency of their Power Gain effects by 15% for 15 second(s). Max 5 stacks."
+    },
+    "author": {
+        "name": "Kabam",
+        "type": "spotlight",
+        "profile": "https://playcontestofchampions.com/champion-spotlight-spider-man-2099/"
+    }
+}

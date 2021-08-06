@@ -1,73 +1,32 @@
 {
-    "youtube": "1vVEOyPFkGs",
+    "description": "“Origin story time! Ahem. A long time ago…in a forgotten corner of the Contest, a wise, handsome, kick-butt dude became permanently duct-taped to a weird, alien Venom thingy…”\n“That’sssss not what happened!”\n“Shut up Symbioid, I’m telling the story! Dang. Lost my place. Oh well, anywhoozle, epic story told in haiku! Deadpool Venom mix; Smashed together, best friends; and….Chimichangas?”\n“We must kill the Ssssssspider-Man!”\n“Oh Symby! You’re the funniest. You always crack me up.”",
+    "gameplay": {
+        "description": "Cookin’ Meter\nVenompool has a Cookin’ Meter which begins at 50 Charges and gains 10 more Charges every 5 second(s).\nAny attack from either Champion grants 4 Charges.\nEach time the Cookin’ Meter hits 100, that amount is spent to grant a random, unique, indefinite “Blender Buff” which can be found at the bottom of the info page.\n\nIllogical DNA – While Fighting Tech Champions\nGain Immunity to Power Drain, Power Burn and Shock effects as well as Armor Break Debuffs. If an effect is prevented this way, gain 50 Cookin’ Meter. Cooldown 2 seconds.\n\nSpecial Attacks\n100% chance to inflict a Bleed Debuff lasting 6 seconds and causing 2883.6 direct damage per level of Special Attack used.\nWhile fighting #Robot Champions, this Bleed Debuff becomes a matching Degeneration Debuff.\n\nBlender Buffs – Cookin’ Meter Above 100\nPrecision: +700 Critical Rating.\nEnergize: +15% Combat Power Rate.\nKlyntar Mutation: +720.9 Attack Rating. If the opponent is a Spider-Verse Champion, attacks ignore Passive Evade effects.\nHunter-Spider: Attacks deal a burst of additional 25% Physical Damage.\nMalice: Up to +100% Fury Buff Potency based on how long the fight has gone on. Max Bonus at 200 seconds.\nBlender Buffs don’t stack. Once Venompool has acquired all 5 other Blender Buffs, he will instead gain stacking Fury Buffs, with each granting +480.6 Attack Rating for 60 seconds."
+    },
     "specials": {
         "1": {
-            "name": "Symbiotic Smack Om Nom",
-            "ranges": [
-                "short",
-                "medium"
-            ],
-            "description": "The Symbiote has a 85% chance to steal an enemy beneficial effect from the opponent and feed it to Deadpool to trigger his Healing Factor, recovering 9.5% Health over 7 seconds.",
-            "note": "The Regeneration trigger will only occur if a Buff is successfully eaten.",
-            "damagetypes": [
-                "physical"
-            ],
-            "abilities": [
-                "bleed",
-                "regeneration"
-            ]
+            "description": "Each hit has a 75% chance to Om Nom 1 of each Unique Buff on the opponent, removing it and granting 50 Cookin’ Meter.\nIf the Om Nommed Buff was an Armor Up, also gain a Regeneration Buff, recovering 3353.2 Health over 5 seconds.",
+            "name": "Symbiotic Smack"
         },
         "2": {
-            "name": "Sword Spin: XL Edition",
-            "damagetypes": [
-                "physical"
-            ],
-            "abilities": [
-                "precision",
-                "bleed",
-                "healblock"
-            ],
-            "description": "Deadpool, with the help of his new symbiote friend, has found his carbonadium sword, which places a Heal Block on the opponent for 8.5 seconds.\n Allowing Deadpool to finish his sweet dance moves after his attack boosts his confidence and grants 15% increased Critical Hit Rate for 6.5 seconds.",
-            "ranges": [
-                "short"
-            ],
-            "note": "If you interrupt Venompool’s sweet dance moves at the end of his Special 2 animation, you won’t gain the increased Critical Hit Rate."
+            "description": "If this attack Intercepts the opponent, 100% chance to inflict a Stun Debuff lasting 3 seconds.\nIf Venompool is able to finish his moonwalk after the attack he gains a temporary duplicate of each of his Blender Buffs, lasting 20 seconds.\nIf his dance is interrupted, Venompool instead gains a Power Gain Buff, granting 1 Bar(s) of Power over 10 seconds.",
+            "name": "Sword Spin: XL Edition"
         },
         "3": {
-            "name": "Ssssssave Me!",
-            "description": "Any Bleed effect triggered lasts 38% longer than normal.",
-            "damagetypes": [
-                "physical"
-            ],
-            "abilities": [
-                "bleed"
-            ]
+            "description": "Venompool’s Cookin’ Meter becomes Spicy for 20 seconds, which causes it to build up twice as fast.\nIf the Cookin’ Meter hits 100 while it is Spicy, all personal Bleed and Degeneration Debuffs on the opponent are Paused for 8 seconds.",
+            "name": "Ssssssave Me! "
         }
     },
     "signature": {
-        "name": "Continuity Memory",
-        "description": "Every 6 seconds, the symbiote known as Venom has a (20 - 45%) chance to access Deadpool’s unique memory and grant him a random beneficial effect for a short time...even if he never actually had that effect in the past...\n These effects range from Armor Up to Regeneration, with other stranger abilities all lumped in as well. Below are just a few of the possible benefits:\n Unstoppable for 3 seconds.\n Static Shock for 7 seconds.\n Indestructible for 3.5 seconds.\n A Luck Buff that affects both champions’ Ability Accuracy. Venompool’s gets better while his opponent’s gets worse.\n ALL THE ARMOR! *It’s actually called that in game",
-        "abilities": [
-            "armorup",
-            "regeneration",
-            "unstoppable",
-            "shock",
-            "physicalresist",
-            "precision",
-            "fatigue"
-        ],
-        "note": "And others!"
+        "name": "DON’T STOP EVOLVIN’!",
+        "description": "Pre-Fight Ability\nVenompool begins each Quest with 1 Persistent Charge, which he can spend in the Pre-Fight Menu to select one Blender Buff as his Fav Food for the next fight. The Fav Food is more likely to be chosen at random and gains 60% Potency.\nEach time Venompool enters a fight, he gains his Persistent Charge back."
+    },
+    "attack": {
+        "heavy": "Re-roll the most recently gained Blender Buff.\nIf the opponent is knocked down, 100% chance to gain a Vicious Buff increasing the Potency of Damage-Over-Time Debuffs by 60%. This lasts for 5 seconds per Unique Buff."
     },
     "author": {
         "name": "Kabam",
         "type": "spotlight",
-        "profile": "640807-Venompool-Champion-Spotlight"
-    },
-    "gameplay": {
-        "description": "All Special Attacks have a 94% Chance to inflict Bleed, dealing 225% of your Attack as direct damage over 5 seconds.",
-        "note": "Each Special Attack only has 1 potential Bleed trigger on the last hit of the attack.",
-        "abilities": [
-            "bleed"
-        ]
+        "profile": "https://playcontestofchampions.com/champion-spotlight-venompool/"
     }
 }
