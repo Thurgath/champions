@@ -1,51 +1,32 @@
 {
+    "description": "In an alternate reality where Peter Parker died while protecting his friends and family, teenager Miles Morales was bitten by a genetically enhanced spider and discovered that he now possessed the same powers as his fallen idol. With the world mourning the loss of one of their greatest heroes, Miles decided to take on the mantle of Spider-man. Miles knows that with great power must come great responsibility, but can he live up to the legacy set before him?",
+    "gameplay": {
+        "description": "Well-Timed Blocks\nWhile performing a Well-Timed Block, Miles will not attempt to utilize his personal Evade or Miss.\n\nSpider-Challenges – Spider-Sense Charges\nTo learn to be a hero, Miles Morales has a list of Spider-Challenges he can complete each fight. Completing a Spider-Challenge grants an indefinite Spider-Sense Charge. Max Charges: 3.\nEach Spider-Sense Charge grants a Passive 7% chance to Evade incoming attacks as well as +252.7 Attack Rating.\n\nSpider-Challenges – Once Per Fight Each\nBlock 15 attacks. Well-Timed Blocks count as 3 Attacks.\nLand 50 attacks. Intercepting attacks count as 10 hits.\nAvoid 10 attacks with Evade, Miss or the Dexterity Mastery. Special Attacks count as 2 hits each.\n\nSpider-Camo\nEach time the opponent launches a Special Attack, Miles’ burgeoning abilities grant him a Spider-Camo Passive which is unaffected by Ability Accuracy and lasts 8 seconds.\nSpider-Camo grants all attacks a 35% chance to Miss. This Miss chance is tripled against Unblockable attacks.\nSpider-Camo also enhances Heavy and Special Attacks.\nOnce All Spider-Challenges are complete, Miles is In The Zone for the rest of the fight. While In The Zone, Spider-Camo will also activate each time Miles launches a Special Attack."
+    },
+    "attack": {
+        "heavy": "100% chance to inflict a Taunt Debuff for 10 seconds which reduces Attack Rating by 30% and increases the chance that the opponent will launch a Special Attack by 70%.\nCamo: 100% chance to inflict a Rupture Debuff, causing 2527 Physical Damage over 5 seconds."
+    },
     "specials": {
         "1": {
             "name": "Triple Web Shot",
-            "damagetypes": [
-                "physical"
-            ],
-            "ranges": [
-                "long",
-                "short"
-            ],
-            "description": "53% chance to inflict Weakness, decreasing the target's Attack by 28% for 6.5 seconds.",
-            "note": "This attack has three potential triggers for Weakness, all of which stack.",
-            "abilities": [
-                "weakness"
-            ]
+            "description": "Last hit has a 100% chance to inflict a Weakness Debuff, reducing Attack Rating by 50% for 10 seconds.\nCamo: Weakness gains +10 seconds duration."
         },
         "2": {
             "name": "Pow! Thwack! Sizzle!",
-            "damagetypes": [
-                "physical"
-            ],
-            "note": "Science & Cosmic Champions: 65% chance to Stun the opponent for 2.5 seconds.\n\nTech & Skill Champions: 60% chance to Power Drain the opponent, removing 28% of the opponent’s Max Power.\n\nMystic & Mutant Champions: 70% Chance to Fatigue the opponent, reducing Critical Hit Rate by 18% for 7 seconds.",
-            "description": "Miles’ unpredictable Venom Blast has varying effects based on Champion Class. The chance to activate a Venom blast is increased by up to 12% the smaller the target is."
+            "description": "Final hit has a 100% chance to inflict a Shock Debuff causing 4548.6 Energy Damage over 6 seconds.\nCamo: This Shock gains +30% Potency for each personal Unique Debuff that has been activated on the opponent this fight."
         },
         "3": {
             "name": "Flurry of Blows",
-            "damagetypes": [
-                "physical"
-            ]
+            "description": "100% to inflict a Physical Vulnerability Debuff, reducing Physical Resistance by 900 for 50 seconds.\nCamo: 100% chance to also inflict a Power Sting Debuff lasting 50 seconds. An opponent with Power Sting takes 5685.75 direct damage if they activate a Special Attack."
         }
     },
-    "author": {
-        "type": "spotlight",
-        "profile": "629791-Spider-Man-(Miles-Morales)-Champion-Spotlight",
-        "name": "Kabam"
-    },
-    "gameplay": {
-        "description": "Miles’ undeveloped Spider Senses grant him 5 charges of Evasion at the beginning of the fight. Each charge grants him a 6% chance to Dodge incoming attacks at the cost of 1 charge.",
-        "note": "Whenever an opponent uses a Special Attack, Miles gains 2 charges of Evasion to help him better avoid imminent danger.",
-        "abilities": [
-            "evade"
-        ]
-    },
     "signature": {
-        "name": "Venom Blast",
-        "description": "Miles’ self-training and newfound experience in the Contest grants a (5 - 15%) chance to trigger an additional Venom Blast after using a Light or Medium Combo-ender. Longer combos grant a higher chance to trigger a Venom Blast, up to a max of 5 hits.\n Combo-ender attacks are attacks that end a combo. Either the second medium attack, or the fourth light attack in a row. This chance to trigger Venom Blast also increases against smaller champions.",
-        "note": "The effect that triggers mirrors the effects of the Venom Blast on Special 2."
+        "name": "Whatever A Spider Can",
+        "description": "Spider-Challenges\nEach time Miles completes a Spider-Challenge he gains a Passive Fury increasing Attack Rating by +2778.54 for 12 seconds.\nAdditionally, he may now complete Spider-Challenges multiple times during the fight instead of just once each. However, each Spider-Challenge can still only grant 1 Spider-Sense Charge."
     },
-    "youtube": "6T2agT-BHzg"
+    "author": {
+        "name": "Kabam",
+        "type": "spotlight",
+        "profile": "https://playcontestofchampions.com/champion-spotlight-spider-man-miles-morales/"
+    }
 }

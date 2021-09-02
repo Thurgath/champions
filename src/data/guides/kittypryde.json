@@ -1,0 +1,29 @@
+{
+    "description": "Katherine “Kitty” Pryde led the life of a normal teenager until she began suffering headaches of steadily increasing intensity as a result of her emerging mutant powers. Seeing her potential, Phoenix telepathically coerced Kitty’s parents into allowing her to join Xavier’s “school for gifted youngsters” where she quickly became the youngest member of the X-Men. During her adventures Kitty encountered and befriended a small alien dragon-like creature named “Lockheed” who quickly became her constant companion and travel buddy!",
+    "gameplay": {
+        "description": "Always Active\nImmune to Incinerate, thanks to Lockheed’s assistance.\n\nPassive Prowess – Max 20\nGain 1 Prowess each time either champion lands a Critical Hit or Inflicts a Stun Debuff. +2 against Guaranteed Crits or Passive Stuns.\nGain 2 Prowess when intercepting a Dashing Opponent.\nEach Prowess increases Special Attack Damage by 5% and lasts until the end of Kitty’s next Special Attack that strikes the Opponent or their Block.\nIf Kitty is inflicted with Cowardice, all Prowess are lost.\nWhile the Opponent is suffering from Incinerate, Prowess potency begins to increase by up to 400% over 40 seconds. This bonus gradually falls off while no Incinerates are active.\nEach time Lockheed prevents an Incinerate, the above Prowess Potency bonus is increased by 30%. Cooldown 0.8 seconds.\nWhen throwing a Special Attack, all personal Prowess are removed and reapplied through the current Prowess Potency bonus.\n\nPhasing\nDashing forward with 3 or more Prowess triggers Phasing for the duration of the dash plus 1.20 second(s) after, giving the Opponent a 100% chance to Miss. This is paused during Kitty’s Special Attacks.\nWhile Phased gain +3900 Critical Rating, become Stun Immune and take 80% reduced damage.\nWhile Phased #Robots suffer -20% Ability Accuracy reduction.\nPersonal Debuffs and Buffs that are triggered while Phased become Passive and gain +20% duration.\nEach Miss caused by Phase deals a burst of 2422.5 Physical Damage and Kitty gains +3 Personal Prowess, these can stack above the normal limit.\nWhen Phasing expires, 6 Prowess are consumed for each Miss that Phasing caused."
+    },
+    "specials": {
+        "1": {
+            "name": "Lockheed’s Revenge",
+            "description": "The final 3 hits in this attack each inflict an Incinerate Debuff dealing 943.5 Energy Damage over 3.50 seconds, reducing block proficiency by 50% and removing Perfect Block chance.\nIncinerates inflicted by this attack expire 1 at a time and are paused and refreshed while any other Incinerate is active.\nWith 10+ Prowess, Incinerates will trigger through block."
+        },
+        "2": {
+            "name": "Loyal Companion",
+            "description": "Each hit deals a burst of Physical Damage equal to 40% of the damage dealt by the hit.\nWith 10+ Prowess, gain an Unblockable Buff lasting 9 seconds, plus an additional 0.25 seconds for each Prowess above 10."
+        },
+        "3": {
+            "name": "Raining Fire",
+            "description": "Inflict a non-stacking Incinerate Debuff dealing 2295 Energy Damage over 30 seconds.\nWhen this attack ends, enter Phasing for 2 seconds, if Phasing was already active this time extends to 4 seconds."
+        }
+    },
+    "signature": {
+        "name": "Black Vortex Empowerment",
+        "description": "Passive\nWhile Phased take no damage from any source.\nWhile Phased gain 250% Defensive Combat Power Rate and pause Phasing while being struck.\nThe first time each Personal Incinerate effect expires naturally or is Purified, it has a 40.00% chance to retrigger itself at +30% potency. Incinerates triggered from this ability are always Passive."
+    },
+    "author": {
+        "name": "Kabam",
+        "type": "spotlight",
+        "profile": "https://playcontestofchampions.com/champion-spotlight-kitty-pryde/"
+    }
+}
