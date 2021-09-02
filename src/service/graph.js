@@ -512,6 +512,20 @@ const EFFECT_COLORS = {
     [ EFFECT.COWORKERS ]: '#a79495',
     [ EFFECT.SPIDERVERSE_VETERANS ]: '#ab06e9',
     [ EFFECT.SYMBIOTE_PROBLEMS ]: '#88c37b',
+    [ EFFECT.WE_ARE_MANY ]: '#c8ca80',
+    [ EFFECT.ADVANCED_INTELLIGENCE ]: '#fa37a7',
+    // [ EFFECT.NEW_WAVE ]: '#e5e7b9',
+    [ EFFECT.RESISTANCE_IS_FUTILE ]: '#593f24',
+    [ EFFECT.TERMINATED ]: '#58adcb',
+    [ EFFECT.FIRE_AND_DRAGONS ]: '#fc0480',
+    [ EFFECT.JUST_A_PHASE ]: '#316079',
+    [ EFFECT.SHADOWY_HISTORY ]: '#618d44',
+    [ EFFECT.THROUGH_THICK_AND_THIN ]: '#bd2c67',
+    [ EFFECT.VICIOUS_KITTY ]: '#869879',
+    [ EFFECT.WORTH_A_SHOT ]: '#762c7f',
+    [ EFFECT.SPIDERSENSES_TINGLING ]: '#32ecd5',
+    [ EFFECT.SPIDERVERSE_MENTORS ]: '#680d23',
+    [ EFFECT.CYBERNETICS_UPGRADE_BLITZ ]: '#39f165',
 };
 
 function getTypeColor(typeId) {
@@ -529,7 +543,7 @@ const graphs = {};
 const fdg = new ForceDirectedGraph({
     stiffness: 800,
     repulsion: 1600,
-    damping: 0.5,
+    damping: 0.1,
     nodeSelected: (nodes, edges) => {
         const currentSelected = {
             nodes,

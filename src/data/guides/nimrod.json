@@ -1,0 +1,29 @@
+{
+    "description": "Nimrod is the ultimate Sentinel. Constructed in a timeline where Mutants have been completely wiped out by the superior, infinitely advancing robotic beings. Upon realization that it’s one directive to exterminate all Mutants was no longer possible within Nimrod’s original timeline, this flawless, unstoppable force of destruction begins to jump to alternate timelines, ridding the multi-verse of abhorrent the Mutant scourge.",
+    "gameplay": {
+        "description": "When Defending a Quest Node: \nIf Opponent fills a bar of Power, Inflict Passive Special Lock for 1.5 second(s).\n\nSuperior Mutant Hunting Robot\nAdvanced Robotics provides Immunity to Bleed & Poison effects.\nArmor Breaks cannot remove Armor Ups and suffer -100% Potency.\nAll Attacks deal Energy Damage instead of Physical.\nAgainst Mutants, gain Immunity to Ability Accuracy Modification. \n\nAdaptive Protocols: \nNimrod Starts in TITAN Protocol. Swap protocols every 11 seconds and when landing a 4th light attack in a basic Combo. \nOn Start, and when the protocol timer expires, gain 1 Armor Up Buff. All personal Armor Ups provide +525 Armor Rating for 20 seconds. \nGain 1 Protocol charge per unique ability applied by each Protocol during a Special Attack.\nGain 1 Protocol charge when gaining Armor Up, and when the Opponent activates Prowess or Regeneration.\nAt 10 Protocol charges, launch a Special Attack to activate ERADICATE Protocol for 16 seconds, combining the effects of TITAN and BLITZ Protocols.\n\nTITAN Protocol\n20% Damage Reduction on all incoming Critical Hits. +25% potency per Armor Up. \nWhen the Opponent launches a Special Attack, Inflict a Cowardice Debuff reducing Special Attack damage by 40% for 15 seconds.\nWell-Timed Blocks create 1 Armor Up.\n\nBLITZ Protocol\nAttacks have +929.6 Attack Rating. +25% Potency per Armor Up.\nWhen the Opponent launches a Special Attack, Inflict Power Drain, draining 150% of a bar of Power over 15 seconds.\nAttacks remove 1 Prowess and Regeneration, replacing it with a Shock Debuff dealing 464.8 Energy Damage over 1.5 seconds."
+    },
+    "specials": {
+        "1": {
+            "name": "Energized Assault",
+            "description": "[TITAN]: Gain an Energize Buff, Increasing Combat Power Rate by 45% for 25 seconds.  Max 1.\n[BLITZ]: On hit, Inflict Energy Vulnerability, reducing Opponent’s Energy Resistance by 1130.77 for 25 seconds. Max 1."
+        },
+        "2": {
+            "name": "Total Annihilation",
+            "description": "[TITAN]: Gain an Unstoppable Buff for 5 seconds. Duration is paused until the Special Attack ends.\n[BLITZ]: Each Hit inflicts a Passive Shock, dealing 4299.4 Energy Damage over 2 seconds."
+        },
+        "3": {
+            "name": "Sentinel Superiority",
+            "description": "[TITAN]: Gain Self-Repair. Regenerating 12.5% of missing Health over 15 seconds. This effect ends early if Stunned. \n[BLITZ]: Deal a burst of up to 27888 Energy Damage based on Opponents missing health."
+        }
+    },
+    "signature": {
+        "name": "Zero Tolerance",
+        "description": "Eradicate Protocol grants Unblockable Special Attacks and increases the Potency and Duration of Special Attack effects by 35%.\nIf attacking against a Mutant, Nimrod’s Abilities generate +1 Armor Up whenever gaining a personal Armor Up.  If Defending, instead gain +1 Armor Up per Mutant on the Attacker’s team."
+    },
+    "author": {
+        "name": "Kabam",
+        "type": "spotlight",
+        "profile": "https://playcontestofchampions.com/champion-spotlight-nimrod/"
+    }
+}
