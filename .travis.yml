@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "7"
+  - "20.3.1"
 dist:
   - "xenial"
 os:
@@ -9,13 +9,13 @@ os:
 addons:
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+      - ppa:ubuntu-toolchain-r/test
     packages:
-      - g++-4.8
+      - g++-11
 
 env:
   global:
-    - CXX=g++-4.8
+    - CXX=g++-11
     - GH_REF: github.com/hook/champions.git
 
 after_success:

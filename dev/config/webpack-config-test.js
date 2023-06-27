@@ -8,7 +8,7 @@ module.exports = merge(webpackConfig, {
         clean: true,
     },
     entry: {
-        //redefine as main for poledina
+        //redefine as main
         main: [ './src/index.js' ],
     },
     stats: 'normal',
