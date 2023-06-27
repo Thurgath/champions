@@ -1,5 +1,5 @@
 import { getPi } from '../../src/data/pi';
-import { STAR_RANK_LEVEL } from '../../data/model/Champion';
+import { STAR_RANK_LEVEL } from '../../src/data/model/Champion';
 
 describe('data/pi', () => {
 
