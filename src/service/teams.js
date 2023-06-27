@@ -1,5 +1,4 @@
 import lang from '../service/lang';
-import app from '../service/app';
 import { notify } from '../util/notification';
 import Champion from '../data/model/Champion';
 import { ROLE } from '../data/model/Role';
@@ -8,12 +7,8 @@ import { EFFECT } from '../data/model/Effect';
 import { WILLPOWER_SAFE_CHAMPIONS } from '../data/champions';
 import { synergiesFromChampions } from '../data/synergies';
 import roster from './roster';
-import router from './router';
 import { fromStorage, toStorage } from '../util/storage';
 import { requestRedraw } from '../util/animation';
-/* eslint-disable import/no-unresolved */
-import Worker from 'webworker?filename=scripts/worker-[hash:6].js!./teams/worker';
-/* eslint-enable import/no-unresolved */
 
 const PRESETS = {
     'offensive': {
@@ -1729,7 +1724,7 @@ function isChampionLocked(uid) {
 
 let progressResetTimeout;
 
-let worker = new Worker();
+let worker = createWorker();
 let lastWorker;
 
 function buildTeam() {
@@ -1830,14 +1825,13 @@ function buildTeam() {
             notify({
                 message: lang.string('notification-team-built'),
                 tag: 'team-built',
-                onclick: () => {
-                    app.menuOpen = false;
-                    router.setRoute('/teams');
-                    requestRedraw();
-                },
             });
         });
-    worker = new Worker();
+    worker = createWorker();
+}
+
+function createWorker() {
+    return new Worker(new URL('./teams/worker.js', import.meta.url));
 }
 
 export { PRESETS, PRESETS_DUPLICATES, PRESETS_RANGE };

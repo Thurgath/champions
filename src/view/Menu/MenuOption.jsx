@@ -12,6 +12,8 @@ function linkIsExternal(href) {
 }
 
 const MenuOption = {
+    controller: function(data) {
+    },
     view(ctrl, {
         info, raw, alternate, title, icon, href,
         download, selected, invalid, progress, red,

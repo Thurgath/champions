@@ -1,4 +1,3 @@
-import { values } from 'lodash';
 import * as ROLE from '../ids/roles';
 
 class Role {
@@ -17,4 +16,4 @@ class Role {
 
 export default Role;
 export { ROLE };
-export const ROLE_VALUES = values(ROLE);
+export const ROLE_VALUES = Object.values(ROLE);

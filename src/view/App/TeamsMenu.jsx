@@ -2,18 +2,22 @@ import TYPES, { typeIcon } from '../../data/types';
 import { ROLE } from '../../data/model/Role';
 import { roleIcon } from '../../data/roles';
 import teams, { save, saveTeam, loadTeam, buildTeam, lockTeams } from '../../service/teams';
+import { STAR_RANK_LEVEL } from '../../data/model/Champion';
 import MenuHeader from '../Menu/MenuHeader.jsx';
 import MenuSection from '../Menu/MenuSection.jsx';
 import MenuOption from '../Menu/MenuOption.jsx';
 import MenuOptionGroup from '../Menu/MenuOptionGroup.jsx';
 import Icon from '../Icon.jsx';
+import ClassTypeIcon from '../ClassTypeIcon.jsx';
 import { requestRedraw } from '../../util/animation';
 /* eslint-disable no-unused-vars */
 import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const TeamsMenu = {
-    view(ctrl, { edit }) {
+    controller: function(data) {
+    },
+    view(ctrl, { editing }) {
         const options = [];
         options.push(
             <MenuHeader title="teams" />
@@ -37,8 +41,8 @@ const TeamsMenu = {
                 icon={(
                     <Icon icon="pencil" before />
                 )}
-                selected={ edit }
-                href={ edit? '/teams': '/teams/edit' }
+                selected={ editing }
+                href={ editing ? '/teams' : '/teams/edit' }
             />
         );
         options.push(
@@ -166,7 +170,7 @@ const TeamsMenu = {
         );
         options.push(
             <MenuOptionGroup options={
-                [ 1, 2, 3, 4, 5, 6 ].map((star) => (
+                Object.keys(STAR_RANK_LEVEL).map((star) => (
                     <MenuOption
                         raw={ `${ star }★` }
                         selected={ teams.stars[ star ] }
@@ -184,7 +188,7 @@ const TeamsMenu = {
                 TYPES.map((type) => (
                     <MenuOption
                         icon={(
-                            <Icon icon={ typeIcon(type.attr.uid) } />
+                            <ClassTypeIcon icon={ typeIcon(type.attr.uid) } />
                         )}
                         info={ `type-${ type.attr.uid }-name` }
                         selected={ teams.types[ type.attr.uid ] }

@@ -5,6 +5,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const MenuGroupOption = {
+    controller: function(data) {
+    },
     view(ctrl, { options, tabs }) {
         return (
             <div

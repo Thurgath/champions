@@ -47,6 +47,16 @@ export const STAR_RANK_LEVEL = {
         ranks: 5,
         awakened: 200,
     },
+    7:{
+        1:{ levels: 25 },
+        2:{ levels: 35 },
+        3:{ levels: 45 },
+        4:{ levels: 55 },
+        5:{ levels: 65 },
+        6:{ levels: 75 },
+        ranks: 6,
+        awakened: 200,
+    },
 };
 
 export const STAR_RANK_LEVELS = [
@@ -56,6 +66,7 @@ export const STAR_RANK_LEVELS = [
     [ 10, 20, 30, 40, 50 ],
     [ 25, 35, 45, 55, 65 ],
     [ 25, 35, 45, 55, 65 ],
+    [ 25, 35, 45, 55, 65, 75 ],
 ];
 
 export const STAR_LEVELS = STAR_RANK_LEVELS.map((rankLevels) => {

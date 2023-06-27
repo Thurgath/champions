@@ -8,6 +8,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const RosterMenu = {
+    controller: function(data) {
+    },
     view(ctrl, { uid, stars }) {
         return (
             <div m="RosterMenu" key={ `roster-edit-menu-${ uid }-${ stars }` }>

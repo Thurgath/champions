@@ -1,4 +1,5 @@
 import TYPES, { typeIcon } from '../../data/types';
+import { STAR_RANK_LEVEL } from '../../data/model/Champion';
 import lang from '../../service/lang';
 import roster from '../../service/roster';
 import router from '../../service/router';
@@ -7,6 +8,7 @@ import MenuSection from '../Menu/MenuSection.jsx';
 import MenuOption from '../Menu/MenuOption.jsx';
 import MenuOptionGroup from '../Menu/MenuOptionGroup.jsx';
 import Icon from '../Icon.jsx';
+import ClassTypeIcon from '../ClassTypeIcon.jsx';
 import { notify } from '../../util/notification';
 import { requestRedraw } from '../../util/animation';
 import { clickElementById } from '../../util/element';
@@ -16,6 +18,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const RosterMenu = {
+    controller: function(data) {
+    },
     view() {
         const options = [];
         if (window.FileReader) {
@@ -69,7 +73,7 @@ const RosterMenu = {
         options.push(
             <MenuOption
                 icon={(
-                    <Icon icon="floppy-o" before />
+                    <Icon icon="floppy-disk" before />
                 )}
                 title="export-csv"
                 download="champions.csv"
@@ -170,7 +174,7 @@ const RosterMenu = {
         );
         options.push(
             <MenuOptionGroup options={
-                [ 1, 2, 3, 4, 5, 6 ].map((star) => (
+                Object.keys(STAR_RANK_LEVEL).map((star) => (
                     <MenuOption
                         raw={ `${ star }★` }
                         selected={ roster.getFilter(star) }
@@ -187,7 +191,7 @@ const RosterMenu = {
                 TYPES.map((type) => (
                     <MenuOption
                         icon={(
-                            <Icon icon={ typeIcon(type.attr.uid) } />
+                            <ClassTypeIcon icon={ typeIcon(type.attr.uid) } />
                         )}
                         info={ `type-${ type.attr.uid }-name` }
                         selected={ roster.getFilter(type.attr.uid) }

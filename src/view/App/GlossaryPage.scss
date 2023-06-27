@@ -10,7 +10,7 @@
         position: relative;
         width: 500px;
         max-width: 90%;
-        margin: 1em auto 1em;
+        margin: 1em auto;
         padding: 0 0 8px;
         background: #eee;
         box-shadow: 0 8px 0 -4px  rgba(0, 0, 0, .25);
@@ -26,7 +26,7 @@
             > .name {
                 @extend .font--text;
                 display: block;
-                padding: 16px 16px 0 16px;
+                padding: 16px 16px 0;
                 font-size: 1em;
                 font-weight: bold;
                 text-align: left;

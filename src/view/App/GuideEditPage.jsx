@@ -100,6 +100,8 @@ const GuideEditAuthor = {
 };
 
 const GuideEditPage = {
+    controller: function(data) {
+    },
     view(ctrl, { uid }) {
         const guide = guides[ uid ];
         const details = [];

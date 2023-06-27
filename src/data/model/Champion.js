@@ -4,7 +4,6 @@ import { TYPE_VALUES } from './Type';
 import { ROLE_VALUES } from './Role';
 import { isInRange } from '../../util/math';
 import { getPi } from '../pi';
-import { values } from 'lodash';
 
 const validStars = (stars) => (STAR_RANK_LEVEL[ stars ])? stars: 0;
 const validRank = (stars, rank) => (validStars(stars) && isInRange(rank, 1, STAR_RANK_LEVEL[ stars ].ranks))? rank: 0;
@@ -64,5 +63,5 @@ class Champion {
 
 export default Champion;
 export { CHAMPION };
-export const CHAMPION_VALUES = values(CHAMPION);
+export const CHAMPION_VALUES = Object.values(CHAMPION);
 export { STAR_RANK_LEVEL };

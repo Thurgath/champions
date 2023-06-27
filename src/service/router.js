@@ -1,3 +1,3 @@
-import { Router } from 'director';
+import { Router } from 'director/build/director';
 
 export default new Router();

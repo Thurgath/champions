@@ -57,7 +57,7 @@
         outline: none;
 
         @include input-all-thumbs {
-            background: lighten($thumb-background, 25);
+            background: tint($thumb-background, 25%);
         }
     }
 }

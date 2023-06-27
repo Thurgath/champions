@@ -12,27 +12,15 @@
         height: 100%;
 
         &.hover {
-            cursor: pointer;
-
-            & {
-                cursor: grab;
-            }
+            cursor: grab;
         }
 
         &.dragging {
-            cursor: move;
-
-            & {
-                cursor: grabbing;
-            }
+            cursor: grabbing;
         }
 
         &.selecting {
             cursor: crosshair;
-
-            & {
-                cursor: cell;
-            }
         }
     }
 

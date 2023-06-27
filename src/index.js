@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import './index.jsx';
 import { requestRedraw } from './util/animation';
 import PACKAGE from '../package.json';
@@ -8,5 +7,4 @@ global.console && console.info && console.info(`${ PACKAGE.description } v${ PAC
 /* eslint-enable no-console */
 
 const handleReload = () => requestRedraw(10);
-document.addEventListener('hotreload', handleReload, true);
 window.addEventListener('resize', handleReload, true);

@@ -48,7 +48,11 @@ export function getImage(src) {
 const catalystImages = {};
 [ 'alpha', 'basic', TYPE.COSMIC, TYPE.TECH, TYPE.MUTANT, TYPE.SKILL, TYPE.SCIENCE, TYPE.MYSTIC ].forEach((type) => {
     [ 1, 2, 3, 4, 5, 6 ].forEach((tier) => {
-        catalystImages[ `tier-${tier}-${type}` ] = require(`../images/catalysts/tier_${tier}_${type}.png`);
+        const imagePath = `../images/catalysts/tier_${tier}_${type}.png`;
+        //Verify that the image exists. Better to do during build?
+        // Using imagePath instead of embedded image because the image src ended up empty. Webpack or module problems?
+        require(`../images/catalysts/tier_${tier}_${type}.png`);
+        catalystImages[ `tier-${tier}-${type}` ] = imagePath;
     });
 });
 

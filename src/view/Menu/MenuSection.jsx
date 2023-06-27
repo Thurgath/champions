@@ -4,6 +4,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const MenuSection = {
+    controller: function(data) {
+    },
     view(ctrl, { title, icon }) {
         return (
             <div

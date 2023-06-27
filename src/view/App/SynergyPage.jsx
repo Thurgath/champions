@@ -19,6 +19,8 @@ function config(definition, element, isInitialized) {
 }
 
 const SynergyPage = {
+    controller: function(data) {
+    },
     view(ctrl, { stars, effect }) {
         const roster = synergyOptions.getRoster();
         const legend = getLegend({ stars, effect, roster });

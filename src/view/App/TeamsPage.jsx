@@ -67,6 +67,8 @@ function results(type, size) {
 }
 
 const TeamsPage = {
+    controller: function(data) {
+    },
     view() {
         return (
             <div m="TeamsPage" class="teams">

@@ -5,6 +5,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const Message = {
+    controller: function(data) {
+    },
     view(ctrl, { icon, value, alt }) {
         return (
             <div m="Message" class="message">

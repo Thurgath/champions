@@ -5,6 +5,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const Slides = {
+    controller: function(data) {
+    },
     view(ctrl, { slides, current }) {
         return (
             <div m="Slides" class="slides">

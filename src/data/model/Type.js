@@ -1,4 +1,3 @@
-import { values } from 'lodash';
 import * as TYPE from '../ids/types';
 
 class Type {
@@ -17,4 +16,4 @@ class Type {
 
 export default Type;
 export { TYPE };
-export const TYPE_VALUES = values(TYPE);
+export const TYPE_VALUES = Object.values(TYPE);

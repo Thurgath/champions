@@ -5,6 +5,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const ChampionGrade = {
+    controller: function(data) {
+    },
     view(ctrl, { title, grade }) {
         return (
             <div m="ChampionGrade" class="champion-grade">

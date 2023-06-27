@@ -7,6 +7,7 @@ import MenuSection from './Menu/MenuSection.jsx';
 import MenuOptionGroup from './Menu/MenuOptionGroup.jsx';
 import MenuOption from './Menu/MenuOption.jsx';
 import Icon from './Icon.jsx';
+import BrandIcon from './BrandIcon.jsx';
 import ImageIcon from './ImageIcon.jsx';
 import { requestRedraw } from '../util/animation';
 /* eslint-disable no-unused-vars */
@@ -14,6 +15,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const MenuOptions = {
+    controller: function(data) {
+    },
     view(ctrl, { tabs, tab: currentTab, menu }) {
         const { menuOpen } = app;
         if(!menuOpen && ctrl.loaded) {
@@ -83,22 +86,13 @@ const MenuOptions = {
                         <Icon icon="bomb" before />
                     }
                     title="link-kabam"
-                    href="https://forums.playcontestofchampions.com/en"
+                    href="https://forums.playcontestofchampions.com/en/discussions"
                 />
             );
             options.push(
                 <MenuOption
                     icon={
-                        <Icon icon="reddit-alien" before />
-                    }
-                    title="link-reddit"
-                    href="http://reddit.com/r/ContestOfChampions"
-                />
-            );
-            options.push(
-                <MenuOption
-                    icon={
-                        <Icon icon="wikipedia-w" before />
+                        <BrandIcon icon="wikipedia-w" before />
                     }
                     title="link-wikia"
                     href="http://marvel-contestofchampions.wikia.com/wiki/"
@@ -109,14 +103,14 @@ const MenuOptions = {
                     icon={
                         <Icon icon="trophy" before />
                     }
-                    title="link-trucos"
-                    href="https://www.facebook.com/MCOCTrucos/"
+                    title="link-auntm.ai"
+                    href="https://www.auntm.ai/"
                 />
             );
             options.push(
                 <MenuOption
                     icon={
-                        <Icon icon="github" before />
+                        <BrandIcon icon="github" before />
                     }
                     title="link-github"
                     href="https://github.com/hook/champions"
@@ -138,15 +132,7 @@ const MenuOptions = {
                     (
                         <MenuOption
                             icon={
-                                <Icon icon="google-plus" before />
-                            }
-                           href={ `https://plus.google.com/share?url=${ escapedUrl }` }
-                        />
-                    ),
-                    (
-                        <MenuOption
-                            icon={
-                                <Icon icon="facebook" before />
+                                <BrandIcon icon="facebook-f" before />
                             }
                            href={ `http://www.facebook.com/sharer/sharer.php?u=${ escapedUrl }` }
                         />
@@ -154,7 +140,7 @@ const MenuOptions = {
                     (
                         <MenuOption
                             icon={
-                                <Icon icon="twitter" before />
+                                <BrandIcon icon="twitter" before />
                             }
                            href={ `https://twitter.com/share?url=${ escapedUrl }` }
                         />
@@ -162,7 +148,7 @@ const MenuOptions = {
                     (
                         <MenuOption
                             icon={
-                                <Icon icon="pinterest-p" before />
+                                <BrandIcon icon="pinterest-p" before />
                             }
                            href={ `http://pinterest.com/pin/create/link/?url=${ escapedUrl }` }
                         />
@@ -170,7 +156,7 @@ const MenuOptions = {
                     (
                         <MenuOption
                             icon={
-                                <Icon icon="linkedin-square" before />
+                                <BrandIcon icon="linkedin" before />
                             }
                            href={ `https://www.linkedin.com/cws/share?url=${ escapedUrl }` }
                         />
@@ -188,6 +174,8 @@ const MenuOptions = {
 };
 
 const Menu = {
+    controller: function(data) {
+    },
     view(ctrl, { tabs, tab: currentTab, menu, button }) {
         const { menuOpen } = app;
         return (

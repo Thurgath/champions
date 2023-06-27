@@ -1,4 +1,3 @@
-import { values } from 'lodash';
 import * as ABILITY from '../ids/abilities';
 
 class Ability {
@@ -17,4 +16,4 @@ class Ability {
 
 export default Ability;
 export { ABILITY };
-export const ABILITY_VALUES = values(ABILITY);
+export const ABILITY_VALUES = Object.values(ABILITY);

@@ -2,13 +2,13 @@ import './GuidePage.scss';
 import classNames from 'classnames';
 import { effectIcon } from '../../data/effects';
 import { championMap } from '../../data/champions';
-import { CHAMPIONS_TO_FROGSPAWN } from '../../data/champions/frogspawn';
 import Champion from '../../data/model/Champion';
 import synergies from '../../data/synergies';
 import guides from '../../data/guides';
 import router from '../../service/router';
 import lang from '../../service/lang';
 import Icon from '../Icon.jsx';
+import BrandIcon from '../BrandIcon.jsx';
 import ImageIcon from '../ImageIcon.jsx';
 import ChampionHeader from '../Champion/ChampionHeader.jsx';
 import ChampionSection from '../Champion/ChampionSection.jsx';
@@ -36,7 +36,7 @@ const getSynergies = (uid, isFrom) => {
     });
 };
 
-const GuideSynergy ={
+const GuideSynergy = {
     view(ctrl, { championId, effectId, stars, spacing }) {
         const onclickChampion = () => {
             router.setRoute(`/guide/${ championId }`);
@@ -88,10 +88,12 @@ const GuideAuthor = {
         let byline = 'profile-by';
         let href;
         let icon;
+        let iconType = Icon;
         if (type) {
             switch(type) {
                 case 'reddit': {
                     icon = 'reddit-alien';
+                    iconType = BrandIcon
                     if(profile)
                         href = `http://reddit.com/u/${ profile }`;
                     break;
@@ -122,9 +124,7 @@ const GuideAuthor = {
             <div m="GuideAuthor" class="guide-author">
                 { `${ lang.string(byline) } ` }
                 <a href={ href } target="_blank">
-                    { icon && (
-                        <Icon icon={ icon } />
-                    ) }
+                    { icon && m(iconType, { icon: icon }) }
                     { name }
                 </a>
             </div>
@@ -133,6 +133,8 @@ const GuideAuthor = {
 };
 
 const GuidePage = {
+    controller: function(data) {
+    },
     view(ctrl, { uid }) {
         const guide = guides[ uid ];
         const details = [];
@@ -145,19 +147,6 @@ const GuidePage = {
                         stars: 0,
                     }) }
                 />
-            );
-        }
-        let signatureLink;
-        if(CHAMPIONS_TO_FROGSPAWN[ uid ]) {
-            signatureLink = (
-                <a
-                    href={ `http://coc.frogspawn.de/champions/#${ CHAMPIONS_TO_FROGSPAWN[ uid ] }` }
-                    target="_blank"
-                    class="guide-external-link"
-                >
-                    <Icon icon="file-text" before />
-                    { lang.string('details') }
-                </a>
             );
         }
 
@@ -249,7 +238,6 @@ const GuidePage = {
                     description={ guide.signature.description }
                     abilities={ guide.signature.abilities }
                     note={ guide.signature.note }
-                    raw={ signatureLink }
                 />
             );
         }
@@ -259,7 +247,6 @@ const GuidePage = {
                     title={ lang.string('signature') }
                     name={ lang.string(`champion-signature-${uid}-name`, null) }
                     help={ lang.string(`champion-signature-${uid}-description`, null) }
-                    raw={ signatureLink }
                 />
             );
         }

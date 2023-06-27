@@ -12,27 +12,45 @@ import TeamsSettingsPage from '../../src/view/App/TeamsSettingsPage.jsx';
 /* eslint-disable no-unused-vars */
 import m from 'mithril';
 /* eslint-enable no-unused-vars */
-import { renderToDocument as render } from '../../src/util/test';
 import roster from '../../src/service/roster';
+import mq from "mithril-query";
 
 roster.clear();
 
 describe('view/pages/', () => {
-    describe('<GuideEditPage/>', () => it('should render without error', () => expect(render(<GuideEditPage />)).to.exist));
-    describe('<GuidePage/>', () => it('should render without error', () => expect(render(<GuidePage />)).to.exist));
-    describe('<LanguageEditPage/>', () => it('should render without error', () => expect(render(<LanguageEditPage langId="en" />)).to.exist));
-    describe('<RosterAddPage/>', () => {
-        it('should render without error for 1 star', () => expect(render(<RosterAddPage stars={ 1 } />)).to.exist);
-        it('should render without error for 2 star', () => expect(render(<RosterAddPage stars={ 2 } />)).to.exist);
-        it('should render without error for 3 star', () => expect(render(<RosterAddPage stars={ 3 } />)).to.exist);
-        it('should render without error for 4 star', () => expect(render(<RosterAddPage stars={ 4 } />)).to.exist);
-        it('should render without error for 5 star', () => expect(render(<RosterAddPage stars={ 5 } />)).to.exist);
-        it('should render without error for 6 star', () => expect(render(<RosterAddPage stars={ 6 } />)).to.exist);
-    });
-    describe('<RosterEditPage/>', () => it('should render without error', () => expect(render(<RosterEditPage />)).to.exist));
-    describe('<RosterPage/>', () => it('should render without error', () => expect(render(<RosterPage />)).to.exist));
-    describe('<SynergyPage/>', () => it('should render without error', () => expect(render(<SynergyPage />)).to.exist).timeout(20000));
-    describe('<TeamsPage/>', () => it('should render without error', () => expect(render(<TeamsPage />)).to.exist));
-    describe('<TeamsEditPage/>', () => it('should render without error', () => expect(render(<TeamsEditPage />)).to.exist));
-    describe('<TeamsSettingsPage/>', () => it('should render without error', () => expect(render(<TeamsSettingsPage />)).to.exist));
+    describe('<GuideEditPage/>', () => it('should render without error', () => {
+        expect(mq(GuideEditPage, {})).to.exist;
+    }));
+    describe('<GuidePage/>', () => it('should render without error', () => {
+        expect(mq(GuidePage, {})).to.exist;
+    }));
+    describe('<LanguageEditPage/>', () => it('should render without error', () => {
+        expect(mq(LanguageEditPage, {langId: "en"})).to.exist;
+    }));
+    describe('<RosterAddPage/>', () => it('should render without error', () => {
+        it('should render without error for 1 star', () => expect(mq(RosterAddPage, {stars: 1})).to.exist);
+        it('should render without error for 2 star', () => expect(mq(RosterAddPage, {stars: 2})).to.exist);
+        it('should render without error for 3 star', () => expect(mq(RosterAddPage, {stars: 3})).to.exist);
+        it('should render without error for 4 star', () => expect(mq(RosterAddPage, {stars: 4})).to.exist);
+        it('should render without error for 5 star', () => expect(mq(RosterAddPage, {stars: 5})).to.exist);
+        it('should render without error for 6 star', () => expect(mq(RosterAddPage, {stars: 6})).to.exist);
+    }));
+    describe('<RosterEditPage/>', () => it('should render without error', () => {
+        expect(mq(RosterEditPage, {})).to.exist;
+    }));
+    describe('<RosterPage/>', () => it('should render without error', () => {
+        expect(mq(RosterPage, {})).to.exist;
+    }));
+    describe('<SynergyPage/>', () => it('should render without error', () => {
+        expect(mq(SynergyPage, {})).to.exist;
+    }));
+    describe('<TeamsPage/>', () => it('should render without error', () => {
+        expect(mq(TeamsPage, {})).to.exist;
+    }));
+    describe('<TeamsEditPage/>', () => it('should render without error', () => {
+        expect(mq(TeamsEditPage, {})).to.exist;
+    }));
+    describe('<TeamsSettingsPage/>', () => it('should render without error', () => {
+        expect(mq(TeamsSettingsPage, {})).to.exist;
+    }));
 });

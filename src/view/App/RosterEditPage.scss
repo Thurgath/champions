@@ -23,7 +23,7 @@
                 width: 48px;
             }
 
-            .icon {
+            .font-icon {
                 color: #600;
                 margin-left: 8px;
                 margin-top: 8px;
@@ -53,7 +53,7 @@
         }
 
         .champion-field-select {
-            .icon {
+            .font-icon {
                 position: absolute;
                 top: 16px;
                 right: 16px;
@@ -63,7 +63,7 @@
 
             &:hover {
 
-                .icon {
+                .font-icon {
                     color: #000;
                     text-shadow: 0 1px 0 #fff;
                 }
@@ -71,7 +71,7 @@
 
             &.disabled {
 
-                .icon {
+                .font-icon {
                     color: #ccc;
                     text-shadow: 0 1px 0 #fff;
                 }

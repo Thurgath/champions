@@ -1,5 +1,6 @@
 import './RosterAddPage.scss';
 import classNames from 'classnames';
+import { STAR_RANK_LEVEL } from '../../data/model/Champion';
 import roster from '../../service/roster';
 import router from '../../service/router';
 import lang from '../../service/lang';
@@ -11,12 +12,14 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const RosterAddPage = {
+    controller: function(data) {
+    },
     view(ctrl, { stars }) {
         const champions = roster.available(stars);
         return (
             <div m="RosterAddPage" class="roster-add">
                 <div class="add-stars">
-                {[ 1, 2, 3, 4, 5, 6 ].map((star) => (
+                { Object.keys(STAR_RANK_LEVEL).map((star) => (
                     <button
                         class={ classNames('add-stars-button', { 'add-stars-button--selected': stars === star }) }
                         onclick={ () => {

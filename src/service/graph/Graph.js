@@ -135,7 +135,7 @@ class Graph {
 
 function isEmpty(obj) {
     for (const k in obj) {
-        if (obj.hasOwnProperty(k)) {
+        if (Object.property.hasOwnProperty.call(obj, k)) {
             return false;
         }
     }

@@ -22,23 +22,23 @@
     }
 
     .champion-grade--value-a {
-        color: darken($color-rating-5, 33%);
+        color: shade($color-rating-5, 33%);
     }
 
     .champion-grade--value-b {
-        color: darken($color-rating-4, 33%);
+        color: shade($color-rating-4, 33%);
     }
 
     .champion-grade--value-c {
-        color: darken($color-rating-3, 33%);
+        color: shade($color-rating-3, 33%);
     }
 
     .champion-grade--value-d {
-        color: darken($color-rating-2, 33%);
+        color: shade($color-rating-2, 33%);
     }
 
     .champion-grade--value-e,
     .champion-grade--value-f {
-        color: darken($color-rating-1, 33%);
+        color: shade($color-rating-1, 33%);
     }
 }

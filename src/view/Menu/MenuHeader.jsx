@@ -4,6 +4,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const MenuHeader = {
+    controller: function(data) {
+    },
     view(ctrl, { title, icon }) {
         return (
             <div m="MenuHeader" class="menu-header">

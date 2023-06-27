@@ -11,7 +11,7 @@ function addRawHTML(element, isInitialized) {
     if(!isInitialized) {
         element.innerHTML = `
             <span class="champion-icon champion-icon-app-icon"></span>
-            <span class="fa fa-asterisk"></span>
+            <span class="fa-solid fa-asterisk"></span>
             <iframe id="io-exporter"></iframe>
             <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
                 <symbol id="portrait-placeholder">
@@ -26,6 +26,8 @@ function addRawHTML(element, isInitialized) {
 }
 
 const App = {
+    controller: function(data) {
+    },
     view() {
         const { tabs, tab, pages, menu, button } = app;
         const { progress } = teams;

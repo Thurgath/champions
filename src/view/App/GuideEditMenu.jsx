@@ -12,6 +12,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const GuideEditMenu = {
+    controller: function(data) {
+    },
     view(ctrl, { uid }) {
         const options = [];
         options.push(
@@ -57,7 +59,7 @@ const GuideEditMenu = {
         options.push(
             <MenuOption
                 icon={(
-                    <Icon icon="floppy-o" before />
+                    <Icon icon="floppy-disk" before />
                 )}
                 title="export-json"
                 download={ filename }

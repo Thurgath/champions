@@ -1,13 +1,17 @@
-.icon {
+// Node sass does not work with use
+// @use 'font-awesome.scss' as *;
+@import './font-awesome';
+
+.font-icon {
     display: inline-flex;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 
-    &.icon--before {
+    &.font-icon--before {
         margin-right: .3em;
     }
 
-    &.icon--after {
+    &.font-icon--after {
         margin-left: .3em;
     }
 }

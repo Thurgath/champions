@@ -15,6 +15,8 @@ function isActivePreset(preset, currentValues) {
 }
 
 const TeamsSettingsMenu = {
+    controller: function(data) {
+    },
     view() {
         const options = [];
         options.push(

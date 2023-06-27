@@ -11,6 +11,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const ChampionSection = {
+    controller: function(data) {
+    },
     view(ctrl, {
             title, icon, name, help, description, note, heavy,
             ranges, damagetypes, abilities,

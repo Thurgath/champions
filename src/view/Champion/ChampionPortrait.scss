@@ -6,8 +6,8 @@
     float: left;
     position: relative;
     height: 0;
-    width: 16.66666%;
-    padding-bottom: 16.66666%;
+    width: 16.6667%;
+    padding-bottom: 16.6667%;
 
     &.champion--cosmic {
         color: $color-cosmic;
@@ -35,6 +35,34 @@
 
     &.champion--universal {
         color: $color-universal;
+    }
+
+    .portrait {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .portrait-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        opacity: 1;
+        transition: opacity .35s;
+
+        &.portrait-image--hidden {
+            opacity: .001;
+        }
+
+        & > img,
+        & > svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &.champion--null {
@@ -76,51 +104,20 @@
                     perspective: 200px;
                 }
 
-                .portrait-image,
                 .portrait-image {
                     transform: rotateX(0);
                     transform-origin: 50% 100%;
                     transition: transform 0.25s;
                 }
 
-                &:hover .portrait-image,
                 &:hover .portrait-image {
                     transform: rotateX(10deg);
                 }
 
-                &:active .portrait-image,
                 &:active .portrait-image {
                     transform: rotateX(20deg);
                 }
             }
-        }
-    }
-
-    .portrait {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-    .portrait-image {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        opacity: 1;
-        transition: opacity .35s;
-
-        &.portrait-image--hidden {
-            opacity: .001;
-        }
-
-        & > img,
-        & > svg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
         }
     }
 
@@ -131,10 +128,10 @@
         width: 100%;
         overflow: hidden;
         min-height: 14px;
-        background: rgba(0, 0, 0, .5);
+        background: rgba(#000, .50);
         box-sizing: border-box;
         border-bottom: solid 10px;
-        box-shadow: 0 8px 0 -4px  rgba(0, 0, 0, .25);
+        box-shadow: 0 8px 0 -4px rgba(0, 0, 0, .25);
 
         .title-field {
             @extend .font--title;
@@ -154,10 +151,12 @@
                 font-size: .75em;
                 padding: 4px 2px;
             }
+
             @media (max-width: 800px) and (min-width: 355px) {
                 font-size: .8em;
                 padding: 6px 3px;
             }
+
             @media (min-width: 800px) {
                 font-size: 1em;
                 padding: 8px 4px;
@@ -182,6 +181,7 @@
         @media (max-width: 355px) {
             border-bottom-width: 6px;
         }
+
         @media (max-width: 800px) and (min-width: 355px) {
             border-bottom-width: 8px;
         }
@@ -289,9 +289,11 @@
         @media (max-width: 355px) {
             bottom: -18%;
         }
+
         @media (max-width: 800px) and (min-width: 355px) {
             bottom: -16%;
         }
+
         @media (min-width: 800px) {
             bottom: -15%;
         }
@@ -304,33 +306,40 @@
     }
 
     @media (max-width: 500px) {
-        width: 33.333333333333333%;
-        padding-bottom: 33.33333333333333333%;
+        width: 33.3333%;
+        padding-bottom: 33.3333%;
     }
+
     @media (min-width: 500px) and (max-width: 700px) {
         width: 25%;
         padding-bottom: 25%;
     }
+
     @media (min-width: 700px) and (max-width: 900px) {
         width: 20%;
         padding-bottom: 20%;
     }
+
     @media (min-width: 900px) and (max-width: 1100px) {
-        width: 16.6666666%;
-        padding-bottom: 16.6666666%;
+        width: 16.6667%;
+        padding-bottom: 16.6667%;
     }
+
     @media (min-width: 1100px) and (max-width: 1300px) {
-        width: 14.285714285714286%;
-        padding-bottom: 14.285714285714286%;
+        width: 14.2857%;
+        padding-bottom: 14.2857%;
     }
+
     @media (min-width: 1300px) and (max-width: 1500px) {
         width: 12.5%;
         padding-bottom: 12.5%;
     }
+
     @media (min-width: 1500px) and (max-width: 1700px) {
-        width: 11.11111111111111%;
-        padding-bottom: 11.11111111111111%;
+        width: 11.1111%;
+        padding-bottom: 11.1111%;
     }
+
     @media (min-width: 1700px) {
         width: 10%;
         padding-bottom: 10%;

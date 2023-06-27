@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import build from './build';
 
 const PROGRESS_DEBOUNCE_TIME = 300;
@@ -41,5 +40,3 @@ onmessage = function(event) {
         }
     }
 };
-
-export default {};

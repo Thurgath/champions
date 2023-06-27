@@ -1,6 +1,6 @@
 import './ChampionHeader.scss';
 import classNames from 'classnames';
-import Icon from '../Icon.jsx';
+import ClassTypeIcon from '../ClassTypeIcon.jsx';
 import ImageIcon from '../ImageIcon.jsx';
 import { getImage, IMAGE_STAR, IMAGE_STAR_AWAKENED } from '../../images';
 import lang from '../../service/lang';
@@ -9,6 +9,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const ChampionHeader = {
+    controller: function(data) {
+    },
     view(ctrl, { champion }) {
         const { uid, stars, typeId, awakened } = champion.attr;
         const name = lang.string(`champion-${ uid }-name`);
@@ -60,7 +62,7 @@ const ChampionHeader = {
                 />
                 <div class="champion-header-name">
                     <span class={ classNames('champion-header-name-type', `champion--${ typeId }`) }>
-                        <Icon class="type" icon={ `type-${ typeId }` } before />
+                        <ClassTypeIcon class="type" icon={ `type-${ typeId }` } before />
                     </span>
                     { name }
                 </div>

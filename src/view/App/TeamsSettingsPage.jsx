@@ -4,6 +4,7 @@ import effects, { effectIcon } from '../../data/effects';
 import teams, { save } from '../../service/teams';
 import lang from '../../service/lang';
 import Icon from '../Icon.jsx';
+import ImageIcon from '../ImageIcon.jsx';
 import { requestRedraw } from '../../util/animation';
 /* eslint-disable no-unused-vars */
 import m from 'mithril';
@@ -47,7 +48,8 @@ const Checkbox = {
                     requestRedraw(10);
                 }}
             >
-                <Icon icon={ (object[ field ])? 'check-square-o': 'square-o' } before />
+                <ImageIcon src={ 'icons/'
+                + ((object[ field ])? 'square-check.svg': 'square.svg') } before />
                 { lang.string((object[ field ])? 'enabled': 'disabled') }
             </div>
         );
@@ -89,6 +91,8 @@ const Field = {
 };
 
 const TeamsSettingsPage = {
+    controller: function(data) {
+    },
     view() {
         return (
             <div m="TeamsSettingsPage" class="teams-settings">

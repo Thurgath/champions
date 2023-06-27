@@ -10,14 +10,14 @@ import Message from '../../src/view/Message.jsx';
 /* eslint-disable no-unused-vars */
 import m from 'mithril';
 /* eslint-enable no-unused-vars */
-import { renderToDocument as render } from '../../src/util/test';
 import roster from '../../src/service/roster';
+import mq from 'mithril-query';
 
 roster.clear();
 
 describe('view/', () => {
 
-    describe('<App/>', () => {
+    describe('<App/>', () => it('should render without error', () => {
         app.edit = true;
         app.tab = 'champions';
         app.tabs = [
@@ -36,29 +36,31 @@ describe('view/', () => {
             },
         };
         app.button = null;
-
-        it('should render without error', () => expect(render(<App />)).to.exist);
-    });
-
-    describe('<Slides/>', () => {
+        expect(mq(App, {})).to.exist;
+    }));
+    describe('<Slides/>', () => it('should render without error', () => {
         const slides = [];
         const current = 0;
-
-        it('should render without error', () => expect(render(<Slides { ...{ slides, current } } />)).to.exist);
-    });
-
-    describe('<Menu/>', () => {
+        expect(mq(Slides, { ...{ slides, current } })).to.exist;
+    }));
+    describe('<Menu/>', () => it('should render without error', () => {
         const { tabs, tab, menu, button } = app;
-        it('should render without error', () => expect(render(<Menu { ...{ tabs, tab, menu, button } } />)).to.exist);
-    });
-    describe('<MenuHeader/>', () => it('should render without error', () => expect(render(<MenuHeader />)).to.exist));
-    describe('<MenuOption/>', () => it('should render without error', () => expect(render(<MenuOption />)).to.exist));
-    describe('<MenuOptionGroup/>', () => {
+        expect(mq(Menu, { ...{ tabs, tab, menu, button } })).to.exist;
+    }));
+    describe('<MenuHeader/>', () => it('should render without error', () => {
+        expect(mq(MenuHeader, {})).to.exist;
+    }));
+    describe('<MenuOption/>', () => it('should render without error', () => {
+        expect(mq(MenuOption, {})).to.exist;
+    }));
+    describe('<MenuOptionGroup/>', () => it('should render without error', () => {
         const options = [];
-
-        it('should render without error', () => expect(render(<MenuOptionGroup { ...{ options } } />)).to.exist);
-    });
-    describe('<MenuSection/>', () => it('should render without error', () => expect(render(<MenuSection />)).to.exist));
-
-    describe('<Message/>', () => it('should render without error', () => expect(render(<Message />)).to.exist));
+        expect(mq(MenuOptionGroup, { ...{ options } })).to.exist;
+    }));
+    describe('<MenuSection/>', () => it('should render without error', () => {
+        expect(mq(MenuSection, {})).to.exist;
+    }));
+    describe('<Message/>', () => it('should render without error', () => {
+        expect(mq(Message, {})).to.exist;
+    }));
 });

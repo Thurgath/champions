@@ -17,16 +17,19 @@
     @extend .colors--primary;
     @extend .colors--primary-text;
 }
+
 .button--success {
     @extend .button--default;
     @extend .colors--success;
     @extend .colors--success-text;
 }
+
 .button--error {
     @extend .button--default;
     @extend .colors--error;
     @extend .colors--error-text;
 }
+
 .button--enabled {
     cursor: pointer;
 
@@ -45,6 +48,7 @@
         text-shadow: 0 1px 0 #fff;
     }
 }
+
 .button--disabled {
     &:focus,
     &:hover {

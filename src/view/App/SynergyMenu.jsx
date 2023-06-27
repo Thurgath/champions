@@ -1,6 +1,7 @@
 import { EFFECT_VALUES } from '../../data/model/Effect';
 import { effectIcon } from '../../data/effects';
 import { getLegend, setLegend, getRoster, setRoster } from '../../service/synergy';
+import { STAR_RANK_LEVEL } from '../../data/model/Champion';
 import MenuHeader from '../Menu/MenuHeader.jsx';
 import MenuSection from '../Menu/MenuSection.jsx';
 import MenuOption from '../Menu/MenuOption.jsx';
@@ -12,6 +13,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const SynergyMenu = {
+    controller: function(data) {
+    },
     view(ctrl, { stars, effect }) {
         return (
             <div m="SynergyMenu" key={ `teams-menu-${ stars }` }>
@@ -40,7 +43,7 @@ const SynergyMenu = {
                 />
                 <MenuSection title="show-by" />
                 <MenuOptionGroup options={
-                    [ '1', '2', '3', '4', '5', '6' ].map((star) => (
+                    Object.keys(STAR_RANK_LEVEL).map((star) => (
                         <MenuOption
                             raw={ `${ star }★` }
                             selected={ stars === star }

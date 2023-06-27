@@ -1,4 +1,3 @@
-import { values } from 'lodash';
 import * as EFFECT from '../ids/effects';
 
 class Effect {
@@ -21,4 +20,4 @@ class Effect {
 
 export default Effect;
 export { EFFECT };
-export const EFFECT_VALUES = values(EFFECT);
+export const EFFECT_VALUES = Object.values(EFFECT);

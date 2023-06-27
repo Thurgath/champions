@@ -38,7 +38,7 @@ $menu-transition-time: .25s;
                     &:focus,
                     &:hover {
                         > .menu-option--label {
-                            background: lighten(#38c, 15%);
+                            background: tint(#38c, 35%);
                             color: #000;
                             text-shadow: 0 1px 0 #fff;
                         }
@@ -124,11 +124,11 @@ $menu-transition-time: .25s;
         .menu-section {
             line-height: 1.3em;
             padding: .5em .75em;
-            background: darken(#38c, 5%);
+            background: shade(#38c, 1%);
         }
 
         .menu-header {
-            background: lighten(#38c, 15%);
+            background: tint(#38c, 35%);
             color: #000;
             text-shadow: 0 1px 0 #000, 0 2px 0 #fff;
         }
@@ -144,7 +144,7 @@ $menu-transition-time: .25s;
         opacity: .0001;
         transition: opacity $menu-transition-time;
     }
-
+    /* stylelint-disable no-descending-specificity */
     &.menu--open {
 
         .menu-button {
@@ -204,6 +204,7 @@ $menu-transition-time: .25s;
             opacity: .5;
         }
     }
+    /* stylelint-enable no-descending-specificity */
 
     @media print {
         display: none;

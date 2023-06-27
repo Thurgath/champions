@@ -1,5 +1,5 @@
 {
-    "parser": "babel-eslint",
+    "parser": "@babel/eslint-parser",
     "rules": {
         "linebreak-style": 0,
         "indent": [
@@ -172,13 +172,7 @@
         ],
         "import/named": 2,
         "import/namespace": 2,
-        "import/default": [
-            2,
-            {
-                "commonjs": true,
-                "amd": true
-            }
-        ],
+        "import/default": 2,
         "eol-last": 2
     },
     "globals": {
@@ -188,8 +182,14 @@
     "settings": {
         "import/extensions": [
             ".js",
-            ".jsx"
+            ".jsx",
+            ".mjs"
         ],
+        "import/resolver": {
+            "node": {
+                "extensions": [".mjs", ".js", ".jsx"]
+            }
+        },
         "import/ignore": [
             "node_modules"
         ]
@@ -199,7 +199,8 @@
         "mocha": true,
         "browser": true,
         "amd": true,
-        "commonjs": true
+        "commonjs": true,
+        "node": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {

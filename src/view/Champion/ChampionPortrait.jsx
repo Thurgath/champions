@@ -27,6 +27,8 @@ function addSVG(element, isInitialized) {
 }
 
 const ChampionPortrait = {
+    controller: function(data) {
+    },
     view(ctrl, {
         champion, events, selected, neighbor, editing, effects,
         showBadges = true, showPi = true, scalePi = 1,

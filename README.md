@@ -20,6 +20,13 @@
 If you are developing in a Windows environment, make sure to set your line endings preferences
 to [autocrlf](https://help.github.com/articles/dealing-with-line-endings/).
 
+##### Mac
+
+On some Macs there could be a problem with node-sass. If you get a problem with "" when compiling during build
+you probably need to rebuild node-sass as described here, https://stackoverflow.com/questions/45251645/error-enoent-no-such-file-or-directory-scandir/53669612#53669612.
+node node_modules/node-sass/scripts/install.js
+npm rebuild node-sass
+
 ### Local Development
 
   Run a webpack-dev-server and navigate to [localhost:8080](http://localhost:8080) test changes.

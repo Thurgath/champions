@@ -1,13 +1,11 @@
-import { getTypeColor } from '../service/graph';
 import classNames from 'classnames';
+import SvgIcon from './SvgIcon.jsx';
 /* eslint-disable no-unused-vars */
 import m from 'mithril';
 /* eslint-enable no-unused-vars */
-import '../icons.font';
-
 import './Icon.scss';
 
-const championIcons = require
+const svgIcons = require
     .context('../icons', true, /\.svg$/)
     .keys()
     .map((filename) => filename.replace(/.*\//g, '').replace(/\.svg$/, ''))
@@ -16,27 +14,26 @@ const championIcons = require
         return map;
     }, {});
 
+function isSvgIcon(icon) {
+    return svgIcons[ icon ] !== undefined;
+}
+
 const Icon = {
-    view(ctrl, { icon, spin, type, before, after }) {
-        const isSpinning = spin && (typeof spin === 'function')? spin(): spin;
-        let style = '';
-        if(type) {
-            style = `border-bottom: solid 3px ${ getTypeColor(type) }`;
+    view(ctrl, { icon, spin, before, after }) {
+        if (isSvgIcon(icon)) {
+            return <SvgIcon icon={ icon } before={ before } after={ after}  />
         }
-        const isChampionIcon = championIcons[ icon ] !== undefined;
+        const isSpinning = spin && (typeof spin === 'function')? spin(): spin;
 
         return icon && (
             <i
                 m="Icon"
-                style={ style }
-                class={ classNames('icon', {
-                    [ 'fa' ]: !isChampionIcon,
-                    [ `fa-${ icon }` ]: !isChampionIcon,
-                    [ 'fa-spin' ]: !isChampionIcon && isSpinning,
-                    [ 'champion-icon' ]: isChampionIcon,
-                    [ `champion-icon-${ icon }` ]: isChampionIcon,
-                    'icon--before': before,
-                    'icon--after': after,
+                class={ classNames(
+                    'font-icon fa-solid',
+                    `fa-${ icon }`,
+                    {[ 'fa-spin' ]: isSpinning,
+                    'font-icon--before': before,
+                    'font-icon--after': after,
                 }) }
             />
         );

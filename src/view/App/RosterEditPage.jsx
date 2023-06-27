@@ -64,6 +64,8 @@ const NumberInput = {
 };
 
 const RosterEditPage = {
+    controller: function(data) {
+    },
     view(ctrl, { uid, stars }) {
         const champion = roster.get(uid, stars);
         const scalePi = roster.getScale();

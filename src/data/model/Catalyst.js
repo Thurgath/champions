@@ -1,9 +1,9 @@
 import * as CATALYST from '../ids/catalyst';
-import { values } from 'lodash';
 
 export const CATALYSTS = {
     1: {
         1: [
+            { type: CATALYST.BASIC, tier: 1, amount: 1 },
             { type: CATALYST.GOLD, amount: 2817 },
         ],
     },
@@ -81,11 +81,11 @@ export const CATALYSTS = {
             { type: CATALYST.GOLD, amount: 407056 },
         ],
         4: [
-            { type: CATALYST.BASIC, tier: 5, amount: 4 },
+            { type: CATALYST.BASIC, tier: 5, amount: 2 },
             { type: CATALYST.CLASS, tier: 4, amount: 6 },
-            { type: CATALYST.ALPHA, tier: 1, amount: 5 },
+            { type: CATALYST.ALPHA, tier: 1, amount: 6 },
             { type: CATALYST.ALPHA, tier: 2, amount: 6 },
-            { type: CATALYST.GOLD, amount: 524738 },
+            { type: CATALYST.GOLD, amount: 542742 },
         ],
     },
     6: {
@@ -108,17 +108,34 @@ export const CATALYSTS = {
             { type: CATALYST.ALPHA, tier: 3, amount: 3 },
             { type: CATALYST.CLASS, tier: 5, amount: 2 },
             { type: CATALYST.BASIC, tier: 5, amount: 5 },
-            { type: CATALYST.GOLD, amount: 999999 },
+            { type: CATALYST.GOLD, amount: 811399 },
         ],
         4: [
-            { type: CATALYST.BASIC, tier: 5, amount: 4 },
-            { type: CATALYST.CLASS, tier: 4, amount: 6 },
-            { type: CATALYST.ALPHA, tier: 1, amount: 5 },
-            { type: CATALYST.ALPHA, tier: 2, amount: 6 },
-            { type: CATALYST.GOLD, amount: 524738 },
+            { type: CATALYST.BASIC, tier: 6, amount: 6 },
+            { type: CATALYST.CLASS, tier: 6, amount: 3 },
+            { type: CATALYST.ALPHA, tier: 3, amount: 6 },
+            { type: CATALYST.CLASS, tier: 5, amount: 3 },
+            { type: CATALYST.GOLD, amount: 933109 },
+        ],
+    },
+    7: {
+        1: [
+            { type: CATALYST.BASIC, tier: 6, amount: 7 },
+            { type: CATALYST.CLASS, tier: 6, amount: 4 },
+            { type: CATALYST.ALPHA, tier: 3, amount: 7 },
+            { type: CATALYST.CLASS, tier: 5, amount: 4 },
+            { type: CATALYST.GOLD, amount: 1054819 },
+        ],
+        2: [
+            { type: CATALYST.ALPHA, tier: 4, amount: 3 },
+            { type: CATALYST.CLASS, tier: 6, amount: 5 },
+            { type: CATALYST.BASIC, tier: 6, amount: 8 },
+            { type: CATALYST.ALPHA, tier: 3, amount: 8 },
+            { type: CATALYST.CLASS, tier: 5, amount: 5 },
+            { type: CATALYST.GOLD, amount: 1213041 },
         ],
     },
 };
 
 export { CATALYST };
-export const CATALYST_VALUES = values(CATALYST);
+export const CATALYST_VALUES = Object.values(CATALYST);

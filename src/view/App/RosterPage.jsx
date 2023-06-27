@@ -18,6 +18,8 @@ const tab = {
 };
 
 const RosterPage = {
+    controller: function(data) {
+    },
     view() {
         const total = roster.all().length;
         const champions = roster.filter((champion) => roster.getFilter(champion.attr.stars) && roster.getFilter(champion.attr.typeId));

@@ -11,6 +11,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const GuideMenu = {
+    controller: function(data) {
+    },
     view(ctrl, { uid }) {
         const currentUid = uid;
         const options = [];

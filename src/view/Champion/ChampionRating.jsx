@@ -4,6 +4,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const ChampionRating = {
+    controller: function(data) {
+    },
     view(ctrl, { rating }) {
         return (
             <div

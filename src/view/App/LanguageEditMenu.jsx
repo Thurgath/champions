@@ -8,6 +8,8 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 const LanguageEditMenu = {
+    controller: function(data) {
+    },
     view(ctrl, { langId }) {
         const { values } = getLanguage(langId);
         const options = [];
@@ -18,7 +20,7 @@ const LanguageEditMenu = {
         options.push(
             <MenuOption
                 icon={(
-                        <Icon icon="floppy-o" before />
+                        <Icon icon="floppy-disk" before />
                     )}
                 title="export-json"
                 download={ filename }

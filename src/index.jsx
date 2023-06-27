@@ -1,4 +1,3 @@
-import 'font-awesome-webpack';
 import './index.css';
 import { notify } from './util/notification';
 import { EFFECT_VALUES } from './data/model/Effect';
@@ -292,7 +291,7 @@ router.on('/teams/edit/?', () => {
         },
     ];
     app.menu = (
-        <TeamsMenu edit />
+        <TeamsMenu editing={true} />
     );
     app.button = {
         icon: 'reply',
@@ -319,7 +318,7 @@ router.on('/teams/?', () => {
         />
     );
     app.menu = (
-        <TeamsMenu />
+        <TeamsMenu editing={false}/>
     );
     app.button = {
         icon: 'sliders',
