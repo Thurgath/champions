@@ -1,9 +1,9 @@
-import ChampionName from './champion-name.mjs';
+import ChampionName from '../model/champion-name.mjs';
 
 class ChampionSpotlightParser {
 
     constructor(htmlDataAsSelector) {
-        this.htmlDataAsSelector = htmlDataAsSelector;
+        this._htmlDataAsSelector = htmlDataAsSelector;
     }
 
     static get #STAR_SEARCH_STRING() {
@@ -11,7 +11,7 @@ class ChampionSpotlightParser {
     }
 
     #evaluate(element) {
-        return this.htmlDataAsSelector(element);
+        return this._htmlDataAsSelector(element);
     }
 
     #asStarLevel(level) {
@@ -37,6 +37,10 @@ class ChampionSpotlightParser {
             this.#parseClassTypeAndAbilities();
         }
         return this.classType.toUpperCase();
+    }
+    
+    getClassTypeAsConstant() {
+        return `TYPE.${this.getClassType()}`
     }
 
     getAbilities() {

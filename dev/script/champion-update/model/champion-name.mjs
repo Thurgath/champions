@@ -1,7 +1,8 @@
 class ChampionName {
 
-    constructor(fullName) {
+    constructor(fullName, previousChampionName) {
         this._fullName = fullName;
+        this._previousChampionName = previousChampionName;
     }
 
     replaceAllUnwantedCharacters() {
@@ -14,11 +15,22 @@ class ChampionName {
     }
 
     get upperCase() {
+        if (this._previousChampionName) {
+            return this._previousChampionName.upperCase;
+        }
         return this.replaceAllUnwantedCharacters().toUpperCase();
     }
 
     get lowerCase() {
+        if (this._previousChampionName) {
+            return this._previousChampionName.lowerCase;
+        }
         return this.replaceAllUnwantedCharacters().toLowerCase();
+    }
+    
+    withPreviousFrom(previousChampionName) {
+        this._previousChampionName = previousChampionName;
+        return this;
     }
 }
 

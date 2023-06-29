@@ -1,16 +1,16 @@
-import { readHtmlSelectorFrom } from '../../test-champion-update-setup.mjs';
-import ChampionSpotlightsPageParser from '../../../dev/script/champion-update/champion-spotlights-page-parser.mjs';
+import { readHtmlSelectorFrom } from '../../../test-champion-update-setup.mjs';
+import ChampionSpotlightsPageParser from '../../../../dev/script/champion-update/parser/champion-spotlights-page-parser.mjs';
 
 describe('ChampionSpotlightsPageParser', () => {
 
     const realSpotlightsUrl = 'https://playcontestofchampions.com/news/category/champion-spotlights/';
-    const testSpotlightsUrl = new URL('../../../test-data/news/category/champion-spotlights/', import.meta.url).toString();
+    const testSpotlightsUrl = new URL('../../../../test-data/news/category/champion-spotlights/', import.meta.url).toString();
 
     function getExpectedUrlsFor(spotlightsUrl, expectedSpotlightUrls) {
         let baseUrl = new URL(spotlightsUrl).origin;
         let urlSuffix = '';
         if (spotlightsUrl.startsWith('file')) {
-            baseUrl = new URL('../../../test/test-data', import.meta.url).toString();
+            baseUrl = new URL('../../../../test/test-data', import.meta.url).toString();
             urlSuffix = 'index.html';
         }
         return expectedSpotlightUrls.map((url) => baseUrl + url + urlSuffix);
@@ -23,13 +23,14 @@ describe('ChampionSpotlightsPageParser', () => {
         expect(parser.getAllSpotlightUrls()).to.include.ordered.members(getExpectedUrlsFor(spotlightsUrl, pageOneSpotlightUrls));
     }
 
-    describe('.getSpotlightUrls', () => it('should return the expected urls for real url', () => {
-        expectedSpotlightUrlsFor(realSpotlightsUrl);
-    }));
-
-    describe('.getSpotlightUrls', () => it('should return the expected urls for test url', () => {
-        expectedSpotlightUrlsFor(testSpotlightsUrl);
-    }));
+    describe('.getSpotlightUrls', () => {
+        it('should return the expected urls for real url', () => {
+            expectedSpotlightUrlsFor(realSpotlightsUrl);
+        });
+        it('should return the expected urls for test url', () => {
+            expectedSpotlightUrlsFor(testSpotlightsUrl);
+        });
+    });
 
     const pageOneSpotlightUrls = [ '/news/lady-deathstrike/',
         '/news/dani-moonstar/',

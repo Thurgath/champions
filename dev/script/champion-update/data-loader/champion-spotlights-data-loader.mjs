@@ -1,24 +1,23 @@
 import UrlDataLoader from './url-data-loader.mjs';
-import ChampionSpotlightsPageParser from './champion-spotlights-page-parser.mjs';
+import ChampionSpotlightsPageParser from '../parser/champion-spotlights-page-parser.mjs';
 
 class ChampionSpotlightsDataLoader {
     // /page/1/
-    #paginationRegEx = /\/page\/(\d+)/;
-    constructor(url, timeout, saveTestData, championUpdateStatus) {
+    #paginationRegExp = /\/page\/(\d+)/;
+    constructor(url, championUpdateStatus, options) {
         this._url = url;
-        this._timeout = timeout;
-        this._saveTestData = saveTestData;
         this._championUpdateStatus = championUpdateStatus;
+        this._options = options;
     }
 
     #getPaginatedUrl(url) {
-        const nextPageNumber = Number(url.match(this.#paginationRegEx)[ 1 ]) + 1;
-        return url.replace(this.#paginationRegEx, `/page/${nextPageNumber}`);
+        const nextPageNumber = Number(url.match(this.#paginationRegExp)[ 1 ]) + 1;
+        return url.replace(this.#paginationRegExp, `/page/${nextPageNumber}`);
     }
 
     async #loadSpotlightUrlsFor(spotlightsPageUrl) {
-        const urlDataLoader = new UrlDataLoader(spotlightsPageUrl, this._timeout);
-        const htmlDataSelector = await urlDataLoader.load(this._saveTestData);
+        const urlDataLoader = new UrlDataLoader(spotlightsPageUrl, this._options);
+        const htmlDataSelector = await urlDataLoader.load();
         const parser = new ChampionSpotlightsPageParser(htmlDataSelector, spotlightsPageUrl);
         return parser.getAllSpotlightUrls();
     }

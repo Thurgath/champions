@@ -3,31 +3,30 @@ import cheerio from 'cheerio';
 import fs from 'fs';
 
 class UrlDataLoader {
-    #pageLoadTimeout = 2000;
-    constructor(urlString, timeout) {
-        this.urlString = urlString;
-        this.timeout = timeout;
+    constructor(urlString, options) {
+        this._urlString = urlString;
+        this._options = options;
     }
 
-    async load(saveTestData) {
+    async load() {
         /* eslint-disable no-console */
-        console.log('Reading url: ', this.urlString);
+        console.log('Reading url: ', this._urlString);
 
         const browser = await puppeteer.launch( { headless: 'true' } );
         const page = await browser.newPage();
-        page.setDefaultTimeout(this.timeout);
-        await page.goto(this.urlString);
-        await page.waitForTimeout(this.#pageLoadTimeout);
+        page.setDefaultTimeout(this._options.readTimeout);
+        await page.goto(this._urlString);
+        await page.waitForTimeout(this._options.pageLoadTimeout);
         const data = await page.mainFrame().content();
         await browser.close();
 
-        if (saveTestData) {
+        if (this._options.saveTestData) {
             //Local file
-            let directoryName = `${this.urlString.substr(0, this.urlString.lastIndexOf('/') + 1)}`;
-            if (this.urlString.startsWith('http')) {
-                const url = new URL(this.urlString);
+            let directoryName = `${this._urlString.substr(0, this._urlString.lastIndexOf('/') + 1)}`;
+            if (this._urlString.startsWith('http')) {
+                const url = new URL(this._urlString);
                 const testDataUrl = new URL('../../../test/test-data', import.meta.url).toString();
-                directoryName = this.urlString.replace(url.origin, testDataUrl);
+                directoryName = this._urlString.replace(url.origin, testDataUrl);
             }
             try {
                 console.log('Creating directory: ', new URL(directoryName).toString());
@@ -38,7 +37,7 @@ class UrlDataLoader {
                     throw err;
                 }
             }
-            const fileNameAsUrl = new URL(`${directoryName}index.html`);
+            const fileNameAsUrl = new URL(`${directoryName}${this._options.fileNameForTestData}`);
             console.log('Writing file: ', fileNameAsUrl.toString());
             fs.writeFileSync(fileNameAsUrl, data, { flag : 'w' }, () => {});
         }

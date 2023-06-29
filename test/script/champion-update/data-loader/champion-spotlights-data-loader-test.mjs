@@ -1,19 +1,18 @@
-import ChampionSpotlightsDataLoader from '../../../dev/script/champion-update/champion-spotlights-data-loader.mjs';
+import ChampionSpotlightsDataLoader from '../../../../dev/script/champion-update/data-loader/champion-spotlights-data-loader.mjs';
+import { getOptions } from '../../../test-champion-update-setup.mjs';
 
 describe('ChampionSpotlightsDataLoader', () => {
 
     function createTestUrlFor(spotlightPath) {
-        return new URL('../../../test/test-data', import.meta.url).toString() + spotlightPath;
+        return new URL('../../../../test/test-data', import.meta.url).toString() + spotlightPath;
     }
 
-    const testDataUrl = new URL('../../../test/test-data/news/category/champion-spotlights/page/1/index.html', import.meta.url);
+    const testDataUrl = new URL('../../../../test/test-data/news/category/champion-spotlights/page/1/index.html', import.meta.url);
     const lastSpotlightOnPageOne = '/news/champion-spotlight-spot/index.html';
     const firstSpotlightOnPageFour = '/news/champion-spotlight-kitty-pryde/index.html';
     const thorSpotlight = createTestUrlFor('/news/champion-spotlight-thor-ragnarok/index.html');
 
     describe('.getAllSpotlightUrls', () => {
-        //Delay before file has been loaded
-        const urlTimeout = 2000;
         const timeout = 20000;
 
         function createMockChampionUpdateStatus(lastSpotlightPath) {
@@ -25,7 +24,7 @@ describe('ChampionSpotlightsDataLoader', () => {
         }
 
         function getUrlPromise(lastSpotlightUrl) {
-            return new ChampionSpotlightsDataLoader(testDataUrl.toString(), urlTimeout, false, createMockChampionUpdateStatus(lastSpotlightUrl)).getAllSpotlightUrls();
+            return new ChampionSpotlightsDataLoader(testDataUrl.toString(), createMockChampionUpdateStatus(lastSpotlightUrl), getOptions()).getAllSpotlightUrls();
         }
 
         it('should return all spotlights data', () => {

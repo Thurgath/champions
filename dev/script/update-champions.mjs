@@ -7,15 +7,17 @@ const ALL_MCOC_SPOTLIGHTS_PAGE_1_TEST = `${BASE_URL_FOR_TEST}/news/category/cham
 const TIMEOUT = 2000;
 
 const testDataMap = new Map([
-    ['championUpdateStatus', 'championUpdateStatusTestLocal.json'],
-    ['championIds', 'champion-ids.js'],
-    ['championStarLevels', 'champion-starlevels.js'],
+    ['championUpdateStatusPath', 'championUpdateStatusTestLocal.json'],
+    ['championIdsPath', 'champion-ids.js'],
+    ['championStarLevelsPath', 'champion-star-levels.js'],
+    ['languageFilePath', 'lang-en.json']
 ]);
 
 const updateMap = new Map([
-    ['championUpdateStatus', '../../dev/script/champion-update/championUpdateStatus.json'],
-    ['championIds', 'ids/champions.js'],
-    ['championStarLevels', 'model/Champions.js'],
+    ['championUpdateStatusPath', '../../dev/script/champion-update/championUpdateStatus.json'],
+    ['championIdsPath', 'ids/champions.js'],
+    ['championStarLevelsPath', 'champions.js'],
+    ['languageFilePath', 'lang/en.json']
 ]);
 
 function getChampionSpotlightsUrl(useTestData) {
@@ -35,11 +37,14 @@ function getWithPath(filenameKey, useTestData) {
 function getOptionsFor(useTestData) {
     return {
         saveTestData: false,
+        fileNameForTestData: 'index.html',
         writeChangesToFile: false,
-        timeout: TIMEOUT,
-        championUpdateStatusPath: getWithPath('championUpdateStatus', useTestData),
-        championIds: getWithPath('championIds', useTestData),
-        championStarLevels: getWithPath('championStarLevels', useTestData),
+        readTimeout: useTestData ? 1500 : TIMEOUT,
+        pageLoadTimeout: useTestData ? 100 : TIMEOUT,
+        championUpdateStatusPath: getWithPath('championUpdateStatusPath', useTestData),
+        championIdsPath: getWithPath('championIdsPath', useTestData),
+        championStarLevelsPath: getWithPath('championStarLevelsPath', useTestData),
+        languageFilePath: getWithPath('languageFilePath', useTestData),
     };
 }
 

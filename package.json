@@ -13,7 +13,8 @@
     "lint": "npm run lint:src && npm run lint:dev && npm run lint:test && npm run lint:sass",
     "test:all": "npm run test:node && npm run test:scripts",
     "test:node": "instant-mocha --webpack-config dev/config/webpack-config-test.js --require test/test-setup.js test/**/*.js*",
-    "test:scripts": "mocha --require test/test-champion-update-setup.mjs test/script/**/**/*.*js*",
+    "test:scripts": "mocha --loader=testdouble --require test/test-champion-update-setup.mjs 'test/script/**/**/*.*js*'",
+    "test:scripts-single": "mocha --loader=testdouble --require test/test-champion-update-setup.mjs 'test/script/**/*.*js*' --grep ",
     "update-champions": "node dev/script/update-champions.mjs",
     "test": "npm run lint && npm run test:all",
     "deploy": "npx webpack build --config ./dev/config/webpack.config.js && ./dev/script/deploy.sh"
@@ -69,6 +70,8 @@
     "stylelint": "^15.8.0",
     "stylelint-config-standard-scss": "^9.0.0",
     "stylelint-scss": "^5.0.1",
+    "testdouble": "^3.18.0",
+    "testdouble-chai": "^0.5.0",
     "url-loader": "^4.1.1",
     "webfonts-loader": "^8.0.1",
     "webpack": "^5.87.0",

@@ -177,7 +177,9 @@
     },
     "globals": {
         "chai": true,
-        "expect": true
+        "expect": true,
+        "testdouble": true,
+        "when": true
     },
     "settings": {
         "import/extensions": [
