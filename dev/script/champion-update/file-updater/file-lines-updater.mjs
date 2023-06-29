@@ -45,7 +45,7 @@ class FileLinesUpdater {
     }
     
     save(fileName) {
-        writeFileSync(fileName, this._fileAsLines.join('\n'));
+        writeFileSync(new URL(fileName), this._fileAsLines.join('\n'), 'utf-8');
     }
 }
 

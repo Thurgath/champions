@@ -43,20 +43,32 @@ describe('ChampionUpdateStatus', () => {
             const updateStatus = new ChampionUpdateStatus(languageFileParserMock, testDataUrl);
             expect(updateStatus.getChampionNameFor(daredevilHellsKitchen)).to.be.undefined;
         });
+        const kityPryde = new ChampionName('Kitty Pride');
+        it('for non-existing champion should update currentChampions', () => {
+            when(languageFileParserMock.getAllChampions()).thenReturn(new Map([ ]));
+            const updateStatus = new ChampionUpdateStatus(languageFileParserMock, testDataUrl);
+            expect(updateStatus.getChampionNameFor(kityPryde)).to.be.undefined;
+            expect(updateStatus.getChampionNameFor(kityPryde)).to.equal(kityPryde);
+        });
     });
 
     describe('.update', () => {
         it('should update url and date', () => {
+            when(languageFileParserMock.getAllChampions()).thenReturn(new Map([ ]));
             const currentTime = new Date();
             const updateStatus = new ChampionUpdateStatus(languageFileParserMock, testDataUrl);
+            const apocalypse = new ChampionName('Apocalypse');
+            updateStatus.getChampionNameFor(apocalypse);
             const updatedStatus = updateStatus.update(otherSpotlightUrl);
             expect(updatedStatus.lastUpdatedChampionSpotlight).to.equal(otherSpotlightUrl);
             expect(updatedStatus.lastUpdatedDate).to.be.at.least(currentTime);
+            expect(updatedStatus.currentChampions.get(apocalypse.fullName)).to.equal(apocalypse.lowerCase);
 
             //Load file again
             const updatedUpdateStatus = new ChampionUpdateStatus(languageFileParserMock, testDataUrl);
             expect(updatedUpdateStatus.getLastUpdatedChampionSpotlightUrl()).to.equal(updatedStatus.lastUpdatedChampionSpotlight);
             expect(updatedUpdateStatus.getLastUpdatedDate()).to.deep.equal(updatedStatus.lastUpdatedDate);
+            expect(updatedUpdateStatus.getChampionNameFor(apocalypse)).to.equal(apocalypse);
 
             //And change it back
             updatedUpdateStatus.update(expectedSpotlightUrl);
