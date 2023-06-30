@@ -1,22 +1,17 @@
 class EnglishLanguageFileUpdater {
-    #shortNameRegExp = /champion\-.*\-shortname/;
-    #effectRegExp = /effect\-/;
+    #endOfSectionRegExp = /^$/;
     constructor(fileLinesUpdater) {
-        this._fileLinesUpdater = fileLinesUpdater.withEndOfSection(this.#shortNameRegExp);
+        this._fileLinesUpdater = fileLinesUpdater.withEndOfSection(this.#endOfSectionRegExp).withEmptyLineAsEndString();
     }
 
     #insertShortName(championName) {
-        this._fileLinesUpdater = this._fileLinesUpdater.withEndOfSection(this.#effectRegExp);
-        const lineToInsert = `    "champion-${championName.lowerCase}-shortname": "${championName.fullName}",`;
-        let allFileLines = this._fileLinesUpdater.insert('-shortname": ', lineToInsert);
-        //Restore to normal mode. We need the same instance as we're only modifying the lines internally.
-        this._fileLinesUpdater = this._fileLinesUpdater.withEndOfSection(this.#shortNameRegExp);
-        return allFileLines;
+        const lineToInsert = `    "champion-${championName.lowerCase}-shortname": "${championName.shortName}",`;
+        return this._fileLinesUpdater.insert('-shortname": ', lineToInsert);
     }
 
     insert(championName) {
         const lineToInsert = `    "champion-${championName.lowerCase}-name": "${championName.fullName}",`;
-        let allFileLines = this._fileLinesUpdater.insert('"lang": "English"', lineToInsert);
+        let allFileLines = this._fileLinesUpdater.insert('-name": ', lineToInsert);
         if (championName.hasShortName()) {
             allFileLines = this.#insertShortName(championName);
         }

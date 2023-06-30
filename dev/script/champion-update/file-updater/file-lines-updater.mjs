@@ -3,6 +3,7 @@ import { writeFileSync } from 'fs';
 class FileLinesUpdater {
     constructor(fileContent) {
         this._fileAsLines = fileContent.split('\n');
+        this._emptyLineAsEndString = false;
     }
 
     #findIndex(predicate, searchString) {
@@ -11,6 +12,11 @@ class FileLinesUpdater {
             throw new Error(`Could not find ${searchString} in file`);
         }
         return foundIndex + 1;
+    }
+
+    #findStartIndex(predicate, searchString) {
+        const foundIndex = this.#findIndex(predicate, searchString);
+        return !this._emptyLineAsEndString ? foundIndex : foundIndex - 1;
     }
 
     #predicateForUpdate(startIndexForSearch, lineWithDataToUpdate, endOfSearchString) {
@@ -30,9 +36,14 @@ class FileLinesUpdater {
         this._endOfSection = endOfSection;
         return this;
     }
+    
+    withEmptyLineAsEndString() {
+        this._emptyLineAsEndString = true;
+        return this;
+    }
 
     insert(searchString, lineToInsert) {
-        const startIndexForSearch = this.#findIndex((line) => line.includes(searchString), searchString);
+        const startIndexForSearch = this.#findStartIndex((line) => line.includes(searchString), searchString);
         const indexForNextLine = this.#findIndex(this.#predicateForUpdate(startIndexForSearch, lineToInsert, this._endOfSection), this._endOfSection);
         this._fileAsLines.splice(indexForNextLine - 1, 0, lineToInsert);
         return this._fileAsLines;
