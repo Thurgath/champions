@@ -1,7 +1,7 @@
 import ChampionName from '../model/champion-name.mjs';
 
 class ChampionSpotlightParser {
-
+    #maxLengthToUseShortName = 15;
     constructor(htmlDataAsSelector) {
         this._htmlDataAsSelector = htmlDataAsSelector;
     }
@@ -27,9 +27,34 @@ class ChampionSpotlightParser {
         this.classType = classTypeAndAbilitiesFromParent[ 0 ];
         this.abilities = classTypeAndAbilitiesFromParent[ 1 ].split(', ');
     }
+    
+    #canBeShortened(shortName) {
+        return shortName.length > this.#maxLengthToUseShortName && shortName.includes('(');
+    }
+    
+    #shorten(shortName) {
+        const findParenthesisRegExp = / ?\(.*\)/
+        return shortName.replace(findParenthesisRegExp, '');
+    }
+
+    #withOptionalShortName(championName) {
+        const mechanicsRegExp = /(.*)’s? Mechanics/;
+        const shortNameWithAdditionalText = this.#evaluate('[id=Mechanics]').text().trim();
+        const shortNameMatch = shortNameWithAdditionalText.match(mechanicsRegExp);
+        //If shortName is not found, we try to shorten fullName instead
+        const shortName = shortNameMatch ? shortNameMatch[1] : championName.fullName;
+        if (shortName !== championName.fullName) {
+            return championName.withShortName(shortName);
+        }
+        if (this.#canBeShortened(shortName)) {
+            return championName.withShortName(this.#shorten(shortName));
+        }
+        return championName;
+    }
 
     getName() {
-        return new ChampionName(this.#evaluate('.hero-content h1').text().trim());
+        const championName = new ChampionName(this.#evaluate('.hero-content h1').text().trim());
+        return this.#withOptionalShortName(championName);
     }
 
     getClassType() {

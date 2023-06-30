@@ -96,4 +96,22 @@ describe('ChampionName', () => {
             });
         });
     });
+
+    const captainInfinityWar = new ChampionName('Captain America (Infinity War)').withShortName('Captain America');
+    describe('.shortName', () => {
+        it('should return undefined if not set', () => {
+            expect(quake.shortName).to.be.undefined;
+        });
+        it('should return name if set', () => {
+            expect(captainInfinityWar.shortName).to.equal('Captain America');
+        });
+    });
+    describe('.hasShortName', () => {
+        it('should return false if not set', () => {
+            expect(quake.hasShortName()).to.be.false;
+        });
+        it('should return true if set', () => {
+            expect(captainInfinityWar.hasShortName()).to.be.true;
+        });
+    });
 });

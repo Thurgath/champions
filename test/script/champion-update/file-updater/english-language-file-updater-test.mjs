@@ -21,7 +21,11 @@ describe('EnglishLanguageFileUpdater', () => {
         return `    "champion-${championName.lowerCase}-name": "${championName.fullName}",`;
     }
 
-    const abominationImmortalName = new ChampionName('Abomination (Immortal)');
+    function createShortnameConstantFrom(championName) {
+        return `    "champion-${championName.lowerCase}-shortname": "${championName.shortName}",`;
+    }
+
+    const abominationImmortalName = new ChampionName('Abomination (Immortal)').withShortName('Abomination');
     const abominationImmortal = createConstantFrom(abominationImmortalName);
     const aegon = createConstantFrom(new ChampionName('Ægon', new ChampionName('Aegon')));
     const nimrodName = new ChampionName('Nimrod');
@@ -33,7 +37,7 @@ describe('EnglishLanguageFileUpdater', () => {
 
     describe('.insert', () => {
         it('should insert new line at start', () => {
-            expectInsertedValues(abominationImmortalName, abominationImmortal, aegon);
+            expectInsertedValues(abominationImmortalName, abominationImmortal, aegon, createShortnameConstantFrom(abominationImmortalName));
         });
 
         it('should insert new line at middle', () => {

@@ -14,6 +14,14 @@ class ChampionName {
         return this._fullName;
     }
 
+    get shortName() {
+        return this._shortName;
+    }
+    
+    hasShortName() {
+        return this._shortName !== undefined;
+    }
+
     get upperCase() {
         if (this._previousChampionName) {
             return this._previousChampionName.upperCase;
@@ -26,6 +34,11 @@ class ChampionName {
             return this._previousChampionName.lowerCase;
         }
         return this.replaceAllUnwantedCharacters().toLowerCase();
+    }
+    
+    withShortName(shortName) {
+        this._shortName = shortName;
+        return this;
     }
     
     withPreviousFrom(previousChampionName) {

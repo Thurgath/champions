@@ -9,6 +9,9 @@ describe('ChampionSpotlightParser', () => {
     const quake = new ChampionSpotlightParser(readHtmlSelectorFrom('test/test-data/news/champion-spotlight-quake/index.html'));
     const gorr = new ChampionSpotlightParser(readHtmlSelectorFrom('test/test-data/news/champion-spotlight-gorr-the-god-butcher/index.html'));
     const daredevilHellsKitchen = new ChampionSpotlightParser(readHtmlSelectorFrom('test/test-data/news/champion-spotlight-daredevil-hells-kitchen/index.html'));
+    const spidermanSupreme = new ChampionSpotlightParser(readHtmlSelectorFrom('test/test-data/news/champion-spotlight-spider-man-supreme/index.html'));
+    const mantis = new ChampionSpotlightParser(readHtmlSelectorFrom('test/test-data/news/champion-spotlight-mantis/index.html'));
+    const antmanFuture = new ChampionSpotlightParser(readHtmlSelectorFrom('test/test-data/news/champion-spotlight-ant-man-future/index.html'));
 
     function getExpectedStarLevels(start, end) {
         const starLevels = [];
@@ -102,6 +105,9 @@ describe('ChampionSpotlightParser', () => {
         it('should return Dani Moonstar', () => {
             expect(daniMoonstar.getName().fullName).to.equal('Dani Moonstar');
         });
+        it('should return undefined shortName for Dani', () => {
+            expect(daniMoonstar.getName().shortName).to.be.undefined;
+        });
         it('should return Shocker', () => {
             expect(shocker.getName().fullName).to.equal('Shocker');
         });
@@ -114,8 +120,23 @@ describe('ChampionSpotlightParser', () => {
         it('should return Gorr', () => {
             expect(gorr.getName().fullName).to.equal('Gorr the God Butcher');
         });
+        it('should return Gorr as shortName', () => {
+            expect(gorr.getName().shortName).to.equal('Gorr');
+        });
         it('should return Daredevil', () => {
             expect(daredevilHellsKitchen.getName().fullName).to.equal('Daredevil (Hell’s Kitchen)');
+        });
+        it('should return Daredevil as shortName', () => {
+            expect(daredevilHellsKitchen.getName().shortName).to.equal('Daredevil');
+        });
+        it('should return shortName for Spider-Man (Supreme)', () => {
+            expect(spidermanSupreme.getName().shortName).to.equal('Spider-Man');
+        });
+        it('should return shortName for Ant-Man (Future)', () => {
+            expect(antmanFuture.getName().shortName).to.equal('Ant-Man');
+        });
+        it('should return undefined shortName for Mantis', () => {
+            expect(mantis.getName().shortName).to.be.undefined;
         });
     });
 

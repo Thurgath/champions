@@ -5,5 +5,10 @@
     "champion-omegared-name": "Omega Red",
     "champion-x23-name": "Wolverine (X-23)",
 
-    "champion-abominationimmortal-shortname": "Abomination"
+    "champion-abominationimmortal-shortname": "Abomination",
+
+    "effect-itscomplicated-name": "It's Complicated",
+    "effect-mutantagenda-name": "Mutant Agenda",
+    "effect-cosmicsupremacy-name": "Cosmic Supremacy",
+    "effect-idol-name": "Idol"
 }
