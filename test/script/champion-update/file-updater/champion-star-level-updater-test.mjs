@@ -20,13 +20,15 @@ describe('ChampionStarLevelUpdater', () => {
     function expectInsertedValues(classType, championName, starLevels, ...expectedOrderedLines) {
         //Flatten array since it could contain arrays of endString. If we remove endString, all of them will be removed.
         const flattenedExpectedLines = expectedOrderedLines.flat();
-        const afterInsert = championStarLevelUpdater.insert(classType, championName, starLevels).filter(onlyWith(flattenedExpectedLines));
-        expect(afterInsert).to.have.deep.ordered.members(flattenedExpectedLines);
+        const afterInsert = championStarLevelUpdater.insert(classType, championName, starLevels);
+        expect(afterInsert.filter(onlyWith(flattenedExpectedLines))).to.have.deep.ordered.members(flattenedExpectedLines);
+        return afterInsert;
     }
 
     function expectUpdatedValues(championName, starLevels, ...expectedOrderedLines) {
         const afterUpdate = championStarLevelUpdater.update(championName, starLevels);
         expect(afterUpdate.filter(onlyWith(expectedOrderedLines))).to.have.deep.ordered.members(expectedOrderedLines);
+        return afterUpdate;
     }
 
     function getConstantStringFrom(classType) {
@@ -50,10 +52,14 @@ describe('ChampionStarLevelUpdater', () => {
         const symbioteSupremeUpToSixStar = createConstant(symbioteSupremeName, 2, 6);
 
         it('should replace current line', () => {
-            expectUpdatedValues(symbioteSupremeName, starLevelsFrom(2, 7), getConstantStringFrom('TYPE.MYSTIC'), hood, symbioteSupreme);
+            const updatedLines = expectUpdatedValues(symbioteSupremeName, starLevelsFrom(2, 7), getConstantStringFrom('TYPE.MYSTIC'), hood, symbioteSupreme);
             //Restore. There's probably a better way to not affect other tests.
             // Don't want to create a new instance of ChampionStarLevelUpdater and FileUpdater for each test though.
-            expectUpdatedValues(symbioteSupremeName, starLevelsFrom(2, 6), getConstantStringFrom('TYPE.MYSTIC'), hood, symbioteSupremeUpToSixStar);
+            updatedLines[ updatedLines.indexOf(symbioteSupreme) ] = symbioteSupremeUpToSixStar;
+        });
+
+        it('should replace current line and merge star levels', () => {
+            expectUpdatedValues(symbioteSupremeName, starLevelsFrom(3, 6), getConstantStringFrom('TYPE.MYSTIC'), hood, symbioteSupremeUpToSixStar);
         });
     });
 

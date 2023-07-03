@@ -49,9 +49,10 @@ class FileLinesUpdater {
         return this._fileAsLines;
     }
 
-    update(searchString, lineToUpdate) {
+    update(searchString, lineToUpdate, lineMergeFunction = (currentLine, lineToUpdate) => lineToUpdate) {
         const indexForLine = this.#findIndex((line) => line.includes(searchString), searchString);
-        this._fileAsLines[ indexForLine - 1 ] = lineToUpdate;
+        const mergedLineToUpdate = lineMergeFunction(this._fileAsLines[ indexForLine - 1 ], lineToUpdate);
+        this._fileAsLines[ indexForLine - 1 ] = mergedLineToUpdate;
         return this._fileAsLines;
     }
     
