@@ -1,60 +1,60 @@
 {
-    "specials": {
-        "1": {
-            "name": "Fading Barrage",
-            "damagetypes": [
-                "physical"
-            ],
-            "abilities": [
-                "bleed"
-            ],
-            "ranges": [
-                "long"
-            ],
-            "description": "- 100% chance to inflict Bleed, dealing 2546.25 Direct Damage over 3.50 seconds.\n- Zeroed In: 100% chance to inflict an additional Bleed."
-        },
-        "2": {
-            "name": "Raptor Strike",
-            "ranges": [
-                "medium"
-            ],
-            "damagetypes": [
-                "physical"
-            ],
-            "description": "- Opponent’s Physical Resistance is reduced by 100% during this attack.\n- Zeroed In: +816.67 Critical Damage Rating during the attack. Additionally the Second hit of this Attack gains 100% Critical Chance."
-        },
-        "3": {
-            "name": "Tango Down",
-            "damagetypes": [
-                "physical"
-            ],
-            "note": "If you’re not in a fight that the opponent will be evading, this is going to be the best way to pump that damage up. Toss your Sp3 and pound on the enemy!",
-            "abilities": [
-                "incinerate"
-            ],
-            "description": "- 100% chance to inflict an Incinerate Debuff, dealing 3880 Energy Damage over 10 seconds. Incinerate also removes Perfect Block Chance and reduces Block Proficiency by 50%.\n- Zeroed In: 100% chance to inflict a 25 second Vulnerability Debuff. Attack a Vulnerable opponent grants +816.67 Critical Damage Rating and reduces Block Proficiency by 50%."
-        }
+  "specials": {
+    "1": {
+      "name": "Fading Barrage",
+      "damagetypes": [
+        "physical"
+      ],
+      "abilities": [
+        "bleed"
+      ],
+      "ranges": [
+        "long"
+      ],
+      "description": "- 100% chance to inflict Bleed, dealing 2546.25 Direct Damage over 3.50 seconds.\n- Zeroed In: 100% chance to inflict an additional Bleed."
     },
-    "author": {
-        "type": "spotlight",
-        "name": "Kabam",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-falcon/"
+    "2": {
+      "name": "Raptor Strike",
+      "ranges": [
+        "medium"
+      ],
+      "damagetypes": [
+        "physical"
+      ],
+      "description": "- Opponent’s Physical Resistance is reduced by 100% during this attack.\n- Zeroed In: +816.67 Critical Damage Rating during the attack. Additionally the Second hit of this Attack gains 100% Critical Chance."
     },
-    "signature": {
-        "name": "EXO-8",
-        "description": "Exo-8 \nRecon Scan\n\n- Redwing’s Lock On lasts 2 seconds longer and provides an additional 1180.86 Critical Rating.",
-        "abilities": []
-    },
-    "gameplay": {
-        "description": "Enhanced Synergy Bonuses  \n- Falcon is a master scout and is always ready to lend a hand. His Synergy Bonuses all provide an additional +3% Attack rating each.\n\n\nRecon Scan\n- To Begin a Recon Scan, dash back and hold Block. If Block is held for 1.20 seconds the opponent gains a Lock On charge for 14 seconds. While Lock On is active, Falcon’s attacks Passively reduce the opponent’s Defensive Ability Accuracy by 100%.\n- Lock On gains +40% duration while fighting Science Champions but suffers -20% duration while fighting Mutants.\n- Once Lock On ends, it goes on Cooldown for 8 seconds.\n- Falcons Basic Attacks Gain +3152.5 Attack.\n\n\nOn Opponent Evade\n- Falcon’s scanning system in his goggles Recalibrates each time the opponent triggers a Passive Evade, increasing Falcon’s Critical Damage Rating by 134.04 indefinitely.\n- While Redwing is active any Evade that the Opponent Fails to trigger will increase Falcon’s Critical Damage Rating by 134.04 indefinitely.",
-        "abilities": [
-            "bleed",
-            "incinerate"
-        ]
-    },
-    "youtube": "ADUhCdUIC6E",
-    "description": "A former air force pararescue who went on to work with recovering veterans, Sam Wilson aided the legendary Captain America in adjusting to modern life, quickly becoming Cap’s close friend in the process. Using an experimental winged harness, Wilson takes to the skies as the high-flying Falcon.",
-    "attack": {
-        "description": "Special Attacks\n- If Redwing is Locked On, Falcon’s Special Attacks gain additional Zeroed In effects."
+    "3": {
+      "name": "Tango Down",
+      "damagetypes": [
+        "physical"
+      ],
+      "note": "If you’re not in a fight that the opponent will be evading, this is going to be the best way to pump that damage up. Toss your Sp3 and pound on the enemy!",
+      "abilities": [
+        "incinerate"
+      ],
+      "description": "- 100% chance to inflict an Incinerate Debuff, dealing 3880 Energy Damage over 10 seconds. Incinerate also removes Perfect Block Chance and reduces Block Proficiency by 50%.\n- Zeroed In: 100% chance to inflict a 25 second Vulnerability Debuff. Attack a Vulnerable opponent grants +816.67 Critical Damage Rating and reduces Block Proficiency by 50%."
     }
+  },
+  "author": {
+    "type": "spotlight",
+    "name": "Kabam",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-falcon/"
+  },
+  "signature": {
+    "name": "EXO-8",
+    "description": "Exo-8 \nRecon Scan\n\n- Redwing’s Lock On lasts 2 seconds longer and provides an additional 1180.86 Critical Rating.",
+    "abilities": []
+  },
+  "gameplay": {
+    "description": "Enhanced Synergy Bonuses  \n- Falcon is a master scout and is always ready to lend a hand. His Synergy Bonuses all provide an additional +3% Attack rating each.\n\n\nRecon Scan\n- To Begin a Recon Scan, dash back and hold Block. If Block is held for 1.20 seconds the opponent gains a Lock On charge for 14 seconds. While Lock On is active, Falcon’s attacks Passively reduce the opponent’s Defensive Ability Accuracy by 100%.\n- Lock On gains +40% duration while fighting Science Champions but suffers -20% duration while fighting Mutants.\n- Once Lock On ends, it goes on Cooldown for 8 seconds.\n- Falcons Basic Attacks Gain +3152.5 Attack.\n\n\nOn Opponent Evade\n- Falcon’s scanning system in his goggles Recalibrates each time the opponent triggers a Passive Evade, increasing Falcon’s Critical Damage Rating by 134.04 indefinitely.\n- While Redwing is active any Evade that the Opponent Fails to trigger will increase Falcon’s Critical Damage Rating by 134.04 indefinitely.",
+    "abilities": [
+      "bleed",
+      "incinerate"
+    ]
+  },
+  "youtube": "ADUhCdUIC6E",
+  "description": "A former air force pararescue who went on to work with recovering veterans, Sam Wilson aided the legendary Captain America in adjusting to modern life, quickly becoming Cap’s close friend in the process. Using an experimental winged harness, Wilson takes to the skies as the high-flying Falcon.",
+  "attack": {
+    "description": "Special Attacks\n- If Redwing is Locked On, Falcon’s Special Attacks gain additional Zeroed In effects."
+  }
 }

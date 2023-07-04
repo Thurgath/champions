@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Stick Strike",
+      "description": "Matt Murdock has mastered hand-to-hand combat thanks to his early and intense training by the martial arts master Stick!"
+    },
+    "2": {
+      "name": "Flash Kick",
+      "description": "Three classic kicks with acrobatic guile."
+    },
+    "3": {
+      "name": "Deliverance",
+      "description": "Daredevil enters a heightened state of 360° awareness, evading all attacks and countering with strikes to enemy pressure points."
+    }
+  },
+  "signature": {
+    "name": "Radar Sense",
+    "description": "Daredevil's heightened sensory perception helps evade projectiles with a high chance."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-daredevil-classic/"
+  },
+  "description": "The Man Without Fear, a lawyer without sight. As a child, Matt Murdock had a chance encounter with radioactive waste. It caused him to go blind, but enhanced his remaining senses – and granted him a sharp superhuman radar. With his passion for justice and enhanced strength, Daredevil protects the streets of his native New York City."
+}

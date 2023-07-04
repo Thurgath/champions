@@ -1,32 +1,35 @@
 {
-    "description": "Leader of the Hunt, Guardian of the Galaxy, Queen of Hel, Angel, Goddess. Angela is a woman of many titles. Born Aldrif Odinsdottir, the first child of Freyja and Odin, but raised as Angela by Loriel, handmaiden to the Queen of Angels, she has battled her way across the Galaxy. Now Angela has come to the Contest, perhaps the greatest challenge of martial skill and strength to be found in the Nine Realms, and beyond.",
-    "gameplay": {
-        "description": "Blocking – Fighting Non-Mystic Champions\nAdvanced training allows Angela to Parry Non-Contact attacks.\n\nWhen Damaged\nFor each 10% of Max Health taken in damage, gain an indefinite Resilience Charge.\nWhen below Max Health, if Angela does not have a Regeneration Buff, she converts 1 Resilience Charge into a Regeneration Buff, healing 1387 Health over 10 seconds.\n\nIndefinite Huntress Buff – Always Active\nAngela gains an indefinite Buff based on her current Power Level.\nBelow 1 Bar: Armor Up, granting +900 Armor Rating.\nBetween 1 and 2 Bars: Fury, granting +2033.2 Attack Rating.\nBetween 2 and 3 Bars: Precision, granting +2100 Critical Rating.\n3 Bars: Aptitude, increasing the Potency of all Fury, Armor Up and Precision Buffs by 60%.\n\nTemporary Huntress Buffs – Critical Hits\n100% chance to duplicate the current, indefinite Huntress Buff. This duplicated Buff lasts 15 seconds. A maximum of 1 of each type of Huntress Buff may be duplicated at a time."
+  "description": "Leader of the Hunt, Guardian of the Galaxy, Queen of Hel, Angel, Goddess. Angela is a woman of many titles. Born Aldrif Odinsdottir, the first child of Freyja and Odin, but raised as Angela by Loriel, handmaiden to the Queen of Angels, she has battled her way across the Galaxy. Now Angela has come to the Contest, perhaps the greatest challenge of martial skill and strength to be found in the Nine Realms, and beyond.",
+  "gameplay": {
+    "description": "Blocking – Fighting Non-Mystic Champions\nAdvanced training allows Angela to Parry Non-Contact attacks.\n\nWhen Damaged\nFor each 10% of Max Health taken in damage, gain an indefinite Resilience Charge.\nWhen below Max Health, if Angela does not have a Regeneration Buff, she converts 1 Resilience Charge into a Regeneration Buff, healing 1387 Health over 10 seconds.\n\nIndefinite Huntress Buff – Always Active\nAngela gains an indefinite Buff based on her current Power Level.\nBelow 1 Bar: Armor Up, granting +900 Armor Rating.\nBetween 1 and 2 Bars: Fury, granting +2033.2 Attack Rating.\nBetween 2 and 3 Bars: Precision, granting +2100 Critical Rating.\n3 Bars: Aptitude, increasing the Potency of all Fury, Armor Up and Precision Buffs by 60%.\n\nTemporary Huntress Buffs – Critical Hits\n100% chance to duplicate the current, indefinite Huntress Buff. This duplicated Buff lasts 15 seconds. A maximum of 1 of each type of Huntress Buff may be duplicated at a time."
+  },
+  "attack": {
+    "heavy": "This attack receives +2100 additional Critical Rating."
+  },
+  "specials": {
+    "1": {
+      "description": "Sword of the Stars – Angela unleashes a powerful series of strikes with her sword Xiphos.",
+      "note": "100% chance to gain a Fury Buff for 5 seconds, granting 2033.2 Attack.\nThis Fury Buff instead lasts 20 seconds if Angela already had a Fury Buff active on herself.",
+      "name": "Sword of the Stars"
     },
-    "attack": {
-        "heavy": "This attack receives +2100 additional Critical Rating."
+    "2": {
+      "description": "Blades of Ichor – Angela dashes forward to employ the Blades separated, before combining them to strike again.",
+      "note": "100% chance to gain an Armor Up Buff for 5 seconds, granting +900 Armor Rating.\nThis Armor Up Buff instead lasts 20 seconds if Angela already had an Armor Up Buff active on herself.",
+      "name": "Blades of Ichor"
     },
-    "specials": {
-        "1": {
-            "description": "Sword of the Stars – Angela unleashes a powerful series of strikes with her sword Xiphos.",
-            "note": "100% chance to gain a Fury Buff for 5 seconds, granting 2033.2 Attack.\nThis Fury Buff instead lasts 20 seconds if Angela already had a Fury Buff active on herself."
-        },
-        "2": {
-            "description": "Blades of Ichor – Angela dashes forward to employ the Blades separated, before combining them to strike again.",
-            "note": "100% chance to gain an Armor Up Buff for 5 seconds, granting +900 Armor Rating.\nThis Armor Up Buff instead lasts 20 seconds if Angela already had an Armor Up Buff active on herself."
-        },
-        "3": {
-            "description": "Martial Mastery – Angela strikes with the Sword of the Stars forcing her opponent back, before drawing the Blades of Ichor to finish them.",
-            "note": "100% chance to gain an Aptitude Buff, increasing the potency of Armor, Fury, and Precision Buffs by 60% lasting for 5 seconds.\nThis Aptitude Buff instead lasts 30 Seconds if Angela already already had an Aptitude Buff active on herself.\nAngela’s Attack Rating is increased by +1196 for each Buff active on her during the attack."
-        }
-    },
-    "signature": {
-        "name": "Battle Focus",
-        "description": "Always Active\nFor each Buff on Angela, her opponent suffers the following:\n-35.05% Nullify & Auto-Block Ability Accuracy.\n-35.05% Damaging Debuff Duration."
-    },
-    "author": {
-        "name": "Kabam",
-        "type": "spotlight",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-angela/"
+    "3": {
+      "description": "Martial Mastery – Angela strikes with the Sword of the Stars forcing her opponent back, before drawing the Blades of Ichor to finish them.",
+      "note": "100% chance to gain an Aptitude Buff, increasing the potency of Armor, Fury, and Precision Buffs by 60% lasting for 5 seconds.\nThis Aptitude Buff instead lasts 30 Seconds if Angela already already had an Aptitude Buff active on herself.\nAngela’s Attack Rating is increased by +1196 for each Buff active on her during the attack.",
+      "name": "Martial Mastery"
     }
+  },
+  "signature": {
+    "name": "Battle Focus",
+    "description": "Always Active\nFor each Buff on Angela, her opponent suffers the following:\n-35.05% Nullify & Auto-Block Ability Accuracy.\n-35.05% Damaging Debuff Duration."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-angela/"
+  }
 }

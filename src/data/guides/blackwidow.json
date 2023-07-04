@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Striking Features",
+      "description": "Agent Romanova delivers a tactical series of strikes she first learned at the Black Widow Ops program."
+    },
+    "2": {
+      "name": "Graceful Barrage",
+      "description": "Black Widow displays the agility and grace of a ballerina, with the precision and devastation of a ninja."
+    },
+    "3": {
+      "name": "Widow's Bite",
+      "description": "She may look harmless enough, but this Black Widow has a shocking bite."
+    }
+  },
+  "signature": {
+    "name": "Ignore Pain",
+    "description": "Natasha Romanova is conditioned to resist pain, giving her a chance to endure a lethal blow."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-black-widow/"
+  },
+  "description": "There’s no escaping the sting of the world’s greatest spy when she has you in her sights. A skilled fighter possessing astounding agility and a way with weapons, she is often shrouded in mystery. But there’s no mystery as to who you want on your team when things start heating up – Natasha Romanova – The Black Widow!"
+}

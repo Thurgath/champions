@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Street Justice",
+      "description": "A ferocious punch, followed by three perfectly placed shots to put down the target."
+    },
+    "2": {
+      "name": "Punishment",
+      "description": "Sawed off shotguns followed by a burst from twin submachine guns."
+    },
+    "3": {
+      "name": "Payback",
+      "description": "The Punisher shows why you should never break the law. Ever."
+    }
+  },
+  "signature": {
+    "name": "Defy Pain",
+    "description": "Frank Castle has conditioned himself for high pain tolerance, granting him a chance to endure a lethal blow."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-punisher/"
+  },
+  "description": "I know what you're thinking. How did I end up like this? Tied to a chair in a dingy warehouse, with a big, scary man pointing a big, scary gun in my face. Well let me tell you: you're here because you're a criminal. You're a tumor of society. And me? I'm just a man who loves his job. I'm the Punisher. And we're about to have a lot of fun together..."
+}

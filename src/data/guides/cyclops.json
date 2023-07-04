@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Optic Blast",
+      "description": "Cyclops uses his Ruby-Quartz visor to focus a beam of energy."
+    },
+    "2": {
+      "name": "Vigilance",
+      "description": "Two rage-fueled punches and a kick daze the opponent long enough for Cylops' Optic Blast to teach them a lesson."
+    },
+    "3": {
+      "name": "Gigawatt Blast",
+      "description": "Scott Summers briefly loses control, allowing his Optic Blast to reach gigawatt levels. He'll be the only witness."
+    }
+  },
+  "signature": {
+    "name": "Expertise",
+    "description": "Cyclops' knowledge of the battlefield prevents opponents from blocking him effectively. In addition, his beams reach Critical Damage at high Power levels."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-cyclops-new-xavier-school/"
+  },
+  "description": "The ultimate X-Man. The ultimate traitor. As a straight-laced youth, Scott Summers was recruited into the first generation of X-Men by Professor Xavier. Projecting forceful optic blasts from his eyes, he was a formidable defender of mutantkind. But after murdering Xavier under control of the Phoenix Force, Summers has gone from exemplar to pariah, founding his own underground mutant school away from his one-time allies."
+}

@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Spinnin' Groin Punch",
+      "description": "A fancy way to punch someone where it counts."
+    },
+    "2": {
+      "name": "Spinny Sword Attack",
+      "description": "It's an attack with TWO swords – oh, and there's an awesome spin...and two swords!"
+    },
+    "3": {
+      "name": "Hold Up",
+      "description": "I've really gotta take this..."
+    }
+  },
+  "signature": {
+    "name": "Healing Factor",
+    "description": "Permanently regenerating Health was granted when the natural healing factor of Wolverine was implanted into Deadpool."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-deadpool/"
+  },
+  "description": "Hey, you wanna be cool like me? Then put down the stupid video game and get off your sorry butt! Oh, get cool red threads, big guns, and train like a billion hours until you're a master of sword, fist, and firearm. If you think you REALLY got what it takes, then annoy Wolverine and live to tell the tale! Fat chance gamer. There's only one 'Merc with a Mouth!"
+}

@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Static Discharge",
+      "description": "Electro releases an electrostatic bolt from his fingertips."
+    },
+    "2": {
+      "name": "Shock Wave",
+      "description": "Electricity writhes along the arena floor in a high-voltage wave of destruction."
+    },
+    "3": {
+      "name": "Electrocution",
+      "description": "Storing over a million volts, Maxwell Dillon embodies electricity itself to wreak havoc on his opponent."
+    }
+  },
+  "signature": {
+    "name": "Electrostatic",
+    "description": "Building Power levels in both players charge the atmosphere, increasing Critical Hit Rate."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-electro/"
+  },
+  "description": "Max Dillon was just an electrical engineer doing his job. But a lightning strike jolted him into the menacing supervillain known as Electro! With the ability to command up to a million volts of electricity, deliver lethal shocks, or shoot lightning, he has become an infamous criminal, and adversary to Spider-Man."
+}

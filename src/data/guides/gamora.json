@@ -1,32 +1,32 @@
 {
-    "description": "The most dangerous woman in the galaxy is a title hard to earn, and harder to keep. But Gamora has brawled and battled her way across the cosmos enough times to make this title stick. She’s stronger than you, faster than you, and tougher than anyone. She is the adopted daughter of Thanos, but fiercely loyal to her comrades in the Guardians of the Galaxy.",
-    "gameplay": {
-        "description": "Light Attacks\n35% chance to gain a Fury Buff, increasing Attack Rating by +609.25 for 9 seconds.\n\nMedium Attacks\n35% chance to gain a Cruelty Buff, increasing Critical Damage Rating by 207.69 for 9 seconds.\n\nAlways Active\nGamora’s personal Buffs gain +1.5% duration for every 1 seconds that have passed during the fight. Max bonus: +60%.\nIf Gamora has 10 or more personal Buffs active, her attacks cannot Miss.\n\nSpecial Attacks – Godslayer Strike\nGamora begins each fight with a Godslayer Strike ready, which has a 65% chance to activate during each Special Attack. Once Godslayer Strike is used, it goes on Cooldown for 100 seconds."
+  "description": "The most dangerous woman in the galaxy is a title hard to earn, and harder to keep. But Gamora has brawled and battled her way across the cosmos enough times to make this title stick. She’s stronger than you, faster than you, and tougher than anyone. She is the adopted daughter of Thanos, but fiercely loyal to her comrades in the Guardians of the Galaxy.",
+  "gameplay": {
+    "description": "Light Attacks\n35% chance to gain a Fury Buff, increasing Attack Rating by +609.25 for 9 seconds.\n\nMedium Attacks\n35% chance to gain a Cruelty Buff, increasing Critical Damage Rating by 207.69 for 9 seconds.\n\nAlways Active\nGamora’s personal Buffs gain +1.5% duration for every 1 seconds that have passed during the fight. Max bonus: +60%.\nIf Gamora has 10 or more personal Buffs active, her attacks cannot Miss.\n\nSpecial Attacks – Godslayer Strike\nGamora begins each fight with a Godslayer Strike ready, which has a 65% chance to activate during each Special Attack. Once Godslayer Strike is used, it goes on Cooldown for 100 seconds."
+  },
+  "attack": {
+    "heavy": "Refreshes the duration of all personal Buffs."
+  },
+  "specials": {
+    "1": {
+      "name": "Vital Strike",
+      "description": "This attack has 100% Critical Hit Chance\n100% chance to inflict a Bleed Debuff causing 2437 direct damage over 5 seconds.\nGodslayer: Attack gains a flat +600% Critical Damage Multiplier."
     },
-    "attack": {
-        "heavy": "Refreshes the duration of all personal Buffs."
+    "2": {
+      "name": "The Jade Assassin",
+      "description": "This attack has 100% Critical Hit Chance\n80% chance per hit to inflict an Armor Break Debuff, removing an Armor Up Buff and reducing Armor Rating by 525 for 18 seconds.\nGodslayer: Armor Break Debuffs during the attack gain +50% Potency, +60% Duration and +150% Ability Accuracy."
     },
-    "specials": {
-        "1": {
-            "name": "Vital Strike",
-            "description": "This attack has 100% Critical Hit Chance\n100% chance to inflict a Bleed Debuff causing 2437 direct damage over 5 seconds.\nGodslayer: Attack gains a flat +600% Critical Damage Multiplier."
-        },
-        "2": {
-            "name": "The Jade Assassin",
-            "description": "This attack has 100% Critical Hit Chance\n80% chance per hit to inflict an Armor Break Debuff, removing an Armor Up Buff and reducing Armor Rating by 525 for 18 seconds.\nGodslayer: Armor Break Debuffs during the attack gain +50% Potency, +60% Duration and +150% Ability Accuracy."
-        },
-        "3": {
-            "name": "Godslayer",
-            "description": "100% chance to gain a True Strike Buff for 9 seconds, allowing this Champion to ignore Armor, Resistances, Auto-Block and all Evade effects.\nGodslayer: 100% chance to inflict a Shock Debuff causing 4874 Energy Damage over 10 seconds. If the opponent is a Robot, instead inflict a Degeneration Debuff that deals double damage."
-        }
-    },
-    "signature": {
-        "name": "Deadliest Woman In The Galaxy",
-        "description": "Special Attacks – Godslayer Strike\nGamora’s skill with the Godslayer Blade grows, increasing the chance to activate it during Special Attacks to 100%. Additionally, the cooldown is reduced to 20.00 seconds."
-    },
-    "author": {
-        "name": "Kabam",
-        "type": "spotlight",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-gamora/"
+    "3": {
+      "name": "Godslayer",
+      "description": "100% chance to gain a True Strike Buff for 9 seconds, allowing this Champion to ignore Armor, Resistances, Auto-Block and all Evade effects.\nGodslayer: 100% chance to inflict a Shock Debuff causing 4874 Energy Damage over 10 seconds. If the opponent is a Robot, instead inflict a Degeneration Debuff that deals double damage."
     }
+  },
+  "signature": {
+    "name": "Deadliest Woman In The Galaxy",
+    "description": "Special Attacks – Godslayer Strike\nGamora’s skill with the Godslayer Blade grows, increasing the chance to activate it during Special Attacks to 100%. Additionally, the cooldown is reduced to 20.00 seconds."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-gamora/"
+  }
 }

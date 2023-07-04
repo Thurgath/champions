@@ -1,31 +1,35 @@
 {
-    "description": "Genius weapons designer and masked vigilante skateboarder, Dwayne Taylor trained himself to peak human perfection before taking on the mantle of Night Thrasher. Forming the New Warriors, Taylor sought to take revenge on the criminal underworld that killed his parents. Night Thrasher was transported to the Battlerealm moments before an explosion claimed the lives of his teammates leaving many to presume him dead. Night Thrasher now fights alongside Earth’s mightiest heroes in the Contest of Champions.",
-    "gameplay": {
-        "description": "Passive:   \nNight Thrasher’s advanced combat suit grants him immunity to Incinerate effects and 667 Physical Resistance.\n+83.3 Critical Damage Rating for each Unique Debuff on his opponent. This ability is not affected by Ability Accuracy Reduction\nWell Timed Blocks and successful Dodges grant 5% of max Power while Night Thrasher is under 1 Bar of Power.\nDeveloper Note: Night Thrasher’s combat suit allows him to focus on the important aspects of battle and not worry about small nicks and burns. His damage increases considerably when the battle goes his way. Playing optimally, by fully utilizing Parry and dodging incoming attacks, allows him to retaliate at a faster pace than his opponents.\n\nSkateboard Attacks: \nChampions of the Contest never see the skateboard coming. Attacks using the skateboard have True Accuracy ignoring all Evade and Auto-Block effects.\nDeveloper Note: Skateboard hits occur during Medium Attacks, Heavy Attacks, Special 1 and Special 2. Mastering when to use the skateboard is the key making the most out of Night Thrasher’s Abilities.\n\nOn Opponent Knockdown:  \nRefresh the duration of all active Gadget Debuffs.\nDeveloper Note: Knockdowns occur after successfully landing a Heavy Attack, Special 1, or Special 2. Knowing when to knock down your opponent will be vital to Night Thrasher’s success. In situations without enough Power to knock the opponent down with a Special then plan to use Heavy Attacks after a successful Parry."
+  "description": "Genius weapons designer and masked vigilante skateboarder, Dwayne Taylor trained himself to peak human perfection before taking on the mantle of Night Thrasher. Forming the New Warriors, Taylor sought to take revenge on the criminal underworld that killed his parents. Night Thrasher was transported to the Battlerealm moments before an explosion claimed the lives of his teammates leaving many to presume him dead. Night Thrasher now fights alongside Earth’s mightiest heroes in the Contest of Champions.",
+  "gameplay": {
+    "description": "Passive:   \nNight Thrasher’s advanced combat suit grants him immunity to Incinerate effects and 667 Physical Resistance.\n+83.3 Critical Damage Rating for each Unique Debuff on his opponent. This ability is not affected by Ability Accuracy Reduction\nWell Timed Blocks and successful Dodges grant 5% of max Power while Night Thrasher is under 1 Bar of Power.\nDeveloper Note: Night Thrasher’s combat suit allows him to focus on the important aspects of battle and not worry about small nicks and burns. His damage increases considerably when the battle goes his way. Playing optimally, by fully utilizing Parry and dodging incoming attacks, allows him to retaliate at a faster pace than his opponents.\n\nSkateboard Attacks: \nChampions of the Contest never see the skateboard coming. Attacks using the skateboard have True Accuracy ignoring all Evade and Auto-Block effects.\nDeveloper Note: Skateboard hits occur during Medium Attacks, Heavy Attacks, Special 1 and Special 2. Mastering when to use the skateboard is the key making the most out of Night Thrasher’s Abilities.\n\nOn Opponent Knockdown:  \nRefresh the duration of all active Gadget Debuffs.\nDeveloper Note: Knockdowns occur after successfully landing a Heavy Attack, Special 1, or Special 2. Knowing when to knock down your opponent will be vital to Night Thrasher’s success. In situations without enough Power to knock the opponent down with a Special then plan to use Heavy Attacks after a successful Parry."
+  },
+  "specials": {
+    "1": {
+      "description": "Vengeance on a Skateboard – Night Thrasher blindsides his target with skateboard strikes to open them up for a trick gadget shot.",
+      "note": "Night Thrasher uses the Shock Baton to inflict Shock dealing 459.2 Energy Damage over 12 seconds. If this attack is activated after striking with a Light Attack, Night Thrasher instead uses the Smoke Capsule Gadget, inflicting Disorient. Disorient reduces Enemy Defensive Ability Accuracy by 50% and lowers the opponent’s Block Proficiency by 50% for 12 seconds. If this attack is activated after striking with a Medium Attack, Night Thrasher instead uses the Explosive Gadget inflicting Incinerate, removing Perfect Block Chance, decreasing the opponent’s Block Proficiency by 50% and dealing 459.2 Energy Damage over 12 seconds. \nDeveloper Note: Utilizing all of the gadgets at Night Thrasher’s disposal is essential. Night Thrasher can execute one of three gadgets if Special 1 is used immediately after ending a combo with a Light or Medium Attack. Executing the shock baton is easier using of Heavy Attacks and Parry so be sure to find opportunities to bypass a turtling defender and nail them with a shock.",
+      "name": "Vengeance on a Skateboard"
     },
-    "specials": {
-        "1": {
-            "description": "Vengeance on a Skateboard – Night Thrasher blindsides his target with skateboard strikes to open them up for a trick gadget shot.",
-            "note": "Night Thrasher uses the Shock Baton to inflict Shock dealing 459.2 Energy Damage over 12 seconds. If this attack is activated after striking with a Light Attack, Night Thrasher instead uses the Smoke Capsule Gadget, inflicting Disorient. Disorient reduces Enemy Defensive Ability Accuracy by 50% and lowers the opponent’s Block Proficiency by 50% for 12 seconds. If this attack is activated after striking with a Medium Attack, Night Thrasher instead uses the Explosive Gadget inflicting Incinerate, removing Perfect Block Chance, decreasing the opponent’s Block Proficiency by 50% and dealing 459.2 Energy Damage over 12 seconds. \nDeveloper Note: Utilizing all of the gadgets at Night Thrasher’s disposal is essential. Night Thrasher can execute one of three gadgets if Special 1 is used immediately after ending a combo with a Light or Medium Attack. Executing the shock baton is easier using of Heavy Attacks and Parry so be sure to find opportunities to bypass a turtling defender and nail them with a shock."
-        },
-        "2": {
-            "description": "Pavement to Pain – Night Thrasher launches his skateboard forward; jumps and catches the rebound for a quick boost off his enemy.",
-            "note": "Grant Night Thrasher a Precision Buff increasing Critical Rating by 223 for each Unique Debuff effect on the opponent for 10 seconds. Developer Note: Use Special 2 to boost Night Thrasher’s Damage for a short period. The more debuffs on the opponent the deadlier this ability is."
-        },
-        "3": {
-            "description": "Skateboard Warrior – Night Thrasher feints his enemy on his skateboard, mixing up his enemy, and leverages his grappling hook for a devastating drop kick.",
-            "note": "Inflict a Passive Debilitate, extending the duration of all Debuffs by 75% for 45 seconds."
-        }
+    "2": {
+      "description": "Pavement to Pain – Night Thrasher launches his skateboard forward; jumps and catches the rebound for a quick boost off his enemy.",
+      "note": "Grant Night Thrasher a Precision Buff increasing Critical Rating by 223 for each Unique Debuff effect on the opponent for 10 seconds. Developer Note: Use Special 2 to boost Night Thrasher’s Damage for a short period. The more debuffs on the opponent the deadlier this ability is.",
+      "name": "Pavement to Pain"
     },
-    "signature": {
-        "description": "Board to Death   \nPassive:  \nHeavy Attacks have a 35% chance per active Gadget Debuff to inflict Taunt, reducing the opponent’s Attack by 40% and increasing their Special Attack Activation chance by 70% for 10 seconds.\nStriking a Taunted opponent with Skateboard Attacks grants a permanent Fury Buff, increasing Attack by 229. Max 10 stacks. When Knocked Down these Buffs are lost.\nAfter being Knocked Down Night Thrasher has a 50% chance to Purify all Debuffs.",
-        "note": "Developer Note: Players can use Heavy Attacks to inflict a Taunt once the opponent has been peppered with enough of Night Thrasher’s gadgets. Maximizing Night Thrasher’s damage comes from taking advantage of his skateboard attacks while his opponent is Taunted. Players can also expect Night Thrasher to have a tough mental psyche with the ability shrug off Debuffs after being Knocked Down."
-    },
-    "author": {
-        "name": "Kabam",
-        "type": "spotlight",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-night-thrasher/"
-    },
-    "youtube": "4oejVGyHYrM",
-    "attack": {}
+    "3": {
+      "description": "Skateboard Warrior – Night Thrasher feints his enemy on his skateboard, mixing up his enemy, and leverages his grappling hook for a devastating drop kick.",
+      "note": "Inflict a Passive Debilitate, extending the duration of all Debuffs by 75% for 45 seconds.",
+      "name": "Skateboard Warrior"
+    }
+  },
+  "signature": {
+    "description": "Board to Death   \nPassive:  \nHeavy Attacks have a 35% chance per active Gadget Debuff to inflict Taunt, reducing the opponent’s Attack by 40% and increasing their Special Attack Activation chance by 70% for 10 seconds.\nStriking a Taunted opponent with Skateboard Attacks grants a permanent Fury Buff, increasing Attack by 229. Max 10 stacks. When Knocked Down these Buffs are lost.\nAfter being Knocked Down Night Thrasher has a 50% chance to Purify all Debuffs.",
+    "note": "Developer Note: Players can use Heavy Attacks to inflict a Taunt once the opponent has been peppered with enough of Night Thrasher’s gadgets. Maximizing Night Thrasher’s damage comes from taking advantage of his skateboard attacks while his opponent is Taunted. Players can also expect Night Thrasher to have a tough mental psyche with the ability shrug off Debuffs after being Knocked Down.",
+    "name": "Board to Death"
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-night-thrasher/"
+  },
+  "youtube": "4oejVGyHYrM",
+  "attack": {}
 }

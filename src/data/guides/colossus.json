@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Dropkick",
+      "description": "A classic wrestling move used to knock down any opponent."
+    },
+    "2": {
+      "name": "Unstoppable",
+      "description": "Colossus demonstrates hand to hand combat with enough superhuman strength to careen 100 tons."
+    },
+    "3": {
+      "name": "Unbreakable",
+      "description": "In flesh form he is a man; in steel form he is a hero, increasing his damage based on his current Armor level."
+    }
+  },
+  "signature": {
+    "name": "Organic Steel",
+    "description": "Piotr’s organic metal skin shapes and strengthens to his will with no limit."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-colossus/"
+  },
+  "description": "Piotr \\\"Peter\\\" Rasputin was the child of Russian farmers, born with big shoulders and strong spirit. When his mutant powers emerged, his body became encased in living steel and he became one of the mightiest heroes of the Marvel Universe. Peter moved to America to join the X-Men, serving as both the heart and conscience of the team."
+}

@@ -1,59 +1,64 @@
 {
-    "grades": {
-        "normal": "B+",
-        "awakened": "A-"
+  "grades": {
+    "normal": "B+",
+    "awakened": "A-"
+  },
+  "gameplay": {
+    "abilities": [
+      "poisonimmunity",
+      "poison"
+    ],
+    "description": "Passive An enhanced immune system provides full immunity to the Poisons of the Battlerealm.  Passive Whenever Abomination bleeds, his irradiated blood has an 87% chance to Poison the enemy for 55% of his attack over 10 seconds."
+  },
+  "signature": {
+    "name": "Irradiate",
+    "abilities": [
+      "poison"
+    ],
+    "description": "Contact with the Abomination's gamma-irradiated body has chance to Poison the target."
+  },
+  "author": {
+    "name": "JJW",
+    "type": "reddit",
+    "profile": "-JJW-"
+  },
+  "specials": {
+    "1": {
+      "name": "Skull Bash",
+      "ranges": [
+        "melee"
+      ],
+      "damagetypes": [
+        "physical"
+      ],
+      "description": "The Abomination uses his head...literally."
     },
-    "gameplay": {
-        "abilities": [
-            "poisonimmunity",
-            "poison"
-        ],
-        "description": "Passive An enhanced immune system provides full immunity to the Poisons of the Battlerealm.  Passive Whenever Abomination bleeds, his irradiated blood has an 87% chance to Poison the enemy for 55% of his attack over 10 seconds."
+    "2": {
+      "name": "Sonic Boom",
+      "ranges": [
+        "short"
+      ],
+      "damagetypes": [
+        "physical"
+      ],
+      "abilities": [
+        "fury"
+      ],
+      "description": "Abomination lets loose his rage and unleashes a savage beatdown on his opponent."
     },
-    "signature": {
-        "name": "Irradiate",
-        "abilities": [
-            "poison"
-        ]
-    },
-    "author": {
-        "name": "JJW",
-        "type": "reddit",
-        "profile": "-JJW-"
-    },
-    "specials": {
-        "1": {
-            "name": "Skull Bash",
-            "ranges": [
-                "melee"
-            ],
-            "damagetypes": [
-                "physical"
-            ]
-        },
-        "2": {
-            "name": "Sonic Boom",
-            "ranges": [
-                "short"
-            ],
-            "damagetypes": [
-                "physical"
-            ],
-            "abilities": [
-                "fury"
-            ]
-        },
-        "3": {
-            "name": "Gamma Bomb",
-            "damagetypes": [
-                "physical"
-            ]
-        }
-    },
-    "attack": {
-        "description": "All Attacks 10% chance for Fury, increasing your Attack by 45% for 5 seconds.",
-        "abilities": [
-            "fury"
-        ]
+    "3": {
+      "name": "Gamma Bomb",
+      "damagetypes": [
+        "physical"
+      ],
+      "description": "What the Abomination hits into the air, the Abomination hits back down."
     }
+  },
+  "attack": {
+    "description": "All Attacks 10% chance for Fury, increasing your Attack by 45% for 5 seconds.",
+    "abilities": [
+      "fury"
+    ]
+  },
+  "description": "When Russian spy Emil Blonksy exposed himself to gamma radiation, he was transformed forever into the monstrous Abomination! Bigger than the Hulk, the Abomination retains his cunning and intellect – but cannot return to his human form. Enormous, powerful, and angry, the Abomination is a fearsome foe – even to one as strong as the Hulk!"
 }

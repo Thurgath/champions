@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Repulsor Ray",
+      "description": "Iron Man sends his opponents flying with the reliable Repulsor Ray."
+    },
+    "2": {
+      "name": "Uni-Beam",
+      "description": "Iron Man takes flight and activates his chest-mounted Uni-Beam Projection Gun."
+    },
+    "3": {
+      "name": "Billion-Dollar Punch",
+      "description": "A rocket-boosted uppercut sends his opponent airborne, where they're subjected to an array of Iron Man's weaponry."
+    }
+  },
+  "signature": {
+    "name": "Arc Overload",
+    "description": "Iron Man overloads the Arc Reactor in his chest, briefly extending his life span."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-superior-iron-man/"
+  },
+  "description": "Tony Stark has always had an impressive ego, but following an inversion spell during the “Axis” event which brought out the worst aspects of his personality, he moved to San Francisco with a new brand of self-worth. To reflect his latest \\\"superior\\\" outlook, he built the Model 51, a liquid suit of adaptive Armor based off the Cosmic entities known as symbiotes."
+}

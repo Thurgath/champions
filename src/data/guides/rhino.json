@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Stomp",
+      "description": "When the Rhino puts his foot down, everyone listens."
+    },
+    "2": {
+      "name": "Slam",
+      "description": "Some heavy hits make mincemeat outta anyone."
+    },
+    "3": {
+      "name": "Ram",
+      "description": "He's Rhino. He knocks things down. That's what he does. That's who he is."
+    }
+  },
+  "signature": {
+    "name": "Rhino Armor",
+    "description": "A thick polymer suit enhances Rhino's gamma-based strength and resilience, increasing his Physical Resistance."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-rhino/"
+  },
+  "description": "Aleksei Sytsevich's life changed the moment he stepped into an experimental suit – and became the rampaging Rhino! What he lacks in brainpower, he makes up in strength, speed, and a thick hide. And whatever you do, don't get him angry – or you'll end up on the wrong side of his razor-sharp horns!"
+}

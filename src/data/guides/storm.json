@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Lightning Strike",
+      "description": "Storm channels ambient electromagnetic energy into a single strike."
+    },
+    "2": {
+      "name": "Gale",
+      "description": "A gust of wind and blast of lightning send the opponent flying."
+    },
+    "3": {
+      "name": "Tempest",
+      "description": "Storm channels the wrath of nature into a relentless tempest of wind, rain, and lightning that assault her opponent."
+    }
+  },
+  "signature": {
+    "name": "Conduit",
+    "description": "As Power surges and flows through her target, so too do her bolts of lightning."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-storm/"
+  },
+  "description": "Mutant, thief, leader, goddess – Ororo Munroe has played many roles in her life. As Storm, she controls all aspects of the weather on an astonishing scale. Tornados, lightning, and blizzards are hers to command. Summoned from her home in Africa by Professor X, Ororo found a new family in the X-Men – and a new role, as a hero."
+}

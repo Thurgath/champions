@@ -1,58 +1,57 @@
 {
-    "author": {
-        "type": "spotlight",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-the-hood/",
-        "name": "KABAM"
+  "author": {
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/champion-spotlight-the-hood/",
+    "name": "KABAM"
+  },
+  "gameplay": {
+    "abilities": [
+      "stagger",
+      "shock",
+      "bleed"
+    ],
+    "description": "Hex Pistols – Loaded Bullets: 28 – Max Loaded Bullets: 42\nThe Hood’s Bullets Persist from fight to fight within a Quest.\nNullify a Buff: Load 2 Bullets.\nMake the opponent Miss while Invisible: Load 1 Bullet when the Invisibility ends.\n\nHex Pistols – Medium Attacks & Special 2\n100% chance to Fire a Bullet and inflict a stacking Hex, lasting 12 seconds. Each Hex deals a burst of 1150.5 Energy Damage when it Expires and is Refreshed when a new Hex is gained.\n\nDash Back and Hold Block for 1.2 Seconds\n100% chance to gain an Invisibility Buff lasting 8 seconds.\nWhen Ending: Invisibility goes on Cooldown for 6 seconds.\nWhile Active: Hood’s Attacks gain +592.31 Critical Damage Rating and ignore 75% Armor Rating and Block Proficiency.\nWhile Active: Incoming attacks have a 120% chance to Miss. Each time the opponent Misses an attack, this Miss chance is decreased by a flat 20% until the Invisibility ends.\n\nCritical Hits\n100% chance to inflict a non-stacking Stagger Passive lasting 5 seconds. When a Staggered opponent gains a Buff, that Buff and all Buffs triggered at the same time are Nullified.\nWhen this Stagger ends, it inflicts 345.15 direct damage on the opponent and heals The Hood for a matching amount."
+  },
+  "attack": {
+    "heavy": "Refresh the duration of all Personal Bleed and Fate Seal effects Hood has applied to the Opponent.\nCause all Hexes to Expire immediately, with +100% Potency."
+  },
+  "specials": {
+    "1": {
+      "name": "Eldritch Arc",
+      "ranges": [
+        "medium",
+        "long"
+      ],
+      "description": "100% chance to inflict a Shock Debuff, causing 3451.5 Energy Damage over 7.5 seconds.\nIf this Shock expires after lasting its full duration, 100% chance to inflict a Stun Debuff, lasting 3 seconds.",
+      "damagetypes": [
+        "energy"
+      ]
     },
-    "gameplay": {
-        "abilities": [
-            "stagger",
-            "shock",
-            "bleed"
-        ],
-        "description": "Hex Pistols – Loaded Bullets: 28 – Max Loaded Bullets: 42\nThe Hood’s Bullets Persist from fight to fight within a Quest.\nNullify a Buff: Load 2 Bullets.\nMake the opponent Miss while Invisible: Load 1 Bullet when the Invisibility ends.\n\nHex Pistols – Medium Attacks & Special 2\n100% chance to Fire a Bullet and inflict a stacking Hex, lasting 12 seconds. Each Hex deals a burst of 1150.5 Energy Damage when it Expires and is Refreshed when a new Hex is gained.\n\nDash Back and Hold Block for 1.2 Seconds\n100% chance to gain an Invisibility Buff lasting 8 seconds.\nWhen Ending: Invisibility goes on Cooldown for 6 seconds.\nWhile Active: Hood’s Attacks gain +592.31 Critical Damage Rating and ignore 75% Armor Rating and Block Proficiency.\nWhile Active: Incoming attacks have a 120% chance to Miss. Each time the opponent Misses an attack, this Miss chance is decreased by a flat 20% until the Invisibility ends.\n\nCritical Hits\n100% chance to inflict a non-stacking Stagger Passive lasting 5 seconds. When a Staggered opponent gains a Buff, that Buff and all Buffs triggered at the same time are Nullified.\nWhen this Stagger ends, it inflicts 345.15 direct damage on the opponent and heals The Hood for a matching amount."
+    "2": {
+      "name": "Occult Onslaught",
+      "description": "100% Chance to apply a Fate Seal to the opponent, Nullifying all Buffs, and prevents any new Buffs from activating for 6.5 seconds, While this Fate Seal is active the opponents Ability Accuracy is reduced by 65%.\nAt the end of the attack, activate Invisibility.",
+      "damagetypes": [
+        "physical",
+        "energy"
+      ],
+      "ranges": [
+        "long"
+      ]
     },
-    "attack": {
-        "heavy": "Refresh the duration of all Personal Bleed and Fate Seal effects Hood has applied to the Opponent.\nCause all Hexes to Expire immediately, with +100% Potency."
-    },
-    "specials": {
-        "1": {
-            "name": "Eldritch Arc",
-            "ranges": [
-                "medium",
-                "long"
-            ],
-            "description": "100% chance to inflict a Shock Debuff, causing 3451.5 Energy Damage over 7.5 seconds.\nIf this Shock expires after lasting its full duration, 100% chance to inflict a Stun Debuff, lasting 3 seconds.",
-            "damagetypes": [
-                "energy"
-            ]
-        },
-        "2": {
-            "name": "Occult Onslaught",
-            "description": "100% Chance to apply a Fate Seal to the opponent, Nullifying all Buffs, and prevents any new Buffs from activating for 6.5 seconds, While this Fate Seal is active the opponents Ability Accuracy is reduced by 65%.\nAt the end of the attack, activate Invisibility.",
-            "damagetypes": [
-                "physical",
-                "energy"
-            ],
-            "ranges": [
-                "long"
-            ]
-        },
-        "3": {
-            "name": "Dark Pact",
-            "description": "+1725.75 Attack Rating for each full bar of Power the opponent has.\n100% chance to inflict a Bleed, dealing 2531.1 direct damage over 8 seconds.",
-            "damagetypes": [
-                "physical"
-            ],
-            "abilities": [
-                "bleed"
-            ]
-        }
-    },
-    "signature": {
-        "name": "Dark Dealings",
-        "description": "While Invisible\nThe Hood becomes Immune to all Stun effects. Additionally, Firing a Bullet while Invisible has a 45% chance to Steal 10% of the opponent’s current Power, gaining twice that amount in the process."
-
-    },
-    "description": "Always fascinated with super humans, young petty thief Parker Robbins used his gains to help his family, including his ailing mother. When a burglary took an unexpected turn, Parker found himself in possession of a pair of mystical boots and cloak. Struggling to understand the supernatural items, he learned they granted him limited powers, including invisibility and the ability to walk on air. Dubbed “The Hood” by the police, Parker soon found himself forced down a darker path, using his newfound powers to start his own criminal empire to ensure the safety of his family."
+    "3": {
+      "name": "Dark Pact",
+      "description": "+1725.75 Attack Rating for each full bar of Power the opponent has.\n100% chance to inflict a Bleed, dealing 2531.1 direct damage over 8 seconds.",
+      "damagetypes": [
+        "physical"
+      ],
+      "abilities": [
+        "bleed"
+      ]
+    }
+  },
+  "signature": {
+    "name": "Dark Dealings",
+    "description": "While Invisible\nThe Hood becomes Immune to all Stun effects. Additionally, Firing a Bullet while Invisible has a 45% chance to Steal 10% of the opponent’s current Power, gaining twice that amount in the process."
+  },
+  "description": "Always fascinated with super humans, young petty thief Parker Robbins used his gains to help his family, including his ailing mother. When a burglary took an unexpected turn, Parker found himself in possession of a pair of mystical boots and cloak. Struggling to understand the supernatural items, he learned they granted him limited powers, including invisibility and the ability to walk on air. Dubbed “The Hood” by the police, Parker soon found himself forced down a darker path, using his newfound powers to start his own criminal empire to ensure the safety of his family."
 }

@@ -1,0 +1,24 @@
+{
+  "specials": {
+    "1": {
+      "name": "Obliterate",
+      "description": "Two rapid and devastating cosmic blasts from the Mad Titan to soften up his opponent."
+    },
+    "2": {
+      "description": "Rage and power combine to launch Thanos' target into the air with mighty concussive blasts."
+    },
+    "3": {
+      "description": "With a heavy heart, Thanos prepares to introduce his foe to his one true love."
+    }
+  },
+  "signature": {
+    "name": "Immortality ",
+    "description": "With the Strength and Durability of a Titanian Eternal, Thanos is able to withstand base Attack without sustaining significant damage."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-thanos/"
+  },
+  "description": "Thanos has entered the Collector’s Contest, not to fight, but to rule. Seizing immense power from all avenues that he can get his hands on, the Mad Titan strikes down any who would dare to stand against him. With near immortality and unlimited cosmic power, Thanos sets his sights on seizing the ISO-Sphere so that he may one day gain the affection of his true love, Mistress Death."
+}

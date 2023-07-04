@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Freedom Ray",
+      "description": "Blast the opponent with a powerful patriotic beam."
+    },
+    "2": {
+      "name": "Power Spin",
+      "description": "Iron Patriot sets a twisting collision course with his opponent."
+    },
+    "3": {
+      "name": "Air Strike",
+      "description": "The best defense, is a good... air strike! Overboard? Perhaps. Effective? Definitely!"
+    }
+  },
+  "signature": {
+    "name": "Arc Overload",
+    "description": "Iron Patriot overloads the Arc Reactor in his chest, briefly boosting his armor."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-iron-patriot/"
+  },
+  "description": "Don’t be fooled by the Captain American veneer on an Iron Man-esque armor, this Iron Patriot is not what he seems. Why? Because inside the heroic armor lurks the notoriously maniacal and scheming Norman Osborn. He’s locked and loaded to take down anyone that gets in his way during his Dark Reign on The Contest."
+}

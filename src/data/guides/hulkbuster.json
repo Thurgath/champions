@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Hulk-Smasher",
+      "description": "A rocket-aided shoulder tackle smashes the armored suit through whatever, or whoever, happens to be in front of it."
+    },
+    "2": {
+      "name": "Hulk-Blaster",
+      "description": "An uppercut stuns the enemy, setting them up for a powerful Repulsor Ray blast."
+    },
+    "3": {
+      "name": "Hulk-Buster",
+      "description": "The ultimate in Hulk-Busting technology showcases exactly what it can do."
+    }
+  },
+  "signature": {
+    "name": "Iron Rage",
+    "description": "Hulkbuster's armor is reinforced upon receiving damage, making it stronger during tough battles. The perfect counter to Hulk's Rage!"
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-hulkbuster/"
+  },
+  "description": "Tony Stark, man of means and intelligence, knows what to do when it’s time to battle a raging Hulk – build a Hulkbuster exo-frame to bolster your armor.  Loaded for maximum strength and power with loads of heavy weaponry, this is a must have for anyone looking to SMASH!"
+}

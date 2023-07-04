@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Web-Slinger",
+      "description": "When you have web in your eyes, you can't see punches coming."
+    },
+    "2": {
+      "name": "Swingin'",
+      "description": "Two feet in the face, courtesy of your friendly neighborhood Spider-Man."
+    },
+    "3": {
+      "name": "Thwip, Thwip, Pow!",
+      "description": "Like a streak of light, Spider-Man unleashes a powerful acrobatic assault."
+    }
+  },
+  "signature": {
+    "name": "Spider Sense",
+    "description": "Spider-Man has a chance to fully evade attacks."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-spider-man-classic/"
+  },
+  "description": "Peter Parker, a nerdy scientist, leads a secret double life as the Amazing Spider-Man! Swinging through the streets on his webs, he tackles the most despicable criminals of New York City with his spectacular strength, acrobatic skills, and Spidey Sense. All in a day's work for your Friendly Neighborhood Spider-Man!"
+}

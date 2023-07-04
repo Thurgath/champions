@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Hex Sphere",
+      "description": "A concentrated sphere of Chaos Magic blasts Scarlet Witch's opponents."
+    },
+    "2": {
+      "name": "Hex Bolt",
+      "description": "Scarlet Witch sends her opponents flying with a bolt of Chaos Magic."
+    },
+    "3": {
+      "name": "Probability Manipulation",
+      "description": "Scarlet Witch calculates the mathematical probability to make happen whatever she wants. So watch out, because she's REALLY good at math!"
+    }
+  },
+  "signature": {
+    "name": "Veil of Fortune",
+    "description": "Whenever a Critical Hit occurs for either player, Scarlet Witch manipulates the outcome for her benefit."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://marvel-contestofchampions.fandom.com/wiki/Scarlet_Witch_(Ultimate)"
+  },
+  "description": "Sister to Quicksilver, Wanda Maximoff a.k.a. The Scarlet Witch is a true master of chaos magic utilizing a deep understanding of mathematics to ensure success as she brandishes her amazing talents for probability manipulation and reality warping."
+}

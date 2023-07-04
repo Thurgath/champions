@@ -1,57 +1,57 @@
 {
-    "signature": {
-        "description": "Ragin’ Cajun\n\nAlways Active\n\n- Prowess Buffs now also grant Gambit +110.74 Critical Damage Rating each.\n- Additionally, his Flak Jacket is upgraded to allow it to absorb an additional 6157.8 Attack Damage before breaking.",
-        "name": "Ragin’ Cajun",
-        "abilities": []
+  "signature": {
+    "description": "Ragin’ Cajun\n\nAlways Active\n\n- Prowess Buffs now also grant Gambit +110.74 Critical Damage Rating each.\n- Additionally, his Flak Jacket is upgraded to allow it to absorb an additional 6157.8 Attack Damage before breaking.",
+    "name": "Ragin’ Cajun",
+    "abilities": []
+  },
+  "specials": {
+    "1": {
+      "ranges": [
+        "long"
+      ],
+      "damagetypes": [
+        "energy"
+      ],
+      "description": "This attack has a 85% chance to Stun the opponent for 2.5 seconds.",
+      "name": "Cardshark",
+      "abilities": [
+        "stun"
+      ]
     },
-    "specials": {
-        "1": {
-            "ranges": [
-                "long"
-            ],
-            "damagetypes": [
-                "energy"
-            ],
-            "description": "This attack has a 85% chance to Stun the opponent for 2.5 seconds.",
-            "name": "Cardshark",
-            "abilities": [
-                "stun"
-            ]
-        },
-        "2": {
-            "description": "This attack has a 85% chance to give the opponent a Concussion, reducing their Ability Accuracy by 85% for 13 seconds. The Potency of this effect is affected by Class relationships.",
-            "name": "Bayou Beatdown",
-            "ranges": [
-                "medium"
-            ],
-            "damagetypes": [
-                "physical"
-            ]
-        },
-        "3": {
-            "description": "This attack has a 85% chance to inflict up to Two 5 Second Stun Debuffs.",
-            "name": "Royal Flush",
-            "damagetypes": [
-                "energy"
-            ],
-            "abilities": [
-                "stun"
-            ]
-        }
+    "2": {
+      "description": "This attack has a 85% chance to give the opponent a Concussion, reducing their Ability Accuracy by 85% for 13 seconds. The Potency of this effect is affected by Class relationships.",
+      "name": "Bayou Beatdown",
+      "ranges": [
+        "medium"
+      ],
+      "damagetypes": [
+        "physical"
+      ]
     },
-    "gameplay": {
-        "description": "Blocking\n- Gambit charges his weapons while holding Block, gaining a Kinetic Charge every 0.40 seconds. Kinetic Charges build up more slowly as Gambit accumulates more of them. Max Charges: 10.   \n\n\nWhen Charging a Heavy Attack\n- Gambit cashes out, converting his Kinetic Charges to Prowess Buffs, each increasing Special Damage by 40% for 16 seconds.\n\n\nStun\n- Each Stun Debuff on the Opponent Reduces Regeneration Rate and Combat Power Rate by 40% while active.\n- All Stun Debuffs currently on the Opponent are Paused for the duration of Gambit’s Special Attacks.  \n\n\nFlak Jacket\n- Gambit begins each fight with a Flak Jacket charge which is lost once Gambit has taken 15394.5 Attack Damage. Tech Champions’ Attack Damage counts double for this purpose.\n- While Flak Jacket is active, Gambit gains +1400 Armor Rating and incoming Bleed effects suffer -150% Potency.\n- Against Non-Contact Physical Attacks, the Flak Jacket provides an additional +1400 Armor Rating and Critical Resistance.\n\n\nSpecial Attacks\n- If the opponent does not have an Armor Up BUff, all hits gain +20% Ability Accuracy.",
-        "abilities": []
-    },
-    "youtube": "Hhhoso66Gio",
-    "attack": {
-        "description": "Medium, Heavy, Special 1 and Special 2 Attacks\n- These attacks utilize a burst of kinetic energy, reducing the amount of damage the opponent can deal with Passive effects when being struck by 100% for 0.20 seconds.",
-        "damagetypes": []
-    },
-    "author": {
-        "type": "spotlight",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-gambit/",
-        "name": "Kabam"
-    },
-    "description": "Remy LeBeau, raised by thieves on the dark streets of New Orleans was eventually forced to leave that life behind after winning a duel he wasn’t meant to. Gifted with the power to supercharge objects he touches with powerful kinetic force, Gambit now fights alongside his fellow mutants to protect mankind, while also occasionally dipping into his more scoundrel-like nature to pull off a heist here and there."
+    "3": {
+      "description": "This attack has a 85% chance to inflict up to Two 5 Second Stun Debuffs.",
+      "name": "Royal Flush",
+      "damagetypes": [
+        "energy"
+      ],
+      "abilities": [
+        "stun"
+      ]
+    }
+  },
+  "gameplay": {
+    "description": "Blocking\n- Gambit charges his weapons while holding Block, gaining a Kinetic Charge every 0.40 seconds. Kinetic Charges build up more slowly as Gambit accumulates more of them. Max Charges: 10.   \n\n\nWhen Charging a Heavy Attack\n- Gambit cashes out, converting his Kinetic Charges to Prowess Buffs, each increasing Special Damage by 40% for 16 seconds.\n\n\nStun\n- Each Stun Debuff on the Opponent Reduces Regeneration Rate and Combat Power Rate by 40% while active.\n- All Stun Debuffs currently on the Opponent are Paused for the duration of Gambit’s Special Attacks.  \n\n\nFlak Jacket\n- Gambit begins each fight with a Flak Jacket charge which is lost once Gambit has taken 15394.5 Attack Damage. Tech Champions’ Attack Damage counts double for this purpose.\n- While Flak Jacket is active, Gambit gains +1400 Armor Rating and incoming Bleed effects suffer -150% Potency.\n- Against Non-Contact Physical Attacks, the Flak Jacket provides an additional +1400 Armor Rating and Critical Resistance.\n\n\nSpecial Attacks\n- If the opponent does not have an Armor Up BUff, all hits gain +20% Ability Accuracy.",
+    "abilities": []
+  },
+  "youtube": "Hhhoso66Gio",
+  "attack": {
+    "description": "Medium, Heavy, Special 1 and Special 2 Attacks\n- These attacks utilize a burst of kinetic energy, reducing the amount of damage the opponent can deal with Passive effects when being struck by 100% for 0.20 seconds.",
+    "damagetypes": []
+  },
+  "author": {
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-gambit/",
+    "name": "Kabam"
+  },
+  "description": "Remy LeBeau, raised by thieves on the dark streets of New Orleans was eventually forced to leave that life behind after winning a duel he wasn’t meant to. Gifted with the power to supercharge objects he touches with powerful kinetic force, Gambit now fights alongside his fellow mutants to protect mankind, while also occasionally dipping into his more scoundrel-like nature to pull off a heist here and there."
 }

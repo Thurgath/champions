@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Call Lightning",
+      "description": "Bridging the heavens and Earth, Thor redirects a mighty bolt of lightning towards his opponent."
+    },
+    "2": {
+      "name": "Mjölnir's Fury",
+      "description": "Nobody can outrun the mystical hammer Mjölnir."
+    },
+    "3": {
+      "name": "Odin's Wrath",
+      "description": "Thor channels the powers of a God and strikes with Mjölnir using the strength of a thunderstorm."
+    }
+  },
+  "signature": {
+    "name": "Ragnarok",
+    "description": "Stunning the Thunder God infuriates him, while opponents stunned by the Thunder God become vulnerable targets for \\\"That Which Smashes\\\"."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-thor/"
+  },
+  "description": "The mighty Thor is Asgard's finest and bravest warrior. With god-like strength, command over lightning, and the aid of the legendary hammer Mjölnir, Thor defends Earth alongside his battle-worthy companions, the Avengers. However, Thor must often contend with the evil schemes of his own brother, the nefarious Loki."
+}

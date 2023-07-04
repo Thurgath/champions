@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "E.M.P. Arrow",
+      "description": "Hawkeye knocks the opponent back, then shoots them with an electromagnetic pulse.  Please taze me, Bro."
+    },
+    "2": {
+      "name": "Incendiary Arrow",
+      "description": "Hawkeye shows off by launching an explosive thermal-tipped arrow while upsidedown."
+    },
+    "3": {
+      "name": "Explosive Barrage",
+      "description": "He didn't miss. You might think he did, but he didn't."
+    }
+  },
+  "signature": {
+    "name": "Hemorrhage",
+    "description": "Arrows strike the jugular to inflict severe Bleeding for a long duration."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-hawkeye/"
+  },
+  "description": "Clint Barton – a regular guy amongst super soldiers, armored geniuses, and gods of thunder. Known as the World's Greatest Marksman, he's mastered the bow and arrow, and the ability to transform nearly any projectile into an accurate weapon. Tenacious, brave, and heroic, Hawkeye stands tall amongst the mighty Avengers!"
+}

@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Pym Punch",
+      "description": "With the help of his Pym Particles, Ant-Man delivers a micro-sized uppercut punch."
+    },
+    "2": {
+      "name": "Ant Swarm",
+      "description": "Ant-Man launches a swarm of angry bullet ants to eat away at his opponent. Millions of tiny ants leads to millions of tiny stings."
+    },
+    "3": {
+      "name": "Ant-Sized Knockout",
+      "description": "With an extra potent dose of Pym Particles, Ant-Man delivers a combo of miniature knockout punches."
+    }
+  },
+  "signature": {
+    "name": "Pym Gas Control",
+    "description": "Ant-Man subtly alters his size during combat, reducing the impact of enemy attacks."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-ant-man/"
+  },
+  "description": "When the original Ant-Man retired from the job, another man rose to the occasion (err, stole the costume) – Scott Lang! With his somewhat sordid past somewhat behind him, Scott took on the size-changing, ant-communicating abilities of Ant-Man!"
+}

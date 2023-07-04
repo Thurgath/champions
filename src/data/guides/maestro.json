@@ -1,3 +1,26 @@
 {
-    "description": "Maestro is an unplayable Universal Champion"
+  "description": "Maestro is an unplayable Universal Champion",
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-maestro/"
+  },
+  "specials": {
+    "1": {
+      "name": "Triplicate ISO Blast",
+      "description": "Two ISO-infused blasts from his gauntlets, followed quickly by a massive blast from his armor."
+    },
+    "2": {
+      "name": "Soulsword & Godslayer",
+      "description": "Two swords from two powerful female warriors, now being used to cut down Maestro's foes."
+    },
+    "3": {
+      "name": "ISO Power Unleashed",
+      "description": "For a brief time, Maestro lets his inner gamma-irradiated self loose. He smashes his opponent, then unleashes the full power of his ISO-Gauntlet."
+    }
+  },
+  "signature": {
+    "name": "ISO Inversion",
+    "description": "Maestro’s control over the Contest turns enemy ISO infusions upon themselves."
+  }
 }

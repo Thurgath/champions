@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Skull Crack",
+      "description": "A savage headbutt from Drax, sure to crack some skulls."
+    },
+    "2": {
+      "name": "Twin Blades",
+      "description": "Drax demonstrates mastery of Dwi Theet martial arts with dual knives. Hope you like a close shave."
+    },
+    "3": {
+      "name": "The Destroyer",
+      "description": "Rage consumes Drax, as he slices and kicks with unmatched power."
+    }
+  },
+  "signature": {
+    "name": "Enthrall",
+    "description": "Fury fascinates The Destroyer. His builds without limit."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-drax/"
+  },
+  "description": "Drax The Destroyer – a fearsome opponent who has faced Thanos, Annihilus, and the Blood Brothers. But the green-skinned warrior started life as Arthur Douglas, a human who lost his family to the evil Thanos. Supercharged by cosmic beings, he became the Destroyer – a rugged brawler and Guardian of the Galaxy!"
+}

@@ -1,45 +1,45 @@
 {
-    "description": "There are many rumors about the origin of the mysterious Civil Warrior… legend says he is a Captain America from an alternate Earth ravaged by the Civil War between his own army and Iron Man’s forces. On that world, the two heroes mortally wounded each other in the final battle of the war; Steve survived, but Tony didn’t. Riddled with guilt for the battle’s destruction and the death of his former ally at his own hands, he assumed the mantle of the Civil Warrior. Adding Tony’s ARC technology to his Captain America gear, he vowed to use his friend’s legacy to stop this senseless conflict from ever happening again.",
-    "gameplay": {
-        "description": "Always Active\nCivil Warrior’s combination of Super Soldier Serum and advanced Stark Tech renders him Immune to Nullify and Stagger effects.\nFor each Armor Up Buff active on Civil Warrior, reduce the opponent’s Bleed and Poison Ability Accuracy by 25%.\n\nPersonal Armor Up Buffs\nUnless otherwise stated, Civil Warrior’s Armor Up Buffs provide +233.33 Armor Rating and last 11 seconds.\n\nAll Attacks\nEvery 5th basic attack that either Champion throws has a 100% chance to grant 1 Armor Up Buff.\n\nDash back and Hold Block for 1.2 seconds\nConverts all Armor Up Buffs into Fury Buffs, with each providing +276.12 Attack Rating for 12 seconds.\nThese Fury Buffs have a Max Stack of 50 and are Refreshed each time an Armor Up Buff is converted this way.\n\nSpecial Attacks\nWhen launched: Pause all Armor Up Buffs for 20 seconds.\nOn hit: Pause all Heal Block Debuffs on the opponent for 6 seconds."
+  "description": "There are many rumors about the origin of the mysterious Civil Warrior… legend says he is a Captain America from an alternate Earth ravaged by the Civil War between his own army and Iron Man’s forces. On that world, the two heroes mortally wounded each other in the final battle of the war; Steve survived, but Tony didn’t. Riddled with guilt for the battle’s destruction and the death of his former ally at his own hands, he assumed the mantle of the Civil Warrior. Adding Tony’s ARC technology to his Captain America gear, he vowed to use his friend’s legacy to stop this senseless conflict from ever happening again.",
+  "gameplay": {
+    "description": "Always Active\nCivil Warrior’s combination of Super Soldier Serum and advanced Stark Tech renders him Immune to Nullify and Stagger effects.\nFor each Armor Up Buff active on Civil Warrior, reduce the opponent’s Bleed and Poison Ability Accuracy by 25%.\n\nPersonal Armor Up Buffs\nUnless otherwise stated, Civil Warrior’s Armor Up Buffs provide +233.33 Armor Rating and last 11 seconds.\n\nAll Attacks\nEvery 5th basic attack that either Champion throws has a 100% chance to grant 1 Armor Up Buff.\n\nDash back and Hold Block for 1.2 seconds\nConverts all Armor Up Buffs into Fury Buffs, with each providing +276.12 Attack Rating for 12 seconds.\nThese Fury Buffs have a Max Stack of 50 and are Refreshed each time an Armor Up Buff is converted this way.\n\nSpecial Attacks\nWhen launched: Pause all Armor Up Buffs for 20 seconds.\nOn hit: Pause all Heal Block Debuffs on the opponent for 6 seconds."
+  },
+  "specials": {
+    "1": {
+      "name": "Arc Blast",
+      "description": "Gain up to 4 Armor Up Buffs. 100% chance each.",
+      "ranges": [
+        "short"
+      ],
+      "damagetypes": [
+        "energy"
+      ],
+      "abilities": [
+        "armorup"
+      ]
     },
-    "specials": {
-        "1": {
-            "name": "Arc Blast",
-            "description": "Gain up to 4 Armor Up Buffs. 100% chance each.",
-            "ranges": [
-                "short"
-            ],
-            "damagetypes": [
-                "energy"
-            ],
-            "abilities": [
-                "armorup"
-            ]
-        },
-        "2": {
-            "name": "Repulsor Rush",
-            "description": "100% chance to Power Burn 2 Bar(s) of Power, dealing direct damage proportional to the amount of Power lost."
-        },
-        "3": {
-            "name": "Overload",
-            "description": "The opponent is Passively Power Locked during this attack.\n100% chance to inflict Power Drain, removing 1 Bar of Power. If the target is reduced to 0 Power, they also receive a Power Lock Debuff for 14 seconds, preventing them from gaining Power."
-        }
+    "2": {
+      "name": "Repulsor Rush",
+      "description": "100% chance to Power Burn 2 Bar(s) of Power, dealing direct damage proportional to the amount of Power lost."
     },
-    "attack": {
-        "heavy": "100% chance to inflict a 10 second Heal Block Debuff, preventing the target from recovering Health.",
-        "abilities": [
-            "healblock"
-        ]
-    },
-    "author": {
-        "type": "spotlight",
-        "name": "Kabam",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-civil-warrior/"
-    },
-    "signature": {
-        "description": "Always Active\nCivil Warrior begins the fight with 2 indefinite Armor Up Buffs.\nBlocking during the opponent’s Special Attack inflicts them with a Passive Weakness, reducing their Attack Rating by 60%. This is also true if Civil Warrior was Blocking prior to a Special Attack 3.",
-        "name": "Arc Shield",
-        "note": "If you accidentally get an opponent to SP3 and don’t have an Sp2 or 3 on deck to pull them down make sure to just hold block to get some massive damage reduction from the attack!"
+    "3": {
+      "name": "Overload",
+      "description": "The opponent is Passively Power Locked during this attack.\n100% chance to inflict Power Drain, removing 1 Bar of Power. If the target is reduced to 0 Power, they also receive a Power Lock Debuff for 14 seconds, preventing them from gaining Power."
     }
+  },
+  "attack": {
+    "heavy": "100% chance to inflict a 10 second Heal Block Debuff, preventing the target from recovering Health.",
+    "abilities": [
+      "healblock"
+    ]
+  },
+  "author": {
+    "type": "spotlight",
+    "name": "Kabam",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-civil-warrior/"
+  },
+  "signature": {
+    "description": "Always Active\nCivil Warrior begins the fight with 2 indefinite Armor Up Buffs.\nBlocking during the opponent’s Special Attack inflicts them with a Passive Weakness, reducing their Attack Rating by 60%. This is also true if Civil Warrior was Blocking prior to a Special Attack 3.",
+    "name": "Arc Shield",
+    "note": "If you accidentally get an opponent to SP3 and don’t have an Sp2 or 3 on deck to pull them down make sure to just hold block to get some massive damage reduction from the attack!"
+  }
 }

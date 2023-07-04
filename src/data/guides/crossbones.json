@@ -1,29 +1,32 @@
 {
-    "description": "Once a high-level agent at S.H.I.E.L.D., Brock Rumlow revealed his true colors as an enforcer for HYDRA when the evil agency threatened to destroy S.H.I.E.L.D. from within. Since the climactic battle, the dangerous mercenary now calling himself Crossbones has hidden underground, striking from the shadows and selling his skills to the highest bidder.",
-    "author": {
-        "type": "spotlight",
-        "name": "Kabam",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-crossbones/"
+  "description": "Once a high-level agent at S.H.I.E.L.D., Brock Rumlow revealed his true colors as an enforcer for HYDRA when the evil agency threatened to destroy S.H.I.E.L.D. from within. Since the climactic battle, the dangerous mercenary now calling himself Crossbones has hidden underground, striking from the shadows and selling his skills to the highest bidder.",
+  "author": {
+    "type": "spotlight",
+    "name": "Kabam",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-crossbones/"
+  },
+  "specials": {
+    "1": {
+      "description": "100% chance to gain a Fury Buff.\n[Contempt] Gain 2 additional Fury Buff(s).",
+      "name": "Rout"
     },
-    "specials": {
-        "1": {
-            "description": "100% chance to gain a Fury Buff.\n[Contempt] Gain 2 additional Fury Buff(s)."
-        },
-        "2": {
-            "description": "100% chance to inflict an Incinerate Debuff, dealing 2392 Energy Damage over 8 seconds and removing Perfect Block Chance and reducing Block Proficiency by 50%.\n[Contempt] Inflict an additional Incinerate Debuff."
-        },
-        "3": {
-            "description": "100% chance to gain a Precision Buff, gaining +700 Critical Rating for 40 seconds.\n[Contempt] Precision Buff becomes Passive and lasts 70 seconds."
-        }
+    "2": {
+      "description": "100% chance to inflict an Incinerate Debuff, dealing 2392 Energy Damage over 8 seconds and removing Perfect Block Chance and reducing Block Proficiency by 50%.\n[Contempt] Inflict an additional Incinerate Debuff.",
+      "name": "Incendiary Assault"
     },
-    "attack": {
-        "heavy": "Spend 1 Fury Buff to Pause all remaining Fury Buffs for 5 seconds. If this attack Intercepts the opponent or strikes them while they are recovering from a Special Attack, it does not cost a Fury Buff."
-    },
-    "signature": {
-        "name": "HYDRA Training",
-        "description": "Brock Rumlow’s brutal Hydra Training allows him a 90% chance to Purify incoming Debuffs. Each time he does so, he gains a Fury Buff. Chance decreases slightly for consecutive triggers."
-    },
-    "gameplay": {
-        "description": "Personal Fury Buffs\nUnless otherwise stated, Crossbones’ Fury Buffs grant +1076.4 Attack Rating for 9 seconds. These Fury Buffs gain increased Potency equal to 20% of Crossbones’s Critical Damage Multiplier.\n\nCritical Hit Replacement\nCrossbones’ hydraulic gauntlets prevent him from landing Critical Hits. Whenever he would land one, he instead gains a Fury Buff.\n\nContempt for Heroes\nWhile fighting #Hero Champions, Crossbones’ abilities gain special [Contempt] bonuses.\n\nAll Attacks\nReduce the opponent’s Defensive Ability Accuracy by 20% for each Fury Buff active. [Contempt] Reduction becomes 25% instead.\n\nOverrun - Dash Back and Hold Block for 1.2 Seconds\nOnce activated, Overrun remains active for 12 seconds, afterwards, it must go on cooldown for 8 seconds.\nWhile Active: Clean Hits on the opponent ignore positive Physical Resistance and gain +50% Combat Power Rate.\nOn Activation: Refresh the duration of all Personal Fury Buffs and gain 2 new ones. [Contempt] Gain an additional Fury Buff."
+    "3": {
+      "description": "100% chance to gain a Precision Buff, gaining +700 Critical Rating for 40 seconds.\n[Contempt] Precision Buff becomes Passive and lasts 70 seconds.",
+      "name": "Eye for an Eye"
     }
+  },
+  "attack": {
+    "heavy": "Spend 1 Fury Buff to Pause all remaining Fury Buffs for 5 seconds. If this attack Intercepts the opponent or strikes them while they are recovering from a Special Attack, it does not cost a Fury Buff."
+  },
+  "signature": {
+    "name": "HYDRA Training",
+    "description": "Brock Rumlow’s brutal Hydra Training allows him a 90% chance to Purify incoming Debuffs. Each time he does so, he gains a Fury Buff. Chance decreases slightly for consecutive triggers."
+  },
+  "gameplay": {
+    "description": "Personal Fury Buffs\nUnless otherwise stated, Crossbones’ Fury Buffs grant +1076.4 Attack Rating for 9 seconds. These Fury Buffs gain increased Potency equal to 20% of Crossbones’s Critical Damage Multiplier.\n\nCritical Hit Replacement\nCrossbones’ hydraulic gauntlets prevent him from landing Critical Hits. Whenever he would land one, he instead gains a Fury Buff.\n\nContempt for Heroes\nWhile fighting #Hero Champions, Crossbones’ abilities gain special [Contempt] bonuses.\n\nAll Attacks\nReduce the opponent’s Defensive Ability Accuracy by 20% for each Fury Buff active. [Contempt] Reduction becomes 25% instead.\n\nOverrun - Dash Back and Hold Block for 1.2 Seconds\nOnce activated, Overrun remains active for 12 seconds, afterwards, it must go on cooldown for 8 seconds.\nWhile Active: Clean Hits on the opponent ignore positive Physical Resistance and gain +50% Combat Power Rate.\nOn Activation: Refresh the duration of all Personal Fury Buffs and gain 2 new ones. [Contempt] Gain an additional Fury Buff."
+  }
 }

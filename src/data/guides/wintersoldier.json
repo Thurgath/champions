@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Deuces are Wild",
+      "description": "After a flurry of attacks, the Winter Soldier finishes off his opponent with a little help from his friends."
+    },
+    "2": {
+      "name": "1945",
+      "description": "The Winter Soldier demonstrates a few tricks he learned from his days as Captain America's partner."
+    },
+    "3": {
+      "name": "Fist of the Red Army",
+      "description": "The Winter Soldier was once the greatest assassin the Red Army ever produced. Let him show you why."
+    }
+  },
+  "signature": {
+    "name": "EMP Upgrade",
+    "description": "Winter Soldier's bionic arm grants him the ability to Power Drain his foes through his Critical Hits."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-winter-soldier/"
+  },
+  "description": "In the heat of World War II, Bucky Barnes gave his life for his country – or so Captain America thought. His frozen body was recovered by the Soviets, who turned him into an unstoppable, fearsome assassin – and their puppet! Freed from Russian control, Bucky now fights on the side of the just and righteous."
+}

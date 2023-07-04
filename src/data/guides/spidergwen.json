@@ -1,46 +1,50 @@
 {
-    "gameplay": {
-        "description": "Spider-Gwen enters the fight in either Hunter Spider or Trap Spider mode.\n\nWhile in Hunter Spider Mode, Gwen focuses her senses to strike at enemy weak points, allowing her attacks a 16% chance to Armor Break foes, lowering their Armor by 4% for 7 seconds. Gwen’s Hunter Spider Mode Armor Break stacks infinitely.\n\nWhile in Trap Spider Mode, Gwen readies herself to ensnare enemies. While charging her Heavy attack, she ignores the first attack against her and gains one charge of Precision, increasing her Critical Hit Rate by 21% for her next attack.\n\n\nSpider-Sense \n- Spider-Gwen begins each fight with 1 charge of Spider-Sense active. Each charge grants +182 Attack Rating and a 7% chance to Evade all incoming attacks. Max: 5 charges.\n- If fighting a Champion of the Superior Class, begin the fight with an additional 3 Spider-Sense charges.\n- When struck 5 times, gain 1 Spider-Sense charge.\n- 100% chance when struck by an opponent with a True Strike Buff to Nullify that Buff and gain a Spider-Sense charge.\n\nEvade Effects\n- When struck by an Unblockable Special Attack, Spider-Gwen ignores the damage. Activating this Ability causes Spider-Gwen to gain +550% Evade Ability Accuracy during the enemy’s Special Attacks for the remainder of the fight.\n- While Blocking, this Champion will not attempt to Evade.\n\n\nEvade an Attack or Land a Combo-Ending Attack\n- Active Hunter-Spider and Trap-Spider effects have their effect duration paused for 0.5 seconds. During Special Attacks, these effects are also paused for the full duration of the attack.",
-        "note": "Gwen’s Trap Spider Mode rewards players who can get the timing correct, allowing players to interrupt combos and strike for a large Critical Boosted attack.",
-        "abilities": [
-            "armorbreak",
-            "precision"
-        ]
+  "gameplay": {
+    "description": "Spider-Gwen enters the fight in either Hunter Spider or Trap Spider mode.\n\nWhile in Hunter Spider Mode, Gwen focuses her senses to strike at enemy weak points, allowing her attacks a 16% chance to Armor Break foes, lowering their Armor by 4% for 7 seconds. Gwen’s Hunter Spider Mode Armor Break stacks infinitely.\n\nWhile in Trap Spider Mode, Gwen readies herself to ensnare enemies. While charging her Heavy attack, she ignores the first attack against her and gains one charge of Precision, increasing her Critical Hit Rate by 21% for her next attack.\n\n\nSpider-Sense \n- Spider-Gwen begins each fight with 1 charge of Spider-Sense active. Each charge grants +182 Attack Rating and a 7% chance to Evade all incoming attacks. Max: 5 charges.\n- If fighting a Champion of the Superior Class, begin the fight with an additional 3 Spider-Sense charges.\n- When struck 5 times, gain 1 Spider-Sense charge.\n- 100% chance when struck by an opponent with a True Strike Buff to Nullify that Buff and gain a Spider-Sense charge.\n\nEvade Effects\n- When struck by an Unblockable Special Attack, Spider-Gwen ignores the damage. Activating this Ability causes Spider-Gwen to gain +550% Evade Ability Accuracy during the enemy’s Special Attacks for the remainder of the fight.\n- While Blocking, this Champion will not attempt to Evade.\n\n\nEvade an Attack or Land a Combo-Ending Attack\n- Active Hunter-Spider and Trap-Spider effects have their effect duration paused for 0.5 seconds. During Special Attacks, these effects are also paused for the full duration of the attack.",
+    "note": "Gwen’s Trap Spider Mode rewards players who can get the timing correct, allowing players to interrupt combos and strike for a large Critical Boosted attack.",
+    "abilities": [
+      "armorbreak",
+      "precision"
+    ]
+  },
+  "signature": {
+    "note": "The Weakness effect does not stack.",
+    "name": "Enhanced Weave",
+    "description": "Gwen's enhanced senses grant her extra power whenever she strikes with a Critical Hit."
+  },
+  "specials": {
+    "1": {
+      "name": "Spider Senses, Tingling ",
+      "abilities": [
+        "evade"
+      ],
+      "description": "100% chance to gain a Passive Trap-Spider effect for 10 seconds. This grants +150 Critical Damage Rating and allows attacks a 30% chance to Enervate the opponent, preventing them from gaining Power when struck for 5 seconds.\nGain 1 Spider-Sense charge after activating this attack."
     },
-    "signature": {
-        "note": "The Weakness effect does not stack.",
-        "name": "Enhanced Weave"
+    "2": {
+      "name": "Whiplash Web Kick ",
+      "abilities": [
+        "stun",
+        "fatigue"
+      ],
+      "description": "One backflip kick, two well placed web shots, and suddenly, Spider Gwen’s foot is rocketing towards her opponent’s face."
     },
-    "specials": {
-        "1": {
-            "name": "Spider Senses, Tingling ",
-            "abilities": [
-                "evade"
-            ],
-            "description": "100% chance to gain a Passive Trap-Spider effect for 10 seconds. This grants +150 Critical Damage Rating and allows attacks a 30% chance to Enervate the opponent, preventing them from gaining Power when struck for 5 seconds.\nGain 1 Spider-Sense charge after activating this attack."
-        },
-        "2": {
-            "name": "Whiplash Web Kick ",
-            "abilities": [
-                "stun",
-                "fatigue"
-            ]
-        },
-        "3": {
-            "name": "Web-Slinging Fun",
-            "abilities": [
-                "stun",
-                "fatigue"
-            ]
-        }
-    },
-    "author": {
-        "name": "Kabam",
-        "type": "spotlight",
-        "profile": "614107-Spider-Gwen-Champion-Spotlight"
-    },
-    "youtube": "7fmEP4XIggg",
-    "attack": {
-        "heavy": "Causes a Slow Debuff on the opponent for 15 seconds, reducing the Ability Accuracy of their Unstoppable and Evade effects by 100%. Opponents with a natural Class Advantage cannot be Slowed."
+    "3": {
+      "name": "Web-Slinging Fun",
+      "abilities": [
+        "stun",
+        "fatigue"
+      ],
+      "description": "Gwen trips up her opponent, swings them around, and introduces them to the wall at an alarming speed. Fun for everyone."
     }
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-spider-gwen/"
+  },
+  "youtube": "7fmEP4XIggg",
+  "attack": {
+    "heavy": "Causes a Slow Debuff on the opponent for 15 seconds, reducing the Ability Accuracy of their Unstoppable and Evade effects by 100%. Opponents with a natural Class Advantage cannot be Slowed."
+  },
+  "description": "Leaping from an alternate reality in which Peter Parker died and she was bitten by a radioactive spider, Gwen Stacy learned the painful lesson that with great power there must come great responsibility. Attempting to gain redemption for her fallen friend, she now fights crime as the amazing Spider-Woman. It shouldn't be a problem practicing with her band, getting to class on time, and still trying to protect her identity from Police Lieutenant George Stacy – her father! She’s totally got this...right?"
 }

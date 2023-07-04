@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Relentless Raccoon",
+      "description": "Three punches to that special place. Never doubt a raccoon."
+    },
+    "2": {
+      "name": "Grenade Toss",
+      "description": "Blam! Grenade to the face."
+    },
+    "3": {
+      "name": "The Big Blaster",
+      "description": "Enough firepower to blow up a moon...at least, a moon in the Raccooniverse."
+    }
+  },
+  "signature": {
+    "name": "Furocity",
+    "description": "Rocket makes fur fly with increased Critical Hit Rate based on his Combo Meter."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-rocket-raccoon/"
+  },
+  "description": "Ain’t no thing like Rocket ‘cept Rocket – the Keystone Quadrant’s most notoriously cranky fur ball. He’s a master of gadgets with an affinity for heavy weapons, and is always down for a heist, especially if it involves blowing things up. He may be ornery, but he is extremely loyal to his teammates from The Guardians of The Galaxy. Just don’t call him a Raccoon!"
+}

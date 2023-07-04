@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Magic Missile",
+      "description": "A humble beginning to any wizard's duel."
+    },
+    "2": {
+      "name": "Faltinian Triplicate",
+      "description": "Doctor Strange orchestrates three Flames of the Faltines in a fiery symphony."
+    },
+    "3": {
+      "name": "The Prestige",
+      "description": "For his final act, Dr. Stephen Strange demonstrates sorcery supremacy – making his opponent disappear."
+    }
+  },
+  "signature": {
+    "name": "Mana Leak",
+    "description": "Doctor Strange counters enemy beneficial effects, draining their power."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://marvel-contestofchampions.fandom.com/wiki/Doctor_Strange_(Marvel_NOW!)"
+  },
+  "description": "With our entire world in imminent danger, Doctor Stephen Strange, the Sorcerer Supreme, went on a fateful journey to obtain power that could surpass all other magic. His quest led him to the Sinner’s Market, a secret bazaar specializing in magical items related to the dark arts. Eventually he stumbled upon an object of immense mystical energy that required part of one’s soul in exchange for god-like power. Doctor Strange traded the entirety of his soul and for a time wielded unimaginable magical might, enough to wipe out armies and level entire planets!"
+}

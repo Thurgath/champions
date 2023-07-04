@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "The Power Cosmic",
+      "description": "Ronan releases the Power Cosmic through his Universal Weapon."
+    },
+    "2": {
+      "name": "Ray of Judgment",
+      "description": "Ronan the Accuser pronounces his opponent guilty."
+    },
+    "3": {
+      "name": "Kree Execution",
+      "description": "There will be no discussion, no debate. Ronan is the Supreme Accuser of the Kree Empire...and his opponent is the accused."
+    }
+  },
+  "signature": {
+    "name": "Edict",
+    "description": "The Supreme Accuser judges the target, punishing them for their use of Buff effects."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-ronan/"
+  },
+  "description": "Judge. Jury. Executioner. Ronan the Accuser is the Head Accuser of the Kree Empire, the right hand of the Supreme Intelligence. He is the ultimate soldier, a strategic genius, and a relentless champion of justice. Wielding the Universal Weapon, Ronan brings his hammer down upon the unjust, wherever they may hide across the cosmos."
+}

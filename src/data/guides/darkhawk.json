@@ -1,31 +1,35 @@
 {
-    "description": "Christopher Powell discovered an alien amulet allowing him to transform into the robotic Darkhawk. Having witnessed his father turn to a life of crime, Powell vowed to use the powers of the amulet to fight crime. This path would eventually lead him to team up with some of Earth’s mightiest heroes.",
-    "gameplay": {
-        "description": "Passive: \nAdvanced Robotics provides full immunity to Poison and Bleed effects.\n\nWing Attacks: \nAttacks that utilize Darkhawk’s Wings have 100% Armor Penetration.\nDeveloper Note: This includes Medium, Heavy and Special 2 hits.\n\nShield Mode:  \nIf Darkhawk is Knocked Down he exits any other mode and enters Shield Mode for 10 seconds. Mode activation is unaffected by Ability Accuracy reduction. Shield Mode provides 1333.33 Armor and reduces enemy Critical Damage by 100%.\nIf Darkhawk Blocks a Contact Attack while in Shield Mode he has a 100% chance to inflict Shock, instantly dealing 122.7 Energy Damage.\nDeveloper Note: While fighting against Darkhawk it is best to manage your Special and Heavy attacks to ensure you aren’t going to waste your damage trying to cut through his high Armor and Autoblocks. Also think about characters that have potent Light and Medium attacks to avoid triggering this mode in the first place.\n\nNull Space Regen:  \nIf Darkhawk enters a Mode from a different Mode, he Regenerates 1399.7 Health over 2 seconds.\nDeveloper Note: This ability can really set you back while fighting him if you’re not dealing over 10% of his health with the knock down blow. As a player this can come in handy to save you if you slip up."
+  "description": "Christopher Powell discovered an alien amulet allowing him to transform into the robotic Darkhawk. Having witnessed his father turn to a life of crime, Powell vowed to use the powers of the amulet to fight crime. This path would eventually lead him to team up with some of Earth’s mightiest heroes.",
+  "gameplay": {
+    "description": "Passive: \nAdvanced Robotics provides full immunity to Poison and Bleed effects.\n\nWing Attacks: \nAttacks that utilize Darkhawk’s Wings have 100% Armor Penetration.\nDeveloper Note: This includes Medium, Heavy and Special 2 hits.\n\nShield Mode:  \nIf Darkhawk is Knocked Down he exits any other mode and enters Shield Mode for 10 seconds. Mode activation is unaffected by Ability Accuracy reduction. Shield Mode provides 1333.33 Armor and reduces enemy Critical Damage by 100%.\nIf Darkhawk Blocks a Contact Attack while in Shield Mode he has a 100% chance to inflict Shock, instantly dealing 122.7 Energy Damage.\nDeveloper Note: While fighting against Darkhawk it is best to manage your Special and Heavy attacks to ensure you aren’t going to waste your damage trying to cut through his high Armor and Autoblocks. Also think about characters that have potent Light and Medium attacks to avoid triggering this mode in the first place.\n\nNull Space Regen:  \nIf Darkhawk enters a Mode from a different Mode, he Regenerates 1399.7 Health over 2 seconds.\nDeveloper Note: This ability can really set you back while fighting him if you’re not dealing over 10% of his health with the knock down blow. As a player this can come in handy to save you if you slip up."
+  },
+  "specials": {
+    "1": {
+      "description": "Amulet Blast - The Darkhawk Amulet taps into the vast powers in Null Space, directing it towards the opponent with devastating force.",
+      "note": "If Darkhawk is in Shield Mode, this attack inflicts Stun for 3.5 seconds. If Darkhawk is in Stealth Mode, opponents generate no Power from this attack. If Darkhawk is in Null Mode, this attack inflicts Shock, dealing 1227 Energy Damage over 4 seconds. Developer Note: Each mode will alter this attack’s secondary effect. Think about your objective in the fight, using this attack might sacrifice your ability to stay in the mode you like most.",
+      "name": "Amulet Blast"
     },
-    "specials": {
-        "1": {
-            "description": "Amulet Blast - The Darkhawk Amulet taps into the vast powers in Null Space, directing it towards the opponent with devastating force.",
-            "note": "If Darkhawk is in Shield Mode, this attack inflicts Stun for 3.5 seconds. If Darkhawk is in Stealth Mode, opponents generate no Power from this attack. If Darkhawk is in Null Mode, this attack inflicts Shock, dealing 1227 Energy Damage over 4 seconds. Developer Note: Each mode will alter this attack’s secondary effect. Think about your objective in the fight, using this attack might sacrifice your ability to stay in the mode you like most."
-        },
-        "2": {
-            "description": "Stealth Mode - Using Null Space to distort the light around him, Darkhawk is able to elude his opponent and deliver a flurry of slicing attacks.",
-            "note": "Darkhawk exits any other mode and enters Stealth Mode for 20 seconds. Mode activation is unaffected by Ability Accuracy reduction. While in Stealth Mode, Darkhawk Passively reduces the opponents Defensive Power Gain by 70% and incoming Light and Medium attacks have a 30% chance to Miss. Developer Note: The power manipulation in the Stealth Mode is one-sided. Be sure not to let the opponent hit you or you’ll wind up losing the power advantage you’ve built up. When playing against him, you’ll be left to decide if you can afford to wait this mode out or push him into Shield Mode and have him Regenerate."
-        },
-        "3": {
-            "description": "Null Mode - The Raptor Armor, acting as a conduit for the unlimited power contained in Null Space, becomes bathed in Null Energy and unleashes its full destructive potential.",
-            "note": "Inflicts Heal Block, preventing the opponent from healing for 30 seconds. Darkhawk exits any other mode and enters Null Mode for 30 seconds. Mode activation is unaffected by Ability Accuracy reduction. Null Mode provides 1227 Attack Rating and 25% Block Penetration. While in Null Mode, Darkhawk’s Basic Attacks have a 100% chance to inflict Shock, instantly dealing 122.7 Energy Damage. Developer Note: This mode is your go-to damage dealing mode. Use this mode to crack through even the toughest enemies."
-        }
+    "2": {
+      "description": "Stealth Mode - Using Null Space to distort the light around him, Darkhawk is able to elude his opponent and deliver a flurry of slicing attacks.",
+      "note": "Darkhawk exits any other mode and enters Stealth Mode for 20 seconds. Mode activation is unaffected by Ability Accuracy reduction. While in Stealth Mode, Darkhawk Passively reduces the opponents Defensive Power Gain by 70% and incoming Light and Medium attacks have a 30% chance to Miss. Developer Note: The power manipulation in the Stealth Mode is one-sided. Be sure not to let the opponent hit you or you’ll wind up losing the power advantage you’ve built up. When playing against him, you’ll be left to decide if you can afford to wait this mode out or push him into Shield Mode and have him Regenerate.",
+      "name": "Stealth Mode"
     },
-    "signature": {
-        "description": "Null Space Upgrades:  \nDarkhawk’s Raptor Armor gains its power directly from Null Space, improving the Armor’s major abilities.\n\nShield Mode grants a 100% chance to Autoblock Enemy Attacks.\nStealth Mode grants 60% increased Offensive Power Rate.\nNull Mode grants 1227 additional Attack Rating.",
-        "note": "Developer Note: Much of Darkhawk’s greatest power lies within his Signature Ability. Be sure to keep an eye on his effectiveness as you increase his sig level. The changes should be noticeable and make him both better on offense and defense."
-    },
-    "author": {
-        "name": "Kabam",
-        "type": "spotlight",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-darkhawk/"
-    },
-    "youtube": "8dmF7Zlm7Wc",
-    "attack": {}
+    "3": {
+      "description": "Null Mode - The Raptor Armor, acting as a conduit for the unlimited power contained in Null Space, becomes bathed in Null Energy and unleashes its full destructive potential.",
+      "note": "Inflicts Heal Block, preventing the opponent from healing for 30 seconds. Darkhawk exits any other mode and enters Null Mode for 30 seconds. Mode activation is unaffected by Ability Accuracy reduction. Null Mode provides 1227 Attack Rating and 25% Block Penetration. While in Null Mode, Darkhawk’s Basic Attacks have a 100% chance to inflict Shock, instantly dealing 122.7 Energy Damage. Developer Note: This mode is your go-to damage dealing mode. Use this mode to crack through even the toughest enemies.",
+      "name": "Null Mode"
+    }
+  },
+  "signature": {
+    "description": "Null Space Upgrades:  \nDarkhawk’s Raptor Armor gains its power directly from Null Space, improving the Armor’s major abilities.\n\nShield Mode grants a 100% chance to Autoblock Enemy Attacks.\nStealth Mode grants 60% increased Offensive Power Rate.\nNull Mode grants 1227 additional Attack Rating.",
+    "note": "Developer Note: Much of Darkhawk’s greatest power lies within his Signature Ability. Be sure to keep an eye on his effectiveness as you increase his sig level. The changes should be noticeable and make him both better on offense and defense.",
+    "name": "Null Space Upgrades"
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-darkhawk/"
+  },
+  "youtube": "8dmF7Zlm7Wc",
+  "attack": {}
 }

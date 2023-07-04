@@ -1,53 +1,53 @@
 {
-    "description": "The Master of Magnetism, Magneto is one of the most powerful- and iconic – mutants on Earth. As Max Eisenhardt, he experienced unspeakable atrocities. As Magneto, he crusades for the rights of mutants – often at any cost. He commands the forces of magnetism, generating force bolts or manipulating metal at will. Sometimes champion, sometimes fanatic, Magneto has fought with the X-Men as often as he has fought against them.",
-    "gameplay": {
-        "description": "Magnetism – Fighting #Metal Champions\n#Metal opponents suffer an indefinite Magnetized Passive which is applied 1 second[s] after the start of the fight and does the following:\n-70% Ability Accuracy & -105% Regeneration rate.\nMagneto’s abilities gain special [Magnet] bonuses.\n\nMutation – Always Active\nMagneto’s attacks deal Energy damage instead of Physical.\nIncoming Bleed & Shock Debuffs suffer -90% Potency.\n[Magnet] +50% Perfect Block Chance.\n[Magnet] +656 Attack rating.\n[Magnet] Attacks cannot be Auto-Blocked or Miss.\n\n[Magnet] Ignore Class Disadvantage\nDuring fights where Magneto has a Class Disadvantage, he removes his Attack Penalty and his opponent loses their Attack Bonus.\n\nKnock the Opponent Down\n100% chance to gain an indefinite Prowess Buff, which is removed after Magneto’s next Special Attack and grants +20% Special Attack damage. Max Stacks: 5. [Magnet] No Max Stack limit.\n\nCharging Heavy Attacks\nMagneto’s force field grants him an Unstoppable Buff during the attack. If struck during a Heavy Attack, this effect goes on cooldown for 14 seconds. [Magnet] Cooldown shortened by 10 seconds.\nIf held for 0.7 seconds, each Prowess Buff has a 100% chance to grant another Prowess Buff, lasting 10 seconds and providing +5% Special Attack damage. Max Stacks: 30.\n\n[Magnet] Enhanced Bleed Debuffs\nPersonal Bleed Debuffs are upgraded into Shrapnel Bleeds which inflict 1532 Physical damage when they expire.\nIf the opponent is Immune to a Bleed Debuff, inflict an Armor Break Debuff, reducing Armor Rating by 525 for 12 seconds."
+  "description": "The Master of Magnetism, Magneto is one of the most powerful- and iconic – mutants on Earth. As Max Eisenhardt, he experienced unspeakable atrocities. As Magneto, he crusades for the rights of mutants – often at any cost. He commands the forces of magnetism, generating force bolts or manipulating metal at will. Sometimes champion, sometimes fanatic, Magneto has fought with the X-Men as often as he has fought against them.",
+  "gameplay": {
+    "description": "Magnetism – Fighting #Metal Champions\n#Metal opponents suffer an indefinite Magnetized Passive which is applied 1 second[s] after the start of the fight and does the following:\n-70% Ability Accuracy & -105% Regeneration rate.\nMagneto’s abilities gain special [Magnet] bonuses.\n\nMutation – Always Active\nMagneto’s attacks deal Energy damage instead of Physical.\nIncoming Bleed & Shock Debuffs suffer -90% Potency.\n[Magnet] +50% Perfect Block Chance.\n[Magnet] +656 Attack rating.\n[Magnet] Attacks cannot be Auto-Blocked or Miss.\n\n[Magnet] Ignore Class Disadvantage\nDuring fights where Magneto has a Class Disadvantage, he removes his Attack Penalty and his opponent loses their Attack Bonus.\n\nKnock the Opponent Down\n100% chance to gain an indefinite Prowess Buff, which is removed after Magneto’s next Special Attack and grants +20% Special Attack damage. Max Stacks: 5. [Magnet] No Max Stack limit.\n\nCharging Heavy Attacks\nMagneto’s force field grants him an Unstoppable Buff during the attack. If struck during a Heavy Attack, this effect goes on cooldown for 14 seconds. [Magnet] Cooldown shortened by 10 seconds.\nIf held for 0.7 seconds, each Prowess Buff has a 100% chance to grant another Prowess Buff, lasting 10 seconds and providing +5% Special Attack damage. Max Stacks: 30.\n\n[Magnet] Enhanced Bleed Debuffs\nPersonal Bleed Debuffs are upgraded into Shrapnel Bleeds which inflict 1532 Physical damage when they expire.\nIf the opponent is Immune to a Bleed Debuff, inflict an Armor Break Debuff, reducing Armor Rating by 525 for 12 seconds."
+  },
+  "attack": {
+    "damagetypes": [
+      "energy"
+    ]
+  },
+  "signature": {
+    "name": "Homo Superior",
+    "description": "Mutation – Always Active\nMagneto’s mutation reaches Omega level, preventing him from losing more than 3136.97 Health from any single damage source, excluding damage from a Special 3 Attack.\nHe also gains +232.76 Critical Resistance and Block Penetration. [Magnet] This attribute bonus is increased by +100%.\nHeavy Attacks now deal a burst of 2189 Energy Damage.",
+    "note": "I find that the Signature Ability letting me tank a few hits while Charging his Heavy Attack is a great way to deal with Stun Immune!"
+  },
+  "specials": {
+    "1": {
+      "name": "Shrapnel",
+      "description": "100% chance to inflict a Bleed Debuff, causing 1641 direct damage over 6 seconds. \nIf the opponent has an Armor Break Debuff, inflict an additional Bleed.\n[Magnet] Inflict an additional Bleed.",
+      "ranges": [
+        "melee",
+        "long"
+      ],
+      "damagetypes": [
+        "physical"
+      ],
+      "abilities": [
+        "bleed"
+      ]
     },
-    "attack": {
-        "damagetypes": [
-            "energy"
-        ]
+    "2": {
+      "description": "100% chance to inflict an Armor Break Debuff, reducing Armor Rating by 1400 for 10 seconds. This Armor Break does not stack but is re-applied each time Magneto gains a Prowess effect.\n[Magnet] This Debuff triggers when the Special Attack is launched",
+      "name": " Fracture",
+      "ranges": [
+        "medium"
+      ]
     },
-    "signature": {
-        "name": "Homo Superior",
-        "description": "Mutation – Always Active\nMagneto’s mutation reaches Omega level, preventing him from losing more than 3136.97 Health from any single damage source, excluding damage from a Special 3 Attack.\nHe also gains +232.76 Critical Resistance and Block Penetration. [Magnet] This attribute bonus is increased by +100%.\nHeavy Attacks now deal a burst of 2189 Energy Damage.",
-        "note": "I find that the Signature Ability letting me tank a few hits while Charging his Heavy Attack is a great way to deal with Stun Immune!"
-    },
-    "specials": {
-        "1": {
-            "name": "Shrapnel",
-            "description": "100% chance to inflict a Bleed Debuff, causing 1641 direct damage over 6 seconds. \nIf the opponent has an Armor Break Debuff, inflict an additional Bleed.\n[Magnet] Inflict an additional Bleed.",
-            "ranges": [
-                "melee",
-                "long"
-            ],
-            "damagetypes": [
-                "physical"
-            ],
-            "abilities": [
-                "bleed"
-            ]
-        },
-        "2": {
-            "description": "100% chance to inflict an Armor Break Debuff, reducing Armor Rating by 1400 for 10 seconds. This Armor Break does not stack but is re-applied each time Magneto gains a Prowess effect.\n[Magnet] This Debuff triggers when the Special Attack is launched",
-            "name": " Fracture",
-            "ranges": [
-                "medium"
-            ]
-        },
-        "3": {
-            "description": "If the opponent is a #Hero Champion, 100% chance to gain a 30 second Fury Buff, granting +1641 Attack.\n[Magnet] 100% chance to gain a 30 second Fury Buff, granting +1641 Attack.\nEach Prowess Buff on Magneto has a 70% chance to inflict 1 Bleed Debuff, causing 1203.95 direct damage over 8 seconds.",
-            "note": "See how many Fury’s you can stack up in a fight, and then unleash your Special 3 Attack for an insane amount of Bleed Damage.",
-            "abilities": [
-                "bleed"
-            ],
-            "name": "Cold-Blooded Fusion"
-        }
-    },
-    "author": {
-        "name": "Kabam",
-        "type": "spotlight",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-magneto/"
-    },
-    "youtube": "y0RWy6Otr_g"
+    "3": {
+      "description": "If the opponent is a #Hero Champion, 100% chance to gain a 30 second Fury Buff, granting +1641 Attack.\n[Magnet] 100% chance to gain a 30 second Fury Buff, granting +1641 Attack.\nEach Prowess Buff on Magneto has a 70% chance to inflict 1 Bleed Debuff, causing 1203.95 direct damage over 8 seconds.",
+      "note": "See how many Fury’s you can stack up in a fight, and then unleash your Special 3 Attack for an insane amount of Bleed Damage.",
+      "abilities": [
+        "bleed"
+      ],
+      "name": "Cold-Blooded Fusion"
+    }
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-magneto/"
+  },
+  "youtube": "y0RWy6Otr_g"
 }

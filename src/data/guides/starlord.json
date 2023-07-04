@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Rocket Kick",
+      "description": "What makes a kick to the face better? Rockets, and a little pelvic sorcery."
+    },
+    "2": {
+      "name": "Element Gun",
+      "description": "Star-Lord fires a shot from his Element Gun, but not before smacking his opponent in the face."
+    },
+    "3": {
+      "name": "Heroic Blast",
+      "description": "With heroism like this, soon everyone in the galaxy will know the name \\\"Star-Lord\\\"."
+    }
+  },
+  "signature": {
+    "name": "Tactician",
+    "description": "Star-Lord familiarizes with opponents' techniques, increasing Attack and Block Proficiency as blows are exchanged."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-star-lord/"
+  },
+  "description": "Hey, what's going on? Oh, you're on Earth? Wow, bummer city. I mean, I grew up on Earth, and it's cool and all, but...space, man, is the place. I got ships, I got my Element Gun, I got the babes...I rule. Down there, I was a loser. Up here, I am the Legendary Star-Lord!"
+}

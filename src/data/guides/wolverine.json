@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "X-Slash",
+      "description": "Wolverine delivers a signature slash with unbreakable Adamantium claws."
+    },
+    "2": {
+      "name": "Primal Rage",
+      "description": "No words, just teeth and claws."
+    },
+    "3": {
+      "name": "Kill-Frenzy",
+      "description": "Only two things are certain in life, an' this ain't taxes."
+    }
+  },
+  "signature": {
+    "name": "Cellular Regeneration",
+    "description": "Wolverine's natural healing factor accelerates, granting cumulative Regeneration."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-wolverine/"
+  },
+  "description": "You've heard the stories. You've seen the bloody aftermath. You think you're ready. But nothing – nothing – can prepare you to go toe to toe with the savage Wolverine! One of the fiercest combatants in the Marvel Universe, this mutant is relentless thanks to quick healing, unbreakable adamantium bones, and retractable claws. You think you're ready? You'll never be ready."
+}

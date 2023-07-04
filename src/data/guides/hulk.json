@@ -1,47 +1,52 @@
 {
-    "grades": {
-        "normal": "B",
-        "awakened": "B+"
+  "grades": {
+    "normal": "B",
+    "awakened": "B+"
+  },
+  "gameplay": {
+    "abilities": [
+      "poisonimmunity",
+      "fury"
+    ],
+    "description": "When Attacked\n10% chance for Fury, increasing Attack by 70% for 5 seconds.\n\nPassive\nAn enhanced immune system provides full immunity to the Poisons of the Battlerealm"
+  },
+  "specials": {
+    "1": {
+      "name": "Head Smash",
+      "ranges": [
+        "melee"
+      ],
+      "damagetypes": [
+        "physical"
+      ],
+      "description": "Hulk Smash!"
     },
-    "gameplay": {
-        "abilities": [
-            "poisonimmunity",
-            "fury"
-        ],
-        "description": "When Attacked\n10% chance for Fury, increasing Attack by 70% for 5 seconds.\n\nPassive\nAn enhanced immune system provides full immunity to the Poisons of the Battlerealm"
+    "2": {
+      "name": "Thunderclap",
+      "ranges": [
+        "short"
+      ],
+      "damagetypes": [
+        "physical"
+      ],
+      "description": "Hulk...SMASH!"
     },
-    "specials": {
-        "1": {
-            "name": "Head Smash",
-            "ranges": [
-                "melee"
-            ],
-            "damagetypes": [
-                "physical"
-            ]
-        },
-        "2": {
-            "name": "Thunderclap",
-            "ranges": [
-                "short"
-            ],
-            "damagetypes": [
-                "physical"
-            ]
-        },
-        "3": {
-            "name": "Worldbreaker",
-            "damagetypes": [
-                "physical"
-            ]
-        }
-    },
-    "signature": {
-        "name": "Hulk Rage"
-    },
-    "author": {
-        "name": "JJW",
-        "type": "reddit",
-        "profile": "-JJW-"
+    "3": {
+      "name": "Worldbreaker",
+      "damagetypes": [
+        "physical"
+      ],
+      "description": "HULK! SMASH!"
     }
+  },
+  "signature": {
+    "name": "Hulk Rage",
+    "description": "Hulk is angered by receiving damage, strengthening his attacks. You wouldn't like him when he's angry!"
+  },
+  "author": {
+    "name": "JJW",
+    "type": "reddit",
+    "profile": "-JJW-"
+  },
+  "description": "PUNY HUMAN! Stop pestering Hulk with dumb questions! Stupid Banner walk into Gamma Bomb blast! Now not just Banner – but HULK! Hulk will slam, crush, and destroy all puny humans! Hulk is the strongest there is! None shall defeat Hulk!"
 }

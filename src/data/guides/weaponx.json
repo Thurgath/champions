@@ -1,28 +1,34 @@
 {
-    "description": "Logan became known to the Weapon X program when he joined Team X. While Team X would disband, the Weapon X program was far from finished with him. He would later be the chosen subject for Experiment X, leading to him being captured and taken to a facility near Roanoke, Canada. There, Adamantium was bonded to his skeleton, and his brain was programmed to keep him under control. But after he was “tested” on the population of Roanoke, he was driven into an insane berserk rage by the pain of what he had endured, and what he had been made to do. Breaking free he escaped from the Weapon X program, but though much time has passed, he has never truly recovered from what was done to him by the Weapon X program.",
-    "gameplay": {
-        "description": "Passive  \n- Immune to All types of Regeneration Rate Modification except due to Poison.\n- The Potency of all Bleed Effects is reduced by 50%.\n\n\nRage – Passive \n- Weapon X gains a Rage Charge each time he’s Struck, one of his Abilities Fails to trigger due to Chance, or a Debuff is Purified off the Opponent.\n- Gaining Rage Charges as well as all of the Berserk Rage Effects are unaffected by Ability Accuracy Reduction.\n- At 25 Rage Charges Weapon X snaps and enters a Berserk Rage lasting until his Rage Charges reach 0.\n- Upon entering Berserk Rage, Weapon X goes Unstoppable for 4 seconds.\n- As long as he’s Berserk and not Unstoppable, Weapon X’s Rage Charges fall off one at a time, falling faster the longer he’s been Berserk.\n- After Weapon X’s Berserk Rage ends all of its associated effects immediately end, and Weapon X cannot gain Rage Charges for 20 seconds.\n\n\nBerserk Rage Effects – Passive \n- Weapon X gains the following bonuses while in Berserk Rage:\n- Gain +2414 Attack.\n- 100% Chance when Struck to gain a Regeneration Passive healing 100% of the Hit Damage taken, over 5 seconds.\n- 100% Chance when Struck to gain a Fury Passive granting +3621 Attack, for 5 seconds. Max: 1 Stack.\n- Immune to All Stun Effects.   \n- All Attacks become Unblockable.\n\n\nAttack Missed or Evaded – Passive \n- Gain +2 Rage Charges.\n- 100% chance to go Unstoppable for 1 second.\n\n\nWhen Attacked\n- While not in a Berserk Rage, 50% Chance when Struck to gain a Regeneration Passive healing 40% of the Hit Damage taken, over 5 seconds.\n\n\nWhen Charging a Heavy Attack\n- If Weapon X has any Rage Charges, he gains a Passive Unstoppable for 1.5 seconds, then goes on Cooldown for 10 seconds.\n\n\nSpecial Attacks\n- Gain +5 Rage Charges\n- If at or above 15 Rage Charges, go Berserk."
+  "description": "Logan became known to the Weapon X program when he joined Team X. While Team X would disband, the Weapon X program was far from finished with him. He would later be the chosen subject for Experiment X, leading to him being captured and taken to a facility near Roanoke, Canada. There, Adamantium was bonded to his skeleton, and his brain was programmed to keep him under control. But after he was “tested” on the population of Roanoke, he was driven into an insane berserk rage by the pain of what he had endured, and what he had been made to do. Breaking free he escaped from the Weapon X program, but though much time has passed, he has never truly recovered from what was done to him by the Weapon X program.",
+  "gameplay": {
+    "description": "Passive  \n- Immune to All types of Regeneration Rate Modification except due to Poison.\n- The Potency of all Bleed Effects is reduced by 50%.\n\n\nRage – Passive \n- Weapon X gains a Rage Charge each time he’s Struck, one of his Abilities Fails to trigger due to Chance, or a Debuff is Purified off the Opponent.\n- Gaining Rage Charges as well as all of the Berserk Rage Effects are unaffected by Ability Accuracy Reduction.\n- At 25 Rage Charges Weapon X snaps and enters a Berserk Rage lasting until his Rage Charges reach 0.\n- Upon entering Berserk Rage, Weapon X goes Unstoppable for 4 seconds.\n- As long as he’s Berserk and not Unstoppable, Weapon X’s Rage Charges fall off one at a time, falling faster the longer he’s been Berserk.\n- After Weapon X’s Berserk Rage ends all of its associated effects immediately end, and Weapon X cannot gain Rage Charges for 20 seconds.\n\n\nBerserk Rage Effects – Passive \n- Weapon X gains the following bonuses while in Berserk Rage:\n- Gain +2414 Attack.\n- 100% Chance when Struck to gain a Regeneration Passive healing 100% of the Hit Damage taken, over 5 seconds.\n- 100% Chance when Struck to gain a Fury Passive granting +3621 Attack, for 5 seconds. Max: 1 Stack.\n- Immune to All Stun Effects.   \n- All Attacks become Unblockable.\n\n\nAttack Missed or Evaded – Passive \n- Gain +2 Rage Charges.\n- 100% chance to go Unstoppable for 1 second.\n\n\nWhen Attacked\n- While not in a Berserk Rage, 50% Chance when Struck to gain a Regeneration Passive healing 40% of the Hit Damage taken, over 5 seconds.\n\n\nWhen Charging a Heavy Attack\n- If Weapon X has any Rage Charges, he gains a Passive Unstoppable for 1.5 seconds, then goes on Cooldown for 10 seconds.\n\n\nSpecial Attacks\n- Gain +5 Rage Charges\n- If at or above 15 Rage Charges, go Berserk."
+  },
+  "attack": {
+    "description": "50% chance to cause a Bleed Debuff dealing 362.1 Direct Damage over 5 seconds. With 10+ Rage this abilitiy’s chance to trigger increases to 100%..",
+    "heavy": "If below 10 Rage Charges, double current Rage Charges Refresh all Bleed Effects on Opponent."
+  },
+  "specials": {
+    "1": {
+      "description": "X-Slash: Weapon X delivers what will become a signature move with his razor sharp Adamantium claws.\n- While Berserk gain +1207 Attack.\n- 100% chance to inflict Bleed, dealing 2414 Direct Damage over 5 seconds.\n- If this attack doesn’t Hit gain +5 Rage Charges.",
+      "note": "When fighting against Weapon X this special attack is dangerous even if it is dodged because it helps build Rage stacks. Offensively it’s also a way for Weapon X to apply a strong Bleed effect for him to refresh with his Heavy Attack."
     },
-    "attack": {
-        "description": "50% chance to cause a Bleed Debuff dealing 362.1 Direct Damage over 5 seconds. With 10+ Rage this abilitiy’s chance to trigger increases to 100%..",
-        "heavy": "If below 10 Rage Charges, double current Rage Charges Refresh all Bleed Effects on Opponent."
+    "2": {
+      "description": "Frenzied Rage: A wild charge of flashing claws and snarling teeth.\n- While Berserk, each Hit pauses Rage fall off for 1 second.\n- If triggered while not Berserk, gain up to +1810.5 Attack based on Rage.",
+      "note": "This is Weapon X’s go to for immediate damage while in Berserk mode, allowing him to extend it slightly and benefit from all the bonus Attack he gets from it."
     },
-    "specials": {
-        "1": {
-            "description": "X-Slash: Weapon X delivers what will become a signature move with his razor sharp Adamantium claws.\n- While Berserk gain +1207 Attack.\n- 100% chance to inflict Bleed, dealing 2414 Direct Damage over 5 seconds.\n- If this attack doesn’t Hit gain +5 Rage Charges.",
-            "note": "When fighting against Weapon X this special attack is dangerous even if it is dodged because it helps build Rage stacks. Offensively it’s also a way for Weapon X to apply a strong Bleed effect for him to refresh with his Heavy Attack."
-        },
-        "2": {
-            "description": "Frenzied Rage: A wild charge of flashing claws and snarling teeth.\n- While Berserk, each Hit pauses Rage fall off for 1 second.\n- If triggered while not Berserk, gain up to +1810.5 Attack based on Rage.",
-            "note": "This is Weapon X’s go to for immediate damage while in Berserk mode, allowing him to extend it slightly and benefit from all the bonus Attack he gets from it."
-        },
-        "3": {
-            "description": "Scent of Blood: Just the barest whiff of blood in the air immediately drives Weapon X into berserk rage.\n- Gain Rage Charges up to 25 and then go Berserk.\n- 100% chance to inflict Bleed, dealing 2414 Direct Damage over 15 seconds.",
-            "note": "The SP3 gets Weapon X straight into Berserk Rage. This can be very useful to get back into Berserk Rage after the cooldown ends. It also inflicts the longest Bleed that Weapon X has access to, which makes it the easiest for him to refresh with his Heavy over the rest of the fight."
-        }
-    },
-    "signature": {
-        "description": "Boundless Rage: Weapon X loses himself even more completely into his rage, becoming even less aware of the damage wreaked on his body.\n\nPassive\n- Berserk Rage’s Cooldown Duration decreases by 7 second(s).\n- Start each Fight with a Regeneration Buff granting up to 4709.7 Health based on the number of Rage Charges Weapon X ended the last fight with, up to 25.",
-        "note": "Wolverine (Weapon X)’s Signature Ability is twofold: it gives him greater access to his Berserk Rage mode, which in our opinion is when he’s most fun to play (not to mention most powerful). Secondly, it gives him a Regeneration on fight start, which supports the reckless, berserker playstyle of Weapon X. If he’s not taking at least some damage in the fight, he’s probably not being aggressive enough to make maximum use of his kit."
+    "3": {
+      "description": "Scent of Blood: Just the barest whiff of blood in the air immediately drives Weapon X into berserk rage.\n- Gain Rage Charges up to 25 and then go Berserk.\n- 100% chance to inflict Bleed, dealing 2414 Direct Damage over 15 seconds.",
+      "note": "The SP3 gets Weapon X straight into Berserk Rage. This can be very useful to get back into Berserk Rage after the cooldown ends. It also inflicts the longest Bleed that Weapon X has access to, which makes it the easiest for him to refresh with his Heavy over the rest of the fight."
     }
+  },
+  "signature": {
+    "description": "Boundless Rage: Weapon X loses himself even more completely into his rage, becoming even less aware of the damage wreaked on his body.\n\nPassive\n- Berserk Rage’s Cooldown Duration decreases by 7 second(s).\n- Start each Fight with a Regeneration Buff granting up to 4709.7 Health based on the number of Rage Charges Weapon X ended the last fight with, up to 25.",
+    "note": "Wolverine (Weapon X)’s Signature Ability is twofold: it gives him greater access to his Berserk Rage mode, which in our opinion is when he’s most fun to play (not to mention most powerful). Secondly, it gives him a Regeneration on fight start, which supports the reckless, berserker playstyle of Weapon X. If he’s not taking at least some damage in the fight, he’s probably not being aggressive enough to make maximum use of his kit.",
+    "name": "Berserker Rage"
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-wolverine-weapon-x/"
+  }
 }

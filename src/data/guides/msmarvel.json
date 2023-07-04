@@ -1,0 +1,26 @@
+{
+  "specials": {
+    "1": {
+      "name": "Cosmic Blast",
+      "description": "A powerful beam of cosmic energy blasts all in its path."
+    },
+    "2": {
+      "name": "Cosmic Kick",
+      "description": "Ms. Marvel delivers a massive kick with galactic grace."
+    },
+    "3": {
+      "name": "Rocket Punch",
+      "description": "Charging to maximum power levels, Ms. Marvel releases concussive energy bursts from her hands."
+    }
+  },
+  "signature": {
+    "name": "Energy Absorption",
+    "description": "Attack is increased based on stored Power. In addition, blocking partially absorbs energy-based attacks, fueling Ms. Marvel's Power Meter."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-ms--marvel/"
+  },
+  "description": "Former Air Force pilot, Kree-enhanced warrior, and manipulator of cosmic energy, Carol Danvers has seen her fair share of incarnations. And while she has now proudly earned the mantle of Captain Marvel, fans will also happily remember her time as the original Ms. Marvel!"
+}

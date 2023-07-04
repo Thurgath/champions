@@ -1,30 +1,32 @@
 {
-    "description": "When a failed business opportunity left him desperate, Adrian Toomes became a black market power-player by scavenging the advanced tech and alien weapons left behind from previous Super Hero battles. From these scraps and leftovers, Toomes built himself a massive winged vehicle and retrofitted the rest into incredible weapons that he sells. Now seeking further profits and power, the Vulture has set his sights on even more advanced technology.",
-    "gameplay": {
-        "description": "Always Active\nThe Vulture’s high-tech suit grants Immunity to Incinerate effects.\nGain an Indefinite Armor Up Buff, increasing Armor Rating by +1718.18. If removed, this Buff will return after 8 seconds.\n\nChitauri Core Charge – Always Active\nStarting Charge: 50. Max Charge: 100.\nEither Champion Lands a Critical Hit: +10 Charge.\nVulture avoids a Debuff due to Immunity: +100 Charge.\n\nChitauri Core Charge – Exhaust Burn\nWhile dashing back, Vulture cannot be struck by attacks.\nIf Vulture avoids an attack while dashing back in this way, he spends 10 Core Charge to grant a 100% chance to inflict a non-stacking Incinerate Debuff, causing 1859.2 Energy Damage over 5 seconds. This effect also removes Perfect Block Chance and reduces Block Proficiency by 50%.\n\nChitauri Core Charge – Raptor Strike\nTo perform a Raptor Strike, launch a Medium Attack immediately after dashing back. Launching a Raptor Strike costs 40 Core Charge.\nIf the Raptor Strike Hits: Drain 50% of the opponent’s current Power.\nIf the Raptor Strike is Blocked: Vulture gains a non-stacking indefinite Decoy Passive, which causes the next strike against him to Miss. Well-Timed Blocks will ignore the Decoy’s Miss Chance.\n\nSpecial Attack 1 & 2\nVulture’s Siphon Debuffs have 100% chance to trigger and they Passively Drain 25% of all Power the opponent gains from any source while they are active."
+  "description": "When a failed business opportunity left him desperate, Adrian Toomes became a black market power-player by scavenging the advanced tech and alien weapons left behind from previous Super Hero battles. From these scraps and leftovers, Toomes built himself a massive winged vehicle and retrofitted the rest into incredible weapons that he sells. Now seeking further profits and power, the Vulture has set his sights on even more advanced technology.",
+  "gameplay": {
+    "description": "Always Active\nThe Vulture’s high-tech suit grants Immunity to Incinerate effects.\nGain an Indefinite Armor Up Buff, increasing Armor Rating by +1718.18. If removed, this Buff will return after 8 seconds.\n\nChitauri Core Charge – Always Active\nStarting Charge: 50. Max Charge: 100.\nEither Champion Lands a Critical Hit: +10 Charge.\nVulture avoids a Debuff due to Immunity: +100 Charge.\n\nChitauri Core Charge – Exhaust Burn\nWhile dashing back, Vulture cannot be struck by attacks.\nIf Vulture avoids an attack while dashing back in this way, he spends 10 Core Charge to grant a 100% chance to inflict a non-stacking Incinerate Debuff, causing 1859.2 Energy Damage over 5 seconds. This effect also removes Perfect Block Chance and reduces Block Proficiency by 50%.\n\nChitauri Core Charge – Raptor Strike\nTo perform a Raptor Strike, launch a Medium Attack immediately after dashing back. Launching a Raptor Strike costs 40 Core Charge.\nIf the Raptor Strike Hits: Drain 50% of the opponent’s current Power.\nIf the Raptor Strike is Blocked: Vulture gains a non-stacking indefinite Decoy Passive, which causes the next strike against him to Miss. Well-Timed Blocks will ignore the Decoy’s Miss Chance.\n\nSpecial Attack 1 & 2\nVulture’s Siphon Debuffs have 100% chance to trigger and they Passively Drain 25% of all Power the opponent gains from any source while they are active."
+  },
+  "attack": {
+    "heavy": "Spend 25 Core Charge to grant a 100% chance to inflict an Armor Break Debuff, removing an Armor Up Buff and reducing Armor Rating by 900 for 30 seconds. Max Stacks: 5"
+  },
+  "specials": {
+    "1": {
+      "description": "Inflict a Siphon Charge Debuff lasting 15 seconds. All Power Drained by this Debuff grants Core Charge proportional to the amount Drained. Ratio: 1 Bar = 45 Charge(s).",
+      "name": "Wingpack Strike"
     },
-    "attack": {
-        "heavy": "Spend 25 Core Charge to grant a 100% chance to inflict an Armor Break Debuff, removing an Armor Up Buff and reducing Armor Rating by 900 for 30 seconds. Max Stacks: 5"
+    "2": {
+      "description": "Inflict a Siphon Burn Debuff lasting 20 seconds. All Power Drained by this Debuff inflicts Direct Damage proportional to the amount lost. Ratio: 1 Bar = 4880.4 Damage.",
+      "name": "Engine Flare"
     },
-    "specials": {
-        "1": {
-            "description": "Inflict a Siphon Charge Debuff lasting 15 seconds. All Power Drained by this Debuff grants Core Charge proportional to the amount Drained. Ratio: 1 Bar = 45 Charge(s)."
-        },
-        "2": {
-            "description": "Inflict a Siphon Burn Debuff lasting 20 seconds. All Power Drained by this Debuff inflicts Direct Damage proportional to the amount lost. Ratio: 1 Bar = 4880.4 Damage."
-        },
-        "3": {
-            "description": "This attack Incinerates the enemy, dealing 5577.6 Energy Damage over 20 seconds. This effect also removes Perfect Block Chance and reduces Block Proficiency by 50% while active."
-        }
-    },
-    "signature": {
-        "name": "Thermal Reconfiguration",
-        "description": "Always Active\nVulture now begins the fight at full Chitauri Core Charge. Additionally, While the opponent is Incinerated, Vulture gains 1.88% Max Power every .5 second(s)."
-    },
-    "author": {
-        "name": "Kabam",
-        "type": "spotlight",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-vulture/"
-
+    "3": {
+      "description": "This attack Incinerates the enemy, dealing 5577.6 Energy Damage over 20 seconds. This effect also removes Perfect Block Chance and reduces Block Proficiency by 50% while active.",
+      "name": "Hybrid Alien Technology"
     }
+  },
+  "signature": {
+    "name": "Thermal Reconfiguration",
+    "description": "Always Active\nVulture now begins the fight at full Chitauri Core Charge. Additionally, While the opponent is Incinerated, Vulture gains 1.88% Max Power every .5 second(s)."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-vulture/"
+  }
 }

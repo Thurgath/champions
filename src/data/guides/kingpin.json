@@ -1,28 +1,32 @@
 {
-    "description": "Wilson Fisk, Kingpin of Crime in New York City, rules the underworld with ruthless efficiency. Gaining power through numerous illegal ventures and intimidation, Kingpin has gone toe-to-toe with the likes of Spider-Man and Daredevil, keeping pace thanks to his incredible physical prowess and strength. Now the infamous crime lord has set his sights on the Contest and its rich supply of dangerous black ISO-8. For Fisk, the Contest is just another city to conquer.",
-    "gameplay": {
-        "description": "Always Active\nBase Regeneration Rate is set at 50% instead of the normal 100%.\nImmune to all effects that modify Regeneration Rate, except Poison.\n\nRage\n\nKingpin can gain Rage, which is a Debuff with no inherent effect.\nKingpin gains a non-Rage Debuff: 60% chance to Purify it and gain 1 Rage. Cooldown: 0.5 seconds.\nKingpin takes damage: Gain 1 Rage. Cooldown: 20 seconds.\nEnemy Evades or Auto-Blocks: Gain 1 Rage. Cooldown: 1.50 seconds.\n\nIncoming Debuffs\nEach Debuff on Kingpin only strengthens his resolve, increasing Attack Rating by 724.2 and Combat Power Rate by 5%.\n\nOverpower – When Kingpin has 8+ Debuffs\nKingpin Purifies 8 Debuffs to grant a 100% chance to gain an Overpower Buff, lasting 15 seconds and providing +6035 Attack Rating as well as Unblockable Special Attacks."
+  "description": "Wilson Fisk, Kingpin of Crime in New York City, rules the underworld with ruthless efficiency. Gaining power through numerous illegal ventures and intimidation, Kingpin has gone toe-to-toe with the likes of Spider-Man and Daredevil, keeping pace thanks to his incredible physical prowess and strength. Now the infamous crime lord has set his sights on the Contest and its rich supply of dangerous black ISO-8. For Fisk, the Contest is just another city to conquer.",
+  "gameplay": {
+    "description": "Always Active\nBase Regeneration Rate is set at 50% instead of the normal 100%.\nImmune to all effects that modify Regeneration Rate, except Poison.\n\nRage\n\nKingpin can gain Rage, which is a Debuff with no inherent effect.\nKingpin gains a non-Rage Debuff: 60% chance to Purify it and gain 1 Rage. Cooldown: 0.5 seconds.\nKingpin takes damage: Gain 1 Rage. Cooldown: 20 seconds.\nEnemy Evades or Auto-Blocks: Gain 1 Rage. Cooldown: 1.50 seconds.\n\nIncoming Debuffs\nEach Debuff on Kingpin only strengthens his resolve, increasing Attack Rating by 724.2 and Combat Power Rate by 5%.\n\nOverpower – When Kingpin has 8+ Debuffs\nKingpin Purifies 8 Debuffs to grant a 100% chance to gain an Overpower Buff, lasting 15 seconds and providing +6035 Attack Rating as well as Unblockable Special Attacks."
+  },
+  "attack": {
+    "heavy": "While charging a Heavy Attack, Kingpin gains +3150 Physical Resistance and gains an Unstoppable Buff for 0.8 seconds.\nIf Kingpin lands 3 Heavy Attacks within 4 seconds of each other he has a 100% chance to gain a Fury Buff granting +2051.9 Attack Rating for 14 seconds. While this Fury Buff is active, Kingpin cannot gain his Unstoppable Buff while charging his Heavy Attack."
+  },
+  "specials": {
+    "1": {
+      "description": "A blast of black ISO-8 has a 100% chance to inflict a Degeneration Debuff, causing 3621 direct damage over 14 seconds.\nWhile this Degeneration is active, the opponent suffers -50% Attack Rating and -65% Defensive Ability Accuracy.",
+      "name": "Dirty Deeds"
     },
-    "attack": {
-        "heavy": "While charging a Heavy Attack, Kingpin gains +3150 Physical Resistance and gains an Unstoppable Buff for 0.8 seconds.\nIf Kingpin lands 3 Heavy Attacks within 4 seconds of each other he has a 100% chance to gain a Fury Buff granting +2051.9 Attack Rating for 14 seconds. While this Fury Buff is active, Kingpin cannot gain his Unstoppable Buff while charging his Heavy Attack."
+    "2": {
+      "description": "100% chance to gain an Unstoppable Buff lasting 7.5 seconds.\nWhile this Unstoppable is active, each hit either Champion lands has a 50% chance to grant Kingpin 1 Rage. No Cooldown.",
+      "name": "Eliminate the Competition"
     },
-    "specials": {
-        "1": {
-            "description": "A blast of black ISO-8 has a 100% chance to inflict a Degeneration Debuff, causing 3621 direct damage over 14 seconds.\nWhile this Degeneration is active, the opponent suffers -50% Attack Rating and -65% Defensive Ability Accuracy."
-        },
-        "2": {
-            "description": "100% chance to gain an Unstoppable Buff lasting 7.5 seconds.\nWhile this Unstoppable is active, each hit either Champion lands has a 50% chance to grant Kingpin 1 Rage. No Cooldown."
-        },
-        "3": {
-            "description": "Gain 4 Rage & Refresh all Overpower Buffs.\n100% chance to inflict a 3.5 second Stun Debuff."
-        }
-    },
-    "signature": {
-        "description": "Enhanced Rage\nFisk brings his ill intent upon The Contest, entering the fight with 2 – 4 Rages active (rounded down).\nWhen Kingpin’s Overpower Buff ends, he has a chance to gain up to 5 Rages, with each having a 50 – 90% chance to activate."
-    },
-    "author": {
-        "name": "Kabam",
-        "type": "spotlight",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-kingpin/"
+    "3": {
+      "description": "Gain 4 Rage & Refresh all Overpower Buffs.\n100% chance to inflict a 3.5 second Stun Debuff.",
+      "name": "Self Made Man"
     }
+  },
+  "signature": {
+    "description": "Enhanced Rage\nFisk brings his ill intent upon The Contest, entering the fight with 2 – 4 Rages active (rounded down).\nWhen Kingpin’s Overpower Buff ends, he has a chance to gain up to 5 Rages, with each having a 50 – 90% chance to activate.",
+    "name": "True Nature"
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-kingpin/"
+  }
 }
