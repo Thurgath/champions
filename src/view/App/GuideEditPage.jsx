@@ -120,7 +120,6 @@ const GuideEditPage = {
         details.push(
             <ChampionSection
                 title={ lang.string('description') }
-                help={ lang.string(`champion-${uid}-description`, null) }
                 grade={ grades && guide.grades.normal || true }
                 gradeAwakened={ grades && guide.grades.awakened || true }
                 description={ guide && guide.description || true }
@@ -159,8 +158,7 @@ const GuideEditPage = {
                 <ChampionSection
                     title={ `${ lang.string('special') } ${ index }` }
                     rating={ special && special.rating || true }
-                    name={ lang.string(`champion-special-${uid}-${index}-name`, null) }
-                    help={ lang.string(`champion-special-${uid}-${index}-description`, null) }
+                    name={ special.name }
                     description={ special && special.description || true }
                     ranges={ special && special.ranges || (index !== 3) }
                     damagetypes={ special && special.damagetypes || true }
@@ -176,8 +174,7 @@ const GuideEditPage = {
             <ChampionSection
                 title={ lang.string('signature') }
                 rating={ signature && guide.signature.rating || true }
-                name={ lang.string(`champion-signature-${uid}-name`, null) }
-                help={ lang.string(`champion-signature-${uid}-description`, null) }
+                name={ signature.name }
                 description={ signature && guide.signature.description || true }
                 abilities={ signature && guide.signature.abilities || true }
                 note={ signature && guide.signature.note || true }

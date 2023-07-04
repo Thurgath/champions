@@ -154,7 +154,6 @@ const GuidePage = {
             details.push(
                 <ChampionSection
                     title={ lang.string('description') }
-                    help={ lang.string(`champion-${uid}-description`, null) }
                     grade={ guide.grades && guide.grades.normal }
                     gradeAwakened={ guide.grades && guide.grades.awakened }
                     description={ guide.description }
@@ -206,23 +205,12 @@ const GuidePage = {
                         title={ `${ lang.string('special') } ${ index }` }
                         icon={ `special-${ index }` }
                         rating={ guide.specials[ index ].rating }
-                        name={ lang.string(`champion-special-${uid}-${index}-name`, null) }
-                        help={ lang.string(`champion-special-${uid}-${index}-description`, null) }
+                        name={ guide.specials[ index ].name }
                         description={ guide.specials[ index ].description }
                         ranges={ (index === 3)? null: guide.specials[ index ].ranges }
                         damagetypes={ guide.specials[ index ].damagetypes }
                         abilities={ guide.specials[ index ].abilities }
                         note={ guide.specials[ index ].note }
-                    />
-                );
-            }
-            else {
-                details.push(
-                    <ChampionSection
-                        title={ `${ lang.string('special') } ${ index }` }
-                        icon={ `special-${ index }` }
-                        name={ lang.string(`champion-special-${uid}-${index}-name`, null) }
-                        help={ lang.string(`champion-special-${uid}-${index}-description`, null) }
                     />
                 );
             }
@@ -232,21 +220,11 @@ const GuidePage = {
             details.push(
                 <ChampionSection
                     title={ lang.string('signature') }
-                    name={ lang.string(`champion-signature-${uid}-name`, null) }
-                    help={ lang.string(`champion-signature-${uid}-description`, null) }
+                    name={ guide.signature.name }
                     rating={ guide.signature.rating }
                     description={ guide.signature.description }
                     abilities={ guide.signature.abilities }
                     note={ guide.signature.note }
-                />
-            );
-        }
-        else {
-            details.push(
-                <ChampionSection
-                    title={ lang.string('signature') }
-                    name={ lang.string(`champion-signature-${uid}-name`, null) }
-                    help={ lang.string(`champion-signature-${uid}-description`, null) }
                 />
             );
         }

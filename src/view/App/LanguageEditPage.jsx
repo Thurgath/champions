@@ -136,15 +136,6 @@ const LanguageEditPage = {
                         .map((uid) => [
                             `champion-${ uid }-name`,
                             `champion-${ uid }-shortname`,
-                            `champion-${ uid }-description`,
-                            `champion-special-${ uid }-1-name`,
-                            `champion-special-${ uid }-1-description`,
-                            `champion-special-${ uid }-2-name`,
-                            `champion-special-${ uid }-2-description`,
-                            `champion-special-${ uid }-3-name`,
-                            `champion-special-${ uid }-3-description`,
-                            `champion-signature-${ uid }-name`,
-                            `champion-signature-${ uid }-description`,
                         ])
                         .map(([ name, shortname, ...keys ]) => (
                             <div class="field-group-set">
