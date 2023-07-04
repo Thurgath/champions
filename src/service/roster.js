@@ -131,7 +131,7 @@ const SORT_PI_ASC = (a, b) => {
     return -b.attr.uid.localeCompare(a.attr.uid);
 };
 const SORT_NAME_DESC = (a, b) => {
-    const name = -lang.string(a.attr.uid).localeCompare(lang.string(b.attr.uid));
+    const name = -lang.string(`champion-${a.attr.uid}-name`).localeCompare(lang.string(`champion-${b.attr.uid}-name`));
     if(name !== 0)
         return name;
     const type = a.typeIndex - b.typeIndex;
@@ -140,7 +140,7 @@ const SORT_NAME_DESC = (a, b) => {
     return b.attr.stars - a.attr.stars;
 };
 const SORT_NAME_ASC = (a, b) => {
-    const name = lang.string(a.attr.uid).localeCompare(lang.string(b.attr.uid));
+    const name = lang.string(`champion-${a.attr.uid}-name`).localeCompare(lang.string(`champion-${b.attr.uid}-name`));
     if(name !== 0)
         return name;
     const type = a.typeIndex - b.typeIndex;
