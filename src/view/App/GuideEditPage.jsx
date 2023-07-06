@@ -158,7 +158,7 @@ const GuideEditPage = {
                 <ChampionSection
                     title={ `${ lang.string('special') } ${ index }` }
                     rating={ special && special.rating || true }
-                    name={ special.name }
+                    name={ special && special.name }
                     description={ special && special.description || true }
                     ranges={ special && special.ranges || (index !== 3) }
                     damagetypes={ special && special.damagetypes || true }
@@ -174,7 +174,7 @@ const GuideEditPage = {
             <ChampionSection
                 title={ lang.string('signature') }
                 rating={ signature && guide.signature.rating || true }
-                name={ signature.name }
+                name={ signature && signature.name }
                 description={ signature && guide.signature.description || true }
                 abilities={ signature && guide.signature.abilities || true }
                 note={ signature && guide.signature.note || true }
