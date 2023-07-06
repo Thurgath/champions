@@ -1,0 +1,61 @@
+@import "../../util/colors";
+
+.collapsible-tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
+}
+.collapsible-tab {
+  background: shade(#38c, 10%);
+  width: 100%;
+  overflow: hidden;
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+    &::after {
+      content: "\276F";
+      color: #ffffff;
+      width: 1em;
+      height: 1em;
+      margin: 0.5em 1em;
+      text-align: center;
+      transition: all .35s;
+    }
+  }
+  &-content {
+    background: tint(#38c, 1%);
+    max-height: 0;
+    padding: 0;
+    transition: all .35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0em;
+    font-size: 0.75em;
+    cursor: pointer;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+// :checked
+input:checked {
+  + .collapsible-tab-label {
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .collapsible-tab-content {
+    overflow: auto;
+    max-height: none;
+    padding: 0;
+  }
+}

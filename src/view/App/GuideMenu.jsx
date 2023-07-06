@@ -2,7 +2,7 @@ import { championTypeMap } from '../../data/champions';
 import lang from '../../service/lang';
 import { UNRELEASED_CHAMPIONS } from '../../data/champions/unreleased';
 import MenuHeader from '../Menu/MenuHeader.jsx';
-import MenuSection from '../Menu/MenuSection.jsx';
+import CollapsibleMenuSection from '../Menu/CollapsibleMenuSection.jsx';
 import MenuOption from '../Menu/MenuOption.jsx';
 import ImageIcon from '../ImageIcon.jsx';
 import Icon from '../Icon.jsx';
@@ -20,19 +20,12 @@ const GuideMenu = {
             <MenuHeader title="guides" />
         );
         championTypeMap.forEach(({ typeId, uids }) => {
-            options.push(
-                <MenuSection
-                    icon={
-                        <Icon icon={ `type-${ typeId }` } before />
-                    }
-                    title={ `type-${ typeId }-name` }
-                />
-            );
+            const subMenus = [];
             uids
                 .map((uid) => ({ uid, name: lang.string(`champion-${ uid }-name`).toLowerCase() || '' }))
                 .sort((a, b) => a.name.localeCompare(b.name))
-                .map(({ uid }) => options.push(
-                    <MenuOption
+                .map(({ uid }) =>
+                    subMenus.push(<MenuOption
                         key={ `guide-champion-${ uid }` }
                         icon={(
                             <ImageIcon src={ `images/champions/portrait_${ uid }.png` } icon="user" before />
@@ -41,11 +34,20 @@ const GuideMenu = {
                         title={ `champion-${ uid }-name` }
                         selected={ currentUid === uid }
                         href={ `/guide/${ uid }` }
-                    />
-                ));
+                    />)
+                );
+            options.push(
+                <CollapsibleMenuSection
+                    icon={
+                        <Icon icon={ `type-${ typeId }` } before />
+                    }
+                    title={ `type-${ typeId }-name` }
+                    subMenus={ subMenus }
+                />
+            );
         });
         return (
-            <div m="GuideMenu" key={ 'guide-menu' }>
+            <div m="GuideMenu" key={ 'guide-menu' } class="collapsible-tabs">
                 { options }
             </div>
         );
