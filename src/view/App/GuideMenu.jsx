@@ -1,3 +1,4 @@
+import guides from '../../data/guides';
 import { championTypeMap } from '../../data/champions';
 import lang from '../../service/lang';
 import { UNRELEASED_CHAMPIONS } from '../../data/champions/unreleased';
@@ -24,6 +25,7 @@ const GuideMenu = {
             uids
                 .map((uid) => ({ uid, name: lang.string(`champion-${ uid }-name`).toLowerCase() || '' }))
                 .sort((a, b) => a.name.localeCompare(b.name))
+                .filter((championUid) => guides.hasGuide(championUid.uid, lang.current))
                 .map(({ uid }) =>
                     subMenus.push(<MenuOption
                         key={ `guide-champion-${ uid }` }

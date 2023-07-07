@@ -136,7 +136,7 @@ const GuidePage = {
     controller: function(data) {
     },
     view(ctrl, { uid }) {
-        const guide = guides[ uid ];
+        const guide = guides.getGuideFor(uid, lang.current);
         const details = [];
         const champion = championMap[ `${ uid }-2` ] || championMap[ `${ uid }-3` ] || championMap[ `${ uid }-4` ] || championMap[ `${ uid }-5` ] || championMap[ `${ uid }-6` ];
         if(champion) {

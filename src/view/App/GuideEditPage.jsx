@@ -12,7 +12,7 @@ import m from 'mithril';
 /* eslint-enable no-unused-vars */
 
 function editGuide(uid, initialSelectors, initialKey, value) {
-    const guide = guides[ uid ] || (guides[ uid ] = {});
+    const guide = guides.getGuideFor(uid, lang.current) || guides.import(uid, '{}', lang.current);
     let object = guide;
 
     const keys = initialKey.split('.');
@@ -103,7 +103,7 @@ const GuideEditPage = {
     controller: function(data) {
     },
     view(ctrl, { uid }) {
-        const guide = guides[ uid ];
+        const guide = guides.getGuideFor(uid, lang.current);
         const details = [];
         const champion = championMap[ `${ uid }-2` ] || championMap[ `${ uid }-3` ] || championMap[ `${ uid }-4` ] || championMap[ `${ uid }-5` ] || championMap[ `${ uid }-6` ];
         if(champion) {

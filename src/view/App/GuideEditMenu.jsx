@@ -21,7 +21,7 @@ const GuideEditMenu = {
         );
         if (window.FileReader) {
             const handleTextInput = (text) => {
-                guides[ uid ] = JSON.parse(text);
+                guides.import(uid, text, lang.current);
                 notify({
                     message: lang.string('notification-guide-import'),
                     tag: 'guide-import',
@@ -55,7 +55,7 @@ const GuideEditMenu = {
                 />
             );
         }
-        const filename = `${ uid }.json`;
+        const filename = guides.getFileNameFor(uid, lang.current);
         options.push(
             <MenuOption
                 icon={(
@@ -64,11 +64,11 @@ const GuideEditMenu = {
                 title="export-json"
                 download={ filename }
                 onclick={ ({ target }) => {
-                    saveFileEventHandler(target, 'text/json', filename, JSON.stringify(guides[ uid ] || {}, null, 4));
+                    saveFileEventHandler(target, 'text/json', filename, JSON.stringify(guides.getGuideFor(uid, lang.current) || {}, null, 4));
                     requestRedraw(5);
                 }}
                 oncontextmenu={ ({ target }) => {
-                    saveFileEventHandler(target, 'text/json', filename, JSON.stringify(guides[ uid ] || {}, null, 4));
+                    saveFileEventHandler(target, 'text/json', filename, JSON.stringify(guides.getGuideFor(uid, lang.current) || {}, null, 4));
                     m.redraw.strategy('none');
                 }}
             />

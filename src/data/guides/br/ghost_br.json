@@ -1,0 +1,34 @@
+{
+    "description": "É impossível lutar contra o desconhecido, e parece que ninguém sabe nada sobre quem é Fantasma ou como ela consegue fazer o que faz. Temida e admirada no submundo do crime por sua habilidade de atravessar paredes, as verdadeiras intenções de Fantasma são tão abstratas quanto ela. Mas uma coisa é clara: ela quer pôr as mãos em toda a Tecnologia Pym que conseguir encontrar. Sua tecnologia avançada combinada com sua habilidade e combate faz dela uma força a ser reconhecida.",
+    "youtube": "r4-wJeKkvVw",
+    "gameplay": {
+        "description": "Correr Para Trás\nComeça a Intangibilidade por 2 segundos. A Intangibilidade não ativa se Fantasma sofrer uma Debilitação de Quebra de Armadura ou tiver uma Precisão Passiva.\n\nIntangibilidade  \n- Na Intangibilidade, receba uma Precisão Passiva por 6 segundos, que faz com que o golpe seguinte seja Crítico e consuma a Precisão Passiva. Fantasma só pode acertar Golpes Críticos usando suas habilidades.\n- Durante a Intangibilidade, os ataques iminentes têm 100% de chance de Errar e cada Debilitação de Dano com o tempo em Fantasma é convertido em uma Fúria Passiva, aumentando a Avaliação de Ataque em 1.294 por 5 segundos.\n- A Intangibilidade se desativa imediatamente quando Fantasma começa um ataque ou bloqueia."
+    },
+    "attack": {
+        "description": "- Os Golpes Críticos não podem ser Esquivados.\n- Golpes Não Críticos têm 10% de chance de conceder um Bônus de Crueldade, aumentando a Avaliação de Dano Crítico em 1.333,33 por 20 segundos. Os Bônus de Crueldade acumulam em até 5.\n- Receba uma Precisão Passiva por 6 segundos quando o oponente Esquivar.",
+        "heavy": "50% de chance de causar Fúria, aumentando o seu Ataque em 647 por 10 segundos. A chance de receber um Bônus de Crueldade em um Golpe Não Crítico Pesado aumenta conforme o Ataque Pesado for carregado."
+    },
+    "specials": {
+        "1": {
+            "description": "Golpe Espectral: Fantasma lança uma enxurrada de ataques precisos antes de acertar um chute com uma mortal.",
+            "note": "Receba 3 Precisões Passivas por 6 segundos. Ao ativar imediatamente após a Sincronia, cada acerto tem um Golpe Crítico garantido."
+        },
+        "2": {
+            "description": "Explorar Fraqueza: Fantasma pega seu oponente desprevenido com chutes no peito e finaliza com um pontapé do alto.",
+            "note": "Receba um Bônus de Crueldade ao aumentar a Avaliação de Dano Crítico em 1.333,33 por 20 segundos, em seguida reinicie todos os Bônus de Crueldade gerados por Fantasma. Ao ativar imediatamente após a Intangibilidade, cada acerto tem um Golpe Crítico garantido."
+        },
+        "3": {
+            "description": "Ofensiva Implacável: Fantasma avança no oponente, ativando e desativando Sincronia, evitando os ataques inimigos e contra-atacando.",
+            "note": "Cada Bônus de Crueldade gerado por Fantasma se converte em uma Crueldade Passiva permanente. Crueldade Passiva acumula em até 5."
+        }
+    },
+    "signature": {
+        "description": "Aumento Quântico: A tecnologia aperfeiçoada oferece à Fantasma maior controle sobre a Intangibilidade. Ela começa a luta usando Intangibilidade e, enquanto está ativa, os ataques que do oponente que Falharem lhe concedem Poder.",
+        "note": "No início da luta, comece a Sincronia por 2 segundos. Quando o oponente Falhar, gera 5% de Poder Máximo cada vez."
+    },
+    "author": {
+        "name": "Kabam",
+        "type": "spotlight",
+        "profile": "https://playcontestofchampions.com/news/campea-em-destaque-fantasma/?lang=pt-br"
+    }
+}

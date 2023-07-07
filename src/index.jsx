@@ -1,7 +1,7 @@
 import './index.css';
 import { notify } from './util/notification';
 import { EFFECT_VALUES } from './data/model/Effect';
-import { GUIDE_KEYS, SPOTLIGHT } from './data/guides';
+import guides, { SPOTLIGHT } from './data/guides';
 import lang from './service/lang';
 import app from './service/app';
 import router from './service/router';
@@ -82,7 +82,7 @@ router.on('/guide/?', () => {
         route = `/guide/${ SPOTLIGHT }`;
     }
     else if(route === app.route) {
-        route = `/guide/${ GUIDE_KEYS[ (Math.random() * GUIDE_KEYS.length) | 0 ] }`;
+        route = `/guide/${ guides.getRandomGuideFor(lang.current) }`;
     }
     router.setRoute(route);
 });

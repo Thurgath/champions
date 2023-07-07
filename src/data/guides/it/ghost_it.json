@@ -1,0 +1,34 @@
+{
+    "description": "Non si può combattere ciò che non si conosce, e a quanto pare nessuno conosce Fantasma, né sa come riesca a fare ciò che fa. Temuta e idolatrata nel mondo criminale per la sua capacità di passare attraverso i muri, le reali intenzioni di Fantasma sono sfuggenti almeno quanto lei, anche se una cosa è certa: vuole mettere le mani su tutta la Tecnologia Pym che le passa sotto il naso. La sua tecnologia avanzata, unita alle sue doti in combattimento, fanno di lei un’avversaria da non sottovalutare.",
+    "youtube": "r4-wJeKkvVw",
+    "gameplay": {
+        "description": "Scattando all’Indietro\nDiventa Intangibile per 2 sec. L’Intangibilità non si attiva se Fantasma ha un Debuff Squarcio Armatura o una Precisione Passiva in corso.\n\nIntangibilità \nMentre è Intangibile, ottiene una Precisione Passiva per 6 sec., che assicura un Colpo Critico al prossimo colpo, consumando la Precisione Passiva. Fantasma può mettere a segno Colpi Critici soltanto tramite le sue abilità.\n- Mentre è Intangibile, gli attacchi in arrivo hanno una probabilità pari a 100% di andare a vuoto, e ogni Debuff a danni prolungati su Fantasma si trasforma in una Furia passiva, che aumenta il Rating Attacco di 1294 per 5 sec. \n- L’Intangibilità si disattiva immediatamente quando Fantasma inizia un attacco o ne Blocca uno in arrivo."
+    },
+    "attack": {
+        "description": "- I Colpi Critici non possono essere Evasi.\n- I Colpi Non-Critici hanno una probabilità pari a 10% di conferire un Buff Crudeltà, che aumenta il Rating Danno Critico di 1333,33 per 20 sec. (numero massimo di istanze dei Buff Crudeltà: 5)\n- Ottiene una Precisione Passiva per 6 sec. quando l’avversario Evade.",
+        "heavy": "Probabilità pari a 50% di attivare Furia, che incrementa l’Attacco di 647 per 10 sec. La probabilità di ottenere un Buff Crudeltà con un Attacco Pesante che non sia un Colpo Critico aumenta quanto più a lungo viene caricato l’Attacco Pesante."
+    },
+    "specials": {
+        "1": {
+            "description": "Colpo Spettrale – Fantasma scatena una raffica di attacchi mirati prima di passare a un calcio con capriola all’indietro.",
+            "note": "Ottiene 3 Precisioni Passive per 6 sec. Se l’attivazione avviene immediatamente dopo l’Intangibilità, ogni colpo sarà sicuramente Critico."
+        },
+        "2": {
+            "description": "Sfrutta un Punto Debole – Fantasma prende alla sprovvista l’avversario con dei calci al torace, e conclude con un calcio volante dall’alto.",
+            "note": "Ottiene un Buff Crudeltà che aumenta il Rating Danno Critico di 1333,33 per 20 sec., poi rinnova tutti i Buff Crudeltà generati da Fantasma. Se l’attivazione avviene immediatamente dopo l’Intangibilità, ogni colpo sarà sicuramente Critico."
+        },
+        "3": {
+            "description": "Massacro Incessante – Fantasma si avvicina all’avversario, entrando e uscendo dalla modalità Intangibile, evitando gli attacchi e contrattaccando con i propri.",
+            "note": "Ogni Buff Crudeltà generato da Fantasma si trasforma in una Crudeltà passiva permanente. (numero massimo di istanze dei Buff Crudeltà passivi: 5)"
+        }
+    },
+    "signature": {
+        "description": "Potenziamento Quantico – Grazie a un aggiornamento alla sua tecnologia, Fantasma ottiene un maggiore controllo su l’Intangibilità. Inizia lo scontro già Intangibile e, finché resta attivo, i colpi a vuoto dell’avversario le fanno accumulare Potere.",
+        "note": "All’inizio dello scontro, attiva Intangibilità per 2 sec. Accumula 5% del Potere Massimo, quando l’avversario va a vuoto."
+    },
+    "author": {
+        "name": "Kabam",
+        "type": "spotlight",
+        "profile": "https://playcontestofchampions.com/news/campionessa-evidenza-fantasma/?lang=it"
+    }
+}

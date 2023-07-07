@@ -1,0 +1,38 @@
+{
+    "description": "No puedes luchar contra lo que no conoces, y parece que nadie conoce nada acerca de quién es Fantasma o sobre cómo puede hacer las cosas que hace. Temida y admirada en el inframundo criminal por su habilidad para la incorporeidad que le permite pasar a través de sólidas paredes, las verdaderas intenciones de Fantasma son tan imprecisas como ella misma, aunque una cosa es segura: su mayor interés es hacerse con toda la Tecnología Pym que pueda encontrar. Su avanzada tecnología en combinación con su habilidad en combate la convierten en una fuerza digna de consideración.​",
+    "youtube": "r4-wJeKkvVw",
+    "gameplay": {
+        "description": "Retroceder \nInicia Incorporeidad durante 2 segundos. La Incorporeidad no se activará si Fantasma sufre una Desventaja de Demolición o tiene una Pasiva de Precisión.\n\nIncorporeidad\nDurante la Incorporeidad, gana una Pasiva de Precisión durante 6 segundos, lo que garantiza que el siguiente golpe será Crítico y consume la Pasiva de Precisión. Fantasma solo puede lanzar Golpes Críticos a través de sus habilidades.\n- Mientras se encuentra en fase de Incorporeidad, los ataques recibidos tienen un 100% de probabilidad de Fallar y cada Desventaja de Daño en el Tiempo en Fantasma se convierte en una Pasiva de Furia, lo que aumenta la Fuerza de Ataque en 1294 durante 5 segundos.\n- Incorporeidad se desactiva inmediatamente cuando Fantasma inicia o Bloquea un ataque."
+    },
+    "attack": {
+        "description": "- Los Golpes Críticos no pueden ser Eludidos.\n- Los Golpes no Críticos tienen un 10% de probabilidad de ganar una Mejora de Crueldad, lo que incrementa la Fuerza de Daño Crítico en 1333,33 durante 20 segundos. Pueden acumularse hasta 5 Mejoras de Crueldad.\n- Cuando el oponente Elude, gana una Pasiva de Precisión durante 6 segundos.",
+        "heavy": "-Un 50% de probabilidad de Furia, lo cual aumenta tu Ataque en 647 durante 10 segundos.\n- La probabilidad de ganar una Mejora de Crueldad con un Golpe no Crítico Fuerte aumenta según la duración de la carga del Ataque Fuerte."
+    },
+    "specials": {
+        "1": {
+            "name": "Ataque Espectral",
+            "description": "Fantasma libera una ráfaga de ataques precisos antes de avanzar con una patada con salto mortal hacia atrás.",
+            "note": "Gana 3 Pasivas de Precisión durante 6 segundos. Cuando se activa inmediatamente después de Incorporeidad, queda garantizado que cada golpe será Crítico."
+        },
+        "2": {
+            "name": "Aprovechamiento de Debilidades",
+            "description": "Fantasma pilla al oponente desprevenido con patadas en el pecho y termina con una patada aérea desde lo alto.",
+            "note": "Gana una Mejora de Crueldad, lo que aumenta la Fuerza de Daño Crítico en 1333,33 durante 20 segundos, después actualiza todas las Mejoras de Crueldad generadas por Fantasma. Cuando se activa inmediatamente después de Incorporeidad, queda garantizado que cada golpe será Crítico."
+        },
+        "3": {
+            "name": "Arremetida Implacable",
+            "description": "Fantasma avanza hacia el oponente, alternando rápidamente su estado normal con el de Incorporeidad, con lo que evita los ataques y responde con los suyos propios.",
+            "note": "Cada Mejora de Crueldad generada por Fantasma se convierte en una Pasiva de Crueldad permanente. Pueden acumularse hasta 5 Pasivas de Crueldad."
+        }
+    },
+    "signature": {
+        "name": "Aumento Cuántico",
+        "description": "La tecnología mejorada proporciona a Fantasma un mayor control sobre la Incorporeidad. Comienza la lucha con Incorporeidad y mientras está activa, los ataques Fallidos del oponente le proporcionan Poder.",
+        "note": "Al comienzo de la lucha, inicia Incorporeidad durante 2 segundos. Cuando los oponentes Fallan, genera un 5% de Poder Máximo por cada Fallo."
+    },
+    "author": {
+        "name": "Kabam",
+        "type": "spotlight",
+        "profile": "https://playcontestofchampions.com/news/personaje-destacado-fantasma/?lang=es"
+    }
+}
