@@ -275,5 +275,13 @@ champions.forEach((champion) => {
     championMap[ champion.id ] = champion;
 });
 
+const getChampion = (championUid, starLevel) => {
+    const starLevelString = starLevel ? `-${starLevel}` : '';
+    const championUidOrId = `${championUid}${starLevelString}`;
+    return championMap[ Object.keys(championMap).find((championId) => championId.startsWith(championUidOrId)) ];
+};
+
+const getChampionById = (championId) => championMap[ championId ];
+
 export default champions;
-export { championMap, championTypes, championTypeMap };
+export { getChampionById, championTypes, championTypeMap, getChampion };

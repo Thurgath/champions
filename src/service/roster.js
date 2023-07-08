@@ -1,7 +1,7 @@
 import lang from './lang';
 import Champion from '../data/model/Champion';
 import { UNRELEASED_CHAMPIONS } from '../data/champions/unreleased';
-import champions, { championMap, championTypes } from '../data/champions';
+import champions, { getChampion, championTypes } from '../data/champions';
 import { fromStorage, toStorage } from '../util/storage';
 
 let roster = fromStorage('roster', [])
@@ -253,7 +253,7 @@ function fromCSV(csv, filename = 'champions.csv') {
             /* eslint-enable no-console */
             continue;
         }
-        const champion = championMap[ `${ uid }-${ stars }` ];
+        const champion = getChampion(uid, stars);
         if(champion === undefined) {
             /* eslint-disable no-console */
             console.error(`Champion not found "${ uid }" in ${ filename }:${ i + 1 }`);

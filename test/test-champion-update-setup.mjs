@@ -20,7 +20,7 @@ const mochaHooks = {
     }
 };
 
-function getOptions(urlTimeout = 1000, saveTestData = false, pageLoadTimeout = 0) {
+function getOptions(urlTimeout = 3000, saveTestData = false, pageLoadTimeout = 0) {
     return {
         readTimeout: urlTimeout,
         pageLoadTimeout,

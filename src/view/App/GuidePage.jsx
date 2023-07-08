@@ -1,7 +1,7 @@
 import './GuidePage.scss';
 import classNames from 'classnames';
 import { effectIcon } from '../../data/effects';
-import { championMap } from '../../data/champions';
+import { getChampion } from '../../data/champions';
 import Champion from '../../data/model/Champion';
 import synergies from '../../data/synergies';
 import guides from '../../data/guides';
@@ -42,7 +42,7 @@ const GuideSynergy = {
             router.setRoute(`/guide/${ championId }`);
             requestRedraw();
         };
-        const champion = championMap[ `${ championId }-2` ] || championMap[ `${ championId }-3` ] || championMap[ `${ championId }-4` ] || championMap[ `${ championId }-5` ] || championMap[ `${ championId }-6` ];
+        const champion = getChampion(championId);
         const typeId = champion && champion.attr.typeId;
         const name = lang.string(`champion-${ championId }-shortname`, null) || lang.string(`champion-${ championId }-name`);
 
@@ -138,7 +138,7 @@ const GuidePage = {
     view(ctrl, { uid }) {
         const guide = guides.getGuideFor(uid, lang.current);
         const details = [];
-        const champion = championMap[ `${ uid }-2` ] || championMap[ `${ uid }-3` ] || championMap[ `${ uid }-4` ] || championMap[ `${ uid }-5` ] || championMap[ `${ uid }-6` ];
+        const champion = getChampion(uid);
         if(champion) {
             details.push(
                 <ChampionHeader

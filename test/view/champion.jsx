@@ -1,4 +1,4 @@
-import { championMap } from '../../src/data/champions';
+import { getChampionById, getChampion } from '../../src/data/champions';
 import ChampionGrade from '../../src/view/Champion/ChampionGrade.jsx';
 import ChampionHeader from '../../src/view/Champion/ChampionHeader.jsx';
 import ChampionPortrait from '../../src/view/Champion/ChampionPortrait.jsx';
@@ -16,7 +16,8 @@ roster.clear();
 
 describe('view/champion/', () => {
 
-    const champion = championMap[ 'thor-3' ];
+    const championById = getChampionById('thor-3');
+    const champion = getChampion('thor', 3);
     champion.attr.role = ARENA;
     describe('<ChampionGrade/>', () => it('should render without error', () => {
         const title = 'type';
@@ -27,7 +28,7 @@ describe('view/champion/', () => {
         expect(mq(ChampionHeader, { champion })).to.exist;
     }));
     describe('<ChampionPortrait/>', () => it('should render without error', () => {
-        expect(mq(ChampionPortrait, { champion })).to.exist;
+        expect(mq(ChampionPortrait, { champion: championById })).to.exist;
     }));
     describe('<ChampionRating/>', () => it('should render without error', () => {
         expect(mq(ChampionRating, {})).to.exist;
