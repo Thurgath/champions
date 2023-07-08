@@ -7,6 +7,9 @@ module.exports = merge(webpackConfig, {
     output: {
         clean: true,
     },
+    optimization: {
+        minimize: false,
+    },
     devServer: {
         allowedHosts: 'all',
         static: {

@@ -17,7 +17,7 @@
     "test:scripts-single": "mocha --loader=testdouble --require test/test-champion-update-setup.mjs 'test/script/**/*.*js*' --grep ",
     "update-champions": "node dev/script/update-champions.mjs",
     "test": "npm run lint && npm run test:all",
-    "deploy": "npx webpack build --config ./dev/config/webpack.config.js && ./dev/script/deploy.sh"
+    "deploy": "npx webpack build --config ./dev/config/webpack-config.js && ./dev/script/deploy.sh"
   },
   "repository": {
     "type": "git",
@@ -49,6 +49,7 @@
     "babel-loader": "^9.1.2",
     "chai": "^4.3.7",
     "cheerio": "^1.0.0-rc.12",
+    "copy-webpack-plugin": "^11.0.0",
     "core-js": "^3.31.0",
     "css-loader": "^6.8.1",
     "eslint": "^8.43.0",

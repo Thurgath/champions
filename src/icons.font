@@ -1,18 +1,20 @@
-{
-    "files": [
-        "./icons/*.svg"
+module.exports = {
+    'files': [
+        './icons/*.svg'
     ],
-    "fontName": "champion-icons",
-    "classPrefix": "champion-icon-",
-    "baseClass": "champion-icon",
-    "fixedWidth": false,
-    "centerHorizontally": true,
-    "ascent": 100,
-    "normalized": true,
-    "types": [
-        "eot",
-        "woff",
-        "ttf",
-        "svg"
+    'fontName': 'champion-icons',
+    'dest': 'fonts',
+    'fileName': '[fontname]-[hash:6].[ext]',
+    'classPrefix': 'champion-icon-',
+    'baseSelector': '.champion-icon',
+    'fixedWidth': false,
+    'centerHorizontally': true,
+    'ascent': 100,
+    'normalized': true,
+    'types': [
+        'eot',
+        'woff',
+        'ttf',
+        'svg'
     ]
-}
+};
