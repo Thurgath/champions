@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
@@ -22,7 +22,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'styles/app-[fullhash:6].css'
+            filename: 'styles/app-[fullhash:6].css',
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
@@ -31,9 +31,9 @@ module.exports = {
         new webpack.optimize.AggressiveMergingPlugin(),
         new CopyPlugin({
             patterns: [
-                { from: "**/*.png", to: "images/", context: "src/images"},
-                { from: "manifest.json", context: "src/"},
-                { from: ".nojekyll", context: "src/"},
+                { from: '**/*.png', to: 'images/', context: 'src/images' },
+                { from: 'manifest.json', context: 'src/' },
+                { from: '.nojekyll', context: 'src/' },
             ],
         }),
     ],
@@ -120,7 +120,7 @@ module.exports = {
                 type: 'asset/resource',
                 generator : {
                     filename : 'fonts/[name]-[hash:6][ext][query]',
-                }
+                },
             },
             // images
             {
