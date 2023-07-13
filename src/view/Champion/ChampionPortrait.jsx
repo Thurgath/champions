@@ -1,10 +1,12 @@
 import './ChampionPortrait.scss';
+import { typeIcon } from '../../data/types';
 import { STAR_RANK_LEVEL } from '../../data/model/Champion';
 import { roleImage } from '../../data/roles';
 import { effectIcon } from '../../data/effects';
 import classNames from 'classnames';
 import ImageIcon from '../ImageIcon.jsx';
 import Icon from '../Icon.jsx';
+import ClassTypeIcon from '../ClassTypeIcon.jsx';
 import {
     getImage,
     IMAGE_EMPTY,
@@ -45,34 +47,40 @@ const ChampionPortrait = {
         for(let i=0; i<stars; i++)
             starImages.push(starIcon);
         const portraitImage = (uid !== null) && getImage(`images/champions/portrait_${ uid }.png`);
+        const borderImage = getImage(`images/borders/${stars}-star_border.png`);
         const hasPortraitImage = Boolean(portraitImage);
+        const hasBorderImage = Boolean(borderImage);
         let title = null;
         if(uid !== null) {
             title = [];
-            if(effects && effects.length) {
+            const hasEffects = effects && effects.length;
+            if(hasEffects) {
                 title.push(
                     <div class={ classNames('title-field', 'title-field-effects') }>
                         { effects.map(({ effectId, effectAmount }) => {
                             details += `\n${ lang.string(`effect-${ effectId }-type`)} +${ effectAmount }%`;
-                            return [ (
-                                <Icon icon={ effectIcon(effectId) } after />
-                            ), (
-                                <span>{ effectAmount }%</span>
-                            ) ];
+                            return <span class="title-field-effects-text"><Icon icon={ effectIcon(effectId) } after />{ effectAmount }%</span>;
                         }) }
                     </div>
                 );
             }
-            if(showPi && (pi || champion.pi)) {
-                title.push(
-                    <div class={ classNames('title-field', 'title-field-pi', {
-                        'title-field-pi-custom': pi && pi > 0 }, 'title-field-sig') }
-                    >{ `${lang.number(pi || champion.pi * scalePi)} ${lang.string('portrait-signature')}: ${awakened}` }</div>
-                );
-            }
-            const name = lang.string(`champion-${ uid }-shortname`, null) || lang.string(`champion-${ uid }-name`);
+            const fullName = lang.string(`champion-${ uid }-name`);
+            const name = lang.string(`champion-${ uid }-shortname`, null) || fullName;
+            const longNameText = name.length > 12;
             title.push(
-                <div class="title-field title-field-name">{ name }</div>
+                <div class={ classNames( 'title-field', 'title-field-name', { 'title-field-name-long': longNameText } ) } title={ fullName }>{ name }</div>
+            );
+            const icon = <span class={ `champion--${ typeId }` }><ClassTypeIcon icon={ typeIcon(typeId) } /></span>;
+            const piString = showPi && lang.number(pi || champion.pi * scalePi);
+            const signatureDiv = showPi && champion.maxSig(stars) > 0 &&
+                <div class="title-field-sig">
+                    <div class="title-field-sig-text">{ `${lang.string('portrait-signature')}:` }</div>
+                    <div class="title-field-sig-text">{ awakened }/{ champion.maxSig(stars) }</div>
+                </div>;
+            title.push(
+                <div class={ classNames('title-field', 'title-field-pi', { 'title-field-pi-custom': pi && pi > 0 }, 'title-field-sig') }
+                >{ piString } { icon } { signatureDiv }
+                </div>
             );
         }
         const isMaxed = STAR_RANK_LEVEL[ stars ] &&
@@ -98,7 +106,7 @@ const ChampionPortrait = {
         return (
             <div
                 m="ChampionPortrait"
-                class={ classNames('champion-portrait', `champion--${ typeId }`, {
+                class={ classNames('champion-portrait', {
                     'champion--selected': selected,
                     'champion--neighbor': neighbor,
                     'champion--editing': editing,
@@ -106,8 +114,11 @@ const ChampionPortrait = {
                 }) }
             >
                 <div class={ classNames('container', 'no-select') }>
+                    <div class={ classNames('portrait-border-image', { [ `portrait-border-image-${ stars }` ]: hasBorderImage }) }>
+                        <img src={ hasBorderImage && borderImage.src || IMAGE_EMPTY } />
+                    </div>
                     <div
-                        class={ classNames('inner', { 'clickable': onclick }) }
+                        class={ classNames('portrait-border', 'inner', { 'clickable': onclick }) }
                         { ...events }
                         ondragstart={ !isInvalid && ((event) => {
                             event.dataTransfer.setData('text/plain', JSON.stringify(champion));

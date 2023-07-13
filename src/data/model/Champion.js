@@ -56,6 +56,10 @@ class Champion {
         };
     }
 
+    maxSig(stars) {
+        return STAR_RANK_LEVEL[ stars ].awakened;
+    }
+
     toJSON() {
         return this.attr;
     }
