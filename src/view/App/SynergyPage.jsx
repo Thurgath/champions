@@ -6,9 +6,6 @@ import lang from '../../service/lang';
 import * as synergyOptions from '../../service/synergy';
 import Icon from '../Icon.jsx';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 function config(definition, element, isInitialized) {
     const { top, left, width, height } = element.getBoundingClientRect();

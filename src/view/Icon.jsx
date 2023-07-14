@@ -1,8 +1,5 @@
 import classNames from 'classnames';
 import SvgIcon from './SvgIcon.jsx';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 import './Icon.scss';
 
 const svgIcons = require

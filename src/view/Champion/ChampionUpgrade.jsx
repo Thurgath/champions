@@ -5,9 +5,6 @@ import classnames from 'classnames';
 import { IMAGE_BADGE_RANK_UP, IMAGE_BADGE_LEVEL_MAX, IMAGE_CURRENCY_GOLD, getCatalystImage } from '../../images';
 import ImageIcon from '../ImageIcon.jsx';
 import lang from '../../service/lang';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const ChampionUpgrade = {
     view(ctrl, { stars, rank, level, typeId }) {

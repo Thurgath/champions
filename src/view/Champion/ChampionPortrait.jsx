@@ -14,9 +14,6 @@ import {
     IMAGE_BADGE_RANK_UP, IMAGE_BADGE_LEVEL_MAX,
 } from '../../images';
 import lang from '../../service/lang';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 function addSVG(element, isInitialized) {
     if(!isInitialized) {

@@ -3,9 +3,6 @@ import { getTypeColor } from '../service/graph';
 import classNames from 'classnames';
 import Icon from './Icon.jsx';
 import { getImage } from '../images';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const ImageIcon = {
     view(ctrl, { src, icon, alt, hoverSrc, hoverAlt, type, before, after }) {

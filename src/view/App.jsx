@@ -3,9 +3,6 @@ import classNames from 'classnames';
 import app from '../service/app';
 import teams from '../service/teams';
 import Menu from './Menu.jsx';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 function addRawHTML(element, isInitialized) {
     if(!isInitialized) {

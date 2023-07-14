@@ -13,9 +13,6 @@ import ImageIcon from '../ImageIcon.jsx';
 import ChampionHeader from '../Champion/ChampionHeader.jsx';
 import ChampionSection from '../Champion/ChampionSection.jsx';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const getSynergies = (uid, isFrom) => {
     const filtered = synergies.filter((synergy) => {

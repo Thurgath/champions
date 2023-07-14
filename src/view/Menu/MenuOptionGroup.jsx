@@ -1,8 +1,5 @@
 import './MenuOptionGroup.scss';
 import classNames from 'classnames';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const MenuGroupOption = {
     controller: function(data) {

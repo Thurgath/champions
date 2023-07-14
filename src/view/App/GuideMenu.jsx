@@ -7,9 +7,6 @@ import CollapsibleMenuSection from '../Menu/CollapsibleMenuSection.jsx';
 import MenuOption from '../Menu/MenuOption.jsx';
 import ImageIcon from '../ImageIcon.jsx';
 import Icon from '../Icon.jsx';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const GuideMenu = {
     controller: function(data) {

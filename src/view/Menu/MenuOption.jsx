@@ -3,9 +3,6 @@ import router from '../../service/router';
 import classNames from 'classnames';
 import lang from '../../service/lang';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 function linkIsExternal(href) {
     return href.startsWith('http') || href.startsWith('//');

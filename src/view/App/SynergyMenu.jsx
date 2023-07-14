@@ -8,9 +8,6 @@ import MenuOption from '../Menu/MenuOption.jsx';
 import MenuOptionGroup from '../Menu/MenuOptionGroup.jsx';
 import Icon from '../Icon.jsx';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const SynergyMenu = {
     controller: function(data) {

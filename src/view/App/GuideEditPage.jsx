@@ -7,9 +7,6 @@ import lang from '../../service/lang';
 import ChampionHeader from '../Champion/ChampionHeader.jsx';
 import ChampionSection from '../Champion/ChampionSection.jsx';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 function editGuide(uid, initialSelectors, initialKey, value) {
     const guide = guides.getGuideFor(uid, lang.current) || guides.import(uid, '{}', lang.current);

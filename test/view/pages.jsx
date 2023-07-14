@@ -9,9 +9,6 @@ import SynergyPage from '../../src/view/App/SynergyPage.jsx';
 import TeamsPage from '../../src/view/App/TeamsPage.jsx';
 import TeamsEditPage from '../../src/view/App/TeamsEditPage.jsx';
 import TeamsSettingsPage from '../../src/view/App/TeamsSettingsPage.jsx';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 import roster from '../../src/service/roster';
 import mq from "mithril-query";
 

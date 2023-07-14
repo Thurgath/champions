@@ -7,9 +7,6 @@ import RosterMenu from '../../src/view/App/RosterMenu.jsx';
 import SynergyMenu from '../../src/view/App/SynergyMenu.jsx';
 import TeamsMenu from '../../src/view/App/TeamsMenu.jsx';
 import TeamsSettingsMenu from '../../src/view/App/TeamsSettingsMenu.jsx';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 import mq from 'mithril-query';
 import roster from '../../src/service/roster';
 

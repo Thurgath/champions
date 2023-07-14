@@ -8,9 +8,6 @@ import lang from '../../service/lang';
 import ChampionPortrait from './ChampionPortrait.jsx';
 import Icon from '../Icon.jsx';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const CHAMPION_SELECTED = 1;
 const CHAMPION_NEIGHBOR = 2;

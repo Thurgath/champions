@@ -7,9 +7,6 @@ import Message from '../Message.jsx';
 import Icon from '../Icon.jsx';
 import ChampionTeam from '../Champion/ChampionTeam.jsx';
 import ChampionPortrait from '../Champion/ChampionPortrait.jsx';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 function results(type, size) {
     const result = teams.result[ `${ type }-${ size }` ];

@@ -7,9 +7,6 @@ import MenuOption from '../../src/view/Menu/MenuOption.jsx';
 import MenuOptionGroup from '../../src/view/Menu/MenuOptionGroup.jsx';
 import MenuSection from '../../src/view/Menu/MenuSection.jsx';
 import Message from '../../src/view/Message.jsx';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 import roster from '../../src/service/roster';
 import mq from 'mithril-query';
 

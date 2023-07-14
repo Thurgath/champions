@@ -5,9 +5,6 @@ import { effectIcon } from '../../data/effects';
 import { ABILITY_VALUES } from '../../data/model/Ability';
 import { abilityIcon } from '../../data/abilities';
 import Icon from '../Icon.jsx';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 import './GlossaryPage.scss';
 

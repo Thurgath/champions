@@ -1,8 +1,5 @@
 import './Message.scss';
 import pure from '../util/pure';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const Message = {
     controller: function(data) {

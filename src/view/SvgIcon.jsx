@@ -1,7 +1,4 @@
 import classNames from 'classnames';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 import './Icon.scss';
 import '../icons.font';
 

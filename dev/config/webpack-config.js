@@ -21,6 +21,10 @@ module.exports = {
         chunkIds: 'named',
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            //Make mithril available globally
+            m: 'mithril',
+        }),
         new MiniCssExtractPlugin({
             filename: 'styles/app-[fullhash:6].css',
         }),

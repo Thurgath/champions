@@ -7,9 +7,6 @@ import lang from '../../service/lang';
 import ChampionPortrait from '../Champion/ChampionPortrait.jsx';
 import { notify, denotify } from '../../util/notification';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const RosterAddPage = {
     controller: function(data) {

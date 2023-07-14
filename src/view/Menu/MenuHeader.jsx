@@ -1,7 +1,4 @@
 import lang from '../../service/lang';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const MenuHeader = {
     controller: function(data) {

@@ -6,9 +6,6 @@ import lang from '../../service/lang';
 import ChampionGrade from './ChampionGrade.jsx';
 import ChampionRating from './ChampionRating.jsx';
 import Icon from '../Icon.jsx';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const ChampionSection = {
     controller: function(data) {

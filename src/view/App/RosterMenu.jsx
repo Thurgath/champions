@@ -13,9 +13,6 @@ import { notify } from '../../util/notification';
 import { requestRedraw } from '../../util/animation';
 import { clickElementById } from '../../util/element';
 import { loadFileFromInput, saveFileEventHandler } from '../../util/io';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const RosterMenu = {
     controller: function(data) {

@@ -10,9 +10,6 @@ import Icon from './Icon.jsx';
 import BrandIcon from './BrandIcon.jsx';
 import ImageIcon from './ImageIcon.jsx';
 import { requestRedraw } from '../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const MenuOptions = {
     controller: function(data) {

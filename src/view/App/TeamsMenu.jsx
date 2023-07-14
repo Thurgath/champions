@@ -10,9 +10,6 @@ import MenuOptionGroup from '../Menu/MenuOptionGroup.jsx';
 import Icon from '../Icon.jsx';
 import ClassTypeIcon from '../ClassTypeIcon.jsx';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const TeamsMenu = {
     controller: function(data) {

@@ -3,9 +3,6 @@ import MenuHeader from '../Menu/MenuHeader.jsx';
 import MenuOption from '../Menu/MenuOption.jsx';
 import Icon from '../Icon.jsx';
 import { saveFileEventHandler } from '../../util/io';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const LanguageEditMenu = {
     controller: function(data) {

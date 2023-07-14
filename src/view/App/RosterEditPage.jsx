@@ -11,9 +11,6 @@ import ChampionHeader from '../Champion/ChampionHeader.jsx';
 import ChampionUpgrade from '../Champion/ChampionUpgrade.jsx';
 import classNames from 'classnames';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const tab = {
     id: 'roster',

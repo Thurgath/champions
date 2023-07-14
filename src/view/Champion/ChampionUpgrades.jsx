@@ -6,9 +6,6 @@ import { IMAGE_CURRENCY_GOLD, getCatalystImage } from '../../images';
 import ImageIcon from '../ImageIcon.jsx';
 import lang from '../../service/lang';
 import classnames from 'classnames';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const ChampionUpgrades = {
     view(ctrl, { champions }) {

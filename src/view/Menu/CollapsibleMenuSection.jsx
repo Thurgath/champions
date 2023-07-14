@@ -1,8 +1,5 @@
 import './CollapsibleMenuSection.scss';
 import MenuSection from './MenuSection.jsx';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const CollapsibleMenuSection = {
     controller: function(data) {

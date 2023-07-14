@@ -6,9 +6,6 @@ import lang from '../../service/lang';
 import Icon from '../Icon.jsx';
 import ImageIcon from '../ImageIcon.jsx';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const DUPLICATE_TITLES = {
     2: 'double',

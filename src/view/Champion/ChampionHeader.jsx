@@ -4,9 +4,6 @@ import ClassTypeIcon from '../ClassTypeIcon.jsx';
 import ImageIcon from '../ImageIcon.jsx';
 import { getImage, IMAGE_STAR, IMAGE_STAR_AWAKENED } from '../../images';
 import lang from '../../service/lang';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const ChampionHeader = {
     controller: function(data) {

@@ -9,9 +9,6 @@ import lang, { getLanguage } from '../../service/lang';
 import Icon from '../Icon.jsx';
 import ImageIcon from '../ImageIcon.jsx';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 /**
  * This sets up the missing fields previous/next buttons depending on window scroll position.

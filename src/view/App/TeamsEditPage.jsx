@@ -11,9 +11,6 @@ import ChampionPortrait from '../Champion/ChampionPortrait.jsx';
 import Icon from '../Icon.jsx';
 import Message from '../Message.jsx';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 function isSameSwapSource(a, b) {
     if(a === b) {

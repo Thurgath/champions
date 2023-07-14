@@ -7,9 +7,6 @@ import { notify } from '../../util/notification';
 import { clickElementById } from '../../util/element';
 import { loadFileFromInput, saveFileEventHandler } from '../../util/io';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const GuideEditMenu = {
     controller: function(data) {

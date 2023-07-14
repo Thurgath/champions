@@ -7,9 +7,6 @@ import Icon from '../Icon.jsx';
 import ChampionPortrait from '../Champion/ChampionPortrait.jsx';
 import ChampionUpgrades from '../Champion/ChampionUpgrades.jsx';
 import { requestRedraw } from '../../util/animation';
-/* eslint-disable no-unused-vars */
-import m from 'mithril';
-/* eslint-enable no-unused-vars */
 
 const tab = {
     id: 'roster',
