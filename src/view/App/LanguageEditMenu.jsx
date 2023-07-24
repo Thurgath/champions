@@ -1,42 +1,45 @@
 import { getLanguage } from '../../service/lang';
-import MenuHeader from '../Menu/MenuHeader.jsx';
-import MenuOption from '../Menu/MenuOption.jsx';
+import MenuHeader from '../menu/MenuHeader.jsx';
+import MenuOption from '../menu/MenuOption.jsx';
 import Icon from '../Icon.jsx';
 import { saveFileEventHandler } from '../../util/io';
 
-const LanguageEditMenu = {
-    controller: function(data) {
-    },
-    view(ctrl, { langId }) {
-        const { values } = getLanguage(langId);
-        const options = [];
-        options.push(
-            <MenuHeader title={ 'language' } />
-        );
-        const filename = `${ langId }.json`;
-        options.push(
-            <MenuOption
-                icon={(
+function LanguageEditMenu(initialVnode) {
+    return {
+        oninit(vnode) {
+        },
+        view(vnode) {
+            const {langId} = vnode.attrs;
+            const {values} = getLanguage(langId);
+            const options = [];
+            options.push(
+                <MenuHeader title={ 'language' }/>
+            );
+            const filename = `${ langId }.json`;
+            options.push(
+                <MenuOption
+                    icon={(
                         <Icon icon="floppy-disk" before />
                     )}
-                title="export-json"
-                download={ filename }
-                onclick={ ({ target }) => {
+                    title="export-json"
+                    download={ filename }
+                    onclick={ ({ target }) => {
                     saveFileEventHandler(target, 'text/json', filename, JSON.stringify(values, null, 4));
-                    m.redraw.strategy('none');
+                    target.redraw = false;
                 }}
-                oncontextmenu={ ({ target }) => {
+                    oncontextmenu={ ({ target }) => {
                     saveFileEventHandler(target, 'text/json', filename, JSON.stringify(values, null, 4));
-                    m.redraw.strategy('none');
+                    target.redraw = false;
                 }}
-            />
-        );
-        return (
-            <div m="LanguageEditMenu" key={ 'language-menu' }>
-                { options }
-            </div>
-        );
-    },
+                />
+            );
+            return (
+                <div m="LanguageEditMenu" key={ 'language-menu' }>
+                    { options }
+                </div>
+            );
+        },
+    };
 };
 
 export default LanguageEditMenu;

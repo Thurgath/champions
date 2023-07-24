@@ -8,7 +8,6 @@ import { WILLPOWER_SAFE_CHAMPIONS } from '../data/champions';
 import { synergiesFromChampions } from '../data/synergies';
 import roster from './roster';
 import { fromStorage, toStorage } from '../util/storage';
-import { requestRedraw } from '../util/animation';
 
 const PRESETS = {
     'offensive': {
@@ -1738,13 +1737,13 @@ function buildTeam() {
                 case 'result': {
                     teams.progress = 1;
                     setTimeout(() => resolve(event.data.data), 50);
-                    requestRedraw();
+                    m.redraw();
                     break;
                 }
                 case 'progress': {
                     const progress = event.data.data;
                     teams.progress = progress.current / progress.max;
-                    requestRedraw(teams.progress > 0 && teams.progress < 1? 5: 0);
+                    m.redraw();
                     break;
                 }
             }
@@ -1816,12 +1815,11 @@ function buildTeam() {
             };
             saveTeam();
             teams.building = false;
-            requestRedraw();
             return new Promise((resolve) => (progressResetTimeout = setTimeout(resolve, 250)));
         })
         .then(() => {
             teams.progress = 0;
-            requestRedraw();
+            m.redraw();
             notify({
                 message: lang.string('notification-team-built'),
                 tag: 'team-built',

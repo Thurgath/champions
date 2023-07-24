@@ -1,20 +1,22 @@
 import './Message.scss';
-import pure from '../util/pure';
 
-const Message = {
-    controller: function(data) {
-    },
-    view(ctrl, { icon, value, alt }) {
-        return (
-            <div m="Message" class="message">
-                { icon }
-                { value }
-                { alt && (
-                    <div class="message-alt">{ alt }</div>
-                ) || null }
-            </div>
-        );
-    },
+function Message(initialVnode) {
+    return {
+        oninit: function (vnode) {
+        },
+        view(vnode) {
+            const {icon, value, alt} = vnode.attrs;
+            return (
+                <div m="Message" class="message" >
+                    { icon }
+                    { value }
+                    { alt && (
+                        <div class="message-alt">{ alt }</div>
+                    ) || null }
+                </div>
+            );
+        },
+    };
 };
 
-export default pure(Message);
+export default Message;

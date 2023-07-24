@@ -2,53 +2,52 @@ import { EFFECT_VALUES } from '../../data/model/Effect';
 import { effectIcon } from '../../data/effects';
 import { getLegend, setLegend, getRoster, setRoster } from '../../service/synergy';
 import { STAR_RANK_LEVEL } from '../../data/model/Champion';
-import MenuHeader from '../Menu/MenuHeader.jsx';
-import MenuSection from '../Menu/MenuSection.jsx';
-import MenuOption from '../Menu/MenuOption.jsx';
-import MenuOptionGroup from '../Menu/MenuOptionGroup.jsx';
+import MenuHeader from '../menu/MenuHeader.jsx';
+import MenuSection from '../menu/MenuSection.jsx';
+import MenuOption from '../menu/MenuOption.jsx';
+import MenuOptionGroup from '../menu/MenuOptionGroup.jsx';
 import Icon from '../Icon.jsx';
-import { requestRedraw } from '../../util/animation';
 
-const SynergyMenu = {
-    controller: function(data) {
-    },
-    view(ctrl, { stars, effect }) {
-        return (
-            <div m="SynergyMenu" key={ `teams-menu-${ stars }` }>
-                <MenuHeader title="synergies" />
-                <MenuOption
-                    icon={(
+function SynergyMenu(initialVnode) {
+    return {
+        oninit(vnode) {
+        },
+        view(vnode) {
+            const {stars, effect} = vnode.attrs;
+            return (
+                <div m="SynergyMenu" key={ `teams-menu-${ stars }` }>
+                    <MenuHeader title="synergies"/>
+                    <MenuOption
+                        icon={(
                         <Icon icon="list" before />
                     )}
-                    title="legend-show"
-                    selected={ Boolean(getLegend()) }
-                    onclick={ () => {
+                        title="legend-show"
+                        selected={ Boolean(getLegend()) }
+                        onclick={ () => {
                         setLegend(!getLegend());
-                        requestRedraw();
                     }}
-                />
-                <MenuOption
-                    icon={(
+                    />
+                    <MenuOption
+                        icon={(
                         <Icon icon="users" before />
                     )}
-                    title="roster-use"
-                    selected={ Boolean(getRoster()) }
-                    onclick={ () => {
+                        title="roster-use"
+                        selected={ Boolean(getRoster()) }
+                        onclick={ () => {
                         setRoster(!getRoster());
-                        requestRedraw();
                     }}
-                />
-                <MenuSection title="show-by" />
-                <MenuOptionGroup options={
+                    />
+                    <MenuSection title="show-by"/>
+                    <MenuOptionGroup options={
                     Object.keys(STAR_RANK_LEVEL).map((star) => (
                         <MenuOption
                             raw={ `${ star }★` }
-                            selected={ stars === star }
+                            selected={ stars && stars.toString() === star }
                             href={ `/synergy/stars/${ star }` }
                         />
                     ))
-                } />
-                { EFFECT_VALUES.map((uid) => (
+                }/>
+                    { EFFECT_VALUES.map((uid) => (
                         <MenuOption
                             icon={(
                                 <Icon icon={ effectIcon(uid) } before />
@@ -58,10 +57,11 @@ const SynergyMenu = {
                             selected={ uid === effect }
                             href={ `/synergy/effect/${ uid }` }
                         />
-                )) }
-            </div>
-        );
-    },
+                    )) }
+                </div>
+            );
+        },
+    };
 };
 
 export default SynergyMenu;

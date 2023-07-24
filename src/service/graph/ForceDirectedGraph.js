@@ -1,5 +1,4 @@
 import lang from '../../service/lang';
-import { getImage } from '../../images';
 import Layout from './Layout';
 import Renderer from './Renderer';
 import Graph from './Graph';
@@ -673,12 +672,12 @@ export default function({
 
     //we cache the best sized portrait with type bar
     Node.prototype.setPortraitImage = function(size) {
-        const src = this.data.image;
-        const image = getImage(src);
+        const image = this.data.image;
+        const src = image.src;
         const color = this.data.color || '#111111';
         let portrait;
         let hitmask;
-        if (image) {
+        if (image.loaded) {
             if (src in portraitImages) {
                 if (portraitImages[ src ].loaded) {
                     //sample down for better anti-aliasing

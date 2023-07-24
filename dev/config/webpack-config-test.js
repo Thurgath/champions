@@ -7,9 +7,13 @@ module.exports = merge(webpackConfig, {
     output: {
         clean: true,
     },
-    entry: {
-        //redefine as main
-        main: [ './src/index.js' ],
+    optimization: {
+        minimize: false,
     },
     stats: 'normal',
+    //Removes warnings and errors when running tests
+    externals: {
+        jsdom: 'jsdom',
+        prettier: 'prettier',
+    },
 });

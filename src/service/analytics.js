@@ -2,7 +2,7 @@
 function pageView() {
     /* eslint-disable no-undef */
     ga('send', 'pageview', {
-        'page': location.pathname + location.hash,
+        'page': window.location.pathname + window.location.hash,
     });
     /* eslint-disable no-undef */
 }

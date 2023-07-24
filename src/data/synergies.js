@@ -1640,6 +1640,24 @@ function synergiesFromChampions(champions) {
         return true;
     });
 }
+function forChampion(uid, isFrom) {
+    const filtered = synergies.filter((synergy) => {
+        return synergy.attr[ isFrom? 'fromId': 'toId' ] === uid;
+    });
+    const keeperStars = filtered.reduce((map, synergy) => {
+        const { fromId, fromStars, toId } = synergy.attr;
+        if(isFrom && (!map[ toId ] || map[ toId ] > fromStars))
+            map[ toId ] = fromStars;
+        if(!isFrom && (!map[ fromId ] || map[ fromId ] > fromStars))
+            map[ fromId ] = fromStars;
+        return map;
+    }, {});
+    return filtered.filter((synergy) => {
+        const { fromId, fromStars, toId } = synergy.attr;
+        const uid = isFrom? toId: fromId;
+        return fromStars === keeperStars[ uid ];
+    });
+}
 
-export { synergiesFromChampions };
+export { synergiesFromChampions, forChampion };
 export default synergies;

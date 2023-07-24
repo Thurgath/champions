@@ -179,7 +179,9 @@
         "chai": true,
         "expect": true,
         "testdouble": true,
-        "when": true
+        "when": true,
+        "m": true,
+        "mq": true
     },
     "settings": {
         "import/extensions": [

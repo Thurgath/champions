@@ -1,39 +1,22 @@
-import app from '../../src/service/app';
 import App from '../../src/view/App.jsx';
 import Slides from '../../src/view/Slides.jsx';
 import Menu from '../../src/view/Menu.jsx';
-import MenuHeader from '../../src/view/Menu/MenuHeader.jsx';
-import MenuOption from '../../src/view/Menu/MenuOption.jsx';
-import MenuOptionGroup from '../../src/view/Menu/MenuOptionGroup.jsx';
-import MenuSection from '../../src/view/Menu/MenuSection.jsx';
+import MenuHeader from '../../src/view/menu/MenuHeader.jsx';
+import MenuOption from '../../src/view/menu/MenuOption.jsx';
+import MenuOptionGroup from '../../src/view/menu/MenuOptionGroup.jsx';
+import MenuSection from '../../src/view/menu/MenuSection.jsx';
 import Message from '../../src/view/Message.jsx';
 import roster from '../../src/service/roster';
-import mq from 'mithril-query';
+import appState from '../../src/service/appState';
 
 roster.clear();
 
 describe('view/', () => {
+    const rosterResult = appState().rosterPage();
 
-    describe('<App/>', () => it('should render without error', () => {
-        app.edit = true;
-        app.tab = 'champions';
-        app.tabs = [
-            {
-                id: 'champions',
-                title: 'champions',
-                icon: 'user',
-            },
-        ];
-        app.pages[ 'champions' ] = null;
-        app.menu = {
-            view() {
-                return (
-                    <div />
-                );
-            },
-        };
-        app.button = null;
-        expect(mq(App, {})).to.exist;
+    describe('<App />', () => it('should render without error', () => {
+        //initialize appState
+        expect(mq(App, rosterResult)).to.exist;
     }));
     describe('<Slides/>', () => it('should render without error', () => {
         const slides = [];
@@ -41,8 +24,7 @@ describe('view/', () => {
         expect(mq(Slides, { ...{ slides, current } })).to.exist;
     }));
     describe('<Menu/>', () => it('should render without error', () => {
-        const { tabs, tab, menu, button } = app;
-        expect(mq(Menu, { ...{ tabs, tab, menu, button } })).to.exist;
+        expect(mq(Menu, rosterResult)).to.exist;
     }));
     describe('<MenuHeader/>', () => it('should render without error', () => {
         expect(mq(MenuHeader, {})).to.exist;

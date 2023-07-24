@@ -9,7 +9,6 @@ import { EFFECT_VALUES } from '../data/model/Effect';
 import { ABILITY_VALUES } from '../data/model/Ability';
 import { flatten } from '../util/array';
 import { fromStorage, toStorage } from '../util/storage';
-import { requestRedraw } from '../util/animation';
 
 const warned = {};
 function warnMissing(language, id) {
@@ -39,7 +38,6 @@ const lang = {
             toStorage('lang', lang);
             document.title = this.string('champions');
         }
-        requestRedraw();
     },
     number(value) {
         const delimiter = this.messages[ this.current ][ 'number-delimiter' ];

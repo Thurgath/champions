@@ -1,212 +1,56 @@
 import './Menu.scss';
-import app from '../service/app';
-import classNames from 'classnames';
+import MenuOptions from './menu/MenuOptions.jsx';
 import router from '../service/router';
-import lang from '../service/lang';
-import MenuSection from './Menu/MenuSection.jsx';
-import MenuOptionGroup from './Menu/MenuOptionGroup.jsx';
-import MenuOption from './Menu/MenuOption.jsx';
+import classNames from 'classnames';
 import Icon from './Icon.jsx';
-import BrandIcon from './BrandIcon.jsx';
-import ImageIcon from './ImageIcon.jsx';
-import { requestRedraw } from '../util/animation';
+import appState from '../service/appState.js';
 
-const MenuOptions = {
-    controller: function(data) {
-    },
-    view(ctrl, { tabs, tab: currentTab, menu }) {
-        const { menuOpen } = app;
-        if(!menuOpen && ctrl.loaded) {
-            return { subtree: 'retain' };
-        }
-        ctrl.loaded = true;
-        const options = [];
-        if(menuOpen) {
-            options.push(
-                <div class="menu-tabs">
-                    <MenuOptionGroup
-                        options={ tabs.filter((tab) => !tab.hidden).map((tab) => (
-                            <MenuOption
-                                info={ tab.title }
-                                icon={
-                                    <Icon icon={ tab.icon } spin={ tab.spin } />
-                                }
-                                selected={ currentTab === tab.id }
-                                href={ `/${ tab.id }` }
-                            />
-                        )) }
-                        tabs="true"
-                    />
-                </div>
-            );
-            if(menu) {
-                options.push(
-                    <div>
-                        { menu }
-                    </div>
-                );
-            }
-            //language
-            options.push(
-                <MenuSection
-                    icon={
-                        <Icon icon="globe" before />
-                    }
-                    title="language"
-                />
-            );
-            for(const id in lang.messages) {
-                const selectLanguage = lang.change.bind(lang, id);
-                options.push(
-                    <MenuOption
-                        selected={ lang.current === id }
-                        icon={
-                            <ImageIcon src={ `images/lang/${ id }.png` } icon="flag" before />
-                        }
-                        raw={ lang.messages[ id ].lang }
-                        onclick={ selectLanguage }
-                    />
-                );
-            }
-            // links
-            options.push(
-                <MenuSection
-                    icon={
-                        <Icon icon="share" before />
-                    }
-                    title="links"
-                />
-            );
-            options.push(
-                <MenuOption
-                    icon={
-                        <Icon icon="bomb" before />
-                    }
-                    title="link-kabam"
-                    href="https://forums.playcontestofchampions.com/en/discussions"
-                />
-            );
-            options.push(
-                <MenuOption
-                    icon={
-                        <BrandIcon icon="wikipedia-w" before />
-                    }
-                    title="link-wikia"
-                    href="http://marvel-contestofchampions.wikia.com/wiki/"
-                />
-            );
-            options.push(
-                <MenuOption
-                    icon={
-                        <Icon icon="trophy" before />
-                    }
-                    title="link-auntm.ai"
-                    href="https://www.auntm.ai/"
-                />
-            );
-            options.push(
-                <MenuOption
-                    icon={
-                        <BrandIcon icon="github" before />
-                    }
-                    title="link-github"
-                    href="https://github.com/hook/champions"
-                />
-            );
-            // links
-            options.push(
-                <MenuSection
-                    icon={
-                        <Icon icon="share-alt" before />
-                    }
-                    title="share-to"
-                />
-            );
-            const escapedUrl = encodeURIComponent('https://hook.github.io/champions');
-            options.push(
-                <MenuOptionGroup
-                    options={[
-                    (
-                        <MenuOption
-                            icon={
-                                <BrandIcon icon="facebook-f" before />
-                            }
-                           href={ `http://www.facebook.com/sharer/sharer.php?u=${ escapedUrl }` }
-                        />
-                    ),
-                    (
-                        <MenuOption
-                            icon={
-                                <BrandIcon icon="twitter" before />
-                            }
-                           href={ `https://twitter.com/share?url=${ escapedUrl }` }
-                        />
-                    ),
-                    (
-                        <MenuOption
-                            icon={
-                                <BrandIcon icon="pinterest-p" before />
-                            }
-                           href={ `http://pinterest.com/pin/create/link/?url=${ escapedUrl }` }
-                        />
-                    ),
-                    (
-                        <MenuOption
-                            icon={
-                                <BrandIcon icon="linkedin" before />
-                            }
-                           href={ `https://www.linkedin.com/cws/share?url=${ escapedUrl }` }
-                        />
-                    ),
-                    ]}
-                />
-            );
-        }
-        return (
-            <div class="menu-options">
-                { options }
-            </div>
-        );
-    },
-};
-
-const Menu = {
-    controller: function(data) {
-    },
-    view(ctrl, { tabs, tab: currentTab, menu, button }) {
-        const { menuOpen } = app;
-        return (
-            <div m="Menu" class={ classNames('menu', { 'menu--open': menuOpen }) }>
-                <div class="menu-background" onclick={ () => {
-                    app.menuOpen = !menuOpen;
-                    requestRedraw(2);
+function Menu(initialVnode) {
+    
+    var menuOpen = false;
+    
+    function toggleMenu(event) {
+        event.redraw = false;
+        menuOpen = !menuOpen;
+        m.redraw();
+    }
+    
+    return {
+        oninit(vnode) {
+        },
+        view(vnode) {
+            const {menu, parameters} = vnode.attrs;
+            const button = appState().getCurrentTab().getButton();
+            return (
+                <div m="Menu" class={ classNames('menu', { 'menu--open': menuOpen }) }>
+                    <div class="menu-background" onclick={ (event) => {
+                    toggleMenu(event);
                 }}></div>
-                { button && (
-                    <a
-                        role="button"
-                        class="menu-button menu-button-sub"
-                        href={ `#${ button.href }` }
-                        onclick={ (event) => {
-                            event.preventDefault();
-                            router.setRoute(button.href);
-                            requestRedraw();
-                        }}
-                    >
-                        <Icon icon={ button.icon } />
-                    </a>
-                ) }
-                <MenuOptions tabs={ tabs } tab={ currentTab } menu={ menu } />
-                <div class="menu-button menu-button-main" onclick={ () => {
-                    app.menuOpen = !menuOpen;
-                    requestRedraw(0);
-                }}>
-                    <div class="menu-button-bar" />
-                    <div class="menu-button-bar" />
-                    <div class="menu-button-bar" />
+                    { button && (
+                        <a
+                            role="button"
+                            class="menu-button menu-button-sub"
+                            href={ `#${ button.href }` }
+                            onclick={ (event) => {
+                                event.preventDefault();
+                                router.route(button.href);
+                            }}
+                        >
+                            <Icon icon={ button.icon }/>
+                        </a>
+                    ) }
+                    <MenuOptions menu={ menu } parameters={ parameters }/>
+                    <div class="menu-button menu-button-main" onclick={ (event) => {
+                        toggleMenu(event);
+                    }}>
+                        <div class="menu-button-bar"/>
+                        <div class="menu-button-bar"/>
+                        <div class="menu-button-bar"/>
+                    </div>
                 </div>
-            </div>
-        );
-    },
+            );
+        },
+    };
 };
 
 export default Menu;

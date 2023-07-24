@@ -1,236 +1,120 @@
 import './GuidePage.scss';
-import classNames from 'classnames';
-import { effectIcon } from '../../data/effects';
 import { getChampion } from '../../data/champions';
 import Champion from '../../data/model/Champion';
-import synergies from '../../data/synergies';
+import { forChampion } from '../../data/synergies';
 import guides from '../../data/guides';
-import router from '../../service/router';
 import lang from '../../service/lang';
-import Icon from '../Icon.jsx';
-import BrandIcon from '../BrandIcon.jsx';
-import ImageIcon from '../ImageIcon.jsx';
 import ChampionHeader from '../Champion/ChampionHeader.jsx';
 import ChampionSection from '../Champion/ChampionSection.jsx';
-import { requestRedraw } from '../../util/animation';
+import GuideAuthor from './GuideAuthor.jsx';
+import GuideSynergy from './GuideSynergy.jsx';
 
-const getSynergies = (uid, isFrom) => {
-    const filtered = synergies.filter((synergy) => {
-        return synergy.attr[ isFrom? 'fromId': 'toId' ] === uid;
-    });
-    const keeperStars = filtered.reduce((map, synergy) => {
-        const { fromId, fromStars, toId } = synergy.attr;
-        if(isFrom && (!map[ toId ] || map[ toId ] > fromStars))
-            map[ toId ] = fromStars;
-        if(!isFrom && (!map[ fromId ] || map[ fromId ] > fromStars))
-            map[ fromId ] = fromStars;
-        return map;
-    }, {});
-    return filtered.filter((synergy) => {
-        const { fromId, fromStars, toId } = synergy.attr;
-        const uid = isFrom? toId: fromId;
-        return fromStars === keeperStars[ uid ];
-    });
-};
-
-const GuideSynergy = {
-    view(ctrl, { championId, effectId, stars, spacing }) {
-        const onclickChampion = () => {
-            router.setRoute(`/guide/${ championId }`);
-            requestRedraw();
-        };
-        const champion = getChampion(championId);
-        const typeId = champion && champion.attr.typeId;
-        const name = lang.string(`champion-${ championId }-shortname`, null) || lang.string(`champion-${ championId }-name`);
-
-        return (
-            <div m="GuideSynergy" class={ classNames('guide-synergy', {
-                'guide-synergy--spacing': spacing,
-            }) }>
-                <div class="guide-synergy-parts">
-                    <div class="guide-synergy-part guide-synergy-part--champion">
-                        <div
-                            class={ classNames('champion-name', 'no-select') }
-                            onclick={ onclickChampion }
-                            title={ lang.string(`champion-${ championId }-name`) }
-                        >
-                            <ImageIcon
-                                src={ `images/champions/portrait_${ championId }.png` }
-                                type={ typeId }
-                                icon="user"
-                                before
-                            />
-                            { stars }★
-                            { name }
-                        </div>
-                    </div>
-                    <div class="guide-synergy-part guide-synergy-part--effect">
-                        <div
-                            class="effect-name"
-                            title={ lang.string(`effect-${ effectId }-description`) }
-                        >
-                            <Icon icon={ effectIcon(effectId) } before />
-                            { lang.string(`effect-${ effectId }-name`, null) || lang.string(`effect-${ effectId }-type`) }
-                        </div>
-                    </div>
-                    <div class="guide-synergy-clear" />
-                </div>
-            </div>
-        );
-    },
-};
-
-const GuideAuthor = {
-    view(ctrl, { name, type, profile }) {
-        let byline = 'profile-by';
-        let href;
-        let icon;
-        let iconType = Icon;
-        if (type) {
-            switch(type) {
-                case 'reddit': {
-                    icon = 'reddit-alien';
-                    iconType = BrandIcon
-                    if(profile)
-                        href = `http://reddit.com/u/${ profile }`;
-                    break;
-                }
-                case 'kabam': {
-                    icon = 'bomb';
-                    if(profile)
-                        href = `http://community.kabam.com/forums/member.php?${ profile }`;
-                    break;
-                }
-                case 'spotlight': {
-                    byline = 'profile-spotlight-by';
-                    icon = 'bomb';
-                    if(profile)
-                        href = `${ profile }`;
-                    break;
-                }
-                case 'email': {
-                    icon = 'envelope';
-                    if(profile)
-                        href = `mailto:${ profile }`;
-                    break;
-                }
-            }
-        }
-
-        return (
-            <div m="GuideAuthor" class="guide-author">
-                { `${ lang.string(byline) } ` }
-                <a href={ href } target="_blank">
-                    { icon && m(iconType, { icon: icon }) }
-                    { name }
-                </a>
-            </div>
-        );
-    },
-};
-
-const GuidePage = {
-    controller: function(data) {
-    },
-    view(ctrl, { uid }) {
-        const guide = guides.getGuideFor(uid, lang.current);
-        const details = [];
-        const champion = getChampion(uid);
-        if(champion) {
-            details.push(
-                <ChampionHeader
-                    champion={ new Champion({
+function GuidePage(initialVnode) {
+    return {
+        oninit(vnode) {
+            const {uid} = vnode.attrs;
+            vnode.state.uid = uid;
+        },
+        view(vnode) {
+            const {uid} = vnode.state;
+            const guide = guides.getGuideFor(uid, lang.current);
+            const details = [];
+            const champion = getChampion(uid);
+            if (champion) {
+                details.push(
+                    <ChampionHeader
+                        champion={ new Champion({
                         ...champion.attr,
                         stars: 0,
                     }) }
-                />
-            );
-        }
-
-        if(guide && guide.description) {
-            details.push(
-                <ChampionSection
-                    title={ lang.string('description') }
-                    grade={ guide.grades && guide.grades.normal }
-                    gradeAwakened={ guide.grades && guide.grades.awakened }
-                    description={ guide.description }
-                    youtube={ guide.youtube }
-                />
-            );
-        }
-        else {
-            details.push(
-                <ChampionSection
-                    title={ lang.string('description') }
-                    help={ lang.string(`champion-${uid}-description`, null) }
-                />
-            );
-        }
-
-        if (guide) {
-            if(guide.gameplay) {
-                details.push(
-                    <ChampionSection
-                        title={ lang.string('gameplay') }
-                        rating={ guide.gameplay.rating }
-                        description={ guide.gameplay.description }
-                        abilities={ guide.gameplay.abilities }
-                        note={ guide.gameplay.note }
                     />
                 );
             }
-            if(guide.attack) {
+
+            if (guide && guide.description) {
                 details.push(
                     <ChampionSection
-                        title={ lang.string('attack') }
-                        rating={ guide.attack.rating }
-                        description={ guide.attack.description }
-                        heavy={ guide.attack.heavy }
-                        ranges={ guide.attack.ranges }
-                        damagetypes={ guide.attack.damagetypes }
-                        abilities={ guide.attack.abilities }
-                        note={ guide.attack.note }
+                        title={ lang.string('description') }
+                        grade={ guide.grades && guide.grades.normal }
+                        gradeAwakened={ guide.grades && guide.grades.awakened }
+                        description={ guide.description }
+                        youtube={ guide.youtube }
                     />
                 );
             }
-        }
-
-        [ 1, 2, 3 ].forEach((index) => {
-            if(guide && guide.specials && guide.specials[ index ]) {
+            else {
                 details.push(
                     <ChampionSection
-                        title={ `${ lang.string('special') } ${ index }` }
-                        icon={ `special-${ index }` }
-                        rating={ guide.specials[ index ].rating }
-                        name={ guide.specials[ index ].name }
-                        description={ guide.specials[ index ].description }
-                        ranges={ (index === 3)? null: guide.specials[ index ].ranges }
-                        damagetypes={ guide.specials[ index ].damagetypes }
-                        abilities={ guide.specials[ index ].abilities }
-                        note={ guide.specials[ index ].note }
+                        title={ lang.string('description') }
+                        help={ lang.string(`champion-${uid}-description`, null) }
                     />
                 );
             }
-        });
 
-        if (guide && guide.signature) {
+            if (guide) {
+                if (guide.gameplay) {
+                    details.push(
+                        <ChampionSection
+                            title={ lang.string('gameplay') }
+                            rating={ guide.gameplay.rating }
+                            description={ guide.gameplay.description }
+                            abilities={ guide.gameplay.abilities }
+                            note={ guide.gameplay.note }
+                        />
+                    );
+                }
+                if (guide.attack) {
+                    details.push(
+                        <ChampionSection
+                            title={ lang.string('attack') }
+                            rating={ guide.attack.rating }
+                            description={ guide.attack.description }
+                            heavy={ guide.attack.heavy }
+                            ranges={ guide.attack.ranges }
+                            damagetypes={ guide.attack.damagetypes }
+                            abilities={ guide.attack.abilities }
+                            note={ guide.attack.note }
+                        />
+                    );
+                }
+            }
+
+            [1, 2, 3].forEach((index) => {
+                if (guide && guide.specials && guide.specials[index]) {
+                    details.push(
+                        <ChampionSection
+                            title={ `${ lang.string('special') } ${ index }` }
+                            icon={ `special-${ index }` }
+                            rating={ guide.specials[ index ].rating }
+                            name={ guide.specials[ index ].name }
+                            description={ guide.specials[ index ].description }
+                            ranges={ (index === 3)? null: guide.specials[ index ].ranges }
+                            damagetypes={ guide.specials[ index ].damagetypes }
+                            abilities={ guide.specials[ index ].abilities }
+                            note={ guide.specials[ index ].note }
+                        />
+                    );
+                }
+            });
+
+            if (guide && guide.signature) {
+                details.push(
+                    <ChampionSection
+                        title={ lang.string('signature') }
+                        name={ guide.signature.name }
+                        rating={ guide.signature.rating }
+                        description={ guide.signature.description }
+                        abilities={ guide.signature.abilities }
+                        note={ guide.signature.note }
+                    />
+                );
+            }
+            let lastGroup;
             details.push(
                 <ChampionSection
-                    title={ lang.string('signature') }
-                    name={ guide.signature.name }
-                    rating={ guide.signature.rating }
-                    description={ guide.signature.description }
-                    abilities={ guide.signature.abilities }
-                    note={ guide.signature.note }
-                />
-            );
-        }
-        let lastGroup;
-        details.push(
-            <ChampionSection
-                title={ lang.string('synergies') }
-                icon="synergy"
-                raw={ getSynergies(uid, true).map(({ attr }, index) => {
+                    title={ lang.string('synergies') }
+                    icon="synergy"
+                    raw={ forChampion(uid, true).map(({ attr }, index) => {
                     const isNewGroup = (index > 0) && (!attr.group || attr.group !== lastGroup);
                     lastGroup = attr.group;
                     return (
@@ -242,13 +126,13 @@ const GuidePage = {
                         />
                     );
                 }) }
-            />
-        );
-        details.push(
-            <ChampionSection
-                title={ lang.string('synergies-external') }
-                icon="synergy"
-                raw={ getSynergies(uid, false).map(({ attr }) => (
+                />
+            );
+            details.push(
+                <ChampionSection
+                    title={ lang.string('synergies-external') }
+                    icon="synergy"
+                    raw={ forChampion(uid, false).map(({ attr }) => (
                     <GuideSynergy
                         championId={ attr.fromId }
                         typeId={ attr.typeId }
@@ -256,28 +140,29 @@ const GuidePage = {
                         stars={ attr.fromStars }
                     />
                 )) }
-            />
-        );
-        if(guide && guide.author) {
-            details.push(
-                <GuideAuthor
-                    name={ guide.author.name }
-                    type={ guide.author.type }
-                    profile={ guide.author.profile }
                 />
             );
-        }
-        return (
-            <div
-                m="GuidePage"
-                role="article"
-                class="guide"
-            >
-                { details }
-                <div class="clear" />
-            </div>
-        );
-    },
+            if (guide && guide.author) {
+                details.push(
+                    <GuideAuthor
+                        name={ guide.author.name }
+                        type={ guide.author.type }
+                        profile={ guide.author.profile }
+                    />
+                );
+            }
+            return (
+                <div
+                    m="GuidePage"
+                    role="article"
+                    class="guide"
+                >
+                    { details }
+                    <div class="clear"/>
+                </div>
+            );
+        },
+    };
 };
 
 export default GuidePage;

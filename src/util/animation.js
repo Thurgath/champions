@@ -1,5 +1,3 @@
-import m from 'mithril';
-
 const requestNextFrame = (() => {
     return window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
@@ -46,19 +44,6 @@ function requestRender({ id, callback, delay = 0 }) {
         });
     }
     queueRenderDeferred();
-}
-
-function requestRedraw(delay = 2) {
-    const deferred = renderDeferredMap[ 'mithril' ];
-    m.redraw.strategy('none');
-    requestRender({
-        id: 'mithril',
-        callback: () => {
-            m.redraw.strategy('diff');
-            m.redraw();
-        },
-        delay: (deferred)? Math.min(deferred.delay, delay): delay,
-    });
 }
 
 function errorHandler(error) {
@@ -128,4 +113,4 @@ function renderDeferred() {
     }
 }
 
-export { requestRender, requestRedraw };
+export { requestRender };

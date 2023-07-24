@@ -2,62 +2,45 @@ import './ImageIcon.scss';
 import { getTypeColor } from '../service/graph';
 import classNames from 'classnames';
 import Icon from './Icon.jsx';
-import { getImage } from '../images';
+import { loadImages } from '../images';
 
-const ImageIcon = {
-    view(ctrl, { src, icon, alt, hoverSrc, hoverAlt, type, before, after }) {
-        const elements = [];
-        const image = getImage(src);
-        if(image) {
-            if(hoverSrc) {
-                const hoverImage = getImage(hoverSrc);
-                if(hoverImage) {
-                    if(hoverAlt) {
-                        const hoverAlternate = getImage(hoverAlt);
-                        if(hoverAlternate) {
-                            elements.push(
-                                <img class={ classNames('hover', 'alt') } src={ hoverAlternate.src } />
-                            );
-                        }
-                    }
-                    elements.push(
-                        <img class={ classNames('hover') } src={ hoverImage.src } />
-                    );
-                }
+function ImageIcon(initialVnode) {
+    return {
+        oninit(vnode) {
+            loadImages(vnode, vnode.attrs.src);
+        },
+        onbeforeupdate(newVnode, oldVnode) {
+            if (oldVnode.attrs.src !== newVnode.attrs.src) {
+                this.oninit(newVnode);
+                return true;
             }
-            if(alt) {
-                const alternate = getImage(alt);
-                if(alternate) {
-                    elements.push(
-                        <img class={ classNames('alt', { 'no-hover': hoverAlt }) } src={ alternate.src } />
-                    );
-                }
+            return false;
+        },
+        view(vnode) {
+            const {src, icon, type, before, after} = vnode.attrs;
+            const image = vnode.state.images[src];
+            if (!image || (!image.loaded && icon)) {
+                return (
+                    <Icon icon={ icon } before={ before } after={ after } type={ type }/>
+                );
             }
-            elements.push(
-                <img class={ classNames('image', { 'no-hover': hoverSrc }) } src={ image && image.src } />
-            );
-        }
-        else if(icon) {
-            return (
-                <Icon icon={ icon } before={ before } after={ after } type={ type } />
-            );
-        }
-        let style = '';
-        if(type) {
-            style = `border-bottom: solid 3px ${ getTypeColor(type) }`;
-        }
-        return src && (
-            <div
-                style={ style }
-                class={ classNames('image-icon', {
+            let style = '';
+            if (type) {
+                style = `border-bottom: solid 3px ${ getTypeColor(type) }`;
+            }
+            return src && (
+                    <div
+                        style={ style }
+                        class={ classNames('image-icon', {
                     'image-icon--before': before,
                     'image-icon--after': after,
                 }) }
-            >
-                { elements }
-            </div>
-        );
-    },
+                    >
+                        <img class={ classNames('image') } src={ image.src }/>
+                    </div>
+                );
+        },
+    };
 };
 
 export default ImageIcon;

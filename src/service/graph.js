@@ -8,7 +8,6 @@ import roster from '../service/roster';
 import Graph from './graph/Graph';
 import ForceDirectedGraph from './graph/ForceDirectedGraph';
 import deepEqual from 'deep-equal';
-import { requestRedraw } from '../util/animation';
 
 const TYPE_COLORS = {
     [ TYPE.COSMIC ]: '#3af',
@@ -591,7 +590,7 @@ const fdg = new ForceDirectedGraph({
                 }
             }
             lastSelected = currentSelected;
-            requestRedraw(5);
+            m.redraw();
         }
         else if((!nodes || !nodes.length) && (!edges || !edges.length)) {
             const legend = legends[ fdg.id ];
@@ -599,7 +598,7 @@ const fdg = new ForceDirectedGraph({
                 effect.selected = true;
                 effect.amount = null;
             }
-            requestRedraw(5);
+            m.redraw();
         }
     },
     effectSelected: (effectId) => {
@@ -608,11 +607,11 @@ const fdg = new ForceDirectedGraph({
             effect.selected = effectId === effect.effectId;
             effect.amount = null;
         }
-        requestRedraw(5);
+        m.redraw();
     },
 });
 
-function getGraph(id, championFilter, synergyFilter, useRoster) {
+function getGraph(id, championFilter, synergyFilter, useRoster, images) {
     const forceUpdate = useRoster && (!rosters[ id ] || rosters[ id ] !== roster.hash());
     if(!graphs[ id ] || forceUpdate) {
         const graph = new Graph(forceUpdate);
@@ -628,9 +627,11 @@ function getGraph(id, championFilter, synergyFilter, useRoster) {
                 championsTo[ synergy.attr.toId ] = true;
                 return synergy;
             });
-        (useRoster
+        const championsToShow = useRoster
             ? roster.all()
-            : CHAMPIONS.filter((champion) => !UNRELEASED_CHAMPIONS[ champion.attr.uid ]))
+            : CHAMPIONS.filter((champion) => !UNRELEASED_CHAMPIONS[ champion.attr.uid ]);
+
+        championsToShow
             .filter((champion) => (championsTo[ champion.attr.uid ] || championsFrom[ `${ champion.attr.uid }-${ champion.attr.stars }` ]) && championFilter(champion))
             .forEach((champion) => {
                 const { typeId, uid, stars } = champion.attr;
@@ -638,14 +639,13 @@ function getGraph(id, championFilter, synergyFilter, useRoster) {
                     uid,
                     stars,
                     label: uid,
-                    image: `images/champions/portrait_${ uid }.png`,
+                    image: images[ `../images/champions/portrait_${ uid }.png` ],
                     type: typeId,
                     color: TYPE_COLORS[ typeId ],
                     neighbors: {},
                     effects: {},
                     onOpen: () => {
-                        router.setRoute(`/guide/${ uid }`);
-                        requestRedraw();
+                        router.route(`/guide/${ uid }`);
                     },
                 });
                 nodeMap[ `${ uid }-${ stars }` ] = node;
@@ -691,12 +691,12 @@ function getGraph(id, championFilter, synergyFilter, useRoster) {
         legends[ id ] = legend;
         graphs[ id ] = graph;
         rosters[ id ] = roster.hash();
-        requestRedraw(5);
+        m.redraw();
     }
     return graphs[ id ];
 }
 
-function getGraphId({ stars, effect, roster }) {
+function getGraphId({ stars, effect, useRoster }) {
     let id = 'graph';
     if(stars) {
         id = `${ id }-stars-${ stars }`;
@@ -704,7 +704,7 @@ function getGraphId({ stars, effect, roster }) {
     if (effect) {
         id = `${ id }-effect-${ effect }`;
     }
-    if(roster) {
+    if(useRoster) {
         id = `${ id }-roster`;
     }
     return id;
@@ -714,12 +714,12 @@ function getLegend(definition) {
     return legends[ getGraphId(definition) ];
 }
 
-function updateGraph(definition, ...dimensions) {
+function updateGraph(definition, images, ...dimensions) {
     const id = getGraphId(definition);
     let showStars = true;
     let championFilter = () => true;
     let synergyFilter = () => true;
-    const { stars, effect, roster } = definition;
+    const { stars, effect, useRoster } = definition;
     if(stars) {
         showStars = false;
         championFilter = ({ attr }) => attr.stars === stars;
@@ -727,7 +727,7 @@ function updateGraph(definition, ...dimensions) {
     if (effect) {
         synergyFilter = ({ attr }) => attr.effectId === effect;
     }
-    fdg.update(id, showStars, getGraph(id, championFilter, synergyFilter, roster), ...dimensions);
+    fdg.update(id, showStars, getGraph(id, championFilter, synergyFilter, useRoster, images), ...dimensions);
 }
 
 export default fdg;

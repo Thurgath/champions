@@ -20,4 +20,7 @@ class Effect {
 
 export default Effect;
 export { EFFECT };
+export function effectExists(effect) {
+    return EFFECT_VALUES.indexOf(effect) !== -1;
+}
 export const EFFECT_VALUES = Object.values(EFFECT);

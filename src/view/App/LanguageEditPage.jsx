@@ -8,102 +8,103 @@ import { ABILITY_VALUES } from '../../data/model/Ability';
 import lang, { getLanguage } from '../../service/lang';
 import Icon from '../Icon.jsx';
 import ImageIcon from '../ImageIcon.jsx';
-import { requestRedraw } from '../../util/animation';
 
-/**
- * This sets up the missing fields previous/next buttons depending on window scroll position.
- *
- * @param element - the page element.
- */
-function onScroll(element) {
-    if(!isInDocumentBody(element)) {
-        return;
-    }
-
-    let current = 0;
-    let previous = null;
-    let next = null;
-    Array.prototype.forEach.call(element.querySelectorAll('.field-missing') || [], (element, index) => {
-        const { top } = element.getBoundingClientRect();
-        if(top <= 0) {
-            current = index + 1;
+function LanguageEditPage(initialVnode) {
+    /**
+     * This sets up the missing fields previous/next buttons depending on window scroll position.
+     *
+     * @param element - the page element.
+     */
+    function onScroll(element) {
+        if(!isInDocumentBody(element)) {
+            return;
         }
-        if(top < 0 && (!previous || top > previous.top)) {
-            previous = {
-                top,
-                element,
-            };
-        }
-        else if(top > 0 && (!next || top < next.top)) {
-            next = {
-                top,
-                element,
-            };
-        }
-    });
 
-    const currentMissing = element.querySelector('.field-missing-current');
-    if(currentMissing) {
-        currentMissing.innerHTML = `${ current } /`;
-    }
-
-    const previousControl = element.querySelector('.field-missing-controls-previous');
-    if(previousControl) {
-        previousControl.onclick = function() {
-            if(previous) {
-                previous.element.scrollIntoView(true);
+        let current = 0;
+        let previous = null;
+        let next = null;
+        Array.prototype.forEach.call(element.querySelectorAll('.field-missing') || [], (element, index) => {
+            const { top } = element.getBoundingClientRect();
+            if(top <= 0) {
+                current = index + 1;
             }
-        };
-        previousControl.className = classNames(
-            'field-missing-controls-previous',
-            { 'field-missing-controls-active': previous }
-        );
-    }
-
-    const nextControl = element.querySelector('.field-missing-controls-next');
-    if(nextControl) {
-        nextControl.onclick = function() {
-            if(next) {
-                next.element.scrollIntoView(true);
+            if(top < 0 && (!previous || top > previous.top)) {
+                previous = {
+                    top,
+                    element,
+                };
             }
-        };
-        nextControl.className = classNames(
-            'field-missing-controls-next',
-            { 'field-missing-controls-active': next }
-        );
-    }
-}
+            else if(top > 0 && (!next || top < next.top)) {
+                next = {
+                    top,
+                    element,
+                };
+            }
+        });
 
-const LanguageEditPage = {
-    controller() {
-        this.editing = {
-            id: null,
-            value: '',
-        };
-    },
-    view({ editing }, { langId }) {
-        const { defaultFields, values } = getLanguage(langId);
-        const elements = [];
-        const placeholders = lang.messages[ 'en' ];
-        let missing = 0;
-        const valueOf = (id) => (editing.id === id)? editing.value: values[ id ];
-        const fieldElement = (id, isOptional = false) => (
-            <div class={ classNames('field', { 'field-missing': !isOptional && !valueOf(id) && ++missing }) }>
-                <label>{ id }</label>
-                <input
-                    type="text"
-                    placeholder={ isOptional? '': placeholders[ id ] }
-                    value={ valueOf(id) || '' }
-                    onfocus={() => {
+        const currentMissing = element.querySelector('.field-missing-current');
+        if(currentMissing) {
+            currentMissing.innerHTML = `${ current } /`;
+        }
+
+        const previousControl = element.querySelector('.field-missing-controls-previous');
+        if(previousControl) {
+            previousControl.onclick = function() {
+                if(previous) {
+                    previous.element.scrollIntoView(true);
+                }
+            };
+            previousControl.className = classNames(
+                'field-missing-controls-previous',
+                { 'field-missing-controls-active': previous }
+            );
+        }
+
+        const nextControl = element.querySelector('.field-missing-controls-next');
+        if(nextControl) {
+            nextControl.onclick = function() {
+                if(next) {
+                    next.element.scrollIntoView(true);
+                }
+            };
+            nextControl.className = classNames(
+                'field-missing-controls-next',
+                { 'field-missing-controls-active': next }
+            );
+        }
+    }
+
+    return {
+        oninit(vnode) {
+            vnode.state.editing = {
+                id: null,
+                value: '',
+            };
+        },
+        view(vnode) {
+            const { langId } = vnode.attrs;
+            const editing = vnode.state.editing;
+            const {defaultFields, values} = getLanguage(langId);
+            const elements = [];
+            const placeholders = lang.messages['en'];
+            let missing = 0;
+            const valueOf = (id) => (editing.id === id) ? editing.value : values[id];
+            const fieldElement = (id, isOptional = false) => (
+                <div class={ classNames('field', { 'field-missing': !isOptional && !valueOf(id) && ++missing }) }>
+                    <label>{ id }</label>
+                    <input
+                        type="text"
+                        placeholder={ isOptional? '': placeholders[ id ] }
+                        value={ valueOf(id) || '' }
+                        onfocus={() => {
                         editing.id = id;
                         editing.value = values[ id ] || '';
                     }}
-                    oninput={(event) => {
+                        oninput={(event) => {
                         editing.id = id;
                         editing.value = event.target.value || '';
-                        requestRedraw();
                     }}
-                    onblur={(event) => {
+                        onblur={(event) => {
                         const value = event.target.value.trim();
                         values[ id ] = value;
                         if(value.length === 0 && values[ id ] !== undefined) {
@@ -112,24 +113,24 @@ const LanguageEditPage = {
                         editing.id = null;
                         editing.value = '';
                     }}
-                />
-            </div>
-        );
-        elements.push(
-            <div class="field-group">
-                <div class="field-group-title">
-                    <ImageIcon src={ `images/lang/${ langId }.png` } icon="flag" />
-                    { lang.string('language') }
+                    />
                 </div>
-                <div class="field-group-set">
-                    { fieldElement('lang') }
+            );
+            elements.push(
+                <div class="field-group">
+                    <div class="field-group-title">
+                        <ImageIcon src={ `images/lang/${ langId }.png` } icon="flag"/>
+                        { lang.string('language') }
+                    </div>
+                    <div class="field-group-set">
+                        { fieldElement('lang') }
+                    </div>
                 </div>
-            </div>
-        );
-        elements.push(
-            <div class="field-group">
-                <div class="field-group-title">{ lang.string('champions') }</div>
-                { CHAMPION_VALUES
+            );
+            elements.push(
+                <div class="field-group">
+                    <div class="field-group-title">{ lang.string('champions') }</div>
+                    { CHAMPION_VALUES
                         .map((uid) => [
                             `champion-${ uid }-name`,
                             `champion-${ uid }-shortname`,
@@ -141,82 +142,82 @@ const LanguageEditPage = {
                                 { keys.map((key) => fieldElement(key)) }
                             </div>
                         )) }
-            </div>
-        );
-        elements.push(
-            <div class="field-group">
-                <div class="field-group-title">{ lang.string('types') }</div>
-                { TYPE_VALUES.concat('unknown')
-                    .map((uid) => `type-${ uid }-name`)
-                    .map((id) => (
-                        <div class="field-group-set">
-                            { fieldElement(id) }
-                        </div>
-                    )) }
-            </div>
-        );
-        elements.push(
-            <div class="field-group">
-                <div class="field-group-title">{ lang.string('effects') }</div>
-                { EFFECT_VALUES
-                    .map((uid) => [ `effect-${ uid }-type`, `effect-${ uid }-name`, `effect-${ uid }-description` ])
-                    .map(([ type, name, description ]) => (
-                        <div class="field-group-set">
-                            { fieldElement(type) }
-                            { fieldElement(name, true) }
-                            { fieldElement(description) }
-                        </div>
-                    )) }
-            </div>
-        );
-        elements.push(
-            <div class="field-group">
-                <div class="field-group-title">{ lang.string('abilities') }</div>
-                { ABILITY_VALUES
-                    .map((uid) => [ `ability-${ uid }-name`, `ability-${ uid }-description` ])
-                    .map(([ name, description ]) => (
-                        <div class="field-group-set">
-                            { fieldElement(name) }
-                            { fieldElement(description) }
-                        </div>
-                    )) }
-            </div>
-        );
-        elements.push(
-            <div class="field-group">
-                <div class="field-group-title">{ lang.string('other') }</div>
-                { Object.keys(placeholders)
-                    .filter((field) => !defaultFields[ field ])
-                    .map((field) => (
-                        <div class="field-group-set">
-                            { fieldElement(field) }
-                        </div>
-                    )) }
-            </div>
-        );
-        if(missing) {
-            elements.push(
-                <div class="field-missing-controls-container">
-                    <div class="field-missing-controls">
-                        <div class="field-missing-controls-previous">
-                            <Icon icon="chevron-up" />
-                        </div>
-                        <div class="field-missing-controls-count">
-                            <span class="field-missing-current"></span>
-                            { missing }
-                        </div>
-                        <div class="field-missing-controls-next">
-                            <Icon icon="chevron-down" />
-                        </div>
-                    </div>
                 </div>
             );
-        }
-        return (
-            <div
-                m="LanguageEditPage"
-                class="language-edit"
-                config={ (element, isInitialized) => {
+            elements.push(
+                <div class="field-group">
+                    <div class="field-group-title">{ lang.string('types') }</div>
+                    { TYPE_VALUES.concat('unknown')
+                        .map((uid) => `type-${ uid }-name`)
+                        .map((id) => (
+                            <div class="field-group-set">
+                                { fieldElement(id) }
+                            </div>
+                        )) }
+                </div>
+            );
+            elements.push(
+                <div class="field-group">
+                    <div class="field-group-title">{ lang.string('effects') }</div>
+                    { EFFECT_VALUES
+                        .map((uid) => [`effect-${ uid }-type`, `effect-${ uid }-name`, `effect-${ uid }-description`])
+                        .map(([ type, name, description ]) => (
+                            <div class="field-group-set">
+                                { fieldElement(type) }
+                                { fieldElement(name, true) }
+                                { fieldElement(description) }
+                            </div>
+                        )) }
+                </div>
+            );
+            elements.push(
+                <div class="field-group">
+                    <div class="field-group-title">{ lang.string('abilities') }</div>
+                    { ABILITY_VALUES
+                        .map((uid) => [`ability-${ uid }-name`, `ability-${ uid }-description`])
+                        .map(([ name, description ]) => (
+                            <div class="field-group-set">
+                                { fieldElement(name) }
+                                { fieldElement(description) }
+                            </div>
+                        )) }
+                </div>
+            );
+            elements.push(
+                <div class="field-group">
+                    <div class="field-group-title">{ lang.string('other') }</div>
+                    { Object.keys(placeholders)
+                        .filter((field) => !defaultFields[field])
+                        .map((field) => (
+                            <div class="field-group-set">
+                                { fieldElement(field) }
+                            </div>
+                        )) }
+                </div>
+            );
+            if (missing) {
+                elements.push(
+                    <div class="field-missing-controls-container">
+                        <div class="field-missing-controls">
+                            <div class="field-missing-controls-previous">
+                                <Icon icon="chevron-up"/>
+                            </div>
+                            <div class="field-missing-controls-count">
+                                <span class="field-missing-current"></span>
+                                { missing }
+                            </div>
+                            <div class="field-missing-controls-next">
+                                <Icon icon="chevron-down"/>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+            return (
+                <div
+                    m="LanguageEditPage"
+                    class="language-edit"
+                    config={ (element, isInitialized) => {
                     if(isInitialized) {
                         element.handleScroll();
                         return;
@@ -225,13 +226,14 @@ const LanguageEditPage = {
                     element.handleScroll();
                     element.parentNode.addEventListener('scroll', element.handleScroll, true);
                 }}
-                key={ `lang-${ langId }` }
-            >
-                { elements }
-                <div class="clear" />
-            </div>
-        );
-    },
+                    key={ `lang-${ langId }` }
+                >
+                    { elements }
+                    <div class="clear"/>
+                </div>
+            );
+        },
+    };
 };
 
 export default LanguageEditPage;

@@ -73,6 +73,10 @@ export const STAR_LEVELS = STAR_RANK_LEVELS.map((rankLevels) => {
     return rankLevels.reduce((sum, value) => sum + value, 0);
 });
 
+export function starLevelExists(starLevel) {
+    return Object.keys(STAR_RANK_LEVEL).indexOf(starLevel) !== -1;
+}
+
 export const STAR_RANK_LEVEL_SUMS = STAR_RANK_LEVELS.map((rankLevels) => {
     return rankLevels.reduce((sums, value) => [
         ...sums,

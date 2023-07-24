@@ -1,11 +1,13 @@
 import './App.scss';
 import classNames from 'classnames';
-import app from '../service/app';
+import appState from '../service/appState.js';
 import teams from '../service/teams';
 import Menu from './Menu.jsx';
+import Slides from './Slides.jsx';
 
-function addRawHTML(element, isInitialized) {
-    if(!isInitialized) {
+function App(initialVnode) {
+
+    function addRawHTML(element) {
         element.innerHTML = `
             <span class="champion-icon champion-icon-app-icon"></span>
             <span class="fa-solid fa-asterisk"></span>
@@ -20,35 +22,46 @@ function addRawHTML(element, isInitialized) {
             </svg>
         `;
     }
-}
-
-const App = {
-    controller: function(data) {
-    },
-    view() {
-        const { tabs, tab, pages, menu, button } = app;
-        const { progress } = teams;
-        const currentPage = tab;
-        return (
-            <div m="App" class="app">
-                <div class="pages">
-                    {tabs.map((tab) => (
-                        <div class={ classNames('page', { 'page--current': currentPage === tab.id }) } key={ tab.id }>
-                            { (currentPage === tab.id)? pages[ tab.id ]: { subtree: 'retain' } }
-                        </div>
-                    ))}
+    
+    return {
+        oninit(vnode) {
+            vnode.state.currentMenuId = appState().getCurrentTab().getId();
+        },
+        oncreate(vnode) {
+            addRawHTML(vnode.dom.getElementsByClassName('raw-html')[0]);
+            window.addEventListener("resize", m.redraw)
+        },
+        onremove: () => window.removeEventListener("resize", m.redraw),
+        view(vnode) {
+            const {menu, parameters} = vnode.attrs;
+            const {progress} = teams;
+            const currentTab = appState().getCurrentTab();
+            const slides = appState().getTabs().map((tab) => {
+                return <div id={ tab.getId() } class={ classNames('page', { 'page--current': currentTab.getId() === tab.getId() }) }
+                            key={ tab.getId() }>
+                    <Slides slides={ tab.getSlideKeys() }
+                            current={ currentTab.getSlideIndex() }/>
+                </div>;
+            });
+            return (
+                <div m="App" class="app" id="app">
+                    <div class="pages">
+                        { slides }
+                    </div>
+                    <div id="menu">
+                        <Menu menu={ menu } parameters={ parameters }/>
+                    </div>
+                    <div class="app-building">
+                        <div
+                            class="app-building--progress"
+                            style={ `width: ${ Math.max(0, Math.min(100, 100 * progress)) }%; transition: ${ (progress <= 0)? 'none': 'width .3s linear' };` }
+                        />
+                    </div>
+                    <div id="raw-html" class="raw-html"/>
                 </div>
-                <Menu tabs={ tabs } tab={ tab } menu={ menu } button={ button } />
-                <div class="app-building">
-                    <div
-                        class="app-building--progress"
-                        style={ `width: ${ Math.max(0, Math.min(100, 100 * progress)) }%; transition: ${ (progress <= 0)? 'none': 'width .3s linear' };` }
-                    />
-                </div>
-                <div class="raw-html" config={ addRawHTML } />
-            </div>
-        );
-    },
+            );
+        },
+    };
 };
 
 export default App;

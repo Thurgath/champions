@@ -1,41 +1,42 @@
 import roster from '../../service/roster';
-import MenuHeader from '../Menu/MenuHeader.jsx';
-import MenuOption from '../Menu/MenuOption.jsx';
+import MenuHeader from '../menu/MenuHeader.jsx';
+import MenuOption from '../menu/MenuOption.jsx';
 import Icon from '../Icon.jsx';
-import { requestRedraw } from '../../util/animation';
 
-const RosterMenu = {
-    controller: function(data) {
-    },
-    view(ctrl, { uid, stars }) {
-        return (
-            <div m="RosterMenu" key={ `roster-edit-menu-${ uid }-${ stars }` }>
-                <MenuHeader title="roster" />
-                <MenuOption
-                    icon={(
+function RosterMenu(initialVnode) {
+    return {
+        oninit(vnode) {
+        },
+        view(vnode) {
+            const {uid, stars} = vnode.attrs;
+            return (
+                <div m="RosterMenu" key={ `roster-edit-menu-${ uid }-${ stars }` }>
+                    <MenuHeader title="roster"/>
+                    <MenuOption
+                        icon={(
                         <Icon icon="user" before />
                     )}
-                    title="view-guide"
-                    href={ `/guide/${ uid }` }
-                />
-                <MenuOption
-                    icon={(
+                        title="view-guide"
+                        href={ `/guide/${ uid }` }
+                    />
+                    <MenuOption
+                        icon={(
                         <Icon icon="refresh" before />
                     )}
-                    title="reset"
-                    onclick={() => {
+                        title="reset"
+                        onclick={() => {
                         roster.set(uid, stars, {
                             rank: 1,
                             level: 1,
                             awakened: 0,
                             pi: 0,
                         });
-                        requestRedraw();
                     }}
-                />
-            </div>
-        );
-    },
+                    />
+                </div>
+            );
+        },
+    };
 };
 
 export default RosterMenu;

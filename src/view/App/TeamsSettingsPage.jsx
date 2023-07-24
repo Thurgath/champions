@@ -1,130 +1,56 @@
 import './TeamsSettingsPage.scss';
-import classNames from 'classnames';
 import effects, { effectIcon } from '../../data/effects';
 import teams, { save } from '../../service/teams';
 import lang from '../../service/lang';
 import Icon from '../Icon.jsx';
-import ImageIcon from '../ImageIcon.jsx';
-import { requestRedraw } from '../../util/animation';
+import Checkbox from './ui/Checkbox.jsx';
+import Field from './ui/Field.jsx';
+import Slider from './ui/Slider.jsx';
 
-const DUPLICATE_TITLES = {
-    2: 'double',
-    3: 'triple',
-    4: 'quadruple',
-    5: 'quintuple',
-};
-
-const Slider = {
-    view(ctrl, { object, field, toInputValue, fromInputValue }) {
-        return (
-            <input
-                class="field-slider"
-                type="range"
-                min="0"
-                max="1000"
-                step="1"
-                value={ toInputValue(object[ field ]) }
-                oninput={ (event) => {
-                    object[ field ] = fromInputValue(event.target.value);
-                    save();
-                    requestRedraw(10);
-                } }
-            />
-        );
-    },
-};
-
-const Checkbox = {
-    view(ctrl, { object, field }) {
-        return (
-            <div
-                class="field-checkbox no-select"
-                onclick={() => {
-                    object[ field ] = !object[ field ];
-                    save();
-                    requestRedraw(10);
-                }}
-            >
-                <ImageIcon src={ 'icons/'
-                + ((object[ field ])? 'square-check.svg': 'square.svg') } before />
-                { lang.string((object[ field ])? 'enabled': 'disabled') }
-            </div>
-        );
-    },
-};
-
-const Field = {
-    view(ctrl, { title, icon, description, alt, input, value, hasLargeValue }) {
-        return (
-            <div class="field">
-                <label class="field-name">
-                    { icon }
-                    { title }
-                </label>
-                <div class="field-content">
-                    { (description !== undefined)? (
-                        <div class="field-description">{ description }</div>
-                    ): null }
-                    { (input !== undefined)? (
-                        <div class={ classNames('field-input',
-                            { 'field-input-small': (value !== undefined) && !hasLargeValue },
-                            { 'field-input-large': (value !== undefined) && hasLargeValue }
-                        )}>
-                            { input }
+function TeamsSettingsPage(initialVnode) {
+    const DUPLICATE_TITLES = {
+        2: 'double',
+        3: 'triple',
+        4: 'quadruple',
+        5: 'quintuple',
+    };
+    
+    return {
+        oninit(vnode) {
+        },
+        view() {
+            return (
+                <div m="TeamsSettingsPage" class="teams-settings">
+                    <div class="teams-settings-section">
+                        <div class="header">
+                            { lang.string('general-settings') }
                         </div>
-                    ): null }
-                    { (value !== undefined)? (
-                        <span class="field-value">
-                            { lang.number(value) }
-                        </span>
-                    ): null }
-                    { (alt !== undefined)? (
-                        <div class="field-description-alt">{ alt }</div>
-                    ): null }
-                </div>
-            </div>
-        );
-    },
-};
-
-const TeamsSettingsPage = {
-    controller: function(data) {
-    },
-    view() {
-        return (
-            <div m="TeamsSettingsPage" class="teams-settings">
-                <div class="teams-settings-section">
-                    <div class="header">
-                        { lang.string('general-settings') }
-                    </div>
-                    <Field
-                        title={ lang.string('arena-sandbagging') }
-                        icon={(
+                        <Field
+                            title={ lang.string('arena-sandbagging') }
+                            icon={(
                             <Icon icon="users" before />
                         )}
-                        description={ lang.string('arena-sandbagging-description') }
-                        input={(
-                            <Checkbox object={ teams } field={ 'sandbagging' } />
-                        )}
-                    />
+                            description={ lang.string('arena-sandbagging-description') }
+                            inputComponent={ Checkbox }
+                            inputParameters={ { object: teams, field: 'sandbagging' } }
+                        />
 
-                    <Field
-                        title={ lang.string('willpower-safe') }
-                        icon={(
+                        <Field
+                            title={ lang.string('willpower-safe') }
+                            icon={(
                             <Icon icon="user-secret" before />
                         )}
-                        description={ lang.string('willpower-safe-description') }
-                        input={(
-                            <Checkbox object={ teams } field={ 'willpowersafe' } />
-                        )}
-                    />
-                    <Field
-                        title={ lang.string('base-weight') }
-                        icon={(
+                            description={ lang.string('willpower-safe-description') }
+                            inputComponent={ Checkbox }
+                            inputParameters={ { object: teams, field: 'willpowersafe' } }                            
+                        />
+                        <Field
+                            title={ lang.string('base-weight') }
+                            icon={(
                             <Icon icon="database" before />
                         )}
-                        description={ lang.string('base-weight-description') }
-                        input={
+                            description={ lang.string('base-weight-description') }
+                            input={
                             <Slider
                                 object={ teams.weights }
                                 field={ 'base' }
@@ -132,21 +58,21 @@ const TeamsSettingsPage = {
                                 fromInputValue={ (value) => value / 1000 }
                             />
                         }
-                        value={ (teams.weights[ 'base' ] * 1000 | 0) / 10 }
-                    />
-                </div>
-                <div class="teams-settings-section">
-                    <div class="header">
-                        { lang.string('synergy-weights') }
+                            value={ (teams.weights[ 'base' ] * 1000 | 0) / 10 }
+                        />
                     </div>
-                    { effects.map(({ attr }) => (
-                        <Field
-                            title={ lang.string(`effect-${ attr.uid }-name`, null) || lang.string(`effect-${ attr.uid }-type`) }
-                            description={ lang.string(`effect-${ attr.uid }-description`, null) }
-                            icon={(
+                    <div class="teams-settings-section">
+                        <div class="header">
+                            { lang.string('synergy-weights') }
+                        </div>
+                        { effects.map(({attr}) => (
+                            <Field
+                                title={ lang.string(`effect-${ attr.uid }-name`, null) || lang.string(`effect-${ attr.uid }-type`) }
+                                description={ lang.string(`effect-${ attr.uid }-description`, null) }
+                                icon={(
                                 <Icon icon={ effectIcon(attr.uid) } before />
                             )}
-                            input={
+                                input={
                                 <Slider
                                     object={ teams.weights }
                                     field={ attr.uid }
@@ -154,21 +80,21 @@ const TeamsSettingsPage = {
                                     fromInputValue={ (value) => value / 1000 }
                                 />
                             }
-                            value={ (teams.weights[ attr.uid ] * 1000 | 0) / 10 }
-                        />
-                    )) }
-                </div>
-                <div class="teams-settings-section">
-                    <div class="header">
-                        { lang.string('duplicate-weights') }
+                                value={ (teams.weights[ attr.uid ] * 1000 | 0) / 10 }
+                            />
+                        )) }
                     </div>
-                    { [ 2, 3, 4, 5 ].map((count) => (
-                        <Field
-                            title={ `${ lang.string(DUPLICATE_TITLES[ count ]) }` }
-                            icon={(
+                    <div class="teams-settings-section">
+                        <div class="header">
+                            { lang.string('duplicate-weights') }
+                        </div>
+                        { [2, 3, 4, 5].map((count) => (
+                            <Field
+                                title={ `${ lang.string(DUPLICATE_TITLES[ count ]) }` }
+                                icon={(
                                 <span class="field-name--bold">{ `${ count }x ` }</span>
                             )}
-                            input={
+                                input={
                                 <Slider
                                     object={ teams.weights }
                                     field={ `duplicates-${ count }` }
@@ -176,23 +102,23 @@ const TeamsSettingsPage = {
                                     fromInputValue={ (value) => value / 1000 }
                                 />
                             }
-                            value={ (teams.weights[ `duplicates-${ count }` ] * 1000 | 0) / 10 }
-                        />
-                    )) }
-                </div>
-                <div class="teams-settings-section">
-                    <div class="header">
-                        { lang.string('pi-range') }
+                                value={ (teams.weights[ `duplicates-${ count }` ] * 1000 | 0) / 10 }
+                            />
+                        )) }
                     </div>
-                    { [
-                        { which: 'minimum-champion', iconType: 'user', icon: 'step-backward', maximum: 20000 },
-                        { which: 'maximum-champion', iconType: 'user', icon: 'step-forward', maximum: 20000 },
-                        { which: 'minimum-team', iconType: 'users', icon: 'step-backward', maximum: 100000 },
-                        { which: 'maximum-team', iconType: 'users', icon: 'step-forward', maximum: 100000 },
-                    ].map(({ which, iconType, icon, maximum }) => (
-                        <Field
-                            title={ lang.string(`pi-range-${ which }`) }
-                            icon={[
+                    <div class="teams-settings-section">
+                        <div class="header">
+                            { lang.string('pi-range') }
+                        </div>
+                        { [
+                            {which: 'minimum-champion', iconType: 'user', icon: 'step-backward', maximum: 20000},
+                            {which: 'maximum-champion', iconType: 'user', icon: 'step-forward', maximum: 20000},
+                            {which: 'minimum-team', iconType: 'users', icon: 'step-backward', maximum: 100000},
+                            {which: 'maximum-team', iconType: 'users', icon: 'step-forward', maximum: 100000},
+                        ].map(({which, iconType, icon, maximum}) => (
+                            <Field
+                                title={ lang.string(`pi-range-${ which }`) }
+                                icon={[
                                 (
                                 <Icon icon={ iconType } before />
                                 ),
@@ -200,7 +126,7 @@ const TeamsSettingsPage = {
                                 <Icon icon={ icon } before />
                                 ),
                             ]}
-                            input={
+                                input={
                                 <Slider
                                     object={ teams.range }
                                     field={ which }
@@ -208,14 +134,15 @@ const TeamsSettingsPage = {
                                     fromInputValue={ (value) => maximum * value / 1000 }
                                 />
                             }
-                            value={ teams.range[ which ] | 0 }
-                            hasLargeValue
-                        />
-                    )) }
+                                value={ teams.range[ which ] | 0 }
+                                hasLargeValue
+                            />
+                        )) }
+                    </div>
+                    <div class="clear"/>
                 </div>
-                <div class="clear" />
-            </div>
-        );
-    },
+            );
+        },
+    };
 };
 export default TeamsSettingsPage;

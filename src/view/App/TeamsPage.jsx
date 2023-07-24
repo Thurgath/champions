@@ -8,33 +8,48 @@ import Icon from '../Icon.jsx';
 import ChampionTeam from '../Champion/ChampionTeam.jsx';
 import ChampionPortrait from '../Champion/ChampionPortrait.jsx';
 
-function results(type, size) {
-    const result = teams.result[ `${ type }-${ size }` ];
-    if(result) {
-        const { counts, teams, extras } = result;
-        const message = type === ROLE.ARENA?
-            ` - ${ counts.teams } ${ lang.string('teams') } ${ lang.string('with') } ${ counts.synergies } ${ lang.string('synergies') }`:
-            ` - ${ counts.synergies } ${ lang.string('synergies') }`;
-        const teamDivs = teams.map(({ champions, synergies }) => (
-            <ChampionTeam
-                key={ `teams-${ champions.map((champion) => champion.id).join('-') }` }
-                champions={ champions }
-                synergies={ synergies }
-                showBadges={ 'upgrade' }
-            />
-        ));
-        let extrasDiv = null;
-        if(extras.length) {
-            extrasDiv = (
-                <div class="teams-extras">
-                    <div class="teams-header">{ lang.string('extras') }</div>
-                    {extras.map((champion) => (
-                        <ChampionPortrait
-                            key={ `teams-extras-${ champion.id }` }
-                            champion={ champion }
-                            showBadges={ 'upgrade' }
-                        />
-                    ))}
+function TeamsPage(initialVnode) {
+
+    function results(type, size) {
+        const result = teams.result[ `${ type }-${ size }` ];
+        if(result) {
+            const { counts, teams, extras } = result;
+            const message = type === ROLE.ARENA?
+                ` - ${ counts.teams } ${ lang.string('teams') } ${ lang.string('with') } ${ counts.synergies } ${ lang.string('synergies') }`:
+                ` - ${ counts.synergies } ${ lang.string('synergies') }`;
+            const teamDivs = teams.map(({ champions, synergies }) => (
+                <ChampionTeam
+                    key={ `teams-${ champions.map((champion) => champion.id).join('-') }` }
+                    champions={ champions }
+                    synergies={ synergies }
+                    showBadges={ 'upgrade' }
+                />
+            ));
+            let extrasDiv = null;
+            if(extras.length) {
+                extrasDiv = (
+                    <div class="teams-extras">
+                        <div class="teams-header">{ lang.string('extras') }</div>
+                        {extras.map((champion) => (
+                            <ChampionPortrait
+                                key={ `teams-extras-${ champion.id }` }
+                                champion={ champion }
+                                showBadges={ 'upgrade' }
+                            />
+                        ))}
+                    </div>
+                );
+            }
+            return (
+                <div>
+                    <Message
+                        icon={(
+                        <Icon icon={ roleIcon(type) } before />
+                    )}
+                        value={ `${ lang.string(`role-${ type }`) }${ message }` }
+                    />
+                    { teamDivs }
+                    { extrasDiv }
                 </div>
             );
         }
@@ -42,47 +57,35 @@ function results(type, size) {
             <div>
                 <Message
                     icon={(
-                        <Icon icon={ roleIcon(type) } before />
-                    )}
-                    value={ `${ lang.string(`role-${ type }`) }${ message }` }
+                    <Icon icon={ roleIcon(type) } before />
+                )}
+                    value={ lang.string(`role-${ type }`) }
                 />
-                { teamDivs }
-                { extrasDiv }
             </div>
         );
     }
-    return (
-        <div>
-            <Message
-                icon={(
-                    <Icon icon={ roleIcon(type) } before />
-                )}
-                value={ lang.string(`role-${ type }`) }
-            />
-        </div>
-    );
-}
-
-const TeamsPage = {
-    controller: function(data) {
-    },
-    view() {
-        return (
-            <div m="TeamsPage" class="teams">
-                {(teams.type === ROLE.ALLIANCE_WAR_ATTACK || teams.type === ROLE.ALLIANCE_WAR_DEFENSE)? (
-                    <div key="teams-alliance">
-                        { results(ROLE.ALLIANCE_WAR_ATTACK, 3) }
-                        { results(ROLE.ALLIANCE_WAR_DEFENSE, 5) }
-                    </div>
-                ): (
-                    <div key="teams-other">
-                        { results(teams.type, teams.size) }
-                    </div>
-                )}
-                <div key="none" class="clear" />
-            </div>
-        );
-    },
+    
+    return {
+        oninit(vnode) {
+        },
+        view() {
+            return (
+                <div m="TeamsPage" class="teams">
+                    {(teams.type === ROLE.ALLIANCE_WAR_ATTACK || teams.type === ROLE.ALLIANCE_WAR_DEFENSE) ? (
+                        <div key="teams-alliance">
+                            { results(ROLE.ALLIANCE_WAR_ATTACK, 3) }
+                            { results(ROLE.ALLIANCE_WAR_DEFENSE, 5) }
+                        </div>
+                    ) : (
+                        <div key="teams-other">
+                            { results(teams.type, teams.size) }
+                        </div>
+                    )}
+                    <div key="none" class="clear"/>
+                </div>
+            );
+        },
+    };
 };
 
 export default TeamsPage;

@@ -1,4 +1,3 @@
-/* eslint-disable */
 import GuideEditPage from '../../src/view/App/GuideEditPage.jsx';
 import GuidePage from '../../src/view/App/GuidePage.jsx';
 import LanguageEditPage from '../../src/view/App/LanguageEditPage.jsx';
@@ -10,11 +9,17 @@ import TeamsPage from '../../src/view/App/TeamsPage.jsx';
 import TeamsEditPage from '../../src/view/App/TeamsEditPage.jsx';
 import TeamsSettingsPage from '../../src/view/App/TeamsSettingsPage.jsx';
 import roster from '../../src/service/roster';
-import mq from "mithril-query";
+import { createElement } from '../test-setup.js';
 
 roster.clear();
 
 describe('view/pages/', () => {
+
+    before(() => {
+        // See comments in test-setup.js
+        createElement('add-svg-for-portrait');
+    });
+
     describe('<GuideEditPage/>', () => it('should render without error', () => {
         expect(mq(GuideEditPage, {})).to.exist;
     }));

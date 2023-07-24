@@ -7,11 +7,16 @@ import ChampionSection from '../../src/view/Champion/ChampionSection.jsx';
 import ChampionTeam from '../../src/view/Champion/ChampionTeam.jsx';
 import { ARENA } from '../../src/data/ids/roles.js';
 import roster from '../../src/service/roster';
-import mq from 'mithril-query';
+import { createElement } from '../test-setup';
 
 roster.clear();
 
 describe('view/champion/', () => {
+
+    before(() => {
+        // See comments in test-setup.js
+        createElement('add-svg-for-portrait');
+    });
 
     const championById = getChampionById('thor-3');
     const champion = getChampion('thor', 3);
