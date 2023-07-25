@@ -3,6 +3,7 @@ import MenuOptionGroup from '../menu/MenuOptionGroup.jsx';
 import MenuOption from '../menu/MenuOption.jsx';
 import MenuSection from '../menu/MenuSection.jsx';
 import ClassTypeIcon from '../ClassTypeIcon.jsx';
+import Icon from '../Icon.jsx';
 import TYPES, { typeIcon } from '../../data/types';
 import addRosterFilter from '../../service/add-roster-filter';
 
@@ -29,6 +30,33 @@ function RosterAddMenu(initialVnode) {
                             />
                         ))
                     }/>
+                    <MenuSection title="sort"/>
+                    <MenuOption
+                        icon={(
+                            <Icon
+                                icon={ (addRosterFilter.isSortByName() && addRosterFilter.isAscending())? 'sort-alpha-asc': 'sort-alpha-desc' }
+                                before
+                            />
+                        )}
+                        title="name"
+                        selected={ addRosterFilter.isSortByName() }
+                        onclick={ () => {
+                            addRosterFilter.sortByName();
+                        }}
+                    />
+                    <MenuOption
+                        icon={(
+                            <Icon
+                                icon={ (addRosterFilter.isSortByClassType() && addRosterFilter.isAscending())? 'sort-alpha-asc': 'sort-alpha-desc' }
+                                before
+                            />
+                        )}
+                        title="type"
+                        selected={ addRosterFilter.isSortByClassType() }
+                        onclick={ () => {
+                            addRosterFilter.sortByClassType();
+                        }}
+                    />
                 </div>
             );
         },

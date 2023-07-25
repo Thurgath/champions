@@ -405,4 +405,6 @@ export default {
     setFilter, getFilter, setSort, getSort, setUpgrades, getUpgrades, getScale,
     //hashing
     hash,
+    //sort
+    SORT_NAME_ASC,
 };

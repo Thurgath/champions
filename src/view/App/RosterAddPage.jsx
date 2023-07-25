@@ -2,6 +2,7 @@ import './RosterAddPage.scss';
 import classNames from 'classnames';
 import { STAR_RANK_LEVEL } from '../../data/model/Champion';
 import addRosterFilter from '../../service/add-roster-filter';
+import roster from '../../service/roster';
 import router from '../../service/router';
 import lang from '../../service/lang';
 import { notify, denotify } from '../../util/notification';
@@ -17,9 +18,10 @@ function RosterAddPage(initialVnode) {
             return (
                 <div m="RosterAddPage" class="roster-add">
                     <div class="add-stars">
-                        { Object.keys(STAR_RANK_LEVEL).map((star) => (
+                        { Object.keys(STAR_RANK_LEVEL).map(Number).map((star) => (
                             <button
                                 class={ classNames('add-stars-button', { 'add-stars-button--selected': stars === star }) }
+                                disabled={ stars === star }
                                 onclick={ () => {
                                     router.route('/roster/add/:star', { star });
                                 }}
