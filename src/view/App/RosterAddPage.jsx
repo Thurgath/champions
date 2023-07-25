@@ -1,7 +1,7 @@
 import './RosterAddPage.scss';
 import classNames from 'classnames';
 import { STAR_RANK_LEVEL } from '../../data/model/Champion';
-import roster from '../../service/roster';
+import addRosterFilter from '../../service/add-roster-filter';
 import router from '../../service/router';
 import lang from '../../service/lang';
 import { notify, denotify } from '../../util/notification';
@@ -13,7 +13,7 @@ function RosterAddPage(initialVnode) {
         },
         view(vnode) {
             const {stars} = vnode.attrs;
-            const champions = roster.available(stars);
+            const champions = addRosterFilter.getAvailableWithFilter(stars);
             return (
                 <div m="RosterAddPage" class="roster-add">
                     <div class="add-stars">
