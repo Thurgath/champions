@@ -121,6 +121,33 @@
         @media print {
             page-break-inside: avoid;
         }
+
+        .champion-field-upgrades {
+            display: flex;
+            left: -0.5em;
+            position: relative;
+            .champion-field-label {
+                position: relative;
+                padding-right: 0.3em;
+                margin-right: 1em;
+            }
+            .champion-upgrade-badge {
+                padding-top: 10px;
+                z-index: 2;
+                cursor: pointer;
+                &.champion-upgrade-badge--star {
+                    padding-top: 14px;
+                    .image-icon {
+                        width: 1.5em;
+                        height: 1.5em;
+                    }
+                }
+            }
+            .image-icon {
+                width: 2em;
+                height: 2em;
+            }
+        }
     }
 
     .champion-button-delete {

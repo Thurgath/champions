@@ -1828,6 +1828,7 @@
     "name": "Name",
     "rank": "Rank",
     "level": "Level",
+    "quick-level": "Quick Level",
     "awakened": "Awakened",
     "pi": "Power Index",
     "base-pi": "Base Power Index",

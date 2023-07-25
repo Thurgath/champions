@@ -2,9 +2,11 @@ import './RosterEditPage.scss';
 import { STAR_RANK_LEVEL } from '../../data/model/Champion';
 import { ROLE } from '../../data/model/Role';
 import { roleImage } from '../../data/roles';
+import { IMAGE_BADGE_RANK_UP, IMAGE_BADGE_LEVEL_MAX, IMAGE_STAR_AWAKENED } from '../../images';
 import roster from '../../service/roster';
 import router from '../../service/router';
 import lang from '../../service/lang';
+import classnames from 'classnames';
 import ImageIcon from '../ImageIcon.jsx';
 import ChampionHeader from '../Champion/ChampionHeader.jsx';
 import ChampionUpgrade from '../Champion/ChampionUpgrade.jsx';
@@ -19,6 +21,17 @@ function RosterEditPage(initialVnode) {
         }
         return { uid: champion.attr.uid, stars: champion.attr.stars };
     }
+    function changeRank(uid, stars, newRank, newLevel) {
+        roster.set(uid, stars, {
+            rank: newRank,
+            level: newLevel || 1,
+        });
+    }
+    function changeSignature(uid, stars, newSignatureLevel) {
+        roster.set(uid, stars, {
+            awakened: newSignatureLevel,
+        });
+    }
     return {
         oninit(vnode) {
         },
@@ -32,33 +45,72 @@ function RosterEditPage(initialVnode) {
                 const roleIconImage = roleImage(role) ? (
                     <ImageIcon src={ roleImage(role) }/>
                 ) : null;
-                const rangeMax = STAR_RANK_LEVEL[stars]
+                const maxRank = STAR_RANK_LEVEL[stars]
                     && STAR_RANK_LEVEL[stars].ranks || 1;
-                const levelMax = STAR_RANK_LEVEL[stars]
+                const maxLevel = STAR_RANK_LEVEL[stars]
                     && STAR_RANK_LEVEL[stars][rank]
                     && STAR_RANK_LEVEL[stars][rank].levels || 1;
-                const awankenedMax = STAR_RANK_LEVEL[stars]
+                const maxSignatureLevel = STAR_RANK_LEVEL[stars]
                     && STAR_RANK_LEVEL[stars].awakened || 99;
+                const levelUp = () => {
+                    const newRank = Math.min(rank + 1, maxRank);
+                    const maxLevelForNextLevel = STAR_RANK_LEVEL[stars] && STAR_RANK_LEVEL[stars][newRank].levels;
+                    changeRank(uid, stars, newRank, maxLevelForNextLevel);  
+                };
+                const maxChampion = () => {
+                    const maxLevelForMaxRank = STAR_RANK_LEVEL[stars] && STAR_RANK_LEVEL[stars][maxRank].levels;
+                    changeRank(uid, stars, maxRank, maxLevelForMaxRank);
+                };
+                const maxSignature = () => {
+                    changeSignature(uid, stars, maxSignatureLevel);
+                }
+                const isMaxRank = rank === maxRank;
+                const isMaxed = isMaxRank && level === maxLevel;
+                const isMaxSignature = maxSignatureLevel === awakened;
                 elements.push(
                     <ChampionHeader champion={ champion }/>
                 );
                 elements.push(
-                    <ChampionUpgrade stars={ stars } rank={ rank } level={ level } typeId={ typeId }/>
+                    <ChampionUpgrade stars={ stars } rank={ rank } level={ level } typeId={ typeId } />
                 );
+                if (!isMaxed || !isMaxSignature) {
+                    elements.push(
+                        <label class="champion-field champion-field--neighbor">
+                            <div class="champion-field-upgrades">
+                                <span class="champion-field-label">{ lang.string('quick-level') }</span>
+                                { !isMaxed ?
+                                <div class={ classnames('champion-upgrade-badge', 'champion-upgrade-badge--max') }
+                                     onclick={ maxChampion } title={ lang.string('upgrade-max-rank') } >
+                                    <ImageIcon src={ IMAGE_BADGE_LEVEL_MAX }/>
+                                </div>
+                                : null }
+                                { !isMaxRank ?
+                                <div class={ classnames('champion-upgrade-badge', 'champion-upgrade-badge--rank-up') }
+                                     onclick={ levelUp } title={ lang.string('level') } >
+                                    <ImageIcon src={ IMAGE_BADGE_RANK_UP }/>
+                                </div>
+                                : null }
+                                { !isMaxSignature ?
+                                <div class={ classnames('champion-upgrade-badge', 'champion-upgrade-badge--star') }
+                                     onclick={ maxSignature } title={ lang.string('signature') } >
+                                    <ImageIcon src={ IMAGE_STAR_AWAKENED }/>
+                                </div>
+                                : null }
+                            </div>
+                        </label>
+                    );
+                }
                 elements.push(
                     <label class="champion-field champion-field--neighbor">
                         <span class="champion-field-label">{ lang.string('rank') }</span>
                         <SelectInput
                             value={ rank }
                             min={ 1 }
-                            max={ rangeMax }
+                            max={ maxRank }
                             onchange={(event) => {
                                 const { value } = event.target;
-                                const rank = Math.min(rangeMax, Math.max(1, Number.parseInt(value, 10) || 1));
-                                roster.set(uid, stars, {
-                                    rank,
-                                    level: 1,
-                                });
+                                const rank = Math.min(maxRank, Math.max(1, Number.parseInt(value, 10) || 1));
+                                changeRank(uid, stars, rank);
                             }}
                         />
                     </label>
@@ -69,13 +121,11 @@ function RosterEditPage(initialVnode) {
                         <SelectInput
                             value={ level }
                             min={ 1 }
-                            max={ levelMax }
+                            max={ maxLevel }
                             onchange={(event) => {
                                 const { value } = event.target;
-                                const level = Math.min(levelMax, Math.max(1, Number.parseInt(value, 10) || 1));
-                                roster.set(uid, stars, {
-                                    level,
-                                });
+                                const level = Math.min(maxLevel, Math.max(1, Number.parseInt(value, 10) || 1));
+                                changeRank(uid, stars, rank, level);
                             }}
                         />
                     </label>
@@ -86,13 +136,11 @@ function RosterEditPage(initialVnode) {
                         <SelectInput
                             value={ awakened }
                             min={ 0 }
-                            max={ awankenedMax }
+                            max={ maxSignatureLevel }
                             onchange={(event) => {
                                 const { value } = event.target;
-                                const awakened = Math.min(awankenedMax, Math.max(0, Number.parseInt(value, 10) || 0));
-                                roster.set(uid, stars, {
-                                    awakened,
-                                });
+                                const signatureLevel = Math.min(maxSignatureLevel, Math.max(0, Number.parseInt(value, 10) || 0));
+                                changeSignature(uid, stars, signatureLevel);
                             }}
                         />
                     </label>

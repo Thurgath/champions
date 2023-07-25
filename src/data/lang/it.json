@@ -180,6 +180,7 @@
     "name": "Nome",
     "rank": "Rango",
     "level": "Livello",
+    "quick-level": "Livello rapido",
     "awakened": "Risvegliato",
     "pi": "Indice potere",
     "base-pi": "Indice potere di base",
