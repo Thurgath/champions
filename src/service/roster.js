@@ -294,6 +294,22 @@ function get(uid, stars) {
     return champion;
 }
 
+function getNeighbourChampion(currentUid, stars, getChampionFunction) {
+    const filteredRoster = filter((champion) => getFilter(champion.attr.stars) && getFilter(champion.attr.typeId));
+    const currentChampionIndex = filteredRoster.findIndex((champion) => champion.attr.uid === currentUid && champion.attr.stars === stars);
+    return getChampionFunction(currentChampionIndex, filteredRoster);
+}
+
+function getPrevious(currentUid, stars) {
+    return getNeighbourChampion(currentUid, stars,
+        (index, filterdRoster) => filterdRoster[ index - 1 ] || filterdRoster[ filterdRoster.length -1 ]);
+}
+
+function getNext(currentUid, stars) {
+    return getNeighbourChampion(currentUid, stars,
+        (index, filteredRoster) => filteredRoster[ index + 1 ] || filteredRoster[ 0 ]);
+}
+
 function find(callback) {
     return roster.find(callback);
 }
@@ -390,7 +406,7 @@ save();
 
 export default {
     //getters
-    all, get, available,
+    all, get, available, getPrevious, getNext,
     //searchers
     filter, find,
     //setter

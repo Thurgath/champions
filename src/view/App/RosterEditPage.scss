@@ -4,6 +4,29 @@
 .roster-edit {
     padding: 24px;
 
+    .roster-edit-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .roster-edit-leftarrow {
+        float: right;
+    }
+    .roster-edit-rightarrow {
+        float: left;
+        .image {
+            transform: rotate(180deg);
+        }
+    }
+    .roster-edit-leftarrow,
+    .roster-edit-rightarrow {
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
+        .image-icon {
+            height: 2em;
+        }
+    }
+
     .champion-field {
         @extend .button--primary;
 

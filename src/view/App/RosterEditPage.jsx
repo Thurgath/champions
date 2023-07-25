@@ -13,6 +13,12 @@ import SelectInput from './ui/SelectInput.jsx';
 import NumberInput from './ui/NumberInput.jsx';
 
 function RosterEditPage(initialVnode) {
+    function getParameters(champion) {
+        if (!champion) {
+            return {};
+        }
+        return { uid: champion.attr.uid, stars: champion.attr.stars };
+    }
     return {
         oninit(vnode) {
         },
@@ -168,12 +174,26 @@ function RosterEditPage(initialVnode) {
                     </button>
                 );
             }
+            const previousChampion = roster.getPrevious(uid, stars);
+            const nextChampion = roster.getNext(uid, stars);
             return (
                 <div m="RosterEditPage" class="roster-edit">
-                    <div key={ `roster-edit-${ uid }-${ stars }` }>
-                        { elements }
+                    <div class="roster-edit-wrapper">
+                        <div key="left-arrow" class="roster-edit-leftarrow">
+                            <m.route.Link href="/roster/:uid/:stars" params={ getParameters(previousChampion) } disabled={ !previousChampion }>
+                                <ImageIcon src="../images/badges/left-arrow.png"/>
+                            </m.route.Link>
+                        </div>
+                        <div class="roster-edit-middle" key={ `roster-edit-${ uid }-${ stars }` }>
+                            { elements }
+                        </div>
+                        <div key="right-arrow" class="roster-edit-rightarrow">
+                            <m.route.Link href="/roster/:uid/:stars" params={ getParameters(nextChampion) } disabled={ !nextChampion }>
+                                <ImageIcon src="../images/badges/left-arrow.png"/>
+                            </m.route.Link>
+                        </div>
+                        <div key="clear" class="clear"/>
                     </div>
-                    <div key="clear" class="clear"/>
                 </div>
             );
         },
