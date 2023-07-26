@@ -19,20 +19,16 @@ function ChampionHeader(initialVnode) {
         view(vnode) {
             const {uid, stars, typeId, awakened} = vnode.attrs.champion.attr;
             const name = lang.string(`champion-${ uid }-name`);
-            const starIcon = awakened ? (
-                <ImageIcon
-                    src={ IMAGE_STAR_AWAKENED }
-                    icon="star"
-                />
-            ) : (
-                <ImageIcon
-                    src={ IMAGE_STAR }
-                    icon="star"
-                />
-            );
+            const starIcon = awakened ? IMAGE_STAR_AWAKENED : IMAGE_STAR;
             const starImages = [];
-            for (let i = 0; i < stars; i++)
-                starImages.push(starIcon);
+            for (let index = 0; index < stars; index++) {
+                starImages.push(
+                    <ImageIcon key={ `champion-header-star-icon-${index}` }
+                        src={ starIcon }
+                        icon="star"
+                    />
+                );
+            }
             const image = vnode.state.images[vnode.state.fullsizePortrait];
             let imageStyle;
             if (image.loaded) {
