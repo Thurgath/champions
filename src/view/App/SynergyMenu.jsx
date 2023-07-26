@@ -39,10 +39,10 @@ function SynergyMenu(initialVnode) {
                     />
                     <MenuSection title="show-by"/>
                     <MenuOptionGroup options={
-                    Object.keys(STAR_RANK_LEVEL).map((star) => (
+                    Object.keys(STAR_RANK_LEVEL).map(Number).map((star) => (
                         <MenuOption
                             raw={ `${ star }★` }
-                            selected={ stars && stars.toString() === star }
+                            selected={ stars && stars === star }
                             href={ `/synergy/stars/${ star }` }
                         />
                     ))

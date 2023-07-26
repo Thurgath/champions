@@ -23,15 +23,16 @@ class Tab {
         this._currentSlide = currentSlide;
         this._parameters = parameters || {};
         const objectWithData = this.getObjectWithData(currentSlide);
+        const parametersHaveChanged = !deepEquals(previousParameters, parameters);
         return {
             pageMountElement: objectWithData.pageMountElement,
             page: objectWithData.page,
             menu: objectWithData.menu,
             parameters: this._parameters,
             //Update if same tab or if this tab has changed parameters
-            shouldUpdatePage: () => this.getId() === previousTab.getId() || !deepEquals(previousParameters, parameters),
+            shouldUpdatePage: () => this.getId() === previousTab.getId() || parametersHaveChanged,
             //Update if tab has changed or slide has changed for this tab
-            shouldUpdateMenu: () => this.getId() !== previousTab.getId() || previousSlide !== currentSlide,
+            shouldUpdateMenu: () => this.getId() !== previousTab.getId() || previousSlide !== currentSlide || parametersHaveChanged,
         };
     }
 
