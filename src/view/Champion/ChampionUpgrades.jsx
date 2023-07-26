@@ -19,11 +19,14 @@ function ChampionUpgrades(initialVnode) {
                     return definitionStars.ranks > attr.rank && definitionRank.levels === attr.level;
                 })
                 // map upgrades needed
-                .map(({attr}) => ({
-                    catalysts: CATALYSTS[attr.stars] && CATALYSTS[attr.stars][attr.rank],
-                    typeId: attr.typeId,
-                    typeIndex: TYPE_VALUES.indexOf(attr.typeId),
-                }))
+                .map(({attr}) => {
+                    const shouldUseCatalysts = attr.rank > 1 && CATALYSTS[attr.stars]
+                    return {
+                        catalysts: shouldUseCatalysts ? CATALYSTS[attr.stars][ attr.rank - 1 ] : [],
+                        typeId: attr.typeId,
+                        typeIndex: TYPE_VALUES.indexOf(attr.typeId),
+                    }
+                })
                 // add to the right category
                 .reduce((collection, {catalysts, typeId, typeIndex}) => {
                     catalysts.forEach(({type, tier, amount}) => {
