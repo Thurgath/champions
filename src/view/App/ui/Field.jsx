@@ -1,10 +1,10 @@
 import lang from '../../../service/lang';
 import classNames from 'classnames';
 
-function Field(initialVnode) {
+function Field() {
     return {
         view(vnode) {
-            const {title, icon, description, alt, input, inputComponent, inputParameters, value, hasLargeValue} = vnode.attrs;
+            const { title, icon, description, alt, input, inputComponent, inputParameters, value, hasLargeValue } = vnode.attrs;
             return (
                 <div class="field">
                     <label class="field-name">
@@ -17,16 +17,16 @@ function Field(initialVnode) {
                         ) : null }
                         { (input !== undefined || inputComponent !== undefined) ? (
                             <div class={ classNames('field-input',
-                            { 'field-input-small': (value !== undefined) && !hasLargeValue },
-                            { 'field-input-large': (value !== undefined) && hasLargeValue }
-                        )}>
+                                { 'field-input-small': (value !== undefined) && !hasLargeValue },
+                                { 'field-input-large': (value !== undefined) && hasLargeValue }
+                            )}>
                                 { input || m(inputComponent, inputParameters )}
                             </div>
                         ) : null }
                         { (value !== undefined) ? (
                             <span class="field-value">
-                            { lang.number(value) }
-                        </span>
+                                { lang.number(value) }
+                            </span>
                         ) : null }
                         { (alt !== undefined) ? (
                             <div class="field-description-alt">{ alt }</div>
@@ -36,6 +36,6 @@ function Field(initialVnode) {
             );
         },
     };
-};
+}
 
 export default Field;

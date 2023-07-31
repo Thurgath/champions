@@ -7,7 +7,7 @@ import ChampionGrade from './ChampionGrade.jsx';
 import ChampionRating from './ChampionRating.jsx';
 import Icon from '../Icon.jsx';
 
-function ChampionSection(initialVnode) {
+function ChampionSection() {
     return {
         oninit(vnode) {
         },
@@ -24,15 +24,15 @@ function ChampionSection(initialVnode) {
                 const editableText = (key) => noEdit.includes(key)
                     ? ({})
                     : ({
-                    'contenteditable': true,
-                    'class': 'champion-section-textarea',
-                    'oninput': (event) => onEdit(key, event.target.innerText.trim()),
-                    'onpaste': (event) => {
-                        event.preventDefault();
-                        const text = (event.originalEvent || event).clipboardData.getData('text/plain');
-                        document.execCommand('insertHTML', false, text);
-                    },
-                });
+                        'contenteditable': true,
+                        'class': 'champion-section-textarea',
+                        'oninput': (event) => onEdit(key, event.target.innerText.trim()),
+                        'onpaste': (event) => {
+                            event.preventDefault();
+                            const text = (event.originalEvent || event).clipboardData.getData('text/plain');
+                            document.execCommand('insertHTML', false, text);
+                        },
+                    });
                 const editableValue = (value) => value === true ? '' : value;
                 const editableSelect = (list, key, initialValue) => (
                     <select
@@ -46,8 +46,8 @@ function ChampionSection(initialVnode) {
                                     value={ `${ value }` }
                                     selected={ initialValue && value === initialValue }
                                 >{
-                                    value
-                                }</option>
+                                        value
+                                    }</option>
                             ))
                         }
                     </select>
@@ -57,9 +57,9 @@ function ChampionSection(initialVnode) {
                         <select
                             class="champion-section-select champion-section-select-item"
                             onchange={ (event) => onEdit(key, [
-                        ...array,
-                        event.target.selectedOptions[ 0 ].value,
-                    ]) }
+                                ...array,
+                                event.target.selectedOptions[ 0 ].value,
+                            ]) }
                         >
                             <option value="">+</option>
                             {
@@ -67,8 +67,8 @@ function ChampionSection(initialVnode) {
                                     <option
                                         value={ value }
                                     >{
-                                        lang.string(stringify(value))
-                                    }</option>
+                                            lang.string(stringify(value))
+                                        }</option>
                                 ))
                             }
                         </select>
@@ -81,8 +81,8 @@ function ChampionSection(initialVnode) {
                                         class="champion-section-item"
                                         onclick={ () => onEdit(key, array.filter((v, i) => i !== index)) }
                                     >
-                            { image && image(value) }{ lang.string(stringify(value)) }
-                        </span>
+                                        { image && image(value) }{ lang.string(stringify(value)) }
+                                    </span>
                                 ))
                             }
                         </div>
@@ -301,13 +301,13 @@ function ChampionSection(initialVnode) {
                                     class={ `champion-section-ability champion-section-ability-${ ability }` }
                                     title={ lang.string(`ability-${ ability }-description`) }
                                 >
-                                { abilityIcon(ability) && (
-                                    <Icon icon={ abilityIcon(ability) } before after={ index !== 0 }/>
-                                ) || null }{ (index < abilities.length - 1)
-                                    ? `${ lang.string(`ability-${ ability }-name`) }, `
-                                    : lang.string(`ability-${ ability }-name`)
-                                }
-                            </span>
+                                    { abilityIcon(ability) && (
+                                        <Icon icon={ abilityIcon(ability) } before after={ index !== 0 }/>
+                                    ) || null }{ (index < abilities.length - 1)
+                                        ? `${ lang.string(`ability-${ ability }-name`) }, `
+                                        : lang.string(`ability-${ ability }-name`)
+                                    }
+                                </span>
                             )) }
                         </div>
                     );
@@ -329,9 +329,9 @@ function ChampionSection(initialVnode) {
                     elements.push(
                         <div class="champion-section-text">
                             <b>{ lang.string('note') }:</b>
-                        <span>{
-                            note.replace(/(\s*\n\s*)+/g, '\n\n').trim()
-                        }</span>
+                            <span>{
+                                note.replace(/(\s*\n\s*)+/g, '\n\n').trim()
+                            }</span>
                         </div>
                     );
                 }
@@ -352,6 +352,6 @@ function ChampionSection(initialVnode) {
             );
         },
     };
-};
+}
 
 export default ChampionSection;

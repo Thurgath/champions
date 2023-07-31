@@ -1,7 +1,7 @@
 import './index.css';
 import appState from './service/appState.js';
 //Initialize router
-import router from './service/router.js';
+import router from './service/router.js'; //eslint-disable-line no-unused-vars
 
 const handleKeyPress = (event) => {
     const hotkeys = appState().getHotkeys();

@@ -1,16 +1,16 @@
 import { getLanguage } from '../../service/lang';
-import MenuHeader from '../menu/MenuHeader.jsx';
-import MenuOption from '../menu/MenuOption.jsx';
+import MenuHeader from '../Menu/MenuHeader.jsx';
+import MenuOption from '../Menu/MenuOption.jsx';
 import Icon from '../Icon.jsx';
 import { saveFileEventHandler } from '../../util/io';
 
-function LanguageEditMenu(initialVnode) {
+function LanguageEditMenu() {
     return {
         oninit(vnode) {
         },
         view(vnode) {
-            const {langId} = vnode.attrs;
-            const {values} = getLanguage(langId);
+            const { langId } = vnode.attrs;
+            const { values } = getLanguage(langId);
             const options = [];
             options.push(
                 <MenuHeader title={ 'language' }/>
@@ -24,13 +24,13 @@ function LanguageEditMenu(initialVnode) {
                     title="export-json"
                     download={ filename }
                     onclick={ ({ target }) => {
-                    saveFileEventHandler(target, 'text/json', filename, JSON.stringify(values, null, 4));
-                    target.redraw = false;
-                }}
+                        saveFileEventHandler(target, 'text/json', filename, JSON.stringify(values, null, 4));
+                        target.redraw = false;
+                    }}
                     oncontextmenu={ ({ target }) => {
-                    saveFileEventHandler(target, 'text/json', filename, JSON.stringify(values, null, 4));
-                    target.redraw = false;
-                }}
+                        saveFileEventHandler(target, 'text/json', filename, JSON.stringify(values, null, 4));
+                        target.redraw = false;
+                    }}
                 />
             );
             return (
@@ -40,6 +40,6 @@ function LanguageEditMenu(initialVnode) {
             );
         },
     };
-};
+}
 
 export default LanguageEditMenu;

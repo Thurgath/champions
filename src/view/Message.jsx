@@ -1,11 +1,11 @@
 import './Message.scss';
 
-function Message(initialVnode) {
+function Message() {
     return {
-        oninit: function (vnode) {
+        oninit(vnode) {
         },
         view(vnode) {
-            const {icon, value, alt} = vnode.attrs;
+            const { icon, value, alt } = vnode.attrs;
             return (
                 <div m="Message" class="message" >
                     { icon }
@@ -17,6 +17,6 @@ function Message(initialVnode) {
             );
         },
     };
-};
+}
 
 export default Message;

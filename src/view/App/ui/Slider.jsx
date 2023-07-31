@@ -1,9 +1,9 @@
 import { save } from '../../../service/teams';
 
-function Slider(initialVnode) {
+function Slider() {
     return {
         view(vnode) {
-            const {object, field, toInputValue, fromInputValue} = vnode.attrs;
+            const { object, field, toInputValue, fromInputValue } = vnode.attrs;
             return (
                 <input
                     class="field-slider"
@@ -20,6 +20,6 @@ function Slider(initialVnode) {
             );
         },
     };
-};
+}
 
 export default Slider;

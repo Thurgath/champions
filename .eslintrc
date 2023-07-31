@@ -1,4 +1,5 @@
 {
+    "ignorePatterns": "**/*.json",
     "parser": "@babel/eslint-parser",
     "rules": {
         "linebreak-style": 0,
@@ -144,7 +145,12 @@
         ],
         "no-undef": 2,
         "no-delete-var": 2,
-        "no-unused-vars": 2,
+        "no-unused-vars": [
+            2,
+            {
+                "argsIgnorePattern": "vnode"
+            }
+        ],
         "arrow-parens": [
             2,
             "always"
@@ -193,10 +199,7 @@
             "node": {
                 "extensions": [".mjs", ".js", ".jsx"]
             }
-        },
-        "import/ignore": [
-            "node_modules"
-        ]
+        }
     },
     "env": {
         "es6": true,

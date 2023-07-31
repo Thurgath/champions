@@ -13,7 +13,7 @@ const GuideAuthor = {
             switch(type) {
                 case 'reddit': {
                     icon = 'reddit-alien';
-                    iconType = BrandIcon
+                    iconType = BrandIcon;
                     if(profile)
                         href = `http://reddit.com/u/${ profile }`;
                     break;
@@ -43,7 +43,7 @@ const GuideAuthor = {
             <div m="GuideAuthor" class="guide-author">
                 { `${ lang.string(byline) } ` }
                 <a href={ href } target="_blank">
-                    { icon && m(iconType, { icon: icon }) }
+                    { icon && m(iconType, { icon }) }
                     { name }
                 </a>
             </div>

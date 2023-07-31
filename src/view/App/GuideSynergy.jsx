@@ -6,11 +6,11 @@ import { getChampion } from '../../data/champions';
 import lang from '../../service/lang';
 import router from '../../service/router';
 
-function GuideSynergy(initialVnode) {
+function GuideSynergy() {
 
     return {
         view(vnode) {
-            const {championId, effectId, stars, spacing} = vnode.attrs;
+            const { championId, effectId, stars, spacing } = vnode.attrs;
             const onclickChampion = () => {
                 router.route('/guide/:uid', { uid: championId });
             };
@@ -20,8 +20,8 @@ function GuideSynergy(initialVnode) {
 
             return (
                 <div m="GuideSynergy" class={ classNames('guide-synergy', {
-                'guide-synergy--spacing': spacing,
-            }) }>
+                    'guide-synergy--spacing': spacing,
+                }) }>
                     <div class="guide-synergy-parts">
                         <div class="guide-synergy-part guide-synergy-part--champion">
                             <div
@@ -53,7 +53,7 @@ function GuideSynergy(initialVnode) {
                 </div>
             );
         },
-    }
-};
+    };
+}
 
 export default GuideSynergy;

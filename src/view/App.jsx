@@ -5,7 +5,7 @@ import teams from '../service/teams';
 import Menu from './Menu.jsx';
 import Slides from './Slides.jsx';
 
-function App(initialVnode) {
+function App() {
 
     function addRawHTML(element) {
         element.innerHTML = `
@@ -22,25 +22,25 @@ function App(initialVnode) {
             </svg>
         `;
     }
-    
+
     return {
         oninit(vnode) {
             vnode.state.currentMenuId = appState().getCurrentTab().getId();
         },
         oncreate(vnode) {
-            addRawHTML(vnode.dom.getElementsByClassName('raw-html')[0]);
-            window.addEventListener("resize", m.redraw)
+            addRawHTML(vnode.dom.getElementsByClassName('raw-html')[ 0 ]);
+            window.addEventListener('resize', m.redraw);
         },
-        onremove: () => window.removeEventListener("resize", m.redraw),
+        onremove: () => window.removeEventListener('resize', m.redraw),
         view(vnode) {
-            const {menu, parameters} = vnode.attrs;
-            const {progress} = teams;
+            const { menu, parameters } = vnode.attrs;
+            const { progress } = teams;
             const currentTab = appState().getCurrentTab();
             const slides = appState().getTabs().map((tab) => {
                 return <div id={ tab.getId() } class={ classNames('page', { 'page--current': currentTab.getId() === tab.getId() }) }
-                            key={ tab.getId() }>
+                    key={ tab.getId() }>
                     <Slides slides={ tab.getSlideKeys() }
-                            current={ currentTab.getSlideIndex() }/>
+                        current={ currentTab.getSlideIndex() }/>
                 </div>;
             });
             return (
@@ -62,6 +62,6 @@ function App(initialVnode) {
             );
         },
     };
-};
+}
 
 export default App;

@@ -2,9 +2,9 @@ import classNames from 'classnames';
 import SvgIcon from './SvgIcon.jsx';
 import './Icon.scss';
 
-function Icon(initialVnode) {
+function Icon() {
 
-    var svgIcons = new Map();
+    const svgIcons = new Map();
 
     function isSvgIcon(icon) {
         return svgIcons[ icon ] !== undefined;
@@ -24,7 +24,7 @@ function Icon(initialVnode) {
         view(vnode) {
             const { icon, spin, before, after } = vnode.attrs;
             if (isSvgIcon(icon)) {
-                return <SvgIcon icon={ icon } before={ before } after={ after}  />
+                return <SvgIcon icon={ icon } before={ before } after={ after} />;
             }
             const isSpinning = spin && (typeof spin === 'function')? spin(): spin;
 
@@ -34,14 +34,14 @@ function Icon(initialVnode) {
                     class={ classNames(
                         'font-icon fa-solid',
                         `fa-${ icon }`,
-                        {[ 'fa-spin' ]: isSpinning,
-                        'font-icon--before': before,
-                        'font-icon--after': after,
-                    }) }
+                        { [ 'fa-spin' ]: isSpinning,
+                            'font-icon--before': before,
+                            'font-icon--after': after,
+                        }) }
                 />
             );
-        }
+        },
     };
-};
+}
 
 export default Icon;

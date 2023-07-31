@@ -3,17 +3,17 @@ import { STAR_RANK_LEVEL } from '../../data/model/Champion';
 import lang from '../../service/lang';
 import roster from '../../service/roster';
 import router from '../../service/router';
-import MenuHeader from '../menu/MenuHeader.jsx';
-import MenuSection from '../menu/MenuSection.jsx';
-import MenuOption from '../menu/MenuOption.jsx';
-import MenuOptionGroup from '../menu/MenuOptionGroup.jsx';
+import MenuHeader from '../Menu/MenuHeader.jsx';
+import MenuSection from '../Menu/MenuSection.jsx';
+import MenuOption from '../Menu/MenuOption.jsx';
+import MenuOptionGroup from '../Menu/MenuOptionGroup.jsx';
 import Icon from '../Icon.jsx';
 import ClassTypeIcon from '../ClassTypeIcon.jsx';
 import { notify } from '../../util/notification';
 import { clickElementById } from '../../util/element';
 import { loadFileFromInput, saveFileEventHandler } from '../../util/io';
 
-function RosterMenu(initialVnode) {
+function RosterMenu() {
     return {
         oninit(vnode) {
         },
@@ -35,7 +35,7 @@ function RosterMenu(initialVnode) {
                         /* eslint-enable no-console */
                         notify({
                             message: lang.string('notification-roster-import-failed')
-                                .replace(/\%error\%/g, error),
+                                .replace(/%error%/g, error),
                             tag: 'roster-import',
                         });
                     }
@@ -43,8 +43,8 @@ function RosterMenu(initialVnode) {
                 options.push(
                     <MenuOption
                         icon={(
-                        <Icon icon="clipboard" before />
-                    )}
+                            <Icon icon="clipboard" before />
+                        )}
                         title="import-csv"
                         onclick={ (event) => {
                             clickElementById('roster-importer');
@@ -69,8 +69,8 @@ function RosterMenu(initialVnode) {
             options.push(
                 <MenuOption
                     icon={(
-                    <Icon icon="floppy-disk" before />
-                )}
+                        <Icon icon="floppy-disk" before />
+                    )}
                     title="export-csv"
                     download="champions.csv"
                     onclick={ ({ target }) => {
@@ -86,8 +86,8 @@ function RosterMenu(initialVnode) {
             options.push(
                 <MenuOption
                     icon={(
-                    <Icon icon="user-times" before />
-                )}
+                        <Icon icon="user-times" before />
+                    )}
                     title="delete-all"
                     onclick={ () => {
                         roster.clear();
@@ -102,8 +102,8 @@ function RosterMenu(initialVnode) {
             options.push(
                 <MenuOption
                     icon={(
-                    <Icon icon="arrow-circle-up" before />
-                )}
+                        <Icon icon="arrow-circle-up" before />
+                    )}
                     title="show-upgrades"
                     selected={ showUpgrades }
                     onclick={ () => {
@@ -118,11 +118,11 @@ function RosterMenu(initialVnode) {
             options.push(
                 <MenuOption
                     icon={(
-                    <Icon
-                        icon={ (sort.key === 'pi' && sort.direction === 'asc')? 'sort-numeric-asc': 'sort-numeric-desc' }
-                        before
-                     />
-                )}
+                        <Icon
+                            icon={ (sort.key === 'pi' && sort.direction === 'asc')? 'sort-numeric-asc': 'sort-numeric-desc' }
+                            before
+                        />
+                    )}
                     title="pi"
                     selected={ sort.key === 'pi' }
                     onclick={ () => {
@@ -133,11 +133,11 @@ function RosterMenu(initialVnode) {
             options.push(
                 <MenuOption
                     icon={(
-                    <Icon
-                        icon={ (sort.key === 'stars' && sort.direction === 'asc')? 'sort-amount-asc': 'sort-amount-desc' }
-                        before
-                    />
-                )}
+                        <Icon
+                            icon={ (sort.key === 'stars' && sort.direction === 'asc')? 'sort-amount-asc': 'sort-amount-desc' }
+                            before
+                        />
+                    )}
                     title="stars"
                     selected={ sort.key === 'stars' }
                     onclick={ () => {
@@ -148,11 +148,11 @@ function RosterMenu(initialVnode) {
             options.push(
                 <MenuOption
                     icon={(
-                    <Icon
-                        icon={ (sort.key === 'name' && sort.direction === 'desc')? 'sort-alpha-desc': 'sort-alpha-asc' }
-                        before
-                    />
-                )}
+                        <Icon
+                            icon={ (sort.key === 'name' && sort.direction === 'desc')? 'sort-alpha-desc': 'sort-alpha-asc' }
+                            before
+                        />
+                    )}
                     title="name"
                     selected={ sort.key === 'name' }
                     onclick={ () => {
@@ -165,32 +165,32 @@ function RosterMenu(initialVnode) {
             );
             options.push(
                 <MenuOptionGroup options={
-                Object.keys(STAR_RANK_LEVEL).map((star) => (
-                    <MenuOption
-                        raw={ `${ star }★` }
-                        selected={ roster.getFilter(star) }
-                        onclick={ () => {
-                            roster.setFilter(star, !roster.getFilter(star));
-                        }}
-                    />
-                ))
-            }/>
+                    Object.keys(STAR_RANK_LEVEL).map((star) => (
+                        <MenuOption
+                            raw={ `${ star }★` }
+                            selected={ roster.getFilter(star) }
+                            onclick={ () => {
+                                roster.setFilter(star, !roster.getFilter(star));
+                            }}
+                        />
+                    ))
+                }/>
             );
             options.push(
                 <MenuOptionGroup options={
-                TYPES.map((type) => (
-                    <MenuOption
-                        icon={(
-                            <ClassTypeIcon icon={ typeIcon(type.attr.uid) } />
-                        )}
-                        info={ `type-${ type.attr.uid }-name` }
-                        selected={ roster.getFilter(type.attr.uid) }
-                        onclick={ () => {
-                            roster.setFilter(type.attr.uid, !roster.getFilter(type.attr.uid));
-                        }}
-                    />
-                ))
-            }/>
+                    TYPES.map((type) => (
+                        <MenuOption
+                            icon={(
+                                <ClassTypeIcon icon={ typeIcon(type.attr.uid) } />
+                            )}
+                            info={ `type-${ type.attr.uid }-name` }
+                            selected={ roster.getFilter(type.attr.uid) }
+                            onclick={ () => {
+                                roster.setFilter(type.attr.uid, !roster.getFilter(type.attr.uid));
+                            }}
+                        />
+                    ))
+                }/>
             );
             return (
                 <div m="RosterMenu" key="roster-menu">
@@ -200,6 +200,6 @@ function RosterMenu(initialVnode) {
             );
         },
     };
-};
+}
 
 export default RosterMenu;

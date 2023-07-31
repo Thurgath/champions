@@ -6,52 +6,52 @@ import { IMAGE_BADGE_RANK_UP, IMAGE_BADGE_LEVEL_MAX, IMAGE_CURRENCY_GOLD, getCat
 import ImageIcon from '../ImageIcon.jsx';
 import lang from '../../service/lang';
 
-function ChampionUpgrade(initialVnode) {
+function ChampionUpgrade() {
     return {
         view(vnode) {
-            const {stars, rank, level, typeId} = vnode.attrs;
-            const definitionStars = STAR_RANK_LEVEL[stars];
-            const definitionRank = definitionStars[rank];
+            const { stars, rank, level, typeId } = vnode.attrs;
+            const definitionStars = STAR_RANK_LEVEL[ stars ];
+            const definitionRank = definitionStars[ rank ];
             const isMaxed = definitionStars.ranks === rank && definitionRank.levels === level;
             const isRankUp = definitionStars.ranks > rank && definitionRank.levels === level;
-            const catalysts = CATALYSTS[stars] && CATALYSTS[stars][rank];
+            const catalysts = CATALYSTS[ stars ] && CATALYSTS[ stars ][ rank ];
             return (
                 <div
                     m="ChampionUpgrade"
                     title={ lang.string('upgrade-cost') }
                     class={ classnames('champion-upgrade', {
-                    'champion-upgrade-rank-up': isRankUp,
-                    'champion-upgrade-max': isMaxed,
-                }) }
+                        'champion-upgrade-rank-up': isRankUp,
+                        'champion-upgrade-max': isMaxed,
+                    }) }
                 >
                     { (isMaxed) ? (
                         <span class="champion-upgrade-catalyst">
-                        { lang.string('upgrade-maxed') }
-                    </span>
+                            { lang.string('upgrade-maxed') }
+                        </span>
                     ) :
                         (!catalysts) ? (
                             <span class="champion-upgrade-catalyst">
-                        { lang.string('upgrade-max-rank') }
-                    </span>
+                                { lang.string('upgrade-max-rank') }
+                            </span>
                         ) :
-                            catalysts.map(({tier, type, amount}) => (
+                            catalysts.map(({ tier, type, amount }) => (
                                 <span
                                     class={ classnames('champion-upgrade-catalyst', `champion-upgrade-catalyst--${ type }`, {
                                         [ `champion-upgrade-catalyst--class-${ typeId }` ]: type === CATALYST.CLASS,
                                     }) }
-                                            >
+                                >
                                     { lang.number(amount) }
                                                 ×
                                     <ImageIcon
                                         src={
                                             (type === CATALYST.GOLD)? IMAGE_CURRENCY_GOLD:
-                                            (type === CATALYST.CLASS)? getCatalystImage(`tier_${ tier }_${ typeId }`):
-                                            getCatalystImage(`tier_${ tier }_${ type }`)
+                                                (type === CATALYST.CLASS)? getCatalystImage(`tier_${ tier }_${ typeId }`):
+                                                    getCatalystImage(`tier_${ tier }_${ type }`)
                                         }
                                     />
-                                                { (type !== CATALYST.GOLD) ? ', ' : '' }
+                                    { (type !== CATALYST.GOLD) ? ', ' : '' }
                                 </span>
-                            )) 
+                            ))
                     }
                     { isMaxed ? (
                         <div class={ classnames('champion-upgrade-badge', 'champion-upgrade-badge--max') }>
@@ -66,6 +66,6 @@ function ChampionUpgrade(initialVnode) {
             );
         },
     };
-};
+}
 
 export default ChampionUpgrade;

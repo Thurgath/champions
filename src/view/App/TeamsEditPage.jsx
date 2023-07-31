@@ -11,7 +11,7 @@ import ChampionPortrait from '../Champion/ChampionPortrait.jsx';
 import Icon from '../Icon.jsx';
 import Message from '../Message.jsx';
 
-function TeamsEditPage(initialVnode) {
+function TeamsEditPage() {
     function isSameSwapSource(a, b) {
         if(a === b) {
             return true;
@@ -114,22 +114,22 @@ function TeamsEditPage(initialVnode) {
             this.reset = () => {
                 const starsEqual = deepEqual(this.stars, teams.stars);
                 const typesEqual = deepEqual(this.types, teams.types);
-                const result = teams.result[`${ teams.type }-${ teams.size }`];
+                const result = teams.result[ `${ teams.type }-${ teams.size }` ];
                 const changed =
                     this.willpowersafe !== teams.willpowersafe ||
                     this.type !== teams.type ||
                     this.size !== teams.size || !starsEqual || !typesEqual;
                 if (this.last !== teams.last || changed) {
-                    this.teams = result && result.teams.map(({champions, synergies}) => ({
-                            champions: [
-                                ...champions,
-                            ],
-                            synergies: [
-                                ...synergies,
-                            ],
-                        })) || [];
+                    this.teams = result && result.teams.map(({ champions, synergies }) => ({
+                        champions: [
+                            ...champions,
+                        ],
+                        synergies: [
+                            ...synergies,
+                        ],
+                    })) || [];
                     if ((!changed || this.last === -1) && !this.create.swapped) {
-                        this.create.champions = [null];
+                        this.create.champions = [ null ];
                         this.create.synergies = [];
                     }
                     if (changed || this.last === -1) {
@@ -138,8 +138,8 @@ function TeamsEditPage(initialVnode) {
                     this.create.swapped = false;
                     this.swap.source = null;
                     this.swap.target = null;
-                    this.stars = {...teams.stars};
-                    this.types = {...teams.types};
+                    this.stars = { ...teams.stars };
+                    this.types = { ...teams.types };
                     this.size = teams.size;
                     this.willpowersafe = teams.willpowersafe;
                     this.last = teams.last;
@@ -148,21 +148,21 @@ function TeamsEditPage(initialVnode) {
                 }
             };
             this.apply = () => {
-                const {source, target} = this.swap;
+                const { source, target } = this.swap;
                 let doSave = (source && source.team && !source.create) || (target && target.team && !target.create);
                 if (source && target) {
                     if (source.index !== undefined && source.team) {
-                        source.team.champions[source.index] = target.champion;
+                        source.team.champions[ source.index ] = target.champion;
                         source.team.synergies = synergiesFromChampions(source.team.champions);
                     }
                     if (target.index !== undefined && target.team) {
-                        target.team.champions[target.index] = source.champion;
+                        target.team.champions[ target.index ] = source.champion;
                         target.team.synergies = synergiesFromChampions(target.team.champions);
                     }
                     if (source.create && !source.team.champions.some((champion) => !champion)) {
                         this.teams.push(this.create);
                         this.create = {
-                            champions: [null],
+                            champions: [ null ],
                             synergies: [],
                         };
                         doSave = true;
@@ -179,15 +179,15 @@ function TeamsEditPage(initialVnode) {
 
         view(vnode) {
             vnode.state.reset();
-            const {swap, create, teams} = vnode.state;
-            const {source, target} = swap;
+            const { swap, create, teams } = vnode.state;
+            const { source, target } = swap;
             const targetId = target && target.champion && target.champion.id;
             const teamElements = [];
             const createElements = [];
             const extraElements = [];
             let extrasDiv;
             const inTeam = {};
-            const synergiesCount = teams.reduce((amount, {synergies}) => amount + synergies.length, 0);
+            const synergiesCount = teams.reduce((amount, { synergies }) => amount + synergies.length, 0);
             const scalePi = roster.getScale();
 
             let message;
@@ -200,15 +200,15 @@ function TeamsEditPage(initialVnode) {
                 message = (synergiesCount) ? `- ${ synergiesCount } ${ lang.string('synergies') }` : '';
             }
 
-            const teamIds = teams.map(({champions}) => champions.map(({id}) => id).join('_'));
-            teams.forEach(({champions, synergies}, teamIndex) => {
-                const isLocked = isTeamLocked(teamIds[teamIndex]);
+            const teamIds = teams.map(({ champions }) => champions.map(({ id }) => id).join('_'));
+            teams.forEach(({ champions, synergies }, teamIndex) => {
+                const isLocked = isTeamLocked(teamIds[ teamIndex ]);
                 teamElements.push(
                     <ChampionTeamSelector
                         team={{
-                        champions,
-                        synergies,
-                    }}
+                            champions,
+                            synergies,
+                        }}
                         showBadges={ 'upgrade' }
                         swap={ swap }
                         onup={ teamIndex > 0 && (() => {
@@ -270,7 +270,7 @@ function TeamsEditPage(initialVnode) {
                                     calculateSynergies(swap);
                                 }
                             }
-                    } }
+                        } }
                         ondragleave={ (index, event) => {
                             event.redraw = false;
                             event.preventDefault();
@@ -281,7 +281,7 @@ function TeamsEditPage(initialVnode) {
                                     calculateSynergies(swap);
                                 }
                             }
-                    } }
+                        } }
                         onclick={ isLocked? null: (index) => {
                             if(targetId === champions[ index ].id) {
                                 swap.target = null;
@@ -324,18 +324,18 @@ function TeamsEditPage(initialVnode) {
                             applyTeams(teams);
                         }) }
                         onapply={ source && target && (
-                        champions.some((champion) => champion === source.champion || champion === target.champion)
-                    ) && vnode.state.apply }
+                            champions.some((champion) => champion === source.champion || champion === target.champion)
+                        ) && vnode.state.apply }
                     />
                 );
-                champions.forEach((champion) => (inTeam[champion.id] = true));
+                champions.forEach((champion) => (inTeam[ champion.id ] = true));
             });
             const extras = roster
                 .filter((champion) => champion.attr.role !== vnode.state.type || vnode.state.type === 'arena')
-                .filter((champion) => !vnode.state.willpowersafe || WILLPOWER_SAFE_CHAMPIONS[champion.attr.uid])
-                .filter((champion) => vnode.state.stars[champion.attr.stars] !== false)
-                .filter((champion) => vnode.state.types[champion.attr.typeId] !== false)
-                .filter((champion) => !inTeam[champion.id]);
+                .filter((champion) => !vnode.state.willpowersafe || WILLPOWER_SAFE_CHAMPIONS[ champion.attr.uid ])
+                .filter((champion) => vnode.state.stars[ champion.attr.stars ] !== false)
+                .filter((champion) => vnode.state.types[ champion.attr.typeId ] !== false)
+                .filter((champion) => !inTeam[ champion.id ]);
             if ((vnode.state.type === 'arena' || teams.length === 0) && extras.length >= vnode.state.size) {
                 while (create.champions.length < vnode.state.size) {
                     create.champions.push(null);
@@ -347,9 +347,9 @@ function TeamsEditPage(initialVnode) {
                     <ChampionTeamSelector
                         key={ 'team-create' }
                         team={{
-                        champions: create.champions,
-                        synergies: create.synergies,
-                    }}
+                            champions: create.champions,
+                            synergies: create.synergies,
+                        }}
                         showBadges={ 'upgrade' }
                         swap={ swap }
                         draggable={ true }
@@ -367,7 +367,7 @@ function TeamsEditPage(initialVnode) {
                                 swap.dragging = true;
                                 calculateSynergies(swap);
                             }
-                    }}
+                        }}
                         ondragend={() => {
                             if(source && target) {
                                 vnode.state.apply();
@@ -375,7 +375,7 @@ function TeamsEditPage(initialVnode) {
                             swap.dragging = false;
                             swap.source = null;
                             swap.target = null;
-                    }}
+                        }}
                         ondragover={(index, event) => {
                             event.preventDefault();
                             event.redraw = false;
@@ -392,7 +392,7 @@ function TeamsEditPage(initialVnode) {
                                     calculateSynergies(swap);
                                 }
                             }
-                    }}
+                        }}
                         ondragleave={ (index, event) => {
                             event.redraw = false;
                             event.preventDefault();
@@ -403,72 +403,72 @@ function TeamsEditPage(initialVnode) {
                                     calculateSynergies(swap);
                                 }
                             }
-                    } }
+                        } }
                         onclick={ (index) => {
-                        if(source && source.create && source.index === index) {
-                            swap.source = null;
-                            if(swap.target && swap.target.team) {
-                                swap.source = swap.target;
-                                swap.target = null;
+                            if(source && source.create && source.index === index) {
+                                swap.source = null;
+                                if(swap.target && swap.target.team) {
+                                    swap.source = swap.target;
+                                    swap.target = null;
+                                }
                             }
-                        }
-                        else {
-                            if(!swap.target && swap.source && swap.source.id) {
-                                swap.target = swap.source;
+                            else {
+                                if(!swap.target && swap.source && swap.source.id) {
+                                    swap.target = swap.source;
+                                }
+                                swap.source = {
+                                    team: create,
+                                    index,
+                                    champion: create.champions[ index ],
+                                    create: true,
+                                };
+                                if(target && target.champion && inTeam[ target.champion.id ]) {
+                                    swap.target = null;
+                                }
                             }
-                            swap.source = {
-                                team: create,
-                                index,
-                                champion: create.champions[ index ],
-                                create: true,
-                            };
-                            if(target && target.champion && inTeam[ target.champion.id ]) {
-                                swap.target = null;
-                            }
-                        }
-                        calculateSynergies(swap);
-                    } }
+                            calculateSynergies(swap);
+                        } }
                         onapply={ source && target && (
-                        (source.create && target.champion) ||
+                            (source.create && target.champion) ||
                         (target.create && source.champion)
-                    ) && vnode.state.apply }
+                        ) && vnode.state.apply }
                         onremove={ source && source.create && source.champion && !target && (() => {
-                        create.champions[ swap.source.index ] = null;
-                        create.synergies = synergiesFromChampions(create.champions);
-                        swap.source = null;
-                        applyTeams(teams);
-                    }) }
+                            create.champions[ swap.source.index ] = null;
+                            create.synergies = synergiesFromChampions(create.champions);
+                            swap.source = null;
+                            applyTeams(teams);
+                        }) }
                         create
                     />
                 );
-                create.champions.forEach((champion) => champion && (inTeam[champion.id] = true));
+                create.champions.forEach((champion) => champion && (inTeam[ champion.id ] = true));
             }
             const currentSynergyMap = {};
             (swap.source && swap.source.team && swap.source.team.synergies) &&
-            swap.source.team.synergies.forEach(({attr: {toId, fromId, fromStars}}) => {
-                currentSynergyMap[`${ toId }-${ fromId }-${ fromStars}`] = true;
+            swap.source.team.synergies.forEach(({ attr: { toId, fromId, fromStars } }) => {
+                currentSynergyMap[ `${ toId }-${ fromId }-${ fromStars}` ] = true;
             });
-            extras.filter((champion) => champion && !inTeam[champion.id]).forEach((champion) => {
+            extras.filter((champion) => champion && !inTeam[ champion.id ]).forEach((champion) => {
                 let effects = null;
                 if (!swap.target && swap.source) {
                     const foundEffects = {};
-                    const {team: {champions}, index} = swap.source;
+                    const { team: { champions }, index } = swap.source;
                     const swapped = [
                         ...champions,
                     ];
-                    swapped[index] = champion;
+                    swapped[ index ] = champion;
                     effects = synergiesFromChampions(swapped)
-                        .filter(({attr: {toId, fromId, fromStars}}) => {
-                            return !currentSynergyMap[`${ toId }-${ fromId }-${ fromStars}`];
+                        .filter(({ attr: { toId, fromId, fromStars } }) => {
+                            return !currentSynergyMap[ `${ toId }-${ fromId }-${ fromStars}` ];
                         })
-                        .map(({attr: {effectId, effectAmount}}) => ({effectId, effectAmount}))
+                        .map(({ attr: { effectId, effectAmount } }) => ({ effectId, effectAmount }))
                         .filter((effect) => {
-                            const {effectId, effectAmount} = effect;
-                            if (foundEffects[effectId]) {
-                                foundEffects[effectId].effectAmount += effectAmount;
+                            const { effectId, effectAmount } = effect;
+                            if (foundEffects[ effectId ]) {
+                                foundEffects[ effectId ].effectAmount += effectAmount;
                                 return false;
                             }
-                            foundEffects[effectId] = effect;
+                            foundEffects[ effectId ] = effect;
                             return true;
                         });
                 }
@@ -481,34 +481,34 @@ function TeamsEditPage(initialVnode) {
                         draggable={ true }
                         scalePi={ scalePi }
                         events={{
-                        ondragstart: () => {
-                            swap.source = null;
-                            swap.target = {
-                                champion,
-                            };
-                            swap.dragging = true;
-                            m.redraw();
-                        },
-                        ondragend: () => {
-                            if(source && target) {
-                                vnode.state.apply();
-                            }
-                            swap.dragging = false;
-                            swap.source = null;
-                            swap.target = null;
-                        },
-                    }}
+                            ondragstart: () => {
+                                swap.source = null;
+                                swap.target = {
+                                    champion,
+                                };
+                                swap.dragging = true;
+                                m.redraw();
+                            },
+                            ondragend: () => {
+                                if(source && target) {
+                                    vnode.state.apply();
+                                }
+                                swap.dragging = false;
+                                swap.source = null;
+                                swap.target = null;
+                            },
+                        }}
                         onclick={() => {
-                        if(target && target.champion && target.champion.id === champion.id) {
-                            swap.target = null;
-                        }
-                        else {
-                            swap.target = {
-                                champion,
-                            };
-                        }
-                        calculateSynergies(swap);
-                    }}
+                            if(target && target.champion && target.champion.id === champion.id) {
+                                swap.target = null;
+                            }
+                            else {
+                                swap.target = {
+                                    champion,
+                                };
+                            }
+                            calculateSynergies(swap);
+                        }}
                     />
                 );
             });
@@ -524,8 +524,8 @@ function TeamsEditPage(initialVnode) {
                 <div m="TeamsEditPage" class="teams">
                     <Message
                         icon={(
-                        <Icon icon={ roleIcon(vnode.state.type) } before />
-                    )}
+                            <Icon icon={ roleIcon(vnode.state.type) } before />
+                        )}
                         value={ `${ lang.string(`role-${ vnode.state.type }`) }${ message }` }
                     />
                     <div>
@@ -540,6 +540,6 @@ function TeamsEditPage(initialVnode) {
             );
         },
     };
-};
+}
 
 export default TeamsEditPage;

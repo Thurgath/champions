@@ -1,31 +1,31 @@
 import './Menu.scss';
-import MenuOptions from './menu/MenuOptions.jsx';
+import MenuOptions from './Menu/MenuOptions.jsx';
 import router from '../service/router';
 import classNames from 'classnames';
 import Icon from './Icon.jsx';
 import appState from '../service/appState.js';
 
-function Menu(initialVnode) {
-    
-    var menuOpen = false;
-    
+function Menu() {
+
+    let menuOpen = false;
+
     function toggleMenu(event) {
         event.redraw = false;
         menuOpen = !menuOpen;
         m.redraw();
     }
-    
+
     return {
         oninit(vnode) {
         },
         view(vnode) {
-            const {menu, parameters} = vnode.attrs;
+            const { menu, parameters } = vnode.attrs;
             const button = appState().getCurrentTab().getButton();
             return (
                 <div m="Menu" class={ classNames('menu', { 'menu--open': menuOpen }) }>
                     <div class="menu-background" onclick={ (event) => {
-                    toggleMenu(event);
-                }}></div>
+                        toggleMenu(event);
+                    }}></div>
                     { button && (
                         <a
                             role="button"
@@ -51,6 +51,6 @@ function Menu(initialVnode) {
             );
         },
     };
-};
+}
 
 export default Menu;

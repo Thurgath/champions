@@ -9,7 +9,7 @@ import lang, { getLanguage } from '../../service/lang';
 import Icon from '../Icon.jsx';
 import ImageIcon from '../ImageIcon.jsx';
 
-function LanguageEditPage(initialVnode) {
+function LanguageEditPage() {
     /**
      * This sets up the missing fields previous/next buttons depending on window scroll position.
      *
@@ -84,11 +84,11 @@ function LanguageEditPage(initialVnode) {
         view(vnode) {
             const { langId } = vnode.attrs;
             const editing = vnode.state.editing;
-            const {defaultFields, values} = getLanguage(langId);
+            const { defaultFields, values } = getLanguage(langId);
             const elements = [];
-            const placeholders = lang.messages['en'];
+            const placeholders = lang.messages[ 'en' ];
             let missing = 0;
-            const valueOf = (id) => (editing.id === id) ? editing.value : values[id];
+            const valueOf = (id) => (editing.id === id) ? editing.value : values[ id ];
             const fieldElement = (id, isOptional = false) => (
                 <div class={ classNames('field', { 'field-missing': !isOptional && !valueOf(id) && ++missing }) }>
                     <label>{ id }</label>
@@ -97,22 +97,22 @@ function LanguageEditPage(initialVnode) {
                         placeholder={ isOptional? '': placeholders[ id ] }
                         value={ valueOf(id) || '' }
                         onfocus={() => {
-                        editing.id = id;
-                        editing.value = values[ id ] || '';
-                    }}
+                            editing.id = id;
+                            editing.value = values[ id ] || '';
+                        }}
                         oninput={(event) => {
-                        editing.id = id;
-                        editing.value = event.target.value || '';
-                    }}
+                            editing.id = id;
+                            editing.value = event.target.value || '';
+                        }}
                         onblur={(event) => {
-                        const value = event.target.value.trim();
-                        values[ id ] = value;
-                        if(value.length === 0 && values[ id ] !== undefined) {
-                            delete values[ id ];
-                        }
-                        editing.id = null;
-                        editing.value = '';
-                    }}
+                            const value = event.target.value.trim();
+                            values[ id ] = value;
+                            if(value.length === 0 && values[ id ] !== undefined) {
+                                delete values[ id ];
+                            }
+                            editing.id = null;
+                            editing.value = '';
+                        }}
                     />
                 </div>
             );
@@ -160,7 +160,7 @@ function LanguageEditPage(initialVnode) {
                 <div class="field-group">
                     <div class="field-group-title">{ lang.string('effects') }</div>
                     { EFFECT_VALUES
-                        .map((uid) => [`effect-${ uid }-type`, `effect-${ uid }-name`, `effect-${ uid }-description`])
+                        .map((uid) => [ `effect-${ uid }-type`, `effect-${ uid }-name`, `effect-${ uid }-description` ])
                         .map(([ type, name, description ]) => (
                             <div class="field-group-set">
                                 { fieldElement(type) }
@@ -174,7 +174,7 @@ function LanguageEditPage(initialVnode) {
                 <div class="field-group">
                     <div class="field-group-title">{ lang.string('abilities') }</div>
                     { ABILITY_VALUES
-                        .map((uid) => [`ability-${ uid }-name`, `ability-${ uid }-description`])
+                        .map((uid) => [ `ability-${ uid }-name`, `ability-${ uid }-description` ])
                         .map(([ name, description ]) => (
                             <div class="field-group-set">
                                 { fieldElement(name) }
@@ -187,7 +187,7 @@ function LanguageEditPage(initialVnode) {
                 <div class="field-group">
                     <div class="field-group-title">{ lang.string('other') }</div>
                     { Object.keys(placeholders)
-                        .filter((field) => !defaultFields[field])
+                        .filter((field) => !defaultFields[ field ])
                         .map((field) => (
                             <div class="field-group-set">
                                 { fieldElement(field) }
@@ -218,14 +218,14 @@ function LanguageEditPage(initialVnode) {
                     m="LanguageEditPage"
                     class="language-edit"
                     config={ (element, isInitialized) => {
-                    if(isInitialized) {
+                        if(isInitialized) {
+                            element.handleScroll();
+                            return;
+                        }
+                        element.handleScroll = onScroll.bind(null, element);
                         element.handleScroll();
-                        return;
-                    }
-                    element.handleScroll = onScroll.bind(null, element);
-                    element.handleScroll();
-                    element.parentNode.addEventListener('scroll', element.handleScroll, true);
-                }}
+                        element.parentNode.addEventListener('scroll', element.handleScroll, true);
+                    }}
                     key={ `lang-${ langId }` }
                 >
                     { elements }
@@ -234,6 +234,6 @@ function LanguageEditPage(initialVnode) {
             );
         },
     };
-};
+}
 
 export default LanguageEditPage;

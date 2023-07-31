@@ -1,6 +1,6 @@
-import MenuHeader from '../menu/MenuHeader.jsx';
+import MenuHeader from '../Menu/MenuHeader.jsx';
 
-function GlossaryMenu(initialVnode) {
+function GlossaryMenu() {
     return {
         onbeforeupdate() {
             //This is just to get rid of a warning message from Mithril saysing not to reuse attrs
@@ -16,6 +16,6 @@ function GlossaryMenu(initialVnode) {
             );
         },
     };
-};
+}
 
 export default GlossaryMenu;

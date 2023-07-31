@@ -14,7 +14,7 @@ import classNames from 'classnames';
 import SelectInput from './ui/SelectInput.jsx';
 import NumberInput from './ui/NumberInput.jsx';
 
-function RosterEditPage(initialVnode) {
+function RosterEditPage() {
     function getParameters(champion) {
         if (!champion) {
             return {};
@@ -36,34 +36,34 @@ function RosterEditPage(initialVnode) {
         oninit(vnode) {
         },
         view(vnode) {
-            const {uid, stars} = vnode.attrs;
+            const { uid, stars } = vnode.attrs;
             const champion = roster.get(uid, stars);
             const scalePi = roster.getScale();
             const elements = [];
             if (champion) {
-                const {rank, level, typeId, awakened, pi, role} = champion.attr;
+                const { rank, level, typeId, awakened, pi, role } = champion.attr;
                 const roleIconImage = roleImage(role) ? (
                     <ImageIcon src={ roleImage(role) }/>
                 ) : null;
-                const maxRank = STAR_RANK_LEVEL[stars]
-                    && STAR_RANK_LEVEL[stars].ranks || 1;
-                const maxLevel = STAR_RANK_LEVEL[stars]
-                    && STAR_RANK_LEVEL[stars][rank]
-                    && STAR_RANK_LEVEL[stars][rank].levels || 1;
-                const maxSignatureLevel = STAR_RANK_LEVEL[stars]
-                    && STAR_RANK_LEVEL[stars].awakened || 99;
+                const maxRank = STAR_RANK_LEVEL[ stars ]
+                    && STAR_RANK_LEVEL[ stars ].ranks || 1;
+                const maxLevel = STAR_RANK_LEVEL[ stars ]
+                    && STAR_RANK_LEVEL[ stars ][ rank ]
+                    && STAR_RANK_LEVEL[ stars ][ rank ].levels || 1;
+                const maxSignatureLevel = STAR_RANK_LEVEL[ stars ]
+                    && STAR_RANK_LEVEL[ stars ].awakened || 99;
                 const levelUp = () => {
                     const newRank = Math.min(rank + 1, maxRank);
-                    const maxLevelForNextLevel = STAR_RANK_LEVEL[stars] && STAR_RANK_LEVEL[stars][newRank].levels;
-                    changeRank(uid, stars, newRank, maxLevelForNextLevel);  
+                    const maxLevelForNextLevel = STAR_RANK_LEVEL[ stars ] && STAR_RANK_LEVEL[ stars ][ newRank ].levels;
+                    changeRank(uid, stars, newRank, maxLevelForNextLevel);
                 };
                 const maxChampion = () => {
-                    const maxLevelForMaxRank = STAR_RANK_LEVEL[stars] && STAR_RANK_LEVEL[stars][maxRank].levels;
+                    const maxLevelForMaxRank = STAR_RANK_LEVEL[ stars ] && STAR_RANK_LEVEL[ stars ][ maxRank ].levels;
                     changeRank(uid, stars, maxRank, maxLevelForMaxRank);
                 };
                 const maxSignature = () => {
                     changeSignature(uid, stars, maxSignatureLevel);
-                }
+                };
                 const isMaxRank = rank === maxRank;
                 const isMaxed = isMaxRank && level === maxLevel;
                 const isMaxSignature = maxSignatureLevel === awakened;
@@ -79,23 +79,23 @@ function RosterEditPage(initialVnode) {
                             <div class="champion-field-upgrades">
                                 <span class="champion-field-label">{ lang.string('quick-level') }</span>
                                 { !isMaxed ?
-                                <div class={ classnames('champion-upgrade-badge', 'champion-upgrade-badge--max') }
-                                     onclick={ maxChampion } title={ lang.string('upgrade-max-rank') } >
-                                    <ImageIcon src={ IMAGE_BADGE_LEVEL_MAX }/>
-                                </div>
-                                : null }
+                                    <div class={ classnames('champion-upgrade-badge', 'champion-upgrade-badge--max') }
+                                        onclick={ maxChampion } title={ lang.string('upgrade-max-rank') } >
+                                        <ImageIcon src={ IMAGE_BADGE_LEVEL_MAX }/>
+                                    </div>
+                                    : null }
                                 { !isMaxRank ?
-                                <div class={ classnames('champion-upgrade-badge', 'champion-upgrade-badge--rank-up') }
-                                     onclick={ levelUp } title={ lang.string('level') } >
-                                    <ImageIcon src={ IMAGE_BADGE_RANK_UP }/>
-                                </div>
-                                : null }
+                                    <div class={ classnames('champion-upgrade-badge', 'champion-upgrade-badge--rank-up') }
+                                        onclick={ levelUp } title={ lang.string('level') } >
+                                        <ImageIcon src={ IMAGE_BADGE_RANK_UP }/>
+                                    </div>
+                                    : null }
                                 { !isMaxSignature ?
-                                <div class={ classnames('champion-upgrade-badge', 'champion-upgrade-badge--star') }
-                                     onclick={ maxSignature } title={ lang.string('signature') } >
-                                    <ImageIcon src={ IMAGE_STAR_AWAKENED }/>
-                                </div>
-                                : null }
+                                    <div class={ classnames('champion-upgrade-badge', 'champion-upgrade-badge--star') }
+                                        onclick={ maxSignature } title={ lang.string('signature') } >
+                                        <ImageIcon src={ IMAGE_STAR_AWAKENED }/>
+                                    </div>
+                                    : null }
                             </div>
                         </label>
                     );
@@ -160,7 +160,7 @@ function RosterEditPage(initialVnode) {
                                     pi,
                                 });
                                 if(valueAsNumber !== undefined && isNaN(valueAsNumber)) {
-                                    event.target.value = '';                                
+                                    event.target.value = '';
                                 }
                             }}
                         />
@@ -175,31 +175,31 @@ function RosterEditPage(initialVnode) {
                         <SelectInput
                             value={ role }
                             values={[
-                            {
-                                title: lang.string('role-none'),
-                                value: null,
-                            },
-                            {
-                                title: lang.string('role-arena'),
-                                value: ROLE.ARENA,
-                            },
-                            {
-                                title: lang.string('role-alliance-quest'),
-                                value: ROLE.ALLIANCE_QUEST,
-                            },
-                            {
-                                title: lang.string('role-alliance-war-attack'),
-                                value: ROLE.ALLIANCE_WAR_ATTACK,
-                            },
-                            {
-                                title: lang.string('role-alliance-war-defense'),
-                                value: ROLE.ALLIANCE_WAR_DEFENSE,
-                            },
-                            {
-                                title: lang.string('role-quest'),
-                                value: ROLE.QUEST,
-                            },
-                        ]}
+                                {
+                                    title: lang.string('role-none'),
+                                    value: null,
+                                },
+                                {
+                                    title: lang.string('role-arena'),
+                                    value: ROLE.ARENA,
+                                },
+                                {
+                                    title: lang.string('role-alliance-quest'),
+                                    value: ROLE.ALLIANCE_QUEST,
+                                },
+                                {
+                                    title: lang.string('role-alliance-war-attack'),
+                                    value: ROLE.ALLIANCE_WAR_ATTACK,
+                                },
+                                {
+                                    title: lang.string('role-alliance-war-defense'),
+                                    value: ROLE.ALLIANCE_WAR_DEFENSE,
+                                },
+                                {
+                                    title: lang.string('role-quest'),
+                                    value: ROLE.QUEST,
+                                },
+                            ]}
                             onchange={(event) => {
                                 const { value } = event.target;
                                 const role = value === null? null: value;
@@ -246,6 +246,6 @@ function RosterEditPage(initialVnode) {
             );
         },
     };
-};
+}
 
 export default RosterEditPage;

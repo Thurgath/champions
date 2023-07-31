@@ -1,9 +1,9 @@
 import Icon from '../../Icon.jsx';
 
-function SelectInput(initialVnode) {
+function SelectInput() {
     return {
         view(vnode) {
-            const {value, min, max, values, onchange} = vnode.attrs;
+            const { value, min, max, values, onchange } = vnode.attrs;
             const options = [];
             if (min !== undefined && max !== undefined) {
                 for (let i = min; i <= max; i++)
@@ -26,6 +26,6 @@ function SelectInput(initialVnode) {
             );
         },
     };
-};
+}
 
 export default SelectInput;

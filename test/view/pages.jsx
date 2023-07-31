@@ -27,15 +27,15 @@ describe('view/pages/', () => {
         expect(mq(GuidePage, {})).to.exist;
     }));
     describe('<LanguageEditPage/>', () => it('should render without error', () => {
-        expect(mq(LanguageEditPage, {langId: "en"})).to.exist;
+        expect(mq(LanguageEditPage, { langId: 'en' })).to.exist;
     }));
     describe('<RosterAddPage/>', () => it('should render without error', () => {
-        it('should render without error for 1 star', () => expect(mq(RosterAddPage, {stars: 1})).to.exist);
-        it('should render without error for 2 star', () => expect(mq(RosterAddPage, {stars: 2})).to.exist);
-        it('should render without error for 3 star', () => expect(mq(RosterAddPage, {stars: 3})).to.exist);
-        it('should render without error for 4 star', () => expect(mq(RosterAddPage, {stars: 4})).to.exist);
-        it('should render without error for 5 star', () => expect(mq(RosterAddPage, {stars: 5})).to.exist);
-        it('should render without error for 6 star', () => expect(mq(RosterAddPage, {stars: 6})).to.exist);
+        it('should render without error for 1 star', () => expect(mq(RosterAddPage, { stars: 1 })).to.exist);
+        it('should render without error for 2 star', () => expect(mq(RosterAddPage, { stars: 2 })).to.exist);
+        it('should render without error for 3 star', () => expect(mq(RosterAddPage, { stars: 3 })).to.exist);
+        it('should render without error for 4 star', () => expect(mq(RosterAddPage, { stars: 4 })).to.exist);
+        it('should render without error for 5 star', () => expect(mq(RosterAddPage, { stars: 5 })).to.exist);
+        it('should render without error for 6 star', () => expect(mq(RosterAddPage, { stars: 6 })).to.exist);
     }));
     describe('<RosterEditPage/>', () => it('should render without error', () => {
         expect(mq(RosterEditPage, {})).to.exist;

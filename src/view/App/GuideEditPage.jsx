@@ -8,11 +8,11 @@ import ChampionHeader from '../Champion/ChampionHeader.jsx';
 import ChampionSection from '../Champion/ChampionSection.jsx';
 import GuideEditAuthor from './GuideEditAuthor.jsx';
 
-function GuideEditPage(initialVnode) {
+function GuideEditPage() {
     function editGuide(uid, initialSelectors, initialKey, value) {
         const guide = guides.getGuideFor(uid, lang.current) || guides.import(uid, '{}', lang.current);
         let object = guide;
-    
+
         const keys = initialKey.split('.');
         const selectors = (keys.length > 1)?
             [
@@ -21,7 +21,7 @@ function GuideEditPage(initialVnode) {
             ]:
             initialSelectors;
         const key = keys[ keys.length - 1 ];
-    
+
         for(let i = 0; i < selectors.length; i++) {
             if(!object[ selectors[ i ] ])
                 object[ selectors[ i ] ] = {};
@@ -33,7 +33,7 @@ function GuideEditPage(initialVnode) {
         oninit(vnode) {
         },
         view(vnode) {
-            const {uid} = vnode.attrs;
+            const { uid } = vnode.attrs;
             const guide = guides.getGuideFor(uid, lang.current);
             const details = [];
             const champion = getChampion(uid);
@@ -41,9 +41,9 @@ function GuideEditPage(initialVnode) {
                 details.push(
                     <ChampionHeader
                         champion={ new Champion({
-                        ...champion.attr,
-                        stars: 0,
-                    }) }
+                            ...champion.attr,
+                            stars: 0,
+                        }) }
                     />
                 );
             }
@@ -83,8 +83,8 @@ function GuideEditPage(initialVnode) {
                     onEdit={ (key, value) => editGuide(uid, [ 'attack' ], key, value, vnode) }
                 />
             );
-            [1, 2, 3].forEach((index) => {
-                const special = guide && guide.specials && guide.specials[index];
+            [ 1, 2, 3 ].forEach((index) => {
+                const special = guide && guide.specials && guide.specials[ index ];
                 details.push(
                     <ChampionSection
                         title={ `${ lang.string('special') } ${ index }` }
@@ -130,6 +130,6 @@ function GuideEditPage(initialVnode) {
             );
         },
     };
-};
+}
 
 export default GuideEditPage;

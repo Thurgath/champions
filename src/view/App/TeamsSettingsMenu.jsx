@@ -1,16 +1,16 @@
 import teams, { PRESETS, PRESETS_DUPLICATES, PRESETS_RANGE, save } from '../../service/teams';
-import MenuHeader from '../menu/MenuHeader.jsx';
-import MenuSection from '../menu/MenuSection.jsx';
-import MenuOption from '../menu/MenuOption.jsx';
+import MenuHeader from '../Menu/MenuHeader.jsx';
+import MenuSection from '../Menu/MenuSection.jsx';
+import MenuOption from '../Menu/MenuOption.jsx';
 
-function TeamsSettingsMenu(initialVnode) {
+function TeamsSettingsMenu() {
     function isActivePreset(preset, currentValues) {
         for(const id in preset)
             if(preset[ id ] !== currentValues[ id ])
                 return false;
         return true;
     }
-    
+
     return {
         oninit(vnode) {
         },
@@ -26,7 +26,7 @@ function TeamsSettingsMenu(initialVnode) {
                 const handleClick = () => {
                     teams.weights = {
                         ...teams.weights,
-                        ...PRESETS[id],
+                        ...PRESETS[ id ],
                     };
                     save();
                 };
@@ -45,7 +45,7 @@ function TeamsSettingsMenu(initialVnode) {
                 const handleClick = () => {
                     teams.weights = {
                         ...teams.weights,
-                        ...PRESETS_DUPLICATES[id],
+                        ...PRESETS_DUPLICATES[ id ],
                     };
                     save();
                 };
@@ -64,7 +64,7 @@ function TeamsSettingsMenu(initialVnode) {
                 const handleClick = () => {
                     teams.range = {
                         ...teams.range,
-                        ...PRESETS_RANGE[id],
+                        ...PRESETS_RANGE[ id ],
                     };
                     save();
                 };
@@ -83,6 +83,6 @@ function TeamsSettingsMenu(initialVnode) {
             );
         },
     };
-};
+}
 
 export default TeamsSettingsMenu;

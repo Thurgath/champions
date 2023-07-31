@@ -8,11 +8,11 @@ import lang from '../../service/lang';
 import ChampionPortrait from './ChampionPortrait.jsx';
 import Icon from '../Icon.jsx';
 
-function ChampionTeam(initialVnode) {
+function ChampionTeam() {
     const CHAMPION_SELECTED = 1;
     const CHAMPION_NEIGHBOR = 2;
     const EFFECT_SELECTED = true;
-    
+
     function selectChampion(vnode, synergies, champions, index) {
         let selected = vnode.state.champions[ index ];
         if(!selected) {
@@ -103,7 +103,7 @@ function ChampionTeam(initialVnode) {
             vnode.state.effects = {};
         },
         view(vnode) {
-            const {champions, synergies, showBadges} = vnode.attrs;
+            const { champions, synergies, showBadges } = vnode.attrs;
             const size = champions.length;
             const scalePi = roster.getScale();
             return (
@@ -113,8 +113,8 @@ function ChampionTeam(initialVnode) {
                 >
                     <div class="team-champions">
                         { champions.map((champion, index) => {
-                            const selected = vnode.state.selected.champions[index] === CHAMPION_SELECTED;
-                            const neighbor = vnode.state.selected.champions[index] === CHAMPION_NEIGHBOR;
+                            const selected = vnode.state.selected.champions[ index ] === CHAMPION_SELECTED;
+                            const neighbor = vnode.state.selected.champions[ index ] === CHAMPION_NEIGHBOR;
                             return (
                                 <ChampionPortrait
                                     key={ `champion-${ index }` }
@@ -133,7 +133,7 @@ function ChampionTeam(initialVnode) {
                             const synergy = synergies.filter((synergy) => synergy.attr.effectId === effectId);
                             if (synergy.length === 0)
                                 return null;
-                            const selected = vnode.state.selected.effects[effectId];
+                            const selected = vnode.state.selected.effects[ effectId ];
                             const amount = (!selected || selected === EFFECT_SELECTED) ?
                                 synergy.reduce((value, synergy) => value + synergy.attr.effectAmount, 0) :
                                 selected;
@@ -144,27 +144,27 @@ function ChampionTeam(initialVnode) {
                                     title={ lang.string(`effect-${ effectId }-description`) }
                                 >
                                     <Icon icon={ effectIcon(effectId) } before/>
-                                <span class="effect-name">
-                                    { lang.string(`effect-${ effectId }-type`) }
-                                </span>
+                                    <span class="effect-name">
+                                        { lang.string(`effect-${ effectId }-type`) }
+                                    </span>
                                     <span> — </span>
-                                <span class="effect-amount">
-                                    { amount }%
-                                </span>
+                                    <span class="effect-amount">
+                                        { amount }%
+                                    </span>
                                 </div>
                             );
                         }) }
                         <div class="team-pi">
                             { `${ lang.string('base-pi') } ` }
-                        <span class="team-pi-number">
-                            { lang.number(champions.reduce((amount, champion) => amount + (champion.attr.pi || champion.pi), 0)) }
-                        </span>
+                            <span class="team-pi-number">
+                                { lang.number(champions.reduce((amount, champion) => amount + (champion.attr.pi || champion.pi), 0)) }
+                            </span>
                         </div>
                     </div>
                 </div>
             );
         },
     };
-};
+}
 
 export default ChampionTeam;

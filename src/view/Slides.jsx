@@ -1,13 +1,13 @@
 import './Slides.scss';
 import classNames from 'classnames';
 
-function Slides(initialVnode) {
+function Slides() {
     return {
         oninit(vnode) {
             vnode.state.currentSlide = vnode.attrs.current;
         },
         view(vnode) {
-            const {slides, current} = vnode.attrs;
+            const { slides, current } = vnode.attrs;
             if (slides.length === 0) {
                 return;
             }
@@ -28,6 +28,6 @@ function Slides(initialVnode) {
             );
         },
     };
-};
+}
 
 export default Slides;

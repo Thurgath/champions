@@ -7,41 +7,41 @@ import ImageIcon from '../ImageIcon.jsx';
 import lang from '../../service/lang';
 import classnames from 'classnames';
 
-function ChampionUpgrades(initialVnode) {
+function ChampionUpgrades() {
     return {
         view(vnode) {
-            const {champions} = vnode.attrs;
+            const { champions } = vnode.attrs;
             const catalysts = champions
             // filter out non-upgrading champions
-                .filter(({attr}) => {
-                    const definitionStars = STAR_RANK_LEVEL[attr.stars];
-                    const definitionRank = definitionStars[attr.rank];
+                .filter(({ attr }) => {
+                    const definitionStars = STAR_RANK_LEVEL[ attr.stars ];
+                    const definitionRank = definitionStars[ attr.rank ];
                     return definitionStars.ranks > attr.rank && definitionRank.levels === attr.level;
                 })
                 // map upgrades needed
-                .map(({attr}) => {
-                    const shouldUseCatalysts = attr.rank > 1 && CATALYSTS[attr.stars]
+                .map(({ attr }) => {
+                    const shouldUseCatalysts = attr.rank > 1 && CATALYSTS[ attr.stars ];
                     return {
-                        catalysts: shouldUseCatalysts ? CATALYSTS[attr.stars][ attr.rank - 1 ] : [],
+                        catalysts: shouldUseCatalysts ? CATALYSTS[ attr.stars ][ attr.rank - 1 ] : [],
                         typeId: attr.typeId,
                         typeIndex: TYPE_VALUES.indexOf(attr.typeId),
-                    }
+                    };
                 })
                 // add to the right category
-                .reduce((collection, {catalysts, typeId, typeIndex}) => {
-                    catalysts.forEach(({type, tier, amount}) => {
+                .reduce((collection, { catalysts, typeId, typeIndex }) => {
+                    catalysts.forEach(({ type, tier, amount }) => {
                         if (type === CATALYST.GOLD) {
-                            collection[type] += amount;
+                            collection[ type ] += amount;
                         }
                         else if (type === CATALYST.BASIC || type === CATALYST.ALPHA) {
-                            collection[type].push({
+                            collection[ type ].push({
                                 type,
                                 tier,
                                 amount,
                             });
                         }
                         else if (type === CATALYST.CLASS) {
-                            collection[type].push({
+                            collection[ type ].push({
                                 type,
                                 tier,
                                 amount,
@@ -58,17 +58,17 @@ function ChampionUpgrades(initialVnode) {
                     [ CATALYST.GOLD ]: 0,
                 });
 
-            ['basic', 'class', 'alpha'].forEach((type) => {
-                catalysts[type] = catalysts[type]
+            [ 'basic', 'class', 'alpha' ].forEach((type) => {
+                catalysts[ type ] = catalysts[ type ]
                 // sort by tier ascending
                     .sort((type === CATALYST.CLASS) ?
-                        ({tier: tA, typeIndex: tyA}, {tier: tB, typeIndex: tyB}) => {
+                        ({ tier: tA, typeIndex: tyA }, { tier: tB, typeIndex: tyB }) => {
                             const compare = tA - tB;
                             if (compare !== 0) {
                                 return compare;
                             }
                             return tyA - tyB;
-                        } : ({tier: tA}, {tier: tB}) => tA - tB
+                        } : ({ tier: tA }, { tier: tB }) => tA - tB
                     )
                     // fold same tier/type into each other
                     .reduce((array, current, index) => {
@@ -76,7 +76,7 @@ function ChampionUpgrades(initialVnode) {
                             array.push(current);
                             return array;
                         }
-                        const last = array[array.length - 1];
+                        const last = array[ array.length - 1 ];
                         if (last.tier === current.tier && last.typeId === current.typeId) {
                             last.amount += current.amount;
                         }
@@ -94,38 +94,38 @@ function ChampionUpgrades(initialVnode) {
                     m="ChampionUpgrades"
                     title={ lang.string('upgrade-cost') }
                     class="champion-upgrade champion-upgrade-rank-up">
-                    { [CATALYST.BASIC, CATALYST.CLASS, CATALYST.ALPHA]
-                        .filter((type) => Boolean(catalysts[type]))
+                    { [ CATALYST.BASIC, CATALYST.CLASS, CATALYST.ALPHA ]
+                        .filter((type) => Boolean(catalysts[ type ]))
                         .map((type) => {
-                            return catalysts[type].map(({type, tier, amount, typeId}) => (
+                            return catalysts[ type ].map(({ type, tier, amount, typeId }) => (
                                 <span
                                     class={ classnames('champion-upgrade-catalyst', `champion-upgrade-catalyst--${ type }`, {
-                                    [ `champion-upgrade-catalyst--class-${ typeId }` ]: type === CATALYST.CLASS,
-                                }) }
+                                        [ `champion-upgrade-catalyst--class-${ typeId }` ]: type === CATALYST.CLASS,
+                                    }) }
                                 >
-                                { lang.number(amount) }
+                                    { lang.number(amount) }
                                     ×
-                                <ImageIcon
-                                    src={
-                                        (type === CATALYST.CLASS)
-                                            ? getCatalystImage(`tier_${ tier }_${ typeId }`)
-                                            : getCatalystImage(`tier_${ tier }_${ type }`)
-                                    }
-                                />
+                                    <ImageIcon
+                                        src={
+                                            (type === CATALYST.CLASS)
+                                                ? getCatalystImage(`tier_${ tier }_${ typeId }`)
+                                                : getCatalystImage(`tier_${ tier }_${ type }`)
+                                        }
+                                    />
                                     { ', ' }
-                            </span>
+                                </span>
                             ));
                         })
                     }
-                <span class={ classnames('champion-upgrade-catalyst', 'champion-upgrade-catalyst--gold') }>
-                    { lang.number(catalysts[CATALYST.GOLD]) }
+                    <span class={ classnames('champion-upgrade-catalyst', 'champion-upgrade-catalyst--gold') }>
+                        { lang.number(catalysts[ CATALYST.GOLD ]) }
                     ×
-                    <ImageIcon src={ IMAGE_CURRENCY_GOLD }/>
-                </span>
+                        <ImageIcon src={ IMAGE_CURRENCY_GOLD }/>
+                    </span>
                 </div>
             );
         },
     };
-};
+}
 
 export default ChampionUpgrades;

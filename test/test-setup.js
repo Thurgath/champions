@@ -68,7 +68,7 @@ function createElement(elementId) {
     // Doing this so the element can be found when using document.getElementById.
     // This is because nothing is added to the document for these components.
     // And the jsdom document is not connected to what mithril is rendering either.
-    const element = document.createElement("div");
+    const element = document.createElement('div');
     element.id = elementId;
     document.body.appendChild(element);
 }

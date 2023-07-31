@@ -1,10 +1,10 @@
 import lang from '../../service/lang';
 import { PROFILE_TYPES } from '../../data/guides';
 
-function GuideEditAuthor(initialVnode) {
+function GuideEditAuthor() {
     return {
         view(vnode) {
-            const {name, type, profile, onEdit} = vnode.attrs;
+            const { name, type, profile, onEdit } = vnode.attrs;
             const editableText = (key) => ({
                 'contenteditable': true,
                 'class': 'champion-section-textarea',
@@ -28,8 +28,8 @@ function GuideEditAuthor(initialVnode) {
                                 value={ `${ value }` }
                                 selected={ initialValue && value === initialValue }
                             >{
-                                lang.string(`profile-${ value }`)
-                            }</option>
+                                    lang.string(`profile-${ value }`)
+                                }</option>
                         ))
                     }
                 </select>
@@ -67,7 +67,7 @@ function GuideEditAuthor(initialVnode) {
                 </div>
             );
         },
-    }
-};
+    };
+}
 
 export default GuideEditAuthor;

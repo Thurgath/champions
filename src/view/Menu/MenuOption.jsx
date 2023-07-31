@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import lang from '../../service/lang';
 import router from '../../service/router';
 
-function MenuOption(initialVnode) {
+function MenuOption() {
     function isExternalLink(href) {
         return href.startsWith('http') || href.startsWith('//');
     }
@@ -14,7 +14,7 @@ function MenuOption(initialVnode) {
             const {
                 info, raw, alternate, title, icon, href,
                 download, selected, invalid, progress, red,
-                onclick, oncontextmenu, options
+                onclick, oncontextmenu, options,
             } = vnode.attrs;
             let link = {};
             if (href) {
@@ -45,12 +45,12 @@ function MenuOption(initialVnode) {
                     role="menuitem"
                     aria-label={ lang.string(title) || lang.string(info) }
                     class={ classNames('menu-option', {
-                    'menu-option--options': options,
-                    'menu-option--invalid': invalid,
-                    'menu-option--selected': selected,
-                    'menu-option--progress': progress,
-                    'menu-option--red': red === true || red === 'true',
-                }, 'no-select') }
+                        'menu-option--options': options,
+                        'menu-option--invalid': invalid,
+                        'menu-option--selected': selected,
+                        'menu-option--progress': progress,
+                        'menu-option--red': red === true || red === 'true',
+                    }, 'no-select') }
                     title={ lang.string(info) || '' }
                     tabindex={0}
                     onclick={ onclick }
@@ -78,6 +78,6 @@ function MenuOption(initialVnode) {
             );
         },
     };
-};
+}
 
 export default MenuOption;

@@ -8,7 +8,7 @@ import lang from '../../service/lang';
 import ChampionPortrait from './ChampionPortrait.jsx';
 import Icon from '../Icon.jsx';
 
-function ChampionTeamSelector(initialVnode) {
+function ChampionTeamSelector() {
     return {
         view(vnode) {
             const {
@@ -16,28 +16,28 @@ function ChampionTeamSelector(initialVnode) {
                 onsplit, onlock, onup, ondown, showBadges,
                 draggable, droppable, ondragstart, ondragend, ondragover, ondragleave,
             } = vnode.attrs;
-            const {source, target} = swap;
+            const { source, target } = swap;
             const sourceId = source && source.champion && source.champion.id;
             const targetId = target && target.champion && target.champion.id;
-            const {champions, synergies} = team;
+            const { champions, synergies } = team;
             const size = champions.length;
             const editing = champions.reduce((value, champion) => {
-                    if (create && source && source.create && (sourceId || targetId))
-                        return source;
-                    if (champion && champion.id === sourceId)
-                        return source;
-                    if (champion && champion.id === targetId)
-                        return target;
-                    return value;
-                }, null) || null;
+                if (create && source && source.create && (sourceId || targetId))
+                    return source;
+                if (champion && champion.id === sourceId)
+                    return source;
+                if (champion && champion.id === targetId)
+                    return target;
+                return value;
+            }, null) || null;
             const scalePi = roster.getScale();
             return (
                 <div
                     m="ChampionTeamSelector"
                     class={ classNames('champion-team', 'champion-team-selector', `champion-team--size-${ size }`, {
-                    'champion-team-selector--create': create,
-                    'champion-team-selector--locked': locked,
-                }) }
+                        'champion-team-selector--create': create,
+                        'champion-team-selector--locked': locked,
+                    }) }
                 >
                     <div className="team-champions">
                         { champions.map((champion, index) => (champion) ? (
@@ -50,11 +50,11 @@ function ChampionTeamSelector(initialVnode) {
                                 draggable={ draggable }
                                 droppable={ droppable }
                                 events={{
-                                ondragstart: ondragstart && ondragstart.bind(null, index),
-                                ondragend: ondragend && ondragend.bind(null, index),
-                                ondragover: ondragover && ondragover.bind(null, index),
-                                ondragleave: ondragleave && ondragleave.bind(null, index),
-                            }}
+                                    ondragstart: ondragstart && ondragstart.bind(null, index),
+                                    ondragend: ondragend && ondragend.bind(null, index),
+                                    ondragover: ondragover && ondragover.bind(null, index),
+                                    ondragleave: ondragleave && ondragleave.bind(null, index),
+                                }}
                                 onclick={ locked? null: () => {
                                     onclick(index);
                                 }}
@@ -67,9 +67,9 @@ function ChampionTeamSelector(initialVnode) {
                                 showBadges={ showBadges }
                                 droppable={ droppable }
                                 events={{
-                                ondragover: ondragover && ondragover.bind(null, index),
-                                ondragleave: ondragleave && ondragleave.bind(null, index),
-                            }}
+                                    ondragover: ondragover && ondragover.bind(null, index),
+                                    ondragleave: ondragleave && ondragleave.bind(null, index),
+                                }}
                                 onclick={() => {
                                     onclick(index);
                                 }}
@@ -82,8 +82,8 @@ function ChampionTeamSelector(initialVnode) {
                                 .filter((synergy) => synergy.attr.effectId === effect.attr.uid)
                                 .reduce((value, synergy) => value + synergy.attr.effectAmount, 0);
                             let changed = editing && editing.synergies && editing.synergies
-                                    .filter((synergy) => synergy.attr.effectId === effect.attr.uid)
-                                    .reduce((value, synergy) => (value || 0) + synergy.attr.effectAmount, null);
+                                .filter((synergy) => synergy.attr.effectId === effect.attr.uid)
+                                .reduce((value, synergy) => (value || 0) + synergy.attr.effectAmount, null);
                             if (isNaN(changed)) {
                                 changed = null;
                             }
@@ -99,33 +99,33 @@ function ChampionTeamSelector(initialVnode) {
                                     title={ lang.string(`effect-${ effect.attr.uid }-description`) }
                                 >
                                     <Icon icon={ effectIcon(effect.attr.uid) } before/>
-                                <span class="effect-name">
-                                    { lang.string(`effect-${ effect.attr.uid }-type`) }
-                                </span>
+                                    <span class="effect-name">
+                                        { lang.string(`effect-${ effect.attr.uid }-type`) }
+                                    </span>
                                     <span> — </span>
-                                <span class="effect-amount">
-                                    { changed !== null ? changed : amount }%
-                                    { (changed !== null && amount !== changed) && (
-                                        <span>
+                                    <span class="effect-amount">
+                                        { changed !== null ? changed : amount }%
+                                        { (changed !== null && amount !== changed) && (
+                                            <span>
                                             (
-                                            <span class={ classNames('effect-amount', {
-                                                'effect-amount--increased': amount < changed,
-                                                'effect-amount--decreased': amount > changed,
-                                            }) }>
-                                                { Math.abs(amount - changed) }%
-                                            </span>
+                                                <span class={ classNames('effect-amount', {
+                                                    'effect-amount--increased': amount < changed,
+                                                    'effect-amount--decreased': amount > changed,
+                                                }) }>
+                                                    { Math.abs(amount - changed) }%
+                                                </span>
                                             )
-                                        </span>
-                                    ) || null }
-                                </span>
+                                            </span>
+                                        ) || null }
+                                    </span>
                                 </div>
                             );
                         })}
                         <div class="team-pi">
                             { `${ lang.string('base-pi') } ` }
-                        <span class="team-pi-number">
-                            { lang.number(champions.reduce((amount, champion) => amount + (champion && (champion.attr.pi || champion.pi) || 0), 0)) }
-                        </span>
+                            <span class="team-pi-number">
+                                { lang.number(champions.reduce((amount, champion) => amount + (champion && (champion.attr.pi || champion.pi) || 0), 0)) }
+                            </span>
                         </div>
                         { !create && (
                             <div class="team-move">
@@ -137,16 +137,16 @@ function ChampionTeamSelector(initialVnode) {
                                 </div>
                                 <div
                                     class={ classNames('team-move-direction', {
-                                    'team-move-direction--disabled': !onup,
-                                }) }
+                                        'team-move-direction--disabled': !onup,
+                                    }) }
                                     onclick={ onup }
                                 >
                                     <Icon icon="caret-up"/>
                                 </div>
                                 <div
                                     class={ classNames('team-move-direction', {
-                                    'team-move-direction--disabled': !ondown,
-                                }) }
+                                        'team-move-direction--disabled': !ondown,
+                                    }) }
                                     onclick={ ondown }
                                 >
                                     <Icon icon="caret-down"/>
@@ -171,6 +171,6 @@ function ChampionTeamSelector(initialVnode) {
             );
         },
     };
-};
+}
 
 export default ChampionTeamSelector;

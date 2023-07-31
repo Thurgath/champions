@@ -1,12 +1,12 @@
 import './MenuOptionGroup.scss';
 import classNames from 'classnames';
 
-function MenuGroupOption(initialVnode) {
+function MenuGroupOption() {
     return {
         oninit(vnode) {
         },
         view(vnode) {
-            const {options, tabs} = vnode.attrs;
+            const { options, tabs } = vnode.attrs;
             return (
                 <div
                     m="MenuGroupOption"
@@ -17,6 +17,6 @@ function MenuGroupOption(initialVnode) {
             );
         },
     };
-};
+}
 
 export default MenuGroupOption;

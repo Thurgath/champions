@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Icon from './Icon.jsx';
 import { loadImages } from '../images';
 
-function ImageIcon(initialVnode) {
+function ImageIcon() {
     return {
         oninit(vnode) {
             loadImages(vnode, vnode.attrs.src);
@@ -17,8 +17,8 @@ function ImageIcon(initialVnode) {
             return false;
         },
         view(vnode) {
-            const {src, icon, type, before, after} = vnode.attrs;
-            const image = vnode.state.images[src];
+            const { src, icon, type, before, after } = vnode.attrs;
+            const image = vnode.state.images[ src ];
             if (!image || (!image.loaded && icon)) {
                 return (
                     <Icon icon={ icon } before={ before } after={ after } type={ type }/>
@@ -29,18 +29,18 @@ function ImageIcon(initialVnode) {
                 style = `border-bottom: solid 3px ${ getTypeColor(type) }`;
             }
             return src && (
-                    <div
-                        style={ style }
-                        class={ classNames('image-icon', {
-                    'image-icon--before': before,
-                    'image-icon--after': after,
-                }) }
-                    >
-                        <img class={ classNames('image') } src={ image.src }/>
-                    </div>
-                );
+                <div
+                    style={ style }
+                    class={ classNames('image-icon', {
+                        'image-icon--before': before,
+                        'image-icon--after': after,
+                    }) }
+                >
+                    <img class={ classNames('image') } src={ image.src }/>
+                </div>
+            );
         },
     };
-};
+}
 
 export default ImageIcon;

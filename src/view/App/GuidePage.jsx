@@ -9,14 +9,14 @@ import ChampionSection from '../Champion/ChampionSection.jsx';
 import GuideAuthor from './GuideAuthor.jsx';
 import GuideSynergy from './GuideSynergy.jsx';
 
-function GuidePage(initialVnode) {
+function GuidePage() {
     return {
         oninit(vnode) {
-            const {uid} = vnode.attrs;
+            const { uid } = vnode.attrs;
             vnode.state.uid = uid;
         },
         view(vnode) {
-            const {uid} = vnode.state;
+            const { uid } = vnode.state;
             const guide = guides.getGuideFor(uid, lang.current);
             const details = [];
             const champion = getChampion(uid);
@@ -24,9 +24,9 @@ function GuidePage(initialVnode) {
                 details.push(
                     <ChampionHeader
                         champion={ new Champion({
-                        ...champion.attr,
-                        stars: 0,
-                    }) }
+                            ...champion.attr,
+                            stars: 0,
+                        }) }
                     />
                 );
             }
@@ -79,8 +79,8 @@ function GuidePage(initialVnode) {
                 }
             }
 
-            [1, 2, 3].forEach((index) => {
-                if (guide && guide.specials && guide.specials[index]) {
+            [ 1, 2, 3 ].forEach((index) => {
+                if (guide && guide.specials && guide.specials[ index ]) {
                     details.push(
                         <ChampionSection
                             title={ `${ lang.string('special') } ${ index }` }
@@ -115,17 +115,17 @@ function GuidePage(initialVnode) {
                     title={ lang.string('synergies') }
                     icon="synergy"
                     raw={ forChampion(uid, true).map(({ attr }, index) => {
-                    const isNewGroup = (index > 0) && (!attr.group || attr.group !== lastGroup);
-                    lastGroup = attr.group;
-                    return (
-                        <GuideSynergy
-                            championId={ attr.toId }
-                            effectId={ attr.effectId }
-                            stars={ attr.fromStars }
-                            spacing={isNewGroup}
-                        />
-                    );
-                }) }
+                        const isNewGroup = (index > 0) && (!attr.group || attr.group !== lastGroup);
+                        lastGroup = attr.group;
+                        return (
+                            <GuideSynergy
+                                championId={ attr.toId }
+                                effectId={ attr.effectId }
+                                stars={ attr.fromStars }
+                                spacing={isNewGroup}
+                            />
+                        );
+                    }) }
                 />
             );
             details.push(
@@ -133,13 +133,13 @@ function GuidePage(initialVnode) {
                     title={ lang.string('synergies-external') }
                     icon="synergy"
                     raw={ forChampion(uid, false).map(({ attr }) => (
-                    <GuideSynergy
-                        championId={ attr.fromId }
-                        typeId={ attr.typeId }
-                        effectId={ attr.effectId }
-                        stars={ attr.fromStars }
-                    />
-                )) }
+                        <GuideSynergy
+                            championId={ attr.fromId }
+                            typeId={ attr.typeId }
+                            effectId={ attr.effectId }
+                            stars={ attr.fromStars }
+                        />
+                    )) }
                 />
             );
             if (guide && guide.author) {
@@ -163,6 +163,6 @@ function GuidePage(initialVnode) {
             );
         },
     };
-};
+}
 
 export default GuidePage;

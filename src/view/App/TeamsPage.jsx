@@ -8,7 +8,7 @@ import Icon from '../Icon.jsx';
 import ChampionTeam from '../Champion/ChampionTeam.jsx';
 import ChampionPortrait from '../Champion/ChampionPortrait.jsx';
 
-function TeamsPage(initialVnode) {
+function TeamsPage() {
 
     function results(type, size) {
         const result = teams.result[ `${ type }-${ size }` ];
@@ -44,8 +44,8 @@ function TeamsPage(initialVnode) {
                 <div>
                     <Message
                         icon={(
-                        <Icon icon={ roleIcon(type) } before />
-                    )}
+                            <Icon icon={ roleIcon(type) } before />
+                        )}
                         value={ `${ lang.string(`role-${ type }`) }${ message }` }
                     />
                     { teamDivs }
@@ -57,14 +57,14 @@ function TeamsPage(initialVnode) {
             <div>
                 <Message
                     icon={(
-                    <Icon icon={ roleIcon(type) } before />
-                )}
+                        <Icon icon={ roleIcon(type) } before />
+                    )}
                     value={ lang.string(`role-${ type }`) }
                 />
             </div>
         );
     }
-    
+
     return {
         oninit(vnode) {
         },
@@ -86,6 +86,6 @@ function TeamsPage(initialVnode) {
             );
         },
     };
-};
+}
 
 export default TeamsPage;

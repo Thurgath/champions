@@ -8,12 +8,12 @@ import lang from '../../service/lang';
 import { notify, denotify } from '../../util/notification';
 import ChampionPortrait from '../Champion/ChampionPortrait.jsx';
 
-function RosterAddPage(initialVnode) {
+function RosterAddPage() {
     return {
         oninit(vnode) {
         },
         view(vnode) {
-            const {stars} = vnode.attrs;
+            const { stars } = vnode.attrs;
             const champions = addRosterFilter.getAvailableWithFilter(stars);
             return (
                 <div m="RosterAddPage" class="roster-add">
@@ -50,10 +50,10 @@ function RosterAddPage(initialVnode) {
                                     denotify({ tag: 'roster-empty' });
                                     notify({
                                         message: lang.string('notification-roster-add')
-                                            .replace(/\%stars\%/g, stars)
-                                            .replace(/\%champion\%/g, lang.string(`champion-${ champion.attr.uid }-shortname`, null) || lang.string(`champion-${ champion.attr.uid }-name`)),
+                                            .replace(/%stars%/g, stars)
+                                            .replace(/%champion%/g, lang.string(`champion-${ champion.attr.uid }-shortname`, null) || lang.string(`champion-${ champion.attr.uid }-name`)),
                                         tag: 'roster-add',
-                                        onclick: () => router.route('/roster/:uid/:stars', { uid: champion.attr.uid, stars}),
+                                        onclick: () => router.route('/roster/:uid/:stars', { uid: champion.attr.uid, stars }),
                                     });
                                 }}
                             />
@@ -64,6 +64,6 @@ function RosterAddPage(initialVnode) {
             );
         },
     };
-};
+}
 
 export default RosterAddPage;

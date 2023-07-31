@@ -7,12 +7,12 @@ import BrandIcon from '../BrandIcon.jsx';
 import ImageIcon from '../ImageIcon.jsx';
 import appState from '../../service/appState.js';
 
-function MenuOptions(initialVnode) {
+function MenuOptions() {
     return {
         oninit(vnode) {
         },
         view(vnode) {
-            const {menu, parameters} = vnode.attrs;
+            const { menu, parameters } = vnode.attrs;
             const options = [];
             const tabs = appState().getTabs();
             const currentTab = appState().getCurrentTab();
@@ -20,15 +20,15 @@ function MenuOptions(initialVnode) {
                 <div class="menu-tabs">
                     <MenuOptionGroup
                         options={ tabs.filter((tab) => !tab.isHidden()).map((tab) => (
-                        <MenuOption
-                            info={ tab.getTitle() }
-                            icon={
-                                <Icon icon={ tab.getIcon() } />
-                            }
-                            selected={ currentTab.getId() === tab.getId() }
-                            href={ `/${ tab.getId() }` }
-                        />
-                    )) }
+                            <MenuOption
+                                info={ tab.getTitle() }
+                                icon={
+                                    <Icon icon={ tab.getIcon() } />
+                                }
+                                selected={ currentTab.getId() === tab.getId() }
+                                href={ `/${ tab.getId() }` }
+                            />
+                        )) }
                         tabs="true"
                     />
                 </div>
@@ -43,8 +43,8 @@ function MenuOptions(initialVnode) {
             options.push(
                 <MenuSection
                     icon={
-                    <Icon icon="globe" before />
-                }
+                        <Icon icon="globe" before />
+                    }
                     title="language"
                 />
             );
@@ -54,8 +54,8 @@ function MenuOptions(initialVnode) {
                     <MenuOption
                         selected={ lang.current === id }
                         icon={
-                        <ImageIcon src={ `images/lang/${ id }.png` } icon="flag" before />
-                    }
+                            <ImageIcon src={ `images/lang/${ id }.png` } icon="flag" before />
+                        }
                         raw={ lang.messages[ id ].lang }
                         onclick={ selectLanguage }
                     />
@@ -65,16 +65,16 @@ function MenuOptions(initialVnode) {
             options.push(
                 <MenuSection
                     icon={
-                    <Icon icon="share" before />
-                }
+                        <Icon icon="share" before />
+                    }
                     title="links"
                 />
             );
             options.push(
                 <MenuOption
                     icon={
-                    <Icon icon="bomb" before />
-                }
+                        <Icon icon="bomb" before />
+                    }
                     title="link-kabam"
                     href="https://forums.playcontestofchampions.com/en/discussions"
                 />
@@ -82,8 +82,8 @@ function MenuOptions(initialVnode) {
             options.push(
                 <MenuOption
                     icon={
-                    <BrandIcon icon="wikipedia-w" before />
-                }
+                        <BrandIcon icon="wikipedia-w" before />
+                    }
                     title="link-wikia"
                     href="http://marvel-contestofchampions.wikia.com/wiki/"
                 />
@@ -91,8 +91,8 @@ function MenuOptions(initialVnode) {
             options.push(
                 <MenuOption
                     icon={
-                    <Icon icon="trophy" before />
-                }
+                        <Icon icon="trophy" before />
+                    }
                     title="link-auntm.ai"
                     href="https://www.auntm.ai/"
                 />
@@ -100,8 +100,8 @@ function MenuOptions(initialVnode) {
             options.push(
                 <MenuOption
                     icon={
-                    <BrandIcon icon="github" before />
-                }
+                        <BrandIcon icon="github" before />
+                    }
                     title="link-github"
                     href="https://github.com/hook/champions"
                 />
@@ -110,8 +110,8 @@ function MenuOptions(initialVnode) {
             options.push(
                 <MenuSection
                     icon={
-                    <Icon icon="share-alt" before />
-                }
+                        <Icon icon="share-alt" before />
+                    }
                     title="share-to"
                 />
             );
@@ -119,39 +119,39 @@ function MenuOptions(initialVnode) {
             options.push(
                 <MenuOptionGroup
                     options={[
-                (
-                    <MenuOption
-                        icon={
-                            <BrandIcon icon="facebook-f" before />
-                        }
-                       href={ `http://www.facebook.com/sharer/sharer.php?u=${ escapedUrl }` }
-                    />
-                ),
-                (
-                    <MenuOption
-                        icon={
-                            <BrandIcon icon="twitter" before />
-                        }
-                       href={ `https://twitter.com/share?url=${ escapedUrl }` }
-                    />
-                ),
-                (
-                    <MenuOption
-                        icon={
-                            <BrandIcon icon="pinterest-p" before />
-                        }
-                       href={ `http://pinterest.com/pin/create/link/?url=${ escapedUrl }` }
-                    />
-                ),
-                (
-                    <MenuOption
-                        icon={
-                            <BrandIcon icon="linkedin" before />
-                        }
-                       href={ `https://www.linkedin.com/cws/share?url=${ escapedUrl }` }
-                    />
-                ),
-                ]}
+                        (
+                            <MenuOption
+                                icon={
+                                    <BrandIcon icon="facebook-f" before />
+                                }
+                                href={ `http://www.facebook.com/sharer/sharer.php?u=${ escapedUrl }` }
+                            />
+                        ),
+                        (
+                            <MenuOption
+                                icon={
+                                    <BrandIcon icon="twitter" before />
+                                }
+                                href={ `https://twitter.com/share?url=${ escapedUrl }` }
+                            />
+                        ),
+                        (
+                            <MenuOption
+                                icon={
+                                    <BrandIcon icon="pinterest-p" before />
+                                }
+                                href={ `http://pinterest.com/pin/create/link/?url=${ escapedUrl }` }
+                            />
+                        ),
+                        (
+                            <MenuOption
+                                icon={
+                                    <BrandIcon icon="linkedin" before />
+                                }
+                                href={ `https://www.linkedin.com/cws/share?url=${ escapedUrl }` }
+                            />
+                        ),
+                    ]}
                 />
             );
             return (
@@ -161,6 +161,6 @@ function MenuOptions(initialVnode) {
             );
         },
     };
-};
+}
 
 export default MenuOptions;

@@ -1,6 +1,6 @@
 module.exports = {
   recursive: true,
-  require :  [ './test/test-setup.js', 'test/test-champion-update-setup.mjs' ],
+  require :  './test/test-setup.js',
   ignore : [
     './test/test-**setup*',
     './node_modules',

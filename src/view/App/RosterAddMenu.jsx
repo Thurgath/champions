@@ -1,13 +1,13 @@
-import MenuHeader from '../menu/MenuHeader.jsx';
-import MenuOptionGroup from '../menu/MenuOptionGroup.jsx';
-import MenuOption from '../menu/MenuOption.jsx';
-import MenuSection from '../menu/MenuSection.jsx';
+import MenuHeader from '../Menu/MenuHeader.jsx';
+import MenuOptionGroup from '../Menu/MenuOptionGroup.jsx';
+import MenuOption from '../Menu/MenuOption.jsx';
+import MenuSection from '../Menu/MenuSection.jsx';
 import ClassTypeIcon from '../ClassTypeIcon.jsx';
 import Icon from '../Icon.jsx';
 import TYPES, { typeIcon } from '../../data/types';
 import addRosterFilter from '../../service/add-roster-filter';
 
-function RosterAddMenu(initialVnode) {
+function RosterAddMenu() {
     return {
         oninit(vnode) {
         },
@@ -61,6 +61,6 @@ function RosterAddMenu(initialVnode) {
             );
         },
     };
-};
+}
 
 export default RosterAddMenu;
