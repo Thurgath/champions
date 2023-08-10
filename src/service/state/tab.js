@@ -64,7 +64,7 @@ class Tab {
 
     setHistory(route) {
         const objectWithData = this.getObjectWithData(this._currentSlide);
-        if (objectWithData && objectWithData.addToHistory) {
+        if (objectWithData && objectWithData.addToHistory && objectWithData.addToHistory(route)) {
             this._history = route;
         }
     }

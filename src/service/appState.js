@@ -49,7 +49,7 @@ const appState = stream({
                             return `/guide/${ uid }/edit`;
                         },
                     },
-                    addToHistory: true,
+                    addToHistory: () => true,
                 },
                 'guide-edit':  {
                     menu: GuideEditMenu,
@@ -77,7 +77,7 @@ const appState = stream({
                         icon: 'share',
                         href: '/roster',
                     },
-                    addToHistory: true,
+                    addToHistory: (route) => /add\/\d/.test(route),
                 },
                 'roster-show': {
                     menu: RosterMenu,
@@ -149,7 +149,7 @@ const appState = stream({
             menu: SynergyMenu,
             page: SynergyPage,
             pageMountElement: SYNERGY,
-            addToHistory: true,
+            addToHistory: () => true,
         }),
         new Tab({
             id: GLOSSARY,
