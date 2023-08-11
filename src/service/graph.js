@@ -590,7 +590,6 @@ const fdg = new ForceDirectedGraph({
                 }
             }
             lastSelected = currentSelected;
-            m.redraw();
         }
         else if((!nodes || !nodes.length) && (!edges || !edges.length)) {
             const legend = legends[ fdg.id ];
@@ -598,7 +597,6 @@ const fdg = new ForceDirectedGraph({
                 effect.selected = true;
                 effect.amount = null;
             }
-            m.redraw();
         }
     },
     effectSelected: (effectId) => {
@@ -607,7 +605,6 @@ const fdg = new ForceDirectedGraph({
             effect.selected = effectId === effect.effectId;
             effect.amount = null;
         }
-        m.redraw();
     },
 });
 
@@ -691,7 +688,6 @@ function getGraph(id, championFilter, synergyFilter, useRoster, images) {
         legends[ id ] = legend;
         graphs[ id ] = graph;
         rosters[ id ] = roster.hash();
-        m.redraw();
     }
     return graphs[ id ];
 }
