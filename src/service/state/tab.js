@@ -49,7 +49,7 @@ class Tab {
         return objectWithData.button && {
             icon: objectWithData.button.icon,
             href: objectWithData.button.href instanceof Function ?
-                objectWithData.button.href(Object.values(this._parameters)[ 0 ])
+                objectWithData.button.href(this._history, this._parameters)
                 : objectWithData.button.href,
         };
     }

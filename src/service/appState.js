@@ -85,8 +85,8 @@ const appState = stream({
                     pageMountElement: 'roster-show',
                     button: {
                         icon: 'user-plus',
-                        href: (stars) => {
-                            return `/roster/add/${ stars || 6 }`;
+                        href: (history, parameters) => {
+                            return history || `/roster/add/${ parameters[ 'stars' ] || 6 }`;
                         },
                     },
                 },
