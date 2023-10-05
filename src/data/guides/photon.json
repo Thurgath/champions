@@ -1,0 +1,69 @@
+{
+  "description": "Monica Rambeau was a harbor patrol officer in the Navy when she was bombarded with extra-dimensional energy, allowing her to convert her body mass into any form of energy on the electromagnetic spectrum. She has since led the Avengers (ask her about it) and fought Galactus, going by the names Captain Marvel (before Carol Danvers ever used the title) and Spectrum along the way before settling on Photon.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Living Energy – Always Active",
+        "description": "When Stunned, Photon loses control of her solid form and gains a 100% Untouchable Passive for 2.5 seconds. If an Opponent Misses during this effect, it goes on cooldown for 8 seconds.\n\nPhoton’s altered body composition grants her Immunity to all Bleed and Power Steal effects.\n\nPhoton can trigger the Parry Mastery against non-contact attacks, and all of her attacks deal Energy Damage.\n\nWhenever the Opponent is inflicted with a Debuff, Photon inflicts a non-stacking 80% Petrify Passive for 0.5 seconds.\n\nIf the Opponent has the Willpower Mastery active, it is removed.",
+        "note": "Photon’s Untouchable can be put on cooldown, but she makes it difficult to stick to a normal Parry and combo rhythm. This same ability can also save her against dangerous Stuns.The Petrify Passive ensures Photon gets some mileage even out of Purified Debuffs, and helps mitigate many dangerous Mystic threats despite its short duration.The Willpower removal ensures attackers see her Debuffs as a threat rather than a source of free healing, but can also save an opponent from dying purely due to Willpower Reversal."
+      },
+      {
+        "name": "Electromagnetic Charges – Max Stacks: 25",
+        "description": "Photon gains Electromagnetic Charges in various ways that persist between fights. Max stacks: 25.\n\n+1 Charge when the Opponent is inflicted with a Debuff, or when the Opponent activates a Special Attack.\n\n+4 Charges when causing the Opponent to Miss. Cooldown: 3 seconds.",
+        "note": "This is your primary resource for ramping Photon. As with Captain Marvel (MCU), these persist across fights, allowing Photon to accelerate through a quest board and making her more dangerous after knocking out an Attacker. These charges ramp with any Debuff, including those from Quest Nodes."
+      },
+      {
+        "name": "Pure Light Form",
+        "description": "While at 10 Charges or more, Dodging back and holding Block for 1.2 seconds or being Knocked Down pushes Photon into her Pure Light Form and grants the following effects. This happens automatically at max Charges, or when Photon activates a Special Attack with at least 15 Charges as a Defender.\n\nGain an indefinite Fury Passive for every 5 Charges, each increasing Attack by +1058.5.\n\nPhoton cannot Miss, and personal Debuffs expire 50% more slowly.\n\nPhoton cannot gain Electromagnetic Charges and each Charge lasts 0.9 seconds, falling off one at a time. All effects are removed when Charges fall to zero.",
+        "note": "This is your goal in building charges, and what you should fear on defense (note the next header as well). There are four ways to enter Pure Light Form. Getting to max charges will do it automatically, and either getting knocked down or dodging back and holding block at 10+ charges also does it. These three triggers are the same as for Captain Marvel (MCU). A defending Photon will also enter this mode when activating a Special Attack at 15+ charges, making it a bit harder to ignore the mode altogether.Note that the Furies you gain from this mode are set when you enter it. Sometimes it may be worth it to enter the form early to get earlier access to utility at the cost of reduced damage. Your Debuffs will actually expire more slowly – this isn’t increased duration for new effects, but instead allows any Debuffs already active to stick around for longer as well."
+      }
+    ],
+    "abilities": [
+      "purelightform",
+      "untouchable",
+      "sunder",
+      "overload"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Light is Faster Still (3 hits)",
+      "description": "On activation, inflict a 10% Overload Debuff for 10 seconds. If Pure Light Form is active, inflict a second Overload Debuff. Max stacks: 10.\n\nIn Pure Light Form, the final hit is Passively Unblockable except against Well-Timed Blocks.",
+      "note": "This is your main Special Attack for scaling your damage. Overload (as seen on Dani Moonstar) is the energy form of Trauma, and deals Energy Damage equal to a percentage of recent hit damage when landing a hit or striking into blocks.The last hit being Unblockable is a definite threat, but there is enough of a windup during the first two hits that blocking them and then Parrying the last hit is a real option with some practice."
+    },
+    "2": {
+      "name": "Letting Loose (4 hits)",
+      "description": "The final hit inflicts a Taunt Debuff for 10 seconds.\n\nIn Pure Light Form, this attack is Passively Unblockable, Electromagnetic Charges are paused for the duration, and Photon gains a 100% Untouchable Passive for 3 seconds after the final hit.",
+      "note": "On offense, this Special Attack is particularly helpful for managing tempo. The Taunt keeps the AI throwing specials for you to punish, reduces incoming damage (it has the standard 40% potency), and will last twice as long while benefiting from Pure Light Form’s reduced expiry rate. The Untouchable can also provide you with an easy opening afterwards.On defense, this Special Attack is THE threat. Full screen beam attacks that cannot be blocked (by most champions), cannot Miss, and cannot be avoided with Dexterity are scary, so if you don’t have a plan for dealing with them in some other way (such as Evasion), try to avoid this Special Attack entirely."
+    },
+    "3": {
+      "name": "Microwave Burst Barrage",
+      "description": "Max stacks of Electromagnetic Charges increases by 5 until the end of the fight. This effect can occur 3 times.\n\nIf at or above 20 Charges, gain a non-stacking Regeneration Passive, healing 3370.6 Health over 8 seconds. This Passive pauses for 0.5 seconds when the Opponent is struck.",
+      "note": "This Special Attack is mostly for use in longer fights. It doesn’t grant you Charges itself, but increasing max Charges by 5 means that the next time you enter Pure Light Form, you’ll have an extra Fury, up to a cap of 8 of them after throwing this attack three times.The Regeneration effect on this attack is fairly small by itself, but if you can stay aggressive (and weave in some well-timed strikers) to extend its duration, you can get quite a bit of health out of it."
+    }
+  },
+  "signature": {
+    "name": "The Full Spectrum",
+    "description": "Photon’s improved control over the Electromagnetic Spectrum grants her Immunity to all Neutralize effects.\n\nFor every Debuff on the Opponent, their Block Proficiency is reduced by 752.38 and Photon’s is increased by half as much.\n\nPhoton has a 65% chance to inflict one of her personal Energy Vulnerability Debuffs on the Opponent when struck by or Blocking a Light Attack.",
+    "note": "Immediately upon awakening, Photon becomes fully immune to Neutralize, allowing her to freely parry Wiccan and ignore most of Rintrah’s threats (giving her more time to focus on that massive health pool). The other two bullets scale with Signature Level and significantly improve her offensive and defensive potential. Energy Vulnerabilities both increase Photon’s damage and ramp her towards Pure Light Form. Extra Block Proficiency makes blocking Special Attacks as a way to set up punishing them significantly more sustainable, and reducing her opponent’s makes her more dangerous even for opponents who can block Unblockable Attacks."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/photon/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Basic Attacks",
+        "description": "Photon’s Medium Attacks cannot Miss.\n\nBoth Champions’ first Medium Attack inflicts a 10% Suppression Debuff on Photon’s Opponent for 5 seconds. Max stacks: 2.\n\nPhoton’s first and third Light Attacks inflict a 397.06 Energy Vulnerability Debuff for 10 seconds. Max stacks: 10.\n\nThe first hit of either Champion’s Heavy Attack inflicts a non-stacking Sunder Debuff on Photon’s Opponent for 15 seconds.",
+        "note": "Photon has other ways to counter Miss more completely, but she at least doesn’t have to worry about accidentally intercepting Spidey Supreme, and she can comfortably punish Specials through troublesome Miss abilities.All of Photon’s basic attacks have a powerful Debuff associated with them, and both the Suppression and the Sunder also apply when the Attacker performs those actions! Sunder is particularly helpful against tanky Mystics with resistance to Critical Hits, like Rintrah or Doom."
+      },
+      {
+        "name": "Special Attacks",
+        "description": "While in Pure Light Form, Photon’s Special Attacks cannot be avoided with the Dexterity Mastery.\n\nElectromagnetic Charges pause during the Opponent’s Special Attacks, and for 3 seconds when Photon Punishes the Opponent’s Special Attacks.",
+        "note": "Yup. She turns off Dexterity. This is only during Pure Light Form and only during Special Attacks, but you’ll want a plan for dealing with either the form itself or with these beams that doesn’t rely on that mastery.Offensively, this pause on punishing Special Attacks is your main tool for getting as much mileage out of Pure Light Form as possible, so plan out your openings ahead of time."
+      }
+    ]
+  }
+}

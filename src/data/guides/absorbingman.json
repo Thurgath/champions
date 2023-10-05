@@ -1,0 +1,69 @@
+{
+  "description": "Carl “Crusher” Creel was an American professional Heavyweight boxer turned enforcer. While locked up in prison he was mutated using Asgardian magic by the trickster god Loki using a special potion. Creel then obtained the ability to absorb the properties of anything he touches and used his new-found power to break free from prison and soon became a villain for hire. He was later recruited into the Masters of Evil by Baron Zemo.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Molecular Duplication – Always Active",
+        "description": "A fluid molecular structure grants Absorbing Man 20% Crit Resistance and Immunity to Armor Break and Armor Shattered Debuffs, but reduces his Critical Penetration by 20% flat.\n\nAbsorbing Man is no stranger to brawling with beings of otherworldly resilience. He reduces the duration of his Opponent’s Indestructible, Immortality, Unstoppable, and Unblockable Buffs by 90%.",
+        "note": "Critical Penetration refers to the amount of Armor and Physical and Energy Resistance ignored by critical hits, which for most Champions is 80%. Absorbing Man only ignores 60% of these defenses with his critical hits, but more than makes up for it with the extra burst damage those attacks deal."
+      },
+      {
+        "name": "Omni-Morph Forms",
+        "description": "Absorbing Man’s Special Attacks transform him into powerful altered Forms. He can only be in one Form at a time, and Form changes cannot fail due to Ability Accuracy Modification.\n\nAbsorbing Man starts each fight in his Black Uru Form by default, but can use the Pre-Fight Menu to change this default, which persists until changed again.\n\nBeing struck by a Heavy Attack while recovering from a Special Attack deactivates the current Form, which cannot be deactivated again in this way for 20 seconds.\n\nWhenever a Buff ends on the Opponent or Absorbing Man is Immune to a Debuff, the current Form pauses for 3 seconds.\n\nInterrupting an Opponent’s Basic Attack with a Light Attack pauses the current form for 6 seconds and inflicts a 397.06 potency Vulnerability Passive for 15 seconds. Max Stacks: 5.",
+        "note": "There’s a lot to cover in this section. First, note that his Pre-Fight changes his starting form until used again, so don’t forget which one you have active! His Persistent Charge helps with this: 0 indicates that he will begin in Black Uru, and 1 indicates Magma. Next, remember that “while recovering from a Special Attack” refers to the time while Absorbing Man is still in the special animation and has not yet begun to do something else. This means a heavy needs to land right after the last hit of his Special Attacks to turn off his current Form. This is the same window in which Tigra needs to land her heavy after a special to trigger ruptures. When fighting him as a Defender, try to bait out the Special 1 and 2 in alternation to balance the separate cooldown for deactivating each Form. Lastly, note that “interrupting” refers to landing a hit during the opponent’s animations, which can happen either at the beginning or the end of that animation (if you’re fast enough). This means that landing a light attack after an opponent has thrown their Heavy Attack triggers this potent pause as well! I recommend trying to master this playstyle if you aren’t comfortable with more traditional light intercepts."
+      },
+      {
+        "name": "Refined Forms",
+        "description": "If Absorbing Man would enter a Form that is already active, he instead Refines the Form, refreshing its duration and granting additional benefits.\n\nPersonal bursts of damage benefit from 300% of Absorbing Man’s Critical Damage Multiplier when he lands a Critical Hit and cannot have their Ability Accuracy modified.\n\nSpecial Attacks are Unblockable.\n\nBlocking a hit reduces the Opponent’s Ability Power Rate by 72% until Absorbing Man stops Blocking. The Power denied is transferred to Absorbing Man.",
+        "note": "Entering and maintaining Refined Forms is the key to getting the most out of Absorbing Man. His Critical Damage Rating is relatively low, but has a huge impact on his burst damage when refined. Ignoring Ability Accuracy modification also means that this damage can’t be stopped by Sersi’s glancing or Hercules’s Infuriate. A Special Attack that would refine a form is itself Unblockable, so watch out for this on defense and use it to your advantage on offense! This last ability is similar to Spider-man (Sorcerer Supreme)’s passive ability to siphon the opponent’s power. It’s not a replacement for baiting specials, but used strategically it can provide a powerful edge against opponents like Vision (Aarkus) or nodes like Kinetic Transference."
+      },
+      {
+        "name": "Morph Charges",
+        "description": "When Absorbing Man refreshes or changes Forms, he gains Morph Charges equal to the remaining percentage of his previous Form’s base duration. Max: 600.\n\nWhenever Absorbing Man is Immune to an Armor Break or Armor Shattered Debuff, he gains 90 Morph Charges.\n\nPerforming a Medium, Light, Medium Combo with at least 150 Morph Charges, or activating a Special Attack at max charges, consumes all charges to Refine the current Form and inflict a 30 second Vulnerability Passive with 2250 potency for every 150 charges consumed.",
+        "note": "Morph charges are the payoff for getting to the next Special Attack with time remaining on the current form, whether from Power Gain or from pauses. Note that these scale off a Form’s base duration, so 50 charges equates to 5 seconds left of Black Uru, and to 9 seconds of Magma. Cash these out whenever you get to 150 to refine your form in a hurry and wear away at the opponent’s defenses, or save them up to stack vulnerabilities and do boatloads of damage. Vulnerability is an effect that reduces both physical and energy resistance at the same time, benefitting Absorbing Man in both his primary modes."
+      }
+    ],
+    "abilities": [
+      "buffdurationreduction",
+      "vulnerability",
+      "blackuruform",
+      "magmaform"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Uru Rush",
+      "description": "On activation, enter Black Uru Form for 10 seconds, granting the following benefits:\n\nGain Immunity to all Bleed and Shock effects and +9000 Physical Resistance.\n\nAll attacks deal a burst of 793 Physical Damage.\n\nRefined: Absorbing Man can perform Critical Hits and trigger personal bursts of damage through the Opponent’s Block.",
+      "note": "The Special 1 is how Absorbing Man accesses his physical form, which is also perfect for Hazard Shift – Shock/Bleed nodes. He can take a lot of punishment from most Champions in this form, and deals out quite a bit himself to anyone without physical resistance. When refined, this form allows him to do quite a bit of damage through block as well, so try to avoid letting a defending Absorbing Man throw two unanswered Special 1s in quick succession!"
+    },
+    "2": {
+      "name": "Magma Spin",
+      "description": "On activation, enter Magma Form for 18 seconds, granting the following benefits:\n\nGain Immunity to all Incinerate, Coldsnap, and Frostbite effects and +9000 Energy Resistance.\n\nAll attacks deal Energy Damage instead of Physical, as well as a burst of 793 Energy Damage.\n\nRefined: Contact with the Opponent inflicts an Incinerate Passive, dealing 1387.75 Energy Damage over 1 second.",
+      "note": "The Special 2 is all about energy damage – he takes less of it himself and puts out a lot of it. Note that the hits of his basic and special attacks deal energy damage in this mode, making him a powerful counter to someone like Korg. When refined, this form also applies a brief Incinerate to the opponent when any contact is made at all, including through block. If you expect a defending Absorbing Man to throw a lot of Special 2s, bring an attacker with Immunity to Incinerate!"
+    },
+    "3": {
+      "name": "Forbidden Fruit",
+      "description": "Gain an indefinite Cruelty Passive, increasing Critical Damage Rating by 118.42. If a Refined form is already active, gain a second Cruelty Passive. Max Stacks: 5.\n\nActivate the most recent Form in its Refined state. Pause it for 15 seconds. While this Pause is active, Absorbing Man gains 9000 Critical Rating.",
+      "note": "If you’re having trouble landing heavy attacks for Crit Rating or maintaining Forms to build Morph charges, the Special 3 gives you a significant window where you don’t have to worry about either. By improving your Critical Damage Rating, it will also give a permanent boost to your Critical bursts of damage!"
+    }
+  },
+  "signature": {
+    "name": "Breaker of Wills",
+    "description": "Omni-Morph Forms last 40% longer.\n\nWhen Absorbing Man consumes Morph Charges, he gains a non-stacking Regeneration Passive, healing 30% of his missing Health over 12 seconds. As a Defender, this effect also triggers whenever Absorbing Man enters or refreshes any Form.\n\nPersonal Regeneration effects pause for 3 seconds when Absorbing Man is struck with True Damage and are removed when a form is deactivated early.",
+    "note": "An awakened Absorbing Man has a significantly easier time maintaining and refining his Forms, and will on average build more Morph charges, since that resource only looks at a form’s base (unawakened) duration. The Signature Ability also gives you access to significant healing, and can give you reason to cash out Morph charges more frequently in a fight that involves taking more damage. Note that this Regeneration becomes more potent as he loses health, demanding an answer on defense."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-absorbing-man/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "This attack gains 1840.91 Critical Rating if the Opponent is Stunned as the first hit lands.\n\nThis attack instead gains 20250 Critical Rating if the Opponent is not Stunned as the first hit lands.\n\nActivating a Special Attack after the first hit lands applies this bonus Critical Rating to the entire Special and grants 30 Morph Charges.",
+        "note": "Canceling a Heavy Attack into a Special Attack is the primary way to ensure Absorbing Man lands a lot of critical hits (and therefore critical bursts of damage) at once."
+      }
+    ]
+  }
+}

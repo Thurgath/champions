@@ -46,7 +46,7 @@ const appState = stream({
                     button: {
                         icon: 'pencil',
                         href: (uid) => {
-                            return `/guide/${ uid }/edit`;
+                            return `${ uid }/edit`;
                         },
                     },
                     addToHistory: () => true,
@@ -58,7 +58,7 @@ const appState = stream({
                     button: {
                         icon: 'reply',
                         href: (uid) => {
-                            return `/guide/${ uid }`;
+                            return `${ uid }`;
                         },
                     },
                 },

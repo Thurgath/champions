@@ -1,0 +1,55 @@
+{
+  "description": "William “Billy” Kaplan is the reincarnated son of Scarlet Witch that had been magically created through Chaos Magic but later dispelled. Not long after Billy discovered his powers he was recruited into the New Avengers. Initially he had chosen to name himself after Thor and adopted the super hero identity of the Asgardian, but as he matured as a hero and developed more as his own person he changed his code-name to Wiccan.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always",
+        "description": "Wiccan uses magic on his Basic attacks, causing them to deal Energy Damage instead of Physical.\n\nPhysical Resistance decreased by -964.29.\n\nImmunity to Reversed Controls and Armor Break due his mastery of the Arcane Arts.\n\nWhen struck by True Damage, instantly gain +40% of the Power gained from the Hit.\n\nIf inflicted with a Concussion or Disorient Debuff from a Science Champion, one Personal Passive or Debuff caused by Wiccan is removed.",
+        "note": "While Concussed or Disoriented Wiccan cannot understand what he says and consequently he cannot maintain his Spells."
+      },
+      {
+        "name": "Cantrips",
+        "description": "When Well-Timed Blocked, inflicts a non-stacking Neutralize Debuff of 100% Potency that lasts for 10 second(s).\n\nWhen the Opponent’s ability fails due to reduced Ability Accuracy or Wiccan’s personal Immunities, inflict an Incinerate Debuff, reducing Block Proficiency by 50% and dealing 2702.4 Energy Damage over 10 second(s).",
+        "note": "When fighting against Wiccan, Dexing him after Parrying him will cause the Precision Buff to fail and an Incinerate Debuff will be Inflicted. Parrying him is especially dangerous on Nodes where the attacker gains Buffs."
+      },
+      {
+        "name": "Spells",
+        "description": "Cast a Spell by performing a specific action. As a Defender Wiccan casts a Spell every 10 second(s) following the order below, but this timer resets and moves to the next Spell in order when Wiccan is knocked down, and pauses on his Specials.\n\nShield (Dash back and hold block for 1.2 second(s)): Gain a Resistance Up Passive, increasing Energy Resistance and Physical Resistance by 562.5 for 10 second(s). Max 3 Stacks.\n\nFlame (Medium, Light, Light, Light, Medium): Inflicts an Incinerate Passive, reducing Block Proficiency by 50% and dealing 2702.4 Energy Damage over 10 second(s).\n\nSilence (Medium, Light, Light, Light, Light): Inflicts a non-stacking Neutralize Passive of 100% Potency that lasts for 5 second(s).\n\nArcane Theft (Heavy): Gain a Power Gain passive, granting 1% of Max Power over 10 second(s). Max 10 stacks. Nullifies up to one Fury, Precision, or Power Gain Buff off the Opponent to increase the potency of the Power Gain Passive to 5%.\n\nPause all active Spells and Debuffs for 6 second(s) when casting a Spell that does not exist or activating a Special Attack.",
+        "note": "There is no correct order for Spell activation, each Opponent has different challenges and thus requires different order of Spell activation. With that said,  generally it is a good idea to leave the Shield Spell for last so when the Opponent’s A.I is not cooperating and you are having a hard time to keep the Spells paused, you can cast the Shield Spell to keep the pause going."
+      }
+    ],
+    "abilities": [
+      "resistanceup",
+      "incinerate",
+      "neutralize",
+      "powerefficiency"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Aggressive Teleportation",
+      "description": "On activation gain a Regeneration Buff, recovering 7% of missing Health over 6 second(s). Recovers 100% of missing health caused by Energy Damage from Bursts and damaging Debuffs.\n\nLast 2 hits cast the last casted Spell with duration increased by 8 second(s).",
+      "note": "This Special Attack gives some utility to cast Spells with a bit of a longer duration, but the Offensive use really shines after throwing a Special 2. While Power Efficiency is in effect and the Opponent is inflicted by Shock Debuffs from Special 2, you can trigger Special 1 several times in a very short amount of time and inflict many stacks of Incinerate, which will in turn create Plasmas from the Shocks."
+    },
+    "2": {
+      "name": "Thunder Strike",
+      "description": "All hits inflict a Shock Debuff, dealing 3603.2 Energy Damage over 15 second(s). Inflicting an Incinerate into a Shock, or vice versa, will fuse those two effects into a Plasma that has the property of both, lasting 6 second(s). Plasmas do not pause.\n\nLast hit grants a non-stacking Power Efficiency Buff of 30% Potency, lasting for 3 second(s) plus 3 second(s) per unique Spell active at the beginning of the Special, and pauses during Specials. As a Defender this Buff always lasts 20 second(s).",
+      "note": "In order to get the most of this Special Attack, you need to have at least a couple of Spells active. So the Power Efficiency Buff lasts long enough to be useful."
+    },
+    "3": {
+      "name": "Magical Oppression",
+      "description": "Inflict an Energy Vulnerability Debuff, reducing Energy Resistance by 4178.57 for 20 second(s). Max 2 stacks.",
+      "note": "Since Wiccan’s basic attacks are also Energy based, all his attacks and abilities benefit from this Debuff."
+    }
+  },
+  "signature": {
+    "name": "Spell Mastery",
+    "description": "Resistance Up also allows Wiccan to block Unblockable attacks from Cosmic Champions.\n\nIncinerate effects have a 50% chance to not consume Shock Debuffs when creating a Plasma.\n\nIf the Opponent is Shock Immune, Shocks turn into Degeneration with the same Potency and Duration, but counts as Shocks for Wiccan’s other abilities.",
+    "note": ""
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-wiccan/"
+  }
+}

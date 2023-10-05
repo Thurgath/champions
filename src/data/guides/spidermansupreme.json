@@ -1,0 +1,60 @@
+{
+  "description": "When bitten by a strange spider that crawled out of an ancient artifact, Peter Parker’s psyche was suddenly bound to the power of the Spider-Verse. Under the tutelage of the Ancient One, Peter learned to channel this power into spells and enchantments, and adopted the title of Spider-Man Supreme.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Both Champion’s First Medium Attack grants an indefinite Spider-Seal Buff to the Opponent that has no effect. Max 20.\n\nBursts of Energy Damage, personal Passive effects and Buffs cannot have their Ability Accuracy modified.\n\nEach Unique Buff on the Opponent reduces their Ability Power Rate by 33%. The Power denied is transferred to Spider-Man.\n\nWhen Spider-Seal is nullified or expires, Mystic Dispersion does not grant Power; instead it deals a Burst of 187.13 Energy Damage for every 1% of Power not gained.",
+        "note": "When the Opponent Power is inverted and they are at zero Power, Spider-Man (Supreme) gains no Power, since in this case the Opponent does not gain or lose Power so there is nothing to steal."
+      },
+      {
+        "name": "Blessing of the Astral Form",
+        "description": "When the Opponent gains a Spider-Seal, Unblockable or Unstoppable Buff, Spider-Man gains the Blessing of the Astral Form, causing incoming Attacks to Miss for 3 second(s). Spider-Man can Block while this Blessing is active, unless the Opponent has an Unblockable Buff. This effect cannot be refreshed.\n\nNullifying Spider-Seal Buffs also triggers this Blessing and intercepting the Opponent while this Blessing is active grants 3 Spider-Seal Buffs to the Opponent.\n\nIf a Miss is triggered, this effect goes on Cooldown for 20 second(s), minus 3 per Unique Buff on the Opponent to a minimum of 10 second(s). Unblockable Buff attacks ignore this cooldown.",
+        "note": "When fighting an Opponent that does not gain a lot of Buffs, intercepting them while the Blessing of Astral Form is active is the fastest way to grant Spider-Seal Buffs."
+      },
+      {
+        "name": "Blessing of the Spider-Totem",
+        "description": "When the Opponent gains a Buff, Spider-Man gains a Totem Charge. At 20 Totems, or half as much as a Defender,  he activates the Blessing of the Spider Totem, lasting for 20 second(s) and granting the benefits listed below:\n\nHis own first Medium Attack Nullifies Spider-Seal Buffs instead of granting them, dealing a Burst of 862.98 Energy Damage if a Spider-Seal was Nullified.\n\nGain 2498.1 Attack Rating, Combat Power Rate is reduced by 70%, but gains 25% of Max Power every 9 second(s).\n\nWhen the Opponent gains a Buff, they also gain a Spider-Seal Buff and pause this Blessing for 1 second(s). Pause also triggers when nullifying a Spider-Seal.",
+        "note": "While this Blessing is active, use the first Medium as often as possible in order to deal damage and pause this Blessing, but make sure to leave enough Spider-Seal available to use with Special 2 Attack, where the big bursts of damage comes from."
+      },
+      {
+        "name": "Blessing of the Web",
+        "description": "Heavy Attack grants the Blessing of the Web for 15 second(s). When the Opponent gains Fury, Precision, Cruelty, Armor Up, Regeneration or Pierce Buffs, Spider-Man gains the same Buff with its listed Potency and duration.\n\n20% Potency Fury, Precision, Cruelty, Armor Up, and Pierce, and Regeneration, granting 2.2% of Max health.  All Buffs last 10 second(s).\n\nAs a Defender, gain this Blessing every 15 second(s) unless struck by a Heavy Attack.",
+        "note": "This ability is a bit niche but very powerful against specific Champion and Nodes."
+      }
+    ],
+    "abilities": [
+      "spider-seal",
+      "miss",
+      "spider-blessings",
+      "powergain"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Arcane Webbing",
+      "description": "Each hit grants 1 Spider-Seal Buff to the Opponent.\n\nBlessing of the Web: Last hit inflicts the Curse of the Web, reducing the Potency of Fury, Precision, Cruelty, Armor Up, Regeneration and Pierce Buffs by 95% for 20 second(s).",
+      "note": "When fighting Opponents that don’t gain a lot of Buffs, the Special Attack 1 is the easiest way to grant Spider-Seal Buffs. However, when fighting an Opponent that gains lots of Buffs, inflicting the Curse of the Web will keep those Buffs under control."
+    },
+    "2": {
+      "name": "Spider’s Wrath",
+      "description": "Last 3 hits deal 1703.25 Energy Damage.\n\nBlessing of the Spider Totem: Each hit Nullifies 1 Spider-Seal Buff and deals a burst of 2225.58 Energy Damage per Buff nullified.\n\nBoth of these effects go through the Block.",
+      "note": "Special 2 is where the damage is but you need to have the Blessing of the Spider Totem active to make the most of this Special Attack."
+    },
+    "3": {
+      "name": "Web Dimension Magic",
+      "description": "Inflict a Root Passive for 4 second(s). Rooted Champions cannot move, but can still Attack, Block and Dodge. Activating a Special Attack removes Root and prevents it from applying.\n\nWhile the Opponent is rooted, any contact Power Steals for 2% of the Opponent’s current Power, gains 100% of the Power stolen, and any contact grants Spider-Seal Buffs to the Opponent.",
+      "note": "This Special Attack is particularly useful to grant tons of Spider-Seal Buffs to the Opponent, but it also synergizes really well with Spider-Man Power Gain stealing ability, granting him tons of stolen Power."
+    }
+  },
+  "signature": {
+    "name": "Arachnomancy",
+    "description": "Blessing of the Astral Form: Gain 15% of Max Power when its cooldown triggers.\n\nBlessing of the Spider Totem: Increases the Potency of Bursts of Energy Damage by 50%.\n\nBlessing of the Web: Increase the Potency of granted Buffs by 50%.",
+    "note": ""
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-spider-man-supreme/"
+  }
+}

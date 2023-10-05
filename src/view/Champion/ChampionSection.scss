@@ -124,6 +124,17 @@
         padding: 16px 16px 0;
     }
 
+
+    .champion-section-button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5em;
+        .champion-section-button {
+            @extend .button--default;
+        }
+    }
+
     @media print {
         background: rgba(255, 255, 255, 0);
         box-shadow: none;

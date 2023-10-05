@@ -1,0 +1,65 @@
+{
+  "description": "To many she is known as the daughter of Vision, the lone survivor of the synthezoid’s attempt to literally build himself the perfect family. But to her teammates, the Champions, she is a powerful ally, a tactician of unparalleled efficiency, and a trusted friend. She possesses all of her father’s powers, such as solar radiation absorption and projection, a computer consciousness, and the ability to manipulate her density at will. Viv’s potential is limited only by her age and experience and, given her ability to learn and grow like a human, there is no telling how powerful she may yet become.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Synthetic Anatomy – Always Active",
+        "description": "Advanced robotics provide full Immunity to Poison and Bleed. Additionally, while she has an Armor Up effect, Viv is Immune to Nullify and Fateseal.\n\nViv starts each fight with 16 indefinite Armor Up Buffs, each increasing her Armor Rating by 171.96. If any are removed, they restore themselves one at a time, each taking 10 seconds.\n\nIf a Medium or Light Attack strikes Viv, she Power Drains 6% of the Opponent’s current Power.",
+        "note": "Viv has the standard immunities of a Robot, as well as immunities designed to protect her many many Armor Up Buffs from wayward Mystic Dispersion triggers. More importantly, striking Viv with certain basic attacks results in the offender being Power Drained. This is important, because if you only use 5-hit combos against Viv, you will never gain two Bars of Power. This can be bypassed by using Heavy Attacks or by bringing Champions who gain Power over time or have a higher than normal Combat Power Rate."
+      },
+      {
+        "name": "Solar Energy – Max Stacks: 15",
+        "description": "Viv starts each fight with 1 Solar Energy. Every 4 seconds she gains another if she has less than 5.\n\nWhen a stack of Solar Energy is consumed for any reason, Viv instantly gains 10% of a Bar of Power.\n\nViv’s Light Combo Enders consume 1 Solar Energy to inflict a non-stacking 32% Suppression Debuff for 1.7 seconds, paused while Viv is using a Special Attack or not attacking.\n\nViv’s Medium Combo Enders consume 1 Solar Energy to inflict a Heal Block Passive for 6 seconds, paused while Viv is attacking.",
+        "note": "Solar Energy is the lifeblood of Viv’s kit. It fuels her Suppression, Heal Block, and the damage on her Special 1. Consumption of it restores Viv’s ability to Phase and accelerates her towards her Special 2. It generates at a fairly fast rate, but be careful not to perform actions too quickly, as you might run out and be unable to refresh your Phase. Viv rewards methodical, calculated gameplay, so measure the tempo of your strikes and you should be fine."
+      },
+      {
+        "name": "Phasing",
+        "description": "When Viv would perform a Well-Timed Block, she has a 125% chance to instead gain a Phase Passive for 1 second, causing the incoming attack to Miss. This ability can’t be used again until Viv consumes Solar Energy.\n\nWhen an attack Misses Viv, she instantly Power Drains 30% of the Opponent’s current Power. This can only happen once each time she Phases.",
+        "note": "Simple and powerful, this ability takes some getting used to, since it effectively replaces the Parry action. But once you get the hang of it, it’s a very powerful tool, since it completely negates chip damage and bypasses Unblockable, Stun Immunity, and Limber. It lasts just long enough to throw a Heavy Attack so make sure to take advantage of that."
+      }
+    ],
+    "abilities": [
+      "powerdrain",
+      "suppression",
+      "healblock",
+      "phasing",
+      "incinerate"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "",
+      "description": "While the Opponent has less than 1 Bar of Power this attack is Passively Unblockable and generates no Power for the Opponent. These effects go on cooldown for 20 seconds if Viv is struck by a Special Attack 2 or 3.\n\nEach hit consumes 1 Solar Energy to inflict an instant Incinerate dealing 6237 Energy Damage. Against Mutants, inflict an instant Plasma instead. As a Defender this scales with Base Attack only.",
+      "note": "Remember that since each Incinerate/Plasma consumes Solar Energy, this attack actually refunds Power, meaning you can throw multiple Special 1’s with very little time in between, provided you have enough Solar Energy to fuel it. Keeping the Opponent under a Bar of Power will make it very easy to chain the attack this way."
+    },
+    "2": {
+      "name": "",
+      "description": "On activation, Viv converts up to 3 of her personal Armor Ups into Solar Energy.\n\nTapping the Block Input just before a hit converts up to 3 personal Armor Ups into Solar Energy and deals a burst of 948.02 Energy Damage, multiplied for each prior burst.",
+      "note": "This is the only way in the kit for Viv to surpass the limits of her regular Solar Energy. Before each hit in this attack, time slows down as Viv’s computer reflexes kick in. Tapping the Block input (tapping the left side of the screen) during these periods of time triggers the Armor Up conversion. You can get enough Solar Energy by hitting 4 out of 5 of the windows, but it’s still generally worth aiming for all of them due to the extra burst damage. If the clock isn’t on your side, and you don’t need all of the Solar Energy, you can rapidly tap in order to opt out of the windows. My recommendation is to wait until you have 2.9 Bars of Power to throw this Special so that you can easily get to Special 1 immediately after. If you are super precise, you can even throw this Special right as you consume Solar Energy from a Medium or Light Combo Ender so that the Power Gain pushes you over 1 Bar of Power."
+    },
+    "3": {
+      "name": "",
+      "description": "Grants an indefinite, non-stacking Fury Buff increasing Attack Rating by 1039.5.\n\nWhile this Buff is active, Viv has +75% Ability Accuracy and Immunity to Reversed Controls.",
+      "note": "This attack grants access to some pretty neat utility. The Fury isn’t intended to actually add to Viv’s DPS all that much, but rather to make up for a bit of the DPS lost on the way to activating it. It does increase her damage reach in long fights slightly."
+    }
+  },
+  "signature": {
+    "name": "Proteinoid Android",
+    "description": "While Viv has more than 5 Solar Energy, the amount of Power gained from consuming it is increased by 10% flat.\n\nCompleting a 5-hit Combo inflicts a dormant Energy Vulnerability. Max Stacks: 5.\n\nEach of Viv’s Special Attack 1 hits replaces a dormant Energy Vulnerability with an Energy Vulnerability Debuff reducing the Opponent’s Energy Resistance by 562.29 for 15 seconds.",
+    "note": "Viv’s Sig is fairly important to her in that it not only increases her damage potential, but also increases the rate at which she can throw Special 1’s. You’ll have to be smart about when to throw in the 5-Hit Combos, and going for all 5 Energy Vulnerabilities will probably mean you’ll need to contend with at least one Special 1 from the Defender, but the extra damage is absolutely worth it. You can also equip various other Power Control options to Viv to make 5-Hits even easier."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-viv-vision/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "The first hit removes up to 3 Prowess from the Opponent. If any Prowess was removed this way, Viv gains 1 Solar Energy.\n\nThe final hit consumes 1 Solar Energy to inflict a burst of 5405.4 Energy Damage, increased by 33% for each Prowess removed by the first hit.",
+        "note": "Viv’s Heavy Attack is also her source of Prowess control. Remember that when this ability consumes a Prowess, it also refreshes her Phase ability."
+      }
+    ]
+  }
+}

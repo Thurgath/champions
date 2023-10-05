@@ -1,0 +1,59 @@
+{
+  "description": "Former leader of the mighty Valkyrior, and recently crowned sovereign of New Asgard, Brunnhilde has long been a bastion to the Asgardian people against the evils of the Nine Realms. Possessing superior strength (even among Asgardians) and armed with the powerful weapons, training, and tactics of the Valkyrior, she is an excellent leader, and a steadfast warrior. Her conviction, though scarred by loss, is stronger than ever, and she is ready and willing to protect the Asgadians of the Battlerealm.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Valkyrie gains +1 Combo Meter when striking into an Opponent’s Block, as well as 1.1% of her Max Power.\n\nWhen striking into her Opponent’s Block with 3 or more active Pierce effects, her mythical sword Dragonfang cuts through their defenses to inflict an instant Bleed dealing them 3152.8 Direct Damage, scaling with her Block Penetration.\n\nWhen afflicted by a Non-Damaging Debuff, Valkyrie’s conviction gives her up to a 90% chance to Purify it, scaling with her Block Proficiency.\n\nValkyrie starts the fight with an indefinite passive Combo Shield that, when struck, prevents her from losing Combo for 3 seconds before falling off. As a Defender, this Shield does not fall off when struck while below 11 Combo.",
+        "note": "It’s important to remember that Valkyrie still builds Combo and Power while hitting her Opponent’s Block. While this won’t allow her to outpace her Opponent’s Defensive Combat Power Gain, it can be hugely advantageous to deal numerous hits, position her Combo Meter, and gain bits of Power, all while not increasing your Opponent’s Power by all that much."
+      },
+      {
+        "name": "Combo Meter",
+        "description": "Performing Valkyrie’s Light Combo Ender inverts her Combo Gain. While inverted, any time the Combo Meter would increase or decrease by any amount, it changes by the opposite amount instead, excluding Combo lost when struck. This ability is unaffected by Ability Accuracy.\n\nPerforming her Medium Combo Ender reverts her Combo Gain back to normal. It is also reverted at any time her Combo is less than 3.\n\nWhenever Valkyrie’s Combo Meter rises past a multiple of 10, she gains an indefinite Pierce Buff of 1321.43 potency. Maximum of 3.\n\nWhenever Valkyrie’s Combo Meter drops past a multiple of 10, she gains an indefinite Bulwark Buff, granting 750 Block Proficiency. Maximum of 3.\n\nWhen a Pierce or Bulwark Buff is replaced, consumed, or expires off of Valkyrie for any reason, she gains a Passive version of that Buff with double the original potency for 5 second(s).",
+        "note": "Finding the most optimal path to manipulating your Combo Meter is integral to maximizing Valkyrie’s potential. If you just simply keep increasing your Combo, you will gain a Buff every 10 hits, but if you continually switch to and from inversion and oscillate your Combo over a multiple of 10, you will gain a Buff every 5 hits instead, effectively halving the time it takes to get to Valkyrie’s Buff cap. This is important, as her Special 2 damage scales with the total number of Buffs and Passives she has."
+      }
+    ],
+    "abilities": [
+      "pierce",
+      "bulwark",
+      "purify",
+      "intimidate"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Dragonfang Dance",
+      "description": "Combo Gained during this attack is doubled.\n\nOn activation, grants 3 dormant Evade charges. Max. 4. Hitting the Opponent’s Block with a Combo Ender or the final hit of a Special Attack activates one of the charges, allowing Valkyrie to passively Evade one attack within the next 1 second(s), after which the charge expires.",
+      "note": "This is a great way to accelerate gaining your Buffs. Not only does it net you 10 Combo right off the bat, but the Evade Charges it grants allow you to perform Combo Enders safely into the Opponent’s Block, meaning your loop doesn’t need to slow down even when the AI isn’t cooperating."
+    },
+    "2": {
+      "name": "Flurry of Blades",
+      "description": "On Activation, gain a Fury Passive lasting 13 seconds and granting 1126 Attack Rating for each active Pierce and Bulwark effect. Hits into the Opponent’s Block gain double this Attack Rating increase.\n\nWhile this Fury is active, Valkyrie’s Pierce and Bulwark effects are paused.",
+      "note": "Combining this move with her Heavy is the biggest damage opportunity in Valkyrie’s kit. With the Opponent Intimidated and the Passives gained from the Heavy paused, every hit of this Special, as well as the next Combo, is nearly guaranteed to be into the Opponent’s Block, which equals absolutely massive damage. Keep in mind that this damage boost scales off of Pierce and Bulwark effects, including one’s outside of Valkyrie’s kit, so look for opportunities to use her on Nodes where she gets them for free."
+    },
+    "3": {
+      "name": "Rise of the Valkyrie",
+      "description": "Inflicts an Intimidate Debuff, making the Opponent more defensive and reducing their Block Proficiency by 40 for 10 second(s).\n\nValkyrie gains another of her personal Combo Shields and 3 dormant Evade charges.",
+      "note": "A great way to reset and get some breathing room, as Intimidated Opponents are far less likely to attack you."
+    }
+  },
+  "signature": {
+    "name": "King of New Asgard:",
+    "description": "While Valkyrie has at least 1 Pierce effect(s) active (rounded up), Unstoppable Opponents react to hits as though they weren’t.\n\nWhile Valkyrie has at least 1 Bulwark effect(s) active (rounded up), she is immune to Stun Debuffs.",
+    "note": "Big investment, big payoff. At Sig 1, these abilities are turned on while you have 4 of the required effect. As the Sig level increases, the number of buffs required decreases At max Sig, it only takes a single Pierce or Bulwark effect to activate the corresponding effect. Look for Nodes that give you one of these for free to get ahead of the game."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-valkyrie/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "The final hit of this attack consumes all of Valkyrie’s Pierce and Bulwark Buffs, and inflicts an Intimidate Debuff on the Opponent, making them more defensive and reducing their Block Proficiency by 20, and lasting 1.2 second(s) for each Buff consumed this way.\n\nThis attack grants Valkyrie no Power.",
+        "note": "Use this attack immediately before a Special 2 to set yourself up to lay some serious hurt on the Opponent! Provided you have 3 of each Buff, you will inflict the Opponent with an Intimidate that will last just long enough to throw your Special 2 into and then follow up with a Medium Attack. This will also do double duty as a way to consume your Buffs and transform them into double potency Passives, driving your Block Penetration through the roof and empowering your instant Bleeds."
+      }
+    ]
+  }
+}

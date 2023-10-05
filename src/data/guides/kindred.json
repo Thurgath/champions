@@ -1,0 +1,61 @@
+{
+  "description": "The result of a cruel plot to torment Peter Parker with the sins of his past, Gabriel and Stacy Osborne were spliced from the DNA of Harry Osborne and Gwen Stacy, and raised by an artificial intelligence designed by Norman and Harry. The twins rapidly aged and then died due to a genetic instability, but were resurrected and given demonic powers by Mephisto to carry out the twisted revenge plot they had inherited. As Kindred, they wield demonic strength, immortality, control over pestilence, and dream manipulation to break Peter Parker’s spirit and exact Harry’s revenge.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Kindred is a being forged in the flames of hell and feels nothing but contempt. They are Immune to Poison, Incinerate, Heal Block, Infuriate, and Intimidate effects.\n\nCentipede Strikes inflict an Atrophy Passive reducing the duration of any new Buffs by 30% for 8 seconds. Max stacks: 3.",
+        "note": "Kindred’s Centipedes Strike are found in Light Attack 4, Medium Attacks, Heavy Attack, the first hit of Special Attack 1, and the first and final hits of Special Attack 2."
+      },
+      {
+        "name": "Infestation Charges – Max Stacks: 50",
+        "description": "The Opponent is inflicted with an Infestation Charge every 2.50 seconds.\n\nInflict 1 Infestation Charge when a Buff expires off the Opponent or they make contact with Kindred.\n\nAs a Defender, when Kindred is struck by Special Attacks while attacking, inflict 10 Charges.\n\nIf Kindred is struck while recovering from a Special Attack, Infestation Charges pause for 8 seconds and cannot be inflicted. 14 seconds against #Spider-Verse Heroes.",
+        "note": "Infestation charges don’t do anything on their own, but they cannot be prevented from ticking up unless Kindred is struck while recovering from a Special Attack."
+      },
+      {
+        "name": "Nightmare Outbreak – At 50 Infestation Charges",
+        "description": "Inflict Nightmare Outbreak for 18 seconds.\n\nNearby Opponents are inflicted with a Degeneration Passive every 0.55 seconds, each dealing 333.8 Direct Damage per second, scaling with Base Attack only. Max stacks: 5. Once the opponent is out of range, they lose 1 Degeneration Passive every 0.2 seconds.\n\nWhile Kindred’s personal Degeneration effects are on the Opponent, Kindred Regenerates 0.75% of missing health every 0.5 seconds.\n\nInflicting 5 or more Infestation Charges at once by landing Special Attacks inflicts instant Degenerations, dealing a burst of 1570.8 Direct Damage per Passive Degeneration on the Opponent and pauses Nightmare Outbreak for 2 seconds.\n\nIf Kindred is struck by a Heavy Attack, Nightmare Outbreak expires 70% faster. All Infestation Charges are consumed when Nightmare Outbreak expires.",
+        "note": "This is the main damage dealer and threat of Kindred’s kit. Be sure to stay aggressive when Nightmare Outbreak triggers. Special Attacks will pause Nightmare Outbreak, so be sure to take advantage of the Mystic Dispersion mastery for the extra Power and keep the Special Attacks coming."
+      },
+      {
+        "name": "Dread Aura",
+        "description": "Charging a Heavy Attack consumes 30% of a Bar of Power to activate Dread Aura for 6 seconds. Kindred fights more aggressively while Dread Aura is active. Dread Aura is not affected by Ability Accuracy.\n\nAs a Defender, every 25% of Max Health Kindred loses, Dread Aura triggers at no Power cost to Kindred.\n\nKindred gains Stun Immunity.\n\nInfestation Charges are inflicted every 0.75 seconds and the amount of Charges inflicted is doubled.",
+        "note": "Dread Aura accelerates the speed at which Infestation Charges accumulate on the opponent. Be sure to use this whenever the opportunity to use a Heavy Attack presents itself."
+      }
+    ],
+    "abilities": [
+      "atrophy",
+      "degeneration",
+      "lifesteal",
+      "powersteal",
+      "stunimmune"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Encroaching Pestilence",
+      "description": "The final hit inflicts 5 Infestation Charges. This can trigger through Block.\n\nThe final hit inflicts a Degeneration Debuff dealing 3141.6 Direct Damage over 14 seconds.\n\nNightmare Outbreak: While this Debuff is active, Passive Degenerations are prevented from falling off.",
+      "note": "This attack can be used to keep any Passive Degenerations that build up on the opponent and prevent them from falling off even if Kindred is far from the opponent."
+    },
+    "2": {
+      "name": "Centipede Assault",
+      "description": "The first and final hits inflict 5 Infestation Charges.\n\nDread Aura: During this Attack, Power Steal 6% of a Bar of Power per second. Gain 150% of the Power Stolen.",
+      "note": "Activating Dread Aura before this attack to make the most of it. Doing so will line up a follow up Special 1 after this Attack lands."
+    },
+    "3": {
+      "name": "Bad End",
+      "description": "This attack gains 5890.5 Attack Rating.\n\nIf the Opponent suffers from Nightmare Outbreak this attack gains an additional 6872.25 Attack Rating.",
+      "note": "This Special Attack deals a huge amount of burst damage. Be sure to use this to close out fights when your opponent’s health is low."
+    }
+  },
+  "signature": {
+    "name": "Nightmare’s Resurrection",
+    "description": "Up to +80% Degeneration Potency based on Missing Health.\n\nOnce per fight at 5% Health, inflict a Root Passive for 6 seconds. If triggered during an Opponent’s Special Attack, this Root triggers when that Special Attack ends. Kindred is prevented from being knocked out while this Root Passive is active or attempting to activate.\n\nUpon activating this ability, activate Dread Aura at no Power cost. If at or above 30 Infestation Charges, inflict Nightmare Outbreak.",
+    "note": "This Root ability is activated at the exact moment the opponent thinks they have defeated Kindred. This is exactly when Kindred is the most powerful, and can quickly claw back the fight if the opponent is not careful. If Nightmare Outbreak is currently active at this moment, Kindred will Regenerate a good amount of health to mount a come-back."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/kindred/"
+  }
+}

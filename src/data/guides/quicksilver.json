@@ -1,0 +1,63 @@
+{
+  "description": "Pietro Maximoff and his sister were abducted by the High Evolutionary as babies and suffered a series of unethical experiments that granted them powers disguised as an X-Gene mutation. As a result he developed Super Speed powers that allowed him to take on the super hero life.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always",
+        "description": "100% chance to Evade attacks when Dashing or while Stunned. This ability has a 15 second(s) cooldown. Guaranteed Critical Hits ignore this Evade and triggers the cooldown.\n\nWhen Dodging Back, Quicksilver cannot be struck by Attacks. Whenever he successfully dodges an Attack, he inflicts a Wither Debuff of 35% Potency lasting 10 second(s). Max 3. Dexterity Mastery is replaced, but points in it increase the potency by 5% flat.\n\nWhen the Opponent loses a Bar of Power, pause all Trauma and Wither Debuffs for 10 second(s).",
+        "note": "Quicksilver does not gain the Dexterity Mastery, if you have the Mastery it simply makes his Wither stronger. This means he never gains any personal Buffs, not even from the Dexterity Mastery."
+      },
+      {
+        "name": "Whiplash",
+        "description": "Basic Attacks have a 35% chance to inflict a Whiplash Debuff, dealing 2223 damage after 12 second(s). Dodging an Attack and Second Medium refreshes Whiplash.\n\nThe Medium, Light, Medium Combo or reaching 50 stacks of Whiplash causes all stacks to expire and burst into damage after 2 second(s). Delay pauses during the Opponent’s Specials.\n\nWhen Quicksilver would Evade or when the Opponent Dodges an Attack, 50% chance to inflict a Whiplash Debuff.\n\nWhen the Opponent Well-Timed Blocks, one Whiplash is removed.\n\nDeveloper’s Note: For the most part, the best way to maximize the damage is to reach max Stacks of Whiplashes and let them explode on their own.",
+        "note": ""
+      },
+      {
+        "name": "Momentum",
+        "description": "Dodging Backwards grants 12 Momentum Charges, and basic hits grant 1 Charge.\n\nAs a Defender, gain 100 Charges every 15 second(s) unless the Attacker gains 20 Hits in the Combo Meter by the end of this duration.\n\nEvery100 Charges reduces Evade cooldown by 1 second(s).\n\nAt 300 Charges, Quicksilver cannot Miss and inflicts a Slow Debuff.\n\nAt 600 Charges, he can trigger the Parry Mastery against non-contact Attacks and his Evade Ability Accuracy cannot be reduced.\n\nAt 900 Charges enter Terminal Velocity Mode, increasing the Dodge invulnerability window by 33.33% and retaining all Momentum abilities for 10 second(s). While active, gaining Charges instead pauses Terminal Velocity for 0.25 second(s).",
+        "note": "All of Quicksilver’s utility is locked behind Momentum, so you want to build this up as fast as you can. Additionally, Quicksilver can build up Momentum without giving Power to the Opponent by Dodging back many repeatedly."
+      }
+    ],
+    "abilities": [
+      "evade",
+      "wither",
+      "whiplash",
+      "terminalvelocity"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Hypersonic Trampling",
+      "description": "On activation, gain 150 Momentum Charges.\n\nLast hit refreshes all stacks of Wither and Whiplash.\n\nTerminal Velocity: Attack Rating is increased by 3334.5 and attacks become Unblockable except against Well-Timed Blocks.",
+      "note": "Special 1 is the fastest way to build up Momentum in most fights."
+    },
+    "2": {
+      "name": "Beat Down",
+      "description": "First hit inflicts a Trauma Debuff for 15 seconds, Trauma causes hits and Whiplashes to deal an additional 70% of the damage recently dealt as burst Physical Damage.\n\nTerminal Velocity: Terminal Velocity and Whiplash are paused during this Special and the last hit doubles the amount of Whiplashes on the Opponent.",
+      "note": "In order to get the most damage possible from Quicksilver, you want to get as close as possible to 50 stacks of Whiplash, at least 25, and throw a Special 2 while at Terminal Velocity. This way you will get the most amount of Whiplashes as possible, and at the same time you will be taking advantage of the Trauma that increases the Whiplash damage."
+    },
+    "3": {
+      "name": "I am Speed",
+      "description": "Gain 900 Momentum Charges. For every 120 Charges gained above maximum, Terminal Velocity is paused for 1 second, up to a maximum of 15 seconds.\n\nTerminal Velocity: Inflict a Stun Debuff for 6 second(s). Whiplash Ability Accuracy is increased by 40% flat and max stacks before it bursts doubles until Terminal Velocity expires."
+    }
+  },
+  "signature": {
+    "name": "Spell Mastery",
+    "description": "Terminal Velocity duration increases by 5 second(s), and Wither max Stacks increase by 3.\n\nWhen 60 stacks or more of Whiplash expire at the same time, inflict a Stun Debuff for 5 second(s).\n\nWhile the Opponent is suffering from a personal Stun, their Combat Power Rate is reduced by 50% and striking the Opponent with Light and Medium attacks locks them in place and increases Quicksilver’s Speed.",
+    "note": "The Signature Ability allows stacking enough Wither to gain lots of control in a Power Gain fight, but keep in mind that you may have to trigger the Debuff pause to make full use of Wither. Additionally, personal Stuns cause the Opponent Combat Power Rate to reduce, allowing you to punish them extra hard without fear of easily pushing them to 3 bars of Power."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-quicksilver/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "Double Momentum Charges gained for 20 second(s).",
+        "note": "In order to build up Momentum as fast as possible you need to be sure to always have this effect active."
+      }
+    ]
+  }
+}

@@ -65,6 +65,7 @@ function GuideEditPage() {
                     rating={ gameplay && guide.gameplay.rating || true }
                     description={ gameplay && guide.gameplay.description || true }
                     abilities={ gameplay && guide.gameplay.abilities || true }
+                    sections={ guide.gameplay.sections }
                     note={ gameplay && guide.gameplay.note || true }
                     onEdit={ (key, value) => editGuide(uid, [ 'gameplay' ], key, value, vnode) }
                 />
@@ -80,6 +81,7 @@ function GuideEditPage() {
                     damagetypes={ attack && guide.attack.damagetypes || true }
                     abilities={ attack && guide.attack.abilities || true }
                     note={ attack && guide.attack.note || true }
+                    sections={ guide.attack && guide.attack.sections }
                     onEdit={ (key, value) => editGuide(uid, [ 'attack' ], key, value, vnode) }
                 />
             );

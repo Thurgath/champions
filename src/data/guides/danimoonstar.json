@@ -1,0 +1,58 @@
+{
+  "description": "Dani is a prominent member and occasional leader of the New Mutants. She’s a proud member of the Cheyenne people and a Mutant who manifested powers of illusions as a teenager. Originally she struggled with her illusion-based powers because they would only manifest as other people’s greatest fears. Now she has mastered her abilities by channeling them into powerful Neural Arrows as she fights for Mutantkind with the X-Men.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Illusion",
+        "description": "When either Champion’s Combo Meter passes a multiple of 10, gain a non-stacking indefinite Illusion. The Illusion is lost when Knocked Down.\n\nGain an Illusion when inflicted with Disorient, Fragility, or Intimidate. Dani will attempt to regain illusion every 10 seconds if illusion is consumed while suffering from these effects.\n\nBlocking a Basic Attack consumes an Illusion to inflict a 150% Falter Passive. This Falter lasts 2.5 seconds, is not affected by Ability Accuracy Reduction, and is paused during Dani’s Special Attacks.",
+        "note": "Dani’s powers of Illusion do more than allow her to avoid damage, she builds one of two resources each time she or the Opponent attacks while the Falter is up."
+      },
+      {
+        "name": "Neural Arrows – Max Stacks: 5",
+        "description": "When the Opponent Misses, gain an indefinite Neural Arrow. As a Defender, hitting the Opponent’s Block while Dani has an Illusion also grants a Neural Arrow.\n\nFor each Neural Arrow, the final hit of Dani’s Special Attacks inflicts a Neuroshock Debuff dealing 3448.8 Energy Damage over 8 seconds. All Neural Arrows are removed at the end of Dani’s Special Attacks.\n\nWhile Neuroshock is active, Skill Champions cannot Heal.",
+        "note": "Each Neural Arrow allows Dani to increase her damage potential throughout the rest of her kit. Additionally, on top of the Energy Damage, her Neuroshock Debuffs prevent Dani from Missing."
+      },
+      {
+        "name": "Prowess Effects – Max Stacks: 5",
+        "description": "Unless otherwise stated, Dani’s Prowess effects are indefinite and have 15% potency. If her Prowess effects fail to trigger or are removed by the Opponent, gain a Neural Arrow.\n\nGain a Prowess Buff when Faltering the Opponent, and one more each time Dani strikes a Faltered Opponent. As a Defender, striking the Opponent while Dani has an Illusion also grants a Prowess Buff.\n\nActivating a Special Attack with Neural Arrows removes all personal Prowess Buffs and replaces them with Prowess Passives. All personal Prowess effects are removed at the end of the Special Attack.\n\nAll personal Prowess Passives gained during Special Attacks gain 80% potency for each Neural Arrow.",
+        "note": "Each Neural Arrow Dani has allows her to increase the potency of her Prowess effects dramatically when they are converted into Passives. Try throwing a Special while the Opponent is Faltered to build extra Prowess Buffs on each hit of the attack."
+      }
+    ],
+    "abilities": [
+      "falter",
+      "prowess",
+      "energyvulnerability",
+      "unblockable",
+      "slow",
+      "overload",
+      "neuroshock"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Psyche",
+      "description": "On the first hit, inflict a Slow Passive for 20 seconds.\n\nJust before the final hit, gain an Unblockable Passive lasting 1 second for each Neural Arrow.\n\nThe final hit inflicts a non-stacking 2250 Energy Vulnerability Passive for 30 seconds.",
+      "note": "This Slow Passive is great for dealing with slippery Skill Opponents who would normally be Purifying the effect if it were a Debuff. Watch out for that Unblockable on the last hit, it can be tricky to avoid if you’re not ready for it. The Energy Vulnerability inflicted on the final hit is key to getting the most damage out of Dani’s loop by throwing her Special 2 while it is still active."
+    },
+    "2": {
+      "name": "Mirage",
+      "description": "Each hit grants a 10% Impact Passive for 5 seconds. This can trigger through Block.\n\nActivating this Special Attack with 5 or more Neural Arrows inflicts a 70% Overload Passive for 25 seconds.",
+      "note": "Each Impact Passive increases Dani’s Block Penetration so be careful blocking this attack when fighting Dani on Defense. Her Overload Passive allows you to deal 70% of recent damage dealt as bursts of Energy Damage and really lay into your Opponent."
+    },
+    "3": {
+      "name": "Dark Angel",
+      "description": "This Special Attack costs 6% less power, and costs an additional 6% less for each Neural Arrow.\n\nAfter this attack, gain 6 Prowess Buffs. The limit for personal Prowess Buffs is increased to 10 until the end of the next Special Attack.",
+      "note": "This Special Attack is great for accelerating Dani’s attack loop and increasing her damage potential significantly at the same time."
+    }
+  },
+  "signature": {
+    "name": "Barbed Arrows",
+    "description": "If a Neuroshock or Stun Debuff is removed for any reason other than expiry, 100% chance to inflict a Neuroshock Passive dealing 3448.8 Energy Damage over 8 seconds. This is not affected by Ability Accuracy Reduction.\n\nWhen the Opponent’s Health is at or below 10%, inflict an indefinite Marked Passive.",
+    "note": "Dani’s Signature Ability was largely designed around the idea of negating Cheat Death Mechanics like Nick Fury’s L.M.D. ability. Her Marked Passive reduces the Ability Accuracy of Immortality, Indestructible, and Regeneration effects by 100% allowing her to negate the Cheat Death Mechanics of Champions like Hercules, Immortal Hulk, and Black Widow (Claire Voyent)."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/dani-moonstar/"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "description": "Elizabeth “Betsy” Braddock spent most of her adult life as the mutant Psylocke, fighting alongside the X-Men while her brother took on the mantle of Captain Britain. After years spent trapped in the body of the assassin Kwannon, Betsy was finally able to regain her original form just in time to take over the role of Captain Britain from her brother Brian Braddock. Using her mutant abilities to engage her opponents with telepathy, telekinesis, and potent psionic weapons, the new Captain Britain is a powerful force for good in the multiverse.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Special Attacks have +8400 Critical Rating, but base Critical Rate is 0.\n\nWhen Captain Britain is struck by a Critical Hit or it hits her Block, 80% chance to inflict Exhaustion, reducing Critical Damage Rating by 484.62 for 2 seconds. Max Stack 3.\n\nFor each Prowess effect on Captain Britain, her Defensive Ability Accuracy is increased by 10%.\n\nBasic attacks deal Energy Damage instead of Physical.",
+        "note": "A few things of note here, big crits in Special Attacks, and none unless modified from outside sources on basic attacks. The exhaustion on critical hits or landing a critical hit into block will help decimate the crit damage output on the Opponent. Every time Captain Britain inflicts a Debuff, she will gain a Prowess, this will help her make sure her Parry doesn’t fail from Disorient."
+      },
+      {
+        "name": "Psionic Mode",
+        "description": "Captain Britain activates Psionic Mode when she activates a Special Attack. If it was already on, she deactivates it instead. Psionic Mode grants the following:\n\nGain 2100 Physical Resistance.\n\nDeal a Burst of 1218.5 Energy Damage on each hit, scaling with Base Attack only.\n\nOn the first Light Attack, inflict an Exhaustion Debuff, reducing Critical Damage Rating by 484.62 for 10 seconds.\n\nOn the second Medium Attack, inflict a non-stacking Slow Debuff for 10 seconds.\n\nOn the first hit of the Heavy Attack, inflict a non-stacking Weakness Debuff, reducing Attack Rating by 30% for 10 seconds.",
+        "note": "Find the attack pattern you like most, just get all 3 Debuffs on the Opponent and Purify them all off for the corresponding Buffs. You can always stay in Psionic Mode longer if you need to deal with Unstoppable using Slow, for example. But don’t forget when you want to exit make sure all three Debuffs are there."
+      },
+      {
+        "name": "Purification",
+        "description": "Whenever Psionic Mode is activated or deactivated, Captain Britain will Purify all Exhaustion, Slow, and Weakness Debuffs off the Opponent.\n\nWhenever a Debuff is Purified off the Opponent, gain an indefinite Passive Prowess, increasing Special Attack damage by 10%. Captain Britain also gains an additional Buff if the Debuff was an Exhaustion, Slow, or Weakness.\n\nPurified Exhaustions grant a Cruelty Buff for 30 second(s), increasing Critical Damage Rating by 233.3.\n\nPurified Slows grant an Unstoppable Buff for 3 second(s). This does not trigger against Tech Opponents.\n\nPurified Weaknesses grant a Fury Buff for 30 second(s) increasing Attack Rating by 243.7.",
+        "note": "Seeking out Purifying Champions helps speed up the loop, don’t forget that the Fury, Cruelty, and Prowess all will help make your Special Attack damage output even bigger. And if you need an opening – go Unstoppable and get that intercept win right before you fire off a Special Attack"
+      }
+    ],
+    "abilities": [
+      "exhaustion",
+      "slow",
+      "weakness",
+      "cruelty",
+      "fury",
+      "prowess"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Psyblast",
+      "description": "Gain a 30% Energize Buff for 15 seconds.",
+      "note": "This is meant to help accelerate the loop and when you interweave them to toggle on Psionic Mode, will help you stack the Buffs after inflicting the Debuffs prior. If you take advantage of the on special, pause all Captain Britain’s personal Buffs."
+    },
+    "2": {
+      "name": "Shield Assault",
+      "description": "Increase Attack Rating by 243.7 per Unique Buff currently on Captain Britain.",
+      "note": "Gotta get those Buffs, maintain your own and see if you can get more to help really drive big hits, while having a high Prowess count and an innately boosted Crit Rating for Special Attacks. This is where you do your big damage."
+    },
+    "3": {
+      "name": "Go Medieval",
+      "description": "On Activation, exit Psionic Mode, gain 1 of each personal Buff, and inflict 1 of each personal Debuff.\n\nThis Special Attack will always default to Psionic Mode off when entering or exiting.",
+      "note": "f you need to drop one of each Debuff on the Opponent and gain one of each Buff for yourself, roll into a Special 3 and start the loop up faster. This should help get back to Special 2 with max Buff count."
+    }
+  },
+  "signature": {
+    "name": "Pure Soul",
+    "description": "Whenever a Debuff is Purified, gain a Bulwark Passive, increasing Block Proficiency by 688.27 lasts 20 seconds. Max Stacks 6.",
+    "note": "Seek out Champions who Purify on a high frequency, to help speed up the ramp to attaining all the Buffs but also get max stacks of this Bulwark Passive."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-captain-britain/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "All Special Attacks",
+        "description": "On Activate, Pause all of Captain Britain’s personal Buffs for 5 seconds.",
+        "note": "This is a good way to consistently keep all the Buffs up so you can achieve max stacks. After all you want to get 4 Fury, 4 Cruelty and 1 Unstoppable."
+      }
+    ]
+  }
+}

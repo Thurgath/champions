@@ -1,0 +1,60 @@
+{
+  "description": "Cassie Lang is a little girl doing big things in the Contest! As the daughter of the Ant-man, she has access to revolutionary Pym Particle Technology. Cassie’s specialized Pym Suit allows her to grow and shrink in size to deal big damage whenever her opponent thinks they’ve got Cassie underneath their boot!",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Pym Suit Technology – Always Active",
+        "description": "Cassie’s highly advanced Pym Suit provides her with Buff Immunity, as well as Immunity to Poison and Shock effects.\n\nUnless otherwise stated, Cassie’s personal Power Stings last 10 seconds and deal a burst of 1374.45 Direct Damage if the Opponent launches a Special Attack. These Power Stings are reapplied when the Opponent launches a Special Attack, paused during Cassie’s Special Attacks, and scale with Base Attack only. Max: 30.",
+        "note": "Just like her father, Cassie has a Suit which grants her immunity to Poison and Shock effects. Additionally, Cassie’s Power Stings are one of her most powerful tools for dealing damage, maintaining these against opponents that throw a ton of Specials to rack up a ton of damage!"
+      },
+      {
+        "name": "Pym Particles – Max – 6",
+        "description": "As an Attacker, whenever Cassie prevents a Buff via Immunity or causes the Opponent’s Special Attacks to Miss by shrinking down, she gains 1 Pym Particle.\n\nLanding a Light Combo Ender consumes all Pym Particles to inflict a Poison Debuff, dealing 392.7 Damage over 2 seconds and reducing Opponent Health recovery by 30%. This duration is increased by 2 seconds for each Pym Particle consumed. This ability cannot be activated with no Pym Particles.\n\nWhile this Poison is active, Cassie’s Taunt and Power Stings on the Opponent fall off 80% slower, including effects that are already active.",
+        "note": "Pym Particles are the key to maintaining Power Stings on the opponent via Poison. Since Power Stings fall off after 10 seconds, slowing them down with this Poison is very important in most matchups. This also has the added benefit of slowing down Cassie’s Taunt on Special 1 to help it combo into Special 2."
+      }
+    ],
+    "abilities": [
+      "powersting",
+      "poison",
+      "miss",
+      "taunt",
+      "fury"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "",
+      "description": "The final hit inflicts a non-stacking Taunt Debuff for 12 seconds.\n\nDuring this Special Attack, the Opponent’s Combat Power Rate is increased by 300% while under 1.5 Bars of Power.\n\nAs a Defender, inflict a Combo Detonation Debuff on activation for 12 seconds. If the Opponent does not build 14 Combo before this ability expires, they take a burst of 10995.6 Direct Damage, scaling with Base Attack only.\n\nThis Debuff starts paused until the end of this Special Attack and cannot be inflicted while it’s already active.",
+      "note": "Developer Notes: Special 1 is a very bizarre, yet powerful tool for forcing the opponent to throw Specials. By granting them a ton of Power while below 1.5 bars of power and inflicting a Taunt effect, they are very likely to throw a Special immediately when they get up, allowing Cassie to deal a ton of damage via Power Stings.Finally, Combo Detonation is a brand new Defensive threat designed to encourage players to bring in Champions that build Combo quickly. Bring in your favorite Combo-centric Champions to quickly deal with this threat."
+    },
+    "2": {
+      "name": "",
+      "description": "This attack gains +589.05 Attack Rating for each Power Sting on the Opponent.\n\nIf activated while Cassie’s personal Taunt is active, this Special Attack deals Guaranteed Critical Hits.",
+      "note": "Cassie doesn’t just take after her father, she also looks to Wasp for inspiration when it comes to inflicting Guaranteed Crits with her Special 2! This large burst of furious damage can shred through opponent health bars incredibly quickly."
+    },
+    "3": {
+      "name": "",
+      "description": "Inflict a Crush Debuff, lasting 10 seconds.\n\nFor the rest of the fight, Cassie becomes furious and grows in size! This cannot be triggered multiple times. Being furious grants Cassie the following abilities:\n\nAn indefinite Fury Passive, increasing her Attack Rating by 1570.8.\n\n+1500 Physical Resistance.\n\nThe duration of all personal Power Stings is increased by 20%.",
+      "note": "Cassie’s Special 3 has relatively limited utility, but it can have a BIG impact in longer fights where Cassie is struggling to maintain her Power Stings."
+    }
+  },
+  "signature": {
+    "name": "Pym Suit Upgrade",
+    "description": "Cassie’s Pym Suit is enhanced, and grants her Immunity to Power Steal.\n\nPower Stings have their Stack limit increased by 10 (rounded down).\n\nCassie gains a 9% chance to Evade her Opponent’s attacks.\n\nWhen Cassie Evades, she inflicts a Power Sting Debuff, lasting 14 seconds and dealing a burst of 1570.8 Direct Damage if the Opponent launches a Special Attack.",
+    "note": "Developer Notes: Cassie’s Signature Ability aims to make Cassie incredibly effective against Power Stealing threats as well as Defenders who throw a ton of Specials, by stacking even more Power Stings, it quickly becomes even more effective to avoid Special 2 in favor of looping Special 1’s to force the Opponent to simply throw as many Specials as possible to maximize Power Sting damage.Cassie also gains an Evade to occasionally save her on Attack and to provide a slight difficulty bump as a Defender, be sure to bring your anti-Evade Skill Champions for a significantly easier fight."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-cassie-lang/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "Cassie’s Heavy Attack can be charged for an extended duration. While charging, Cassie shrinks down, causing all incoming attacks to have a 100% chance to Miss.\n\nBeing shrunken consumes Pym Fuel. Cassie starts with her maximum 300 Pym Fuel and consumes 100 Fuel per second while shrunken. Fuel recharges at a rate of 12 Fuel per second while not performing a Heavy Attack. Running out of fuel overexerts Cassie and leaves her Passively Stunned for 2 seconds.Cassie generates dormant Power Stings while charging her Heavy Attack. The first hit of her Heavy Attack that lands inflicts 1 Power Sting Debuff for each dormant Power Sting.\n\nWhenever the Opponent Misses due to Cassie being shrunken, she generates 2 additional dormant Power Stings.",
+        "note": "Cassie’s Heavy is arguably the most powerful element of her kit. While shrunken down, Cassie causes all attacks to Miss. This ability is incredibly powerful, but it’s limited by Cassie’s Pym Fuel, which prevents her from spamming it frequently, use it at key moments to inflict mass amounts of Power Stings and encourage the opponent to throw Special Attacks."
+      }
+    ]
+  }
+}

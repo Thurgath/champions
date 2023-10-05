@@ -1,0 +1,61 @@
+{
+  "description": "Expert detective and veteran of the toughest streets of New York, Mercedes “Misty” Knight is joining the contest to bring justice through any means necessary. After losing her arm in an incident while working with the NYPD Bomb Squad, Misty was gifted a cybernetic replacement from the one and only Tony Stark. This powerful prosthetic, made of Antarctic Vibranium, carries the ability to harness cryogenic energy and liquefy all but the strongest of metals. With these new powers, Misty has dedicated her life to taking down the most dangerous criminals across the globe. She isn’t afraid to do whatever it takes to get the job done, even if it costs an arm.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Anti-Metal and Cryogenic Charges:",
+        "description": "Misty has the ability to build Anti-Metal and Cryogenic Charges using her metallic arm. These Charges provide benefits once they reach certain thresholds or become balanced, putting Misty into Equilibrium. Charges capped at 12 Charges each.\n\nFor each Anti-Metal Charge, Misty gains a 3% chance to instantly Purify any incoming Debuffs.\n\nFor each Cryogenic Charge, Misty gains a 1% chance to Evade attacks.",
+        "note": "Anti-Metal and Cryogenic Charges are the core to Misty Knight’s Kit, building them while doing your best to keep them balanced is the key to annihilating your opponents as Misty Knight. Additionally, the Purify and Evade are very useful defensive tools, however, you should be spending your charges often to deal maximum damage."
+      },
+      {
+        "name": "Building Charges:",
+        "description": "When either Champion performs a Well-Timed Block, Misty gains 2 Anti-Metal Charges. Against Science Champions, Misty gains 3 Charges instead.\n\nWhen either Champion Dodges an attack, Misty gains 2 Cryogenic Charges. Against Science Champions, Misty gains 3 Charges instead. Cooldown: 0.80 Seconds.\n\nWhen Misty lands a Light combo ender, she gains 1 Anti-Metal Charges.\n\nWhen Misty lands a Medium combo ender, she gains 1 Cryogenic Charges.\n\nMisty’s Heavy attack raises her lower charge by 3 if there is a difference of at least 3 between her two Charges. First hit increases Anti-Metal, final hit increases Cryogenic.\n\nWhen Misty gets struck by a basic attack, she has a 20% chance to increase her lower charge by 1, if they are currently equal, both Charges get increased by 1.",
+        "note": "Misty Knight’s core kit revolves around the Parry and Dexterity Masteries, you’ll be using them often to build up charges as Misty. Additional methods of building charges are focused on making minor changes to keep Misty in Equilibrium as easily as possible."
+      },
+      {
+        "name": "Master of Parry and Dexterity:",
+        "description": "Misty Knight benefits from Rank 1 of the Parry and Dexterity Mastery Bonuses, even if they are not activated.\n\nIf the Parry Mastery has already been activated, Misty starts with an extra 2 Anti-Metal Charges.\n\nIf the Dexterity Mastery has already been activated, Misty starts with an extra 2 Cryogenic Charges.",
+        "note": "The Masteries Parry and Dexterity come into play for the casual and intermediate players that haven’t unlocked them yet. Hardcore players are rewarded for having these Masteries by gaining a headstart on their Charge count."
+      },
+      {
+        "name": "Equilibrium:",
+        "description": "Whenever both of Misty’s Charges become equal, she gains non-stackable Buffs. If Misty is at max Charges and gains another, the Buffs are refreshed if they are not on cooldown.\n\nWhen balanced at 3 or more Charges, Misty gains a Precision Buff for 12 seconds, increasing Critical Rating by 64.95 per charge.\n\nWhen balanced at 6 or more Charges, Misty becomes Unblockable for 6 seconds. Once activated, this Ability goes on cooldown for 6 seconds.\n\nWhen balanced at 9 or more Charges, Misty gains a Bionic Overcharge Buff, dealing guaranteed Critical Hits for 6 seconds. Once activated, this Ability goes on cooldown for 6 seconds.\n\nAll Equilibrium Buffs are paused during Special Attacks.",
+        "note": "This is where Misty Knight’s Skill aspect of her character starts to shine, once you get familiar with her kit you can do your best to start balancing your charges to gain huge benefits. The pause is added to make carrying these benefits between specials easier since her Special Attacks have long animations."
+      }
+    ],
+    "abilities": [
+      "coldsnap",
+      "armorbreak",
+      "precision",
+      "purify",
+      "evade"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Metal Arm of the Law:",
+      "description": "Consumes all Anti-Metal Charges, increasing attack rating by 537 per Charge.\n\nIf Misty consumes 6 or more Anti-Metal Charges, the attack becomes Unblockable on activation.\n\nIf Misty consumes 9 or more Anti-Metal Charges, inflict Armor Break Debuff on the first hit, reducing Armor Rating by 1400 for 16 seconds.",
+      "note": "Misty Knight’s Special 1 is a huge cash moment for her Anti-Metal Charges to deal massive amounts of damage to her opponent. This also pairs very well with her Special 2 to deal massive damage, as the increased Attack Rating will also impact the damage of the Frostbites."
+    },
+    "2": {
+      "name": "Freeze!:",
+      "description": "Consumes all Cryogenic Charges to inflict Coldsnap, dealing 5370 Energy Damage over 14 seconds.\n\nWhile this Coldsnap is active, all basic attacks inflict an indefinite Frostbite Passive and Critical Hits inflict 1 additional Frostbite. When this Coldsnap expires naturally, all Frostbites are shattered, removing them and dealing 724.95 Energy Damage each.\n\nIf Misty consumes 6 or more Cryogenic Charges, the Opponent is Stunned for 2 second(s) when all Frostbites shatter.",
+      "note": "Special 2 provides a large portion of Misty Knight’s Utility and Damage, as it opens up the opportunity to stack Frostbites on the opponent as well as prevent them from Evading, which can be found quite a bit in the Science Class."
+    },
+    "3": {
+      "name": "Maximum Bionic Overcharge:",
+      "description": "Instantly max out both Charges, gaining all effects of Equilibrium.\n\nGain an Energize Buff that increases Combat Power Rate by 35% for 14 seconds.",
+      "note": "The Special 3 acts as a great entry-level tool for long fights, since it immediately gives Misty Knight all benefits from Equilibrium along with an Energize to help her get back in the flow of using Special 2. This acts as a crutch for newer players that need help getting into Equilibrium easily."
+    }
+  },
+  "signature": {
+    "name": "Misty analyzes the Opponent’s Class to gain a unique effect to counter them. Misty takes 27 seconds to investigate the Opponent. When the investigation is complete, she gains an effect lasting 18 seconds before restarting her investigation.Science – Misty instantly Purifies all Debuffs and her Instant Purification chance jumps to 100%.Skill – Misty gains a Fury Buff for each Bleed effect currently on her, increasing Attack Rating by 537. Mutant – The mysteries of the X-gene elude Misty’s superb detective skills.Tech – If the Opponent has 2 or more Armor Up Buffs when Misty’s Special Attack 1 connects, a second Armor Break is applied.Cosmic – Inflict a Disorient Debuff, decreasing their Block Proficiency by 5% and Defensive Ability Accuracy by 10% for each unique buff on the Opponent.Mystic – Inflict a Suppression Debuff, reducing Opponent Combat Power Rate by 10% for each bar of power on the Opponent.",
+    "description": "Misty analyzes the Opponent’s Class to gain a unique effect to counter them. Misty takes 27 seconds to investigate the Opponent. When the investigation is complete, she gains an effect lasting 18 seconds before restarting her investigation.\n\nScience – Misty instantly Purifies all Debuffs and her Instant Purification chance jumps to 100%.\n\nSkill – Misty gains a Fury Buff for each Bleed effect currently on her, increasing Attack Rating by 537.\n\nMutant – The mysteries of the X-gene elude Misty’s superb detective skills.\n\nTech – If the Opponent has 2 or more Armor Up Buffs when Misty’s Special Attack 1 connects, a second Armor Break is applied.\n\nCosmic – Inflict a Disorient Debuff, decreasing their Block Proficiency by 5% and Defensive Ability Accuracy by 10% for each unique buff on the Opponent.\n\nMystic – Inflict a Suppression Debuff, reducing Opponent Combat Power Rate by 10% for each bar of power on the Opponent.",
+    "note": "The purpose of Misty Knight’s Signature Ability was to add unique effects based on the opponent that wouldn’t change her core loop. This timer-based system was chosen to allow opponents to play around them easily (IE. Not putting bleeds on Misty Knight until her Investigation had already started) this changes the fight while fighting Misty Knight – but not while playing as her."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-misty-knight/"
+  }
+}

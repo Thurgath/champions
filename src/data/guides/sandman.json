@@ -1,0 +1,65 @@
+{
+  "description": "Once a petty criminal known as William Baker (a.k.a. Flint Marko), Sandman is a stalwart member of the Sinister Six and one of Spider-Man’s longest standing enemies. While on the run from the law, Baker was accidentally exposed to experimental radiation that destabilized his molecular make-up. Now, as the Sandman, he is capable of incredible acts of strength, can grow to massive sizes, and even shapeshift. He might not be the brightest of Spider-Man’s enemies, but he’s certainly the most imposing… as long as he can pull himself together.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Sandman is Immune to Bleed, Poison, and Shock effects.\n\nSandman’s Personal Debuffs can be inflicted through Block, are paused during all Special Attacks, and expire one at a time every second.\n\nKnocking Down the Opponent with a Heavy Attack grants Sandman an indefinite Heavy Proficiency Passive increasing his Attack Rating by +423.4 during Heavy Attacks. Max Stacks: 10.",
+        "note": "These Heavy Proficiency Passives are a new effect that increase Attack Rating during Heavy Attacks only. Sandman’s Debuffs fall off one at a time every second (like sand in an hourglass), so you’ll want to act quickly to take advantage of them while they’re still there."
+      },
+      {
+        "name": "Resistance Up Passives  – Max Stacks: 20",
+        "description": "Sandman gains an indefinite +118.42 Resistance Up Passive every time he strikes the Opponent with a Light or Medium Attack. As a Defender he also gains these when striking the Opponent’s Block with a Light or Medium Attack.\n\nStriking Sandman or his Block with a Critical Hit removes 1 Resistance Up. When Sandman would receive a Bleed, Poison, or Shock effect from a Skill champion, he also loses 2 Resistance Ups.",
+        "note": "Sandman gains Resistance Ups as he hits his Opponents, but also loses them when struck by Critical Hits. These Resistance Ups are mostly treated as a resource used to unlock his Unstable State, but they are still quite effective for mitigating the damage he takes."
+      },
+      {
+        "name": "Unstable",
+        "description": "At 20 Resistance Ups Sandman becomes Unstable. Unstable lasts 20 seconds or until Sandman runs out of Resistance Ups. While Unstable Resistance Ups can no longer be gained, and Sandman loses 1 Resistance Up when he or his Block is struck. All Resistance Ups are lost when Unstable expires.\n\nWhile Unstable Sandman gains an indefinite Unstoppable Passive. When becoming Unstable, Sandman also inflicts 10 Suppression Debuffs of 5% potency.\n\nSandman’s Light and Medium Attacks consume 1 Resistance Up on Hit, Block, or Whiff. If the attack strikes the Opponent or a Block that is not Well-Timed, deal a burst of 211.7 Physical Damage. Damage scales with Base Attack only.\n\nThe final hit of Sandman’s Heavy Attack, Special Attack 1, or Special Attack 2 consumes up to 5 Resistance Ups. For each time the Opponent has been Knocked Down since Unstable started, deal a burst of 211.7 Physical Damage on hit for each of Sandman’s personal Debuffs they’re suffering. Damage scales with Base Attack only.",
+        "note": "Unstable is where the party starts. While Unstable Sandman becomes Passively Unstoppable and inflicts massive bursts of Physical Damage whenever he knocks the Opponent down with a Special or Heavy Attack (Special 3 not included). Try keeping as many of Sandman’s personal Debuffs on the Opponent as possible to get as much damage out of this as you can."
+      }
+    ],
+    "abilities": [
+      "resistanceup",
+      "petrify",
+      "physicalvulnerability",
+      "unstoppable",
+      "root"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Dry ‘em Up",
+      "description": "On activation, Sandman gains 1 Resistance Up, then gains 1 Resistance Up on each hit.\n\nOn activation, inflict 2 Petrify Debuffs of 8% potency, then each hit inflicts 2 additional Petrify Debuffs.",
+      "note": "Special 1 is great for triggering Sandman’s Unstable State the first time in a fight. It’s also awesome for reducing and potentially reversing the Regeneration abilities of the Opponent."
+    },
+    "2": {
+      "name": "Slow ‘em Down",
+      "description": "On activation, Sandman gains 2 Resistance Ups, then gains 1 Resistance Up on each hit.\n\nOn activation, inflict 6 Decelerate Debuffs of 7% potency, then each hit inflicts 3 additional Decelerate Debuffs.",
+      "note": "Special 2 is great for countering the Opponent’s Unstoppable or Evade abilities. If every hit connects, the Opponent ends up with 210% Ability Accuracy Reduction on their Unstoppable and Evade effects. It’s also even more potent than Special 1 for building Resistance Ups and inflicting Debuffs on the Opponent."
+    },
+    "3": {
+      "name": "Smash ‘em to Bits",
+      "description": "Inflict 30 Physical Vulnerability Debuffs of 22.73 potency.\n\nGain 20 Resistance Ups. While Unstable, instead of gaining Resistance Ups, Sandman inflicts an additional 20 Physical Vulnerability Debuffs.",
+      "note": "Special 3 is your shortcut to becoming Unstable, increasing Sandman’s damage potential notably with all those Physical Vulnerability Debuffs. Try throwing Special 3 while already in Unstable State to get an additional 20 Debuffs and increase your burst damage even more."
+    }
+  },
+  "signature": {
+    "name": "The Rude Sandstorm:",
+    "description": "While Unstable, Sandman gains an indefinite Fury Passive granting +4234 Attack Rating.\n\nSandman’s Heavy Proficiency Passives grant an additional +211.7 Attack Rating.",
+    "note": "Sandman’s Heavy Proficiency Passives have their Attack Rating increased even more. Additionally, Sandman’s Attack Rating is dramatically increased in his Unstable State."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-sandman/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Quicksand! – Heavy Attack While Unstable",
+        "description": "If Sandman is struck by a Basic Attack while he charges his Heavy Attack, he ignores the hit by becoming Passively Indestructible.\n\nStriking the Opponent with the first hit of his Heavy Attack Passively Roots them for 2.25. seconds. If the Opponent has the Stand Your Ground Mastery active, it is removed while they are Rooted.\n\nStriking a Rooted Opponent with a Heavy Attack locks Sandman in place until the Root expires, or he until Dodges back.",
+        "note": "While Unstable, the first hit of Sandman’s Heavy Attack Roots the Opponent for just long enough to loop into another Heavy Attack. This is the easiest and most efficient way to score Knockdowns and get as much damage in as possible."
+      }
+    ]
+  }
+}

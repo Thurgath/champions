@@ -1,0 +1,69 @@
+{
+  "description": "A gifted engineer turned expert safecracker, Herman Schultz was just a small-time criminal until he was captured and incarcerated. While tinkering in the prison workshop, he managed to construct a pair of gauntlets capable of firing compressed air as destructive shockwaves. Adopting the title of the “Shocker” and blasting his way out of prison, Shocker’s criminal exploits have since been a constant thorn in the side of his nemesis, Spider-Man. Things don’t always go his way, but no one can fault Shocker’s stubborn tenacity.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Shocker’s custom padded suit grants him Immunity to Shock effects and Concussion Debuffs, and reduces the duration of incoming Stuns by 50%.\n\nIf the Opponent has the Limber Mastery active, it is removed.\n\nShocker cannot land Critical Hits, but all his attacks have Armor Penetration equal to his Critical Rating.",
+        "note": "Shocker’s classic outfit isn’t just for fashion! Its padding and specialized dampers negate incoming Shocks and some Concussive forces, while also reducing the duration of incoming Stuns. Coupled with the Limber Mastery, Shocker can almost ignore incoming Stuns, while his own intense impacts ensure that his Opponents can’t benefit from the same Mastery.Additionally, Shocker excels at blunt-force trauma. While this prevents him from landing precise Critical Hits, it does mean that all his impacts ignore a portion of his Opponents’ Armor. This helps him fight Mutants who punish Critical Hits and gives him reliable, steady, overall increased damage. While big yellow numbers and big red numbers are major draws for many Champions, Shocker instead pushes the envelope of big white numbers."
+      },
+      {
+        "name": "Vibro-Shock Charges – Max:100",
+        "description": "Landing or being struck by a Light or Medium Attack grants 1 indefinite Vibro-Shock Charge.\n\nAt 50+ Vibro-Shock Charges, while Dashing forwards Shocker is Passively Unblockable. If this Dash Attack breaks the Opponent’s Block, consume 20 Charges.\n\nIf Shocker is struck while Unblockable, remove 50 Vibro-Shock Charges.",
+        "note": "Vibro-Shock Charges represent the ambient energy buildup in Shocker’s gauntlets. The energy builds up during combat and starts reaching critical mass at 50 or more Charges. This threshold is shared by many other mechanics throughout his kit, so it’s important to keep in mind.At 50 or more, Shocker’s gauntlets are powerful enough to make him Unblockable when he Dashes forwards, although the force required to break an Opponent’s Block reduces his total Charges. Dash Attacking an Opponent who isn’t Blocking won’t consume any extra Charges, so you can still Intercept and punish Special Attacks without hindering your buildup.But be careful: if Shocker gets struck while he’s Unblockable (generally by being Intercepted), the countering impact will make him vent 50 of his Charges. While fighting him on Defense, this is the main way to keep Shocker’s threats under control."
+      },
+      {
+        "name": "Auto-Block",
+        "description": "At 50+ Vibro-Shock Charges, if Shocker would be struck by a Special Attack he consumes 25 Charges to Auto-Block the rest of the attack.",
+        "note": "Shocker’s suit includes a kinetic field that can deflect incoming Special Attacks. The Charges are only consumed the first time he’d be struck, and they activate his shield for the remainder of the Special, meaning that Special Attacks with multiple hits won’t make him consume extra Charges. This shield only comes online if he would be outright struck by the incoming attack, so you can safely Block and Dodge Special Attacks without worrying about losing your Charges.As an Attacker, this Auto-Block is a nice safety net during those tricky-to-Dex Specials, while on Defense it’s a threat that needs to be dealt with. If you don’t have a counter to Auto-Block like True Strike or Undermine, make sure you’ve reduced his Charges below 50 before throwing any Special Attacks."
+      }
+    ],
+    "abilities": [
+      "shockimmunity",
+      "unblockable",
+      "stun",
+      "energize"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Vibro-Shock Assault",
+      "description": "+1% chance per Vibro-Shock Charge to inflict a Stun Debuff for 3 seconds. Cooldown: 10 seconds.\n\nAt 50+ Vibro-Shock Charges, this attack is Passively Unblockable.\n\nAt the end of this attack, gain 25 Vibro-Shock Charges.",
+      "note": "Shocker’s classic move, this attack fires a long-range shockwave at the Opponent. The Stun it can inflict is impressive and the Unblockable makes it threatening, but the real value of this Special is in the 25 Vibro-Shock Charges it grants. This Special Attack is Shocker’s fastest way to ramp Charges. Just remember that it grants these Charges at the end of the Special, so the attack itself only gets its bonuses from the amount of Charges you start the Special with.At 50 or more Charges, the Shockwave is forceful enough to be Unblockable. While this is threatening, you can avoid it with the Dexterity Mastery and Shocker will still be Unblockable just long enough for you to Dash in and hit him. Since Shocker loses Charges when struck while Unblockable, learning to punish this Special can offset the Charges he usually gains from it."
+    },
+    "2": {
+      "name": "Shockwave Salvo",
+      "description": "The final hit inflicts a 562.5 Physical Vulnerability Passive and a Stun Passive for 5 seconds, plus 0.05 seconds per Vibro-Shock Charge.\n\nThese effects are not affected by Ability Accuracy and are removed once the Opponent is struck 3 times.",
+      "note": "If the Heavy Attack is the crux of Shocker’s kit, his Special Attack 2 is definitely the linchpin. Not only does the Physical Vulnerability help him get the most out of his punch, but the Stun this inflicts ensures that he can land it at its fullest potential. The duration of these effects is increased by Shocker’s total Charges, meaning a longer Stun to enable an equally long Heavy Charge, maximizing your damage moment.While these effects can last quite a while at max Charges, they’re removed after only 3 hits. This means you can’t happily wail on the Opponent consequence-free for the full length of a very long Stun… but it does mean that you can Dash in and Heavy Charge, letting the final hit of your Heavy spell the end of these effects, and, likely, your Opponent."
+    },
+    "3": {
+      "name": "Excessive Property Damage",
+      "description": "Gain a 100% Energize Passive until the next time Shocker reaches 2 Bars of Power.\n\nWhile this Energize is active, Vibro-Shock Charge max is increased to 150.",
+      "note": "Turning off all safeties, this Special overcharges Shocker’s gauntlets with an Energize that boosts his Combat Power Rate. While Energized, Vibro-Shock Charges can exceed their normal max of 100 and reach 150 instead. Combined, these let you rapidly loop Special 1s to build up to your new max very quickly. Just be careful not to exceed 2 Bars of Power before that point, or the Energize will be disabled. Any Charges you gain over 100 aren’t lost when the Energize is– they’ll remain built up and ready to be consumed in an even more-excessive-than-normal Heavy Attack. Because to Shocker… limits, much like buildings, were made to be broken."
+    }
+  },
+  "signature": {
+    "name": "Percussive Kickback",
+    "description": "Whenever Shocker is Stunned or the Opponent gains a Prowess, gain 3 Vibro-Shock Charges.\n\nShocker’s first Special Attack 1 in each fight costs 100% less Power.",
+    "note": "Awakening Shocker does wonders for accelerating his ramp, especially when Fighting Mutants. Each Prowess they gain increases Shocker’s total Charges, allowing him to more easily access the Prowess removal in his base kit.Additionally, Shocker can ramp very quickly in shorter fights with access to an extremely cheap, or even free, Special 1. Since his Special 1 gives him 25 of his Vibro-Shock Charges, this can really speed Shocker to critical Charge levels. Just be sure to watch for this on Defence and don’t be too eager to punish his first Special 1– you may have Dodged one, yes, but what about second Special 1?"
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-shocker/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "Charging a Heavy Attack consumes a Vibro-Shock Charge every 0.05 seconds and can be charged until all Vibro-Shock Charges are consumed.\n\nThe final hit gains +4004 Attack Rating per Vibro-Shock Charge consumed.",
+        "note": "The Heavy Attack is Shocker’s foremost ability. The pinnacle of his loop. The “big boom” moment.As he charges his Heavy Attack, he’ll steadily consume the Vibro-Shock Charges he’s built up over the course of the fight. The final hit of his Heavy (after an excessive windup) converts all those consumed Charges into raw damage in a single, massive, cataclysmic punch.In most fights, one punch is more than enough."
+      },
+      {
+        "name": "Medium Attacks",
+        "description": "+2% chance per Vibro-Shock Charge to remove an Opponent’s Prowess. Max: 100%.\n\n+0.5% chance per Vibro-Shock Charge to inflict a Stun Debuff for 0.8 seconds. Max: 25%.",
+        "note": "Shocker’s Mediums get weightier as he builds up Vibro-Shock Charges, reaching their maximum output at 50 or more charges. When fighting a Mutant with plenty of Prowess, quick Medium-Medium combos can quickly reduce their threat. Additionally, if you inflict a Stun on your combo-ending Medium, act fast! The Stun should last just long enough for you to go right into another combo."
+      }
+    ]
+  }
+}

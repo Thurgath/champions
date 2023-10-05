@@ -1,0 +1,64 @@
+{
+  "description": "Dr. Zayn Asghar is an Ant-Man of the future and brilliant inventor of the nano-ant swarm, microbots created to restore the collapsing climate. With the help of Doctor Doom’s Time Platform, a troupe of Ant-Men and Zayn’s unceasing determination, his voyage through time may be the key to ending the global crisis of Zayn’s timeline.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "10% chance for all incoming attacks that land or strike into Block to Glance.\n\nPersonal Glancing Abilities do not work on Opponents with an active Pierce effect.",
+        "note": ""
+      },
+      {
+        "name": "Power Detonation",
+        "description": "At the start of each fight inflict an Encroaching Power Detonation Passive for 14 seconds which cannot be affected by Ability Accuracy. Upon expiry, drain 40% of their current Power and inflict a Power Detonation Passive for 18 seconds. Whenever this effect expires for any reason, reinflict the Encroaching Power Detonation.\n\nThe Encroaching Power Detonation is indefinitely paused and is unpaused while Ant-Man is landing hits. As a Defender, it is also unpaused while Ant-Man is being attacked.\n\nWhile the Opponent is suffering from a Power Detonation Passive, all hits inflict a -15% potency instant Disintegration, dealing 672.12 Direct Damage.\n\nWhen the Power Detonation expires naturally, inflict a -15% potency Disintegration Debuff, dealing 4667.5 Direct Damage over 24 seconds and pausing during Ant-Man’s Special Attacks.",
+        "note": "Ant-Man’s damage really comes online once the Power Detonation is on his opponent thanks to his instant Disintegration Passives which deal damage and lower their Combat Power Rate."
+      },
+      {
+        "name": "Nano-Armor Up",
+        "description": "Start each fight with 1 Nano-Armor Up Buff, increasing Armor Rating by 118.42 and increasing the chance for incoming attacks to Glance by 6%. Nano-Armor Up effects count as Armor Up effects.\n\nNano-Armor Up effects are indefinite up to 5 while Attacking. Any additional Nano-Armor Ups last for 4 seconds and expire one at a time, up to a total of 10 Nano-Armor Up effects. Additionally, all Nano-Armor Up effects are paused during either Champion’s Special Attacks.\n\nIntercepting the Opponent grants 2 Nano-Armor Up Buffs.\n\nHitting the Opponent during their Heavy Attack grants 1 Nano-Armor Up Buff.\n\nEach time a hit Glances Ant-Man, gain 1 Nano-Armor Up Buff.\n\nAttacks that Intercept Ant-Man cannot Glance and remove 1 Nano-Armor Up Buff.\n\nWhenever a Nano-Armor Up Buff fails to trigger or is removed for any reason, replace it with a Passive of the same potency. Nano-Armor Up Passives count as Armor Up Buffs for all of Ant-Man’s personal abilities and are not removed by Armor Break effects.",
+        "note": "The beginning of each fight is all about building up Nano-Armor Up Buffs to activate the Surging Swarm. Intercepting is the most efficient way, but Ant-Man can also punish Heavy Attacks and Glance blocked hits to juice out even more Armor."
+      },
+      {
+        "name": "Surging Swarm",
+        "description": "While Ant-Man has more than 5 Armor Up Buffs his Surging Swarm activates, granting the following effects:\n\n+2800.5% Attack Rating.\n\nThe Encroaching Power Detonation expires 200% faster.\n\nThe Opponent is more aggressive while Surging Swarm is active.\n\nWhen the Opponent’s Combo Ender Glances, inflict a Stun Debuff for 1.5 seconds.",
+        "note": "Once Ant-Man has his Surging Swarm, the speed of his playstyle really picks up, increasing the reliability of his intercepts, increasing Attack Rating which scales his instant Disintegrations, and increasing the speed of his Encroaching Power Detonation which means his Power Detonation is pretty much always active on his Opponent."
+      },
+      {
+        "name": "Light Combo Ender",
+        "description": "If you have a Special Attack 2 or 3 available, the highest level Special Attack is disabled for 0.5 seconds.\n\nThis attack is non-contact.",
+        "note": "The Light Combo Ender may sound like a disadvantage at first, but this self-disabling ability allows Ant-Man to select which Special he’d like to use moments after the Light Combo Ender is used."
+      }
+    ],
+    "abilities": [
+      "armorup",
+      "glancing",
+      "disintegration",
+      "powerdrain",
+      "powerdetonation"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "",
+      "description": "When the second hit lands or strikes into Block, inflict a -15% potency Disintegration Debuff, dealing 4667.5 Direct Damage over 24 seconds and pausing during Ant-Man’s Special Attacks. Max stacks: 3. This ability scales with Base Attack only.\n\nThe final hit does not grant Power and drains 25% of a Bar of Power for each Disintegration Debuff on the Opponent."
+    },
+    "2": {
+      "name": "",
+      "description": "Each hit inflicts a -10% potency instant Disintegration, dealing 6235.78 Direct Damage. This ability gains +100% potency for each Disintegration Debuff on the Opponent.",
+      "note": "The Special 2 is ideally used to close out a fight with a huge burst of instant Disintegration’s Direct Damage."
+    },
+    "3": {
+      "name": "",
+      "description": "Gain 10 Nano-Armor Up Buffs.\n\nInflict a non-stacking -15% potency Disintegration Debuff, dealing 4667.5 Direct Damage over 60 seconds. While this effect is active, pause the duration of all other personal Disintegration Debuffs."
+    }
+  },
+  "signature": {
+    "name": "Swarm Accelerator",
+    "description": "Incoming Bleed and Incinerate effects suffer -90% duration.\n\nWhen a Bleed or Incinerate effect (including instant effects) expires naturally on Ant-Man, gain a non-stacking Self-Repair Buff healing 3% of missing Health over 6 seconds. Self-Repair Buffs are lost when Ant-Man is stunned.\n\nWhen Ant-Man would lose more than 10% of his Max Health from a single source other than a Special Attack 3, reduce the damage to 10% of his Max Health and gain a Self-Repair Buff healing 5% of Max Health over 12 seconds.",
+    "note": "Ant-Man’s Signature Ability makes him considerably more survivable, he gains near-immunity to Bleed and Incinerate effects and the ability to be protected against burst damage such as Direct Damage dealt by Galan’s Harvest."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-ant-man-future/"
+  }
+}

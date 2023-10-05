@@ -1,0 +1,71 @@
+{
+  "description": "The Sovereign are an advanced race, arrogant in nature and meticulously designed. Each Sovereign is developed through genetic engineering in birthing pods, but no Sovereign was created as faultless as the powerful Adam Warlock. The High Priestess Ayesha created Adam to be the perfect Sovereign and to ultimately put an end to the Guardians of the Galaxy.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Power Meter",
+        "description": "Adam passively gains 2.5% of a Bar of Power each second, but his Combat Power Rate is reduced by -25%.\n\nWhen Adam has his Power Stolen, he stops gaining Power overtime for 12 seconds.\n\nWhen Adam has his power Drained or Burned, he gains a non-stacking 50% Energize Passive for 12 seconds.\n\nAgainst non-Mystic Opponents, Adam’s Ability Power Rate cannot be reduced.",
+        "note": ""
+      },
+      {
+        "name": "Sovereignty Counter",
+        "description": "Landing Adam’s Light Attack 2 or Special Attack 1 or 2 starts the Sovereignty Counter for 2 seconds. When the Opponent receives a hit from any source, the Counter is refreshed and increased by 1.\n\nBreaking the Opponent’s Block with the first hit of the Sovereignty Counter increases it by 10 instead of 1 on this hit.\n\nAs the Sovereignty Counter increases, Adam gains non-stacking Buffs lasting 2 seconds, refreshed when the Opponent receives a hit from any source.\n\nFirst Hit: Gain an Unblockable Buff.\n\n10 Hits: Gain a True Damage Buff, allowing attacks to bypass Armor and Resistances.\n\n20 Hits: Gain a Precision Buff, increasing Critical Rating by 19800.\n\n30 Hits: Gain a Fury Buff, increasing Attack Rating by 8831.25.\n\n40 Hits: End the Sovereignty Counter and all Buffs granted by it and gain a stackable Fury Buff increasing Attack Rating by 5887.5 for 60 seconds, paused while the Sovereignty Counter is active. Max stacks: 2.\n\nThe Sovereignty Counter and all above non-stacking Buffs are refreshed and paused while Adam is inside the Stasis Pod and during Adam and his Opponent’s Special Attack 1 and 2.\n\nWhen the Sovereignty Counter expires, it goes on cooldown for 10 seconds and grants a Sovereignty Buff that lasts for 30 seconds. This Buff is paused while the Sovereignty Counter is active.\n\nAdditionally, activating the Parry Mastery’s Stun Effect will end the Sovereignty Counter and all above non-stacking Buffs.\n\nAs a Defender, when Adam or his Opponent are struck by or Block attacks 20 times, Adam gains a Sovereignty Buff for 15 seconds.",
+        "note": "This Precision is huge, nearly giving Adam guaranteed critical hits.\n\nAs you can see these Fury Buffs are also large, meaning that the end of Adam’s Sovereignty Counter can start hitting for some big numbers."
+      },
+      {
+        "name": "Sovereignty Buff – Max: 1",
+        "description": "This Buff cannot have its Ability Accuracy reduced or be Nullified, Staggered, or Fatesealed by Champions.\n\nNew personal Buffs become Sovereign. Sovereign Buffs cannot have their Ability Accuracy reduced.\n\nGain Immunity to Nullify, Stagger, and Fateseal caused by Champions.\n\nStun Debuffs inflicted by the Opponent’s Parry Mastery suffer -100% Ability Accuracy.",
+        "note": "Sovereignty’s Nullify Immunity only makes Adam immune to Champion effects, not effects from Quests Nodes, meaning nodes like Buffet will still shut down Adam’s Buffs."
+      },
+      {
+        "name": "Stasis Pod",
+        "description": "Once per fight as a Defender, if Adam started the fight with more than 25% of his Max Health, when he reaches 25%, after a 2 second delay he enters his Stasis Pod for 2 seconds.\n\nOnce per fight as an Attacker, double tapping Block causes Adam to enter his Stasis Pod for 2 seconds.",
+        "note": ""
+      },
+      {
+        "name": "Stasis Pod – While Active",
+        "description": "Adam is locked into place and cannot use any attacks or be Interrupted.\n\nAll incoming damage is reduced by 75%.\n\nInstantly Regenerate 74% of all incoming damage unless suffering from a Soul Barb effect.\n\nLower the Ability Accuracy of Damaging Debuffs (excluding Soul Barb) and Heal Block effects by -100%.\n\nWhen entering the Stasis Pod, gain an Energy Protection Buff granting Immunity to Shock, Incinerate, Coldsnap, and Frostbite for 60 seconds.\n\nWhen emerging from the Stasis Pod, gain invulnerability for 0.25 seconds.\n\nAdam immediately emerges from the Pod if the Opponent activates a Special Attack 3, not granting its benefits against the attack.",
+        "note": "This mechanic is a lot to take in! The Pod essentially allows Adam to protect himself for 2 seconds, it also triggers his Energy Protection Buff, giving him Immunities to various energy damaging Debuffs."
+      },
+      {
+        "name": "Master of Souls",
+        "description": "While the Sovereignty Counter is active, inflict a 20% Taunt Debuff.\n\nWhen the Sovereignty Counter’s cooldown is complete, inflict a -20% Intimidate Debuff for 4 seconds, removed when Adam strikes the Opponent’s Block.",
+        "note": ""
+      }
+    ],
+    "abilities": [
+      "sovereignty",
+      "unblockable",
+      "truedamage",
+      "precision",
+      "fury",
+      "regeneration",
+      "stun"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "",
+      "description": "While Adam has a personal Precision Buff, the final hit inflicts a Stun Debuff for 1.25 seconds.",
+      "note": "This Special is ideal for chaining combos together in order to reach Adam’s 40 hit threshold on the Sovereignty Counter."
+    },
+    "2": {
+      "name": "",
+      "description": "After this attack, enter the Stasis Pod for 2 seconds. This ability can trigger multiple times in the fight. The Energy Protection Buff gained from this Stasis Pod only lasts 2 seconds."
+    },
+    "3": {
+      "name": "",
+      "description": "Gain a non-stacking Fury Buff, increasing Attack Rating by 5887.5 for 60 seconds. Max stacks: 1."
+    }
+  },
+  "signature": {
+    "name": "Cosmic Rebirth",
+    "description": "When entering the Stasis Pod, gain a Regeneration Buff healing 10% of missing Health over 2 seconds unless suffering from a Soul Barb effect.\n\nWhen the Opponent strikes into the Pod, they have a 100% chance to be inflicted with a Stun Debuff for 2 seconds unless suffering from a Soul Barb effect.",
+    "note": "An immensely powerful Signature Ability that allows Adam to turn his defensive Pod into an offensive opening thanks to the Stun Debuff."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-adam-warlock/"
+  }
+}

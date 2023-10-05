@@ -1,0 +1,64 @@
+{
+  "description": "Ikaris is an Eternal, once a race of super powered beings engineered by The Celestials to watch over and protect humanity from Deviants. Armed with super strength, flight, immortality, and cosmic energy powers, Ikaris serves as the stalwart leader of the Eternals tasked with safeguarding Earth.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Immune to Incinerate, Shock and reduces the damage of Poison by 20%.\n\nAll basic attacks are Energy Damage.",
+        "note": ""
+      },
+      {
+        "name": "Energize (Max: 10)",
+        "description": "Gain +1 Energize whenever either Champion strikes or hits into block with a Light Attack.\n\nEach Energize Buff lasts indefinitely until consumed and while 1 or more Energize Buffs are active, gain +70% Combat Power Rate. The effect of Energize is reduced by 50% when used as a Defender. This Combat Power Rate cannot be increased or decreased by outside sources.\n\nWhile +7 Energize Buffs are active: Whenever Ikaris’s Power is reduced for any reason, inflict the Opponent with a burst of 297.84 Energy Damage per Energize Buff. No effect against Mystics.\n\nAll Special Attacks consume 10 Energize Buffs on hit.\n\nLanding a Heavy Attack inflicts the Opponent with Incinerate Debuffs equal to 50% of the Energize Buffs and removes 1 Energize Buff.",
+        "note": "Playing around with having up to 10 Energize stacks lets you pick the buff you want and when. Don’t forget having 7+ Energize also is free damage via Energy Burst when you do your Special Attacks or when your power is messed with by different Techs."
+      },
+      {
+        "name": "Incinerate (Max: 225)",
+        "description": "Incinerate will deal +223.38 as Energy Damage over 22 seconds. Incinerate Debuffs also remove Perfect Block Chance and decrease Block Proficiency by 50% while active.\n\nLanding a Heavy Attack pauses all Incinerate Debuffs for 8 second(s).",
+        "note": "Upkeep, upkeep, upkeep, how close to the sun can you go without falling out of the sky. You can pause and refresh these Incinerates with a Heavy or Special 1."
+      }
+    ],
+    "abilities": [
+      "energize",
+      "powerdetonation",
+      "incinerate",
+      "protection"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Meteor Strike",
+      "description": "Inflict 3 Incinerate Debuffs on each hit and refresh all Incinerate Debuffs.\n\nIf Ikaris has 10 Energize Buffs, gain a Protection Buff for 30 seconds preventing Ikaris from taking more than 5% of max health from a single hit. Excluded from damage on Special 3.\n\nIf Ikaris has less than 10 Energize Buffs, gain an Armor Buff increasing Armor Rating by +900 for 30 seconds.",
+      "note": "Pick your Buff for the situation. Armor or Protection, or juggle both. Don’t forget your Synergy can help boost per hit Incinerate counts."
+    },
+    "2": {
+      "name": "Disintegration Beams",
+      "description": "Double all Incinerate Debuffs. If you have no Incinerate Debuffs on the Opponent, apply 10.\n\nIf Ikaris has 10 Energize Buffs, gain an Unblockable Buff for 8 seconds on Special Attack activation.\n\nIf Ikaris has less than 10 Energize Buffs, gain +3150 Physical Resistance Buff for 30 seconds.",
+      "note": "When do you want to double up, I’ll let you decide, tip: you will probably end up doing equal uses of Special 1 and Special 2’s before you do your adios Special 3."
+    },
+    "3": {
+      "name": "Eternal Destruction",
+      "description": "True Damage Attack that applies a bonus +1241 Attack Rating per unique buff currently on Ikaris.\n\nEach Incinerate Debuff on the Opponent grants a +372.3 Attack Rating for this attack. Consume all but 10 Incinerates.",
+      "note": "Who can give you more Buffs? Can you squeeze that bonus damage out with as many Incinerates as you can upkeep."
+    }
+  },
+  "signature": {
+    "name": "Energy Backblast",
+    "description": "Passive\n\nEvery time an Opponent tries to apply an effect on Ikaris that he is immune to, inflict an Energy Vulnerability Passive, decreasing Energy Resistance by 899 for 10 second(s). Max 10 stacks",
+    "note": "This works on Immunity he gains from outside sources, example: quest nodes."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-ikaris/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "When Struck by Medium Attack – Power Detonation",
+        "description": "Inflict a Power Detonation Debuff lasting 15 seconds. If Power Detonation expires naturally the Opponent receives a burst of 200% Energy Damage. If the Opponent launches a Special Attack this Debuff is removed with no penalty. Cooldown 10 seconds.",
+        "note": "Getting your Opponent to hit you with a medium then forcing them to throw a Special Attack on your time table.You know it’s coming or they will take damage."
+      }
+    ]
+  }
+}

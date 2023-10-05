@@ -1,0 +1,70 @@
+{
+  "description": "Princess of Wakanda and head of the Wakandan Design Group, Shuri’s genius and ingenuity has been the driving force behind much of Wakanda’s modern technical superiority. Not one for getting hung up on tradition or ceremony, Shuri is constantly pushing the limits of vibranium technology and was the mind behind the advanced suits used by her brother T’Challa, the Black Panther.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Shuri’s adaptive technology ensures her Ability Accuracy can’t be altered, and grants her immunity to Shock and Precision effects that aren’t her own.\n\nShuri’s attacks are non-contact and deal Energy Damage instead of Physical.",
+        "note": "Shuri plans ahead, and ensures that her Ability Accuracy always remains constant. While she can still be inflicted with effects like Concussion and Disorient, they won’t actually be able to affect Shuri’s Ability Accuracy. Additionally, an Immunity to Precision effects (including the Precision from Dexterity) combined with her base Critical Rate of 0 means that, like Ghost and Ægon, Shuri won’t be landing Critical Hits without the help of her own kit. Finally, all of Shuri’s attacks, including her basic combos, and her Specials, are fully non-contact. This means that the average attacker won’t be able to Parry Stun her, and Shuri doesn’t have to worry about detrimental contact-based effects."
+      },
+      {
+        "name": "Kinetic Matrix – Max Charges: 10",
+        "description": "Gain an indefinite Matrix Charge when struck or when Blocking attacks (5 on a Well-Timed Block). Lose 3 charges when struck by True Damage.\n\nAt max charges, new Matrix Charges become Armor Up Passives, increasing Armor Rating by 250 for 1 second, dropping off 1 at a time. Max Armor Ups: 20.",
+        "note": "Matrix Charges are the fuel that powers Shuri’s kit, so playing defensively with Shuri is key. Getting 5 charges from a Well-Timed Block means that you can Parry and go directly into a full combo, but your attacks will consume your charges. In some matchups it may be worth it to continue blocking to reach the maximum amount of charges, and then keep blocking to build Armor Up Passives. These Armor Ups drop off one at a time, so if you build up enough they can last you through an Opponent’s offensive window. You can even try getting a series of Well-Timed Blocks during the Opponent’s Special Attacks to build up lots of Armor very quickly."
+      }
+    ],
+    "abilities": [
+      "shockimmunity",
+      "armorup",
+      "shock",
+      "untouchable",
+      "precision"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Combat Analysis",
+      "description": "Each hit grants Shuri a Matrix Charge and an indefinite Precision Passive, plus an extra Precision for every 10 Shock Debuffs the Opponent is suffering.\n\nThese Precisions are consumed by Light and Medium hits to become Guaranteed Critical Hits.",
+      "note": "The Special 1 is where Shuri gets the Precisions that are so important for her damage. Since she’s immune to other Precision effects, these Passives represent the only way Shuri can land Critical Hits and upgrade her regular Shocks into much more potent Critical Shocks. Either land Light or Medium Attacks with Matrix Charges to inflict Critical Shocks directly, or land a Heavy Attack to upgrade your Precisions and Shocks in bulk. The amount of Precisions she gets from this attack scales with the number of Shocks she’s inflicted, meaning she should always gain enough Precisions from this attack to upgrade most of the Shocks on the Opponent."
+    },
+    "2": {
+      "name": "Vibranium Voltaics",
+      "description": "The final hit inflicts a Shock Debuff for each personal Critical Shock the Opponent is suffering, dealing 872.3 Energy Damage over 22 seconds.",
+      "note": "While it takes some setup to get the payout from this Special Attack, the reward is well worth it. After having built up Shocks on the Opponent and gained Precisions from her Special Attack 1, Shuri should be well set up to inflict a healthy stack of Critical Shocks on the Opponent. At that point, launching a Special 2 means Shuri can effectively double the amount of damaging effects on the Opponent– inflicting a new Shock Debuff for each Critical Shock they’re suffering. This new bulk of Shocks then contributes to getting more Precisions from Shuri’s Special 1, which allows her to upgrade them all into even more Critical Shocks to let the escalation continue. In just a few rotations, Shuri can completely overwhelm the Opponent with Shock effects."
+    },
+    "3": {
+      "name": "Apex Resonance",
+      "description": "Gain 20 Matrix Charges.\n\nDeal a burst of 1486.88 Direct Damage for each Shock and Critical Shock effect the Opponent is suffering.",
+      "note": "Since Matrix Charges cap out at 10, Shuri’s Special 3 will always grant her some amount of Armor Ups. Launching it while already at 10 charges means you’ll hit the cap of 20 Armor Ups, giving you at least 20 seconds of increased defense. But the real meat and potatoes of this attack is the burst of Direct Damage it deals. It deals extra damage based on the number of Shock effects on the Opponent (both regular Shocks and Critical Shocks), and since the rest of Shuri’s loop lets her inflict a staggering amount of Shock effects, the burst damage from her Special 3 can reach ludicrous levels."
+    }
+  },
+  "signature": {
+    "name": "Vibranium Aegis",
+    "description": "Against Special Attacks, Shuri can block Unblockable attacks and has 5% Perfect Block chance for each of her personal Armor Up Passives.",
+    "note": "With a kit so focused on blocking, Shuri’s Signature Ability helps make her defenses even more formidable. Right from the first level it lets Shuri block Special Attacks that would normally be Unblockable, negating a very potent and not uncommon threat. As she ranks up, blocking to stack Armor Up Passives becomes even better as each one gives Shuri a chance to Perfect Block against Special Attacks. At max rank, this chance can scale up to 100% if Shuri hits her Armor Up cap. The best defense is a perfect defense."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-shuri/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "On Heavy Charge, consume 10 Matrix Charges to gain a 100% Untouchable Passive for 5 seconds.\n\nOn Heavy Hit, refresh any active Shock effects on the Opponent and consume any personal Precision Passives to convert that many active personal Shock Debuffs into Critical Shock Passives.",
+        "note": "Untouchable is a newer type, first introduced with Spot. Like a Phase effect, it causes incoming attacks to Miss. Shuri can use this to either safely land Heavy Attacks, or activate it to avoid an Opponent’s particularly nasty Special Attack. Landing Heavy Attacks is extremely important for Shuri as it refreshes all her active Shocks and keeps her ramp going. Additionally, if Shuri has any of her personal Precisions, they’ll be combined with any Shock Debuffs on the Opponent and convert them into Critical Shock Passives. While Shuri can inflict Critical Shocks directly with her Light and Medium Attacks, once her ramp gets off the ground she’ll be building up tons of Shocks and Precisions at a time and can use a single Heavy Attack to upgrade a bulk of Shocks at once."
+      },
+      {
+        "name": "Light and Medium Attacks",
+        "description": "Consume 1 Matrix Charge to inflict a Shock Debuff dealing 872.3 Energy Damage over 22 seconds. (Max: 50)\n\nShocks inflicted with Critical Hits become Critical Shock Passives, multiplying their Energy Damage by Shuri’s Critical Damage Rating. (Max: 50)",
+        "note": "Shuri kickstarts her loop with Light and Medium Attacks. As long as she has Matrix Charges, she’ll be inflicting Shocks with every hit. If Shuri has Precisions from her Special 1, she’ll be landing Critical Hits and inflicting Critical Shocks instead. Shuri’s Critical Damage Rating is the highest in the game, so her Critical Shocks will be doing three times the damage of her normal Shocks."
+      },
+      {
+        "name": "Special Attacks",
+        "description": "On hit, refresh any active Shock effects and pause them for the duration of this Special Attack.\n\nPredictive targeting AI ensures Shuri’s Special Attacks can’t be Evaded.",
+        "note": "As a fully non-contact character, having Special Attacks that can’t be Evaded means that even Champions like Daredevil have to respect some of Shuri’s attacks."
+      }
+    ]
+  }
+}

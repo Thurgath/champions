@@ -1,0 +1,76 @@
+{
+  "description": "Mortimer Toynbee, or the Mutant known as Toad, was cursed with a lonely childhood. Abandoned by his parents, sent to an orphanage where he was tormented by peers and guardians due to his unusual abilities and outward appearance. Toynbee was discovered by Magneto in his early adulthood and was given the alias of Toad because of his peculiar powers. With his regenerative healing, superhuman leap, paralytic resin, and a 30-foot prehensile tongue, Toad now serves Magneto in his mission to subjugate the humans that rejected Toad.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Toad is Immune to Poison and his Regeneration rate cannot be decreased or increased by outside sources.\n\n7% chance when Struck to inflict a Paralytic Poison Debuff. Being Struck with Critical Hits has a 40% chance.",
+        "note": "While Toad’s Regeneration rate cannot be increased or decreased, his ability to heal is still vulnerable to Heal Block. Be sure to use Heal Block if Toad’s Health Regeneration becomes difficult to overcome."
+      },
+      {
+        "name": "Tongue Attacks",
+        "description": "Toad attacks using his Prehensile Tongue on his Second Medium, Special 1, and Special 2 Attacks.\n\n100% chance to inflict a Paralytic Poison Debuff on Contact.",
+        "note": "Toad’s Tongue Attacks occur on his Second Medium Attack, the last hit of Special 1, and the first 3 hits of Special 2."
+      },
+      {
+        "name": "Paralytic Poison – Max 10 Stacks",
+        "description": "Deals 3141.6 direct damage over 30 seconds, and reduces health recovery by 30%. Paralytic Poisons count as Poison Debuffs.\n\nDashing forward or dashing backwards Purifies one of Toad’s personal Paralytic Poison Debuffs. This effect cannot happen more than once every 2 seconds.\n\n70% chance to inflict a Paralytic Poison Passive when Purified by Skill Champions.",
+        "note": "Keep in mind while playing Toad that his Paralytic Poisons will fall off your opponents if they dash forward or backwards. This happens less and less as you attack more aggressively and  your opponent is pushed into the corner."
+      },
+      {
+        "name": "At Max Paralytic Poison",
+        "description": "Convert all personal Poisons into a Paralytic Poison Passive, dealing 1178.1 direct damage over 8 seconds. Deals an additional 690.3 for each Prowess effect and cannot be removed by Dashing.\n\nInflict a Stun Passive for 2 seconds. This effect goes on cooldown for 10 seconds. This effect cannot interrupt a Special Attack.",
+        "note": "If combined with Toad’s Tongue Attacks, Toad can Stun a Champion while attacking into their Block. You will have to pay attention when you stack 10 Paralytic Poison Debuffs on your opponent to do this."
+      },
+      {
+        "name": "Paralytic Secretion – Max 3 Stacks",
+        "description": "If Toad is Struck while he is near a wall, Toad begins to secrete paralysing toxins and gains a Regeneration Passive healing 5% of missing health over 8 seconds. +1% Regeneration Potency for every hit on the Opponent’s Combo Meter up to 15 hits.\n\nCritical Hits, Bleeds and Incinerate Debuffs also have a 20% chance to trigger Paralytic Secretion. Against Skill Champions this ability gains +50% chance.\n\n40% chance to inflict Paralytic Poison on contact while Paralytic Secretion is active.\n\nGain an indefinite Passive Prowess increasing Special Attack damage by 70% when Paralytic Secretion is activated. Max 5 Stacks.\n\nToad’s Attacks pause the duration of Paralytic Secretion for 0.50 seconds.",
+        "note": "When fighting against Toad, try to keep him out of the corner as that is where Toad is the strongest."
+      }
+    ],
+    "abilities": [
+      "poisonimmunity",
+      "paralyticpoison",
+      "stun",
+      "regeneration",
+      "prowess",
+      "slow"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Prehensile Poke",
+      "description": "Gain Paralytic Secretion for 8 seconds.",
+      "note": "This Special Attack is great for going on the offensive and stacking Prowess effects for your next Special Attack. While this ability is active, you are also able to Stun your opponent through their block as your Poisons can trigger on contact."
+    },
+    "2": {
+      "name": "Paralytic Whip",
+      "description": "If the Opponent is suffering from Toad’s personal Stun effects, deal 9032.1 as a burst of Poison Damage.\n\nRemoves all personal Prowess Passives.\n\nThe last hit inflicts a Slow Debuff for 25 seconds.",
+      "note": "Stacking Prowess effects with Special 1 is the best way to increase the damage output of this attack. Be sure to activate this when the opponent is close to 8 or 9 stacks of Paralytic Poison."
+    },
+    "3": {
+      "name": "Slippery Escape",
+      "description": "Inflict a Paralytic Poison Passive dealing 3927 direct damage over 25 seconds. Deals an additional 3927 for each Prowess effect and cannot be removed by Dashing.\n\nRemoves all personal Prowess Passives.",
+      "note": "Special 2 and Special 3 both remove your Prowess effects so be sure to have a large stack of Prowess before using this Attack."
+    }
+  },
+  "signature": {
+    "name": "Paralytic Resins",
+    "description": "Gain an indefinite Passive Prowess increasing Special Attack damage by 25% when a personal Stun or Poison, or the Stun from the Parry Mastery, is Purified or fails to trigger due to immunities. Max 10 stacks.\n\nAt 10 Prowess, consume all Prowess to inflict a Passive Stun for 2 seconds when a Poison fails to trigger due to immunity. This effect cannot interrupt a Special Attack.\n\n+100% Passive Stun duration if triggered by a Tongue Attack.",
+    "note": "Once Awakened, Toad’s Special Attack damage increases considerably as Champions that Purify Poisons grant Toad Prowess effects. This includes any time an opponent Purifies a Paralytic Poison by dashing."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-toad/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "Consume 1 Poison Debuff to deal 2356.2 as a burst of Physical damage.",
+        "note": "A good time to use this ability is when the amount of Paralytic Poison stacks on the Opponent is too high and you want to Stun them at a later time."
+      }
+    ]
+  }
+}

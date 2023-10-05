@@ -1,10 +1,29 @@
 {
-  "youtube": "PDE4tZH_oRA",
+  "description": "Karnak Mander-Azur, Inhuman philosopher and Magister of the Second Tower of Wisdom, refused the transformative Terrigen Mists and chose instead to train his body and mind like no other. Through his training, Karnak has gained immense insight into both himself and others, allowing him to see the flaw in all things and strike down his opponents with ruthless physical and mental precision.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Karnak’s training and unmatched focus grants him the following:\n\n+627.27 Physical Resistance.\n\n+182.61 Block Proficiency against Basic Attacks.\n\nIncoming non-damaging Debuffs suffer -60% duration.\n\nIncoming Poison effects deal -65% damage.",
+        "note": "Thought of running the Liquid Courage and Double Edge masteries? Karnak now comes Poison-resistant right out of the box, no Signature Ability necessary!"
+      },
+      {
+        "name": "Focus Charges",
+        "description": "Every 12 seconds, Karnak gains a Focus Charge to a max of 3. Karnak’s Focus timer is Paused for 10 seconds each time he’s struck and he loses a Charge of Focus if struck by a Special Attack.\n\n1+ Charge: +2566.67 Critical Rating.\n\n2+ Charges: Basic Attacks can land Critical Hits into the opponent’s Block. Critical Hit based abilities will not trigger through a Block.\n\n3+ Charges: Basic Attacks have a 50% chance to inflict a burst of Bleed Damage equal to 35% of the damage dealt by the attack.",
+        "note": "As long as Karnak has 1 Focus Charge, he will no longer lose his increased Critical Rating when being struck by basic attacks."
+      }
+    ],
+    "abilities": [
+      "truestrike",
+      "fury",
+      "disorient"
+    ]
+  },
   "specials": {
     "1": {
-      "description": "Karnak discovers his opponent’s stress points, gaining True Strike for 8.5 seconds. This allows him to ignore Armor, Resistances, and Evasion. True Strike is a passive effect and cannot be nullified or removed.",
+      "description": "100% chance to gain a True Strike Passive lasting 15 seconds, allowing attacks to ignore Armor, Resistances, Auto-Block and Evade effects. Knocking down the opponent will pause the True Strike Passive for 3 seconds.\n\nWhile this True Strike is active, Karnak will not stop gaining Focus if he’s struck.",
       "name": "Distortion & Focus",
-      "note": "This attack allows Karnak to be become Focused instantly.",
+      "note": "True Strike now lasts almost twice as long; more so if the opponent is knocked down!",
       "ranges": [
         "melee"
       ],
@@ -16,7 +35,7 @@
       ]
     },
     "2": {
-      "description": "Damage from this attack increases by up to 48% based on how low the opponent’s Health is at the time of impact.",
+      "description": "100% chance to gain a Passive Fury effect, increasing attack by 1179 for 30 seconds.\n\nThis Fury is Paused for 5 seconds each time the opponent is Knocked Down.",
       "name": "The Three Worlds",
       "ranges": [
         "melee",
@@ -25,34 +44,36 @@
       "damagetypes": [
         "physical"
       ],
-      "abilities": []
+      "abilities": [],
+      "note": "Fury scaling with opponent HP has been replaced by a value equivalent to the former’s max potency. Karnak no longer cares how weak the opponent is; max HP or 1HP, they are all but dust."
     },
     "3": {
-      "description": "Karnak Dazes his foes with his strike, reducing their Defensive Ability Accuracy by 80% for 40 seconds.",
+      "description": "100% chance to inflict a Disorient Debuff, reducing Block Proficiency by 50% and Defensive Ability Accuracy by 80% for 30 seconds.",
       "name": "Blind Time",
       "damagetypes": [
         "physical"
-      ]
+      ],
+      "note": "Daze has been replaced with Disorient, coupling the same Defensive Ability Accuracy reduction with added Block Proficiency reduction!"
     }
   },
   "signature": {
-    "name": "Second Tower Training",
-    "description": "Karnak’s time at the Second Tower of Wisdom allows him to shrug off some Debuff effects faster than usual, and reduce all incoming damage from Poison."
+    "name": "All Will Be As Dust",
+    "description": "Always Active\n\nA stricter training regimen allows Karnak to begin the fight with 1 Focus Charge. Additionally, his Basic Attacks are enhanced in the following ways:\n\nIgnore 100% of the opponent’s positive Physical Resistance.\n\nStriking the opponent’s Block grants Karnak 110% of the Power an unblocked attack would have granted.",
+    "note": "Strike into blocks with confidence, knowing your crit damage with 2+ Focus Charges and Power gained through Karnak’s Signature Ability will add up."
   },
   "author": {
     "name": "Kabam",
     "type": "spotlight",
     "profile": "https://playcontestofchampions.com/news/champion-spotlight-karnak/"
   },
-  "gameplay": {
-    "description": "Buff: Given time to study his opponent, Karnak becomes Focused, gaining 66% Critical Hit Chance. Whenever he is struck, Karnak loses Focus for 9 seconds. \n\nResist Physical Passive: Covered in a dense callus, Karnak has toughened his skin and gains 21% increased Physical Resistance.",
-    "abilities": [
-      "precision",
-      "physicalresist"
-    ]
-  },
+  "youtube": "PDE4tZH_oRA",
   "attack": {
-    "description": "Passive: Every 5 seconds, Karnak reduces his Class Disadvantage by 2% until it’s gone. This only affects the Attack penalty from a class Disadvantage, it does not affect Karnak’s opponent’s Class Advantage."
-  },
-  "description": "Karnak Mander-Azur, Inhuman philosopher and Magister of the Second Tower of Wisdom, refused the transformative Terrigen Mists and chose instead to train his body and mind like no other. Through his training, Karnak has gained immense insight into both himself and others, allowing him to see the flaw in all things and strike down his opponents with ruthless physical and mental precision."
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "Consumes 1 Focus Charge to inflict a stacking 20 second Fragility Debuff. Attacking a Fragile opponent grants +525 Critical Damage Rating and reduces Block Proficiency by 50%\n\nThis attack does not consume a Focus Charge if the opponent is intercepted, recovering from the use of a Special Attack, or charging or executing a Heavy Attack.",
+        "note": "Karnak’s Heavy Attacks now serve a purpose! Consume a Focus Charge to gain some juicy crit damage increases, or for free if you time it right!"
+      }
+    ]
+  }
 }

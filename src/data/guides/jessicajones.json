@@ -1,0 +1,64 @@
+{
+  "description": "As a teenager, Jessica Jones was in a tragic car accident that exposed her to radioactive chemicals, granting her superhuman strength and durability. After a troubled attempt to live the life of a superhero, Jessica instead decided to become a private investigator. Founding Alias Investigations, Jessica now uses her keen wits and incredible powers to solve crimes and help the helpless, for a small fee of course.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Physical and Energy Resistance increased by 562.5.",
+        "note": ""
+      },
+      {
+        "name": "Investigation – Max: 10",
+        "description": "Gain 1 Investigation when the Opponent gains a Bar of Power. +1 as a Defender.\n\nGain 1 Investigation when the Opponent is inflicted with a non-Stun Debuff.\n\nAs a Defender, gain 1 Investigation every 4 seconds the Opponent spends above 2 Bars of Power.\n\nLose 2 Investigation when the Opponent gains or activates a Cleanse effect.\n\nThe ongoing investigation makes Opponents nervous. Each Investigation increases the Opponent’s chance to launch a Special Attack by 18%, and reduces their Ability Power Rate and Regeneration Rate by 7%.\n\nOnce Investigation reaches max, the Investigation is complete and it can no longer be gained or lost.",
+        "note": "Investigation is Jessica’s core ability. It can increase in a number of different ways, but can only be decreased if the Opponent has Cleanse abilities. She gets stronger in a number of ways as it increases, and its effect on the Opponent’s Ability Power Rate, Regeneration Rate, and Special chance are subtly very strong."
+      }
+    ],
+    "abilities": [
+      "investigation",
+      "resistanceup",
+      "unstoppable",
+      "fury"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "A Lesson in Improvisation",
+      "description": "On the last hit, Jessica picks up whatever’s handy and throws it at the Opponent, causing a different effect depending on what was thrown. Effects also trigger when Blocked.\n\nBox: Inflict a Stun Debuff for 4 seconds.\n\nGarbage Can: Inflict a Crush Debuff for 9 seconds. While Crushed, incoming attacks cannot be Blocked.\n\nFire Hydrant: Inflict a 40% Suppression Debuff for 9 seconds.\n\nPallet: Inflict a 3375 Physical Vulnerability Debuff for 13 seconds.\n\nTire: Inflict a Rupture Debuff dealing 8314.2 Physical Damage over 9 seconds.\n\nPropane Tank: Inflict an Incinerate Debuff dealing 5669.6 Energy Damage over 9 seconds. Incinerate removes Perfect Block chance and reduces Block Proficiency by 50%.\n\nPizza: Jessica gains a Regeneration Passive, restoring 5669.6 health over 9 seconds.\n\nThe Kitchen Sink: Apply the effects from every other item, but potencies are reduced by 50%.",
+      "note": "Jessica’s Special 1 is key to the rest of her kit. In addition to applying Debuffs that increase her Investigation, it’s also the source of the additional Fury Passives she gets from her Special 2. It’s impossible for her to change or control which object will be thrown, but it is displayed on the HUD beforehand, so you’ll know what effect will trigger beforehand. While the object selected is random, objects that haven’t been thrown in a while have a slightly higher chance to be chosen, so the ramp up of her Special 2 will be consistent over the course of longer fights."
+    },
+    "2": {
+      "name": "Hail of Haymakers",
+      "description": "On activation, gain a Fury Passive increasing Attack Rating by 3233.3 for 10 seconds. Gain an additional Fury for each unique object Jessica has thrown with her Special Attack 1 in this fight. Max Fury Passives: 5.\n\nThese Fury Passives are paused during all Special Attacks.",
+      "note": "The Fury Passives from Special 2 are the main payoff for using Special 1, and also feed back into it because the Fury increases the damage from her Incinerate and Rupture Debuffs. Her usual flow during a fight is to throw a handful of Special 1’s to increase her unique objects, then switch to alternating between Special 2 and Special 1 to maintain her Fury Passives."
+    },
+    "3": {
+      "name": "Throwing Punches",
+      "description": "Stun the Opponent for 5 seconds.\n\nGain an indefinite non-stacking Indestructible Charge. The next time Jessica would be struck, the Charge is removed and she gains an Indestructible Passive for 2 seconds. Does not trigger against Special Attack 3.",
+      "note": "The Special 3 is nice to use occasionally during fights to provide Jessica a bit of a safety net via Indestructible."
+    }
+  },
+  "signature": {
+    "name": "Class Dossier",
+    "description": "When Jessica reaches max Investigation, she gains a Dossier on the Opponent’s Class increasing her Combat Power Rate by 25% while below 1 Bar of Power.\n\nDossiers are Cross-Fight, lasting for the rest of the Quest. Once Jessica has a Dossier on 3 different Classes, she also gains one on the Superior Class.\n\nAt the start of each fight, if Jessica already has her Opponent’s Dossier, she gains 1 Investigation for every 50 signature levels obtained.",
+    "note": "Jessica’s Sig is useful in a number of ways. The main use is increasing her Combat Power Rate to allow her to use more Special 1’s, which speeds up the ramp from her Special 2 and lets her throw more random junk at the Opponent. Her Dossiers being Cross-Fight also means that after beating one Opponent into a pulp, subsequent fights against the same Class will be a lot faster and easier, because she’ll start with more Investigation, and have the Combat Power Rate increase right from the beginning of the fight."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-jessica-jones/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "Pause all non-Stun Debuffs inflicted by Special Attack 1 for 2 seconds.",
+        "note": "Heavy Attack is a great thing to use after certain Debuffs are inflicted from Special 1. Not all of her Debuffs will benefit from being paused, but a few of them benefit a lot, such as the Incinerate and Rupture."
+      },
+      {
+        "name": "Opponent Activates a Special Attack",
+        "description": "For each Investigation, inflict a 2% Weakness Debuff lasting until the end of the attack. This does not grant Investigation. Then, if the Opponent has:\n\n3+ Debuffs: Gain a 2750 Resistance Up Passive, lasting for 2 seconds after the end of the Attack.\n\n5+ Debuffs: Gain an Unstoppable Passive, lasting for 2 seconds after the end of the attack.\n\n10+ Debuffs: Gain an Unblockable Passive, lasting for 2 seconds after the end of the attack.\n\nThe duration of these effects is increased by 4 seconds flat when fighting as a Defender.\n\nWhile Investigation is at 7 or more, Resistance Up and Unstoppable also activate during Jessica’s Special Attacks, regardless of Debuffs on the Opponent.",
+        "note": "These abilities are the main payoff for building Investigation, and are the crux of both her Attacker and Defender gameplay. The Weakness and Resistance significantly reduce the damage Jessica takes from incoming Special Attacks, and the Unstoppable and Unblockable allow her to quickly punish her Opponents afterward. Important to note that these effects count all Debuffs on the Opponent, not just the Weaknesses she applies, so it’s possible for her to gain these benefits before Investigation reaches the corresponding amount."
+      }
+    ]
+  }
+}

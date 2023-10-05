@@ -1,0 +1,72 @@
+{
+  "description": "After proving his worth as a mighty warrior, Kallark of Strontia took on the mantle of Gladiator and became the renowned leader of the Shi’ar Imperial Guard. Despite the Strontian’s near limitless power, he is one of the last of his kind and honors his people’s memory by serving as personal bodyguard to the Shi’ar Majestor and Majestrix. He is one of the galaxy’s greatest heroes, provided you are aligned with the goals of the Shi’ar Empire.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active – Strontian Physiology",
+        "description": "Strontian physiology grants 200% increased Ability Accuracy to personal Buffs, plus Immunity to Power Drain and Power Burn effects.",
+        "note": "Strontian’s are among the strongest beings in the galaxy, and Gladiator is potentially the most powerful of them all. This is signified by Gladiator’s personal Buff Ability Accuracy being high enough to negate most Neutralize effects."
+      },
+      {
+        "name": "Confidence Buffs – Limit: 24",
+        "description": "Confidence Buffs are indefinite and have 3% potency. Potency is increased by +1% flat when fighting on a Final Boss Node. New Confidence Buffs cannot be gained while at the Confidence Limit.\n\nStriking the Opponent with a Heavy Attack grants 2 Confidence Buffs.\n\nWhile the Opponent is suffering from Gladiator’s personal Intimidate Debuff, gain 1 Confidence Buff each time the Opponent or their Block is struck by a Light or Medium Attack.\n\nAs a Defender, gain 1 Confidence Buff every 2 seconds. Being knocked down by a Special Attack pauses this for 8 seconds.\n\nWhen struck by any attack other than the final hit of a Special Attack, remove 1 Confidence Buff.\n\nWhen struck by the final hit of a Special Attack, remove 4 Confidence Buffs per level of the Special. This removal will not trigger while Gladiator is Unstoppable.",
+        "note": "Confidence Buffs increase Gladiator’s Attack and Armor Ratings by the given percent. Keep in mind that the Armor Rating component is still subject to the same Diminishing Returns as a standard Armor Up effect. These also serve double duty as a resource for unlocking new abilities but manage them carefully because Gladiator gains and loses Confidence in a multitude of ways."
+      },
+      {
+        "name": "Super Confidence – With 12 or more Confidence Buffs",
+        "description": "On Special Attack activation, gain an Embolden Passive for 5 seconds, paused until the end of the Special Attack.\n\nStriking the Opponent with a Heavy Attack grants an Unblockable Buff for 2 seconds, paused during Gladiator’s Special Attacks. Cooldown: 5 seconds.\n\nWhile benefiting from an Unblockable Buff, Heavy and Special Attacks deal an additional 90% of the damage recently dealt as a burst of Physical Damage.",
+        "note": "Embolden Passives provide temporary immunity to Nullify, Stagger, and Fate Seal effects caused by the Opponent.When Gladiator reaches 12 Confidence Buffs he unlocks Super Confidence and gains potent abilities that dramatically increase his safety, utility, and damage. Throwing a well timed Special Attack while his Unblockable Buff is still active truly emphasizes his Strontian might."
+      },
+      {
+        "name": "Ultra Confidence – With 24 or more Confidence Buffs",
+        "description": "Personal Unstoppable Buffs are paused during the Opponent’s Special Attacks. While this pause is active, Gladiator is immune to the Opponent’s Stun effects.\n\nWhile attacking the Opponent within striking distance during or immediately after their Special Attacks, incoming damage from hits is reduced by 80% and Basic Attacks deal bursts of 7930 Physical Damage.",
+        "note": "When Gladiator reaches 24 Confidence Buffs he gains Ultra Confidence and some spicy new abilities for the truly bold. These allow him to punish the Opponent’s Special Attacks with vicious bursts of damage during or immediately after their Special Attacks."
+      }
+    ],
+    "abilities": [
+      "intimidate",
+      "confidence",
+      "embolden",
+      "unblockable",
+      "unstoppable",
+      "vigilance",
+      "powergain"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Blue Shift",
+      "description": "On activation, gain an Unstoppable Buff for 4 seconds, paused until the end of the Special Attack.\n\nEach Frost Breath hit inflicts a Coldsnap Debuff dealing 3965 Energy Damage over 12 seconds. As a Defender, Coldsnaps can also be inflicted through Block but at 25% potency.",
+      "note": "Keeping this Unstoppable Buff up is an important part of Gladiator’s dominant playstyle, especially if you’re playing into Ultra Confidence. Keep these Coldsnaps in mind for their sneaky Evade negation, and watch out for them when fighting him as a Defender."
+    },
+    "2": {
+      "name": "Red Shift",
+      "description": "On activation, gain a Vigilance Buff for 20 seconds, paused until the end of the Special Attack.\n\nEach Eye Beam hit inflicts an Incinerate Debuff dealing 7930 Energy Damage over 20 seconds. As a Defender, Incinerates can also be inflicted through Block but at 25% potency.",
+      "note": "If you’re fighting a tricky Opponent that relies on Miss, this Vigilance is for you. These Incinerates are also very potent and can be inflicted through Block on Defense just like the Coldsnaps before, but this Attack is much harder to escape with the Dexterity Mastery."
+    },
+    "3": {
+      "name": "Limit Breaker",
+      "description": "Increase Confidence Limit by 4. This can only trigger once per fight.\n\nGain a Power Gain Buff granting 100% of a Bar of Power over 5 seconds.",
+      "note": "This Power Gain is very effective for restarting Gladiator’s loop after throwing this Special Attack, but the real chase here is the increase to Gladiator’s Confidence Buff limit. This increased value is great for establishing a buffer of Confidence Buffs while playing into Ultra Confidence."
+    }
+  },
+  "signature": {
+    "name": "Even Further Beyond",
+    "description": "Winning a fight as an Attacker with more than 49.8% Health adds 4 to Gladiator’s Persistent Confidence Limit. Max: 8. When starting a fight, increase Confidence Limit by that value.\n\nWhile benefiting from a personal Vigilance effect, all hits deal Passive True Damage and the Opponent’s Armor Up effects suffer 100.45% reduced Ability Accuracy.",
+    "note": "The first clause of this Signature Ability allows Gladiator to increase the limit of his Confidence Buffs by up to 8 for the entirety of a quest, increasing his Attack and Damage potentials significantly. But you have to earn it first.The second clause greatly increases the utility of the Vigilance Buff Gladiator gets from his Special 2. Being able to ignore the Opponent’s Armor and Resistances is very impactful, plus impairing their ability to get new Armor Ups makes a lot of his match ups much more favorable."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/gladiator/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks – Stunning Intimidation",
+        "description": "Charging a Heavy Attack after landing a non-Combo ending Basic Attack inflicts a Stun Passive for 0.60 seconds.\n\nOn hit while the Opponent has less than 2 Bars of Power, inflict a non-stacking 30% Intimidate Debuff for 2 seconds. This Intimidate is paused for 0.20 seconds each time Gladiator Dashes forward, strikes the Opponent, or hits their Block",
+        "note": "Charging Gladiator’s Heavy Attack Stuns his Opponent and leaves them open to follow up Attacks. The Intimidate effect here may seem short but it’s just long enough to capitalize on without impeding your ability to special bait the Opponent in the long run."
+      }
+    ]
+  }
+}

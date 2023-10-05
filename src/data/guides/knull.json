@@ -1,0 +1,63 @@
+{
+  "description": "When all that existed was the darkness there was Knull and he thrived in it. But when the Celestial’s creations began consuming his Living Abyss with radiant light, he retaliated. Knull felled one of these primordial gods, absorbing its power and forming All-Black, the Necrosword. With the power of the Celestials on his side and sheer darkness as his weapon, Knull spawned an army of his own, the Symbiotes. Creatures formed from darkness and fear and designed to extinguish the light.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Lord of Darkness – Always Active",
+        "description": "+40% Degeneration Resistance and +60% Bleed and Poison Resistance.\n\nEvery 10 hits in the Opponent’s Combo Meter, inflict an indefinite Darkness Passive, lowering Combat Power Rate by 15%. Max 8 stack(s).\n\nWhen the Opponent uses a Special Attack, remove 1 Darkness Passive.",
+        "note": "Darkness only comes into play while Knull is defending. Make sure to throw as many Special Attacks as you can to keep Darkness stacks low."
+      },
+      {
+        "name": "Corruption – Passive",
+        "description": "Knull inflicts Corruption on his Opponents using his Special Attacks, causing the following effects:\n\nThe Opponent’s Armor Break Debuffs are paused.\n\nOn activation, convert all indefinite Living Abyss Debuffs on the Opponent into Armor Break Debuffs that lower Armor Rating by 233.33, for 10 second(s).\n\nFor each Armor Up Effect on the Opponent, inflict an Armor Break Debuff, reducing Armor Rating by 233.33, for 10 second(s).\n\nThe Opponent suffers from -3.25% current Combat Power Rate for each Armor Break Debuff. Max 65%.\n\nThe Opponent passively suffers from Reverse Controls.",
+        "note": "Corruption severely lowers the Opponent’s Armor Rating (thanks to all the Armor Breaks) and their Combat Power Rate. This sets Knull up for the opportunity to deal tons of damage while limiting the amount of Power the Opponent gains."
+      }
+    ],
+    "abilities": [
+      "armorbreak",
+      "trueaccuracy",
+      "degeneration",
+      "bleed"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Swarm",
+      "description": "On activation, inflict an Encroaching Corruption lasting for 10 second(s). Upon expiry, inflict Corruption for 10 second(s).\n\nWhile fighting as a Defender, Encroaching Corruption will not inflict Corruption while the Attacker is performing a Special Attack.",
+      "note": "This Special Attack is vital in Knull’s playstyle. He uses it to inflict an Encroaching Corruption, which works similar to an Encroaching Stun."
+    },
+    "2": {
+      "name": "Cull",
+      "description": "Inflict 10 Armor Break Debuffs, reducing Armor Rating by 233.33 for 10 second(s).",
+      "note": "While maintaining Corruption on the Opponent, the Special 2 Attack can be used to boost damage and continue pausing Corruption’s duration."
+    },
+    "3": {
+      "name": "Rend",
+      "description": "Inflict Corruption, lasting 25 second(s)."
+    }
+  },
+  "signature": {
+    "name": "King in Black",
+    "description": "At the start of each fight, inflict +1 Living Abyss Debuff(s) on the Opponent for every 13 Signature Levels obtained.\n\nWhen Corruption activates, gain an Unstoppable and Unblockable Buff for 2 second(s).\n\nWhile Corruption is active and the Opponent has 50% Health or less, when they would gain a Regeneration Effect, replace it with Knull’s Degeneration Debuff.",
+    "note": "This is a very loaded Signature Ability! It allows Knull to start the fight with Living Abyss Debuffs on his Opponent, shortening his gameplay loop. And it gives him a window to attack the Opponent whenever Corruption activates. Lastly, it allows him to remove his Corrupted Opponent’s Regeneration Effects as long as they’re below 50% of their Max Health. This is super useful on Quest Buffs like Vigorous Assault."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-knull/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Symbiote Attacks – Medium, Heavy and Special 1 Attacks",
+        "description": "Symbiote Attacks passively gain True Accuracy, ignoring all Evade and Auto-Block effects.\n\nWhile the Opponent is not Corrupted, landing a hit or striking into Block has a 75% chance to inflict an indefinite Living Abyss Debuff, removing 1 Armor Up Buff.\n\nWhile the Opponent is Corrupted, consume 3 Armor Break Debuffs to inflict 3 Living Abyss Debuffs, regenerate 10% of hit damage and inflict a Degeneration Debuff, dealing 1949.6 Direct Damage over 2 second(s). This ability does not trigger when using the Medium 1 Attack.",
+        "note": "Use Symbiote Attacks to build up Living Abyss Debuffs, before Corrupting the Opponent to convert them all into Armor Break Debuffs. While Corruption is active, Symbiote Attacks can be used to consume Armor Breaks in order to lifesteal some health and refund Living Abyss stacks, this can be great for longer fights or when you’re looking to top up Knull’s Health."
+      },
+      {
+        "name": "Necrosword Attacks – Light & Special 2 Attacks",
+        "description": "Pause the duration of the Opponent’s Corruption for 1.25 second(s).\n\nWhile the Opponent is Corrupted, inflict an instant Bleed dealing 65% of hit damage as Direct Damage.",
+        "note": "Necrosword Attacks can extend the duration of Corruption and have a lethal instant Bleed that deals a large fraction of damage dealt on hit. This means that any boosts to Knull’s Attack Rating are twice as valuable!"
+      }
+    ]
+  }
+}

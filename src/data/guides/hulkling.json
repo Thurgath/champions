@@ -1,0 +1,70 @@
+{
+  "description": "Growing up, Theodore “Teddy” Altman thought he was simply a mutant with shapeshifting and super-strength. Then one day he was hunted down by Super-Skrull and informed that not only was he actually a hybrid of the Kree and Skrull races, he was also a member of the Skrull royal family. As time passed, Teddy claimed his role as the once and future King of Space, emperor of the united Kree/Skrull alliance, and wielder of the mythical star-sword, Excelsior.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Advanced Kree-Skrull physiology provides full Immunity to the Poisons and Shocks of the Battlerealm\n\nAdditionally, the mystical Excelsior Sword protects Hulkling’s energy, granting Immunity to Power Drain, Steal and Burn, and reducing incoming Heal Block duration by 2 second(s) flat.\n\nWhen Hulkling prevents an effect via Immunity, he gains 1 Shapeshift Charge(s).\n\n+614.75 Attack Rating for each unique Buff Hulkling has.\n\nOffensive Combat Power Rate is decreased by 20%",
+        "note": "Hulkling has quite a few Immunities, which is handy in and of itself. But he gains additional benefits on top of that, since triggering his Immunities will grant him extra Shapeshift Charges, making it even easier to build up his Buffs.While his Combat Power Rate may be lower than normal, he makes up for it with the extra Power he gains from his Shapeshift Charge mechanics."
+      },
+      {
+        "name": "Shapeshift Charges – Max 8",
+        "description": "Start the fight with 3 Shapeshift Charge(s), and gain 1 Charge(s) every 1 second(s) while not attacking with Basic Attacks or being Struck.\n\nA Shapeshift Charge is converted into a Buff when Hulkling performs certain gameplay actions. These Buffs each last 16 second(s) and can stack up to 4 times.\n\nWhenever a Shapeshift Buff is gained, Hulkling also Passively gains 7% of a Bar of Power.",
+        "note": "Shapeshift Charges are Hulkling’s core mechanic. He builds them quickly over time, but not while he’s attacking or being stuck, so occasionally you’ll have to back off and wait a moment for the Charges to build up before attacking the Opponent.The Passive Power Gain he gets from his Shapeshift Buffs is also very useful, both compensating for his decreased Combat Power rate, and allowing him to get more Power than usual from striking the Opponent’s Block."
+      },
+      {
+        "name": "Shapeshift Buff Conversion",
+        "description": "Hit into Block: Convert into a Pierce Buff of 700 potency.\n\nStrike with a Light or Medium Attack: Convert into an Aptitude Buff, increasing the potency of Fury, Armor, and Precision Buffs by 18%.\n\nWell-Timed Block: Convert into a Bulwark Buff, increasing Block Proficiency by 700.\n\nStruck by the Opponent: Convert into a Regeneration Buff, healing 65% of the damage taken from the Strike.",
+        "note": "Hulkling’s Shapeshift Buffs help him adapt to whatever situation he finds himself in. Striking the Opponent’s Block will give Pierce, letting him do more damage into a Block. Blocking with a Well-Timed Block will grant him Bulwark, improving his Block Proficiency. Being Struck will grant him Regeneration, restoring some of the damage taken."
+      },
+      {
+        "name": "Peak Transformation",
+        "description": "Every 5 Pierce Buffs gained also grants an Unblockable Buff for 5 second(s). Reduced to every 3 Buffs when fighting as a Defender.\n\nEvery 8 Regeneration Buffs gained also grants an Indestructible Buff for 2.50 second(s). Reduced to every 5 Buffs when fighting as a Defender.\n\nIf either of these Buffs are Nullified, they are replaced with identical Passives, and their duration is 3 second(s) longer.\n\nBoth the Indestructible Buff and Passive are removed after being struck by the Opponent’s Special Attack 3.",
+        "note": "Peak Transformation is the key thing to keep track of while playing as and against Hulkling. Shapeshift Charges and their Buffs trigger very easily, and don’t require much management. However, triggering the Unblockable Buff from Peak Transformation is key to getting as much damage out of Hulkling as possible, while also being a potent threat when he’s on Defense."
+      }
+    ],
+    "abilities": [
+      "shapeshiftcharges",
+      "pierce",
+      "aptitude",
+      "bulwark",
+      "regeneration"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "",
+      "description": "For the next 10 second(s), the time between gaining Shapeshift Charges is decreased to 0.5 second(s).\n\nIf Hulkling is or becomes Unblockable during this Attack, pause all his personal Buffs, other than Unblockable, until 2 second(s) after this Attack.",
+      "note": "Special Attack 1 is a great way to accelerate Hulkling’s main gameplay loop. By significantly increasing the rate at which he gains Shapeshift Charges, he’ll be able to build up Shapeshift Buffs much faster."
+    },
+    "2": {
+      "name": "",
+      "description": "On Activation, gain a Fury Buff, increasing Attack Rating by 1721.3 for 10 second(s).\n\nIf Hulkling is or becomes Unblockable during this Attack, gain another Fury Buff, increasing Attack Rating by 2704.9 for 10 second(s).",
+      "note": "Special Attack 2 is Hulkling’s big damage source. The Fury Buff he gets if he was Unblockable during this attack is very large, and will further be improved by the Aptitude Buffs he gets from his Shapeshift mechanic. So if you’re able to line up the Aptitude, Pierce, and Unblockable Buffs all before doing a Special 2, he’ll get access to a lot of damage for a long window of time."
+    },
+    "3": {
+      "name": "",
+      "description": "If Hulkling has at least 2 Bulwark Shapeshift Buffs, pause 2 of them for the remainder of the fight, once per fight.\n\nIf Hulkling doesn’t have enough Bulwark, or they’re already paused, pause Aptitude Buffs instead, then Pierce Buffs.\n\nIf Hulkling doesn’t have enough of any Bulwark, Aptitude, or Pierce, or all are paused, he instead gains Shapeshift Charges up to their Max.",
+      "note": "Special Attack 3 is primarily useful in longer fights. By permanently pausing his Bulwark, Pierce, and Aptitude Buffs, it’s much easier to maintain the benefits they grant over the course of a long fight. Note that pausing the Buffs won’t stop future ones from triggering, so Hulkling will still gain all the other benefits he gains from triggering Shapeshift Buffs."
+    }
+  },
+  "signature": {
+    "name": "King of Space",
+    "description": "Personal Bulwark Buff duration is increased by 4 second(s) flat.\n\nPersonal Fury Buff duration is increased by 3 second(s) flat.\n\n+525.49 Armor Penetration for each active personal Pierce Buff.",
+    "note": "Hulkling’s Signature Ability generally makes it easier to do what he wants to be doing in the first place. Increased Bulwark duration and Armor Penetration will make it easier to take less damage, and deal more. The increased Fury Buff duration lets him get a few more strong hits in after the Special 2, and also makes it easier to pause the Fury Buffs with his Special 1."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-hulkling/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "Inflicts a non-stacking Intimidate Debuff for 7 second(s), making the Opponent less aggressive and reducing their Block Proficiency by 900. Cooldown 15 second(s).",
+        "note": "In order to trigger the Unblockable from Peak Transformation, Hulkling needs to strike the Opponents Block and generate Pierce Buffs. But this can be tricky to do if the Defender isn’t Blocking very often. So, the new Intimidate Debuff makes that easier, by making the Opponent more Defensive for a period of time."
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "description": "Sauron was once a hypnotherapist named Karl Lykos, bitten as a child by a mutated pteranodon that bestowed him with both the ability to absorb a person’s life force and the vampiric need to do so to sustain himself with it.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Immune to all Power Steal, Poison, and Sauron’s Regeneration Rate cannot be decreased or increased by outside sources.\n\nTake -95% less damage from Bleed effects and gain +25% Critical Resistance while Bleeding.\n\nWhen Sauron is struck, 30% chance to gain a Regen Passive healing 10% of the damage taken per personal Prowess Passive effect he has.\n\nLight Attacks have 35% chance to deal 50% of the damage dealt as a burst of Physical Damage. This ability can also trigger through Block.",
+        "note": "As you can see, he will have two core ways to trigger Prowess gain on chance-based abilities, if they are affected by Ability Accuracy reduction, you will gain more Prowess. Seek out those who Bleed you (see the Signature Ability for even more potential). You can already start to see what masteries he does well with. But I am interested to see what others you also take on him."
+      },
+      {
+        "name": "Prowess (Max: 10)",
+        "description": "Each time one of Sauron’s Abilities fails to trigger due to chance gain a 10% Prowess Passive. Gain an additional 2 Prowess Passive if Sauron’s Ability fails due to Ability Accuracy modification.\n\nAt 7 Prowess Passives, Dash Attacks, Heavy and Special Attacks grant an Unblockable Passive for 4 seconds. This Unblockable Passive has a 10 second cooldown unless Sauron’s Ability Accuracy is being modified or Sauron is affected by a Degeneration.\n\nAt 10 Prowess Passives, Dashing Attacks, inflict a Bleed Passive, dealing +3522 damage over 4 seconds. This ability can also trigger through block.\n\nLanding the first hit of a Heavy Attack will consume 3 Prowess Passives and gain a Fury Passive, granting +2348 Attack Rating for 4 seconds.",
+        "note": "Having multiple ways for an ability to fail will help Sauron will help him gain Prowess fast. Seek out Champions that reduce Ability Accuracy reduction to capitalize on this even better. Unblockable, Bleed, and Fury can get all 3 lined up for big damage. If you drop a heavy into the Opponent followed by multiple light attacks, Sauron can get back to 10 Prowess before the Fury wears off, so you can have it going into a Special Attack."
+      },
+      {
+        "name": "Extinction Mode",
+        "description": "While at 10 Prowess Passives, when you hit the Opponent, inflict a Degeneration Passive, dealing +1878.4 Direct Damage over 5 seconds.\n\nIncrease Physical Burst Potency by 50% and an Ability Accuracy Passive for personal Abilities by 100%.\n\nIf the Degeneration Passive from Extinction Mode expires, remove all Prowess Passives.",
+        "note": "Lengthening the duration of Extinction Mode will just make everything else even more awesome. It is a short duration so take advantage of it when it’s up. Remember when you are in Extinction Mode, get those light attack hits in. It is a 100% chance to hit with extra attacks."
+      }
+    ],
+    "abilities": [
+      "prowess",
+      "unblockable",
+      "degeneration",
+      "regeneration"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Life Force Beam",
+      "description": "After this Special Attack ends, for each physical burst hit dealt to the Opponent, heal for 25% the damage dealt for 10 seconds.",
+      "note": "If you need some healing, pop the Special 1 then run at the opponent to Regenerate health with each strike."
+    },
+    "2": {
+      "name": "Seething Claws",
+      "description": "After this Special Attack ends, increase the Potency of all personal burst Physical Damage by 100% for 10 seconds.",
+      "note": "If you need some big damage, pop the Special 2 then run at the opponent to get the hit on extra damage procs."
+    },
+    "3": {
+      "name": "Hypnotic Trance",
+      "description": "After this Special Attack ends, inflict a Degeneration Passive, dealing +1174 Direct Damage over 5 seconds per personal Passive effect that has expired on Sauron or on the Opponent. (capped at 30) Reset after Special 3 activation.",
+      "note": "Since all of his Abilities are passive, you will get to the cap by doing a few Special Attacks and other mechanics, but it’s up to you how many times you want to run Special 3."
+    }
+  },
+  "signature": {
+    "name": "Doctor’s Gift",
+    "description": "After the start of the fight, if the Opponent attempts to inflict a Bleed, or Incinerate effect while a Degeneration Passive is active, inflict the Opponent with a Passive version of that effect dealing +14088 damage over 2 seconds.\n\nIncrease personal Prowess Passive Potency by a flat 10%.",
+    "note": "Seek out those who Bleed/Incinerate you. Time your duration of the Degeneration Passive and when you are hit with these Debuffs, apply your own back in a passive version."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-sauron/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "All Special Attacks",
+        "description": "All Prowess Passives are removed at the end of Special Attacks.\n\nOn activation, pause the Degeneration Passive from Extinction Mode for 8 seconds.",
+        "note": "Pay attention to the Extinction Mode Degeneration because it really helps your overall kit strength/survivability. It is all about the timing, and you can actually pause it with back to back Specials if you can align the power."
+      }
+    ]
+  }
+}

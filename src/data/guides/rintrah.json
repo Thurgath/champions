@@ -1,0 +1,65 @@
+{
+  "description": "Rintrah is a being from another dimension, hailing from the planet R’Vaal. His mystical potential was first realized by Enitharmon the Weaver, who started Rintrah’s training in the ways of magic. Traveling from his home world, Rintrah began apprenticing under the sorcerer supreme himself, Doctor Strange. Combining the power arcane might and the brute strength of hoof and horn, Rintrah is a force to be reckoned with by any who would dare threaten him or the Sanctum Sanctorum.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Rintrah has a base 30% Energy Resist, and 20% Crit Resist.\n\nIncoming Armor Break Debuffs have their potency reduced by 50% for each other Armor Break already on Rintrah, minimum potency is 0. Rintrah gains +623.7 Attack Rating per Armor Break on him.\n\nWhenever either Champion lands a hit, Rintrah has a 60% chance to inflict a non-stacking Passive Neutralize for 3 second(s), decreasing their Buff Ability Accuracy by -100%. If the Opponent is Cosmic or Superior Class, the Neutralize’s chance, duration, and potency are doubled.\n\nAll Rintrah’s Ruptures deal +623.7 Attack Rating as Physical Damage over 15 seconds.",
+        "note": "Champions who deal in Energy Damage, have Armor Breaks, and can be inflicted by Ruptures are some of the targets that Rintrah can counter. Plus, with a strong Neutralize, he will severely reduce Buff acquisition by Opponents."
+      },
+      {
+        "name": "Mystical Charges",
+        "description": "Every time the Opponent is inflicted by a Neutralize effect, gain 1 Mystical Charge, or when they fail to gain a Buff because of Neutralize, gain 2 Mystical Charges.\n\nWhile Rintrah has 10 Mystical Charges, if either Champion Strikes with a Light Attack, he inflicts 1 Rupture. While Rintrah is Rooted, inflict 2 more.\n\nWhile Rintrah has 10 Mystical Charges or more, Special Attacks are Unblockable.\n\nWhile Rintrah has 10 Mystical Charges or more, getting struck or blocking an attack by Opponent while Rintrah’s back is to the wall grants him an Unstoppable Passive for 6 second(s).\n\nWhile Rintrah has 15 Mystical Charges or more, Gain Stun immunity.\n\nWhile Rintrah has 20 Mystical Charges, go Rooted when an Opponent activates a Special. End Root after Opponent Special ends, this Root has no cooldown.\n\nRintrah loses 5 Mystical Charges every time he is knocked down.\n\nAfter 15 second(s) after inflicting a Rupture, lose 20 Mystical Charges.",
+        "note": "All about those thresholds, at 10, at 15, at 20… these will unlock new mechanics for Rintrah to use to control the Opponent on the field. Remember the two ways you can lose these charges – getting knocked down, and when your Rupture timer expires. So when the timer is up, you have to take advantage of dropping as many Ruptures on the Opponent as you can. They don’t expire, just the timer at which applying them does, until you build back up to turning it on again."
+      },
+      {
+        "name": "Rooted",
+        "description": "When Rintrah contacts with a Light Combo Ender the Opponent while their back is to the wall, he is inflicted with Rooted Debuff for 6 seconds. Upon Rooted Debuff expiring, it goes on cooldown for 12 seconds.\n\nRooted Champions cannot move, but can still attack, block, and dodge. Activating a Special Attack removes Root and prevents it from applying.\n\nWhile Rooted, Rintrah becomes Unstoppable, inflicts Taunt on Opponent, reducing their Attack Rating by 20% and has increased Energy Resistance and Crit Resistance by 1% per Mystical Charge.\n\nIf Rintrah is Rooted, and he does a Heavy or any Special Attack, this will end his personal Root early and inflict 5 Rupture Debuffs.",
+        "note": "His Self Root is his mechanic for controlling where he has his Opponent. Paired with being Unstoppable, Taunting the Opponent, and increased Energy/Crit Resistance helps defend when being counterpushed."
+      }
+    ],
+    "abilities": [
+      "root(self)",
+      "neutralize",
+      "unstoppable",
+      "rupture",
+      "regeneration"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Blessing of the Horns",
+      "description": "Gain 1 Mystical Charge per Hit in this Special. If Rintrah has 10 or more charges on the last hit, gain a Fury Passive, increasing Attack Rating by +1247.4 for 10 second(s).",
+      "note": "This is meant to be another way to ramp up Mystical Charges and if you can align them to have 10+ on the last hit of this Special 1, you can capitalize on the Fury for when you start dropping Ruptures or dealing bigger damage on basic attacks."
+    },
+    "2": {
+      "name": "Circle of Swords",
+      "description": "On Special Activation, pause all Ruptures on the Opponent for 4 seconds.\n\nThe final hit of this attack gains +1663.2 Attack Rating per Rupture on the Opponent, and removes all Ruptures, Rupture Timer and Mystical Charges.",
+      "note": "This is that big moment where you take all your ramp work on Rupture maintenance on Opponent and spike the damage output on the last hit of this Special 2."
+    },
+    "3": {
+      "name": "Keeper’s Banishment",
+      "description": "Heal for 1% missing Health per Mystical Charge. After this Attack the Opponent will have their back to the wall.",
+      "note": "This Special 3 is meant to be one of two things, a way to heal up damage you have taken in the fight, and/or push the Opponent closer to their own wall."
+    }
+  },
+  "signature": {
+    "name": "Never Back Down",
+    "description": "Every time a Neutralize prevents a buff, gain a Power Gain Buff giving 10% of Max Power over 2 second(s). Max Stack 3.\n\nWhile Unstoppable, Passively Regenerate 3.01% of missing Health on getting struck or blocking an attack by Opponent.",
+    "note": "The Signature Ability helps with getting back power after you have used it on a Special Attack, not to mention now anytime he is Unstoppable he will have access to on contact Regeneration for damage dealt."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-rintrah/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "If Rintrah performs a Heavy Attack on hit, pause all personal Ruptures for 4 second(s).",
+        "note": "This helps stack up those Ruptures so you can keep them up until the Rupture Timer starts again at 10 Mystical Charges. This will allow for a greater damage output on Special 2."
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "description": "Once a scrawny and timid girl, Mary MacPherran was recruited by Doctor Doom into an evil army of super humans. Through Doom’s twisted science, Mary was transformed into the super strong and nigh indestructible Titania. Now a super-powered bully and formidable villain, Titania is constantly picking fights to prove just how strong she is… especially with her archrival She-Hulk.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Titania is immune to Buffs. She doesn’t need your help.\n\n+250 Physical Resistance.",
+        "note": "Buff Immunity means that Titania can’t benefit from many nodes, but also means she gets around the Buff punishment playstyle of Mystics like Man-Thing and Doctor Voodoo. And with no Buffs to Nullify, Champions like Symbiote Supreme can’t capitalize on those aspects of their kits."
+      },
+      {
+        "name": "Haymakers",
+        "description": "Performing a Dash, a second Medium Attack, or charging a Heavy Attack grants Titania Unblockable, Unstoppable, and Indestructible Passives for 4 seconds. 30 second cooldown.\n\nWhile these effects are active, each hit deals a burst of 188.65 Physical Damage for each Debuff on the Opponent.",
+        "note": "This is Titania’s primary form of utility, with a variety of uses. The Unblockable means Titania can dive in on her Opponent whenever she wants, forcing an opening for a flurry of attacks. Ending a combo with a Medium Attack while Haymakers is ready means Titania can go from one combo directly into another, completely ignoring her Opponent’s attempts to counterattack. With proper spacing, Titania can also hold onto her Haymakers until her Opponent throws a difficult-to-dodge Special, then use her Indestructible to power straight through their attack. The burst damage also means that as Titania builds up Debuffs from the rest of her kit, her Haymaker attacks become more and more devastating."
+      },
+      {
+        "name": "Adding Injury to Insult",
+        "description": "Whenever the Opponent is inflicted with a Debuff, Titania gains a Fury Passive increasing Attack Rating by +377.3 for 15 seconds, and Haymakers’ cooldown is reduced by 1 second.\n\nAll of Titania’s Debuffs can be inflicted through Block.",
+        "note": "Titania relies on building up a ton of Fury effects to ramp up her damage over the course of the fight. Inflicting Debuffs will increase her damage and make her Haymakers available sooner, which will be even more devastating with the boost from the Furies. Since all of Titania’s Debuffs can be applied  through block, when fighting her as a Defender, players are better off dodging her attacks and specials, rather than blocking through them."
+      }
+    ],
+    "abilities": [
+      "unblockable",
+      "unstoppable",
+      "indestructible",
+      "suppression",
+      "stagger",
+      "weakness"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Smackdown",
+      "description": "The first hit inflicts a non-stacking Debilitate Debuff, extending the duration of any new Debuffs by 50% for 30 seconds.\n\nEach hit inflicts a Weakness Debuff, reducing Attack Rating by 5% for 8 seconds.",
+      "note": "The Debilitate makes it easier to keep Debuffs like Stagger and Weakness up, and extends the window that she can capitalize on them with Haymakers and her Heavy Attacks. It’s also very important for extending the damage windows provided by her other Special Attacks. This attack has 5 hits, so it can inflict up to 5 Weaknesses."
+    },
+    "2": {
+      "name": "Rock ‘Em Sock ‘Em",
+      "description": "The final hit inflicts a non-stacking 562.5 Physical Vulnerability Debuff for 20 seconds. This Debuff is refreshed whenever the Opponent suffers 4 or more Suppression Debuffs.\n\nEach hit inflicts a Weakness Debuff, reducing Attack Rating by 5% for 8 seconds.",
+      "note": "The Physical Vulnerability can, in theory, be refreshed indefinitely if Titania keeps landing full combos of Light Attacks, giving her an effectively permanent boost to her DPS. Combining this with the Debilitate from her Special 1 extends the window for keeping the Physical Vulnerability refreshed. This attack is also 5 hits, so can inflict another 5 Weaknesses."
+    },
+    "3": {
+      "name": "Give ‘Em The Chair",
+      "description": "Immediately activate Haymakers with +50% duration, ignoring their cooldown.\n\nInflict 30% potency Fatigue, Exhaust, Decelerate, Disorient, Falter, Stifle, Wither, Petrify, Cowardice, and Intimidate Debuffs on the Opponent for 4 seconds.",
+      "note": "Inflicting a flood of Debuffs means a ton of Furies for Titania, with an immediate Haymaker window to hit with some juicy burst damage. The Debuffs themselves are largely irrelevant but they provide a massive amount of fuel to Titania’s damage. If the Opponent was Debilitated before this Special, the extended duration of the Debuffs will line up with the extended duration of her Haymakers, giving her a sizable opportunity to start wailing on her Opponent. Either throw as many punches as possible for tons of Haymaker burst damage, or throw in some Haymaker Heavy Attacks to keep stacking an absurd amount of Debuffs and spike your Fury count even higher."
+    }
+  },
+  "signature": {
+    "name": "Grudge Match",
+    "description": "Whenever Titania inflicts a stackable personal Debuff, she has a 30% chance to inflict it twice.\n\nWhen fighting #L and #XL Opponents, Titania’s Fury potency is increased by 30%.",
+    "note": "What do you get for the woman who has every Debuff? More Debuffs, of course. More Debuffs means more Furies and Haymakers for Titania, and more pain and suffering for the Opponent. This effect can apply to all of Titania’s stackable Debuffs, including the extra Debuffs from her Heavy Attacks and each of the plethora of Debuffs from her Special 3. Her Signature Ability also gives her more potent Furies when fighting giant Champions, helping Titania prove who’s really the biggest and strongest in the Battlerealm."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-titania/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "The first hit inflicts a Stagger Debuff for 8 seconds.\n\nIf the first hit lands while Haymakers’ effects are active, the final hit inflicts an extra stack of Titania’s active personal Debuffs. If this attack is canceled into a Special Attack, the extra Debuffs are inflicted on the final hit of the Special instead.",
+        "note": "Staggers are another light piece of utility available to Titania. Not only are her Heavy Attacks safe to throw while she has her Haymaker effects, but if she hits while Haymakers are active she’ll inflict an extra stack of all her other stackable Debuffs, like her Suppressions, Staggers, and Weaknesses. The Heavy Attack can be canceled after the first hit into a Special Attack, and the extra Debuffs will still be inflicted at the end of the Special. Haymakers only have to be active for the first hit of the Heavy Attack to get the extra stack– if you cancel into a Special Attack and the Haymakers end before the last hit of the Special, you’ll still inflict the extra Debuffs."
+      },
+      {
+        "name": "Light Attacks",
+        "description": "Inflict a 5% Suppression Debuff for 2 seconds, paused during Titania’s Special Attacks.",
+        "note": "These are Titania’s most readily available and easy-to-inflict Debuffs. With a low potency and duration they’re not particularly useful in and of themselves, but they’ll help mitigate the Opponent’s defensive Power Gain as Titania wails on them, and each Light Attack will be granting Titania another Fury, getting her that much closer to another round of Haymakers."
+      }
+    ]
+  }
+}

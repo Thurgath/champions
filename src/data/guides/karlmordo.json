@@ -1,16 +1,34 @@
 {
-  "youtube": "1Iqna5igXEI",
+  "description": "An advanced student of the mystic arts and fellow pupil of The Ancient One, Mordo saw the potential in the fledgling apprentice Stephen Strange and took him under his wing when the one-time neurosurgeon first sought healing. Like Strange, Mordo came to Kamar-Taj lost and broken. The Ancient One helped channel Mordo’s anger and led him down the path to enlightenment. While Mordo sees a bit of himself in Strange, his reason for vetting him is much shrewder – in the fight against unknowable darkness, Kamar-Taj needs all the help it can muster.",
   "gameplay": {
-    "description": "Mordo’s astral form ensures that every ability properly activates, resisting against Ability Accuracy effects.\n\nMordo gets one bar of Power over 5 seconds, every 8 seconds. Opponents can interrupt the Power Gain when landing a hit on Mordo.\n\nAfter holding Block for 0.5 seconds, Mordo can block unblockable special attacks.",
-    "note": "Even while Stunned, Mordo’s astral form senses incoming non-special attacks and quickly counter-attacks, inflicting Degeneration for 75% of your attack as direct damage over 2.5 seconds."
-  },
-  "attack": {
-    "heavy": "Mordo gains 16.6% of max power per second while below 1 power bar. Exponentially gains up to 10 Fury stacks while charging a Heavy Attack, each charge increases his Attack by 15% for 12 seconds."
+    "sections": [
+      {
+        "name": "Astral Form – Always Active",
+        "description": "Mordo is Immune to Passive Ability Accuracy reductions.\n\nWhile the opponent has at least 1 Buff, gain +460.2 Attack Rating.\n\nEvery 8 seconds, Mordo gains a Power Gain Buff, granting 1 Bar of Power over 5 seconds. This Buff is removed if Mordo is struck. If fighting as a Defender, Mordo will behave less aggressively while this Buff is active.",
+        "note": "The +20% Attack Rating while the opponent has a Buff is new to Mordo’s kit. It originally existed as a unique synergy bonus effect from Symbiote Supreme."
+      },
+      {
+        "name": "While Stunned",
+        "description": "Mordo will Evade any incoming Basic Attack and perform a counter-attack which has a 100% chance to inflict a Degeneration Debuff, causing 1840.8 direct damage over 2.5 seconds.\n\nMordo cannot Evade or counter-attack while suffering from a Concussion or Fatigue Debuff.",
+        "note": ""
+      },
+      {
+        "name": "Blocking",
+        "description": "If Mordo holds Block for more than 0.5 seconds, his Block will not be broken by Unblockable Special Attacks.",
+        "note": ""
+      }
+    ],
+    "abilities": [
+      "fury",
+      "stun",
+      "degeneration",
+      "soulbarb"
+    ]
   },
   "specials": {
     "1": {
       "name": "Energy Blast",
-      "description": "Causes Degeneration, inflicting 75% of your Attack as Direct Damage over 2.5 seconds. If the opponent has a Buff, Degeneration will activate even after a successful Block.",
+      "description": "30% chance to inflict a 3 second Stun Debuff.\n\n100% chance to inflict a Degeneration Debuff, causing 1840.8 Direct Damage over 2.5 seconds. If the opponent has at least 1 Buff, this effect can be triggered through a Block.",
       "abilities": [
         "degeneration",
         "stun"
@@ -24,7 +42,7 @@
       "note": "30% Chance to Stun for 3 seconds."
     },
     "2": {
-      "description": "Opponents suffer from Mordo’s Soul Barb spell for 14 seconds, 10% of your Attack per opponent Buff as Energy Damage. Additionally, Soul Barb reduces Health Recovery by 70%.",
+      "description": "100% chance to inflict a Soul Barb Debuff lasting 14 seconds, dealing 276.12 Energy Damage per second for each Buff on the opponent. Soul Barb also reduces Regeneration Rate by 80%.",
       "name": "Astral Strike",
       "ranges": [
         "short",
@@ -32,11 +50,12 @@
       ],
       "damagetypes": [
         "physical"
-      ]
+      ],
+      "note": "Soul Barb has received a slight buff, as it reduces Regeneration Rate by 80% instead of the old 70%."
     },
     "3": {
-      "description": "Gains 3 stacks of Fury, each increasing his Attack by 43% for 12 seconds.",
-      "name": "Mirror Realm",
+      "description": "100% chance to gain 3 Fury Buffs, each granting +1150.5 Attack Rating for 17 seconds.\n\nUp to 50% chance based on lost Health to gain a Regeneration Buff in place of a Fury Buff, recovering 4709.7 Health over 6 seconds.",
+      "name": "Mirror Dimension",
       "damagetypes": [
         "physical"
       ],
@@ -44,7 +63,7 @@
         "fury",
         "regeneration"
       ],
-      "note": "Up to 40% chance based on Health lost to Regen instead of gaining a Fury stack, Recovering 14% Health over 6 seconds."
+      "note": "Two small boosts here. The duration of the Fury Buffs has been increased from 12 to 17 seconds. Additionally, the chance to gain a Regeneration Buff in place of a Fury has been increased from 40% to 50% based on lost health."
     }
   },
   "signature": {
@@ -52,12 +71,22 @@
     "abilities": [
       "energyresist"
     ],
-    "description": "By conjuring a magical barrier, Mordo Blocks more incoming Energy Damage."
+    "description": "By conjuring a magical barrier, Mordo gains 18,954.3 Energy Resistance while he remains Blocking.\n\nIf the opponent strikes Mordo’s Block while they have a True-Type Buff, he has a 100% chance to Nullify that Buff and replace it with a Detonate Buff lasting 20 seconds. Detonate deals a burst of 1610.7 Energy Damage when it’s Nullified or Expires.",
+    "note": "The second part of his Signature Ability is brand new to Mordo. Anytime he blocks an opponent while they have a True-Type Buff (True Accuracy, True Strike, True Sense, Etc.) it’s going to get Nullified and replaced with a Detonate Buff. Detonate will deal a burst of damage to the opponent, while also counting as a Buff to increase the strength of Mordo’s Attack Rating and Soul Barb."
   },
   "author": {
     "name": "Kabam",
     "type": "spotlight",
     "profile": "https://playcontestofchampions.com/news/champion-spotlight-mordo/"
   },
-  "description": "An advanced student of the mystic arts and fellow pupil of The Ancient One, Mordo saw the potential in the fledgling apprentice Stephen Strange and took him under his wing when the one-time neurosurgeon first sought healing. Like Strange, Mordo came to Kamar-Taj lost and broken. The Ancient One helped channel Mordo’s anger and led him down the path to enlightenment. While Mordo sees a bit of himself in Strange, his reason for vetting him is much shrewder – in the fight against unknowable darkness, Kamar-Taj needs all the help it can muster."
+  "youtube": "1Iqna5igXEI",
+  "attack": {
+    "sections": [
+      {
+        "name": "While Charging a Heavy Attack",
+        "description": "Continually gain Fury Buffs, each granting +460.2 Attack Rating for 17 seconds. Max: 15 Buffs. Exponentially gain more Buffs the longer the Heavy Attack is charged.\n\nIf Mordo is below 1 Bar of Power, he will Passively gain 0.5 Bars of Power per second.",
+        "note": "The max stacks of Fury have been increased from 10 to 15 in this update. Additionally, the duration of the Fury Buffs has been increased from 12 to 17 seconds."
+      }
+    ]
+  }
 }

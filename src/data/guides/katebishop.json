@@ -1,0 +1,80 @@
+{
+  "description": "Kate Bishop’s life was forever changed when she witnessed Hawkeye’s heroics during the Battle of New York, inspiring her to pursue excellence in archery, swordplay, and all manner of combat skills. She eventually partnered up with her hero and learned the secrets of his famous trick arrows.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Riposte! (With An Arrow)",
+        "description": "When attacked by a Basic Attack while suffering a Stun Debuff, Kate has a 100% chance to Purify the Stun and Evade the hit.\n\nWhen performing a Well-Timed Block against Basic Attacks, Kate has a 100% chance to Evade.\n\nWhen performing an Evade, Kate Counter-Attacks with a Taser Arrow. On personal Evades, this inflicts a Passive Stun for [3] seconds, which is removed when the Opponent is struck twice. Her personal Evades then go on cooldown for [10] seconds.",
+        "note": "Dev Notes: This first Evade is functionally identical to Mordo, but the wording has been updated to clarify that it only triggers off Debuffs and that stopping either the Purify or the Evade prevents the punishment. A Passive Stun that replaces the purified Debuff also works, so Bishop, Storm, and Storm X are excellent counters. The second Evade is the same as Elsa Bloodstone’s in timing and function. Note that due to animation constraints, any time Kate evades will trigger the counterattack, but only these two cause that counterattack to Stun. The Stun is removed after two hits so that you can close the distance with a Medium Attack before charging your Heavy or perform a full combo, but not both."
+      },
+      {
+        "name": "Dialed In",
+        "description": "During a Special Attack 1 or 2, press the Block Input after the first hit to slow down time. Releasing the Block Input precisely when Kate releases the arrow grants a Perfect Release bonus. A Perfect result in the Special 3 Mini Game also grants this bonus.\n\nActivating a Perfect Release bonus grants an indefinite Dialed In Passive, increasing the duration of effects inflicted by Trick Arrows by 10%. Failing to activate a Perfect Release Bonus removes one Dialed In Passive. Max Stacks: 2.\n\nAs a Defender, Kate has up to a 100% chance to activate a Perfect Release bonus based on missing Health.",
+        "note": "This functions very similarly to Hawkeye’s Perfect Release mechanic, although Kate’s window for success is about 50% wider (and Hawkeye’s has been updated to match)! Note that 4-Star and below champions cannot get Perfect Release on the Special 3. The main difference between Kate and Clint is that failing to get Perfect Release only loses you one stack, instead of all of them. See her Signature Ability for more reasons to master this mechanic."
+      },
+      {
+        "name": "Trick Arrows",
+        "description": "Kate uses a Trick Arrow on her Special Attack 1 and 2. Trick Arrow effects last for 12 seconds, can stack up to 2 times, and receive a bonus from being activated with a Perfect Release.\n\nKate starts each fight with her Cryo Arrow ready and cycles her readied Trick Arrow after each Special Attack or by double tapping Block. She can choose a different starting Arrow in the Pre-Fight Menu, which disables automatic cycling after Special Attacks.\n\nStriking the Opponent while they are recovering from a Heavy or Special Attack pauses all Trick Arrow effects for 5 seconds.\n\nAs a Defender, Trick Arrows deal 75% less damage.",
+        "note": "Note that a Trick Arrow’s Perfect Release version still counts as the same stack with its regular version, meaning you can have two perfect Cryo Arrows, two regular Cryo Arrows, or one of each active at the same time, but no more than that. Applying a third effect will replace the oldest active effect, as with any other stack limit. Kate’s arrows always cycle in the same order, but her Pre-Fight allows you to choose where you start in that order and adapt to different fights. This also turns off the automatic cycling of arrows so that you can focus on a specific type of arrow."
+      },
+      {
+        "name": "Arrow Effects",
+        "description": "Cryo: Inflict a Coldsnap Passive, dealing 17244 Energy Damage. Perfect Release: Inflict a Critical Coldsnap Passive instead, benefitting from Kate’s Critical Damage Multiplier.\n\nTranquilizer: Inflict a 40% Tranquilize Debuff. Perfect Release: +25% potency.\n\nCaltrops: Inflict a 3448.8 potency Caltrops Passive. Perfect Release: Also deals double damage when the Opponent charges their Heavy Attack.\n\nDissolver: Inflict a Fragility Debuff. Attacking a Fragile Opponent grants 397.06 Critical Damage Rating and reduces their Block Proficiency by 40%. Perfect Release: Also inflicts a non-stacking Sunder Passive, setting Critical Resistance to 0 while active.",
+        "note": "This is the core of Kate’s kit. Figuring out which arrows you want to use and in what order is the key to maximizing her for any given encounter. Spoiler alert: Double cryo is usually pretty effective. Tranquilize, last seen on Mantis, is to Debuffs what Neutralize is to Buffs, Coldsnap prevents opponents from evading, and Sunder (last seen on Zemo) strips away an opponent’s crit resistance. All of these can have a place. Caltrops is a new effect that deals instant Bleed damage whenever the affected character dashes forward or dodges backward, and can also apply to when they charge heavy if Kate lands it with a Perfect Release. This is a great way to punish your opponents for trying to get out of the corner."
+      },
+      {
+        "name": "Nowhere to Run",
+        "description": "While the Opponent’s back is against the wall, they are 60% more likely to launch a Special Attack.\n\nIf a Heavy Attack knocks the Opponent into the wall, refresh all Trick Arrow effects and inflict a Crush Passive for 2 seconds.",
+        "note": "Dev Notes: This first ability helps Kate maintain her tempo and not waste valuable time baiting specials. It functions similarly to a Taunt, but is not one – note that it won’t reduce the Opponent’s Attack, but it also can be used safely against champions that respond poorly to Taunt, like Annihilus. The second ability is the main reason you care about backing your opponents up with Kate. This is what allows you to maintain 100% uptime on your arrow effects, and is made easier to accomplish by Kate’s two passive Stuns. Crush, also seen on Jessica Jones and Cassie Lang, is essentially the Debuff form of Unblockable, and allows Kate to easily follow up on a successful heavy in the corner with a combo or even a Special Attack."
+      }
+    ],
+    "abilities": [
+      "coldsnap",
+      "tranquilize",
+      "counterattack",
+      "caltrops",
+      "fragility"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "",
+      "description": "The final hit is a Trick Arrow.",
+      "note": "Short and sweet, this is your main method of building Dialed In Passives and applying Trick Arrows."
+    },
+    "2": {
+      "name": "",
+      "description": "The second hit is a Trick Arrow and applies through Block. A Perfect Release inflicts its effect twice.\n\nThe final hit bombards the Opponent with Putty Arrows, inflicting a Passive Stun for 3.5 seconds. This Stun is removed when the Opponent is struck twice.",
+      "note": "Dev Notes: Unlike her Special 1, this presents a real threat on Defense. You do not want to block a Special 2 Coldsnap Arrow. If fighting a Kate who seems less willing to throw her Special 2, try to ensure she’s cycled to a less threatening arrow before dealing with this attack. This Stun, like the one from Riposte, allows Kate to follow up with either a Medium then a Heavy, or a combo, but not both, depending on the situation."
+    },
+    "3": {
+      "name": "",
+      "description": "Gain a non-stacking Cruelty Passive increasing Critical Damage Rating by 946.29 for 12 seconds.\n\nPerfect Release: Gain a non-stacking Precision Passive increasing Critical Rating by 3375 for 12 seconds.\n\nThese count as Trick Arrow effects.",
+      "note": "In longer fights, this can synergize well with Kate’s other arrows. Note that higher Critical Damage Rating improves Kate’s Perfect Release Coldsnap, and a higher Critical Rating synergizes well with Kate’s ability to remove Critical Resistance."
+    }
+  },
+  "signature": {
+    "name": "World’s Greatest Archer",
+    "description": "Max Stacks for Dialed In Passives increases by 1, plus 1 more for every 100 sig levels obtained.\n\nDialed In Passives increase the potency of Trick Arrow effects by 15%.\n\nStriking the Opponent’s Block pauses all Trick Arrow effects for 2 seconds.",
+    "note": "Immediately at level 1, this allows Kate to stack more Dialed In Passives and use them to further boost her Trick Arrows. The stack limit rises slowly, but the power they bring increases steadily. The Pause on block can make it much easier to tide you over to the next longer pause or refresh so you don’t lose your Arrow effects as you back the opponent up."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-kate-bishop/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "Kate’s Heavy Attack knocks back the Opponent further if charged for more than 1 second.\n\nInflict a non-stacking Tracking Debuff, bypassing the effects of Miss for 10 seconds.",
+        "note": "It can be difficult to find places to charge a Heavy Attack for a full second, but Kate’s passive Stuns give you that chance. The increased knockback can be subtle due to the game’s camera angles, but this will help you back your opponent’s up that much more efficiently.Remember that this attack needs to land to apply Tracking, so if you’re facing an opponent who can cause you to Miss, be proactive about maintaining this Debuff!"
+      },
+      {
+        "name": "Special Attacks",
+        "description": "Special Attacks gain Passive True Accuracy.",
+        "note": "Against Evaders, this ensures Kate’s Cryo Arrow finds its mark in the first place, and also makes fighting champions that can Auto-Block specials, like Guardian, that much easier."
+      }
+    ]
+  }
+}

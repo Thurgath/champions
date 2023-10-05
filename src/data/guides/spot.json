@@ -1,0 +1,70 @@
+{
+  "description": "While working on experimental portal technology using Darkforce energy,  M.I.T. doctorate Jonathan Ohnn succeeded in creating a solid black circular portal. When the portal became unstable, Jon jumped in and was instantly transported to the Spotted Dimension. Ohnn managed to crawl back out, but doing so covered his body in black spots; portals from the other dimension. Jon realized that the spots allowed him to transport himself instantly through space, and thus began his thriving criminal enterprise as The Spot.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "When Struck – Spots – Max 10",
+        "description": "Johnathon Ohnn’s body is covered in portals to the Spotted Dimension, called Spots. Ohnn has a 20% chance when Struck to gain 1 Spot.\n\nAt 5+ Spots, being Struck by a Basic Attack grants Ohnn a 100% potency Untouchable Passive, causing incoming Attacks to have 100% chance to Miss for 5 seconds, paused during Ohnn’s Special Attacks.\n\nIf Ohnn is struck while recovering from a Special Attack, 1 Spot is removed and cannot gain Spots for 4 seconds.",
+        "note": "When at 5 Spots or more, the next hit Spot takes will cause him to go Untouchable and Miss. When fighting Spot, be sure to take caution when Spot is about to go Untouchable."
+      },
+      {
+        "name": "While Untouchable",
+        "description": "Ohnn becomes Stun Immune, cannot gain Spots, and consumes all Spots when Untouchable ends.\n\nWhen an incoming attack would Miss, inflict a Rupture Debuff, dealing 2352.35 Physical Damage over 0.50 seconds.\n\nLanding a hit pauses Untouchable for 0.30 seconds and inflicts a non-stacking Infuriate Debuff, making the Opponent more aggressive and reducing their Offensive Ability Accuracy by 60% for 2 seconds.\n\nIncoming Attacks from the Opponent and Attacks that make contact with Ohnn inflict a Rupture Debuff, dealing 904.75 Physical Damage over 10 seconds. This ability scales with Base Attack Rating only.",
+        "note": "The Rupture Debuffs that Spot inflicts when he causes a Miss versus the Ruptures he inflicts from making Contact will deal different amounts of damage. For raw damage, Spot prefers to cause Miss to Rupture, but making contact will rack up smaller Ruptures for a stronger Special Attack 2. Be sure to mix the two Ruptures when in this Untouchable state."
+      },
+      {
+        "name": "Portal Block – While Blocking:",
+        "description": "When Ohnn holds his block he gains a +9000 Block Proficiency bonus per Spot and then after 0.50 seconds he opens a portal to the Spotted Dimension in front of him. While Ohnn is Defending, Portal Blocks activate immediately. This ability is not affected by Ability Accuracy.\n\nPortal Block grants the following effects for 2 seconds:\n\nOhnn is locked in place and gains 1 Spot when the Opponent strikes into the Portal Block. At 10 Spots Ohnn’s Block Proficiency Bonus returns to 0.\n\n+20% chance per Spot to resist Heavy Attacks and block Unblockable Attacks.\n\nWhile Ohnn is affected by a Disorient effect, Portal Block does not trigger.",
+        "note": "When at 5+ Spots, using this ability allows him to resist Heavy Block Breaks and Unblockable Attacks. Be sure to hold onto Spots if you’re expecting your opponent to throw a tough to dodge Heavy or Special Attack."
+      },
+      {
+        "name": "Foul Play – Pre-Fight Ability",
+        "description": "Ohnn starts each quest with 1 Persistent Charge, which can be spent in the Pre-Fight screen on the Foul Play ability.\n\nGain +1 Persistent Charge each time an Opponent is knocked out. Max charges: 3.\n\nFoul Play: During the next fight, when the Opponent is knocked down Ohnn’s Science teammate is inflicted with Buff Immune Debuff lasting 3 seconds.",
+        "note": "The ability to clear off Buffs does not sound like a good ability on the surface, but has many uses in trickier fights that trigger ability from the activation of Buffs. This pre-fight ability should come in handy for other Science champions during these encounters."
+      }
+    ],
+    "abilities": [
+      "untouchable",
+      "rupture",
+      "portalblock",
+      "infuriate",
+      "buffimmunity"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Extradimensional Shortcut",
+      "description": "On activation, inflict a Buff Immunity Debuff on Ohnn for 10 seconds. At 10 Spots this lasts 20 seconds.\n\nWhile active, each time Ohnn is immune to a Buff, inflict a Rupture Debuff, dealing 530.25 Physical Damage over 10 second(s). This ability scales with Base Attack Rating only.",
+      "note": "This Special Attack contains the most hits and pushes Spot the furthest towards his opponent. Be sure to combine this attack with his Signature Ability after a Portal Block. The Buff Immunity ability that triggers from this attack can also be paired with the Willpower Mastery for some light healing."
+    },
+    "2": {
+      "name": "High Speed Matter Transfer",
+      "description": "On activation, if Ohnn is Untouchable, inflict a Physical Vulnerability Debuff, lowering Physical Resistance by 3375 for 10 seconds. At 10 Spots this lasts 20 seconds.\n\nEach hit deals a burst of 542.85 Physical Damage for each Rupture Effect inflicted on the Opponent since the start of the fight or Ohnn’s last Special 2 Attack. Max: 50 stacks.",
+      "note": "When fighting against Spot, this attack has the least amount of hits, but does the most amount of damage, so it’s the attack that you want to bait out, and not get hit by."
+    },
+    "3": {
+      "name": "Spotted Dimension Getaway",
+      "description": "Gain Max Spots.\n\nOnce per fight if Spot is at 10 Spots increase the duration of all personal Rupture Effects by 100% for the rest of the fight.",
+      "note": "This attack shortcuts your way to an Untouchable state, and provides a permanent damage bonus for longer fights."
+    }
+  },
+  "signature": {
+    "name": "From the Spotted Dimension",
+    "description": "After a Portal Block ends, each hit of Ohnn’s next successful Light, Heavy or Special Attack deals an Instant Rupture dealing 2533.29 Physical Damage for each Spot gained during that Portal Block.\n\nWhile Untouchable, Attacks that strike the opponent while they are performing a Heavy Attack or recovering from a Special Attack grant Ohnn a Fury Passive increasing Attack Rating by 2352.33 for 7 seconds.",
+    "note": "When a Portal Block ends, performing Medium Medium combos is a good way to hold onto the Rupture damage generated by Portal Blocking. Players get the most mileage from this ability when paired with Special Attacks, or Heavy Attacks."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-spot/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Special Attacks",
+        "description": "After activation, gain 1 Spot per bar of Power spent.\n\nAt 10 Spots: Ohnn gains Untouchable.",
+        "note": ""
+      }
+    ]
+  }
+}

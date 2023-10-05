@@ -1,0 +1,60 @@
+{
+  "description": "A master thief and a world-class gymnast, Felicia Hardy has long held the mantle of the notorious Black Cat. With her trusty grappling hook, athletic prowess, and quick wit, she easily keeps pace with her long time friend, sometimes enemy, ofttimes paramour, Spider-Man, both in thwippage and quippage. Despite her charming demeanor, much of her past has been shaped by trauma, leaving her somewhat vindictive and prone to holding grudges. Do not let the Black Cat cross your path!",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Black Cat’s Critical Hits inflict Bleed Debuffs dealing 510 Direct Damage over 7 second(s).",
+        "note": "This ability doesn’t deal too much damage, but is great for proccing a high number of Bleeds against Champions like Thing."
+      },
+      {
+        "name": "Calling Card",
+        "description": "To goad her target, Black Cat sends a Calling Card in advance to let them know she’s coming. The Opponent begins the fight with this Calling Card.\n\nBlack Cat will steal the Calling Card from the Opponent whenever she Intercepts them or strikes them while they are standing up or recovering from a Heavy or Special Attack.\n\nBlack Cat will plant the Calling Card back on the Opponent with each of her Heavy attack hits.\n\nEach time the Calling Card changes hands, Black Cat adds 1 Combo to her Combo Meter and gains a Cruelty Passive increasing her Critical Damage Rating by 110.53 for 13 second(s). These bonuses are multiplied for each time the Card has changed hands this fight.\n\nBlack Cat’s expertise in thievery means that Ability Accuracy reduction cannot cause her to fail to steal or plant the Calling Card.",
+        "note": "Try to steal and plant the Card as many times as you can before the Heist is over. Always be looking for the next opportunity to steal the card! Countering the Opponent’s Heavy with your own Heavy is a great way to trigger the Card two times in quick succession and works very well against Stun Immune opponents."
+      },
+      {
+        "name": "The Heist",
+        "description": "At the start of a fight, the Heist is on! The Heist lasts for 45 second(s) and when it ends, one of the following two effects occur:\n\nIf the Calling Card is on Black Cat, it converts into a Claws Passive, increasing the potency of her Bleed Debuffs by 50% for 15 second(s).\n\nIf the Calling Card is on the Opponent, it converts into a Sabotage Debuff, reducing the Opponent’s Defensive Ability Accuracy by 40% for 15 second(s) and dealing 1402.5 Direct Damage whenever their Defensive Abilities fail to trigger.\n\nWhen either of these effects expire, the Heist restarts, and a new Calling Card is added to the Opponent with half the bonus multiplier of the previous one, rounded down.",
+        "note": "Against the average non-Bleed Immune Opponent, go for the Vicious Passive for extra Bleed damage. Against an Opponent with consistent or dangerous Defensive Abilities, go for the Sabotage to completely shut them down! Also, remember that the Card will start with half the number of hand changes as the previous one, so the next Heist will have even more value!"
+      },
+      {
+        "name": "Bad Luck Aura – Always Active",
+        "description": "For each Hit in Black Cat’s Combo Meter, the Opponent’s Defensive Ability Accuracy is passively reduced by 2%, or twice that against Science Opponents, up to a maximum of 60%.\n\nWhenever an Opponent’s ability fails to trigger due to Ability Accuracy reduction, Black Cat pauses each of her personal Passives and Debuffs for 1.80 second(s).",
+        "note": "The Defensive Ability Accuracy reduction is always capped at 60%, but against Science Champs, you’ll get there twice as fast. Note that this ability pauses all Passives and Debuffs, so this can be an amazing way to hold onto your Cruelties and keep the Bleeds active much longer than normal."
+      }
+    ],
+    "abilities": [
+      "bleed",
+      "sabotage",
+      "purify",
+      "cleanse"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "High Felocity Impact",
+      "description": "On Activation, if Black Cat does not have the Calling Card, she Purifies up to 3 Debuffs. If no Debuffs were Purified this way, she grants herself a Cleanse Passive for 13 second(s). The Cleanse will consume itself to instantly Purify the next Debuff applied to Black Cat.\n\nIf Black Cat does have the Calling Card, landing this attack plants it back onto the Opponent and extends The Heist by 9 second(s).",
+      "note": "Watch out for this attack! It can be tricky to dodge. Keep your eyes peeled for when she fires her grappling hook, and make sure to dodge both that, and the drop kick that comes after. Also be sure to remember that, as a Defender, after this attack, Black Cat will likely have a Cleanse Passive, meaning she will Purify the next time you try to Parry her."
+    },
+    "2": {
+      "name": "Claw de Grâce",
+      "description": "During this attack, Black Cat’s Critical Rating is increased by 21.21 for each hit in both Champions’ Combo Meters.\n\nInstead of her regular Bleeds, this attack inflicts Critical Bleeds dealing 1530 Direct Damage multiplied by Black Cat’s Critical Damage Multiplier.\n\nLanding this attack steals or plants the Calling Card, then ends The Heist.",
+      "note": "The very easily missable aspect to this attack is that it will transfer the Card before ending the Heist, so make sure to position the Card to the opposite position from where you want the Card to end up."
+    },
+    "3": {
+      "name": "Infuriating Agility",
+      "description": "Inflicts the Opponent with a non-stacking Infuriate Debuff for 13 second(s), causing them to become more aggressive and reducing their Offensive Ability Accuracy by 60%.\n\nIf it’s currently active, refresh The Heist timer.",
+      "note": "Remember that this Debuff will also be paused by Bad Luck Aura, so the Duration is longer than it looks."
+    }
+  },
+  "signature": {
+    "name": "Nine Lives",
+    "description": "Black Cat starts the quest with 9 Combo Shield Passives which prevent her from losing Combo when struck. These persist across fights.\n\nThese Combo Shields fall off one at a time, and last for 3 second(s) after Black Cat is Struck. These Combo Shields also begin to expire after she Evades using this ability.\n\nWhen Black Cat would be struck while dashing, for each Combo Shield effect on her, she has a 11.11% chance to gain an Evade Passive for 1 second.",
+    "note": "At Max Sig level, this ability essentially gives a one-time, 100% chance to Evade any attack, just by dashing into it.  So if you’re feeling spicy you could use that to dodge a particularly tricky Special Attack. But be careful: This ability becomes much less reliable as you use it throughout the quest."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-black-cat/"
+  }
+}

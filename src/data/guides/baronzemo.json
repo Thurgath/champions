@@ -1,0 +1,66 @@
+{
+  "description": "Baron Helmut Zemo, 13th in the esteemed Zemo lineage, has walked the path of evil ever since his father, Heinrich, died fighting his nemesis, Captain America. Consumed by a need for revenge and control, Baron Zemo reformed his father’s Masters of Evil in an attempt to take down the Avengers. He later founded the Thunderbolts, villains masquerading as heroes, in another ploy for world domination. Ingenious, resourceful, and above all, patient, Zemo knows his ultimate victory is only a matter of time.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Your Defeat Is Certain",
+        "description": "Zemo’s personal Bleeds are indefinite Debuffs that deal 32.34 Direct Damage per second.\n\nAll of Zemo’s personal effects can be inflicted through Block.",
+        "note": "Indefinite Bleeds represent the ticking clock that inches Zemo’s foes towards their inevitable defeat. Individually, Zemo’s Bleeds aren’t very threatening… but just one is an inescapable source of persistent damage. Each additional Bleed Zemo inflicts shortens the time his Opponents have, slowly but surely entrapping them in the jaws of defeat. And make no mistake, there’s no hiding from this threat, as Zemo’s skill with a blade allows him to pierce his crippling effects through even the most formidable defenses."
+      },
+      {
+        "name": "Grand Machination",
+        "description": "Enter each fight with 5 indefinite Cleanse Passives. Zemo’s Cleanses can’t Purify Stun Debuffs.\n\nWhen Zemo runs out of Cleanses, he inflicts a Root Passive on the Opponent for 5 seconds and gains a 2250 Resistance Up Passive for 15 seconds.\n\nWhile this Resistance Up is active, Zemo can’t gain Cleanses. When Zemo has no personal Resistance Up or Cleanses active, he gains 5 indefinite Cleanse Passives.",
+        "note": "Zemo’s central threat is his Grand Machination– a plan so dastardly it ensures the Opponent is defeated before they’ve even begun. As the Opponent inflicts Debuffs, Zemo simply Cleanses them away, and, once he’s spent all 5 of his Cleanses, he springs the trap to immediately Root the Opponent in place. This is primarily a defensive threat, but a clever attacker can make great use of this by bringing Zemo to matchups where Debuffs can be suffered without taking a hit to the face, such as by blocking a Titania or facing an awakened Knull. The Armor Up Zemo gets after the Cleanses represents a window of opportunity for Opponents to inflict their Debuffs with impunity. But certain Opponents still need to be cautious– a Nullify or Armor Break will remove the Armor Up early and reset Zemo’s Cleanses."
+      },
+      {
+        "name": "Right Where I Want You – Root",
+        "description": "When the Opponent becomes Rooted, they are inflicted with an indefinite 50% Decelerate Passive. Max Stacks: 2.\n\nWhile the Opponent is Rooted, their Combat Power Rate is reduced by 40% and Zemo’s is increased by 40%. Additionally, Zemo’s attacks can’t Miss and all his hits inflict an indefinite Bleed Debuff.\n\nIf the Opponent breaks free of Zemo’s Root before it expires, inflict 5 additional indefinite Bleed Debuffs, reduced by 1 for each Prowess effect they have.",
+        "note": "Once the Opponent is ensnared in Zemo’s Root, the true extent of their mistake quickly comes into focus. Immediately, they’ll suffer an indefinite 50% Decelerate, meaning that just 2 Roots will completely crush any hopes the Opponent had for Evading or gaining Unstoppable. Additionally, lowered Combat Power Rate coupled with Zemo’s increased Combat Power Rate means that Zemo can wail on his foe with impunity. Once they’re trapped in place, Zemo doesn’t have to worry about Missing an Untouchable Spot or a Phased Ghost, and every landed strike inflicts one of his trademark indefinite Bleeds. When fighting Zemo on defense, it may be tempting to immediately launch a Special Attack to break free of his terrifying trap, but be warned– wrenching free of Zemo’s well-constructed snare will result in you suffering even more Bleeds… that is, unless your Prowess is such that you can avoid them."
+      }
+    ],
+    "abilities": [
+      "bleed",
+      "cleanse",
+      "root",
+      "decelerate",
+      "disorient",
+      "sunder"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Duel of Deception",
+      "description": "On activation, inflict an indefinite Disorient Passive reducing Block Proficiency by 25% and Defensive Ability Accuracy by 10%. Max Stacks: 4.\n\nThe final hit inflicts an indefinite Bleed Debuff.\n\nIf the Opponent is Rooted, pause Root for the duration of this Special Attack and the final hit inflicts 5 additional indefinite Bleed Debuffs.",
+      "note": "Dev Notes: Zemo’s skill with a blade is not to be trifled with, as exemplified by the indefinite Disorient this attack inflicts. These Disorients aren’t very potent at reducing Defensive Ability Accuracy, but they’re highly effective at reducing the Opponent’s Block Proficiency. Once Zemo has inflicted 4, the Opponent’s Block Proficiency is reduced to 0, as Zemo has completely eliminated their options and solved their tactics. Additionally, the last hit inflicts an indefinite Bleed, even through Block, but the true power of this attack shines through while the Opponent is Rooted. This attack pauses any active Roots and inflicts additional Bleeds to Rooted Opponents– and this is in addition to the Bleeds Zemo already inflicts on each hit against a Rooted foe. Once the Opponent has blundered into Zemo’s trap, launching this Special should be your main priority so you can watch the Bleed stacks soar. Keep in mind when fighting Zemo on defense that while it may be tempting to bait out this easy-to-avoid Special, unless you’re prepared to deal with the consequences of the unavoidable Disorients it may be better to try to push him to his Special 2."
+    },
+    "2": {
+      "name": "Explosive Ensnarement",
+      "description": "The final hit inflicts a Root Passive on the Opponent for 5 seconds.",
+      "note": "In most matchups, this attack is Zemo’s most consistent and accessible way of inflicting Root. It may be worth it to save up a little Power past 2 Bars to ensure you have an easier time cycling back to your Special 1 before the Root expires. Just be wary of the Opponent’s Power before throwing this Special, as you’ll want to follow it with a flurry of attacks and you don’t want to risk pushing them to a Special 3. When fighting Zemo on defense, be prepared to Dodge this attack’s final explosive, as it can inflict its Root through your block."
+    },
+    "3": {
+      "name": "Masterstroke",
+      "description": "Inflict a non-stacking indefinite Sunder Passive reducing Critical Resistance to 0 and preventing it from increasing.\n\nThis attack gains +600 Attack Rating for each of Zemo’s indefinite effects the Opponent is suffering.",
+      "note": "An elegant finale worthy of the line of Zemo, this attack makes use of Helmut’s father’s greatest invention, Adhesive X. Binding the Opponent in an inescapable prison leaves them at the mercy of Zemo’s precision strikes. The result is a new effect, Sunder, which reduces the Opponent’s Critical Resistance to 0 and ensures it stays there as long as the Sunder persists. And, in classic Zemo fashion, this Sunder is indefinite. While not many Champions have Critical Resistance, launching this attack early against foes like Doctor Doom or Killmonger can really boost Zemo’s damage over the rest of the match. And for the rest of Zemo’s victims, this attack can spell their ultimate defeat as it gains bonus Attack Rating for each indefinite effect he’s managed to inflict, including his Decelerates, Disorients, Sunder, and, of course, his Bleeds. The Bleeds alone can certainly end the foe, given time, but sometimes even the Master of Evil can show mercy… and put them out of their misery."
+    }
+  },
+  "signature": {
+    "name": "The Master Of Evil",
+    "description": "Zemo gains +1000 Critical Damage Rating and can perform Critical Hits through the Opponent’s Block.\n\nWhen fighting #Heroes, attacks that intercept the Opponent gain +1000 Critical Rating.",
+    "note": "The calculated cruelty of Zemo truly knows no bounds, as a bonus to Critical Damage Rating and the ability to Critically Hit through his Opponent’s Block ensures that no Block is ever safe when fighting Zemo. Combined with his Disorients, there truly is no defense against this mastermind. Additionally, Zemo can capitalize on his hatred of the do-gooders of The Contest, undermining their attempts to strike him and countering with highly increased Critical Rating. These intercepts are especially easy to land while his Opponent is trapped, struggling in his Root. Always remember: it’s when you think you have the upper hand that Zemo is at his deadliest."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-baron-zemo/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Basic Attacks",
+        "description": "For Zemo’s Medium Attacks, he wields a gun. These attacks do not make contact.\n\nWhenever the Opponent Purifies a Debuff or is Immune to an effect, Zemo gains a Fury Buff increasing the Attack Rating of his next hit by +8084. Max stacks: 15.",
+        "note": "As a master marksman, Zemo makes effective use of a sidearm for Medium Attacks. These attacks are non-contact, meaning he can’t be Parried by most Champions, and he has an avenue for dealing with some pesky Champions that punish contact attacks like Korg. Additionally, Zemo always has a backup plan– if an Opponent Purifies or is Immune to his Bleeds (his main source of damage) he’ll respond by getting an extremely potent Fury Buff to help recoup the lost damage. These Fury Buffs are indefinite and stackable, but are removed once Zemo lands an attack, including a hit into Block."
+      }
+    ]
+  }
+}

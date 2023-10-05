@@ -1,0 +1,69 @@
+{
+  "description": "After the tragic death of her father at the hands of the Mad Titan, Thanos, Heather Douglas was adopted by the Eternals on Saturn’s moon Titan, where she honed her latent physical, spiritual, and telepathic abilities. When she encountered the cosmic entity known as the Dragon of the Moon, Heather adopted the name Moondragon after she seemingly bested the creature. Over time she grew arrogant with her newfound powers, and came under the sway of the Dragon of the Moon, who had actually survived and taken refuge inside of her mind, seeking to slowly corrupt Heather throughout her mission to defeat Thanos. Having to contend with the influence of the outer entity known as the Dragon of the Moon, Moondragon joins The Contest as one of the most powerful Telepaths in the Battlerealm.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Moondragon’s telepathic power grants her Immunity to Reversed Controls.\n\nReduce the potency of incoming Bleed, Power Sting, Degeneration, and Poison effects from Champions and Quest Buffs by 30%.",
+        "note": "Moondragon has the ability to counteract Reverse Controls which gives her a unique edge versus other psychic champions, and as well as Quest Buffs like Special Chaos Inversion."
+      },
+      {
+        "name": "Mind Blasts",
+        "description": "Mind Blasts are triggered when Interrupting Heavy Attacks or hitting the Opponent’s Block with Moondragon’s first Medium or Light Attack. Mind Blasts do not trigger on Well-Timed Blocks.\n\nStarting a Combo by Intercepting Dash Attacks or Interrupting Medium and Light Attacks triggers Mind Blasts for the entire 5-hit Combo.\n\nMind Blasts deal a burst of 442.2 Energy Damage and grant 1% of Max Power.",
+        "note": "Playing aggressively and ending your combos early with a back dash can set up Intercept opportunities so Moondragon maximizes her Mind Blasts. Players can also Dash into their Opponents Block to trigger Mind Blasts as well. Doing so should keep Moondragon close to her Opponent, where she can apply the most damage."
+      },
+      {
+        "name": "Psionic Charges – Max Stacks – 40",
+        "description": "Gain 1 Psionic Charge when triggering a Mind Blast.\n\nWhile suffering from Bleed, Power Sting, Degeneration, or Poison effects from Champions and Quest Buffs, gain a Psionic Charge every 0.75 seconds.\n\nPsionic Charges grant +78.42 Critical Damage Rating.",
+        "note": "On her own, Moondragon is only able to gain Psionic Charges when she actively attacks her Opponents using Mind Blasts. Be sure to seek out the Champions that can apply Bleeds, Poisons, Power Stings, or Degeneration effects as Moondragon can resist the incoming damage while also ramping up to Psionic Transcendence faster than normal."
+      },
+      {
+        "name": "Psionic Transcendence",
+        "description": "Upon reaching 20 Psionic Charges, Moondragon Purifies all Debuffs and enters Psionic Transcendence for 15 seconds.\n\nGain 1 Psionic Charge for each Debuff Purified.\n\nUpon entering Psionic Transcendence, inflict 5 indefinite Energy Vulnerability Debuffs reducing Energy Resistance by 370.59. Max Stacks: 25\n\nInflict an additional Energy Vulnerability Debuff when gaining new Psionic Charges.\n\nReduce the potency of incoming Bleed, Power Sting, Degeneration, and Poison effects from Champions and Quest Buffs by an additional flat 50%.\n\nMoondragon’s hits cannot be Evaded.\n\nPsionic Transcendence is paused during the Opponent’s Special Attacks and for 2 seconds when a Psionic Charge is gained.\n\nAll stacks of Energy Vulnerability and Psionic Charges are removed when Psionic Transcendence ends.",
+        "note": "After achieving Psionic Transcendence, Moondragon can prolong her powered up state by staying aggressive, triggering Mind Blasts, and baiting Special Attacks. Moondragon is at her most powerful in this state."
+      },
+      {
+        "name": "Presence of the Moondragon – Pre-Fight Ability",
+        "description": "Moondragon starts each quest with 1 Persistent Charge, which can be spent in the Pre-Fight screen to activate the Presence of the Moondragon ability.\n\nGain +1 Persistent Charge each time an Opponent is defeated by Moondragon. Max Stacks: 3\n\nPresence of the Moondragon: At the start of the fight, gain 3 Dragon of the Moon Passives granting Immunity to Reversed Controls. Remove 1 Passive when this Immunity is triggered.",
+        "note": "Be sure to apply this Pre-Fight Ability in matches that don’t favor Moondragon such as the telepaths and psychics of the Mutant Class like Emma Frost and Professor X."
+      }
+    ],
+    "abilities": [
+      "reversedcontrolsimmunity",
+      "mindblasts",
+      "psionictranscendence",
+      "purify",
+      "energyvulnerability",
+      "miss",
+      "criticalincinerate",
+      "pre-fightability"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Psionic Flow State",
+      "description": "After the final hit, gain 3 Psionic Charges and begin channeling to gain up to 6 more. Moondragon stops channeling if she performs an action or is struck.\n\nAfter the final hit, incoming Basic Attacks Passively Miss for 3.1 seconds.",
+      "note": "This Special Attack looks harmless on the surface, but hides a lot of hidden utility. Try to combine this attack with Heavy Attacks for the most mileage."
+    },
+    "2": {
+      "name": "Advancing Psionic Barrage",
+      "description": "All hits deal 884.4 Energy Damage, multiplied by Moondragon’s Critical Damage Multiplier.\n\nPsionic Transcendence is paused during this attack.",
+      "note": "This Special Attack is the key to Moondragon’s burst damage. The best time to use this is when at or above 30 stacks of Psionic Charges. Bonus damage can be inflicted when the opponent is covered in Energy Vulnerability Debuffs as well. This attack is also a full-screen beam that can be used from far away once Moondragon’s Signature Ability is awakened."
+    },
+    "3": {
+      "name": "Dragon of the Moon’s Flame",
+      "description": "Inflict an Incinerate Debuff, dealing 5085.3 Energy damage over 25 seconds. Incinerate also removes Perfect Block Chance and decreases Block Proficiency by 50% while active.\n\nIf Psionic Transcendence is active, this attack inflicts a Critical Incinerate Passive, multiplying its Energy Damage by Moondragon’s Critical Damage Multiplier.\n\nPsionic Transcendence is paused while this Incinerate is active.",
+      "note": "In longer fights, this attack shines, as it will allow Moondragon to deal Incinerate damage consistently while also pausing Psionic Transcendence. This attack is also best used when Psionic Charges and Energy Vulnerability Debuffs are ramped up to their maximum."
+    }
+  },
+  "signature": {
+    "name": "Disciple of the Shao-Lorn",
+    "description": "Heavy Attacks gain 3149.94 Critical Rating while under 1 Bar of Power.\n\nHeavy Attacks inflict an indefinite Energy Vulnerability Debuff. If punishing a Special Attack, trigger a Mind Blast instead.\n\nSpecial Attacks are Passively Unblockable.",
+    "note": "Like the Special 3, this Signature Ability unlocks more power from Moondragon’s Heavy and Special Attacks. When fully ramped up on Psionic Charges and Energy Vulnerability Debuffs, Moondragon’s Heavy Attacks can chunk out an opponent’s health bar."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-moondragon/"
+  }
+}

@@ -1,9 +1,34 @@
 {
+  "description": "Working as an enforcer for organized crime in Las Vegas, the dark incarnation of the Hulk named Joe Fixit is morally ambiguous at best, and downright cruel at worst. Dressed impeccably in his trademark suits, Mr. Fixit enjoys the finer things in life, like money, women, gambling, and gunning down his enemies with his dual Tommy Guns. He may be a weaker version of the Hulk, but he more than makes up for it with his firepower and sinister intelligence.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "An enhanced Immune system provides full Immunity to the Poisons of the Battlerealm.",
+        "note": ""
+      },
+      {
+        "name": "Gambler’s Draw",
+        "description": "Joe Fixit can hold 4 cards at a time. At max capacity, new cards replace old cards in the same order they were acquired.\n\nCards are drawn even if the attack was blocked.\n\nHearts: End Combo with Light, +7% Life Steal.\n\nSpades: End Combo with Medium, +1601.6 Attack Rating.\n\nClubs: Heavy Hit, +25% Combat Power Rate.\n\nDiamonds: Well-Timed Block, +25% Block Penetration.\n\nWhen Defending a Quest Node, cards are acquired based on the Attacking Champions actions.",
+        "note": "Mix and match, what’s the best combo you can find to get the freshest cup of Joe going!"
+      },
+      {
+        "name": "Dead Man’s Hand – On Special Activation",
+        "description": "If Joe’s hand consists of one of the following combinations, inflict the respective Debuff for 10 seconds. +5 seconds per bar of Power spent.\n\nOne Pair: Disorient, reducing Defensive Ability Accuracy and Block Proficiency by 40%.\n\nThree of a Kind: Weakness, reducing Attack Rating by 30%.\n\nFlush: Petrify, reducing Ability Power Rate and Regeneration Rate by 60%.\n\nPlaying a hand removes all cards on the last hit of the Special Attack.",
+        "note": "Joe’s got a brand new suite of utility, defenders aren’t going to want to catch these hands!"
+      }
+    ],
+    "abilities": [
+      "disoriented",
+      "weakness",
+      "petrify"
+    ]
+  },
   "specials": {
     "1": {
       "name": "Place Your Bets",
-      "description": "55% chance to inflict Bleed, dealing 33% of your Attack as direct damage over 5 seconds.",
-      "note": "This attack has 6 potential Bleed triggers and allows up to 6 stacks of Bleed",
+      "description": "On Hit, 50% chance to Inflict a Bleed Debuff dealing 1401.4 Direct Damage over 10 seconds. +1 per Dead Man’s Hand Debuff.",
+      "note": "Stack some MASSIVE Bleed damage with Joe. That Tommy Gun is no joke! How many Bleeds can you get going?",
       "damagetypes": [
         "physical"
       ],
@@ -13,13 +38,14 @@
     },
     "2": {
       "name": "Shorten the Odds",
-      "description": "100% chance to Stun the opponent for 3 seconds.",
+      "description": "The final hit has a 100% chance to inflict a 2.75 second Stun Debuff.\n\nReplay the last Dead Man’s Debuff that was played.",
       "abilities": [
         "stun"
-      ]
+      ],
+      "note": "Great for utility, and stacking the hand you want! Use this when you have a specific Defender that requires a bit more finesse than a Tommy Gun can dish out."
     },
     "3": {
-      "description": "100% chance to inflict Bleed, dealing 245% of your Attack as direct damage over 3 seconds. ",
+      "description": "Inflict a random Dead Man’s Hand Debuff.\n\nUntil the Opponent is no longer suffering any Dead Man’s Hand Debuffs, Gambler’s Draw card effects have +30% Potency.",
       "abilities": [
         "bleed"
       ],
@@ -27,25 +53,14 @@
     }
   },
   "signature": {
-    "name": "Double Down",
-    "description": "Mr. Fixit knows how to play the tables and swing the odds in his favor. Each time he rolls on Gambler’s Ruin, he has a (50 - 85%) chance to Double Down and gain a second poker suit for 7 seconds. The secondary effect only lasts 7 seconds. The secondary effect is just as strong as a standard effect from Gambler’s Ruin. Double Down has a chance to trigger each time you re-roll on Gambler’s Ruin. More rolls means more effect. ",
-    "note": "Each Double Down effect will be unique from the first effect, meaning you won’t ever get 2 stacks of Hearts, Spades, Diamonds or Clubs."
-  },
-  "gameplay": {
-    "description": "At the beginning of the fight and whenever he lands a Heavy attack, Joe gains a random poker suit and lets loose a different aspect of the gamma irradiated gangster he is. The effect lasts indefinitely and will only be replaced when Joe lands another Heavy Attack and rerolls This effect cannot be nullified as it is a passive ability.\n\n\nHEARTS: Joe triggers his accelerated healing ability, granting 15% health recovery per minute. \n\n\nDIAMONDS: He may not be as big as the Hulk, but you still won’t like him when he’s angry. Joe gains up to 40% Attack based on lost health. This effect works the same as Hulk’s Signature Rage effect and becomes more effective the more Health Joe has lost.  \n\n  SPADES: Mr. Fixit is morally ambiguous at best and knows how to make his punches hurt. Each attack has a 14% chance to Weaken or Fatigue the opponent, reducing attack by 10% and Critical Hit Rate by 5%. Each attack has a 14% chance to trigger Weakness and a 14% chance to trigger Fatigue. A single attack can trigger both and each of the effects stack up to two times each.\n\n\nCLUBS: Joe isn’t some dumb brute and he’s smart enough to take advantage of anyone who thinks he is, granting 10% Critical Hit rate for every 5 hits of his combo meter. The increased Critical Hit Rate actually increases by 2% for each hit of the combo meter, making each successful attack count.",
-    "abilities": [
-      "regeneration",
-      "fury",
-      "weakness",
-      "fatigue",
-      "precision"
-    ]
+    "name": "Stacked Deck",
+    "description": "Always Active\n\nAfter using cards to play a Dead Man’s Hand Debuff, instead of being removed, all slots are randomly assigned 1 matching suit.\n\nAdditionally, suits gain a stackable bonus during Special Attacks.\n\nHearts: +10% Debuff Duration.\n\nSpades: +748.4 Critical Rating.\n\nClubs: 30.04% of a bar of Power over 2 seconds.\n\nDiamonds: +24.96% Armor Penetration.\n\nJackpot: Counts as all 4 Suits.",
+    "note": "Once those jackpots start rolling in, Joe will start rolling through fights!"
   },
   "author": {
     "name": "Kabam",
     "type": "spotlight",
     "profile": "https://playcontestofchampions.com/news/champion-spotlight-joe-fixit/"
   },
-  "youtube": "lmUiwTSD-UM",
-  "description": "Working as an enforcer for organized crime in Las Vegas, the dark incarnation of the Hulk named Joe Fixit is morally ambiguous at best, and downright cruel at worst. Dressed impeccably in his trademark suits, Mr. Fixit enjoys the finer things in life, like money, women, gambling, and gunning down his enemies with his dual Tommy Guns. He may be a weaker version of the Hulk, but he more than makes up for it with his firepower and sinister intelligence."
+  "youtube": "lmUiwTSD-UM"
 }

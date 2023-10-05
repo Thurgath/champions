@@ -1,0 +1,60 @@
+{
+  "description": "Sam Wilson, formerly known as the Falcon, took the mantle of Captain America when his friend and mentor Steve Rogers went into retirement. At first Sam gave the Shield away, believing that the legacy belonged to Steve alone, but when world peace and stability was threatened by Super Soldiers, he decided to accept the title of Captain America and make a stand for what he believed was right.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Armor Up:",
+        "description": "When Attacking or when Hit by Basic Attacks, 30% chance to gain an Armor Up Buff, increasing Armor Rating by 300, lasting indefinitely up to 5 stacks. Additional stacks last for 10 second(s). This Buff turns into a Passive when nullified by something other than Armor Break.\n\nWhile Armor Up is active, Captain America can trigger the Parry Mastery against non-contact attacks and he can block Unblockable Specials from mutants.\n\nEach Armor Up reduces the Opponent’s Bleed Ability Accuracy by 25%.\n\n10% chance per Armor Up effect to Auto-Block incoming Special Attacks, up to 75%. This Auto-Block counts as a Well-Timed Block and removes all personal Armor Ups.\n\nAuto-Block Chance is also increased by 25% per Prowess effect on the Opponent. This chance is capped at 100% while the Opponent has Prowess.",
+        "note": "Armor Up is the main resource Captain America uses, it gives him a number of advantages. Try to keep as many Armor Ups active as often as possible in order to maximize his defensive and offensive capabilities."
+      },
+      {
+        "name": "Always Active:",
+        "description": "Captain America cannot land Critical hits naturally, however every time he would have landed a Critical Hit he inflicts an instant Rupture, dealing Physical Damage. This ability scales with Critical Damage Rating.\n\nRuptures also inflict a Sapped Charge that lasts for 15 second(s), or indefinitely as a Defender. Consume all charges when reaching 25 stack(s), and replace them with a Power Drain Passive, draining 50% of the Opponent Power over 15 second(s).",
+        "note": "Since Captain America does not critically hit his Opponents, this allows him to bypass effects that would punish Critical Hits. The trade off is that this ability can be affected by Ability Accuracy reduction."
+      },
+      {
+        "name": "Recon Scan – Redwing:",
+        "description": "Dodging back and holding Block for 1.2 second(s), inflicts a Lock-On charge for 16 second(s), but pauses on his Specials. Once Lock-On ends, it goes on Cooldown for 12 second(s). As a Defender, Cap inflicts a Lock-On Charge in 16 second(s) if not Locked-On.\n\nWhen entering Lock-On, Cap passively inflicts Cowardice for the duration of Lock-On, reducing Special Attack damage by 40%.\n\nWhile Locked-On, Cap gains 900 Critical Rating and his attacks cannot Miss\n\nStriking the Opponent while Locked-On pauses Sapped Charges for 5 second(s).",
+        "note": "Recon Scan is very powerful and should be kept active as often and as long as possible, but depending on the Opponent, there are situations where building up some Power before activating Recon Scan can be advantageous."
+      },
+      {
+        "name": "On a Heavy or Intercept:",
+        "description": "Consume an Armor Up Buff and gain a non-stacking Bulwark Buff, increasing Block Proficiency by 900 for 15 second(s). While this Buff is active, Opponents have -100% Ability Accuracy when hitting Captain America’s block.",
+        "note": "This piece of utility allows Captain America to avoid many quest nodes that punish blocking attacks."
+      }
+    ],
+    "abilities": [
+      "armor",
+      "auto-block",
+      "powerdrain",
+      "rupture"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Fly by Attack:",
+      "description": "Last hit inflicts a Physical Vulnerability Debuff, decreasing Physical Resistance by 233.33 for 14 second(s), pauses while Lock-On.\n\nLock-On: Inflict an extra Physical Vulnerability Debuff.",
+      "note": "Physical Vulnerability substantially increases Captain America’s damage from his Ruptures. Keeping this ability up for as long as possible is a key aspect to maximize his damage output potential."
+    },
+    "2": {
+      "name": "Airstrike:",
+      "description": "For the duration of this Special, Attack Rating increases proportionally to Armor Rating. All personal Armor Ups are consumed by the end of the attack.\n\nEach hit inflicts a Rupture Debuff, dealing 593 Physical Damage over 10 seconds.\n\nLock On: Each hit inflicts an extra instant Rupture Passive, dealing Critical Damage as Physical Damage",
+      "note": ""
+    },
+    "3": {
+      "name": "Master of the Sky:",
+      "description": "Gain a Precision Buff, granting 8400 Critical Rating for 8 second(s), but pauses for 0.5 second(s) on a Hit. Captain America can crit through blocks while this Buff is active.\n\nConsume all stacks of Armor Up, and gain 10% chance per Armor Up to inflict an extra Sapped Charge on a Rupture for the duration of the Precision Buff. Reaching max stacks of Sapped Charges while this effect is active causes the lost Armor Ups to return.\n\nLock-On: Inflicts a Special Lock, preventing Specials from being activated for 10 second(s).",
+      "note": "The Special 3 offers less damage potential than Special 2 since the Precision Buff does not last long enough to be capitalized by the rest of his kit, however if you time it well with the Sapped Charges, you can lock the Opponent from using Special 3 for a very long time."
+    }
+  },
+  "signature": {
+    "name": "Vibranium Enhanced Exo-8 Falcon:",
+    "description": "Redwing Lock-On lasts 2 second(s) longer, Attack Rating is increased by 920.41 and allows Captain America to inflict Ruptures from Special 2 through blocks.\n\nWhen either Champion performs a Well-Timed Block, Captain America inflicts a Sapped Charge on the Opponent.\n\nWhen an Opponent Miss fails or when their Ability fails due to low Ability Accuracy, an instant Rupture is inflicted, dealing 690.29 Physical Damage. Damage scales with Base Attack only.",
+    "note": ""
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-captain-america-sam-wilson/"
+  }
+}

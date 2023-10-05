@@ -1,26 +1,64 @@
 {
+  "description": "Clint Barton – a regular guy amongst super soldiers, armored geniuses, and gods of thunder. Known as the World’s Greatest Marksman, he’s mastered the bow and arrow, and the ability to transform nearly any projectile into an accurate weapon. Tenacious, brave, and heroic, Hawkeye stands tall amongst the mighty Avengers!",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Dialed In",
+        "description": "During Special Attacks, press the Block after the first hit Input to slow down time. Releasing the Block Input precisely when Hawkeye releases the arrow grants a Perfect Release bonus.\n\nActivating a Perfect Release bonus grants a Dialed In Passive increasing duration of Debuffs inflicted by Special Attacks by 10%. All Dialed In stacks are removed when failing to activate a Perfect Release Bonus. Max 5.",
+        "note": ""
+      }
+    ],
+    "abilities": [
+      "slow",
+      "bleed",
+      "suppression",
+      "fragility"
+    ]
+  },
   "specials": {
     "1": {
       "name": "E.M.P. Arrow",
-      "description": "Hawkeye knocks the opponent back, then shoots them with an electromagnetic pulse.  Please taze me, Bro."
+      "description": "100% chance to inflict Power Drain, removing 75% of a bar of Power.\n\nPerfect Release: 100% chance to inflict a Suppression Debuff, reducing the Opponent’s Combat Power Rate by 50% for 8 seconds.",
+      "note": "Hawkeye’s Special 1 is your bread and butter. It has a 100% chance to trigger a Power Drain and is very reliable in many situations where you need access to Power Control. With Hercules on the team, draining the opponent’s power will grant Hawkeye a lengthy and powerful Fury Buff!"
     },
     "2": {
       "name": "Incendiary Arrow",
-      "description": "Hawkeye shows off by launching an explosive thermal-tipped arrow while upsidedown."
+      "description": "100% chance to inflict a 25 second Fragility Debuff. Attacking a Fragile Opponent grants +964.29 Critical Damage Rating and reduces Block Proficiency by 50%.\n\nPerfect Release: Inflict an additional Fragility Debuff.",
+      "note": "The Special 2’s 25-second Fragility Debuff (27.5s if a Perfect Release!) will juice up the damage on all those Critical Bleeds, helping shorten the time to set up the perfect killshot."
     },
     "3": {
       "name": "Explosive Barrage",
-      "description": "He didn't miss. You might think he did, but he didn't."
+      "description": "All Bleeds triggered during this attack gain up to +200% duration based on Hawkeye’s Critical Rating.\n\nBased on Hawkeye’s Critical Chance, Bleeds triggered during this attack can be Critical Bleeds, multiplying the Bleed’s Potency by Hawkeye’s Critical Damage Multiplier.",
+      "note": "Who says Special 3’s can’t crit bleed? Keep your Crit Rating high with the Precision mastery and you’ll see deadly Critical Bleeds with up to double the duration!"
     }
   },
   "signature": {
     "name": "Hemorrhage",
-    "description": "Arrows strike the jugular to inflict severe Bleeding for a long duration."
+    "description": "Always Active\n\nLanding a Critical Hit with an Arrow Shot will cause any personal Bleed Debuff triggered to become a Critical Bleed, multiplying the Bleed’s Potency by Hawkeye’s Critical Damage Multiplier.\n\nAdditionally each Bleed Debuff on the opponent reduces their Physical Resistance by 592.",
+    "note": "Hawkeye’s Signature Ability is paramount to his kit, granting him the ability to inflict his deadly Critical Bleeds. Awaken him to unlock his maximum potential!"
   },
   "author": {
     "name": "Kabam",
     "type": "spotlight",
     "profile": "https://playcontestofchampions.com/news/champion-spotlight-hawkeye/"
   },
-  "description": "Clint Barton – a regular guy amongst super soldiers, armored geniuses, and gods of thunder. Known as the World's Greatest Marksman, he's mastered the bow and arrow, and the ability to transform nearly any projectile into an accurate weapon. Tenacious, brave, and heroic, Hawkeye stands tall amongst the mighty Avengers!"
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "Cause a Slow Debuff on the opponent for 10 seconds.",
+        "note": ""
+      },
+      {
+        "name": "Basic Attacks",
+        "description": "Pause all Bleed Debuffs on the opponent for 1 second(s)",
+        "note": "Keeping up the offensive and controlling Power with Hawkeye’s SP1 is a good way to maintain a deadly stack of Bleeds."
+      },
+      {
+        "name": "Special Attacks",
+        "description": "Final Hit: 100% chance to inflict a Bleed Debuff dealing 4042 Direct Damage over 10 seconds. Each bar of Power spent beyond 1 grants +1 bleed and +5 seconds duration.\n\nPerfect Release: Arrow attack becomes a Guaranteed Critical Hit.",
+        "note": ""
+      }
+    ]
+  }
 }

@@ -1,0 +1,69 @@
+{
+  "description": "Eddie Brock, now separated from the Venom Symbiote, had his cancer cured by Martin Li, the alter ego of the Supervillain  Mister Negative. Unbeknownst to Li, his healing powers fused with the remnants of the Symbiote in Eddie’s body and created a new mindless Symbiote now known as Anti-Venom.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Immunity to Incinerate and Poison.\n\nDuring the Opponent’s Special Attacks Anti-Venom gains 40% Defensive Combat Rate per Debuff on the Opponent.",
+        "note": "Anti-Venom can gain quite a bit of Power when blocking or receiving attacks, and thanks to his Signature Ability, he can do so while not losing too much health."
+      },
+      {
+        "name": "Genetic Memory",
+        "description": "When the fight starts Anti-Venom inflicts an indefinite Klyntar Debuff. If this Debuff is removed by any means it comes back after 15 second(s).\n\nIf the Opponent is suffering from the Klyntar Debuff, for every 10 hits in the Combo Meter from either Champion, Anti-Venom inflicts the selected Genetic Memory Debuff from the list below. Max Genetic Memory Debuffs 4.\n\nSpectre Debuff: Reduces the Opponent’s Regeneration Rate by 16.66%\n\nDisorient: Reduces Defensive Ability Accuracy and Block Proficiency by 12.5%.\n\nDecelerate: Lowers Evade and Unstoppable Ability Accuracy by 33%.\n\nSecond Medium Attack changes the selected Genetic Memory Debuff to the next Debuff in the list. Defenders have a 50% chance to change the selection when inflicting a Genetic Memory Debuff.",
+        "note": "A key aspect of playing with Anti-Venom is knowing which Debuffs to stack first against certain Champions."
+      },
+      {
+        "name": "Klyntar Debuff",
+        "description": "Klyntar Debuff reduces Physical Vulnerability by 525 and gains additional properties based on Anti-Venom’s Opponent.\n\n#Spider-Verse Heroes: Reduce the Ability Accuracy of Evade effects by 100%.\n\nMystic Champions: Reduce the Ability Accuracy of Unblockable by 65%. At 30 hits in the Combo Meter from either Champion it increases to 100%.",
+        "note": "This Debuff coupled with Decelerate is able to completely counter Mystic Champions that make use of Unblockable and Unstoppable."
+      }
+    ],
+    "abilities": [
+      "spectre",
+      "disoriented",
+      "decelerate",
+      "fury"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Constituent Hammer",
+      "description": "If not already active, gain an Accelerated Mutation Passive, causing Anti-Venom to inflict an additional Genetic Memory Debuff for 15 second(s). Triggering Accelerated Mutation also refreshes the Evolved Mutation Passive.\n\nIf Accelerated Mutation is active, all hits deal a burst of 884.4 Physical damage.\n\nFirst hit inflicts a Petrify Debuff, reducing the potency of their Power Gain and Regeneration effects by 40% for 20 second(s).",
+      "note": "A very important aspect of his kit is being able to use Special 1 to refresh Evolved Mutation Passive from Special 3. If you can keep this Passive refreshed, Anti-Venom damage increases by a lot."
+    },
+    "2": {
+      "name": "Constituent Spear",
+      "description": "On activation consume all Genetic Memory Debuffs on the Opponent, granting a Fury Passive per Genetic Memory consumed, gaining 1658.25 Attack Rating for 25 second(s).",
+      "note": "Timing the use of Special 2 can make a huge difference when it comes to his loop. You need to be able to time the activation in such a way that would allow Anti-Venom to loop back to Special 1 so he can refresh the Evolved Mutation Passive."
+    },
+    "3": {
+      "name": "Purge",
+      "description": "Inflict a Rupture Debuff, dealing 1547.7 Physical Damage over 15 second(s).\n\nGain a non-stacking Evolved Mutation Passive, increasing the max number of Genetic Memory Debuffs by 4 and increasing Fury potency and duration by 25% for 25 second(s). The max stack for an individual Debuff is 4.",
+      "note": "In longer fights Special 3 plays a key role in his loop. It allows Anti-Venom to inflict more Debuffs and consequently gain more stacks of Fury."
+    }
+  },
+  "signature": {
+    "name": "Controlled Symbiosis",
+    "description": "Anti-Venom gains a Passive Regeneration stack that recovers 65% of the Attack Damage taken from a non-Critical Hit over 20 seconds and is interrupted if the Klyntar Debuff is Purified.\n\nPersonal Debuff potency is increased by 10% for every 10 hits in the Combo Meter from either Champion. Non-personal Debuffs are increased by 5% for every 10 hits in the Combo Meter. Effect caps at 50 hits.",
+    "note": "At 50 hits in the Combo Meter and with the Accelerated Mutation Passive active, Anti-Venom only needs one application of each Debuff to get most of its utility, since Accelerated Mutation inflicts 2 Debuffs each with 50% increased potency, which is the equivalent of 3 Debuffs at normal potency."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-anti-venom/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "Inflict a Stagger that lasts for 10 second(s). A Staggered Opponent has their next Buff Nullified. Max 2 Stacks.",
+        "note": ""
+      },
+      {
+        "name": "Special Attacks",
+        "description": "Personal Passives are paused during Specials.",
+        "note": ""
+      }
+    ]
+  }
+}

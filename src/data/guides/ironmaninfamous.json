@@ -1,0 +1,66 @@
+{
+  "description": "Following an epiphany about his possible calling in life, Doctor Victor Von Doom decides to take on the role of Iron Man after Stark’s lapse into a coma. Donning one of Tony’s suits, Doom sets out to use his intricate knowledge of the supercriminal world to obliterate it completely. Though he has good intentions and is legitimate in his attempt to atone, his lack of social skills and the weight of his past deeds make it impossible for his former enemies, S.H.I.E.L.D. and the Fantastic 4, to trust him.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "When Iron Man (Infamous) would land a Critical Hit, he instead inflicts an instant Shock dealing Energy Damage equal to the damage the Critical would’ve dealt.\n\nIf an Opponent would gain 2 or more Prowess effects at once, those Prowesses are converted into a single indefinite Energy Vulnerability Debuff that reduces their Energy Resistance by 964.29. Each subsequent Debuff is 10% less potent than the previous one.",
+        "note": "Iron Man (Infamous)’s Crit Replacement effect makes him excellent for dealing with Mutants who trigger abilities when struck by a Critical Hit. Also, note that the subsequent reduction is based on the potency of the previous Debuff, not the original potency, so this ability’s potency will never reach 0."
+      },
+      {
+        "name": "Armor Up Buff",
+        "description": "Victor Von Doom’s modifications to his Iron Man armor grant him extra protection. He starts the fight with an indefinite Armor Up Buff granting 1500 Armor Rating. While he has this Buff, he is immune to Shock and Incinerate.\n\nIf this Buff is lost, it restores itself after 12 seconds. This timer is paused while Iron Man (Infamous) is suffering from an Armor Break.",
+        "note": "This is a juicy Armor Up Buff and it comes with some serious benefits! Plus, like many other Champs, if you do lose it, it’ll come back again before too long. Just be extra careful of Armor Break effects, as they will make it take much longer to regain the Armor Up. This is the lynchpin of his kit. Without it, you face a serious uphill battle. With it, it’s genuinely hard to lose."
+      },
+      {
+        "name": "Aura of Iron – Passive",
+        "description": "The Aura of Iron can’t trigger while Iron Man (Infamous) does not have his personal Armor Up Buff, and its duration is reduced by 4 seconds for each unique, non-Prowess Buff on the Opponent above two.\n\nThe Aura is paused during both Champion’s Special Attacks. While paused this way, landing a Medium Attack ends the Aura early.\n\nIron Man (Infamous)’s Special Attacks are passively Unblockable.\n\nEach time he inflicts one of his personal Shocks, it is immediately replaced by an instant Energy Power Burn that burns a percentage of the Opponent’s current Power based on the potency of the replaced Shock. Deals 775.98 Energy Damage to the Opponent per percent of Max Power burned.\n\nIron Man (Infamous) becomes passively Unstoppable and Stun Immune against the last hit of incoming Special 1, Special 2, and Heavy Attacks. In addition, if the damage of the hit exceeded 5% of his Maximum Health, he gains a Regeneration Buff, restoring the excess damage over 5 seconds.",
+        "note": "The spiritual successor to Doctor Doom’s Aura of Haazareth, the Aura of Iron bestows many of the same powers, with a Tech Twist! Remember: the stronger the Shock replaced by the Aura, the more of the Opponent’s Power is Burned away. This means you’ll primarily be focusing on your Special 2 Shocks/Power Burns for damage, and your Medium and Crit Shocks/Power Burns for Power Control. Also of note: make sure to wait for your current Aura duration to run out before trying to Stun the Opponent with the Doom Heavy again. That only works while the Opponent is Shocked, and no Shocks can exist while the Aura of Iron is active."
+      }
+    ],
+    "abilities": [
+      "powerburn",
+      "speciallock",
+      "shock",
+      "armorup",
+      "cowardice",
+      "prowessremoval"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Zero-Point Barrage",
+      "description": "On Activation, enter Aura of Iron for 8 seconds.\n\nIf it was already active, the Opponent is passively Special Locked for Aura of Iron’s remaining duration.",
+      "note": "It’s not 100% consistent, but this attack will most often Crit and Power Burn the Opponent off of their Special 3. For even more consistency, cancel your Heavy Attack into this Special to Special Lock the Opponent for a brief window in which you can land a Medium Attack. Because you will be in Aura of Iron, your guaranteed Shock turns into a guaranteed Power Burn, which is just enough to turn that Bar from red to yellow. Also remember that because this attack always activates Aura of Iron, it will always be Unblockable."
+    },
+    "2": {
+      "name": "Aerial Uni-Bombardment",
+      "description": "After the first hit of this attack lands, Iron Man (Infamous) gains +1077.75 Attack Rating for each of the Opponent’s filled Bars of Power for the remainder of the attack.\n\nEach beam hit inflicts a Shock Debuff dealing 4742.1 Energy Damage over 5 seconds.",
+      "note": "It’s worth noting that the first hit of this Attack doesn’t gain the extra damage from the Attack Rating boost, but don’t worry, you won’t need it. The lion’s share of this attack’s damage is dealt by the three beam hits which, if the Opponent is at 3 full Bars of Power, will burn ~1 – 1.5 Bars of Power (depending on Crits) and deal some major damage! It’s also important to understand that the Opponent’s Power Meter is measured after they gain Power from the hit, but before any Power Burn takes place, meaning that so long as the actual hit brings them to full Power, even for a moment, you still get the full Attack Rating boost."
+    },
+    "3": {
+      "name": "Wrath of von Doom",
+      "description": "On Activation, enter Aura of Iron for 24 seconds. This Aura cannot be ended early, and until it next expires, Iron Man (Infamous) has +2250Critical Rating for each of the Opponent’s filled Bars of Power.\n\nIf Aura of Iron was already active, both Iron Man (Infamous) and his Opponent gain an Energize Passive increasing their Combat Power Rates by 100%, each lasting until Aura of Iron next expires.",
+      "note": "Combine this Special with Special 1 to truly have your Opponent at your mercy. Since the Special Lock from the Special 1 lasts until the Aura next expires, they will be Special Locked for up to ~20 seconds, depending on how fast you get to your Special 1. During that time, you’ll be Criting and Power Burning like crazy, so make sure to throw this Special just after you throw your Heavy to get that juicy Energize. It may seem strange that the Opponent gets one as well, but it’s all according to Doom’s plans, as it only serves to raise their Power Bar faster, thereby raising Iron Man (Infamous)’s damage."
+    }
+  },
+  "signature": {
+    "name": "Arcane Overload",
+    "description": "Once per fight, when Iron Man (Infamous)’s Health drops below 15%, he gains a Regeneration Buff, healing 35% of his Maximum Health over 10 seconds. While this effect is active, the Opponent is passively Special Locked.\n\nWhile Aura of Iron is active, the Opponent suffers 100% flat reduced Unblockable Ability Accuracy.\n\nWhile his personal Armor Up Buff is active, Iron Man (Infamous) gains 964.26 Block Proficiency and Energy Resistance.",
+    "note": "Right out of the gate, at Signature Level 1, Iron Man (Infamous) gets the ability to Block Unblockable attacks. Not just Specials, or Mutant Specials, but almost any Unblockable attack. Since Aura of Iron can be triggered on practically every Heavy Attack, and is paused during Specials, the AI bias to throw Specials upon standing up makes it all but guaranteed that the Aura will be active when the Opponent decides to throw an Unblockable Special attack. And if that wasn’t enough, Victor Von Doom, not satisfied with the Iron Man armor’s self repair abilities, modified it so that just the act of triggering its self-repair function Special Locks the Opponent, allowing you to Regen in peace."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-iron-man-infamous/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Basic Attacks",
+        "description": "Iron Man (Infamous)’s Medium Attacks do not make contact and inflict Shock Debuffs dealing 431.1 Energy Damage over 2 seconds.\n\nWhile charging a Heavy Attack, if the Opponent is within striking distance and suffering from Shock, all their Shock effects are consumed and replaced with a Passive Stun for 0.60 seconds. This cannot trigger during the Opponent’s Special Attacks.\n\nThe final hit of Iron Man (Infamous)’s Heavy Attack inflicts a non-stacking Cowardice Debuff, reducing the Opponent’s Special Attack damage by 40% for 5 seconds.\n\nWhen one or more Shocks are consumed by Iron Man (Infamous)’s  abilities, he triggers Aura of Iron for 2.6 seconds for each Shock removed, if it is not already active.",
+        "note": "The Doom Heavy is back! I love the Doom Heavy, and I hope you do too! It simply had to return for Doom 2: Electric Boogaloo. Of considerable note, the fact that it can allow you to throw a Special 2 in Aura of Iron without using the other Specials is extremely powerful. To access Iron Man (Infamous)’s full damage potential, you need to hit the Opponent with a Special 2 while they have 3 full Bars of Power, which normally necessitates Special Locking them with the Special 3 and Special 1. But with this Heavy, players who are skilled at manipulating the AI into not throwing Specials can get their Opponent to 3 Bars without Special Locking them, and then Heavy cancel into Special 2 for full damage right off the bat!"
+      }
+    ]
+  }
+}

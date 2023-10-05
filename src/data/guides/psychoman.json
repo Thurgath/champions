@@ -1,30 +1,69 @@
 {
-    "description": "Psycho-Man is a genius scientist and ruler of a technocratic system of worlds in the Microverse. Obsessed with conquering the normal-sized universe, he crafted a mechanical exoskeleton so he could interact with things not on a microscopic scale. He carries with him the Control Box, a device capable of creating and controlling the emotions of anyone he chooses, especially feelings of Hate, Fear, and Doubt.",
-    "gameplay": {
-        "description": "Always Active\nThe potency of Psycho-Man’s Concussions are reduced by 25% flat for each unique Buff on the Opponent, up to 3. This cannot reduce them below 0%.\nThe potency of Psycho-Man’s Concussions are increased by 75% flat against Mutants.\nCombat Power Rate is decreased by 10%.\n\nControl Box\nPsycho-Man carries a Control Box with 3 modes: Hate, Fear, and Doubt, flooding his Opponent’s mind with the selected emotion at all times. The Control Box starts in Hate mode.\nWhile fighting as an Attacker, Psycho-Man cycles to the next mode whenever his Fourth Light Attack lands a hit or it strikes into a block.\nWhile fighting as a Defender, Psycho-Man cycles to the next mode when the Opponent fills a Bar of Power. If the Bar was filled during Psycho-Man’s Special Attacks, it cycles after the attack is finished.\nPsycho-Man’s abilities change depending on the current Control Box Mode.\n\nControl Box – Passive\nHate: Opponents fight more aggressively, and suffer Passive Concussion during Heavy Charge and Heavy Attack, reducing Ability Accuracy by -75%.\nFear: Opponents are 70% more likely to use a Special Attack, and suffer Passive Concussion during Special Attacks, reducing Ability Accuracy by -75%.\nDoubt: Opponents fight more defensively, are 70% less likely to use a Special Attack, and suffer Passive Concussion while Blocking, reducing Ability Accuracy by -25%.\n\nControl Box – All Attacks\nHate: Striking the Opponent while they are executing or recovering from a Heavy Charge or Heavy Attack grants Psycho-Man 18% of a Bar of Power.\nFear: Striking the Opponent while they are recovering from a Special Attack grants Psycho-Man 25% of a Bar of Power.\nDoubt: Striking the Opponent while they are Blocking grants Psycho-Man 8% of a Bar of Power.\n\nOpponent activates a Special Attack\nPsycho-Man’s mechanical exoskeleton causes his Opponents to suffer -1400 Critical Rating during their Special Attacks."
+  "description": "Psycho-Man is a genius scientist and ruler of a technocratic system of worlds in the Microverse. Obsessed with conquering the normal-sized universe, he crafted a mechanical exoskeleton so he could interact with things not on a microscopic scale. He carries with him the Control Box, a device capable of creating and controlling the emotions of anyone he chooses, especially feelings of Hate, Fear, and Doubt.\nPsycho-Man is focused on manipulating his Opponents into doing specific actions, then punishing them for doing so. His Control Box has 3 modes, Hate, Fear, and Doubt. Hate is associated with Heavy Attacks, Fear with Special Attacks, and Doubt with Blocking. When Opponents perform the action that’s tied to his current mode, they are inflicted with Concussion, and Psycho-Man gains Power from striking them during or after that action. His Special Attacks also trigger different effects depending on what mode he is in.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "The potency of Psycho-Man’s Concussions are reduced by 25% flat for each unique Buff on the Opponent, up to 3. This cannot reduce them below 0%.\n\nThe potency of Psycho-Man’s Concussions are increased by 75% flat against Mutants.\n\nCombat Power Rate is decreased by 10%.",
+        "note": "Developer’s Note: Psycho-Man makes up for this decrease in Combat Power Rate with other Power Gain abilities further in his kit."
+      },
+      {
+        "name": "Control Box",
+        "description": "Psycho-Man carries a Control Box with 3 modes: Hate, Fear, and Doubt, flooding his Opponent’s mind with the selected emotion at all times. The Control Box starts in Hate mode.\n\nWhile fighting as an Attacker, Psycho-Man cycles to the next mode whenever his Fourth Light Attack lands a hit or it strikes into a block.\n\nWhile fighting as a Defender, Psycho-Man cycles to the next mode when the Opponent fills a Bar of Power. If the Bar was filled during Psycho-Man’s Special Attacks, it cycles after the attack is finished.\n\nPsycho-Man’s abilities change depending on the current Control Box Mode.",
+        "note": "Developer’s Note: Note, the Control Box changes modes differently depending on whether Psycho-Man is attacking or defending."
+      },
+      {
+        "name": "Control Box – Passive",
+        "description": "Hate: Opponents fight more aggressively, and suffer Passive Concussion during Heavy Charge and Heavy Attack, reducing Ability Accuracy by -75%.\n\nFear: Opponents are 70% more likely to use a Special Attack, and suffer Passive Concussion during Special Attacks, reducing Ability Accuracy by -75%.\n\nDoubt: Opponents fight more defensively, are 70% less likely to use a Special Attack, and suffer Passive Concussion while Blocking, reducing Ability Accuracy by -25%.",
+        "note": "Developer’s Note: These abilities are the main way Psycho-Man controls and punishes his Opponents. Hate, Fear, and Doubt make it more likely for the Opponent to use Heavy, Special, or Block actions respectively, and any abilities they would trigger from those are far less likely to occur.\n\n\n\nThe fact that Opponents are more likely to use Special Attacks is also useful for All or Nothing nodes, even when the Opponent is Taunt Immune."
+      }
+    ],
+    "abilities": [
+      "controlbox",
+      "shock",
+      "powerdrain",
+      "healblock"
+    ]
+  },
+  "specials": {
+    "1": {
+      "description": "Hate: Inflict the Opponent with a Shock Debuff, dealing 2324 Energy Damage over 6 second(s), stacking up to 6 time(s). Inflict an additional Shock for each Fury Buff on Psycho-Man.\n\nFear: Inflict the Opponent with a Cowardice Debuff, reducing Special Attack Damage by 40% for 12 second(s).\n\nDoubt: This attack is Passively Unblockable and inflicts the Opponent with a Power Drain Debuff, depleting 30% of their current Power over 6 second(s).",
+      "note": "Developer’s Note: Using Special 1 or Special 2 in Hate mode is the way to do the best damage as Psycho-Man, whereas Fear provides utility, and Doubt provides power control. Also, note that additional Shocks are inflicted for each Fury Buff, which especially matters for his Special 2.",
+      "name": "Waves of Emotion"
     },
-    "specials": {
-        "1": {
-            "description": "Hate: Inflict the Opponent with a Shock Debuff, dealing 2324 Energy Damage over 6 second(s), stacking up to 6 time(s). Inflict an additional Shock for each Fury Buff on Psycho-Man.\nFear: Inflict the Opponent with a Cowardice Debuff, reducing Special Attack Damage by 40% for 12 second(s).\nDoubt: This attack is Passively Unblockable and inflicts the Opponent with a Power Drain Debuff, depleting 30% of their current Power over 6 second(s).",
-            "note": "Using SP1 or SP2 in Hate mode is the way to do the best damage as Psycho-Man, whereas Fear provides utility, and Doubt provides power control. Also, note that additional Shocks are inflicted for each Fury Buff, which especially matters for his SP2."
-        },
-        "2": {
-            "description": "Hate: Psycho-Man gains a Fury Buff for 14.50 second(s), increasing Attack Rating by +2324, stacking up to 2 time(s). These Fury Buffs refresh when a new one is gained, and when Psycho-Man cycles modes.\nFear: Inflict the Opponent with a Heal Block Passive for 18 second(s).\nDoubt: This attack is Passively Unblockable and inflicts the Opponent with a Special Lock Debuff for 12 second(s).",
-            "note": "The Fury Buffs from this attack are refreshed whenever Psycho-Man rotates through his modes. So regularly rotating through your modes will allow you to stack multiple Fury Buffs, which in turn means his SP1 will inflict additional Shocks. The Heal Block is also a useful way to get a Heal Block in place for his Signature Ability. Finally, the Special Lock Debuff lets you push the Opponent’s power up without them using a Special Attack, and if you follow this up with the Power Drain on the SP1, it’ll have maximum impact."
-        },
-        "3": {
-            "description": "Inflict a Stun Debuff and Power Lock Passive on the Opponent for 3 second(s).\nDuring the Opponent’s next Special Attack, they suffer Passive Concussion, reducing Ability Accuracy by -100%, and Passive Weakness, reducing Attack Rating by 50%.",
-            "note": "For the 3 seconds after using this attack, Psycho-Man has free reign to attack his Opponent without them responding or gaining Power. And on top of that, whatever their next Special Attack is will be significantly debilitated."
-        }
+    "2": {
+      "description": "Hate: Psycho-Man gains a Fury Buff for 20 second(s), increasing Attack Rating by +2324, stacking up to 2 time(s). These Fury Buffs refresh when a new one is gained, and when Psycho-Man cycles modes.\n\nFear: Inflict the Opponent with a Heal Block Passive for 20 second(s).\n\nDoubt: This attack is Passively Unblockable and inflicts the Opponent with a Special Lock Debuff for 12 second(s).",
+      "note": "Developer’s Note: The Fury Buffs from this attack are refreshed whenever Psycho-Man rotates through his modes. So regularly rotating through your modes will allow you to stack multiple Fury Buffs, which in turn means his Special 1 will inflict additional Shocks. The Heal Block is also a useful way to get a Heal Block in place for his Signature Ability. Finally, the Special Lock Debuff lets you push the Opponent’s power up without them using a Special Attack, and if you follow this up with the Power Drain on the Special 1, it’ll have maximum impact.",
+      "name": "Traumatic Experience"
     },
-    "signature": {
-        "name": "Microverse Overlord",
-        "description": "Passive\nWhenever an Opponent’s Ability fails to trigger while they’re suffering from one of Psycho-Man’s Concussions, they are inflicted with a Heal Block Debuff for 9.51 second(s).\nIf they are already Heal Blocked, and have been so for at least 0.5 second(s), they are Power Locked for 6.00 second(s) instead.\nWhenever the Opponent Heals while Heal Blocked, or gains Power while Power Locked, Psycho-Man gains 25.01% of a Bar of Power, scaling up or down with how much Health or Power they would have gained.",
-        "note": "Psycho-Man’s Signature Ability provides additional benefits for controlling his Opponent. Baiting the correct Attacks and getting their abilities to fail due to Concussion will inflict them with Heal Block. If you’re able to do it again while they’re still Heal Blocked, they’ll additionally become Power Locked. Then once they’re in that state, any Power they’d gain from abilities or being struck is funneled into Psycho-Man instead!\nThe Power gain listed in the third point is based around a 5% heal or a Power gain of 25% of a Bar. So if the Opponent were to heal 10% of their max health, Psycho-Man would actually gain twice as much Power as listed here."
-    },
-    "author": {
-        "name": "Kabam",
-        "type": "spotlight",
-        "profile": "https://playcontestofchampions.com/champion-spotlight-psycho-man/"
+    "3": {
+      "description": "Inflict a Stun Debuff and Power Lock Passive on the Opponent for 3 second(s).\n\nDuring the Opponent’s next Special Attack, they suffer Passive Concussion, reducing Ability Accuracy by -100%, and Passive Weakness, reducing Attack Rating by 50%.",
+      "note": "Developer’s Note: For the 3 seconds after using this attack, Psycho-Man has free reign to attack his Opponent without them responding or gaining Power. And on top of that, whatever their next Special Attack is will be significantly debilitated.",
+      "name": "Emotional Breakdown"
     }
+  },
+  "signature": {
+    "name": "Microverse Overlord",
+    "description": "Whenever an Opponent’s Ability fails to trigger while they’re suffering from one of Psycho-Man’s Concussions, they are inflicted with a Heal Block Debuff for 9.51 second(s).\n\nIf they are already Heal Blocked, and have been so for at least 0.5 second(s), they are Power Locked for 6.00 second(s) instead.\n\nWhenever the Opponent Heals while Heal Blocked, or gains Power while Power Locked, Psycho-Man gains 25.01% of a Bar of Power, scaling up or down with how much Health or Power they would have gained.",
+    "note": "Developer’s Note: Psycho-Man’s Signature Ability provides additional benefits for controlling his Opponent. Baiting the correct Attacks and getting their abilities to fail due to Concussion will inflict them with Heal Block. If you’re able to do it again while they’re still Heal Blocked, they’ll additionally become Power Locked. Then once they’re in that state, any Power they’d gain from abilities or being struck is funneled into Psycho-Man instead!\n\n\n\nThe Power gain listed in the third point is based around a 5% heal or a Power gain of 25% of a Bar. So if the Opponent were to heal 10% of their max health, Psycho-Man would actually gain twice as much Power as listed here."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-psycho-man/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Control Box – All Attacks",
+        "description": "Hate: Striking the Opponent while they are executing or recovering from a Heavy Charge or Heavy Attack grants Psycho-Man 18% of a Bar of Power.\n\nFear: Striking the Opponent while they are recovering from a Special Attack grants Psycho-Man 25% of a Bar of Power.\n\nDoubt: Striking the Opponent while they are Blocking grants Psycho-Man 8% of a Bar of Power.",
+        "note": "Developer’s Note: This is the second major component of the Control Box modes. When the Opponent does the action that matches his current mode, striking the Opponent during or right after that action will grant Psycho-Man a significant burst of Power. When playing well and successfully manipulating and punishing his Opponent, Psycho-Man is able to trigger his Special Attacks far more often."
+      },
+      {
+        "name": "Opponent activates a Special Attack",
+        "description": "Psycho-Man’s mechanical exoskeleton causes his Opponents to suffer -1400 Critical Rating during their Special Attacks.",
+        "note": "Developer’s Note: Psycho-Man makes it difficult for Special Attacks to land Critical Hits against him, regardless of what mode he’s in."
+      }
+    ]
+  }
 }

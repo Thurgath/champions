@@ -1,0 +1,66 @@
+{
+  "description": "Sersi is an Eternal, one of a race of ancient aliens who have lived on Earth for eons in secret. Unlike her fellow Eternals, Sersi favors living among humanity, and doubles as a museum curator while also protecting them from the Deviant threat. With the ability to manipulate matter allowing her to alter the composition of any non-sentient material she touches, Sersi sets out to reconnect with her fellow Eternal, Ikaris, and help recruit them all for one last mission.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Sersi’s control of matter prevents her Regeneration Rate from being lowered below 0%.",
+        "note": "This ability is not much of a threat until Sersi is Awakened. If you’re fighting an awakened Sersi, it’s usually best to reduce her Regeneration Rate with abilities like Petrify or Poison."
+      },
+      {
+        "name": "Glancing Buff",
+        "description": "Taking damage equal to or more than 120% of the Opponent’s Attack Rating in a single hit activates a Glancing Buff for 10 seconds.\n\nWhile this Buff is active, gain a 100% chance for incoming attacks to Glance. Glanced hits cannot be Critical, deal 50% reduced damage, and suffer -100% Offensive Ability Accuracy. This effect then goes on cooldown for 7 seconds.\n\nCharging a Heavy Attack has a 100% chance to activate a Glancing Buff for 10 seconds.\n\nGlancing Buffs are paused for 4 seconds during Sersi’s Special Attacks.",
+        "note": "This ability provides great damage resistance but also can be leveraged offensively by charging a Heavy Attack. You can also save yourself taking large chunks of damage from a difficult-to-avoid Special Attack by activating it beforehand."
+      },
+      {
+        "name": "Transmutation Buffs – Max 5 Stacks",
+        "description": "Transmutation Buffs are indefinite and reduce the duration of Bleeds, Shocks, Incinerates, and Heal Blocks by 30%. Max 90%. Transmutation Buffs that exceed the maximum last 8 seconds.\n\nGain a Transmutation Buff when Sersi’s Glancing Buff is activated. Gain an additional Transmutation Buff if the Glancing Buff activates due to being Struck.\n\nGain a Transmutation Buff on a Medium Combo Ender. Gain an additional Transmutation Buff while the Glancing Buff is active.\n\nGain a Transmutation Buff when an Armor Up is triggered on either Champion or when inflicted with a Special Lock.",
+        "note": "Transmutation Buffs are Sersi’s main resource. Hold onto them for the Bleed, Shock, Incinerate, and Heal Block duration decrease, or spend them in your Special Attacks. If she’s in a fight with a Champion with Armor Ups, she gains Transmutation Buffs each time an Armor Up is triggered granting her quick and easy access to her damage."
+      }
+    ],
+    "abilities": [
+      "glancing",
+      "transmutation",
+      "unblockable",
+      "truedamage",
+      "fury",
+      "incinerate"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Seismic Fracture",
+      "description": "Close to Opponent: Gain a True Damage Buff ignoring Armor and Resistances for 12 seconds. Consume 1 Transmutation Buff to extend the duration of this Buff by 9 seconds.\n\nFar from Opponent: Inflict a Stun Debuff for 2 second(s). Consume 1 Transmutation Buff to refresh all personal Fury and True Damage Buffs.",
+      "note": "This Special Attack is useful in matches where Sersi’s opponents have heavy resistances and Armor. Otherwise, she can opt for Special Attack 2 for big damage. Try using Special 1 immediately after the final attack in your combo to activate the True Damage Buff."
+    },
+    "2": {
+      "name": "Volcanic Surge",
+      "description": "Close to Opponent: Gain a Fury Buff increasing Attack Rating by 1189.5 for 24 seconds. Consume all Transmutation Buffs and gain an additional Fury Buff for each Transmutation Buff consumed. Max 15 Stacks.\n\nFar from Opponent: Regenerate 5% of the damage dealt. Consume all Transmutation Buffs for an additional 3% for each Transmutation Buff consumed.\n\nOn the last hit, deal an additional 30% of damage dealt as a burst of Energy Damage.",
+      "note": "Try using Special Attack 2 immediately after the final attack in your combo to activate the Fury Buff. You can also position Sersi from Far range and launch a Special 2 to make use of her Regeneration. Be careful though, her Special Attack 2 does not travel the full screen’s distance and she needs at least 1 Transmutation Buff for the attack to be Unblockable."
+    },
+    "3": {
+      "name": "Eternal Pyre",
+      "description": "Inflict an Incinerate Debuff, dealing 1784.25 Energy damage over 12 seconds. Incinerate Debuffs also remove Perfect Block Chance and decrease Block Proficiency by 50% while active.\n\nInflict an additional Incinerate Debuff for each Transmutation Buff consumed throughout the fight. Max 25.",
+      "note": "Try saving this ability for later in the fight after using Special 1 and Special 2 to consume Transmutation Buffs."
+    }
+  },
+  "signature": {
+    "name": "Ancient Molecular Control",
+    "description": "Always Active\n\nWhile Sersi’s Glancing Buff is active, Glanced hits grant a Regeneration Buff healing 15% of damage taken per Transmutation over 3 seconds. This ability activates before checking Armor and Resistances and cannot be triggered by Blocking. Transmutation Buffs that exceed the maximum do not count towards this ability.\n\nGain a Power Gain Buff, generating 15% of a Bar of Power over 1.50 seconds each time Sersi’s Fury or Glancing Buffs expire or are Nullified.",
+    "note": "When fighting against Sersi, this ability cannot be ignored. Try to bait Sersi into using her Glancing Buff so it goes on Cooldown often. Striking while the ability is on Cooldown is the best way to consistently damage her."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-sersi/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Special Attacks",
+        "description": "Far from Opponent: While at or above 1 Transmutation Buff gain an Unblockable Buff for 2.75 seconds.\n\nGain +1189.5 Attack Rating for each Armor Up on either Champion for the duration of the Special Attack.",
+        "note": "Sersi’s Special Attacks provide different abilities depending on if you’re close or far from your Opponent. Study these effects to fully unlock Sersi’s potential! Secret Tip: If you have at least 1 Bar of Power, you can strike your opponent with a Heavy Attack, push them far away and immediately Special 1 for an Unblockable long-distance attack!"
+      }
+    ]
+  }
+}

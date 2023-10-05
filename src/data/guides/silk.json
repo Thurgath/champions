@@ -1,0 +1,64 @@
+{
+  "description": "While attending a science demonstration, Cindy Moon was bitten by a radioactive spider. Hunted for her burgeoning powers, she was locked alone in a bunker for ten years before being found and set free. Now, Cindy’s working to rebuild her life as the sensational web-swinging superhero, Silk!",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Silk’s heightened agility keeps her one step ahead of danger. Incoming Ruptures and Slows suffer -90% duration.\n\nWhile Dodging back, Silk cannot be struck by attacks. She does not benefit from the Dexterity Mastery, but each rank grants her +200 Critical Rating.",
+        "note": "Ruptures have become a fairly common Damage-Over-Time effect in The Contest today, but remember that Silk’s resistance to them only reduces their duration, so it won’t provide any protection against instant or burst Ruptures."
+      },
+      {
+        "name": "Silk-Sense – Evade",
+        "description": "Silk has a 100% chance to Evade Special Attacks.\n\nAfter triggering or when Silk is Critically Hit, this effect goes on cooldown for 25 seconds or until the Opponent is struck 20 times.",
+        "note": "Silk’s Evade won’t trigger while she’s using her natural Dexterity, meaning if you can Dodge an entire Special, the Evade won’t go on cooldown and her safety net will remain intact. Also, try to avoid Blocking Champions who can Critically Hit through Block, as that triggers the Evade cooldown as well."
+      }
+    ],
+    "abilities": [
+      "evade",
+      "physicalvulnerability",
+      "fury",
+      "sunder"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Multi-Trick Melee",
+      "description": "The final hit deals a burst of 5820 Physical Damage.",
+      "note": "Silk’s Special Attacks are simple and clean, dealing a big burst of Physical Damage as a final payout for all the Physical Vulnerabilities and Fury Passives she’s managed to build up in her current combo."
+    },
+    "2": {
+      "name": "Courtesy of New York",
+      "description": "The first hit inflicts a Sunder Debuff for 30 seconds.\n\nThe final hit deals a burst of 9700 Physical Damage.",
+      "note": "Sunder reduces Critical Resistance to 0 and prevents it from increasing while active, so this Special provides a nice damage bump against some tanky Mystics like Absorbing Man, Rintrah, and Doctor Doom."
+    },
+    "3": {
+      "name": "Hwaiting!",
+      "description": "Knocking down the Opponent with this Special Attack does not remove Silk’s active personal effects.\n\nInflict a Stun Passive for 4 seconds. While this Stun is active, the Opponent suffers -100% Combat Power Rate and Silk’s is increased by +100%.",
+      "note": "This Special allows for Silk’s maximum hyper-combo, as she can use it without losing the Physical Vulnerabilities or Fury Passives she’s built up. Follow up with even more attacks to make the most of the resulting Stun– you should be able to get enough Power to build to a Special 1 for an even bigger final smash!"
+    }
+  },
+  "signature": {
+    "name": "Crazy Stuff Happens, I Punch It",
+    "description": "Striking the Opponent with a Heavy Attack or while their back is against the wall inflicts a Slow Debuff for 2 seconds, paused while Silk has a personal Fury Passive or while the Opponent remains against the wall.\n\nWhile this Slow is active, during Silk’s attacks the Opponent suffers -150% Regeneration Rate.",
+    "note": "As long as she maintains aggression and keeps the Opponent on the backfoot, Silk can keep punching with reckless abandon without those pesky Unstoppables and Evades interrupting her extended combos. Additionally, she can inflict some very potent Regen-Reversal (especially when combined with the Despair Mastery) as long as she keeps attacking."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/silk/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "While charging a Heavy Attack, if the Opponent is within striking distance and suffering from any of Silk’s Physical Vulnerability Debuffs, inflict a Stun Debuff for 1.2 seconds.\n\nThe first hit grants Silk a Fury Passive increasing Attack Rating by +2910 for 1.2 seconds. Max stacks: 3.\n\nSilk’s Fury Passives are refreshed when the Opponent is struck, and removed when the Opponent activates a Special Attack or is knocked down.",
+        "note": "This Stun lets Silk safely perform a M-L-L-L combo into a Heavy, similar to Doctor Doom or Wasp. Her multi-hit Heavy Attack can then be canceled into a Striker or a Special, delaying when she knocks down the Opponent and getting the most out of her Fury Passives."
+      },
+      {
+        "name": "All Attacks",
+        "description": "Silk’s attacks inflict a 250 Physical Vulnerability Debuff for 1.2 seconds. Max stacks: 50.\n\nSilk’s Physical Vulnerability Debuffs are refreshed when the Opponent is struck, and removed when the Opponent activates a Special Attack or is knocked down.",
+        "note": "These Debuffs are the meat and potatoes of Silk’s kit. Their duration is very short and they get removed easily, so don’t get too attached to them– think of these Debuffs more like a hit counter for your current string of attacks. The more hits you land in your current combo, the more you’ll build up, making your longer combos deal increasingly more damage."
+      }
+    ]
+  }
+}

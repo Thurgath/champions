@@ -1,0 +1,61 @@
+{
+  "description": "The sole survivor of a dying cosmos, Galan was fused to the sentience of a newborn universe and metamorphosed into Galactus, the devourer of worlds. After emerging from his cosmic cocoon, he consumed a nearby planet to quench his hunger, killing billions of sentient beings in the process. Overcome by immense guilt, Galan refused his role as a cosmic predator and chose to live the existence of a simple farmer, growing his own nourishment in his “Planet Nursery” in the Quantum Fields of the Battlerealm.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Solar Intensity",
+        "description": "Galan starts each quest with 1 Persistent Solar Intensity. This becomes 2 when Defending, and 3 if Defending a final boss node.\n\nWhen Galan defeats a non-#Dimensional being, he gains 1 additional Solar Intensity.\n\nAt the start of the fight gain 1 indefinite Intensify Passive for each Solar Intensity, each increasing the potency of all future Buffs by 20%.\n\nAt 3 Solar Intensity, all of Galan’s Special Attacks gain a True Sense Buff, bypassing the effects of Miss and Auto-Block.",
+        "note": "Galan’s Solar Intensity is used to slowly power up Galan throughout the quest, slowly increasing the potency of his Buffs as well as triggering True Sense on his Special Attacks. Most notably though, Galan can spend 2 Solar Intensity to create a Cosmic Seed Herald, granting them unique Abilities as they win fights."
+      },
+      {
+        "name": "Taa’an Biology",
+        "description": "Galan’s otherworldly nature provides immunity to Fate Seals and Nullify effects.\n\nAdditionally, the Staff of Taa preserves Galan’s Power and grants immunity to Power Drain, Burn, Lock and Special Lock.\n\nGalan’s first Light Attack and second Medium Attack strike with the Planetary side of the Staff of Taa, granting Galan 1 indefinite Resist Physical Buff, increasing Physical Resistance by 81.61. Max 20.\n\nGalan’s first Medium Attack strikes with the Solar side of the Staff of Taa, granting Galan 2 indefinite Resist Energy Buffs, increasing Energy Resistance by 81.61. Max 20.\n\nBuilding additional Resistance Buffs while at their maximum quantity will replace previous versions with an updated Potency.",
+        "note": "Galan has an incredible amount of Immunities which tie into his gameplay. Most notably, being immune to Nullify and Fate Seal. This may seem out of place for Cosmic Champion, which it is! However, due to Galan’s ability to build up Planetary Mass through Buff activation, Nullify and Fate Seal effects will not be useful against him due to the fact that they remove Buffs that have already been activated before removing them. Therefore still granting him Planetary Mass. These Immunities were given to him to promote players to bring in other Mystic Champions with Neutralize or frequent Special Attacks in order to take him down in a much more reasonable fashion."
+      },
+      {
+        "name": "Planetary Mass and Harvest",
+        "description": "Whenever Galan gains a Buff, his Planetary Mass is increased by 10. Galan also gains 50 Planetary Mass whenever the Opponent gains an Armor Up effect. Max 999.\n\nWhenever Galan is knocked down by a Special Attack, he loses 30 Planetary Mass per bar of Power spent.\n\nLanding a Heavy Attack with 100 or more Planetary Mass will trigger the Harvest. Activating the Harvest on Attack prevents Galan from building Power if over 1 Bar of Power.\n\nOn Defense, the Harvest activates when Galan reaches 100 or more Planetary Mass.\n\nThe Harvest lasts for 14 seconds, when the Harvest ends, Galan consumes all Planetary Mass to deal a burst of 230.63 Direct Damage for each Planetary Mass consumed, this Damage scales with Base Attack only and is halved on Defense.\n\nWhile the Harvest is active, Galan gains an Unstoppable Buff and a Regeneration Buff, healing 117.55 Health per second.\n\nIf Galan performs a Special Attack while the Harvest is active, it becomes Unblockable and the Harvest ends. The burst of Damage triggers on the final hit of the Special Attack.",
+        "note": "Planetary Mass and the Harvest is the core of Galan’s kit, by triggering the Harvest, Galan gains a ton of Buffs such as Regen, Unstoppable, Unblockable, etc. While the Harvest is active, players are encouraged to deal as many Medium-Light-Medium combos as possible to build up Planetary Mass before the final Burst of Damage."
+      },
+      {
+        "name": "Cosmic Seed Heralds",
+        "description": "Once per Quest, Galan can consume 2 Solar Intensity in the Pre-Fight Menu to place a Cross-Fight Cosmic Seed on the next fight. The next Cosmic Champion excluding Galan to enter this fight gains the Seed and becomes a Herald for the rest of the Quest. Whenever a Herald emerges victorious, the Seed will grow in power to grant abilities. Victories max out at 5.\n\n0+ Victories – Heralds reduce the potency of all Power Burn effects by 100%.\n\n1+ Victories – Heralds gain a 7% Resistance to all Damaging Debuffs for each Victory.\n\n2+ Victories – Heralds become Unblockable when launching a Special Attack into an Opponent’s block, this Buff lasts for the duration of the Special Attack with an additional 1 second(s) added for each Victory. Once activated, this ability goes on cooldown for 24 seconds.",
+        "note": "Heralds are an incredibly powerful tool used to shut down a few different Tech Defenders by lowering Power Burn potency, or resisting incoming Damaging Debuff potency. With the last effect being used as a great tool for ensuring that you can launch special attacks while under a strict time limit. While not all of these effects may be useful to every Cosmic Champion in the game, there are also Synergies which boost the abilities of specific Cosmics when they become Heralds, so be sure to give them a look!"
+      }
+    ],
+    "abilities": [
+      "resistances",
+      "fury",
+      "intensify",
+      "incinerate",
+      "directdamage"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "",
+      "description": "On activation, Galan gains 4 Fury Buffs, these Furies last for 26 seconds and increase Attack Rating by 320.32.\n\nWhile the Harvest is active: Convert all of Galan’s Resistance Buffs into 5 Planetary Mass each.",
+      "note": "Special 1 is an incredible tool in Galan’s arsenal, due to it being the only way to convert Resistances into Planetary Mass, meaning you can launch it during the Harvest to gain an insane amount of Planetary Mass before annihilating the Opponent."
+    },
+    "2": {
+      "name": "",
+      "description": "On activation, Galan gains 8 Intensify Buffs, each lasting 22 second(s) and increasing the potency of all new Buffs by 5%.\n\nThe final 3 hits each inflict 1 Incinerate Debuff dealing 5005 Energy Damage over 14 seconds.\n\nWhile the Harvest is active: Instead inflict 3 Incinerates per hit with the same Potency and Duration.",
+      "note": "Galan is the first Champion to use the Intensify Buff. Granting him an increased potency for all future Buffs. This can be absolutely crucial to his kit for powering up Furies to deal massive damage. This Special also acts as Galan’s primary source of non-burst damage, as the incinerates can shred through Opponents, especially if you pair it with some Furies from Special 1."
+    },
+    "3": {
+      "name": "",
+      "description": "Galan immediately gains 200 Planetary Mass and begins a Planetary Harvest if it is not already active.\n\nIf activated while the Harvest is already active, refresh the duration of the currently active Harvest and enable Galan to gain Power again.",
+      "note": "Galan’s Special 3 has very specific use cases, this can be used to refresh the harvest in order to keep Galan’s Regen and Unstoppable effects active for a significantly longer period of time, allowing him to maintain his health and make openings a bit easier. This is also the intended route to go for if you want to go for a maximum damage Harvest to get the largest burst of damage possible to avoid Nodes such as Unblockable Finale."
+    }
+  },
+  "signature": {
+    "name": "Humble God of the Battlerealm:",
+    "description": "Whenever Galan prevents a Power Drain, Burn, Lock or Special Lock effect from a non-Mystic Champion via immunity, he gains 3 indefinite Physical Resistance and Energy Resistance Buffs (Rounded Up). These Buffs are the same as those gained from striking the Opponent with the Staff of Taa.\n\nWhile the Harvest is active: Galan becomes Stun Immune and deals a burst of 118.67 Direct Damage whenever Galan gains any amount of Planetary Mass, this Damage scales with Base Attack only.",
+    "note": "Galan’s Signature Ability is designed around taking what Galan has and amplifying it to give him more utility. Galan gains additional resistances when he triggers Immunities, gains Stun Immunity while the Harvest is active, and deals additional bursts of Direct Damage. All of these mechanics can all be incredibly powerful tools when it comes to taking down opponents as the Humble God of the Battlerealm."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-galan/"
+  }
+}

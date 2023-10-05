@@ -1,0 +1,51 @@
+{
+  "description": "In a hopeless attempt to cure his rare blood disease, Dr. Michael Morbius mutated himself with vampire bat DNA only to become a bloodthirsty pseudo-Vampire. Now he must fight a losing battle to overcome his insatiable desire to drink blood, which sustains his powerful monstrous form.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Psionic Glide",
+        "description": "To perform a Psionic Glide, Dash forward from outside of striking distance or during the Opponent’s Special Attack causing all incoming attacks to Passively Miss Morbius until completing his first Medium Attack.\n\nPsionic Glide’s Medium Attack is passively Unblockable and gains +9817.5 Attack Rating.\n\nPsionic Glide’s Medium Attack also inflicts a Bleed Debuff, dealing 39.27 Direct damage over 24 seconds. This ability can be inflicted through Block. If the Opponent is recovering from a Special Attack, inflict 4 Bleeds instead.\n\nAfter performing a Psionic Glide, gain a 100% Fervor Buff, lasting 10 seconds. While this effect is active, Morbius cannot perform a Psionic Glide.\n\nIf the Fervor Buff is Nullified or fails due to Ability Accuracy reduction, Morbius replaces it with an identical, non-stacking Passive. The Fervor Passive does not prevent Morbius from performing a Psionic Glide. Failing due to Ability Accuracy will delay the Passive for 1.5 seconds.",
+        "note": "The Psionic Glide is an excellent window of opportunity for Morbius to strike. It’s even better when used near the end of a Special Attack to avoid the last few hits of the Special and inflict bonus Bleed Debuffs!\n\nFervor is a brand new effect that boosts the Ability Accuracy of outgoing damaging effects. For Morbius, this makes his Bleeds more consistent and apply more often."
+      },
+      {
+        "name": "Bleed Effects",
+        "description": "20% chance for Basic Hits to inflict a Bleed Debuff, dealing 39.27 Direct Damage over 24 seconds.\n\nEach Damaging Debuffs on the Opponent lowers Regeneration Rate by 10% and Ability Power Rate by 5%. Max Debuffs: 10.\n\nMorbius does not benefit from the Despair Mastery. Instead, while the Opponent is suffering from any Damaging Debuff, lower their Regeneration and Ability Power Rate by +5% for each rank invested. This ability does not stack.\n\nWhen the Opponent is suffering from 10+ Damaging Debuffs, inflict a non-stacking 25% Petrify Debuff, lasting 10 seconds and pausing indefinitely while the Opponent has 10+ Damaging Debuffs.\n\nWhile the Opponent is Petrified, Morbius gains +1% Combat Power Rate for each Damaging Debuff on the Opponent. Max Debuffs: 30.",
+        "note": "Those Bleeds may tickle the Opponent, but they provide great utility in the form of reducing Regeneration and Ability Power Rates. Spoiler Alert: they’re also used to deal big damage with Morb’s Special 2 and 3!"
+      }
+    ],
+    "abilities": [
+      "bleed",
+      "rupture",
+      "fervor",
+      "petrify",
+      "regeneration"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Vampiric Maul",
+      "description": "50% chance on each hit to inflict a Bleed Debuff, dealing 39.27 Direct Damage over 24 seconds.\n\nPersonal Fervor Buffs are paused during this attack and expire immediately when it is complete.",
+      "note": "This attack is the most reliable way to inflict Bleeds on your Opponent. And it has the added benefit of readying your next Psionic Glide. A well-timed Special 1 can demonstrate mastery over Morb’s abilities."
+    },
+    "2": {
+      "name": "Feast",
+      "description": "Personal Damaging Debuffs are paused during this attack.\n\nIf the Opponent is Petrified, the second hit becomes a Guaranteed Critical Hit, consuming all damaging debuffs on the Opponent and increasing Attack Rating by +1570.8 for each debuff consumed. Max Debuffs: 40.\n\nPassively regenerate 15% of the damage dealt by the second hit, up to 10% of Max Health.",
+      "note": "IT’S MORBIN’ TIME! This Special Attack deletes the Opponent’s health bar and steals some of their health too. Make sure to build up as many Bleeds as you can, before activating this powerful Special."
+    },
+    "3": {
+      "name": "Mesmerize",
+      "description": "If the Opponent is Petrified, gain +1570.8 Attack Rating for each damaging debuff on the Opponent but do not consume them. Max Debuffs: 40.\n\nPassively regenerate 15% of damage dealt, up to 10% of Max Health.",
+      "note": "This Special Attack may look familiar, that’s because it behaves very similarly to the Special 2, however this Special also does not consume Bleed effects on the Opponent so Morbius can retain his Regeneration and Ability Power Rate reductions."
+    }
+  },
+  "signature": {
+    "name": "The Living Vampire",
+    "description": "When the Opponent is Immune to personal Bleed, 100% chance to inflict a Rupture Debuff instead, dealing Physical Damage and copying the Bleeds behavior.\n\nWhen taking Direct Damage from any source, gain a non-stacking Undying Passive that falls off after not taking Direct Damage for 2 seconds. Cooldown: 8 seconds.\n\nWhile Undying is active, instantly Regenerate 50% of all Direct Damage taken. Against Skill Champions, the potency of this effect is reduced by 50%.",
+    "note": "This ability makes Morbius go from bleed-reliant to an extremely versatile damage dealer. Keep in mind that the chance for Ruptures to be applied will also be affected by Morb’s Fervor, meaning that even at 50% chance, with Fervor active, Morbius has a 100% chance to inflict a Rupture!\n\nUndying is another new effect introduced with Morbius. Undying prevents the champion from being knocked out by Direct, Energy or Physical damaging effects. This is a very powerful ability, similar to Corvus’ Signature Ability, Glaive of Immortality. Be careful though, even while Undying is active, taking a single hit or even blocking a hit could result in a K.O.On top of Undying, Morbius has the ability to Regenerate a fraction of all Direct Damage dealt, meaning that he becomes much stronger against Degeneration, Bleed and Poison effects, some Quest Buffs and even the Recoil Mastery."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/morbius/"
+  }
+}

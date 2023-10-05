@@ -1,0 +1,56 @@
+{
+  "description": "Upon inheriting the curse of lycanthropy on his 18th birthday, Jack Russell began his lifelong struggle with his werewolf alter-ego. Always pursued by beast hunters, criminals and other creatures alike, Jack regularly fights against those who seek to control his werewolf persona for their own purposes. Over time, Jack came to accept the beast within him and gained the ability to transform at will, only feeling the urge to transform on night of the full moon, thus becoming the Werewolf By Night.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "-30% Combat Power Rate.\n\nWerewolf By Night is Immune to Heal Block and incoming Poisons suffer -90% duration, but he has -50% Regeneration rate when fighting against #Silver champions.\n\nMedium Attack 1 and Light Attack 4 inflict a Rupture Debuff dealing 3568.5 Physical Damage over 15 seconds. This can trigger through Block.",
+        "note": "The Combat Power Rate decrease is there because of Chilling Howl granting so much power outside of combo hits.Utilizing the Medium 1 Ruptures through block is a safe way to tack on damage w/ Werewolf whenever the opportunity appears."
+      },
+      {
+        "name": "Chilling Howl",
+        "description": "As a Defender, Werewolf By Night has a 60% chance to attempt a Chilling Howl after Dodging back or using a Heavy or Special Attack.\n\nAs an Attacker, after Dodging back or using a Heavy or Special Attack, Werewolf By Night stands still for 1.7 seconds, triggering a Chilling Howl. Cooldown: 7 seconds.\n\nHowling grants a Power Gain Passive granting 8% of Max Power for each missing Bar of Power over 3 seconds. This is removed if Werewolf By Night is struck while Howling.\n\nGain a Lycanthropy Charge when attempting to trigger a Chilling Howl or crossing a Bar of Power. When Werewolf By Night gains a Charge while the Opponent is suffering from a Rupture effect, gain an additional Charge. Max: 10.\n\nWerewolf By Night starts each fight with 3 Lycanthropy Charges during the Full Moon.",
+        "note": "The Chilling Howl mechanic offers a different experience for when Werewolf is both the Attacker and the Defender. As Attacker Chilling Howl is only limited by a cooldown as to not be able to spam Power Gain. On Defender though this is not the case. Werewolf has no cooldown for his Howl as a Defender so players must keep an eye on this Champion and not let him get too carried away with the ability.Playing more into Werewolf’s kit, if you are to perform a Chilling Howl while the Opponent is inflicted with a Rupture Debuff, you gain additional Lycanthropy Charges, pushing you towards your berserk mode even faster!Players must learn a new Intercept cadence when playing against Werewolf for his Special will be hard to bait as he loves to Howl from distance."
+      },
+      {
+        "name": "Curse of Lycanthropy",
+        "description": "Reaching 10 Lycanthropy Charges activates Curse of Lycanthropy for 10 seconds. This ability is paused during Basic Attacks, Striker Attacks, Special Attacks, and while the Opponent is outside of striking distance and has at least 2 unique Buffs.\n\nWerewolf By Night gains +70% flat Rupture Debuff Ability Accuracy, 70% personal Rupture potency, fights more aggressively and stops attempting to trigger Chilling Howl as a Defender.\n\nGain Unblockable and Unstoppable Passives for 2.5 seconds at the end of Heavy and Special Attacks. Cooldown: 10 seconds.\n\nGain a Regeneration Passive healing 0.65% of missing Health every 0.5 seconds. Against Cosmic Champions, gain an additional Regeneration when struck by a Special Attack while Dashing forward.\n\nRemove all Lycanthropy Charges when this ability ends.",
+        "note": "Since Curse of Lycanthropy pauses while attacking, it’s good to stay aggressive while playing Werewolf. This is even more powerful against Cosmics, or enemies with a lot of Buffs!As Defender, when the Curse of Lycanthropy has triggered, be sure to give Werewolf space, and don’t pursue the beast unless you have an answer to his rage."
+      }
+    ],
+    "abilities": [
+      "rupture",
+      "chillinghowl",
+      "powergain",
+      "curseoflycanthropy",
+      "regeneration"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Lycanthrope Rush",
+      "description": "Each hit inflicts a Rupture Debuff dealing 3568.5 Physical Damage over 15 seconds. 30% chance to inflict a Rupture through Block.\n\nThe first two hits that make contact have a 200% chance to Nullify 1 Regeneration and 1 Precision Buff. If any Buffs are Nullified, deal a burst of 2379 Physical Damage.",
+      "note": "Jack Russell leaps at his foes with tooth and claw, closing the distance before unleashing a terrible rending strike.This Special 1 travels a great distance to reach Opponents, making it hard to avoid.As well, the Nullify provided from this attack is a great addition and counter to some Cosmic Champions such as Gorr, Hulkling, and Sersi."
+    },
+    "2": {
+      "name": "Bestial Swipe",
+      "description": "Each hit inflicts a Rupture Debuff dealing 4758 Physical Damage over 6 seconds.\n\nEach Blocked hit inflicts a Rupture Debuff dealing 3568.5 Physical Damage over 6 seconds, scaling with Base Attack only.\n\nCurse of Lycanthropy: The last 3 hits that make contact deal an additional burst of 793 Physical Damage for each Buff on the Opponent and Lycanthropy Charge. Max Buffs: 7.",
+      "note": "Jack Russell shreds his opponents using his supernatural strength in an arcing claw swipe.This is your main Damage dealer, and players want to rush for this if they want to deal good damage."
+    },
+    "3": {
+      "name": "Unleash the Beast",
+      "description": "Inflict a Stun Debuff for 1.50 seconds.\n\nGain 10 Lycanthropy Charges.\n\nCurse of Lycanthropy: Inflict a Rupture Passive dealing 13084.5 Physical Damage over 25 seconds.",
+      "note": "The Werewolf is unleashed and Jack loses control.This attack is nice to use when cornered, as it will put the opponent into the other corner and stun them, giving Werewolf a chance to do more damage."
+    }
+  },
+  "signature": {
+    "name": "Russoff Family Legacy",
+    "description": "+7.5% personal Regeneration potency for each unique Buff on the Opponent. Max Buffs: 8.\n\nChilling Howl above 1 Bar of Power: Gain an Unblockable Passive for 3.50 seconds.\n\nChilling Howl above 2 Bars of Power: Gain an Unstoppable Passive for 3.50 seconds.",
+    "note": "Activating the Chilling Howl bonus is best at 2 bars of Power. Be sure to play around and experiment with finding the right moment to use the Howl in conjunction with Werewolf’s Special Attacks."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/werewolf-by-night/"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "description": "Sergei Nikolaievich Kravinoff was once known as the world’s greatest hunter, often killing his prey with his bare hands. Despite his success he grew bored with hunting big game, so he decided to hunt for more dangerous and powerful prey. He chose to hunt Spider-Man, someone he saw as a real challenge worthy of his skills, however his constant failure to defeat Spider-Man led him into a path of villainy and insanity.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Jungle Fighter",
+        "description": "Heavy Attack: First hit inflicts a non-stacking Disorient Debuff, decreasing Block Proficiency and Defensive Ability Accuracy by 40% for 16 second(s).\n\nCritical Hits: Inflict a Bleed Debuff, dealing 557.76 Direct over 8 second(s).",
+        "note": ""
+      },
+      {
+        "name": "When Debuffed – Endurance Passive",
+        "description": "Each time Kraven receives a non-damaging Debuff, reduce the duration of future non-damaging Debuffs by 10% for the rest of the fight. Max 8 stacks.",
+        "note": "As an Attacker this ability is useful against Champions that passively inflict Debuffs but this ability is more useful as a Defender."
+      },
+      {
+        "name": "Trap – Special 1",
+        "description": "If the Opponent moves into a Trap, it springs and deals a Burst of 1743 Direct Damage and Roots them for 5 second(s). Damage scales with Base Attack only. If the Opponent moves into the Trap during a special, the Trap is removed.\n\nIf the Opponent is pushed into the Trap by a Heavy or Special 2, Kraven has a 100% chance to place a new Trap when the Root expires.\n\nRooted Champions cannot move, but can still attack, block, and dodge. Activating a Special Attack removes Root and prevents it from applying.\n\nWhile the Opponent is Rooted, Kraven’s Dash Attacks become Unstoppable, his damage over time Debuffs are paused and he gains 1400 Critical Rating.\n\nWhile the Opponent is Rooted, their Combat Power Rate is reduced by 37.5%.",
+        "note": "Once the Opponent is trapped the best way to initiate an attack is with a dash, since Kraven will go Unstoppable. A skilled player only needs to launch a Trap once, as long as they are pushing the Opponent into the Traps they will keep retriggering."
+      },
+      {
+        "name": "Suppression – Cross-Fight",
+        "description": "Traps also inflict a Cross-Fight Suppression Passive on the Opponent, reducing Combat Power Rate by 6.25% for this and the next 5 fights. Max 2 stacks. Traps cannot suppress Opponents with Natural Class Advantage.\n\nIn the following fights Suppression Potency is increased by 100%.",
+        "note": "When the Opponent is trapped while suffering with 2 stacks of Suppression, their Combat Power Rate is reduced by a total of 50%. This allows Kraven to attack Rooted Opponents without worrying too much about them reaching 3 bars of Power."
+      }
+    ],
+    "abilities": [
+      "disoriented",
+      "bleed",
+      "root",
+      "suppression"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Hunter Fury",
+      "description": "Kraven sets a Trap at the Opponent’s location, the Trap arms after 5 second(s) and lasts until triggered. New Traps replace existing ones. As a Defender, Traps are placed at his location and arm immediately. Traps are not affected by Ability Accuracy reduction.\n\nIf the Opponent is already Rooted by a Trap, Critical Damage Rating is increased by 182.61 for the duration of this Attack instead.\n\nBleed effects are paused.\n\nGain a non-stacking True Accuracy Buff, ignoring all Evade and Auto-Block effects for 20 second(s). Triggering a Trap refreshes this effect.",
+      "note": "Special 1’s main purpose is to place a Trap. The Trap can be retriggered outside Special 1 and True Accuracy can be refreshed; if the player is able to always retrigger the Trap with a push, there isn’t much need to launch this special again."
+    },
+    "2": {
+      "name": "Dirty Tricks",
+      "description": "On activation, gain a Precision Buff, increasing Critical Rating by 1081.82 for 20 second(s). Triggering a Trap refreshes this effect. Max 5 stacks.\n\nThe first hit is Unblockable and inflicts a Poison Debuff, reducing Health Recovery by 30% and Dealing 2324 Direct Damage over 3 second(s).\n\nIf the Opponent is Rooted, refresh all Bleed effects.",
+      "note": "The BEST way to retrigger a trap is by pushing the Opponent into a Trap with a Special 2. You get to refresh all your Bleeds, increase the Poison duration by up to 5 seconds and refresh the Precision Buff. If done correctly, Kraven can stack a lot of Bleeds on the Opponent and Precisions on himself."
+    },
+    "3": {
+      "name": "The Way of the Hunter",
+      "description": "Gain a Cruelty Buff, increasing Critical Damage Rating by 233.33 until Kraven is knocked down.\n\nIf the Opponent is Rooted they gain no Power during the Special and the potency of the Cruelty Buff is increased by 100%.\n\nIf the Opponent is not Rooted but a Trap is placed, even if not armed, the Trap springs regardless of the Opponent’s position.",
+      "note": "In general Kraven won’t be chasing Special 3 since he is usually  better off triggering his Trap immediately, but in long fights the Special 3 offers a way to boost his Bleed damage."
+    }
+  },
+  "signature": {
+    "name": "Entrapment",
+    "description": "Passive\n\nWhile the Opponent is Rooted Dash Attacks grant a Trample Passive, making the attack Unblockable except against Well-Timed Blocks\n\nWhile the Opponent is Rooted all Bleeds are Critical Bleeds, multiplying their Potency by 200% of Kraven’s Critical Damage.",
+    "note": "The Trample Passive guarantees that Kraven can always break the defenses of a trapped Opponent, but the real power of this ability is the substantial boost in damage he gets from Critical Bleeds."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-kraven/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Special Attacks",
+        "description": "Root Debuff and Precision Buff are paused.",
+        "note": "It is always a good idea to throw a Special Attack on a Rooted Opponent because it will increase the duration of the Root, consequently increasing the duration that Bleeds are paused by the Root."
+      }
+    ]
+  }
+}

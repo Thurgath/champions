@@ -1,0 +1,60 @@
+{
+  "description": "Master martial artist and expert empath, this one is a powerful combatant ready to take on the contest with her emotional influence! After being taught to be a grand mistress of the martial arts by the Priests of Pama, Mantis became the Celestial Madonna, the Mother of a being destined to change the universe. In doing so, she was granted a new body from a race known as the Cotati. With this new body, Mantis gained complete control over her own spirit and emotions, which she uses to fight alongside the Avengers, Fantastic Four, and Guardians of the Galaxy to protect every corner of the universe she calls home.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Tranquilize",
+        "description": "While not performing an action, rather than running, Mantis stands still to inflict a 25% potency Tranquilize Passive, or 100% against Science Champions. This Tranquilize begins paused and lasts for 1 second when Mantis performs an action.\n\nMantis can toggle her ability to stand still when not performing an action by double tapping Block.\n\nAs a Defender, Mantis’ Opponent is permanently inflicted with a 25% potency Tranquilize Passive, or 100% against Science Champions. While the Opponent has a Regen effect active, this Tranquilize is removed. The Salve and Willpower Masteries do not remove this Ability.\n\nWhenever the Opponent fails to inflict a Debuff due to Ability Accuracy Reduction while inflicted with Tranquilize, the Opponent gains 1 indefinite Mixed Emotion Passive.",
+        "note": "Tranquilize is an incredibly powerful ability, by denying Debuffs on Mantis, she can deal with numerous different types of defensive challenges in the Contest. This ability is the most effective against the Science class, however, this ability can still prove to be useful against other classes, especially with her Signature Ability."
+      },
+      {
+        "name": "Mixed Emotions – Max 20",
+        "description": "Dashing backwards after landing the first, second, or third Light Attack inflicts a non-stacking Infuriate Debuff for 7 seconds, making the Opponent more aggressive and reducing their Offensive Ability Accuracy by 50%. This ability has a 14 second Cooldown.\n\nIntercepting the Opponent while they are inflicted with this Infuriate Debuff inflicts 2 indefinite Mixed Emotion Passives.\n\nLanding a Light Combo Ender inflicts a non-stacking 562.5 potency Intimidate Debuff for 7 seconds. This ability has a 14 second Cooldown.\n\nHitting the Opponent’s Block while they are inflicted with this Intimidate Debuff inflicts 2 indefinite Mixed Emotion Passives.\n\nOpponents can only be inflicted with either an Infuriate or Intimidate. Inflicting one will remove the other or its cooldown.\n\nFor each Mixed Emotion on the Opponent, they lose 79.19 Block Proficiency. Whenever Mantis is knocked down, she loses her focus and the Opponent loses 1 Mixed Emotion Passive.",
+        "note": "This is where Mantis’ core gameplay shows itself. Mantis has an incredible amount of control over her opponent’s aggression, meaning she can dictate the pacing of the fight. Playing into these abilities inflicts “Mixed Emotions” onto the opponent, fueling the Sleep Ability present in her Heavy Attack."
+      }
+    ],
+    "abilities": [
+      "tranquilize",
+      "infuriate",
+      "intimidate",
+      "sleep",
+      "cleanse"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "",
+      "description": "Mantis waves her hand to inflict an Encroaching Sleep Passive for 14 seconds. Upon expiry, inflict a Sleep Passive for 2 seconds. This Encroaching Sleep can be removed early if Mantis is struck by a Special Attack while the Opponent has a Prowess effect.\n\nOn activation, Mantis attempts to Purify up to 2 Debuffs. For each Purify that does not remove a Debuff, Mantis gains a Cleanse Passive for 16 seconds. Each Cleanse will consume itself to instantly Purify the next Debuff applied to Mantis.\n\nWhenever a Debuff is purified due to these effects, Mantis inflicts 2 indefinite Mixed Emotion Passives on the Opponent.",
+      "note": "Mantis’ Special 1 grants her Purify and Cleanse effects depending on the situation she finds herself in. While her Tranquilize effect is incredibly powerful, it can be easy for certain Debuffs to hit Mantis due to the mistiming of Tranquilize or due to the lower potency against other Classes. Special 1 grants her a safety net to instantly remove Debuffs, or preemptively remove debuffs with Cleanse as a safety precaution."
+    },
+    "2": {
+      "name": "",
+      "description": "If this Special Attack was activated during Mantis’ Heavy Attack, this Special Attack deals Guaranteed Critical Hits.",
+      "note": "This makes the opponent’s health go down a lot."
+    },
+    "3": {
+      "name": "",
+      "description": "Inflict a 100% potency Tranquilize Debuff for 26 seconds.",
+      "note": "If Mantis is dealing with a non-Science fight against someone with a lot of Debuffs, she can use her Special 3 to inflict an incredibly powerful Tranquilize to shut down all Debuffs for a long period of time. This time can also be extended with her Signature ability as well."
+    }
+  },
+  "signature": {
+    "name": "Celestial Madonna",
+    "description": "All Tranquilize effects under 100% potency have their potency increased by 25% flat.\n\nInflicting a Mixed Emotion Passive while the Opponent is inflicted with Tranquilize effect pauses all Tranquilize effects for 1.2 seconds.",
+    "note": "Mantis’ Tranquilize abilities get boosted to emphasize them as one of her core abilities. By increasing their potency, and tying a pause towards her core gameplay loop of building Mixed Emotions, it gives her a kit a nice boost that wraps everything together a little bit more."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-mantis/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "Charging a Heavy Attack while close to the Opponent consumes all Mixed Emotions on the Opponent to inflict a Sleep Passive for 0.5 seconds, increased up to 4 seconds based on the amount of Mixed Emotions consumed. This ability cannot be activated with no Mixed Emotions on the Opponent and cannot be activated on Defense.\n\nMantis’ Heavy Attack can be charged for an extended duration. While charging, Mantis builds up Fury Passives over time, each increasing Attack Rating by 1537.8. When Mantis releases her Heavy attack, these Furies remain for 5 seconds. Max: 10.\n\nEach hit grants Mantis a Cruelty Buff, increasing her Critical Damage Rating by 527.78 for 12 seconds. Max: 2.",
+        "note": "With Mantis, we are also introducing our new “Sleep” Ability, this is similar to Stun, however, this effect is removed when opponents are struck for the first time, making it much more situational as an Attacker. Mantis uses this effectively, by granting herself Fury effects based on how long she charges her Heavy Attack. Pair this with a Special 2 for devastating damage!"
+      }
+    ]
+  }
+}

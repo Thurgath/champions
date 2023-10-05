@@ -1,36 +1,69 @@
 {
   "description": "Cybernetically enhanced at birth and trained to win at all costs, Nebula is one of the Mad Titan Thanos’ two adopted daughters and harbors a hatred of her sister, Gamora after a personal bout left her broken and reeling. Now she has been brought back from the brink of death and seeks vengeance against Gamora, but her journey to exact justice on her sister may reveal more about herself than she expected…",
-  "youtube": "y3avzAY31MY",
   "gameplay": {
-    "description": "Passive\n\nNebula starts the fight with 2 Self-Repair charges that activate when the opponent deals more than 110% of their Attack in a single hit, repairing the damage over 5 seconds. If Stunned during her Self-Repair, the Repair stops.\nAbility Accuracy of Robots is reduced by 20% per active Electroshock Charge.\nAdvanced Robotics provides full immunity to Poison and Bleed effects.\n\nHold Block\n\nCharges her weapon, generating a passive Electroshock charge every 0.9 seconds.\n\nWell-Timed Block\n\nNebula spends all Electroshock charges to Shock her opponent, dealing 486.4 Energy Damage over 6 seconds."
-  },
-  "attack": {
-    "heavy": "Shocks her opponent, dealing 486.4 Energy Damage over 6 seconds."
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Advanced Robotics provides full Immunity to Bleed, Poison and Shock effects.",
+        "note": ""
+      },
+      {
+        "name": "Self-Repair",
+        "description": "Nebula begins each fight with 3 indefinite Self-Repair Charges. When she runs out, she will gain another after 10 seconds.\n\nEach time the opponent deals more than 110% of their Attack Rating in a single hit, Nebula will spend 1 charge to gain a Self-Repair Buff, recovering the damage dealt over 5 seconds. If Stunned while Self-Repair is active, it is lost.\n\nSelf-Repair and its Charges are Immune to Ability Accuracy reductions.",
+        "note": ""
+      },
+      {
+        "name": "Shock Debuffs",
+        "description": "Unless otherwise stated, Nebula’s Shock Debuffs inflict 1096.65 Energy Damage over 6 seconds.",
+        "note": ""
+      },
+      {
+        "name": "Amp Charges",
+        "description": "While holding Block, Nebula builds up 1 Amp Charge every 0.65 seconds. Each time an Immunity prevents a Shock effect on Nebula, gain 5 Amp Charges. Max Stacks: 20.\n\nEach Amp Charge reduces the opponent’s Ability Accuracy by 20% if they are a #Robot.\n\nPerform a Well-Timed Block: Convert all Amp Charges into Shock Debuffs on the opponent.",
+        "note": ""
+      }
+    ],
+    "abilities": [
+      "selfrepair",
+      "shock",
+      "powerlock"
+    ]
   },
   "specials": {
     "1": {
-      "description": "Electric Encore – Striking first with her electroshock batons, Nebula then forms them into a staff for a devastating second strike.",
+      "description": "100% chance to inflict a Power Lock Debuff lasting 1 second per Shock Debuff on the opponent.\n\n100% chance to inflict Power Drain, depleting 12% of a bar of Power per Shock Debuff on the opponent.",
       "note": "Inflicts Power Lock, severing the targets flow of Power for 1 second per active Shock Debuff on the opponent. Inflicts Power Drain, depleting up to 3.5% of the target’s max Power per Shock Debuff on the opponent.",
       "name": "Electric Encore"
     },
     "2": {
-      "description": "Shock and Awe – Nebula puts some space between her and her opponent before unleashing a concentrated burst of electricity.",
-      "note": "Doubles the amount of Shock Debuffs on the opponent, dealing 972.8 Energy Damage per Shock Debuff over 6 seconds.",
+      "description": "Nebula removes all personal Shock effects on the opponent. For each Shock removed this way, she inflicts 2 Shock Debuffs each dealing 1949.6 Energy Damage over 3 seconds.",
+      "note": "Nebula’s tried and true huge damage Special 2 is still here, try to sneak in a few Heavy Attacks before you Parry to get some extra Shocks on conversion.",
       "name": "Shock and Awe"
     },
     "3": {
-      "description": "Galaxy-Class Killer – Death by a thousand cuts, faster than you can bat an eye.",
-      "note": "Nebula overcharges her power generator for 10 seconds, inflicting Shock when in contact with the opponent, dealing 486.4 Energy Damage over 3 seconds.",
+      "description": "Nebula gains a Weapon Overcharge Passive lasting 25 seconds.\n\nWhile Active, Nebula has a 65% chance to gain an Amp Charge when making Contact with the Opponent.\n\nWhile active, any contact with the opponent has a 75% chance to inflict a Shock Debuff.",
+      "note": "Her new ability to gain Amp charges while in the Weapon Overcharge is a great tool for racing up to that 20 charge Special 2s in those fights where blocking is a bit too scary.",
       "name": "Galaxy-Class Killer"
     }
   },
   "signature": {
-    "description": "Cybernetic Enhancements\nWhen Nebula is out of Self-Repair charges, she tries to recalibrate her implants, granting her a 80.18% chance to regain a charge every 10 seconds.",
-    "name": "Cybernetic Enhancements "
+    "description": "Shock Debuffs\n\nWhile the opponent is suffering from at least 1 Shock Debuff, Nebula’s attacks gain +25% Combat Power Rate.",
+    "name": "Firmware Refactoring",
+    "note": "Extra power means more Special Attacks! Race to that Special 2 or Special 3 even faster!"
   },
   "author": {
     "name": "Kabam",
     "type": "spotlight",
     "profile": "https://playcontestofchampions.com/news/champion-spotlight-nebula/"
+  },
+  "youtube": "y3avzAY31MY",
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "100% chance to inflict a Shock Debuff.",
+        "note": "I try to Heavy Counter the opponent whenever I can to make sure her Signature Ability is on at all times and to juice out some extra damage while building my charges."
+      }
+    ]
   }
 }

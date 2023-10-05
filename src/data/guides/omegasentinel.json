@@ -1,0 +1,71 @@
+{
+  "description": "Omega Prime Sentinels are humans who have been augmented by Sentinel technology to become cyborg sleeper agents, only transforming into mutant killing machines when they detect one nearby. Karima Shapandar is one such Sentinel, having struggled for years between her human instincts to serve and protect, and the Sentinel protocols that would make her a killer. In the end Karima’s Sentinel side overtook her humanity, and now as Omega Sentinel she serves as the ultimate Human-Sentinel-Hybrid hunting mutants and enforcing the will of Nimrod.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Cybernetic Nanotech – Always Active",
+        "description": "Omega Sentinel’s nanotech allows her to take no damage from Bleed and Poison effects and grants her Immunity to the regen reduction from Poison.\n\nWhen inflicted with a Bleed or Poison effect Omega Sentinel gains a Self-Repair Buff healing 20% of missing health over 10 seconds. This ability does not stack and ends early if Omega Sentinel is Stunned.",
+        "note": "Omega Sentinel’s Self Repair Buff is based on how much Health she has missing so it will keep her health stable in a Bleed or Poison heavy match-up."
+      },
+      {
+        "name": "Incinerate – Max Stacks: 20",
+        "description": "All of Omega Sentinel’s Incinerate Debuffs deal 2147.6 Energy Damage over 6 seconds. This effect also removes Perfect Block Chance and reduces Block Proficiency by 50%. Against Mutants, inflict an identical Plasma Debuff instead.",
+        "note": "Keep in mind that this Incinerate turns into a Plasma Debuff versus Mutant Champions allowing Omega Sentinel to bypass some key Mutant Incinerate Immune Champions. Incinerate and Plasma Debuffs can also be paused using Light Attack Combo Enders and Heavy Attacks allowing Omega Sentinel to squeeze even more damage from her Debuffs."
+      },
+      {
+        "name": "Nano Shifting – Pre-Fight Ability",
+        "description": "Omega Sentinel can rotate through Nanite Carapace, Electrostatic Pole and Plasma Wave weapons. When selected from the Pre-Fight screen, Omega Sentinel starts the fight with that Weapon active. Landing a Heavy Attack rotates her current Weapon.\n\nOmega Sentinel’s second Medium Attack inflicts a Debuff that is determined by her current Weapon.\n\nIf the Opponent is inflicted with 3 or more of her personal non-Damaging Debuffs, she inflicts an Incinerate Debuff instead.\n\nNanite Carapace: Inflict a Cowardice Debuff, reducing Special Attack Damage by 10% for 8 seconds.\n\nElectrostatic Pole:Inflict a Heal Block Debuff, preventing the Opponent from healing for 8 seconds.\n\nPlasma Wave: Inflict a Tracking Debuff, bypassing the effects of Miss for 8 seconds. Finishing a combo with a Light Attack or landing a Heavy Attack pauses all personal Debuffs on the Opponent for 7 seconds.",
+        "note": "After applying a Nano-Shift Debuff with a Medium Attack 2, ending combos in Light Attacks will allow Omega Sentinel to maintain those same Debuffs on the Opponent. Heavy Attacks will also pause Nano-Shift Debuffs but is only useful when switching between different Debuffs."
+      },
+      {
+        "name": "Adaptive Body – Always Active",
+        "description": "Omega Sentinel’s Adaptive Body grants her Immunity to Nullify, Stagger and Fate Seal effects. Against Mutants, her Ability Accuracy cannot be modified.\n\nGain an indefinite Armor Up Buff whenever either Champion makes contact with the same Basic Attack twice in a row, increasing her Armor rating by 900. Gain an additional Armor Up against Mutants. Max Stacks 10.\n\nWhen Struck at 10 or more Armor Up Buffs, consume all Armor Ups, Purify any Stun Debuffs and gain a 100% chance to Auto Block for 2 seconds. This Auto-Block can trigger Parry. While Defending, this ability requires 5 Armor Ups instead.\n\nWhen Omega Sentinel would Auto-Block a Hit, inflict an Incinerate Debuff on the Opponent. Against Mutants, inflict an identical Plasma Debuff instead. When Struck by a Heavy Hit while Auto-Blocking, gain a 100% chance to Resist a Block Break.",
+        "note": "Be sure to make use of Adaptive Body when playing as Omega Sentinel. Any attacks that are repeated by either Champion will grant an Armor Up Buff. Building up to 10 Armor Ups can be useful as the Auto-Block ability provides some last minute protection in tough situations."
+      }
+    ],
+    "abilities": [
+      "selfrepair",
+      "incinerate",
+      "cowardice",
+      "healblock",
+      "tracking",
+      "armor",
+      "auto-block"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Nano-Shift Air Raid",
+      "description": "The last hit refreshes all personal non-Damaging Debuffs on the Opponent. If there are no Debuffs to refresh, instead inflict 2 Debuffs with the type and potency determined by Omega Sentinel’s current Weapon for 8 seconds.",
+      "note": "Keeping Omega Sentinel’s Debuffs up is the key to maximizing her damage output. Be sure to use this Special Attack when your Nano-Shift Debuffs are about to fall off."
+    },
+    "2": {
+      "name": "Anti-Mutant Routine Omega",
+      "description": "The last hit inflicts an Incinerate Debuff on the Opponent, and an additional one for each personal Cowardice, Heal Block or Tracking Debuff on the Opponent. Against Mutants, inflict an identical Plasma Debuff instead."
+    },
+    "3": {
+      "name": "Execute Extinction Protocol",
+      "description": "On activation, consume all personal Incinerate and Plasma Debuffs on the Opponent. Deal a burst of 6136 Energy Damage for each Debuff consumed.\n\nIf the Opponent is not inflicted with any personal Incinerate or Plasma Debuffs, instead inflict 6 Incinerate Debuffs. Against Mutants, inflict an identical Plasma Debuff instead.",
+      "note": "This Attack can be used in longer fights both as a way to jump start Omega Sentinel’s damage rotation. The Incinerate and Plasma Debuffs inflicted from this attack can be paused using Light Attack Combo Enders and Heavy Attacks. This attack is also useful for closing out a fight by finishing off an Opponent who is low on Health."
+    }
+  },
+  "signature": {
+    "name": "Prime Technology",
+    "description": "Omega Sentinel gains 763.36 Passive Energy Resistance for each personal non-Damaging Debuff on the Opponent.\n\nOmega Sentinel’s Special Attack 2 inflicts an additional Incinerate Debuff for each Prowess effect on the Opponent, up to a maximum of 5.\n\nFor each Armor Up that is consumed by a Special Attack, there is a 50% chance for Omega Sentinel to gain a new Armor Up.",
+    "note": "Omega Sentinel’s Mutant hunting abilities are enhanced with her Signature Ability. Characters like Havok, Sunspot, and Domino will also have their damage reduced significantly thanks to this ability."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-omega-sentinel/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Special Attacks",
+        "description": "When activated, all of Omega Sentinel’s personal Debuffs are paused for the duration of the Special Attack and for 2 seconds afterwards.\n\nOn contact, consume up to 5 Armor Ups, increasing the duration of all Debuffs inflicted or refreshed by this Special Attack by 1 second per Armor Up consumed. All Debuffs triggered by Special Attacks can trigger through Block.",
+        "note": "Another way to utilize the Adaptive Body ability and Omega Sentinel’s Armor Ups is to consume them to extend the duration of any Debuffs inflicted using Special Attacks. This is especially deadly when combined with the Incinerate Debuffs on Special Attack 2."
+      }
+    ]
+  }
+}

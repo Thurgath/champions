@@ -1,26 +1,62 @@
 {
+  "description": "Mutant, thief, leader, goddess – Ororo Munroe has played many roles in her life. As Storm, she controls all aspects of the weather on an astonishing scale. Tornados, lightning, and blizzards are hers to command. Summoned from her home in Africa by Professor X, Ororo found a new family in the X-Men – and a new role, as a hero.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Storm’s control of the elements grants her Immunity to Shock effects.",
+        "note": ""
+      },
+      {
+        "name": "Prowess Buffs",
+        "description": "Unless otherwise stated, Storms Prowess Buffs last 20 seconds and grant +20% Special Attack damage.\n\nEach time either Champion lands a Critical Hit, gain 1 Prowess Buff.\n\nEach time the opponent Purifies a Debuff, gain 1 Prowess Buff.\n\nEach time Storm gains a Bleed effect, gain 2 Prowess Buffs.\n\nEach time Storm’s Immunity prevents a Shock effect, gain 2 Prowess Buffs.",
+        "note": "Storm’s Special Attacks are her bread, and her Prowess Buffs are the butter. Take note of how your opponent can help you pile on the Prowess!"
+      },
+      {
+        "name": "Passive",
+        "description": "If a Skill Opponent Purifies a Stun Debuff, it is replaced with a passive Stun lasting 2 seconds.",
+        "note": ""
+      }
+    ],
+    "abilities": [
+      "prowess",
+      "shock",
+      "stun"
+    ]
+  },
   "specials": {
     "1": {
       "name": "Lightning Strike",
-      "description": "Storm channels ambient electromagnetic energy into a single strike."
+      "description": "Each hit has a 70% chance to inflict a Shock Debuff, causing 2079 Energy Damage over 6 seconds.\n\nIf the opponent is Stunned, the Shock chance becomes 100% and all Shocks on the opponent are Paused for 6 seconds.",
+      "note": "Use in tandem with Storm’s Special 2 stun or a Parry for a shocking good time!"
     },
     "2": {
       "name": "Gale",
-      "description": "A gust of wind and blast of lightning send the opponent flying."
+      "description": "First hit: Gain 1 Prowess Buff.\n\nFinal hit: 100% chance to inflict a 3 second Stun Debuff."
     },
     "3": {
       "name": "Tempest",
-      "description": "Storm channels the wrath of nature into a relentless tempest of wind, rain, and lightning that assault her opponent."
+      "description": "100% chance to gain a non-stacking Precision Buff, increasing Critical Rating by +964.29 for 45 seconds.",
+      "note": "Every Critical Hit nets Storm 1 Prowess Buff. Prioritizing your Special 3 early in the fight could grant significant gains to your subsequent Special Attacks."
     }
   },
   "signature": {
     "name": "Conduit",
-    "description": "As Power surges and flows through her target, so too do her bolts of lightning."
+    "description": "Launching a Special Attack grants Storm 1 Prowess Buff per level of Special Attack used. Additionally, each Prowess on Storm, to a maximum of 10, increases the Potency of her Shock Debuffs by +18%.",
+    "note": ""
   },
   "author": {
     "name": "Kabam",
     "type": "spotlight",
     "profile": "https://playcontestofchampions.com/news/champion-spotlight-storm/"
   },
-  "description": "Mutant, thief, leader, goddess – Ororo Munroe has played many roles in her life. As Storm, she controls all aspects of the weather on an astonishing scale. Tornados, lightning, and blizzards are hers to command. Summoned from her home in Africa by Professor X, Ororo found a new family in the X-Men – and a new role, as a hero."
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attacks",
+        "description": "While charging or launching a Heavy Attack, all Prowess effects on Storm are Paused. Knocking the opponent down with this attack Pauses all Prowess effects on Storm for 10 seconds.",
+        "note": "At risk of losing that juicy Prowess stack? Out-wait that pesky Power Lock with a well-executed Heavy Attack."
+      }
+    ]
+  }
 }

@@ -1,0 +1,55 @@
+{
+  "description": "Former private investigator Mac Gargan willingly accepted to be the test subject of a scientific experiment that enhanced him with attributes of an animal that hunts spiders. While the experiment was successful it had the unintended side effect of turning Gargan insane, which ultimately led to the creation of the Super Villain known as the Scorpion.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Pre-Fight: Sting Debuff – Max 30 Stacks",
+        "description": "Sting Debuffs are Damage over Time Debuffs that Scorpion inflicts on Medium Attacks. His default Sting Debuff is a Poison Debuff, but he can choose between Shock and Rupture Debuffs in the Pre-Fight Screen.\n\nPoison: inflict 137.43 Direct Damage Damage over 13 seconds and reducing health recovery by 30%.\n\nShock: inflict 320.67 Energy Damage over 13 seconds.\n\nRupture: inflict 320.67 Physical Damage over 13 seconds.\n\nOn fight entry Scorpion gains Immunity to the Damage over Time effects he did not select with this Pre-Fight, Shock and Rupture Immune by default.\n\nIf the Opponent triggers a Special Attack while suffering from his personal Sting Debuffs inflict a burst of 1832.4 Sting Debuff Damage per stack of Sting Debuff.",
+        "note": "This ability allows Scorpion to avoid the Opponent’s Immunities while simultaneously allowing Scorpion to choose what Immunities would best counter his Opponent."
+      },
+      {
+        "name": "Scorpion-Sense",
+        "description": "After an Opponent Evades or completes a Special Attack, Scorpion gains a non-stacking Scorpion-Sense Passive, granting 20% chance to Evade for 15 second(s). When Scorpion-Sense expires it goes on a cooldown for 10 seconds.\n\nWhen an Evade would trigger, Scorpion inflicts a Sting Debuff. On a successful Evade, Scorpion counterattacks, consumes Scorpion-Sense and inflicts a burst of Sting Debuff Damage, but this damage scales with Base Attack only. Evade does not trigger while blocking.\n\nAs a Defender Scorpion gains Scorpion-Sense every 15 second(s) unless the Attacker gains another 20 Combos by the end of this duration. Reaching the targeted Combo Count removes any existing Scorpion-Sense and triggers its cooldown.",
+        "note": "This Evade has a counterattack, which means once it triggers it allows Scorpion to break the Opponent’s defenses and initiate an attack."
+      },
+      {
+        "name": "Torment Debuff – While Heavy Charging",
+        "description": "Charging a Heavy Attack grants a Torment Charge, however holding the Heavy Attack grants a Torment Charge every 0.4 second(s)\n\nLanding a Heavy Attack converts all Charges into Torment Debuffs. Landing Special Attack 1 or 2 while charging converts one extra Debuff per Charge.\n\nTorment Debuffs lasts for 10 second(s) but pauses during Specials, and causes all damaging Debuffs to last 1 second(s) longer.",
+        "note": "Inflicting Torment Debuffs is essential in order for the Sting Debuffs to last long enough for Scorpion to perform his full loop. One of the best uses of this ability is to inflict Torment Debuffs using Special 1 while at almost 2 Bars of Power."
+      }
+    ],
+    "abilities": [
+      "stingdebuffs",
+      "evade",
+      "taunt",
+      "petrify"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Tailspin",
+      "description": "Each hit inflicts a Sting Debuff. This effect has a 50% chance to go through block.\n\nFinal Hit: Inflict a Taunt Debuff for 12 seconds, reducing Attack Rating by 15%.\n\nIf the Opponent fails to launch a Special Attack before the Taunt Debuff expires, Scorpion inflicts a non-stacking Suppression Debuff, reducing Combat Power Rate by 25% for 12 seconds.",
+      "note": "Inflicting Torment Debuffs by throwing a Special 1 from Heavy Charging is the quickest way to capitalize on the Torment Debuffs since Special 1 inflicts tons of Sting Debuffs."
+    },
+    "2": {
+      "name": "Scorpion Ambush",
+      "description": "All Sting Debuffs are Paused for the duration of the Special, and refreshed by the end of it.\n\nFinal Hit inflicts 2 Bursts of Sting Debuff Damage per Sting Debuff on the Opponent, and also inflicts a Petrify Debuff of 40% Potency that lasts for 20 seconds. The Petrify can be inflicted through Block.\n\nThe Potency of the Sting Debuff Bursts are increased by 10% for each stack of Torment Debuff converted during this Special.",
+      "note": "Once the Opponent has been inflicted with lots of long duration Sting Debuffs, use Special 2 to inflict tons of damage."
+    },
+    "3": {
+      "name": "Acid Spray",
+      "description": "Inflict the Opponent with a Stun Debuff, stunning the Opponent for 3 seconds, and inflict 10 Torment Debuffs that last for 15 seconds.\n\nWhile these Torments are active, charging Heavy grants a Fury Charge instead of Torment Charges.\n\nAttacking from Heavy Charge grants a Fury Buff per charge, max 20 stacks, increasing Attack Rating by 916.2 for 20 second(s). While charging, Torment and Fury stacks are paused.",
+      "note": "Special 3 is not needed for Scorpion basic loop, but on long battles you may want to start with a Special 3 first for the Fury then jump to his basic loop."
+    }
+  },
+  "signature": {
+    "name": "Cybernetically Enhanced Armor",
+    "description": "While the Opponent is inflicted with Taunt, Scorpion can block Unblockable Special Attacks. Scorpion-Sense is consumed when the Special Attack is finished. This ability does not trigger against Skill Champions.\n\nIf the Opponent is inflicted with Petrify and they attempt to Heal, Scorpion gains 100% of the Health denied from them. Each tick of this healing cannot exceed 90.51 health, this value scales with Base Health.",
+    "note": "This ability allows Scorpion to avoid Unblockable attacks as long his Opponent is Taunted, which is a relatively easy task since his Taunt is on Special 1. Moreover, he can steal any Heal that was denied to the Opponent, which means once he mixes his Poisons with Petrify, he can steal 100% of the healing the Opponent would have gained."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-scorpion/"
+  }
+}

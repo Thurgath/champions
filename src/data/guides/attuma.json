@@ -1,0 +1,60 @@
+{
+  "description": "Attuma is a stalwart protector of Talokan, aiding king Namor in protecting its people from threats below and above. Attuma is proud and strong, with a knack for grasping opportunity, and the iron will to never fully surrender, even when his plans go awry. Now, with Talokan under threat from surface dwellers, Attuma will resort to any means necessary to defend his people and culture, even if those he supports do not agree with his methods.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Attuma’s plans can make the best out of the worst situation, or the worst out of the best. All Ability Accuracy modification effects on him have their potencies reversed.\n\nWhile one of Attuma’s personal abilities with a listed chance has over a 100% chance to trigger, the ability has a chance to trigger additional times. Each time, the chance is equal to the former chance -100%. This repeats until the ability fails due to chance.\n\nAttuma’s rough Talokanil skin abrades his Opponents with a 25% chance to deal 870.1 Physical Damage when they strike him or his Block with a contact attack. Damage scales with Base Attack only.\n\nWhenever an Opponent Evades Attuma while he has less than 1 Bar of Power, he has a 100% chance to instantly gain 10% of his Max Power and passively go Unstoppable for 0.5 seconds.\n\nAttuma’s Base Regeneration Rate is 25% instead of the usual 100%. It cannot be lowered further.",
+        "note": "The most important things to understand about Attuma’s kit is his Ability Accuracy reversal and Multi-Triggers. Remember, if an effect attempts to make Attuma’s Ability Accuracy go down, it goes up instead, and vice-versa."
+      },
+      {
+        "name": "Hydration – Max Stacks: 20",
+        "description": "The water in Attuma’s Special Attacks grants him stacks of Hydration, which are Passives that fall off one at a time over 7 seconds as Attuma dries out.\n\nFor every stack of Hydration on him, Attuma gains 237.3 Attack Rating and +1.75% Regeneration Rate.\n\nAt 10 stacks of Hydration, Attuma becomes immune to Incinerate and gains a Precision Passive increasing his Critical Rating by 2250.\n\nAt 19 stacks of Hydration, Attuma becomes passively Unstoppable.\n\nWhen he is inflicted with or immune to an Incinerate or Shock, Attuma loses 1 stack of Hydration, and Hydration falls off 30% faster while suffering from Coldsnap.",
+        "note": "When we set out to start making this guy, we knew we had to represent the Talokanil trait of gaining strength with exposure to water. Attack Rating is one of the things that increases, but also Regeneration Rate, which allows Attuma to heal off of sources like Willpower while at high levels of Hydration."
+      }
+    ],
+    "abilities": [
+      "abilityabilityreversal",
+      "thorns",
+      "purify",
+      "trueaccuracy",
+      "bleed,"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Hydro-Bomb Bash",
+      "description": "100% chance to gain 3 stacks of Hydration.\n\nOn activation, 120% chance to gain a True Accuracy Passive. These Passives last 7 seconds and fall off one at a time.",
+      "note": "Attuma’s Specials are the primary way for him to gain Hydration. This one gives a consistent and fairly predictable amount, especially at lower Ability Accuracy. It also gives a True Accuracy Passive for dealing with those pesky Evaders and Autoblockers. Because these Passives fall off one at a time, more triggers actually adds up to longer duration. Remember, because of the way non-flat Ability Accuracy increases works, this chance increases by 60% with each of Attuma’s personal Concussions."
+    },
+    "2": {
+      "name": "Raging Typhoon",
+      "description": "200% chance to gain 2 stacks of Hydration.\n\nEach hit has a 50% chance to grant Attuma a Cruelty Passive, increasing his Critical Damage Rating by 36.59 for 16 seconds. Can trigger through Block.\n\nTriggering one of these Cruelties pauses Attuma’s existing personal Concussions for the Cruelty’s duration.",
+      "note": "The Hydration from this Special scales much better with increased Ability Accuracy. In fact it triggers 1 additional time per 1 of Attuma’s personal Concussion Debuffs. The cruelties it grants have a lower trigger rate, and they scale up slower, but this attack has 4 hits, so these can add up fairly quickly. It’s not uncommon to end a medium length fight with 40 – 50 of these things. Remember that while you have these, you don’t have to worry about your Concussion Debuffs expiring, so feel free to cut loose and attack to your heart’s content!"
+    },
+    "3": {
+      "name": "What Dwells Below",
+      "description": "110% chance to gain 5 stacks of Hydration.\n\n100% chance to inflict a Bleed Debuff on the Opponent, dealing 5932.5 Direct Damage over 20 seconds.\n\nWhen one of these Bleeds fails to apply due to an Immunity, instead inflict a Physical Vulnerability Debuff that reduces the Opponent’s Physical Resistance by 964.29 for 10 seconds.",
+      "note": "Turn your Opponent into fish food with this devastating attack! This attack scales extremely heavily with Ability Accuracy increases, and you should aim to have as many Concussions as possible when you throw this Special. It’s good to keep in mind that, in the long term, Hydration falls off much more slowly than Concussions (at high amounts) so try to bank Hydration on the way to Special 3, and then convert it to Concussions all at once before throwing the attack. This is a great way to deal damage when the Opponent has high Resistances, or only takes damage from Bleed."
+    }
+  },
+  "signature": {
+    "name": "Tyrant of the Deep",
+    "description": "Attuma has a 205% chance to start the fight with a personal Concussion Debuff. It is paused until he gains a personal Concussion from another ability.\n\nIncoming Bleed Debuffs suffer -90% reduced potency.\n\nAttuma’s rough skin can now also deal damage any time he strikes his Opponent. In addition, its damage is increased by 14.99% for each Bleed effect on either Champion.",
+    "note": "Just like Attuma’s thorns on struck, this thorns also scales up with Attuma’s Ability Accuracy meaning it can start doing some serious damage when Attuma is ramped up. It also increases the damage of Attuma’s Special 3 loop considerably, pulling it more in line with his Special 2."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/champion-spotlight-attuma/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "100% chance for Attuma to attempt to Purify 1 non-damaging Debuff, excluding Concussions, and replace it with a Concussion Debuff, reducing Attuma’s Ability Accuracy by 50% for 25 seconds. If no non-damaging Debuffs are present, this ability consumes the oldest stack of Hydration instead.\n\nThis ability also triggers when Attuma is inflicted with a Stun or Infuriate Debuff.",
+        "note": "This ability is the keystone of Attuma’s kit. It links his Hydration with the ability to get Concussions which, thanks to his reversal effect, raise his Ability Accuracy and in turn the amount of Hydration and other effects he gets from his Special Attacks. Remember, every time this ability triggers, it removes one Debuff (or if there are none, one Hydration) and replaces it with one Concussion Debuff. As with the other chance-based abilities in his kit, this ability will trigger multiple times as Attuma’s Ability Accuracy rises. Essentially, it will trigger 1 additional time for each 2 personal Concussion effects on Attuma"
+      }
+    ]
+  }
+}
