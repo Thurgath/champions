@@ -1,0 +1,55 @@
+{
+  "description": "Kushala, a proud member of the Apache nation in the mid-1800s, was the sole survivor of a tribe slaughtered by U.S. soldiers. In her anger and grief, she cried out for aid, opening herself to a Spirit of Vengeance, a demon that helped her reduce the soldiers to smoldering ash. Horrified by the violent nature of her new partner, she sought to rid herself of its influence. She ultimately failed in this task, but along the way came to master the mystical arts, ultimately becoming the Sorcerer Supreme of her time and a staunch defender of our reality.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Kushala’s connection to her Spirit of Vengeance grants her Immunity to all Bleed and Incinerate effects.\n\nAll attacks deal Energy Damage.\n\nCombat Power Rate is reduced by 20%.\n\nPersonal Damaging effects are paused during Kushala’s Special Attacks.",
+        "note": "Kushala shares the immunities we’ve come to expect from the partners of Spirits of Vengeance, as well as the Energy-based hits and reduced combat power common to sorcerers. She also pauses her Damage Over Time effects during her specials, rewarding frequent Special Attacks and preventing an effect she needs from expiring right before she benefits from it."
+      },
+      {
+        "name": "Hunter of Might",
+        "description": "Light Attacks have a 40% chance to place an indefinite Ignition Buff on the Opponent. The chance increases by +20% flat if the Opponent is Soul Barbed. Max stacks: 10.\n\nWhen the Opponent gains a Buff, Kushala Passively gains 2% of her Max Power.\n\nKushala does not benefit from the Mystic Dispersion Mastery. Instead, each rank increases the amount of power she gains on Buff activation by 10%.",
+        "note": "Kushala trades in the power gain from Mystic Dispersion for a broader ability that also responds to Buffs that never end or are never Nullified, even Buffs that her Opponent removes from themselves. The potency of this Power Gain is significantly less than that provided by the Mastery, but when combined with her ability to place Buffs on her Opponent is nonetheless a powerful source of consistent fuel for Special Attacks."
+      },
+      {
+        "name": "Blessings of The Eagle – Max Stacks: 3 Each",
+        "description": "Gain a Blessing of Wisdom when either Champion performs a Well-Timed Block, allowing Kushala to Block Unblockable attacks from non-Science Champions and Passively Regenerate 25% of the damage taken from Blocked hits.\n\nGain a Blessing of Justice when either Champion is struck by the first hit of a Heavy Attack, making the Opponent more aggressive and increasing the potency of Kushala’s Damaging effects by 10%.\n\nGain a Blessing of Power when either Champion Intercepts their Opponent, increasing Kushala’s Ability Power Rate by 15% and reducing the Opponent’s by the same amount.\n\nBlessings are not affected by Ability Accuracy. Each Blessing lasts for 12 seconds, plus an additional +15 seconds flat if activated while either Champion is performing or recovering from a Special Attack 1 or 2.\n\nWhen activating a Blessing while both other Blessings have more active stacks, pause all Blessings for 3 seconds.\n\nThe Ability Accuracy of Kushala’s personal effects and the Parry Mastery is increased by 35% for each unique Blessing active.",
+        "note": "Dev Notes: This section is the meat of Kushala’s kit, and mastering it is the key to her peak performance. Blessing effects other than the ability to Block Unblockable attacks stack, meaning that having all of your Blessings active at once vs none of them dramatically increases your fight control and damage output.The 4th bullet might read strange at first, but note that parrying your opponent’s special, punishing their special with a heavy, or intercepting with your own special are all safe ways to trigger this bonus duration. To clarify the pause language a bit, this means that if you have one Blessing of Wisdom, two Blessings of Justice, and two Blessings of Power, then triggering a Blessing of Wisdom will trigger the pause, but neither of the other two will."
+      }
+    ],
+    "abilities": [
+      "ignition",
+      "incinerate",
+      "soulbarb",
+      "degeneration"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Judgement By Fire",
+      "description": "On the final hit, each Buff on the Opponent has a 50% chance to be Nullified. For each Buff Nullified, inflict an Incinerate Debuff, dealing 8854 Energy Damage over 18 seconds.\n\nInflict 4 additional Incinerates if the Opponent is Soul Barbed or Degenerating.",
+      "note": "The first bullet functions the same way Doctor Voodoo’s Special 1 does. The chance to Nullify is rolled independently for each Buff, and each success grants an Incinerate. Follow up your Special 2 or 3 with this attack for extra damage."
+    },
+    "2": {
+      "name": "Riding the Spirit",
+      "description": "The final hit consumes 30% of the Ignition Buffs on the Opponent to inflict a 221.35 potency Soul Barb Debuff for 15 seconds. Max stacks: 3.\n\nThis duration is increased by +0.75 seconds for each Buff consumed and for each Incinerate effect on the Opponent.",
+      "note": "This special is the second appearance of the Soul Barb effect, which deals damage based on the number of Buffs on the Opponent. The damage updates as the Opponent gains and loses Buffs, so don’t worry about needing to find the perfect moment for this effect. This Special is an excellent source of damage against Opponents resistant to the Special 1, but also synergizes with it if you alternate between them."
+    },
+    "3": {
+      "name": "Generations of Vengeance",
+      "description": "Gain one stack of each Blessing and place an indefinite Judgement on the Opponent, increasing the duration of Kushala’s future Blessings by +4 seconds. Max stacks: 3.\n\nFor each active Blessing, inflict a Degeneration Debuff, dealing 4427 Direct Damage over 8 seconds. Max Stacks: 9.",
+      "note": "Sometimes you just need a Degeneration Debuff, but this Special’s primary purpose is to ramp your Blessings and make them easier to maintain for the rest of the fight."
+    }
+  },
+  "signature": {
+    "name": "Spirit Rider",
+    "description": "The pause for activating the Blessing with the fewest stacks lasts an additional +5 seconds.\n\nKushala’s Damaging Debuffs have a 9% chance for each active Blessing to be replaced with matching Passives with 20% increased potency. This chance is doubled against Cosmic Opponents.\n\nKushala does not benefit from the Despair Mastery. Instead, she reduces the Opponent’s Regeneration Rate by 8% for each Debuff or personal Damaging Passive active on them, up to a maximum of 100%. Each rank in the Despair Mastery increases this reduction by +4% and the maximum by +10%.",
+    "note": "Balancing your Blessings now pays greater dividends, both in uptime and in the ability to upgrade your Damaging Debuffs into Passives, allowing them to work even against tricky nodes like Mighty Charge or Masochism. Since Debuffs are often used in concert with the Despair Mastery to control the Opponent’s healing, Kushala also has access to an upgraded form of the Mastery that scales with her own Passives as well as with standard Debuffs. Unduped Kushala still has access to the Mastery as normal, and this bullet does not scale with Signature Ability level, so it is a straight upgrade."
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/kushala/"
+  }
+}
