@@ -265,6 +265,6 @@ export const WEREWOLFBYNIGHT = 'werewolfbynight';
 export const WICCAN = 'wiccan';
 export const WONG = 'wong';
 // Universal
-export const MAESTRO = 'maestro';
+export const MAESTROBOSS = 'maestroboss';
 export const THECOLLECTOR = 'collector';
 export const GRANDMASTER = 'grandmaster';

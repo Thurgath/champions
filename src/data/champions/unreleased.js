@@ -9,7 +9,7 @@ export const UNRELEASED_CHAMPIONS = [
     // Science
     // Mystic
     // Universal
-    CHAMPION.MAESTRO,
+    CHAMPION.MAESTROBOSS,
     CHAMPION.THECOLLECTOR,
     CHAMPION.GRANDMASTER,
 ].reduce((map, champion) => {
