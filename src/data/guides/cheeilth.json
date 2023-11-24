@@ -26,16 +26,6 @@
         "name": "Brother Grizzly the Warrior – Attacking",
         "description": "Chee’ilth’s Bleed Debuffs deal 2162.48 Direct Damage over 9 seconds.\n\nStriking the Opponent with the Adze Axe inflicts a Bleed Debuff.\n\nBrother Grizzly shortens the Spirit Charge timer by 7 seconds each time Chee’ilth Punishes a Heavy Attack or Special Attack.",
         "note": "Chee’ilth uses her Adze Axe during her Medium Attacks, Heavy Attack, and Special Attacks."
-      },
-      {
-        "name": "Special Attack 2 – wa7 saq̓w ti pqúsa (The Eagle Soars)",
-        "description": "The final hit inflicts a non-stacking Eagle’s Tranquilize Debuff for 12 seconds which counts as a 50% Tranquilize Debuff. While Eagle’s Tranquilize is active, Chee’ilth cannot Miss. Each time a Debuff or Miss is prevented, pause Eagle’s Tranquilize for 3 seconds.",
-        "note": "Eagle’s Tranquilize prevents Miss from activating entirely, and reduces the Opponent’s Debuff Ability Accuracy by 50%. With the effect being paused for 3 seconds each time one of these two effects are prevented, Chee’ilth is very capable of keeping Eagle’s Tranquilize active during match-ups with a lot of Miss or Debuff abilities. Eagle’s Tranquilize can also be used to build up Cleanse Charges in Debuff heavy fights."
-      },
-      {
-        "name": "Special Attack 3 – nəpštəwmɛtuwum qʷal (They Come to War)",
-        "description": "This attack can only be used once per fight.\n\nGain an indefinite 35% Vicious Passive.\n\nGain a 15 second Regeneration Buff, healing 50% of Health lost this fight or 30% of missing Health, whichever is greater.",
-        "note": "Choosing the right time to launch a Special 3 is very important to Chee’ilth. Launching it early grants her a 35% increase to her Bleed Damage while using it later can be very helpful in shoring up any chip damage that may have slipped past her block."
       }
     ],
     "abilities": [
@@ -46,9 +36,21 @@
     ]
   },
   "specials": {
-    "1": {},
-    "2": {},
-    "3": {}
+    "1": {
+      "description": "On activation, gain a Grizzly’s Grit Passive for 16 seconds which counts as a Grit Passive. While Grizzly’s Grit is active, all attacks gain a 50% chance to inflict a Bleed Debuff.",
+      "name": "ts7as lhláku7 ku st̓alhálem (There’s a Grizzly Coming)",
+      "note": "Grit is a new ability that allows your attacks to strike Unstoppable Opponent’s as if they weren’t Unstoppable. Grizzly’s Grit also grants all attacks a chance to inflict Bleed, meaning Adze Axe Attacks can inflict multiple Bleeds in a single strike."
+    },
+    "2": {
+      "description": "The final hit inflicts a non-stacking Eagle’s Tranquilize Debuff for 12 seconds which counts as a 50% Tranquilize Debuff. While Eagle’s Tranquilize is active, Chee’ilth cannot Miss. Each time a Debuff or Miss is prevented, pause Eagle’s Tranquilize for 3 seconds.",
+      "name": "wa7 saq̓w ti pqúsa (The Eagle Soars)",
+      "note": "Eagle’s Tranquilize prevents Miss from activating entirely, and reduces the Opponent’s Debuff Ability Accuracy by 50%. With the effect being paused for 3 seconds each time one of these two effects are prevented, Chee’ilth is very capable of keeping Eagle’s Tranquilize active during match-ups with a lot of Miss or Debuff abilities. Eagle’s Tranquilize can also be used to build up Cleanse Charges in Debuff heavy fights."
+    },
+    "3": {
+      "description": "This attack can only be used once per fight.\n\nGain an indefinite 35% Vicious Passive.\n\nGain a 15 second Regeneration Buff, healing 50% of Health lost this fight or 30% of missing Health, whichever is greater.",
+      "name": "nəpštəwmɛtuwum qʷal (They Come to War)",
+      "note": "Choosing the right time to launch a Special 3 is very important to Chee’ilth. Launching it early grants her a 35% increase to her Bleed Damage while using it later can be very helpful in shoring up any chip damage that may have slipped past her block."
+    }
   },
   "signature": {
     "name": "χɛmamɛn (Claw of the Bear)",
@@ -66,11 +68,6 @@
         "name": "Heavy Attacks",
         "description": "Punishing a Heavy Attack or Special Attack pauses all personal Debuffs on the Opponent for 5 seconds.\n\nThe final hit of this attack inflicts 2 additional Bleed Debuffs.",
         "note": "The first hit of this attack covers a lot of distance, allowing Chee’ilth to weave Heavy Attacks into the fight more smoothly."
-      },
-      {
-        "name": "Special Attack 1 – ts7as lhláku7 ku st̓alhálem (There’s a Grizzly Coming)",
-        "description": "On activation, gain a Grizzly’s Grit Passive for 16 seconds which counts as a Grit Passive. While Grizzly’s Grit is active, all attacks gain a 50% chance to inflict a Bleed Debuff.",
-        "note": "Grit is a new ability that allows your attacks to strike Unstoppable Opponent’s as if they weren’t Unstoppable. Grizzly’s Grit also grants all attacks a chance to inflict Bleed, meaning Adze Axe Attacks can inflict multiple Bleeds in a single strike."
       }
     ]
   }
