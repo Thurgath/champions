@@ -152,6 +152,7 @@ const champions = [
         ...championStars({ uid: CHAMPION.NAMOR }, [ 2, 3, 4, 5, 6, 7 ]),
         ...championStars({ uid: CHAMPION.NIGHTCRAWLER }, [ 2, 3, 4, 5, 6 ]),
         ...championStars({ uid: CHAMPION.OMEGARED }, [ 2, 3, 4, 5, 6 ]),
+        ...championStars({ uid: CHAMPION.ONSLAUGHT }, [ 2, 3, 4, 5, 6, 7 ]),
         ...championStars({ uid: CHAMPION.PLATINUMPOOL }, [ 5, 6, 7 ]),
         ...championStars({ uid: CHAMPION.PROFESSORX }, [ 2, 3, 4, 5, 6, 7 ]),
         ...championStars({ uid: CHAMPION.PSYLOCKEXFORCE }, [ 2, 3, 4, 5, 6 ]),

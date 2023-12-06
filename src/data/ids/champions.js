@@ -118,6 +118,7 @@ export const MISTERSINISTER = 'mistersinister';
 export const NAMOR = 'namor';
 export const NIGHTCRAWLER = 'nightcrawler';
 export const OMEGARED = 'omegared';
+export const ONSLAUGHT = 'onslaught';
 export const PLATINUMPOOL = 'platinumpool';
 export const PROFESSORX = 'professorx';
 export const PSYLOCKEXFORCE = 'psylockexforce';

@@ -1,0 +1,68 @@
+{
+  "description": "In a moment of inconsolable rage, Professor Xavier lashed out at Magneto rendering him catatonic. This violent psionic act merged Xavier’s own suppressed negativity with the furor of Magneto’s mind, giving birth to a new and malevolent psychic entity known as Onslaught. Armed with the powers of both Professor X and Magneto, Onslaught has no allegiances and seeks only the destruction and subjugation of all before him.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always",
+        "description": "First Light and first Medium Attacks do not make contact with the Opponent.\n\nIncoming Bleed, Incinerate, and Shock potency is reduced by 150%.\n\nOnslaught’s Debuffs gain 50% increased Ability Accuracy against Skill Champions.\n\nIf a personal Debuff or the Stun from the Parry Mastery is Purified or prevented due a Debuff Immunity, re-inflict the Debuff as a Passive.",
+        "note": "All these abilities are useful both as an Attacker and Defender, but the increased Ability Accuracy for Debuffs against Skill Champions stands out a little bit because it also affects Debuffs from nodes, making very difficult for Skill Attackers to completely shut down Node Debuffs when Onslaught is the Defender."
+      },
+      {
+        "name": "Crush",
+        "description": "When the Opponent’s Combo Meter passes a multiple of 10, gain a non-stacking Crush Charge. When starting an attack consume the Charge and inflict a Crush Debuff for 3 seconds. When struck by a Special Attack the Crush Charge is removed.",
+        "note": "As long as you are frequently striking Onslaught with a Special Attack, this Crush Debuff will not trigger, but this may throw off the loop of many Champions and consequently the fight slows down a bit."
+      },
+      {
+        "name": "Daunted",
+        "description": "When either Champion Well-Timed Blocks, inflict an indefinite Daunted Debuff of 15% potency. Max: 10.\n\nWhile Daunted is active, Onslaught disables the Opponent’s Willpower Mastery.",
+        "note": "This damage increase affects all sources of damage, including hits, personal Damaging Debuffs and any damaging effects from Quest Nodes."
+      },
+      {
+        "name": "Neuroshock",
+        "description": "Either Champion’s attacks have 15% chance to inflict a Neuroshock Passive, dealing 1447.6 Energy Damage over 12 seconds. Critical Hits and Unblockable Special Hits have their chance increased by +40% flat, or double against Skill Champions.\n\nIf Onslaught is the Defender, Dodging backward removes one Neuroshock. #Metal Champions cannot remove Neuroshocks. This effect has a 2.5 second cooldown.\n\nWhile suffering from Shock, Incinerate, Plasma, or Coldsnap, inflict a Neuroshock every 1 second.",
+        "note": "When fighting against Onslaught if you can’t let too many Neuroshocks accumulate, since removing Neuroshocks by dashing backwards only removes a single Neuroshock at a time, and that might not make too much of a difference against many stacks."
+      }
+    ],
+    "abilities": [
+      "daunted",
+      "neuroshock",
+      "crush",
+      "organicmagnetism"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "Shrapnels",
+      "description": "Each hit has a 100% chance plus a flat 50% chance to inflict a personal Neuroshock Passive, and an Organic Magnetism Debuff of 2.6% potency for 16 seconds. These can be inflicted through Block. Max: 8.\n\nWhile Organic Magnetism is active, this Special costs 33% less Power and is more likely to be activated.\n\nIf the duration of Organic Magnetism Debuff is reduced by any means, on expiration it re-inflicts itself as a Passive.",
+      "note": "Special 1 is the most efficient way to inflict Neuroshocks on the opponent. A single Special 1 inflicts enough Neuroshocks to increase the damage potential of Special 2 substantially, but those Neuroshocks need to be kept paused all the way to the Special 2."
+    },
+    "2": {
+      "name": "Overpowering Mind",
+      "description": "On activation, inflict a Delirium Debuff of 30% potency for the duration of the Special. This will not trigger when fighting an Opponent with #Psychic Shielding.\n\nOn hit, replace all Neuroshocks with Degeneration Passives, each dealing 2352.35 Direct Damage over 6 seconds. On the first hit of this Special, this effect can trigger through Block. Max 25",
+      "note": "In order to make the most of this Special, it is good practice to inflict a dot pause on the Opponent before activating this Special, so the Degenerations start already paused."
+    },
+    "3": {
+      "name": "Master of the Astral Plane",
+      "description": "Inflict a Stun Passive for 3 seconds.\n\nThis Special cost 4.5% less Power for each personal Neuroshock on the Opponent, to a max of 33% less Power.\n\nInflict 20 Neuroshock Passives and refresh all existing stacks."
+    }
+  },
+  "signature": {
+    "name": "Pure Psionic Entity",
+    "description": "Onslaught can Block Unblockable Special Attack from Skill Champions.\n\nDaunted Potency is increased by 33%.\n\nFor each non-Damaging Debuff or personal non-Damaging Passive on the Opponent, Onslaught’s Special Attacks gain +98.64 Block Penetration.",
+    "note": ""
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/onslaught/"
+  },
+  "attack": {
+    "sections": [
+      {
+        "name": "Heavy Attack",
+        "description": "The first hit pauses all personal Damaging effects for 1.5 seconds. If the Opponent is not suffering from a Stun Debuff, inflict a Daunted Debuff and the pause lasts for 10 seconds instead.",
+        "note": "In order to get the highest damage possible with Onslaught, it is imperative to keep this pause active as often as possible by stringing a non-stunned opponent with a Heavy Attack. An important detail is that the long pause will trigger if the opponent is suffering from a passive Stun."
+      }
+    ]
+  }
+}
