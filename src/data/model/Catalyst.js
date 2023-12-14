@@ -134,6 +134,14 @@ export const CATALYSTS = {
             { type: CATALYST.CLASS, tier: 5, amount: 5 },
             { type: CATALYST.GOLD, amount: 1213041 },
         ],
+        3: [
+            { type: CATALYST.BASIC, tier: 7, amount: 3 },
+            { type: CATALYST.ALPHA, tier: 4, amount: 4 },
+            { type: CATALYST.CLASS, tier: 6, amount: 6 },
+            { type: CATALYST.BASIC, tier: 6, amount: 9 },
+            { type: CATALYST.ALPHA, tier: 3, amount: 9 },
+            { type: CATALYST.GOLD, amount: 1394998 },
+        ],
     },
 };
 
