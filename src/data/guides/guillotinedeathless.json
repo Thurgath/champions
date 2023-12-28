@@ -1,0 +1,48 @@
+{
+  "description": "In years past, Champions from the Death Realm staged an assault on the Battlerealm. Empowered by the Death Stone, Thanos created nameless, empty versions of the heroes of the Battlerealm. Of these nameless Champions, a select few were granted malicious will and elevated to become the Deathless, to lead his armies and sow chaos and destruction. Guillotine was the first Deathless he created.",
+  "gameplay": {
+    "sections": [
+      {
+        "name": "Always Active",
+        "description": "Start each fight with 4 Souls. Each Soul grants Guillotine +69.59 Critical Damage Rating. 1 Soul expires every 10 seconds. Souls are treated as Cruelty Passives for all other abilities.\n\nFor every 5% of Max Health that Guillotine removes from her Opponent during combat, she feeds her ancestral blade and gains 1 Soul.",
+        "note": "Souls are Guillotine’s main resource, building them up as the Opponent takes damage from any source. The pre-rework kit had her gaining a Soul every 6% of the Opponent’s health, so we improved that slightly by lowering the threshold to 5%."
+      },
+      {
+        "name": "Critical Hits",
+        "description": "If the hit was not Blocked, inflict a Degeneration Debuff, dealing 6112.26 Direct Damage over 6 seconds.",
+        "note": "This is Guillotine’s main source of damage. Her pre-rework kit was a Bleed that had a 50% chance to trigger, lasted 4.5 seconds, and did less damage.For the Deathless version, we switched it to a Degen to better conform to the Mystic Class, and benefit from both the Ghost Rider Relic and from no Champions being immune to Degen. We also increased the chance, damage, and duration, to make it feel better and to account for the fact that this doesn’t benefit from the Deep Wounds mastery any more.\n\nGuillotine’s original kit didn’t have any abilities for Special Attack 1."
+      }
+    ],
+    "abilities": [
+      "degeneration",
+      "spectre"
+    ]
+  },
+  "specials": {
+    "1": {
+      "name": "La Force d’Ancêtres",
+      "description": "Guided by the wisdom of those that came before, Guillotine strikes down her foe with a might cleaving blow.",
+      "note": ""
+    },
+    "2": {
+      "name": "Coup De Massue",
+      "description": "The final hit inflicts a 200% Spectre Debuff for 10 seconds, then consumes 2 Souls.",
+      "note": "A solid, very potent Spectre Debuff to instantly invert the Opponent’s Regeneration Rate, causing their healing effects to deal that much damage to them instead."
+    },
+    "3": {
+      "name": "Coup De Grace",
+      "description": "La Fleur du Mal deals 2% of the Opponent’s Max Health in Direct Damage per Soul. After this attack, 50% of Guillotine’s Souls are consumed, rounded down.",
+      "note": "This is the final change we made to her kit. The Special 3 used to consume all her Souls when it was used, but that felt a bit too punishing, so we lowered the number of Souls consumed."
+    }
+  },
+  "signature": {
+    "name": "Ancestor's Strength",
+    "description": "The Souls of her ancestors empower Guillotine further, granting a 10% chance to steal 54.99% of damage done as Health for every 4 Souls she possesses. Minimum 54.99% Health Steal regardless of current Soul count.",
+    "note": ""
+  },
+  "author": {
+    "name": "Kabam",
+    "type": "spotlight",
+    "profile": "https://playcontestofchampions.com/news/guillotine-deathless/"
+  }
+}

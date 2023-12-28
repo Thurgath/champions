@@ -238,6 +238,7 @@ export const DRVOODOO = 'brothervoodoo';
 export const EBONYMAW = 'ebonymaw';
 export const GHOSTRIDER = 'ghostrider';
 export const GUILLOTINE = 'guillotine';
+export const GUILLOTINEDEATHLESS = 'guillotinedeathless';
 export const HOOD = 'hood';
 export const IRONFIST = 'ironfist';
 export const IRONFISTWHITE = 'ironfistwhite';
